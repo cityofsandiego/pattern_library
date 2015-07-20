@@ -1,0 +1,57 @@
+
+// ==========================================================================
+// Layout
+// ==========================================================================
+
+/* Containers
+   ========================================================================== */
+
+%l-constrained {
+    @extend %clearfix;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $site;
+}
+
+.l-constrained {
+    @extend %l-constrained;
+}
+.l-constrained--wide {
+    @extend %l-constrained;
+    max-width: $site-constraint;
+}
+.l-container {
+    @extend %clearfix;
+}
+
+.l-primary {
+    @include mq( $from: tablet ) {
+        padding-right: 1em;
+        @include span( 8 no-gutters );
+    }
+}
+.l-secondary {
+    @include mq( $from: tablet ) {
+        padding-left: 1em;
+        @include span( 4 no-gutters );
+    }
+}
+
+.l-fourth {
+	@include mq( $from: tablet ) {
+		@include span( 3 );
+        padding-right: 0;
+	}
+}
+
+.l-seventh {
+    @include mq( $from: tablet ) {
+        @include span( 7 );
+    }
+}
+
+.l-fifth {
+    @include mq( $from: tablet ) {
+        @include span( 5 );
+    }
+}

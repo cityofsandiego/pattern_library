@@ -1,0 +1,192 @@
+
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+/* General
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+   color: $alto;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $alto;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+   color: $alto;
+}
+
+:-ms-input-placeholder {
+   color: $alto;
+}
+
+%select {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: none;
+    background: $mercury;
+    outline: none;
+    padding: .5em;
+    width: 100%;
+    height: 40px;
+    @include rem( 'font-size', 14px );
+    /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        select {padding-right:18px}
+    }
+}
+input,
+textarea {
+    margin: 0 0 1em 0;
+    padding: .75em .5em;
+    width: 100%;
+    height: 2.572em;
+    display: inline-block;
+    background-color: $mercury;
+    border: none;
+    @include transition( border .15s, box-shadow .15s, background .15s );
+}
+
+input:focus,
+textarea:focus {
+    border-color: $shiraz;
+    outline: none;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    margin: 0;
+    height: auto;
+    width: auto;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+button {
+    @include transition( all .15s );
+}
+
+/**
+ * Normalize sets as 'content-box'
+ */
+input[type="search"] {
+  @include box-sizing( border-box ); /* 1 */
+}
+
+textarea {
+    height: auto;
+    min-height: 50px;
+}
+
+
+.form {
+    overflow: hidden;
+    input[type="email"],
+    input[type="search"] {
+        width: auto;
+        color: $gray;
+        border: none;
+        margin-bottom: 0;
+        padding: .25em .5em;
+        background: $off-white;
+        @include rem( 'font-size', 16px );
+        @include mq( $from: tablet ) {
+            float: left;
+            width: 80%;
+            min-height: 40px;
+            margin-right: .5em;
+        }
+    }
+    button[type="submit"] {
+        color: white;
+        background-color: $shiraz;
+        i {
+            @include rem( 'font-size', 24px );
+        }
+        @include mq( $from: tablet ) {
+            min-height: 40px;
+            padding: .25em .5em;
+        }
+        &:hover {
+            background: lighten( $shiraz, 10% );
+        }
+    }
+    label {
+        font-weight: 600;
+        text-transform: uppercase;
+        @include rem( 'font-size', 12px );
+    }
+    select {
+        @extend %select;
+    }
+    .select-wrap {
+        position: relative;
+    }
+    .select-wrap:after {
+        content:'';
+        color: $shiraz;
+        background: url(../img/select-arrow.png) no-repeat;
+        display: block;
+        width: 8px;
+        height: 18px;
+        // -webkit-transform:rotate(90deg) translateX(-50%);
+        // -moz-transform:rotate(90deg) translateX(-50%);
+        // -ms-transform:rotate(90deg) translateX(-50%);
+        // transform:rotate(90deg) translateX(-50%);
+        right:10%; top:30%;
+        line-height: .6;
+        padding:0 0 2px;
+        position:absolute;
+        pointer-events:none;
+    }
+    .select-wrap:before {
+        content:'';
+        right:6px; top:0px;
+        width:20px; height:20px;
+        position:absolute;
+        pointer-events:none;
+        display:block;
+    }
+}
+
+.form--homesearch {
+    button[type="submit"] {
+        width: 100%;
+        margin-top: 1.25em;
+    }
+}
+
+.form--signup {
+    input[type="email"] {
+        margin: 0;
+        width: auto;
+        color: white;
+        background: darken( $shiraz, 10% );
+        @include mq( $from: tablet ) {
+            min-height: 48px;
+        }
+    }
+    button[type="submit"] {
+        color: $shiraz;
+        @extend %white-gradient;
+        @include mq( $from: tablet ) {
+            min-height: 48px;
+            padding: .25em 1.5em;
+        }
+        &:hover {
+            background: white;
+        }
+    }
+}
+
+.search-form {
+    label {
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,395 @@
+
+// ==========================================================================
+// Helpers
+// ==========================================================================
+
+%hidden {
+    /*
+     * Hide visually and from screen readers:
+     * http://juicystudio.com/article/screen-readers-display-none.php
+     */
+    display: none !important;
+    visibility: hidden;
+}
+
+%visuallyhidden {
+    /*
+     * Hide only visually, but have it available for screen readers:
+     * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+     */
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    /*
+     * Extends the .visuallyhidden class to allow the element to be focusable
+     * when navigated to via the keyboard: h5bp.com/p
+     */
+    &.focusable:active,
+    &.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+
+    }
+}
+
+%invisible {
+    /*
+    * Hide visually and from screenreaders, but maintain layout
+    */
+    visibility: hidden;
+}
+
+%clearfix {
+    /*
+     * Clearfix: contain floats
+     *
+     * For modern browsers
+     * 1. The space content is one way to avoid an Opera bug when the
+     *    `contenteditable` attribute is included anywhere else in the document.
+     *    Otherwise it causes space to appear at the top and bottom of elements
+     *    that receive the `clearfix` class.
+     * 2. The use of `table` rather than `block` is only necessary if using
+     *    `:before` to contain the top-margins of child elements.
+     */
+    &:before, &:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    &:after {
+        clear: both;
+    }
+
+    /*
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    *zoom: 1;
+}
+
+/**
+ * Cross browser support for word wrapping
+ * Reference: http://kenneth.io/blog/2012/03/04/word-wrapping-hypernation-using-css/
+ */
+%word-wrap {
+    -ms-word-break: break-all;
+        word-break: break-all;
+
+    /* Non standard for webkit */
+    word-break: break-word;
+
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+}
+
+
+
+
+
+/* Visibility
+   ========================================================================== */
+
+.visuallyhidden {
+    @extend %visuallyhidden;
+}
+
+.hidden {
+    @extend %hidden;
+}
+
+
+
+/* Corners
+   ========================================================================== */
+
+.corner {
+    border-radius: 4px;
+}
+
+
+
+
+
+/* Borders
+   ========================================================================== */
+
+.border {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border: 2px solid $alto;
+}
+
+.border--bottom {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.border--top {
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+
+
+/* Text
+   ========================================================================== */
+
+.text-center {
+    text-align: center;
+}
+
+.text-center--mobile {
+    @include mq( $until: tablet ) {
+        text-align: center;
+    }
+}
+
+.text-center--desktop {
+    @include mq( $from: tablet ) {
+        text-align: center;
+    }
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-right--mobile {
+    @include mq( $until: tablet ) {
+        text-align: right;
+    }
+}
+
+.text-right--desktop {
+    @include mq( $from: tablet ) {
+        text-align: right;
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-left--mobile {
+    @include mq( $until: tablet ) {
+        text-align: left;
+    }
+}
+
+.text-left--desktop {
+    @include mq( $from: tablet ) {
+        text-align: left;
+    }
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-small {
+    @include mq( $from: tablet ) {
+        @include rem( 'font-size', 14px );
+    }
+}
+.text-gray {
+    color: $gray;
+}
+.text-pom {
+    color: $pomegranate;
+}
+
+// pattern library use only
+p.nav-ex {
+    color: $tuna;
+    font-weight: 200;
+}
+
+.view-all-link {
+    font-family: $font-family;
+    @include rem( 'font-size', 16px );
+} 
+
+
+
+/* Alignment
+   ========================================================================== */
+
+.pull-center {
+    margin: 0 auto;
+    display: block;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.alignleft {
+    @include mq( $from: tablet ) {
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+        display: inline;
+        float: left;
+    }
+}
+
+.alignright {
+    @include mq( $from: tablet ) {
+        margin-left: 1.5em;
+        margin-bottom: 1.5em;
+        display: inline;
+        float: right;
+    }
+}
+
+.aligncenter {
+    @include mq( $from: tablet ) {
+        clear: both;
+        display: block;
+        margin: 0 auto;
+    }
+}
+.text-white {
+    color: white;
+}
+
+
+/* Lists
+   ========================================================================== */
+.no-bullets {
+    padding: 0;
+    list-style-type: none;
+}
+.two-columns {
+    -webkit-columns: 2;
+    column-count: 2;
+    list-style: inside disc;
+    padding-left: 0;
+    li {
+        padding-left: 1em;
+        text-indent: -1em;
+    }
+}
+/* Hidden
+   ========================================================================== */
+
+.hide-on-mobile {
+    @include mq( $until: tablet ) {
+        display: none !important;
+    }
+}
+
+.hide-on-desktop {
+    @include mq( $from: tablet ) {
+        display: none !important;
+    }
+}
+
+/* Horiziontal Rules
+   ========================================================================== */
+
+hr {
+    &.short {
+        margin: 0 auto;
+        max-width: 8.5em;
+    }
+    &.red {
+        border-color: $shiraz;
+    }
+}
+
+
+/* Backgrounds
+   ========================================================================== */
+.background--dark {
+    background: $clay;
+    &.text-white {
+        > * {
+            color: white; 
+        }
+    }
+    a {
+        color: lighten( $shiraz, 10% );
+    }
+}
+.background-off-white {
+    background-color: $off-white;
+}
+
+.background-white {
+    background-color: white;
+}
+
+/* Gradient
+   ========================================================================== */
+%black-gradient {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.6) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(75%,rgba(0,0,0,0.45)), color-stop(100%,rgba(0,0,0,0.6))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 75%,rgba(0,0,0,0.6) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 75%,rgba(0,0,0,0.6) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 75%,rgba(0,0,0,0.6) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.45) 75%,rgba(0,0,0,0.6) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 ); /* IE6-9 */
+}
+
+%white-gradient {
+    background: rgb(255,255,255); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(230,230,230,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(230,230,230,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(230,230,230,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 ); /* IE6-9 */
+
+}
+%red-gradient {
+    background: rgb(203,9,64); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(203,9,64,1) 0%, rgba(178,8,56,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(203,9,64,1)), color-stop(100%,rgba(178,8,56,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(203,9,64,1) 0%,rgba(178,8,56,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(203,9,64,1) 0%,rgba(178,8,56,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(203,9,64,1) 0%,rgba(178,8,56,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(203,9,64,1) 0%,rgba(178,8,56,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb0940', endColorstr='#b20838',GradientType=0 ); /* IE6-9 */
+}
+%slide-background-white {
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0.95) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,rgba(255,255,255,0.95)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(255,255,255,0.95) 50%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+%slide-background-black {
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}

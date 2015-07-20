@@ -1,0 +1,84 @@
+
+// ==========================================================================
+// Widgets
+// ==========================================================================
+
+/* Widget
+   ========================================================================== */
+
+.widget {
+    margin-bottom: 1.5em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    ul {
+		padding: 0;
+		list-style-type: none;
+	}
+}
+
+.widget__heading {
+    margin-top: 0;
+    margin-bottom: .4em;
+    font-weight: 600;
+    @include rem( 'font-size', 16px );
+}
+
+// Archives
+.widget_archive {
+	a {
+		color: $gray;
+		display: block;
+		text-decoration: none;
+	}
+	.count {
+		float: right;
+		color: $shiraz;
+		text-decoration: underline;
+		&:before {
+			content: '(';
+		}
+		&:after {
+			content: ')';
+		}
+	}
+}
+
+// Tags
+.widget_tag_cloud {
+	a {
+		color: $tuna;
+		background: white;
+		border-radius: 2px;
+		margin: .3em .25em;
+		padding: .5em .75em;
+		display: inline-block;
+		text-decoration: none;
+		box-shadow: 1px 1px 1px -1px $tuna;
+		&:hover {
+			color: $gray;
+			box-shadow: 1px 1px 1px -1px $gray;
+		}
+	}
+}
+
+// Recent Posts
+.widget-recent-posts {
+	.entry-header {
+		a {
+			color: $gray;
+			text-decoration: none;
+		}
+	}
+	.entry-meta {
+		a {
+			color: $shiraz;
+			text-decoration: underline;
+		}
+	}
+	.entry-content {
+		color: $gray;
+	}
+}

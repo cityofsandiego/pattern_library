@@ -1,0 +1,117 @@
+
+// ==========================================================================
+// Comments
+// ==========================================================================
+
+.comments-title {
+    color: $tuna;
+    @include rem( 'font-size', 24px );
+}
+.comment-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    article.comment-body {
+        margin: 1em 0;
+        overflow: hidden;
+        position: relative;
+        footer {
+            @extend %clearfix;
+            width: 25%;
+            float: left;
+            position: relative;
+            text-align: center;
+        }
+    }
+
+    .comment-author {
+        @include rem( 'font-size', 14px );
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+        > .says {
+            display: none;
+        }
+    }
+
+    .comment-metadata {
+        margin-top: .5em;
+
+        > a {
+            text-decoration: none;
+            color: darken( $mercury, 20% );
+            @include rem( 'font-size', 12px );
+        }
+
+        time {
+            text-transform: uppercase;
+        }
+    }
+
+    .comment-content {
+        width: 75%;
+        float: left;
+        padding: .5em;
+        position: relative;
+        background-color: white;
+    }
+
+    .reply {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+
+        > a {
+            padding: 10px;
+            display: inline-block;
+            background-color: white;
+            @include rem( 'font-size', 12px );
+
+            &:hover {
+                background-color: $off-white;
+            }
+        }
+    }
+
+    .edit-link {
+        position: absolute;
+        bottom: -3px;
+        left: -3px;
+
+        > a {
+            padding: 4px;
+            display: inline-block;
+            background-color: $success;
+            border: 1px solid white;
+            color: white;
+            @include rem( 'font-size', 12px );
+
+            &:hover {
+                background-color: white;
+                border: 1px solid $mercury;
+                color: $success;
+            }
+        }
+    }
+
+    .comment-awaiting-moderation {
+        margin-top: 0;
+        background-color: $success;
+        text-align: center;
+        color: white;
+    }
+
+    .children {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        @include mq( $from: tablet ) {
+            margin: 0 0 0 1em;
+        }
+    }
+}
+.form-allowed-tags {
+    font-size: 80%;
+}

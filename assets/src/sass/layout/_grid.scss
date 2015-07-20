@@ -1,0 +1,59 @@
+
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+/* Grid
+   ========================================================================== */
+
+.row {
+    @extend %clearfix;
+}
+
+.row--center {
+    .columns {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+.columns {
+    min-height: 1px;
+    @include mq( $from: tablet ) {
+        position: relative;
+        float: left;
+    }
+}
+
+/**
+ * Float last column in row to the right
+ */
+[class*="grid__col"] + [class*="grid__col"]:last-child {
+    @include mq( $from: tablet ) {
+        float: right;
+    }
+}
+
+
+/**
+ * Output column classes
+ */
+$classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
+
+@for $i from 1 through 12 {
+
+    $class: nth( $classes, $i );
+
+    .#{$class} {
+        @include mq( $from: tablet ) {
+            @include span( $i );
+        }
+        &.no-gutters {
+            @include mq( $from: tablet ) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+}

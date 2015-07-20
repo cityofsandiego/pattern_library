@@ -1,0 +1,239 @@
+// ==========================================================================
+// Off Canvas
+// ==========================================================================
+
+#outer-wrap {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+#inner-wrap {
+    width: 100%;
+    position: relative;
+
+    .js-ready & {
+        @include mq( $until: tablet ) {
+            right: 0;
+        }
+    }
+
+    .js-nav & {
+        @include mq( $until: tablet ) {
+            right: 70%;
+        }
+    }
+
+    .csstransforms3d.csstransitions.js-ready & {
+        @include mq( $until: tablet ) {
+            right: 0 !important;
+            @include transform( translate3d( 0, 0, 0 ) );
+            @include transition-duration( 500ms );
+            @include transition-timing-function( ease-in-out );
+            @include backface-visibility( hidden );
+        }
+    }
+
+    .csstransforms3d.csstransitions.js-nav & {
+        @include mq( $until: tablet ) {
+            @include transform( translate3d( -70%, 0, 0 ) scale3d( 1, 1, 1 ) );
+        }
+
+    }
+}
+
+.nav-primary { // #nav
+    @include mq( $until: tablet ) {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 200;
+        color: white;
+    }
+
+    &:not(:target) {
+        @include mq( $until: tablet ) {
+            z-index: 1;
+            height: 0;
+        }
+    }
+
+    .js-ready & {
+        @include mq( $until: tablet ) {
+            height: 100%;
+            width: 70%;
+            right: -70%;
+            background-color: darken( $off-black, 2% );
+            box-shadow: inset 1.5em 0 1.5em -.75em rgba( black, .25 );
+        }
+
+        .site-nav__block {
+            background-color: transparent;
+        }
+    }
+
+    .csstransforms3d.csstransitions.js-ready & {
+        @include mq( $until: tablet ) {
+            right: 0;
+            @include transform( translate3d( 100%, 0, 0 ) );
+            @include backface-visibility( hidden );
+        }
+    }
+
+    .csstransforms3d.csstransitions.js-ready & {
+
+        .site-nav__block {
+            @include mq( $until: tablet ) {
+                opacity: .7;
+                @include transition( opacity 300ms 100ms, transform 500ms ease );
+                @include transform( translate3d( -70%, 0, 0 ) scale3d( .9, .9, .9 ) );
+                @include transform-origin( 50% 0 );
+            }
+        }
+    }
+
+    .csstransforms3d.csstransitions.js-nav & {
+
+        .site-nav__block {
+            @include mq( $until: tablet ) {
+                opacity: 1;
+                @include transform( translate3d( 0, 0, 0 ) );
+            }
+        }
+    }
+
+    .site-nav__block {
+        @include mq( $until: tablet ) {
+            margin: 0 auto;
+            z-index: 2;
+            position: relative;
+        }
+    }
+
+    /**
+     * 1. Overqualified. Rereference '.main-menu__link'
+     */
+    .main-menu {
+        @include mq( $until: tablet ) {
+            border-top: 1px solid lighten( $off-black, 6% );
+        }
+
+        > li {
+            @include mq( $until: tablet ) {
+                display: block;
+                border-bottom: 1px solid lighten( $off-black, 6% );
+            }
+
+            /* 1 */
+            // a {
+            //     @include mq( $until: tablet ) {
+            //         padding: 1em;
+            //         display: block;
+            //         color: $alto;
+            //     }
+
+            //     &:focus, &:hover {
+            //         @include mq( $until: tablet ) {
+            //             color: $shiraz;
+            //             background-color: $cape-cod;
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+
+
+
+
+/* Menu Toggle
+   ========================================================================== */
+
+/**
+ * 1. Keep above .menu
+ */
+.menu-toggle {
+    margin-top: 5px;
+    width: 3em;
+    height: 3em;
+    position: relative;
+    z-index: 201; /* 1 */
+    display: none;
+    border: 2px solid $alto;
+    border-radius: 2px;
+
+    &:hover,
+    .js-nav &:hover {
+        background-color: $shiraz;
+        border-color: $shiraz;
+    }
+    .js-nav & {
+        background-color: transparent;
+    }
+
+    @include mq( $until: tablet ) {
+        display: block;
+        float: right;
+    }
+}
+
+.menu-toggle__line {
+    margin-top: -1px;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: $shiraz;
+    -webkit-backface-visibility: hidden;
+    @include transition( background .15s );
+
+    .menu-toggle:hover & {
+        background-color: white;
+    }
+
+    .js-nav &,
+    .js-nav .menu-toggle:hover & {
+        background-color: rgba( white, 0 );
+
+        &:before,
+        &:after {
+            background-color: white;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background-color: inherit;
+        -webkit-backface-visibility: hidden;
+
+        .js-nav & {
+            background-color: $shiraz;
+        }
+    }
+
+    &:before {
+        @include transform( translateY( -6px ) );
+        @include transition( transform .3s );
+
+        .js-nav & {
+            @include transform( rotate( 45deg ) );
+        }
+    }
+
+    &:after {
+        @include transform( translateY( 6px ) );
+        @include transition( transform .3s );
+
+        .js-nav & {
+            @include transform( rotate( -45deg ) );
+        }
+    }
+}

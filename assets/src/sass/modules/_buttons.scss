@@ -1,0 +1,233 @@
+
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+%btn {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    line-height: normal;
+    padding: .75em 2.5em;
+    display: inline-block;
+    text-decoration: none;
+    background-color: $shiraz;
+    text-transform: capitalize;
+    @include rem( 'font-size', 18px );
+    @include transition-property( color, background, border );
+    @include transition-duration( .15s );
+}
+
+
+/* Main
+   ========================================================================== */
+
+.btn,
+input[type="submit"] {
+    @extend %btn;
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: lighten( $shiraz, 10% );
+    }
+}
+
+.btn--primary {
+    background-color: $shiraz;
+    color: white;
+    &:hover {
+        background-color: lighten( $shiraz, 10% );
+    }
+}
+
+.btn--secondary {
+    background-color: $off-white;
+    color: $shiraz;
+    &:hover {
+        color: $shiraz;
+        background-color: $mercury;
+    }
+}
+
+.btn--tertiary {
+    background-color: $font-color;
+    border: 1px solid $font-color;
+
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $font-color;
+        color: $font-color;
+    }
+}
+
+.btn--outline {
+    color: $shiraz;
+    border: 1px solid $shiraz;
+    background-color: transparent;
+    &:hover {
+        color: white;
+        background-color: $shiraz;
+    }
+}
+
+
+
+
+
+/* Sizes
+   ========================================================================== */
+
+.btn--xs {
+    font-size: 55%;
+}
+
+.btn--sm {
+    font-size: 70%
+}
+
+.btn--md {
+    font-size: 85%;
+}
+
+.btn--lg {
+    font-size: 115%;
+}
+
+.btn--xl {
+    font-size: 130%;
+}
+
+
+
+
+
+/* Shapes
+   ========================================================================== */
+
+.btn--round {
+    border-radius: 3px;
+}
+
+.btn--oval {
+    border-radius: 500px;
+}
+
+.btn--pill-right {
+    border-radius: 500px 0 0 500px
+}
+
+.btn--pill-left {
+    border-radius: 0 500px 500px 0;
+}
+
+
+
+
+
+/* Width
+   ========================================================================== */
+
+.btn--wide {
+    width: 100%;
+}
+
+.btn--half {
+    width: 50%;
+}
+
+.btn--third {
+    width: 33.33333%;
+}
+
+
+
+
+
+/* Icons
+   ========================================================================== */
+
+.btn--icon-left,
+.btn--icon-right {
+    position: relative;
+
+    [class^="icon-"], [class*=" icon-"] {
+        position: absolute;
+        top: 50%;
+        @include transform( translateY( -50% ) );
+    }
+}
+
+.btn--icon-left {
+    padding-left: 2.5em;
+
+    [class^="icon-"], [class*=" icon-"] {
+        left: .75em;
+    }
+}
+
+.btn--icon-right {
+    padding-right: 2.5em;
+
+    [class^="icon-"], [class*=" icon-"] {
+        right: 0.75em;
+    }
+}
+
+
+
+
+
+/* Colors
+   ========================================================================== */
+
+.btn--success {
+    background-color: $success;
+    color: white;
+
+    &:hover {
+        background-color: darken( $success, 10% );
+        color: white;
+    }
+}
+
+.btn--warning {
+    background-color: $warning;
+    color: white;
+
+    &:hover {
+        background-color: darken( $warning, 10% );
+        color: white;
+    }
+}
+
+.btn--error {
+    background-color: $error;
+    color: white;
+
+    &:hover {
+        background-color: darken( $error, 10% );
+        color: white;
+    }
+}
+
+
+
+
+
+/* Disabled
+   ========================================================================== */
+
+.btn[disabled],
+.btn--disabled,
+.btn--disabled:hover,
+.btn--disabled:focus,
+.btn--disabled:active {
+    background-color: $alto;
+    background-image: none;
+    box-shadow: none;
+    border: 0;
+    opacity: .4;
+    cursor: not-allowed;
+    color: $gray;
+}
