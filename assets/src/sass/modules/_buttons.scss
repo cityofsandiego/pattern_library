@@ -12,7 +12,7 @@
     padding: .75em 2.5em;
     display: inline-block;
     text-decoration: none;
-    background-color: $shiraz;
+    background-color: $cerulean;
     text-transform: capitalize;
     @include rem( 'font-size', 18px );
     @include transition-property( color, background, border );
@@ -29,23 +29,23 @@ input[type="submit"] {
     &:hover {
         color: white;
         text-decoration: none;
-        background-color: lighten( $shiraz, 10% );
+        background-color: lighten( $cerulean, 10% );
     }
 }
 
 .btn--primary {
-    background-color: $shiraz;
+    background-color: $cerulean;
     color: white;
     &:hover {
-        background-color: lighten( $shiraz, 10% );
+        background-color: lighten( $cerulean, 10% );
     }
 }
 
 .btn--secondary {
     background-color: $off-white;
-    color: $shiraz;
+    color: $cerulean;
     &:hover {
-        color: $shiraz;
+        color: $cerulean;
         background-color: $mercury;
     }
 }
@@ -62,12 +62,12 @@ input[type="submit"] {
 }
 
 .btn--outline {
-    color: $shiraz;
-    border: 1px solid $shiraz;
+    color: $cerulean;
+    border: 1px solid $cerulean;
     background-color: transparent;
     &:hover {
         color: white;
-        background-color: $shiraz;
+        background-color: $cerulean;
     }
 }
 

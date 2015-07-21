@@ -68,12 +68,27 @@
 
     // Color Names: http://chir.ag/projects/name-that-color/
 
-    // Project Specific
+    // old -- delete
     // ----------------------------------------------------------------------
     $shiraz                                  : #b20838; // burgundy
     $clay                                    : #27313a; // blue-gray
     $tuna                                    : #34363a; // gray
     $brand_green                             : #005030; // green
+
+    // Primary
+    // ----------------------------------------------------------------------
+
+    $cerulean                                : #0098db;
+    $robin                                   : #00c7b2;
+    $sunshade                                : #ffa02f;
+    $schoolbus                               : #fcd900;
+    $spruce                                  : #37424a;
+    $westar                                  : #dad7cb;
+
+    // Secondary
+    // ----------------------------------------------------------------------
+
+    $chateau                                 : #a7abad;
 
     // Global
     // ----------------------------------------------------------------------
@@ -118,10 +133,10 @@
 // Typography
 // ==========================================================================
 
-    $font-family                             : 'Lato', sans-serif;
-    $font-family-secondary                   : 'Playfair Display', serif;
+    $font-family                             : 'Open Sans', sans-serif;
+    $font-family-secondary                   : 'Merriweather', serif;
     $font-family-tertiary                    : 'Source Sans Pro', sans-serif;
     $font-size                               : 16px;
-    $font-color                              : $gray;
-    $link-color                              : $shiraz;
+    $font-color                              : $spruce;
+    $link-color                              : $spruce;
     $selection-highlight                     : $error;
