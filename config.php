@@ -7,3 +7,7 @@ if ( !defined('ABSPATH') )
 /** Absolute path to the project includes directory. */
 if ( !defined('PARTIALS') )
 	define('PARTIALS', 'partials' );
+
+/** Absolute path to the patterns includes directory. */
+if ( !defined('PATTERNS') )
+	define('PATTERNS', 'patterns' );

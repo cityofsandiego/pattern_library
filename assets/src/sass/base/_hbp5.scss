@@ -11,6 +11,7 @@
    ========================================================================== */
 
 body {
+    font-size: 16px;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -41,7 +42,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 2px solid $mercury;
+    border-top: 1px solid $alto;
     margin: 1em 0;
     padding: 0;
 }

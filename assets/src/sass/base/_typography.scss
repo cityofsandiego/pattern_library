@@ -9,7 +9,7 @@
  */
 h1, h2, h3, h4, h5, h6 {
     margin: .5em 0;
-    color: $tuna;
+    color: $spruce;
     font-weight: normal;
     font-family: $font-family-secondary;
 }
@@ -68,13 +68,16 @@ a {
 
 blockquote {
     margin: 0;
-    color: $tuna;
-    font-style: italic;
-    font-family: $font-family-secondary;
-    @include rem( 'font-size', 25px );
+    color: $font-color;
+    // font-style: italic;
+    // font-family: $font-family-secondary;
+    @include rem( 'font-size', 18px );
     .author {
         margin: 1em 0;
+        color: $font-color;
+        display: block;
         font-weight: 600;
+        text-align: right;
         font-style: normal;
         font-family: $font-family;
         text-transform: uppercase;
@@ -145,10 +148,10 @@ dd {
 /* Subheadline
    ========================================================================== */
 
-.subheadline {
-    color: $gray;
-    font-weight: 600;
-    font-family: $font-family;
+.subheading {
+    color: lighten( $cerulean, 15% );
+    @include rem( 'font-size', 20px );
+    font-family: $font-family-secondary;
 }
 
 

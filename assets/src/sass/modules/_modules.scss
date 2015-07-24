@@ -33,6 +33,101 @@ header {
 /* Navigation
    ========================================================================== */
 
+/* MEGA MENU */
+.main__navigation {
+    box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.3);
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    > ul > li {
+        margin: 0;
+        position: relative;
+        display: inline-block;
+        &:before {
+            content: '';
+            width: 1px;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            @extend %gray-gradient;
+        }
+        &:last-child {
+            &:after {
+                content: '';
+                width: 1px;
+                height: 100%;
+                right: 0;
+                bottom: 0;
+                position: absolute;
+                @extend %gray-gradient;
+            }
+        }
+        > a {
+            color: $spruce;
+            padding: .5em 1.5em;
+            @include rem( 'font-size', 13px );
+        }
+    }
+    a {
+        color: $shuttle;
+        display: block;
+        font-weight: 600;
+        line-height: 1.6;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include rem( 'font-size', 14px );
+        i {
+            color: $sunshade;
+            vertical-align: text-bottom;
+            @include rem( 'font-size', 18px );
+        }
+        span {
+            display: block;
+            font-weight: 400;
+            text-transform: capitalize;
+            @include rem( 'font-size', 11px );
+        }
+        &:hover {
+            color: black;
+        }
+    }
+    .has__dropdown {
+        .dropdown {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            background: white;
+            @include mq( $from: tablet ) {
+                min-width: 700px;
+            }
+        }
+        &:hover {
+            .dropdown {
+                display: block;
+            }
+        }
+        .nav__heading {
+            margin-bottom: .25em;
+            border-bottom: 1px solid $alto;
+            @include rem( 'font-size', 54px );
+            font-family: $font-family-secondary;
+        }
+    }
+    .nav__event {
+        @include rem( 'font-size', 13px );
+        a {
+            color: $cerulean;
+            text-transform: capitalize;
+            text-decoration: underline;
+        }
+    }
+}
+
 .sub__nav--wrap {
     margin-bottom: 1em;
     background: $spruce;
@@ -84,6 +179,28 @@ header {
     }
 }
 
+.code__examples {
+    padding: .5em;
+    background: $off-white;
+    border: 1px solid $mercury;
+    @include rem( 'font-size', 13px );
+    .tag {
+        color: blue;
+    }
+    .title {
+        color: blue;
+    }
+    .attribute {
+        color: green;
+    }
+    .value {
+        color: red;
+    }
+    .content {
+        color: black;
+    }
+}
+
 /* Hero
    ========================================================================== */
 
@@ -91,7 +208,136 @@ header {
 
 /* Cards
    ========================================================================== */
+%card {
+    background: white;
+    border-radius: 4px;
+}
 
+.card {
+    @extend %card;
+    @include mq( $from: tablet ) {
+    }
+    a {
+        text-decoration: none;
+    }
+
+    &.background-off-white {
+        background: $off-white;
+    }
+}
+
+.card__container {
+    background: $westar;
+    display: -webkit-inline-flex; /* Safari */
+    display: inline-flex;
+    -webkit-justify-content: center; /* Safari */
+    justify-content:         center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    .card__wrap {
+        padding: .75em;
+        @include mq( mobile-landscape, tablet ) {
+            @include span( 6 );
+        }
+        @include mq( $from: tablet ) {
+            @include span( 4 );
+        }
+    }
+    .card__content {
+        padding: 1em;
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+        }
+    }
+    .card__headline {
+        font-family: $font-family-secondary;
+        @include rem( 'font-size', 16px );
+    }
+    .card__meta {
+        margin: 1em 0;
+        a {
+            color: $cerulean;
+            text-decoration: underline;
+        }
+    }
+    .card__image {
+        img {
+            width: 100%;
+            border-radius: 4px 4px 0 0;
+        }
+    }
+    .card__btn {
+        display: block;
+        font-weight: 600;
+    }
+}
+
+
+.card__cta {
+    
+}
+
+.card__cta--graphic {
+    text-align: center;
+    background {
+        position: center center;
+        repeat: no-repeat;
+    }
+    > a {
+        display: block;
+        padding: 1.5em;
+        position: relative;
+        &:before {
+            content:'';
+            display: block;
+            background: black;
+            width: 100%; height: 100%;
+            position: absolute;
+            top: 0; left: 0;
+            opacity: 0;
+            transition: opacity .25s ease;
+        }
+        &:hover {
+            &:before {
+                opacity: .1;
+            }
+        }
+    }
+    a {
+        @include rem( 'font-size', 16px );
+    }
+    p {
+        color: white;
+        @include rem( 'font-size', 18px );
+        font-family: $font-family-secondary;
+    }
+}
+
+/* Alerts
+   ========================================================================== */
+.alert {
+    color: white;
+    background: $science;
+    p {
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+        }
+    }
+    i {
+        @include rem( 'font-size', 32px );
+    }
+    .alert__heading {
+        color: white;
+        padding: .2em .5em;
+        margin-bottom: .5em;
+        @include rem( 'font-size', 24px );
+        font-family: $font-family-secondary;
+        background: lighten( $science, 5% );
+    }
+    .alert__content {
+        padding: 0 .75em;
+    }
+}
 
 /* Menu List
    ========================================================================== */
@@ -120,3 +366,190 @@ header {
 
 /* Accordion
    ========================================================================== */
+.accordions {
+    margin: 1em 0;
+}
+.accordion {
+    margin: 0 0 1em 0;
+    // border: 1px solid $alto;
+    @include transition( border .25s );
+
+    &:hover,
+    &.is-open {
+        // border-color: $mercury;
+    }
+}
+.accordion__heading {
+    margin: 0;
+    position: relative;
+}
+.accordion__link {
+    // padding: .75em 2.5em .75em .75em;
+    // display: block;
+    // font-weight: 300;
+    // color: $off-black;
+    // @include rem( 'font-size', 24px );
+    // &:hover {
+    //     color: $cerulean;
+    // }
+    // &.current {
+    //     color: $cerulean;
+    // }
+    text-decoration: none;
+}
+.accordion__drawer {
+    padding: 1em;
+    display: none;
+    .no-js & {
+        display: block;
+    }
+}
+// .toggle-icon {
+//     margin-top: -0.75em;
+//     width: 1.5em;
+//     height: 1.5em;
+//     line-height: 1.5em;
+//     display: inline-block;
+//     position: absolute;
+//     right: 1em;
+//     top: 50%;
+//     overflow: hidden;
+//     border: 1px solid $cerulean;
+//     border-radius: 500px;
+//     .csstransforms3d & {
+//         @include rotate( 0deg );
+//         @include transition( transform .25s );
+//     }
+//     &:before,
+//     &:after {
+//         content: "";
+//         position: absolute;
+//         display: block;
+//         background: $cerulean;
+//         .csstransforms3d & {
+//             top: 50%;
+//             left: 50%;
+//             @include translate3d( -50%, -50%, 0 );
+//             @include transition( transform .25s, opacity .25s );
+//         }
+//     }
+//     &:before {
+//         margin-top: -1px;
+//         width: 100%;
+//         height: 2px;
+//         top: 50%;
+//         .csstransforms3d & {
+//             margin-top: auto;
+//             width: 50%;
+//         }
+//     }
+//     &:after {
+//         margin-left: -1px;
+//         height: 100%;
+//         width: 2px;
+//         left: 50%;
+//         .csstransforms3d & {
+//             margin-left: auto;
+//             height: 50%;
+//         }
+//     }
+//     .is-open & {
+//         .csstransforms3d & {
+//             @include rotate( 90deg );
+//             &:before {
+//                 @include translate3d( 100%, -50%, 0 );
+//                 @include opacity( 0 );
+//             }
+//         }
+//     }
+// }
+
+.table__accordion {
+    margin: 0;
+    padding: 0;
+    .accordion__drawer{
+        padding: 0;
+        display: block;
+        @include mq( $until: tablet ) {
+            display: none;
+        }
+    }
+    .accordion__heading {
+        line-height: 2.5;
+    }
+    @include mq( $from: tablet ) {
+        td,
+        th {
+            &:first-child {
+                width: 40%;
+            }
+        }
+    }
+    @include mq( $until: tablet ) {
+        td,
+        th {
+            border: none;
+            @include span( 4 );
+            &:nth-child(2),
+            &:nth-child(3) {
+                text-align: right;
+            }
+        }
+    }
+    @include mq( $until: mobile-landscape ) {
+        table {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+   /* Tables
+   ========================================================================== */
+table {
+    background: $off-white;
+    th {
+        text-align: left;
+        background: transparent;
+        border-bottom: 1px solid $alto;
+        font-family: $font-family-secondary;
+    }
+
+    tr {
+        line-height: 1.6;
+        &:nth-child(odd) {
+            background: $mercury;
+        }
+        &.subheading,
+        &:first-child {
+            background: transparent;
+        }
+
+        &.subheading {
+            td {
+                padding-left: 0;
+                @include mq( $from: tablet ) {
+                    line-height: 2.5;
+                    @include rem( 'font-size', 16px );
+                }
+            }
+        }
+    }
+
+    td {
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+            &:first-child {
+                max-width: 
+            }
+        }
+        &:first-child {
+            padding-left: .5em;
+        }
+        &.table--break {
+            padding-left: 0;
+        }
+    }
+}

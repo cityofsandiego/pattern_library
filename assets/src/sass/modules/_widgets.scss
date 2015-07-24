@@ -35,7 +35,7 @@
 	}
 	.count {
 		float: right;
-		color: $shiraz;
+		color: $sunshade;
 		text-decoration: underline;
 		&:before {
 			content: '(';
@@ -49,14 +49,14 @@
 // Tags
 .widget_tag_cloud {
 	a {
-		color: $tuna;
+		color: $spruce;
 		background: white;
 		border-radius: 2px;
 		margin: .3em .25em;
 		padding: .5em .75em;
 		display: inline-block;
 		text-decoration: none;
-		box-shadow: 1px 1px 1px -1px $tuna;
+		box-shadow: 1px 1px 1px -1px $spruce;
 		&:hover {
 			color: $gray;
 			box-shadow: 1px 1px 1px -1px $gray;
@@ -74,7 +74,7 @@
 	}
 	.entry-meta {
 		a {
-			color: $shiraz;
+			color: $sunshade;
 			text-decoration: underline;
 		}
 	}

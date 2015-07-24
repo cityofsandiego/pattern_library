@@ -133,7 +133,7 @@
 
             //     &:focus, &:hover {
             //         @include mq( $until: tablet ) {
-            //             color: $shiraz;
+            //             color: $sunshade;
             //             background-color: $cape-cod;
             //         }
             //     }
@@ -164,8 +164,8 @@
 
     &:hover,
     .js-nav &:hover {
-        background-color: $shiraz;
-        border-color: $shiraz;
+        background-color: $sunshade;
+        border-color: $sunshade;
     }
     .js-nav & {
         background-color: transparent;
@@ -186,7 +186,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: $shiraz;
+    background-color: $sunshade;
     -webkit-backface-visibility: hidden;
     @include transition( background .15s );
 
@@ -215,7 +215,7 @@
         -webkit-backface-visibility: hidden;
 
         .js-nav & {
-            background-color: $shiraz;
+            background-color: $sunshade;
         }
     }
 

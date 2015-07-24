@@ -54,7 +54,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-    border-color: $shiraz;
+    border-color: $sunshade;
     outline: none;
 }
 
@@ -105,7 +105,7 @@ textarea {
     }
     button[type="submit"] {
         color: white;
-        background-color: $shiraz;
+        background-color: $sunshade;
         i {
             @include rem( 'font-size', 24px );
         }
@@ -114,7 +114,7 @@ textarea {
             padding: .25em .5em;
         }
         &:hover {
-            background: lighten( $shiraz, 10% );
+            background: lighten( $sunshade, 10% );
         }
     }
     label {
@@ -130,7 +130,7 @@ textarea {
     }
     .select-wrap:after {
         content:'';
-        color: $shiraz;
+        color: $sunshade;
         background: url(../img/select-arrow.png) no-repeat;
         display: block;
         width: 8px;
@@ -167,13 +167,13 @@ textarea {
         margin: 0;
         width: auto;
         color: white;
-        background: darken( $shiraz, 10% );
+        background: darken( $sunshade, 10% );
         @include mq( $from: tablet ) {
             min-height: 48px;
         }
     }
     button[type="submit"] {
-        color: $shiraz;
+        color: $sunshade;
         @extend %white-gradient;
         @include mq( $from: tablet ) {
             min-height: 48px;

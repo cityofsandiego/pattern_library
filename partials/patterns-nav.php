@@ -1,18 +1,19 @@
+
 <nav>
     <ul>
-        <li><a href="" class="active">Layout (Grid?)</a></li>
-        <li><a href="">Typography</a></li>
-        <li><a href="">Card Teaser</a></li>
-        <li><a href="">Media</a></li>
-        <li><a href="">Forms</a></li>
-        <li><a href="">Navigation</a></li>
-        <li><a href="">Components</a></li>
-        <li><a href="">Messaging</a></li>
-        <li><a href="">Call to Action</a></li>
-        <li><a href="">List Teaser</a></li>
-        <li><a href="">Comment Thread</a></li>
-        <li><a href="">Charts/Graphs</a></li>
-        <li><a href="">Modal</a></li>
-        <li><a href="">Stats Block</a></li>
+        <li><a class="<?php if ($current_page == "index.php"){ echo "active "; }?>" href="/">Grid</a></li>
+        <li><a class="<?php if ($current_page == "typography.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/typography.php'; ?>">Typography</a></li>
+        <li><a class="<?php if ($current_page == "cards.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/cards.php'; ?>">Card Teaser</a></li>
+        <li><a class="<?php if ($current_page == "media.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/media.php'; ?>">Media</a></li>
+        <li><a class="<?php if ($current_page == "forms.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/forms.php'; ?>">Forms</a></li>
+        <li><a class="<?php if ($current_page == "navigation.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/navigation.php'; ?>">Navigation</a></li>
+        <li><a class="<?php if ($current_page == "components.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/components.php'; ?>">Components</a></li>
+        <li><a class="<?php if ($current_page == "messaging.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/messaging.php'; ?>">Messaging</a></li>
+        <li><a class="<?php if ($current_page == "calltoaction.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/calltoaction.php'; ?>">Call to Action</a></li>
+        <li><a class="<?php if ($current_page == "list-teaser.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/list-teaser.php'; ?>">List Teaser</a></li>
+        <li><a class="<?php if ($current_page == "comments.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/comments.php'; ?>">Comment Thread</a></li>
+        <li><a class="<?php if ($current_page == "charts-graphs.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/charts-graphs.php'; ?>">Charts/Graphs</a></li>
+        <li><a class="<?php if ($current_page == "modal.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/modal.php'; ?>">Modal</a></li>
+        <li><a class="<?php if ($current_page == "stats-block.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/stats-block.php'; ?>">Stats Block</a></li>
     </ul>
 </nav>

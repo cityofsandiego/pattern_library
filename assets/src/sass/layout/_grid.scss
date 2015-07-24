@@ -29,7 +29,7 @@
  * Float last column in row to the right
  */
 [class*="grid__col"] + [class*="grid__col"]:last-child {
-    @include mq( $from: tablet ) {
+    @include mq( $from: mobile-landscape ) {
         float: right;
     }
 }
@@ -45,11 +45,11 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
     $class: nth( $classes, $i );
 
     .#{$class} {
-        @include mq( $from: tablet ) {
+        @include mq( $from: mobile-landscape ) {
             @include span( $i );
         }
         &.no-gutters {
-            @include mq( $from: tablet ) {
+            @include mq( $from: mobile-landscape ) {
                 padding-left: 0;
                 padding-right: 0;
             }
