@@ -4,6 +4,15 @@
         <script src="/assets/dist/js/plugins.js"></script>
         <script src="/assets/dist/js/main.js"></script>
 
+        <script>
+          var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+            lineNumbers: true,
+            mode: "application/x-ejs",
+            indentUnit: 1,
+            indentWithTabs: true
+          });
+        </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

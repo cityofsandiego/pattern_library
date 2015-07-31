@@ -70,7 +70,10 @@ module.exports = function ( grunt ) {
                         '<%= config.src %>/js/plugins/jquery.cycle2.js',
                         '<%= config.src %>/js/plugins/jquery.flexslider.js',
                         '<%= config.src %>/js/plugins/jquery.cycle2.swipe.js',
-                        '<%= config.src %>/js/plugins/offcanvas.js'
+                        '<%= config.src %>/js/plugins/offcanvas.js',
+                        '<%= config.src %>/js/plugins/codemirror.js',
+                        '<%= config.src %>/js/plugins/javascript.js',
+                        '<%= config.src %>/js/plugins/htmlembedded.js'
                     ]
                 }
             }

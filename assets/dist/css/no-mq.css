@@ -836,8 +836,8 @@ p.nav-ex {
     /* IE6-9 */
 }
 
-.main__navigation li:before,
-.main__navigation li:last-child:after {
+.main__navigation > ul > li:before,
+.main__navigation > ul > li:last-child:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
     background: #fff;
     /* Old browsers */
@@ -1058,10 +1058,11 @@ dd {
 
 /* Subheadline
    ========================================================================== */
-.subheadline {
-    font-family: "Open Sans", sans-serif; 
-    font-weight: 600;
-    color: #656667;
+.subheading {
+    font-family: "Merriweather", serif; 
+    font-size: 20px;
+    font-size: 1.25rem;
+    color: #28bdff;
 }
 
 /* Formatting
@@ -2037,6 +2038,7 @@ header nav a {
 
 /* Navigation
    ========================================================================== */
+/* MEGA MENU */
 .main__navigation {
     box-shadow: 0 5px 6px -5px rgba(0, 0, 0, .3);
 }
@@ -2045,12 +2047,12 @@ header nav a {
     padding: 0;
     list-style: none;
 }
-.main__navigation li {
+.main__navigation > ul > li {
     position: relative;
     display: inline-block; 
     margin: 0;
 }
-.main__navigation li:before {
+.main__navigation > ul > li:before {
     position: absolute; 
     bottom: 0;
     left: 0;
@@ -2058,7 +2060,7 @@ header nav a {
     height: 100%;
     content: "";
 }
-.main__navigation li:last-child:after {
+.main__navigation > ul > li:last-child:after {
     position: absolute; 
     right: 0;
     bottom: 0;
@@ -2066,15 +2068,21 @@ header nav a {
     height: 100%;
     content: "";
 }
-.main__navigation a {
+.main__navigation > ul > li > a {
     font-size: 13px;
     font-size: .8125rem; 
+    padding: .5em 1.5em;
+    color: #37424a;
+}
+.main__navigation a {
+    font-size: 14px;
+    font-size: .875rem; 
     font-weight: 600;
     line-height: 1.6;
     display: block;
-    padding: .5em 1.5em;
     text-decoration: none;
     text-transform: uppercase;
+    color: #5d676f;
 }
 .main__navigation a i {
     font-size: 18px;
@@ -2098,10 +2106,27 @@ header nav a {
     left: 0;
     display: none;
     width: 100%;
+    min-width: 700px; 
     background: white;
 }
 .main__navigation .has__dropdown:hover .dropdown {
     display: block;
+}
+.main__navigation .has__dropdown .nav__heading {
+    font-family: "Merriweather", serif; 
+    font-size: 54px;
+    font-size: 3.375rem;
+    margin-bottom: .25em;
+    border-bottom: 1px solid #d6d7d8;
+}
+.main__navigation .nav__event {
+    font-size: 13px;
+    font-size: .8125rem;
+}
+.main__navigation .nav__event a {
+    text-decoration: underline; 
+    text-transform: capitalize;
+    color: #0098db;
 }
 
 .sub__nav--wrap {
@@ -2176,6 +2201,18 @@ header nav a {
    ========================================================================== */
 /* Cards
    ========================================================================== */
+.card {
+    border-radius: 4px; 
+    background: white;
+}
+
+.card a {
+    text-decoration: none;
+}
+.card.background-off-white {
+    background: #f6f6f6;
+}
+
 .card__container {
     display: -webkit-inline-flex;
     /* Safari */
@@ -2194,16 +2231,6 @@ header nav a {
     padding: .75em;
     padding-right: 1.0416588541%; 
     padding-left: 1.0416588541%;
-}
-.card__container .card {
-    border-radius: 4px; 
-    background: white;
-}
-.card__container .card a {
-    text-decoration: none;
-}
-.card__container .card.background-off-white {
-    background: #f6f6f6;
 }
 .card__container .card__content {
     font-size: 13px;
@@ -2229,6 +2256,72 @@ header nav a {
 .card__container .card__btn {
     font-weight: 600; 
     display: block;
+}
+
+.card__cta--graphic {
+    text-align: center;
+}
+.card__cta--graphic background {
+    position: center center;
+
+    repeat: no-repeat;
+}
+.card__cta--graphic > a {
+    position: relative; 
+    display: block;
+    padding: 1.5em;
+}
+.card__cta--graphic > a:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    transition: opacity .25s ease; 
+    opacity: 0;
+    background: black;
+}
+.card__cta--graphic > a:hover:before {
+    opacity: .1;
+}
+.card__cta--graphic a {
+    font-size: 16px;
+    font-size: 1rem;
+}
+.card__cta--graphic p {
+    font-family: "Merriweather", serif; 
+    font-size: 18px;
+    font-size: 1.125rem;
+    color: white;
+}
+
+/* Alerts
+   ========================================================================== */
+.alert {
+    color: white;
+    background: #005bbb;
+}
+.alert p {
+    font-size: 13px;
+    font-size: .8125rem;
+}
+.alert i {
+    font-size: 32px;
+    font-size: 2rem;
+}
+.alert .alert__heading {
+    font-family: "Merriweather", serif;
+    font-size: 24px;
+    font-size: 1.5rem;
+    margin-bottom: .5em;
+    padding: .2em .5em;
+    color: white;
+    background: #0067d4;
+}
+.alert .alert__content {
+    padding: 0 .75em;
 }
 
 /* Menu List
@@ -2432,8 +2525,8 @@ table td.table--break {
 
 .btn,
 input[type="submit"] {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 16px;
+    font-size: 1rem;
     line-height: normal;
     position: relative;
     display: inline-block;
@@ -2461,6 +2554,26 @@ input[type="submit"]:hover {
     color: white;
     background-color: #0fb6ff;
 }
+.btn i,
+input[type="submit"] i {
+    padding: .25em;
+    text-align: center; 
+    color: #0098db;
+    border-radius: 50%;
+    background: white;
+}
+.btn .icon-arrow-right,
+.btn .icon-arrow-left,
+input[type="submit"] .icon-arrow-right,
+input[type="submit"] .icon-arrow-left {
+    font-size: 150%;
+    line-height: .4; 
+    padding: 0;
+    vertical-align: sub;
+    color: white;
+    border-radius: 0;
+    background: transparent;
+}
 
 .btn--primary {
     color: white; 
@@ -2471,22 +2584,23 @@ input[type="submit"]:hover {
 }
 
 .btn--secondary {
-    color: #0098db; 
-    background-color: #f6f6f6;
+    background-color: #ffa02f;
 }
 .btn--secondary:hover {
-    color: #0098db;
-    background-color: #e4e9eb;
+    background-color: #ffb762;
+}
+.btn--secondary i {
+    color: #ffa02f;
 }
 
 .btn--tertiary {
-    border: 1px solid #37424a; 
     background-color: #37424a;
 }
 .btn--tertiary:hover {
-    color: #37424a; 
-    border: 1px solid #37424a;
-    background-color: transparent;
+    background-color: #4d5c67;
+}
+.btn--tertiary i {
+    color: #37424a;
 }
 
 .btn--outline {
@@ -2573,7 +2687,7 @@ input[type="submit"]:hover {
 }
 
 .btn--icon-left {
-    padding-left: 2.5em;
+    padding-left: 3.5em;
 }
 .btn--icon-left [class^="icon-"],
 .btn--icon-left [class*=" icon-"] {
@@ -2581,7 +2695,7 @@ input[type="submit"]:hover {
 }
 
 .btn--icon-right {
-    padding-right: 2.5em;
+    padding-right: 3.5em;
 }
 .btn--icon-right [class^="icon-"],
 .btn--icon-right [class*=" icon-"] {

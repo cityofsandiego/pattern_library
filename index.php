@@ -73,21 +73,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <div class="l-container l-margin-vl">
                     <div class="row">
-                        <div class="six columns">
+                        <div class="twelve columns">
                             <div class="code__examples">
-                                <code>
-                                    <span class="tag"><span class="title">&lt;div</span> <span class="attribute">class</span>=<span class="value">"row"</span>&gt;</span><br>
-                                    <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;    <span class="title">&lt;div</span> <span class="attribute">class</span>=<span class="value">"four columns"</span>&gt; <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="content">...</span> <br>
-                                    <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;    <span class="title">&lt;/div&gt;</span> <br>
-                                    <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;    <span class="title">&lt;div</span> <span class="attribute">class</span>=<span class="value">"eight columns"</span>&gt; <br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="content">...</span> <br>
-                                    <span class="tag">&nbsp;&nbsp;&nbsp;&nbsp;    <span class="title">&lt;/div&gt;</span> <br>
-                                    &lt;/div&gt;
-                                </code>
-                            </div>
+                                <form><textarea id="code" name="code">
+<%
+function hello(who) {
+    return "Hello " + who;
+}
+%>
+This is an example of EJS (embedded javascript)
+<p>The program says <%= hello("world") %>.</p>
+<script>
+    alert("And here is some normal JS code"); // also colored
+</script></textarea> </form> </div>
                         </div>
-                        <div class="six columns">
+                    </div>
+                    <div class="row l-margin-tm">
+                        <div class="twelve columns">
                             <p><strong>Notes</strong></p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>
