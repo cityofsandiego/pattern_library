@@ -84,7 +84,7 @@ function hello(who) {
 This is an example of EJS (embedded javascript)
 <p>The program says <%= hello("world") %>.</p>
 <script>
-    alert("And here is some normal JS code"); // also colored
+    alert("And here is some normal JS code");
 </script></textarea> </form> </div>
                         </div>
                     </div>
