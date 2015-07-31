@@ -1,5 +1,7 @@
 # City of San Diego Web Pattern Library
 
+![](https://github.com/cityofsandiego/pattern_library/blob/master/assets/src/img/logo-mark.png?raw=true)
+
 ## Pre-requisites
 
 * Node.js (https://nodejs.org/)
