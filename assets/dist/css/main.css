@@ -860,28 +860,28 @@ p.nav-ex {
 
 /* Gradient
    ========================================================================== */
+.main__navigation .dropdown,
 .form--signup button[type="submit"] {
-    background: white;
-    /* Old browsers */
-    background:    -moz-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0.9+0,1+100 */
+    background:    -moz-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #e6e6e6));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, .9)), color-stop(100%, #fff));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* Chrome10+,Safari5.1+ */
-    background:      -o-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+    background:      -o-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* Opera 11.10+ */
-    background:     -ms-linear-gradient(top, #fff 0%, #e6e6e6 100%);
+    background:     -ms-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* IE10+ */
-    background: linear, to bottom, white 0, #e6e6e6 100%;
+    background: linear, to bottom, rgba(255, 255, 255, .9) 0, white 100%;
     /* W3C */
 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );
     /* IE6-9 */
 }
 
-.main__navigation > ul > li:before,
-.main__navigation > ul > li:last-child:after {
+.main__navigation > ul > li > a:before,
+.main__navigation > ul > li:last-child > a:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
     background: #fff;
     /* Old browsers */
@@ -1132,7 +1132,7 @@ dd {
 .l-constrained,
 .l-constrained--wide {
     width: 100%;
-    max-width: 960px; 
+    max-width: 1200px; 
     margin: 0 auto;
 }
 
@@ -2618,7 +2618,7 @@ dd {
 /**
  * Output column classes
  */
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .one {
         float: left;
         width: 8.3333333333%;
@@ -2626,14 +2626,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .one.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .two {
         float: left;
         width: 16.6666666667%;
@@ -2641,14 +2641,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .two.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .three {
         float: left;
         width: 25%;
@@ -2656,14 +2656,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .three.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .four {
         float: left;
         width: 33.3333333333%;
@@ -2671,14 +2671,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .four.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .five {
         float: left;
         width: 41.6666666667%;
@@ -2686,14 +2686,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .five.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .six {
         float: left;
         width: 50%;
@@ -2701,14 +2701,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .six.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .seven {
         float: left;
         width: 58.3333333333%;
@@ -2716,14 +2716,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .seven.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .eight {
         float: left;
         width: 66.6666666667%;
@@ -2731,14 +2731,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .eight.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .nine {
         float: left;
         width: 75%;
@@ -2746,14 +2746,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .nine.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .ten {
         float: left;
         width: 83.3333333333%;
@@ -2761,14 +2761,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .ten.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .eleven {
         float: left;
         width: 91.6666666667%;
@@ -2776,14 +2776,14 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .eleven.no-gutters {
         padding-right: 0; 
         padding-left: 0;
     }
 }
 
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .twelve {
         float: left;
         width: 100%;
@@ -2791,7 +2791,7 @@ dd {
         padding-left: 1.0416588541%;
     }
 }
-@media screen and (min-width: 30em) {
+@media screen and (min-width: 48em) {
     .twelve.no-gutters {
         padding-right: 0; 
         padding-left: 0;
@@ -2969,48 +2969,103 @@ header nav a {
    ========================================================================== */
 /* MEGA MENU */
 .main__navigation {
-    box-shadow: 0 5px 6px -5px rgba(0, 0, 0, .3);
+    position: relative;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .3);
 }
 .main__navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+@media screen and (min-width: 48em) {
+    .main__navigation > ul {
+        display: block;
+        /* Fallback IE9 */
+        display: -webkit-flex;
+        /* Safari */
+        display:         flex;
+        overflow: hidden;
+        min-height: 63px;
+
+        -webkit-justify-content: space-between;
+        /* Safari */
+                justify-content: space-between;
+        -webkit-flex-wrap: nowrap;
+        /* Safari */
+                flex-wrap: nowrap;
+    }
+}
 .main__navigation > ul > li {
     position: relative;
-    display: inline-block; 
     margin: 0;
+    transition: background .15s ease;
 }
-.main__navigation > ul > li:before {
-    position: absolute; 
-    bottom: 0;
-    left: 0;
-    width: 1px;
-    height: 100%;
-    content: "";
+@media screen and (min-width: 48em) {
+    .main__navigation > ul > li {
+        position: static;
+        float: left;
+        width: 16.6666666667%;
+        border-bottom: none;
+    }
+    .main__navigation > ul > li > a:before {
+        position: absolute; 
+        bottom: 0;
+        left: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+    }
+    .main__navigation > ul > li:last-child > a:after {
+        position: absolute; 
+        right: 0;
+        bottom: 0;
+        width: 1px;
+        height: 100%;
+        content: "";
+    }
 }
-.main__navigation > ul > li:last-child:after {
-    position: absolute; 
-    right: 0;
-    bottom: 0;
-    width: 1px;
-    height: 100%;
-    content: "";
+@media screen and (max-width: 47.99em) {
+    .main__navigation > ul > li {
+        border-bottom-style: 1px dashed #37424a;
+    }
 }
 .main__navigation > ul > li > a {
     font-size: 13px;
     font-size: .8125rem; 
-    padding: .5em 1.5em;
-    color: #37424a;
+    padding: 1em 1em;
+    transition: color .15s ease;
+    color: white;
+}
+@media screen and (min-width: 48em) {
+    .main__navigation > ul > li > a {
+        color: #37424a;
+    }
+}
+@media screen and (max-width: 47.99em) {
+    .main__navigation > ul > li > a {
+        background: #222;
+    }
+}
+.main__navigation > ul > li a {
+    text-transform: uppercase;
+}
+.main__navigation > ul > li.current > a,
+.main__navigation > ul > li.current > a i,
+.main__navigation > ul > li.current > a span,
+.main__navigation > ul > li:hover > a,
+.main__navigation > ul > li:hover > a i,
+.main__navigation > ul > li:hover > a span {
+    color: white;
+    background: #e89e3b;
 }
 .main__navigation a {
     font-size: 14px;
     font-size: .875rem; 
     font-weight: 600;
     line-height: 1.6;
+    position: relative;
     display: block;
     text-decoration: none;
-    text-transform: uppercase;
     color: #5d676f;
 }
 .main__navigation a i {
@@ -3029,37 +3084,64 @@ header nav a {
 .main__navigation a:hover {
     color: black;
 }
-.main__navigation .has__dropdown .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    width: 100%;
-    background: white;
-}
-@media screen and (min-width: 48em) {
-    .main__navigation .has__dropdown .dropdown {
-        min-width: 700px;
-    }
-}
 .main__navigation .has__dropdown:hover .dropdown {
     display: block;
 }
-.main__navigation .has__dropdown .nav__heading {
+.main__navigation .dropdown {
+    z-index: 1;
+    padding: 1em;
+}
+@media screen and (max-width: 47.99em) {
+    .main__navigation .dropdown {
+        background: transparent;
+    }
+    .main__navigation .dropdown * {
+        color: white;
+    }
+}
+@media screen and (min-width: 48em) {
+    .main__navigation .dropdown {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        width: 100%;
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
+    }
+}
+.main__navigation .dropdown h4 {
+    text-transform: capitalize;
+}
+.main__navigation .dropdown .nav__heading {
     font-family: "Merriweather", serif; 
     font-size: 54px;
     font-size: 3.375rem;
     margin-bottom: .25em;
+}
+.main__navigation .dropdown .nav__heading p {
     border-bottom: 1px solid #d6d7d8;
 }
-.main__navigation .nav__event {
+.main__navigation .dropdown .border--bottom {
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom-style: dashed;
+}
+.main__navigation .dropdown .nav__event {
     font-size: 13px;
     font-size: .8125rem;
+    clear: both;
+    overflow: hidden;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
 }
-.main__navigation .nav__event a {
+.main__navigation .dropdown .nav__event a {
     text-decoration: underline; 
     text-transform: capitalize;
     color: #0098db;
+}
+.main__navigation .dropdown .nav__event img {
+    float: left;
+    margin-right: 1em;
 }
 
 .sub__nav--wrap {
@@ -4151,7 +4233,8 @@ textarea {
         right: -70%;
         width: 70%;
         height: 100%;
-        background-color: #1d1d1d;
+        color: white;
+        background-color: #37424a;
         box-shadow: inset 1.5em 0 1.5em -.75em rgba(0, 0, 0, .25);
     }
 }

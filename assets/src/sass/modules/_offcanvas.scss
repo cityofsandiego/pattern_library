@@ -62,7 +62,8 @@
             height: 100%;
             width: 70%;
             right: -70%;
-            background-color: darken( $off-black, 2% );
+            color: white;
+            background-color: $spruce;
             box-shadow: inset 1.5em 0 1.5em -.75em rgba( black, .25 );
         }
 

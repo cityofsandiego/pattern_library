@@ -128,7 +128,7 @@
             if ( inner ) {
 
                 // open nav with main "nav" button
-                // document.getElementById('nav-open-btn').addEventListener('click', app.toggleNav, false);
+                document.getElementById('nav-open-btn').addEventListener('click', app.toggleNav, false);
 
                 // close nav with main "close" button
                 // document.getElementById('nav-close-btn').addEventListener('click', app.toggleNav, false);

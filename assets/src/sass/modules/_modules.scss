@@ -35,50 +35,110 @@ header {
 
 /* MEGA MENU */
 .main__navigation {
-    box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.3);
+    position: relative;
+    box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
+
     ul {
         margin: 0;
         padding: 0;
         list-style: none;
+
     }
-    > ul > li {
-        margin: 0;
-        position: relative;
-        display: inline-block;
-        &:before {
-            content: '';
-            width: 1px;
-            height: 100%;
-            left: 0;
-            bottom: 0;
-            position: absolute;
-            @extend %gray-gradient;
+
+    > ul {
+
+        @include mq( $from: tablet ) {
+            min-height: 63px;
+            overflow: hidden;
+            display: block; /* Fallback IE9 */
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            -webkit-justify-content: space-between; /* Safari */
+            justify-content:         space-between;
+            -webkit-flex-wrap: nowrap; /* Safari */
+            flex-wrap:         nowrap;
         }
-        &:last-child {
-            &:after {
-                content: '';
-                width: 1px;
-                height: 100%;
-                right: 0;
-                bottom: 0;
-                position: absolute;
-                @extend %gray-gradient;
+
+        > li {
+            margin: 0;
+            position: relative;
+            transition: background .15s ease;
+
+            @include mq( $from: tablet ) {
+                @include span( 2 no-gutters );
+                position: static;
+                border-bottom: none;
+
+                > a:before {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    left: 0;
+                    bottom: 0;
+                    position: absolute;
+                    @extend %gray-gradient;
+                }
+
+                &:last-child > a:after {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    right: 0;
+                    bottom: 0;
+                    position: absolute;
+                    @extend %gray-gradient;
+                }
             }
+
+            @include mq( $until: tablet ) {
+                border-bottom: 1px dashed $spruce;
+            }
+
+            > a {
+                color: white;
+                padding: 1em 1.5em;
+                
+                transition: color .15s ease;
+                @include rem( 'font-size', 13px );
+
+                @include mq( $from: tablet ) {
+                    color: $spruce;
+                }
+
+                @include mq( $until: tablet ) {
+
+                    background: $off-black;
+                }
+
+            }
+
+            a {
+                text-transform: uppercase;
+            }
+
+            &.current,
+            &:hover {
+                > a,
+                > a i,
+                > a span {
+                    color: white;
+                    background: $tulip;
+                }
+            }
+
         }
-        > a {
-            color: $spruce;
-            padding: .5em 1.5em;
-            @include rem( 'font-size', 13px );
-        }
+
     }
+
     a {
         color: $shuttle;
         display: block;
         font-weight: 600;
         line-height: 1.6;
+        position: relative;
         text-decoration: none;
-        text-transform: uppercase;
         @include rem( 'font-size', 14px );
+
         i {
             color: $sunshade;
             vertical-align: text-bottom;
@@ -88,42 +148,79 @@ header {
             display: block;
             font-weight: 400;
             text-transform: capitalize;
+            // transition: color .1s ease-in;
             @include rem( 'font-size', 11px );
         }
         &:hover {
             color: black;
         }
+
     }
+
     .has__dropdown {
-        .dropdown {
-            display: none;
-            position: absolute;
-            width: 100%;
-            top: 100%;
-            left: 0;
-            background: white;
-            @include mq( $from: tablet ) {
-                min-width: 700px;
-            }
-        }
         &:hover {
             .dropdown {
                 display: block;
             }
         }
+    }
+
+    // MEGA MENU
+    .dropdown {
+        z-index: 1;
+        padding: 1em;
+        @extend %white-gradient;
+
+        @include mq( $until: tablet ) {
+            background: transparent;
+            * {
+                color: white;
+            }
+        }
+
+        @include mq( $from: tablet ) {
+            display: none;
+            position: absolute;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        h4 {
+            text-transform: capitalize;
+        }
+
         .nav__heading {
             margin-bottom: .25em;
-            border-bottom: 1px solid $alto;
             @include rem( 'font-size', 54px );
             font-family: $font-family-secondary;
+            p {
+                border-bottom: 1px solid $alto;
+            }
         }
-    }
-    .nav__event {
-        @include rem( 'font-size', 13px );
-        a {
-            color: $cerulean;
-            text-transform: capitalize;
-            text-decoration: underline;
+
+        .border--bottom {
+            margin-bottom: .5em;
+            padding-bottom: .5em;
+            border-bottom-style: dashed;
+        }
+
+        .nav__event {
+            @include rem( 'font-size', 13px );
+            clear: both;
+            overflow: hidden;
+            margin-bottom: .5em;
+            padding-bottom: .5em;
+            a {
+                color: $cerulean;
+                text-transform: capitalize;
+                text-decoration: underline;
+            }
+            img {
+                float: left;
+                margin-right: 1em;
+            }
         }
     }
 }
@@ -133,6 +230,7 @@ header {
     background: $spruce;
 }
 
+// Left hand library navigation
 .sub__nav {
     margin: 0;
     padding: .5em;
@@ -148,8 +246,157 @@ header {
     }
 }
 
+
+// Template sub-navigation
+.sub-navigation {
+    background: $spruce;
+    ul {
+        padding: .5em;
+        list-style: none;
+    }
+    li {
+        margin: 0 .5em;
+        display: inline-block;
+    }
+    a {
+        color: $chateau;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover {
+            color: white;
+        }
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+        }
+    }
+}
+
+// Microsite/Portal nav
+.portal {
+    header {
+        background: $cerulean;
+    }
+    .main__navigation--portal {
+        li {
+            margin: 0 .5em;
+            @include mq( $from: tablet ) {
+                @include rem( 'font-size', 13px );
+            }
+        }
+        a {
+            color: white;
+            font-weight: normal;
+            text-transform: capitalize;
+            &:hover {
+                color: lighten( $cerulean, 40% );
+            }
+        }
+    }
+}
+
+// Quicklinks
+.quicklinks {
+    color: white;
+    padding: 1em;
+    background: $science;
+
+    p {
+        margin: 0;
+        line-height: 1.9;
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .socials {
+        a {
+            opacity: 0.9;
+            color: $science;
+            -webkit-transition-property: opacity;
+            -moz-transition-property: opacity;
+            transition-property: opacity;
+            -webkit-transition-duration: .15s;
+            -moz-transition-duration: .15s;
+            transition-duration: .15s;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+
+    @include mq( $from: tablet ) {
+        @include rem( 'font-size', 13px );
+
+        .six:last-child {
+            text-align: right;
+        }
+    }
+
+}
+
+.breadcrumbs {
+    @include rem( 'font-size', 11px );
+    a {
+        text-decoration: none;
+        &:hover {
+            color: darken( $spruce, 20% );
+        }
+    }
+    .breadcrumbs__current {
+        font-weight: bold;
+    }
+}
+
 /* Pagination
    ========================================================================== */
+.pager {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    li {
+        margin: 0 .5em;
+        font-weight: bold;
+        display: inline-block;
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+        }
+    }
+    a {
+        color: $cerulean;
+        text-decoration: none;
+        text-transform: lowercase;
+        &:hover {
+            color: darken( $cerulean, 15% );
+        }
+    }
+
+    // .pager-first,
+    // .pager-previous,
+    // .pager-next,
+    // .pager-last {
+    //     a {
+    //         font-size: 0;
+    //         &:before {
+    //             content: '«';
+    //             @include rem( 'font-size', 13px );
+    //         }
+    //     }
+    // }
+    // .pager-previous a:before {
+    //     content: '<';
+    // }
+    // .pager-next a:before {
+    //     content: '>';
+    // }
+    // .pager-last a:before {
+    //     content: '»';
+    // }
+}
 
 
 /* Pattern Library
@@ -353,12 +600,37 @@ header {
 
 /* Social
    ========================================================================== */
-
-
-/* Footer
-   ========================================================================== */
-
-
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        margin: 0 .1em;
+        display: inline-block;
+        vertical-align: bottom;
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    a {
+        color: $spruce;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        text-align: center;
+        border-radius: 2px;
+        text-decoration: none;
+        background: $off-white;
+        @include rem( 'font-size', 16px );
+        i {
+            vertical-align: bottom;
+        }
+    }
+}
 
 /* Blog
    ========================================================================== */
@@ -553,3 +825,117 @@ table {
         }
     }
 }
+
+
+
+/* Footer
+   ========================================================================== */
+footer {
+    
+    text-align: center;
+    @include mq( $from: mobile-landscape ) {
+        text-align: left;
+    }
+
+    > .row {
+        background: darken( $spruce, 10% );
+        @include mq( $from: tablet ) {
+            display: block;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+            justify-content: space-between;
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+    }
+
+    .socials {
+        li {
+            margin: .5em .1em 0;
+        }
+        @include mq( $from: tablet ) {
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+
+    p {
+        margin: 0 0 .5em;
+        color: lighten( $spruce, 25% );
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 13px );
+        }
+    }
+
+    .copyright {
+        margin: 2.5em 0 0;
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 11px );
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include mq( $from: tablet ) {
+            @include rem( 'font-size', 11px );
+        }
+        li {
+            padding: 0;
+            margin: 0 0 .5em;
+        }
+
+        &.two-columns {
+            -webkit-columns: 1;
+            column-count: 1;
+
+            li {
+                padding: 0;
+            }
+
+            @include mq( $from: mobile-landscape ) {
+                -webkit-columns: 2;
+                column-count: 2;
+            }
+        }
+
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: lighten( $spruce, 25% );
+        }
+    }
+
+    .footer--right {
+
+        .six {
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+        }
+
+        @include mq( $from: tablet ) {
+            .six {
+                &:after {
+                    content: '';
+                    background: darken( $spruce, 10% );
+                    display: block;
+                    width: 2px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0; right: .5em;
+                }
+                &:last-child::after {
+                    display: none;
+                }
+            }
+        }
+
+    }
+}
+
+
