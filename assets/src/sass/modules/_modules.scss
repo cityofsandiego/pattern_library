@@ -7,7 +7,7 @@
    ========================================================================== */
 header {
     padding: 1em 0;
-    // background: $cerulean;
+    background: $cerulean;
 
     nav {
         line-height: 2;
@@ -594,9 +594,102 @@ header {
    ========================================================================== */
 
 
+
+/* Steps
+   ========================================================================== */
+.step__single {
+    margin: 2em 0;
+    background: white;
+    position: relative;
+    padding: .5em .75em;
+    text-align: center;
+    border: 1px solid $chateau;
+
+    &:before {
+        content: "\7c";
+        background: white;
+        font-family: 'icomoon';
+        background-color: white;
+        border: 1px solid #a7abad;
+        border-top: none;
+        text-align: center;
+        position: absolute;
+        top: -2.1em;
+        z-index: 2;
+        height: 25px;
+        width: 50px;
+        border-radius: 0 0 90px 90px;
+        -moz-border-radius: 90px 90px 0 0;
+        -webkit-border-radius: 0 0 90px 90px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    &:first-child::before {
+        display: none;
+    }
+
+    i {
+        display: inline-block;
+        color: white;
+        background-color: $cerulean;
+        border-radius: 50%;
+        padding: .5em;
+        vertical-align: -webkit-baseline-middle;
+        @include rem( 'font-size', 20px );
+    }
+
+    @include mq( $from: mobile-wide ) {
+        margin: .75em 0;
+        text-align: left;
+
+        i {
+            display: inline;
+            margin-right: .5em;
+        }
+
+        &:before {
+            right: 1em;
+            top: -.85em;
+            transform: none;
+        }
+
+    }
+}
+
+.step__header {
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    @include rem( 'font-size', 16px );
+
+    .step__desc {
+        font-family: $font-family;
+    }
+
+    @include mq( $from: mobile-wide ) {
+        margin: 0;
+        line-height: 40px;
+        display: inline-block;
+    }
+}
+
 /* Entry
    ========================================================================== */
+.post__meta {
+    @include mq( $from: tablet ) {
+        @include rem( 'font-size', 13px );
+    }
 
+    .social-share__wrap {
+        margin: 1em 0;
+    }
+}
+
+.post__author {
+    a {
+        text-decoration: none;
+    }
+}
 
 /* Social
    ========================================================================== */
@@ -632,6 +725,26 @@ header {
     }
 }
 
+// AddThis
+.social-share__wrap {
+
+    span[class^="st"] {
+        background-size: cover;
+    }
+
+    .stButton {
+        margin: 0;
+        .stLarge {
+            width: 27px;
+            height: 27px;
+            &:hover {
+                background-position: top left;
+            }
+        }
+    }
+
+}
+
 /* Blog
    ========================================================================== */
 
@@ -643,98 +756,108 @@ header {
 }
 .accordion {
     margin: 0 0 1em 0;
-    // border: 1px solid $alto;
     @include transition( border .25s );
-
-    &:hover,
-    &.is-open {
-        // border-color: $mercury;
-    }
 }
 .accordion__heading {
     margin: 0;
+    padding: 1em;
+    color: $spruce;
+    background: $mercury;
     position: relative;
+    border: 1px solid white;
+    @include transition( all .5s );
 }
-.accordion__link {
-    // padding: .75em 2.5em .75em .75em;
-    // display: block;
-    // font-weight: 300;
-    // color: $off-black;
-    // @include rem( 'font-size', 24px );
-    // &:hover {
-    //     color: $cerulean;
-    // }
-    // &.current {
-    //     color: $cerulean;
-    // }
+.accordion__link {  
     text-decoration: none;
 }
 .accordion__drawer {
     padding: 1em;
     display: none;
+    border: 1px solid $chateau;
+    border-top: none;
     .no-js & {
         display: block;
     }
 }
-// .toggle-icon {
-//     margin-top: -0.75em;
-//     width: 1.5em;
-//     height: 1.5em;
-//     line-height: 1.5em;
-//     display: inline-block;
-//     position: absolute;
-//     right: 1em;
-//     top: 50%;
-//     overflow: hidden;
-//     border: 1px solid $cerulean;
-//     border-radius: 500px;
-//     .csstransforms3d & {
-//         @include rotate( 0deg );
-//         @include transition( transform .25s );
-//     }
-//     &:before,
-//     &:after {
-//         content: "";
-//         position: absolute;
-//         display: block;
-//         background: $cerulean;
-//         .csstransforms3d & {
-//             top: 50%;
-//             left: 50%;
-//             @include translate3d( -50%, -50%, 0 );
-//             @include transition( transform .25s, opacity .25s );
-//         }
-//     }
-//     &:before {
-//         margin-top: -1px;
-//         width: 100%;
-//         height: 2px;
-//         top: 50%;
-//         .csstransforms3d & {
-//             margin-top: auto;
-//             width: 50%;
-//         }
-//     }
-//     &:after {
-//         margin-left: -1px;
-//         height: 100%;
-//         width: 2px;
-//         left: 50%;
-//         .csstransforms3d & {
-//             margin-left: auto;
-//             height: 50%;
-//         }
-//     }
-//     .is-open & {
-//         .csstransforms3d & {
-//             @include rotate( 90deg );
-//             &:before {
-//                 @include translate3d( 100%, -50%, 0 );
-//                 @include opacity( 0 );
-//             }
-//         }
-//     }
-// }
+
+.toggle-icon {
+    margin-top: -0.75em;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    overflow: hidden;
+    .csstransforms3d & {
+        @include transform(rotate( 0deg ));
+        @include transition( transform .25s );
+    }
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        background: $chateau;
+        .csstransforms3d & {
+            top: 50%;
+            // left: 50%;
+            @include transform(translate3d( 0, -50%, 0 ));
+            @include transition( transform .25s, opacity .25s );
+        }
+    }
+    &:before {
+        margin-top: -1px;
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        .csstransforms3d & {
+            margin-top: auto;
+            // width: 50%;
+        }
+    }
+    &:after {
+        margin-left: -1px;
+        height: 100%;
+        width: 2px;
+        left: 50%;
+        .csstransforms3d & {
+            margin-left: auto;
+        }
+    }
+}
+
+
+.is-open {
+
+    &.accordion {
+    }
+
+    .accordion__heading {
+        font-weight: 700;
+        background: white;
+        border: 1px solid $chateau;
+        border-bottom: none;
+    }
+
+    .csstransforms3d & {
+
+        .toggle-icon {
+            &:before,
+            &:after {
+                background: $cerulean;
+            }
+            @include transform(rotate( 45deg ));
+            &:before {
+                // @include transform(translate3d( 100%, -50%, 0 ));
+                // @include opacity( 0 );
+                // opacity: 0;
+            }
+        }
+    }
+
+}
 
 .table__accordion {
     margin: 0;
@@ -826,6 +949,24 @@ table {
     }
 }
 
+
+
+/* Media
+   ========================================================================== */
+
+figure {
+
+    img {
+        margin-bottom: .25em;
+    }
+
+    figcaption {
+        color: $gray;
+        font-style: italic;
+        @include rem( 'font-size', 13px );
+    }
+
+}
 
 
 /* Footer

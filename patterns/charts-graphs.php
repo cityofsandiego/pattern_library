@@ -156,36 +156,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 				</div>
 
-				<div class="l-container l-margin-vd">
-					<div class="accordions js-toggle-accordion">
-						<div class="accordion">
-							<h4 class="accordion__heading"><a class="accordion__link" href="#">2015 <span class="toggle-icon"></span></a></h4>
-							<div class="accordion__drawer" style="display: none;">
-								<p>In calendar 2013 and 2014, Lantronix launched a record number of new products, services and solutions – more than a dozen IoT and M2M networking solutions including xPico Wi-Fi, xPrintServer Office (iOS) and CloudPrint (Android/Google), the SLC8000, xSenso, xDirect, xPort Pro Lx6, a new Professional Services organization, and more. In early 2015, we see customers and the entire IoT and M2M markets making significant strides in moving from early designs and prototyping, into manufacturing, product / application launch and more mass deployments.</p>
-							</div>
-						</div>
-						<div class="accordion">
-							<h4 class="accordion__heading"><a class="accordion__link" href="#">2014 <span class="toggle-icon"></span></a></h4>
-							<div class="accordion__drawer" style="display: none;">
-								<p>Lantronix announces Python support for Company’s Intelligent Device Software Platform – Starting with its PremierWave® family of Intelligent Gateways. Support for the industry’s most popular programming language, combined with ruggedized Lantronix Intelligent Gateways enables rapid development and deployment of secure IoT applications. To support customers and Python hobbyists, the Company launched a new developers’ wiki to provide downloadable sample scripts, instructions, and a platform for community sharing and collaboration.</p>
-							</div>
-						</div>
-						<div class="accordion">
-							<h4 class="accordion__heading"><a class="accordion__link" href="#">2013 <span class="toggle-icon"></span></a></h4>
-							<div class="accordion__drawer" style="display: none;">
-								<p>Announces Wyless partnership to deliver robust cellular technology and turnkey solutions into the global cellular market. With this new partnership, Lantronix’ customers can fast track their cellular M2M application development.</p>
-							</div>
-						</div>
-						<div class="accordion">
-							<h4 class="accordion__heading"><a class="accordion__link" href="#">Continued History <span class="toggle-icon"></span></a></h4>
-							<div class="accordion__drawer" style="display: none;">
-								<h4>2012</h4>
-								<p>Lantronix announces the <a title="xPrintServer – Office Edition (iOS)" href="http://ltrx015201.dev/products/xprintserver-office/">xPrintServer® Office Edition</a>, the next-generation version of the company’s award-winning xPrintServer – Network Edition. This plug-and-print hardware solution comes with a wide range of robust features to support mobile printing throughout the enterprise. Designed in close collaboration with our enterprise customers, the new Office Edition addresses the challenges faced by IT departments on how to identify, deploy and manage iOS device printing throughout the extended organization.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
             </div>
         </div>
         

@@ -27,8 +27,15 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
+
+    <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
 </head>
 <body<?php echo $body_class; ?>>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

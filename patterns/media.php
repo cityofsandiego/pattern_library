@@ -19,6 +19,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				<div class="l-container l-margin-tm">
 				    <h2>Figure with caption</h2>
+                    <figure>
+                        <img src="../assets/dist/img/fig-img.jpg" alt="Fig. Alt. Title" width="563" height="283">
+                        <figcaption>Image Title: This is the figcaption element.</figcaption>
+                    </figure>
 				</div>
 
             </div>
