@@ -56,4 +56,23 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
         }
     }
 
+    // 'Small' column classes for mobile columns
+    .small-#{$class} {
+        @include span( $i );
+        &.no-gutters {
+            @include mq( $from: tablet ) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .push-#{$class} {
+        @include pre( $i );
+    }
+
+    .pull-#{$class} {
+        @include post( $i );
+    }
+
 }

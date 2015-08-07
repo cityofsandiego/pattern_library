@@ -21,9 +21,26 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    </ul>
 				</div>
 
-				<div class="l-container l-margin-tm">
+				<div class="l-container l-margin-vm">
 				    <h2>Byline</h2>
+				    <div class="post__meta">
+                        <span class="post__date">23 July 2015</span>
+                        |
+                        <span class="post__author"><a href="">by Name Lastname</a></span>
+                    </div>
+				</div>
+
+				<div class="l-container l-margin-vm">
 				    <h2>Address</h2>
+				    <address>
+						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<span itemprop="streetAddress">2600 Golf Course Drive <br></span>
+							<span itemprop="addressLocality">San Diego</span>,
+							<span itemprop="addressRegion">CA</span>
+							<span itemprop="postalCode">92102</span>
+						</div>
+						<span itemprop="telephone">(619) 123-4567</span>
+				    </address>
 
 				    <div class="l-container l-margin-vm">
 					    <h2>Headings</h2>

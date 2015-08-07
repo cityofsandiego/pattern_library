@@ -27,6 +27,10 @@ header {
             text-transform: uppercase;
         }
     }
+
+    &.library__header {
+        background: white;
+    }
 }
 
 
@@ -474,7 +478,6 @@ header {
 }
 
 .card__container {
-    background: $westar;
     display: -webkit-inline-flex; /* Safari */
     display: inline-flex;
     -webkit-justify-content: center; /* Safari */
@@ -688,6 +691,14 @@ header {
 .post__author {
     a {
         text-decoration: none;
+    }
+}
+
+
+.article__teaser {
+    padding: 1em;
+    &:nth-child(2n+1) {
+        background-color: $off-white;
     }
 }
 

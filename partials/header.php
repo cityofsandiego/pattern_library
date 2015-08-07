@@ -43,7 +43,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
         <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="border border--bottom">
+        <header class="border border--bottom library__header">
             <div class="l-constrained row">
                 <div class="one columns">
                     <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego - logo" width="163" height="132">

@@ -455,7 +455,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
                     <div class="l-container">
-                        <h2>Mircosite (Portal?) Sub-Navigation</h2>
+                        <h2>Mircosite Sub-Navigation</h2>
                         <section class="portal">
                             <header>
                                 <nav class="main__navigation--portal">
@@ -494,11 +494,20 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <div class="l-container">
                         <h2>Social Properties</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
+                        <div class="l-container">
+                            <div class="row">
+                                <div class="six columns">
+                                    <ul class="socials">
+                                        <li><a href=""><i class="icon-googleplus"></i></a></li>
+                                        <li><a href=""><i class="icon-facebook"></i></a></li>
+                                        <li><a href=""><i class="icon-youtube"></i></a></li>
+                                        <li><a href=""><i class="icon-twitter"></i></a></li>
+                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                                        <li><a href=""><i class="icon-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="l-container">

@@ -135,6 +135,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <h2>Newsletter Signup</h2>
 				    <p><em>No newsletter form in design</em></p>
 				    <h2>Login</h2>
+				    <p><em>Dropdown, modal, or new page?</em></p>
 				</div>
 
             </div>

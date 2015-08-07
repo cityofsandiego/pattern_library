@@ -89,7 +89,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <h2 class="l-margin-bn">Headline Only</h2>
-                            <h3>Off-white background color</h3>
+                            <p class="subheading">Off-white background color</p>
                         </div>
                     </div>
                     <div class="card__container l-margin-vd">

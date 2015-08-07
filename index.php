@@ -75,42 +75,76 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <div class="code__examples">
-                                <form><textarea id="code" name="code">
-<%
-function hello(who) {
-    return "Hello " + who;
-}
-%>
-This is an example of EJS (embedded javascript)
-<p>The program says <%= hello("world") %>.</p>
-<script>
-    alert("And here is some normal JS code");
-</script></textarea> </form> </div>
+                                <form><textarea class="code-mirror" id="code" name="code">
+<!-- Full width -->
+<div class="row">
+    <div class="twelve columns">
+        <p>12 columns</p>
+    </div>
+</div>
+
+<!-- 2 Equal columns -->
+<div class="row">
+    <div class="six columns">
+        <p>6 columns</p>
+    </div>
+    <div class="six columns">
+        <p>6 columns</p>
+    </div>
+</div>
+
+<!-- 4 Equal columns -->
+<div class="row">
+    <div class="three columns">
+        <p>3 columns</p>
+    </div>
+    <div class="three columns">
+        <p>3 columns</p>
+    </div>
+    <div class="three columns">
+        <p>3 columns</p>
+    </div>
+    <div class="three columns">
+        <p>3 columns</p>
+    </div>
+</div></textarea> </form> </div>
                         </div>
                     </div>
+
+
                     <div class="row l-margin-tm">
                         <div class="twelve columns">
                             <p><strong>Notes</strong></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>The grid layout is loosely based on <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</p>
+                            <p>Columns will break down to 100% at tablet viewport width (768px); to utilize column widths on mobile viewport sizes, prefix the class name with 'small-'.</p>
                         </div>
                     </div>
+
+                    <div class="row">
+                        <div class="small-four columns">
+                            <p class="l-margin-bn border l-padding-ad">Small-4</p>
+                        </div>
+                        <div class="small-eight columns">
+                            <p class="l-margin-bn border l-padding-ad">Small-8 - will keep width constraints, even on small screens.</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="twelve columns">
+                            <div class="code__examples">
+                                <form><textarea class="code-mirror" id="code" name="code">
+<div class="row">
+    <div class="small-four columns">
+        <p>Small-4</p>
+    </div>
+    <div class="small-eight columns">
+        <p>Small-8</p>
+    </div>
+</div></textarea> </form> </div>
+                        </div>
+                    </div> -->
                 </div>
 
-                <div class="l-container l-margin-vl">
-                    <h2>Grid Gutter</h2>
-                </div>
-
-                <div class="l-container l-margin-vl">
-                    <h2>Mixed Grids</h2>
-                </div>
-
-                <div class="l-container l-margin-vl">
-                    <h2>Responsive Columns</h2>
-                </div>
-
-                <div class="l-container l-margin-vl">
-                    <h2>Nested Grids</h2>
-                </div>
 
             </div>
         </div>
