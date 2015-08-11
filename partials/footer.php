@@ -5,6 +5,17 @@
         <script src="/assets/dist/js/main.js"></script>
 
         <script>
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Bar(data);
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            var lineChart = new Chart(ctx).Line(data);
+
+            var ctx = document.getElementById("pieChart").getContext("2d");
+            var myPieChart = new Chart(ctx).Pie(pieData);
+        </script>
+
+        <script>
           var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
             lineNumbers: true,
             mode: "application/x-ejs",

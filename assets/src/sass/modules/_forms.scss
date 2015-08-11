@@ -82,11 +82,46 @@ input[type="search"] {
   @include box-sizing( border-box ); /* 1 */
 }
 
-textarea {
-    height: auto;
-    min-height: 50px;
+input[type="radio"] {
+    width: auto;
+    margin-right: .5em;
 }
 
+textarea {
+    height: auto;
+    border: none;
+    border-radius: 0;
+    background: $off-white;
+}
+
+form {
+    label {
+        @extend %visuallyhidden;
+    }
+}
+
+.form--general {
+
+    .form-actions {
+        text-align: center;
+        input[type="submit"] {
+            background-color: $sunshade;
+            &:hover {
+                background-color: lighten( $sunshade, 10% );
+            }
+        }
+
+        .form-submit {
+            padding: 1.25em 4em;
+            @include rem( 'font-size', 21px );
+
+            @include mq( $until: mobile-landscape ) {
+                width: 100%;
+                padding: 1.25em 0;
+            }
+        }
+    }
+}
 
 .form {
     overflow: hidden;
@@ -188,7 +223,7 @@ textarea {
     }
 }
 
-.form__search {
+.form--search {
     overflow: hidden;
 
     input[type="search"] {
@@ -198,6 +233,7 @@ textarea {
 
     input[type="submit"] {
         width: 100%;
+        color: white;
         display: block;
         padding: .75em;
         text-indent: -9999px;
@@ -206,8 +242,10 @@ textarea {
         background-image: url(../img/search-icon.png);
         background-repeat: no-repeat;
         background-position: center center;
+        background-color: $cerulean;
         @include rem( 'font-size', 13px );
         &:hover {
+            background-color: lighten( $cerulean, 10% );
             border-color: lighten( $cerulean, 10% );
         }
     }
@@ -224,9 +262,38 @@ textarea {
     }
 }
 
+.form--comments {
+    .form-actions {
+        text-align: right;
+        input[type="submit"] {
+            @include rem( 'font-size', 13px );
+        }
+    }
+}
+
+.form--newsletter {
+    .form-item,
+    .form-actions {
+        @include span( 1 of 3 );
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+
+    input {
+        margin: 0;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        @include rem( 'font-size', 13px );
+    }
+
+}
+
+
 // Header search
 header {
-    .form__search {
+    .form--search {
 
         input {
             border-color: white;
@@ -249,4 +316,62 @@ header {
             }
         }
     }
+}
+
+// Form Steps
+.form__step {
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5em;
+
+    &:after {
+        content: "\7c";
+        font-family: 'icomoon';
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        right: 50%;
+        transform: translateX(50%);
+        @include rem( 'font-size', 16px );
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        padding: .75em;
+    }
+
+    .border {
+        border-radius: 3px;
+        border-color: $spruce;
+    }
+
+    @include mq( $from: tablet ) {
+        text-align: left;
+        margin-bottom: 0;
+
+        @include rem( 'font-size', 13px );
+
+        &:after {
+            content: "\3e";
+            transform: none;
+            top: 0; right: -.5em;
+        }
+    }
+}
+.form__step--header {
+    @include mq( $from: tablet ) {
+        position: absolute;
+        top: -.8em;
+        background-color: white;
+        padding: 0 .5em;
+    }
+    @include rem( 'font-size', 16px );
+    font-family: $font-family-secondary;
 }
