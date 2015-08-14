@@ -2,7 +2,7 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
-        <div class="l-constrained row patterns">
+        <div class="l-constrained row patterns l-padding-mobile-hd">
             <aside>
                 <div class="three columns">
                     <?php require_once( ABSPATH . PARTIALS . '/patterns-nav.php' ); ?>
@@ -19,10 +19,31 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    </ul>
 				</div>
 
-				<div class="l-container l-margin-tm">
+				<div class="l-container l-margin-vm">
 				    <h2>Success</h2>
-				    <h2>Warning</h2>
-				    <h2>Error</h2>
+				    <div class="message message--success">
+				    	<p>
+				    	<i class="icon-search"></i>
+				    	<strong>Success!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+				    </div>
+				</div>
+
+				<div class="l-container l-margin-vm">
+					<h2>Warning</h2>
+					<div class="message message--warning">
+				    	<p>
+				    	<i class="icon-search"></i>
+				    	<strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+					</div>
+				</div>
+
+				<div class="l-container l-margin-vm">
+					<h2>Error</h2>
+					<div class="message message--error">
+				    	<p>
+				    	<i class="icon-search"></i>
+				    	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+					</div>
 				</div>
 
             </div>

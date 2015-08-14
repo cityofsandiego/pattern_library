@@ -563,6 +563,42 @@ header {
     }
 }
 
+.event__wrap {
+    @include mq( $from: tablet ) {
+        .six:first-child {
+            border-right: 1px solid $alto;
+        }
+
+        .six:last-child {
+            padding-left: 1em;
+        }
+    }
+}
+
+.event__date {
+    color: white;
+    line-height: 1;
+    padding: .25em 0;
+    font-weight: 800;
+    text-align: center;
+    background: $sunshade;
+    @include rem( 'font-size', 13px );
+    @include span( 1 of 5 no-gutters );
+
+    span {
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+.event__info {
+    @include span( 4 of 5 );
+
+    h6 {
+        margin-top: 0;
+    }
+}
+
 /* Alerts
    ========================================================================== */
 .alert {
@@ -702,6 +738,65 @@ header {
     }
 }
 
+/* Messaging
+   ========================================================================== */
+
+.message {
+    padding: 1em;
+
+    p {
+        margin: 0;
+        color: white;
+    }
+
+    i {
+        vertical-align: middle;
+        @include rem( 'font-size', 24px );
+    }
+
+    &.message--success {
+        background-color: $success;
+    }
+
+    &.message--warning {
+        background-color: $warning;
+    }
+
+    &.message--error {
+        background-color: $error;
+    }
+}
+
+/* Weather
+   ========================================================================== */
+
+.card--weather {
+    color: white;
+    padding: .25em .75em;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: $font-family-secondary;
+    background-color: darken( $cerulean, 9% );
+
+    p {
+        margin: 0;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        @include rem( 'font-size', 11px );
+
+        &.temperature {
+            @include rem( 'font-size', 24px );
+        }
+    }
+
+    i {
+        vertical-align: middle;
+        @include rem( 'font-size', 24px );
+    }
+}
+
+
 /* Social
    ========================================================================== */
 .socials {
@@ -778,7 +873,8 @@ header {
     border: 1px solid white;
     @include transition( all .5s );
 }
-.accordion__link {  
+.accordion__link {
+    color: $spruce;
     text-decoration: none;
 }
 .accordion__drawer {
@@ -977,6 +1073,24 @@ figure {
         @include rem( 'font-size', 13px );
     }
 
+}
+
+// Videos
+.card--video {
+    position: relative;
+
+    i {
+        z-index: 4;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.75);
+        @include rem( 'font-size', 48px );
+    }
+
+    img {
+        width: 100%;
+    }
 }
 
 

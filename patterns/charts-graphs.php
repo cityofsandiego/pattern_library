@@ -2,7 +2,7 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
-        <div class="l-constrained row patterns">
+        <div class="l-constrained row patterns l-padding-mobile-hd">
             <aside>
                 <div class="three columns">
                     <?php require_once( ABSPATH . PARTIALS . '/patterns-nav.php' ); ?>
@@ -21,8 +21,103 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				<div class="l-container l-margin-tm">
 				    <h2>Bar</h2>
-				    <h2>Line</h2>
-				    <h2>Pie</h2>
+
+				    <div class="text-center">
+				    	<canvas id="myChart" width="600" height="400"></canvas>
+
+					    <script>
+					    	var data = {
+							    labels: ["January", "February", "March", "April", "May", "June", "July"],
+							    datasets: [
+							        {
+							            label: "My First dataset",
+							            fillColor: "rgba(228,233,235,0.8)",
+							            strokeColor: "rgba(220,220,220,0.8)",
+							            highlightFill: "rgba(220,220,220,0.75)",
+							            highlightStroke: "rgba(220,220,220,1)",
+							            data: [65, 59, 80, 81, 56, 55, 40]
+							        },
+							        {
+							            label: "My Second dataset",
+							            fillColor: "rgba(0,152,219,1)",
+							            strokeColor: "rgba(0,0,0,1)",
+							            highlightFill: "rgba(255,255,255,1)",
+							            highlightStroke: "rgba(255,255,255,1)",
+							            data: [28, 48, 40, 19, 86, 27, 90]
+							        }
+							    ]
+							};
+					    </script>
+				    </div>
+
+				</div>
+
+				<div class="l-container l-margin-tm">
+					<h2>Line</h2>
+
+					<div class="text-center">
+						<canvas id="lineChart" width="600" height="400"></canvas>
+
+						<script>
+							var data = {
+							    labels: ["January", "February", "March", "April", "May", "June", "July"],
+							    datasets: [
+							        {
+							            label: "My First dataset",
+							            fillColor: "rgba(228,233,235,0.8)",
+							            strokeColor: "rgba(220,220,220,0.8)",
+							            highlightFill: "rgba(220,220,220,0.75)",
+							            highlightStroke: "rgba(220,220,220,1)",
+							            data: [65, 59, 80, 81, 56, 55, 40]
+							        },
+							        {
+							            label: "My Second dataset",
+							            fillColor: "rgba(0,152,219,1)",
+							            strokeColor: "rgba(0,0,0,1)",
+							            highlightFill: "rgba(255,255,255,1)",
+							            highlightStroke: "rgba(255,255,255,1)",
+							            data: [28, 48, 40, 19, 86, 27, 90]
+							        }
+							    ]
+							};
+						</script>
+					</div>
+				</div>
+
+				<div class="l-container l-margin-tm">
+					<h2>Pie</h2>
+
+					<div class="text-center">
+						<canvas id="pieChart" width="600" height="400"></canvas>
+
+						<script>
+							var pieData = [
+							    {
+							        value: 300,
+							        color:"#0098db",
+							        highlight: "#0098db",
+							        label: "Cerulean"
+							    },
+							    {
+							        value: 50,
+							        color: "#ffa02f",
+							        highlight: "#ffa02f",
+							        label: "Orange"
+							    },
+							    {
+							        value: 100,
+							        color: "#00c7b2",
+							        highlight: "#00c7b2",
+							        label: "Teal"
+							    }
+							]
+						</script>
+					</div>
+				</div>
+
+				<div class="l-container l-margin-vm">
+					<p><strong><em>Notes</em></strong></p>
+					<p>Charts are built using <a href="http://www.chartjs.org/" target="_blank">chart.js</a>, a javascript library that allows easy implementation of various charts. Customization options available include responsive charts, animation, and more.</p>
 				</div>
 
 				<div class="l-container l-margin-vd background-off-white">

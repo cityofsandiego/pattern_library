@@ -77,7 +77,8 @@ module.exports = function ( grunt ) {
                         '<%= config.src %>/js/plugins/css.js',
                         '<%= config.src %>/js/plugins/htmlmixed.js',
                         '<%= config.src %>/js/plugins/multiplex.js',
-                        '<%= config.src %>/js/plugins/xml.js'
+                        '<%= config.src %>/js/plugins/xml.js',
+                        '<%= config.src %>/js/plugins/Chart.js'
                     ]
                 }
             }
