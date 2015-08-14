@@ -44,28 +44,31 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
 
     $class: nth( $classes, $i );
 
-    .#{$class} {
-        @include mq( $from: tablet ) {
+    // 'Small' column classes for mobile columns
+    @include mq( $until: tablet ) {
+        .sm-#{$class} {
             @include span( $i );
-        }
-        &.no-gutters {
-            @include mq( $from: tablet ) {
-                padding-left: 0;
-                padding-right: 0;
+            &.no-gutters {
+                @include mq( $from: tablet ) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
     }
 
-    // 'Small' column classes for mobile columns
-    .small-#{$class} {
-        @include span( $i );
-        &.no-gutters {
-            @include mq( $from: tablet ) {
-                padding-left: 0;
-                padding-right: 0;
+    @include mq( $from: tablet ) {
+        .#{$class} { 
+            @include span( $i );
+            &.no-gutters {
+                @include mq( $from: tablet ) {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
             }
         }
     }
+
 
     .push-#{$class} {
         @include pre( $i );

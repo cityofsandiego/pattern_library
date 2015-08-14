@@ -200,9 +200,9 @@
                     mainClass : 'mfp-fade'
                 });
 
-                $('.card--modal').magnificPopup({
+                $('.popup-modal').magnificPopup({
                     type:'inline',
-                    mainClass : 'mfp-fade'
+                    midClick: true
                 });
             },
 

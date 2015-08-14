@@ -715,8 +715,8 @@ form label.focusable:focus,
 }
 
 .text-small {
-    font-size: 14px;
-    font-size: .875rem;
+    font-size: 13px;
+    font-size: .8125rem;
 }
 
 .text-gray {
@@ -2479,6 +2479,40 @@ header.library__header {
     color: white;
 }
 
+.event__wrap .six:first-child {
+    border-right: 1px solid #d6d7d8;
+}
+.event__wrap .six:last-child {
+    padding-left: 1em;
+}
+
+.event__date {
+    font-size: 13px;
+    font-size: .8125rem;
+    font-weight: 800;
+    line-height: 1;
+    float: left; 
+    width: 20%;
+    padding: .25em 0;
+    text-align: center;
+    color: white;
+    background: #ffa02f;
+}
+.event__date span {
+    display: block;
+    text-transform: uppercase;
+}
+
+.event__info {
+    float: left;
+    width: 80%;
+    padding-right: 2.49998125%; 
+    padding-left: 2.49998125%;
+}
+.event__info h6 {
+    margin-top: 0;
+}
+
 /* Alerts
    ========================================================================== */
 .alert {
@@ -2884,6 +2918,9 @@ figure figcaption {
     color: #656667;
 }
 
+.card--video {
+    position: relative;
+}
 .card--video i {
     font-size: 48px;
     font-size: 3rem; 
@@ -2893,6 +2930,9 @@ figure figcaption {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, .75);
+}
+.card--video img {
+    width: 100%;
 }
 
 /* Footer
