@@ -346,6 +346,7 @@ header {
 .breadcrumbs {
     @include rem( 'font-size', 11px );
     a {
+        color: $spruce;
         text-decoration: none;
         &:hover {
             color: darken( $spruce, 20% );
@@ -625,6 +626,77 @@ header {
     }
 }
 
+/* Tooltips */
+.tooltip__wrap {
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+
+        .tooltip {
+            display: block;
+        }
+    }
+}
+
+.tooltip {
+    z-index: 5;
+    color: white;
+    padding: .5em;
+    display: none;
+    font-weight: 600;
+    position: absolute;
+    top: 0; left: 0;
+    border-radius: 2px;
+    background: $spruce;
+    @include rem( 'font-size', 14px );
+
+}
+
+.tooltip--bottom {
+    top: 150%;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        top: -8px; left: 50%;
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-width: 0 9px 8px 9px;
+        border-color: transparent transparent $spruce transparent;
+    }
+}
+
+.tooltip--left {
+    top: 50%;
+    left: 150%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        left: -8px; top: 50%;
+        border-width: 9px 8px 9px 0;
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        transform: translateY(-50%);
+        border-color: transparent $spruce transparent transparent;
+    }
+}
+
 /* Menu List
    ========================================================================== */
 
@@ -632,7 +704,24 @@ header {
 /* Page/Single post
    ========================================================================== */
 
+/* Comments */
 
+.card--comment {
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 2px solid $mercury;
+
+    i {
+        color: $sunshade;
+    }
+
+    @include mq( $until: tablet ) {
+        .six,
+        .form-actions {
+            text-align: center;
+        }
+    }
+}
 
 /* Steps
    ========================================================================== */

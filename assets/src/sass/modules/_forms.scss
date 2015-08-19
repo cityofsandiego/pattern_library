@@ -264,7 +264,10 @@ form {
 
 .form--comments {
     .form-actions {
-        text-align: right;
+        @include mq( $from: tablet ) {
+            text-align: right;
+        }
+
         input[type="submit"] {
             @include rem( 'font-size', 13px );
         }
@@ -272,6 +275,8 @@ form {
 }
 
 .form--newsletter {
+    @extend %clearfix;
+
     .form-item,
     .form-actions {
         @include span( 1 of 3 );

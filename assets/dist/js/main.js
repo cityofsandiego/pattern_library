@@ -202,7 +202,8 @@
 
                 $('.popup-modal').magnificPopup({
                     type:'inline',
-                    midClick: true
+                    midClick: true,
+                    closeBtnInside:true
                 });
             },
 
