@@ -102,10 +102,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Video -->
                 <div class="l-container l-margin-vm">
                     <h2>Video Player</h2>
-                    <div class="row">
+                    <div class="row l-margin-bm">
                         <div class="four columns no-gutters">
                             <div class="card card--video">
-                                <a href="">
+                                <a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
                                     <i class="icon-play"></i>
                                     <div class="overlay"></div>
                                     <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
@@ -116,6 +116,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <h6 class="l-margin-tn"><strong>Name of this Video</strong></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
                             <a href="">Watch Video</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="six columns">
+<div class="code__examples">
+                                <form><textarea class="code-mirror" id="code" name="code">
+<a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
+    <i class="icon-play"></i>
+    <div class="overlay"></div> <!-- Dark opacity -->
+    <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250"> <!-- Video screenshot -->
+</a>
+</textarea> </form> </div>
+                        </div>
+                        <div class="six columns">
+                            <p><strong><em>Notes</em></strong></p>
+                            <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of .js-modal-video to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
                         </div>
                     </div>
                 </div>
@@ -130,14 +147,74 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
                 </div>
 
-                <!-- Single comment -->
+                <!-- Single Comment -->
                 <div class="l-container l-margin-vm">
                     <h2>Single Comment</h2>
+
+                    <div class="l-padding-vd background-off-white">
+                        <div class="card card--comment row">
+                            <div class="one columns card__image text-center no-gutters">
+                                <img src="http://placehold.it/65x65">
+                            </div>
+                            <div class="eleven columns">
+                                <div class="card__meta row">
+                                    <div class="six columns no-gutters comments">
+                                        <p class=""><strong>15 Comments</strong></p>
+                                    </div>
+                                    <div class="six columns no-gutters favorites text-right">
+                                        <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
+                                    </div>
+                                </div>
+                                <div class="card__content">
+                                    <form class="user-info-from-cookie form--comments" action="" method="post" id="" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+
+                                        <div class="form-item form-type-textarea form-item-message">
+                                            <label class="element-invisible" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
+                                            <div class="form-textarea-wrapper textarea-processed">
+                                                <textarea placeholder="Message" id="" name="message" cols="60" rows="3" class="form-textarea required error" data-error="1"></textarea>
+                                                <div class="grippie"></div>
+                                                <!-- <div class="error-message">This field is required!</div> -->
+                                            </div>
+                                        </div>
+
+                                        <input type="hidden" name="form_build_id" value="">
+                                        <input type="hidden" name="form_id" value="contact_site_form">
+
+                                        <div class="form-actions form-wrapper" id="edit-actions">
+                                            <input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled">
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
                 <!-- Tool tips -->
                 <div class="l-container l-margin-vm">
                     <h2>Tools Tips</h2>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <p>What's this?
+                                <span class="tooltip__wrap">
+                                    <i><span class="lnr lnr-question-circle"></i>
+                                    <span class="tooltip tooltip--bottom">Bottom Tooltip</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <p>
+                            <span class="tooltip__wrap">
+                                <i><span class="lnr lnr-question-circle"></i>
+                                <span class="tooltip tooltip--left">Left Tooltip</span>
+                            </span>
+                            What's this?</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Card Teasers -->
@@ -155,6 +232,22 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Image gallery -->
                 <div class="l-container l-margin-vm">
                     <h2>Image Gallery</h2>
+
+                    <div class="flex-container l-margin-bm">
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <p><strong><em>Notes</em></strong></p>
+                    <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>.</p>
+
                 </div>
 
                 <!-- Maps -->
@@ -247,13 +340,13 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-vm">
                     <h2>Lightbox</h2>
                     <a href="#test-modal" class="popup-modal">Lightbox example</a>
-                    <div id="test-modal" class="white-popup-block mfp-hide">
+                    <div id="test-modal" class="white-popup mfp-hide">
                         <h1>Modal dialog</h1>
-                        <p>You won't be able to dismiss this by usual means (escape or
-                          click button), but you can close it programatically based on
-                          user choices or actions.</p>
-                        <p><a class="popup-modal-dismiss" href="#">Dismiss</a></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
+
+                    <p class="l-margin-tm l-margin-bn"><em><strong>Notes</strong></em></p>
+                    <p>We're utilizing <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> for lightboxes.</p>
                 </div>
 
             </div>

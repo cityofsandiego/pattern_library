@@ -165,39 +165,41 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				<div class="l-container l-margin-vm">
 					<h2>Comments</h2>
 
-					<div class="card comment--card l-margin-ad row">
-						<div class="one columns card__image text-center">
-							<img src="http://placehold.it/65x65">
-						</div>
-						<div class="eleven columns">
-							<div class="card__meta row">
-								<div class="small-six columns no-gutters comments">
-									<p class=""><strong>15 Comments</strong></p>
-								</div>
-								<div class="small-six columns no-gutters favorites text-right">
-									<p class=""><i class="icon-star"></i> <strong>12</strong></p>
-								</div>
+					<div class="l-padding-vd background-off-white">
+						<div class="card card--comment row">
+							<div class="one columns card__image text-center no-gutters">
+								<img src="http://placehold.it/65x65">
 							</div>
-							<div class="card__content">
-								<form class="user-info-from-cookie form--comments" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+							<div class="eleven columns">
+								<div class="card__meta row">
+									<div class="six columns no-gutters comments">
+										<p class=""><strong>15 Comments</strong></p>
+									</div>
+									<div class="six columns no-gutters favorites text-right">
+										<p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
+									</div>
+								</div>
+								<div class="card__content">
+									<form class="user-info-from-cookie form--comments" action="" method="post" id="" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
 
-									<div class="form-item form-type-textarea form-item-message">
-										<label class="element-invisible" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
-										<div class="form-textarea-wrapper resizable textarea-processed resizable-textarea">
-											<textarea placeholder="Message" id="edit-message" name="message" cols="60" rows="5" class="form-textarea required error" data-error="1"></textarea>
-											<div class="grippie"></div>
-											<!-- <div class="error-message">This field is required!</div> -->
+										<div class="form-item form-type-textarea form-item-message">
+											<label class="element-invisible" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
+											<div class="form-textarea-wrapper textarea-processed">
+												<textarea placeholder="Message" id="" name="message" cols="60" rows="3" class="form-textarea required error" data-error="1"></textarea>
+												<div class="grippie"></div>
+												<!-- <div class="error-message">This field is required!</div> -->
+											</div>
 										</div>
-									</div>
 
-									<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
-									<input type="hidden" name="form_id" value="contact_site_form">
+										<input type="hidden" name="form_build_id" value="">
+										<input type="hidden" name="form_id" value="contact_site_form">
 
-									<div class="form-actions form-wrapper" id="edit-actions">
-										<input type="submit" id="edit-submit" name="op" value="Leave Comment" class="form-submit disabled">
-									</div>
+										<div class="form-actions form-wrapper" id="edit-actions">
+											<input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled">
+										</div>
 
-								</form>
+									</form>
+								</div>
 							</div>
 						</div>
 					</div>
