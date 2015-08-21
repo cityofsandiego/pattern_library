@@ -18,6 +18,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    </ul>
 				</div>
 
+				<!-- Graphic -->
 				<div class="l-container l-margin-tm">
 				    <h2>Graphic</h2>
 				    <div class="row">
@@ -30,7 +31,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    		</div>
 				    	</div>
 				    </div>
-				    <h2>Text</h2>
+				</div>
+
+			    <!-- Text -->
+			    <div class="l-container l-margin-vm">
+			    	<h2>Text</h2>
+				    <div class="row">
+				    	<div class="twelve columns">
+				    		<div class="main__message">
+				    			<h1 class="main__heading">Movies in the Park</h1>
+				    			<p class="main__content">Come join the fun with this year’s Summer Movies in the Park! <a href="">Learn More</a></p>
+				    		</div>
+				    	</div>
+				    </div>
+			    </div>
+
+				<!-- Alert -->
+				<div class="l-container l-margin-vm">
 				    <h2>Alerts</h2>
 				    <div class="row">
 				    	<div class="five columns">

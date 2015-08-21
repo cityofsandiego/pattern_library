@@ -10,7 +10,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
 
-               <h1>Components</h1>
+                <h1>Components</h1>
                 <div class="sub__nav--wrap">
                     <ul class="sub__nav">
                         <li>Social Share</li>
@@ -189,7 +189,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- Tool tips -->

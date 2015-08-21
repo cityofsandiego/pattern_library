@@ -341,7 +341,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <p class="subheading"><em>See above</em></p>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Footer</h2>
                         <footer>
                             <div class="row">
@@ -398,7 +398,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </footer>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Breadcrumbs</h2>
                         <div class="l-container breadcrumbs">
                             <a href="" class="breadcrumbs__link">Home</a>
@@ -411,7 +411,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Pagination</h2>
                         <div class="item-list">
                             <ul class="pager">
@@ -433,7 +433,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Tabs</h2>
                         <nav>
                             <ul>
@@ -442,7 +442,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Sidebar Sub-Navigation with Flyout Menu</h2>
                         <nav class="sub-navigation">
                             <ul>
@@ -454,7 +454,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container">
+                    <div class="l-container l-margin-vm">
                         <h2>Mircosite Sub-Navigation</h2>
                         <section class="portal">
                             <header>
@@ -471,30 +471,32 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </section>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Quick nav (top-nav-strip) -->
+                    <div class="l-container l-margin-vm">
                         <h2>Quick Nav</h2>
-                        <div class="l-container quicklinks">
+                        <div class="l-container top-nav-strip">
                             <div class="row">
                                 <div class="six columns no-gutters">
                                     <p>Visit <a href="">sandiego.gov</a></p>
                                 </div>
                                 <div class="six columns no-gutters">
                                     <ul class="socials">
+                                        <li><a href=""><i class="icon-googleplus"></i></a></li>
+                                        <li><a href=""><i class="icon-facebook"></i></a></li>
+                                        <li><a href=""><i class="icon-youtube"></i></a></li>
+                                        <li><a href=""><i class="icon-twitter"></i></a></li>
                                         <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                                        <li><a href=""><i class="icon-rss"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Social Media Icons -->
+                    <div class="l-container l-margin-vm">
                         <h2>Social Properties</h2>
-                        <div class="l-container">
+                        <div class="l-container l-margin-vm">
                             <div class="row">
                                 <div class="six columns">
                                     <ul class="socials">
@@ -510,16 +512,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Tags -->
+                    <div class="l-container l-margin-vm">
                         <h2>Tags</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
+                        <ul class="tag-list">
+                            <li class="tag-list__item"><a class="tag-list__link" href="">City Council</a></li>
+                            <li class="tag-list__item"><a class="tag-list__link" href="">Transit</a></li>
+                            <li class="tag-list__item"><a class="tag-list__link" href="">Community Events</a></li>
+                        </ul>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Site Exit Link -->
+                    <div class="l-container l-margin-vm">
                         <h2>Site Exit Link</h2>
                         <nav>
                             <ul>
@@ -528,7 +532,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Image Thumbnails -->
+                    <div class="l-container l-margin-vm">
                         <h2>Image Thumbnails</h2>
                         <nav>
                             <ul>
@@ -537,13 +542,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container">
+                    <!-- Quicklinks -->
+                    <div class="l-container l-margin-vm">
                         <h2>Quicklinks, dropdown</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
+                        <div class="quicklinks background--cerulean l-padding-ad">
+                            <nav>
+                                <ul>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
+                                    <li><a href="">Translate</a></li>
+                                    <li><a href="">High Contrast</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
 
                 </div>

@@ -24,7 +24,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <div class="message message--success">
 				    	<p>
 				    	<i class="icon-search"></i>
-				    	<strong>Success!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+				    	<strong>Success!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
 				    </div>
 				</div>
 
@@ -33,7 +34,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<div class="message message--warning">
 				    	<p>
 				    	<i class="icon-search"></i>
-				    	<strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+				    	<strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
 					</div>
 				</div>
 
@@ -42,7 +44,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<div class="message message--error">
 				    	<p>
 				    	<i class="icon-search"></i>
-				    	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+				    	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
 					</div>
 				</div>
 

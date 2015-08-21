@@ -418,12 +418,12 @@ body {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-    background: #d85030;
+    background: #c51313;
     text-shadow: none;
 }
 
 ::selection {
-    background: #d85030;
+    background: #c51313;
     text-shadow: none;
 }
 
@@ -867,6 +867,10 @@ p.nav-ex {
 
 .background-white {
     background-color: white;
+}
+
+.background--cerulean {
+    background-color: #0098db;
 }
 
 .overlay {
@@ -4215,23 +4219,23 @@ header.library__header {
     color: #a8e4ff;
 }
 
-.quicklinks {
+.top-nav-strip {
     padding: 1em;
     color: white;
     background: #005bbb;
 }
-.quicklinks p {
+.top-nav-strip p {
     line-height: 1.9; 
     margin: 0;
 }
-.quicklinks p a {
+.top-nav-strip p a {
     text-decoration: none; 
     color: white;
 }
-.quicklinks p a:hover {
+.top-nav-strip p a:hover {
     text-decoration: underline;
 }
-.quicklinks .socials a {
+.top-nav-strip .socials a {
     -webkit-transition-duration: .15s;
        -moz-transition-duration: .15s;
             transition-duration: .15s; 
@@ -4241,15 +4245,15 @@ header.library__header {
     opacity: .9;
     color: #005bbb;
 }
-.quicklinks .socials a:hover {
+.top-nav-strip .socials a:hover {
     opacity: 1;
 }
 @media screen and (min-width: 48em) {
-    .quicklinks {
+    .top-nav-strip {
         font-size: 13px;
         font-size: .8125rem;
     }
-    .quicklinks .six:last-child {
+    .top-nav-strip .six:last-child {
         text-align: right;
     }
 }
@@ -4259,13 +4263,39 @@ header.library__header {
     font-size: .6875rem;
 }
 .breadcrumbs a {
-    text-decoration: none;
+    text-decoration: none; 
+    color: #37424a;
 }
 .breadcrumbs a:hover {
     color: #0c0e0f;
 }
 .breadcrumbs .breadcrumbs__current {
     font-weight: bold;
+}
+
+.quicklinks ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.quicklinks li {
+    font-size: 13px;
+    font-size: .8125rem; 
+    display: inline-block;
+    margin: 0 .25em;
+}
+.quicklinks li:after {
+    margin-left: .5em; 
+    content: "|";
+    color: white;
+}
+.quicklinks li:last-child:after {
+    display: none;
+}
+.quicklinks a {
+    font-weight: 600;
+    text-decoration: none; 
+    color: white;
 }
 
 /* Pagination
@@ -4398,7 +4428,8 @@ header.library__header {
 .card__container .card__headline {
     font-family: "Merriweather", serif;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1rem; 
+    color: #37424a;
 }
 .card__container .card__meta {
     margin: 1em 0;
@@ -4453,6 +4484,23 @@ header.library__header {
     font-size: 18px;
     font-size: 1.125rem;
     color: white;
+}
+
+.card--stats {
+    padding: .75em;
+    text-align: right;
+    color: white;
+    border-radius: 0;
+    background-color: #0098db;
+}
+.card--stats p {
+    margin: 0;
+}
+.card--stats .card__headline {
+    font-size: 50px;
+    font-size: 3.125rem; 
+    font-weight: 700;
+    line-height: 1;
 }
 
 @media screen and (min-width: 48em) {
@@ -4710,12 +4758,39 @@ header.library__header {
 
 /* Messaging
    ========================================================================== */
+.main__message {
+    padding: 1.5em;
+    text-align: center;
+    background-color: rgba(0, 152, 219, .9);
+}
+@media screen and (min-width: 20em) {
+    .main__message {
+        padding: 2.5em;
+    }
+}
+.main__message .main__heading {
+    font-size: 48px;
+    font-size: 3rem; 
+    margin: 0 0 .15em;
+    color: white;
+}
+.main__message .main__content {
+    margin: 0;
+    color: white;
+}
+.main__message a {
+    color: #fed100;
+}
+
 .message {
     padding: 1em;
+    border-radius: 4px;
 }
 .message p {
     margin: 0;
-    color: white;
+}
+.message a {
+    text-decoration: none;
 }
 .message i {
     font-size: 24px;
@@ -4723,13 +4798,22 @@ header.library__header {
     vertical-align: middle;
 }
 .message.message--success {
-    background-color: #659f13;
+    background-color: #f2fae3;
+}
+.message.message--success * {
+    color: #659f13;
 }
 .message.message--warning {
-    background-color: #e28327;
+    background-color: #fffceb;
+}
+.message.message--warning * {
+    color: #e28327;
 }
 .message.message--error {
-    background-color: #d85030;
+    background-color: #fff1f0;
+}
+.message.message--error * {
+    color: #c51313;
 }
 
 /* Weather
@@ -4758,6 +4842,29 @@ header.library__header {
     font-size: 24px;
     font-size: 1.5rem; 
     vertical-align: middle;
+}
+
+/* Text Sizing
+   ========================================================================== */
+span[class^="text-"] {
+    margin: 2px; 
+    color: rgba(255, 255, 255, .65);
+}
+span[class^="text-"].current {
+    text-decoration: underline; 
+    color: white;
+}
+span[class^="text-"].text-sm {
+    font-size: 13px;
+    font-size: .8125rem;
+}
+span[class^="text-"].text-nm {
+    font-size: 16px;
+    font-size: 1rem;
+}
+span[class^="text-"].text-lg {
+    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* Social
@@ -4807,6 +4914,69 @@ header.library__header {
 }
 .social-share__wrap .stButton .stLarge:hover {
     background-position: top left;
+}
+
+/* Tags
+   ========================================================================== */
+.tag-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.tag-list__item {
+    display: inline-block; 
+    padding: 0 1em .5em 0;
+}
+
+.tag-list__link {
+    font-size: 13px;
+    font-size: .8125rem; 
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    display: block;
+    padding: .5em .325em;
+    text-decoration: none;
+    color: white;
+    background-color: #cbcbcb;
+}
+.tag-list__link:before,
+.tag-list__link:after {
+    position: absolute; 
+    content: "";
+}
+.tag-list__link:before {
+    z-index: 2;
+    top: 50%;
+    left: 100%;
+    width: 3px;
+    height: 3px;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%); 
+    border-radius: 500px;
+    background-color: white;
+}
+.tag-list__link:after {
+    top: 0;
+    left: 100%;
+    -webkit-transition: border .15s;
+       -moz-transition: border .15s;
+            transition: border .15s; 
+    border-width: 13px;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: #cbcbcb;
+}
+.tag-list__link:hover {
+    color: white;
+    background-color: #656667;
+}
+.tag-list__link:hover:after {
+    border-left-color: #656667;
 }
 
 /* Blog
@@ -5462,11 +5632,11 @@ input[type="submit"] .icon-arrow-left {
 
 .btn--error {
     color: white; 
-    background-color: #d85030;
+    background-color: #c51313;
 }
 .btn--error:hover {
     color: white; 
-    background-color: #b33d22;
+    background-color: #960f0f;
 }
 
 /* Disabled
@@ -5934,7 +6104,7 @@ header .form--search input[type="submit"]:hover {
 }
 
 .notification--error {
-    color: #d85030; 
+    color: #c51313; 
     background-color: #fff1f0;
 }
 
@@ -5952,7 +6122,7 @@ header .form--search input[type="submit"]:hover {
     text-decoration: underline;
 }
 .notification--error .notification__message a {
-    color: #d85030;
+    color: #c51313;
 }
 .notification--warning .notification__message a {
     color: #e28327;
@@ -5995,7 +6165,7 @@ header .form--search input[type="submit"]:hover {
         -ms-transform: rotate(90deg);
          -o-transform: rotate(90deg);
             transform: rotate(90deg); 
-    color: #d85030;
+    color: #c51313;
 }
 
 #outer-wrap {
@@ -6998,19 +7168,19 @@ span.CodeMirror-selectedtext {
     padding: 5px;
 }
 .gform_wrapper .gfield_required {
-    color: #d85030;
+    color: #c51313;
 }
 .gform_wrapper div.validation_error {
     padding: 1em;
-    color: #d85030; 
-    border-top: 1px solid #ecab9b;
-    border-bottom: 1px solid #ecab9b;
+    color: #c51313; 
+    border-top: 1px solid #f06767;
+    border-bottom: 1px solid #f06767;
     background: #fff1f0;
 }
 .gform_wrapper li.gfield.gfield_error,
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-    border-top: 1px solid #ecab9b;
-    border-bottom: 1px solid #ecab9b;
+    border-top: 1px solid #f06767;
+    border-bottom: 1px solid #f06767;
 }
 .gform_wrapper li.gfield.gfield_error,
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
@@ -7023,16 +7193,16 @@ span.CodeMirror-selectedtext {
 .gform_wrapper li.gfield_error input[type=number],
 .gform_wrapper li.gfield_error input[type=password],
 .gform_wrapper li.gfield_error textarea {
-    border: 1px solid #ecab9b;
+    border: 1px solid #f06767;
 }
 .gform_wrapper .gfield_error .gfield_label {
-    color: #d85030;
+    color: #c51313;
 }
 .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,
 .gform_wrapper li.gfield_error ul.gfield_checkbox,
 .gform_wrapper li.gfield_error ul.gfield_radio,
 .gform_wrapper li.gfield_error .validation_message {
-    color: #d85030;
+    color: #c51313;
 }
 .gform_wrapper .validation_message {
     color: #333332;

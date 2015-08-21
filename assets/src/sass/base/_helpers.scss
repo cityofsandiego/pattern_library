@@ -325,9 +325,6 @@ p.nav-ex {
             color: white; 
         }
     }
-    // a {
-    //     color: lighten( $sunshade, 10% );
-    // }
 }
 .background-off-white {
     background-color: $off-white;
@@ -337,6 +334,9 @@ p.nav-ex {
     background-color: white;
 }
 
+.background--cerulean {
+    background-color: $cerulean;
+}
 
 // Overlays
 .overlay {

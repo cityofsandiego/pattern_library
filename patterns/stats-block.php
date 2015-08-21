@@ -19,6 +19,26 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <div class="l-container l-margin-tm">
                     <h2>Stats Block</h2>
+
+                    <div class="row">
+                        <div class="four columns">
+                            <div class="card card--stats">
+                                <p class="card__headline">1.356 mm</p>
+                                <p>people in San Diego</p>
+                            </div>
+                        </div>
+                        <div class="three columns">
+                            <div class="card card--stats">
+                                <p class="card__headline">372</p>
+                                <p>square miles</p>
+                            </div>
+                        </div>
+                        <!-- <div class="five columns">
+                            <div class="card card--stats">
+                                
+                            </div>
+                        </div> -->
+                    </div>
                 </div>
 
             </div>
