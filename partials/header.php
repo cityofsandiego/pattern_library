@@ -139,7 +139,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                     <nav>
                         <ul>
                             <li><a href="/">Patterns</a></li>
-                            <li><a href="/">Templates</a></li>
+                            <li><a href="/templates/">Templates</a></li>
                         </ul>
 
                         <?php

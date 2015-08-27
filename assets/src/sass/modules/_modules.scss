@@ -6,8 +6,9 @@
 /* Header
    ========================================================================== */
 header {
-    padding: 1em 0;
-    background: $cerulean;
+    @include mq( $from: tablet ) {
+        background: $cerulean;
+    }
 
     nav {
         line-height: 2;
@@ -15,11 +16,6 @@ header {
             margin: 0;
             padding: 0;
             list-style-type: none;
-        }
-        li {
-            display: inline-block;
-            margin-left: .5em;
-            margin-right: .5em;
         }
         a {
             font-weight: 800;
@@ -31,6 +27,28 @@ header {
     &.library__header {
         background: white;
     }
+
+    @include mq( $until: tablet ) {
+        .logo {
+            img {
+                max-width: 70px;
+            }
+        }
+    }
+}
+
+/* Pattern Library */
+.library__header {
+    li {
+        display: inline-block;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+}
+
+.hero__wrap {
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -38,10 +56,14 @@ header {
    ========================================================================== */
 
 /* MEGA MENU */
+.navigation__wrap {
+    background: white;
+    box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
+}
+
 .main__navigation {
 
     position: relative;
-    box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
 
     ul {
         margin: 0;
@@ -112,6 +134,25 @@ header {
                 @include mq( $until: tablet ) {
 
                     background: $off-black;
+
+                    padding: 1em;
+                    @include rem( 'font-size', 18px );
+
+                    span {
+                        @include rem( 'font-size', 14px );
+                    }
+
+                    i {
+                        position: absolute;
+                        right: 5px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        font-size: 30px;
+                        color: $spruce;
+                    }
                 }
 
             }
@@ -162,6 +203,7 @@ header {
     }
 
     .has__dropdown {
+
         &:hover {
             .dropdown {
                 display: block;
@@ -179,6 +221,11 @@ header {
             background: transparent;
             * {
                 color: white;
+            }
+
+            a, h4 {
+                line-height: 1.5;
+                @include rem( 'font-size', 18px );
             }
         }
 
@@ -205,9 +252,8 @@ header {
         }
 
         .border--bottom {
-            margin-bottom: .5em;
-            padding-bottom: .5em;
-            border-bottom-style: dashed;
+            border: none;
+            padding-bottom: 0em;
         }
 
         .nav__event {
@@ -896,6 +942,18 @@ header {
 
     a {
         color: $gold;
+    }
+
+    &.main__message {
+        background-color: white;
+
+        .main__heading {
+            color: $off-black;
+        }
+
+        .main__content {
+            color: $cerulean;
+        }
     }
 }
 

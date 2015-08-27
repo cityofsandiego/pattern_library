@@ -943,37 +943,39 @@ h1,
 h2,
 h3,
 h4 {
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 h1,
 .h1 {
-    font-size: 39px;
-    font-size: 2.4375rem;
+    font-size: 36px;
+    font-size: 2.25rem;
 }
 
 h2,
 .h2 {
-    font-size: 31px;
-    font-size: 1.9375rem;
+    font-size: 27px;
+    font-size: 1.6875rem; 
+    font-weight: 600;
 }
 
 h3,
 .h3 {
-    font-size: 25px;
-    font-size: 1.5625rem;
+    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h4,
 .h4 {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 16px;
+    font-size: 1rem; 
+    font-weight: 600;
 }
 
 h5,
 .h5 {
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 16px;
+    font-size: 1rem;
 }
 
 h6,
@@ -2039,7 +2041,6 @@ dd {
 /* Header
    ========================================================================== */
 header {
-    padding: 1em 0;
     background: #0098db;
 }
 header nav {
@@ -2050,11 +2051,6 @@ header nav ul {
     padding: 0;
     list-style-type: none;
 }
-header nav li {
-    display: inline-block;
-    margin-right: .5em; 
-    margin-left: .5em;
-}
 header nav a {
     font-weight: 800;
     text-decoration: none;
@@ -2064,12 +2060,23 @@ header.library__header {
     background: white;
 }
 
+/* Pattern Library */
+.library__header li {
+    display: inline-block;
+    margin-right: .5em; 
+    margin-left: .5em;
+}
+
 /* Navigation
    ========================================================================== */
 /* MEGA MENU */
+.navigation__wrap {
+    background: white;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .3);
+}
+
 .main__navigation {
     position: relative;
-    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .3);
 }
 .main__navigation ul {
     margin: 0;

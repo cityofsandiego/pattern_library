@@ -154,19 +154,22 @@
  * 1. Keep above .menu
  */
 .menu-toggle {
-    margin-top: 5px;
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     position: relative;
     z-index: 201; /* 1 */
     display: none;
-    border: 2px solid $alto;
+    font-weight: 600;
+    padding-top: .25em;
     border-radius: 2px;
+    text-align: center;
+    text-decoration: none;
 
     &:hover,
     .js-nav &:hover {
-        background-color: $sunshade;
-        border-color: $sunshade;
+        color: white;
+        background-color: $cerulean;
+        border-color: $cerulean;
     }
     .js-nav & {
         background-color: transparent;
@@ -174,7 +177,9 @@
 
     @include mq( $until: tablet ) {
         display: block;
-        float: right;
+        position: absolute;
+        top: 1em;
+        right: 1em;
     }
 }
 
@@ -185,9 +190,9 @@
     height: 2px;
     display: block;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
-    background-color: $sunshade;
+    background-color: $cerulean;
     -webkit-backface-visibility: hidden;
     @include transition( background .15s );
 
@@ -216,7 +221,7 @@
         -webkit-backface-visibility: hidden;
 
         .js-nav & {
-            background-color: $sunshade;
+            background-color: $cerulean;
         }
     }
 

@@ -198,7 +198,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="twelve columns">
                             <p>What's this?
                                 <span class="tooltip__wrap">
-                                    <i><span class="lnr lnr-question-circle"></i>
+                                    <i><i class="lnr lnr-question-circle"></i>
                                     <span class="tooltip tooltip--bottom">Bottom Tooltip</span>
                                 </span>
                             </p>
@@ -208,7 +208,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="twelve columns">
                             <p>
                             <span class="tooltip__wrap">
-                                <i><span class="lnr lnr-question-circle"></i>
+                                <i><i class="lnr lnr-question-circle"></i>
                                 <span class="tooltip tooltip--left">Left Tooltip</span>
                             </span>
                             What's this?</p>
