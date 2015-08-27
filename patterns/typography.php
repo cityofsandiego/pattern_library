@@ -21,6 +21,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    </ul>
 				</div>
 
+				<div class="l-container l-margin-tm">
+					<p>We're utilizing Google Fonts sitewide; <a href="https://www.google.com/fonts/specimen/Merriweather" target="_blank">Merriweather</a> for headline text, and <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> for body copy.</p>
+				</div>
+
 				<div class="l-container l-margin-vm">
 				    <h2>Byline</h2>
 				    <div class="post__meta">
@@ -49,10 +53,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<h1 class="l-margin-an">Main Headline</h1>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray">36px / 47px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">400 / Normal</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">
@@ -60,10 +64,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<h2 class="l-margin-an">Sub Headline</h2>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray">27px / 35px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">600 / Bold</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">
@@ -71,10 +75,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<h3 class="l-margin-an">Section Headline</h3>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray">24px / 31px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">400 / Normal</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">
@@ -82,10 +86,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<h4 class="l-margin-an">Section Sub Headline</h4>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray">16px / 21px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">600 / Bold</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">
@@ -93,10 +97,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<p class="l-margin-an subheading">Card or Teaser Title</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray">20px / 30px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">400 / Normal</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">
@@ -104,10 +108,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<p class="l-margin-an">General body copy</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font size/line height</p>
+					    		<p class="text-gray"> 16px / 24px</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">400 / Normal</p>
 					    	</div>
 					    </div>
 					    <div class="row">
@@ -118,7 +122,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<p class="text-gray">Font size/line height</p>
 					    	</div>
 					    	<div class="three columns">
-					    		<p class="text-gray">Font weight</p>
+					    		<p class="text-gray">400 / Normal</p>
 					    	</div>
 					    </div>
 				    </div>
@@ -142,11 +146,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    	</div>
 				    	<div class="row l-margin-vd">
 				    		<div class="six columns">
-				    			<p class="subheading"><strong>Sub Section</strong></p>
+				    			<p class="subheading">Sub Section</p>
 				    			<p>We are the closest golf course to downtown San Diego. Conveniently located near Route 94 and Interstate 5 freeways. Facilities include an 18-hole golf course and a 9-hole executive golf course, driving range, practice putting greens, coffee shop and half-way house. The Pro Shop offers golf merchandise for sale and the rental of clubs, hand and power golf carts. The Professional Golf instruction staff offers group and individual golf lessons.</p>
 				    		</div>
 				    		<div class="six columns">
-				    			<p class="subheading"><strong>Sub Section</strong></p>
+				    			<p class="subheading">Sub Section</p>
 				    			<p>We are the closest golf course to downtown San Diego. Conveniently located near Route 94 and Interstate 5 freeways. Facilities include an 18-hole golf course and a 9-hole executive golf course, driving range, practice putting greens, coffee shop and half-way house. The Pro Shop offers golf merchandise for sale and the rental of clubs, hand and power golf carts. The Professional Golf instruction staff offers group and individual golf lessons.</p>
 				    		</div>
 				    	</div>

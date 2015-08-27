@@ -28,10 +28,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-home">
-                                
-                                </span>
-                                <span class="mls"> lnr-home</span>
+                                <i class="lnr lnr-home"></i>
+                                <span> lnr-home</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e800" class="unit size1of2" />
@@ -46,10 +44,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-apartment">
-                                
-                                </span>
-                                <span class="mls"> lnr-apartment</span>
+                                <i class="lnr lnr-apartment"></i>
+                                <span> lnr-apartment</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e801" class="unit size1of2" />
@@ -64,10 +60,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pencil">
-                                
-                                </span>
-                                <span class="mls"> lnr-pencil</span>
+                                <i class="lnr lnr-pencil"></i>
+                                <span> lnr-pencil</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e802" class="unit size1of2" />
@@ -82,10 +76,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-magic-wand">
-                                
-                                </span>
-                                <span class="mls"> lnr-magic-wand</span>
+                                <i class="lnr lnr-magic-wand"></i>
+                                <span> lnr-magic-wand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e803" class="unit size1of2" />
@@ -100,10 +92,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-drop">
-                                
-                                </span>
-                                <span class="mls"> lnr-drop</span>
+                                <i class="lnr lnr-drop"></i>
+                                <span> lnr-drop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e804" class="unit size1of2" />
@@ -118,10 +108,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-lighter">
-                                
-                                </span>
-                                <span class="mls"> lnr-lighter</span>
+                                <i class="lnr lnr-lighter"></i>
+                                <span> lnr-lighter</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e805" class="unit size1of2" />
@@ -136,10 +124,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-poop">
-                                
-                                </span>
-                                <span class="mls"> lnr-poop</span>
+                                <i class="lnr lnr-poop"></i>
+                                <span> lnr-poop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e806" class="unit size1of2" />
@@ -154,10 +140,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-sun">
-                                
-                                </span>
-                                <span class="mls"> lnr-sun</span>
+                                <i class="lnr lnr-sun"></i>
+                                <span> lnr-sun</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e807" class="unit size1of2" />
@@ -172,10 +156,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-moon">
-                                
-                                </span>
-                                <span class="mls"> lnr-moon</span>
+                                <i class="lnr lnr-moon"></i>
+                                <span> lnr-moon</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e808" class="unit size1of2" />
@@ -190,10 +172,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cloud">
-                                
-                                </span>
-                                <span class="mls"> lnr-cloud</span>
+                                <i class="lnr lnr-cloud"></i>
+                                <span> lnr-cloud</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e809" class="unit size1of2" />
@@ -208,10 +188,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cloud-upload">
-                                
-                                </span>
-                                <span class="mls"> lnr-cloud-upload</span>
+                                <i class="lnr lnr-cloud-upload"></i>
+                                <span> lnr-cloud-upload</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80a" class="unit size1of2" />
@@ -226,9 +204,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cloud-download">
-                                
-                                </span>
+                                <i class="lnr lnr-cloud-download"></i>
                                 <small>lnr-cloud-download</small>
                             </p>
                             <fieldset class="">
@@ -244,10 +220,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cloud-sync">
-                                
-                                </span>
-                                <span class="mls"> lnr-cloud-sync</span>
+                                <i class="lnr lnr-cloud-sync"></i>
+                                <span> lnr-cloud-sync</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80c" class="unit size1of2" />
@@ -262,10 +236,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cloud-check">
-                                
-                                </span>
-                                <span class="mls"> lnr-cloud-check</span>
+                                <i class="lnr lnr-cloud-check"></i>
+                                <span> lnr-cloud-check</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80d" class="unit size1of2" />
@@ -280,10 +252,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-database">
-                                
-                                </span>
-                                <span class="mls"> lnr-database</span>
+                                <i class="lnr lnr-database"></i>
+                                <span> lnr-database</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80e" class="unit size1of2" />
@@ -298,10 +268,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-lock">
-                                
-                                </span>
-                                <span class="mls"> lnr-lock</span>
+                                <i class="lnr lnr-lock"></i>
+                                <span> lnr-lock</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80f" class="unit size1of2" />
@@ -316,10 +284,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cog">
-                                
-                                </span>
-                                <span class="mls"> lnr-cog</span>
+                                <i class="lnr lnr-cog"></i>
+                                <span> lnr-cog</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e810" class="unit size1of2" />
@@ -334,10 +300,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-trash">
-                                
-                                </span>
-                                <span class="mls"> lnr-trash</span>
+                                <i class="lnr lnr-trash"></i>
+                                <span> lnr-trash</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e811" class="unit size1of2" />
@@ -352,10 +316,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-dice">
-                                
-                                </span>
-                                <span class="mls"> lnr-dice</span>
+                                <i class="lnr lnr-dice"></i>
+                                <span> lnr-dice</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e812" class="unit size1of2" />
@@ -370,10 +332,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-heart">
-                                
-                                </span>
-                                <span class="mls"> lnr-heart</span>
+                                <i class="lnr lnr-heart"></i>
+                                <span> lnr-heart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e813" class="unit size1of2" />
@@ -388,10 +348,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-star">
-                                
-                                </span>
-                                <span class="mls"> lnr-star</span>
+                                <i class="lnr lnr-star"></i>
+                                <span> lnr-star</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e814" class="unit size1of2" />
@@ -406,10 +364,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-star-half">
-                                
-                                </span>
-                                <span class="mls"> lnr-star-half</span>
+                                <i class="lnr lnr-star-half"></i>
+                                <span> lnr-star-half</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e815" class="unit size1of2" />
@@ -424,10 +380,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-star-empty">
-                                
-                                </span>
-                                <span class="mls"> lnr-star-empty</span>
+                                <i class="lnr lnr-star-empty"></i>
+                                <span> lnr-star-empty</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e816" class="unit size1of2" />
@@ -442,10 +396,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-flag">
-                                
-                                </span>
-                                <span class="mls"> lnr-flag</span>
+                                <i class="lnr lnr-flag"></i>
+                                <span> lnr-flag</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e817" class="unit size1of2" />
@@ -460,10 +412,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-envelope">
-                                
-                                </span>
-                                <span class="mls"> lnr-envelope</span>
+                                <i class="lnr lnr-envelope"></i>
+                                <span> lnr-envelope</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e818" class="unit size1of2" />
@@ -478,10 +428,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-paperclip">
-                                
-                                </span>
-                                <span class="mls"> lnr-paperclip</span>
+                                <i class="lnr lnr-paperclip"></i>
+                                <span> lnr-paperclip</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e819" class="unit size1of2" />
@@ -496,10 +444,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-inbox">
-                                
-                                </span>
-                                <span class="mls"> lnr-inbox</span>
+                                <i class="lnr lnr-inbox"></i>
+                                <span> lnr-inbox</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81a" class="unit size1of2" />
@@ -514,10 +460,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-eye">
-                                
-                                </span>
-                                <span class="mls"> lnr-eye</span>
+                                <i class="lnr lnr-eye"></i>
+                                <span> lnr-eye</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81b" class="unit size1of2" />
@@ -532,10 +476,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-printer">
-                                
-                                </span>
-                                <span class="mls"> lnr-printer</span>
+                                <i class="lnr lnr-printer"></i>
+                                <span> lnr-printer</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81c" class="unit size1of2" />
@@ -550,10 +492,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-file-empty">
-                                
-                                </span>
-                                <span class="mls"> lnr-file-empty</span>
+                                <i class="lnr lnr-file-empty"></i>
+                                <span> lnr-file-empty</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81d" class="unit size1of2" />
@@ -568,10 +508,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-file-add">
-                                
-                                </span>
-                                <span class="mls"> lnr-file-add</span>
+                                <i class="lnr lnr-file-add"></i>
+                                <span> lnr-file-add</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81e" class="unit size1of2" />
@@ -586,10 +524,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-enter">
-                                
-                                </span>
-                                <span class="mls"> lnr-enter</span>
+                                <i class="lnr lnr-enter"></i>
+                                <span> lnr-enter</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81f" class="unit size1of2" />
@@ -604,10 +540,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-exit">
-                                
-                                </span>
-                                <span class="mls"> lnr-exit</span>
+                                <i class="lnr lnr-exit"></i>
+                                <span> lnr-exit</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e820" class="unit size1of2" />
@@ -622,10 +556,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-graduation-hat">
-                                
-                                </span>
-                                <span class="mls"> lnr-graduation-hat</span>
+                                <i class="lnr lnr-graduation-hat"></i>
+                                <span> lnr-graduation-hat</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e821" class="unit size1of2" />
@@ -640,10 +572,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-license">
-                                
-                                </span>
-                                <span class="mls"> lnr-license</span>
+                                <i class="lnr lnr-license"></i>
+                                <span> lnr-license</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e822" class="unit size1of2" />
@@ -658,10 +588,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-music-note">
-                                
-                                </span>
-                                <span class="mls"> lnr-music-note</span>
+                                <i class="lnr lnr-music-note"></i>
+                                <span> lnr-music-note</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e823" class="unit size1of2" />
@@ -676,10 +604,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-film-play">
-                                
-                                </span>
-                                <span class="mls"> lnr-film-play</span>
+                                <i class="lnr lnr-film-play"></i>
+                                <span> lnr-film-play</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e824" class="unit size1of2" />
@@ -694,10 +620,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-camera-video">
-                                
-                                </span>
-                                <span class="mls"> lnr-camera-video</span>
+                                <i class="lnr lnr-camera-video"></i>
+                                <span> lnr-camera-video</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e825" class="unit size1of2" />
@@ -712,10 +636,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-camera">
-                                
-                                </span>
-                                <span class="mls"> lnr-camera</span>
+                                <i class="lnr lnr-camera"></i>
+                                <span> lnr-camera</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e826" class="unit size1of2" />
@@ -730,10 +652,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-picture">
-                                
-                                </span>
-                                <span class="mls"> lnr-picture</span>
+                                <i class="lnr lnr-picture"></i>
+                                <span> lnr-picture</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e827" class="unit size1of2" />
@@ -748,10 +668,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-book">
-                                
-                                </span>
-                                <span class="mls"> lnr-book</span>
+                                <i class="lnr lnr-book"></i>
+                                <span> lnr-book</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e828" class="unit size1of2" />
@@ -766,10 +684,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bookmark">
-                                
-                                </span>
-                                <span class="mls"> lnr-bookmark</span>
+                                <i class="lnr lnr-bookmark"></i>
+                                <span> lnr-bookmark</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e829" class="unit size1of2" />
@@ -784,10 +700,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-user">
-                                
-                                </span>
-                                <span class="mls"> lnr-user</span>
+                                <i class="lnr lnr-user"></i>
+                                <span> lnr-user</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82a" class="unit size1of2" />
@@ -802,10 +716,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-users">
-                                
-                                </span>
-                                <span class="mls"> lnr-users</span>
+                                <i class="lnr lnr-users"></i>
+                                <span> lnr-users</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82b" class="unit size1of2" />
@@ -820,10 +732,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-shirt">
-                                
-                                </span>
-                                <span class="mls"> lnr-shirt</span>
+                                <i class="lnr lnr-shirt"></i>
+                                <span> lnr-shirt</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82c" class="unit size1of2" />
@@ -838,10 +748,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-store">
-                                
-                                </span>
-                                <span class="mls"> lnr-store</span>
+                                <i class="lnr lnr-store"></i>
+                                <span> lnr-store</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82d" class="unit size1of2" />
@@ -856,10 +764,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cart">
-                                
-                                </span>
-                                <span class="mls"> lnr-cart</span>
+                                <i class="lnr lnr-cart"></i>
+                                <span> lnr-cart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82e" class="unit size1of2" />
@@ -874,10 +780,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-tag">
-                                
-                                </span>
-                                <span class="mls"> lnr-tag</span>
+                                <i class="lnr lnr-tag"></i>
+                                <span> lnr-tag</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82f" class="unit size1of2" />
@@ -892,10 +796,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-phone-handset">
-                                
-                                </span>
-                                <span class="mls"> lnr-phone-handset</span>
+                                <i class="lnr lnr-phone-handset"></i>
+                                <span> lnr-phone-handset</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e830" class="unit size1of2" />
@@ -910,10 +812,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-phone">
-                                
-                                </span>
-                                <span class="mls"> lnr-phone</span>
+                                <i class="lnr lnr-phone"></i>
+                                <span> lnr-phone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e831" class="unit size1of2" />
@@ -928,10 +828,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pushpin">
-                                
-                                </span>
-                                <span class="mls"> lnr-pushpin</span>
+                                <i class="lnr lnr-pushpin"></i>
+                                <span> lnr-pushpin</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e832" class="unit size1of2" />
@@ -946,10 +844,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-map-marker">
-                                
-                                </span>
-                                <span class="mls"> lnr-map-marker</span>
+                                <i class="lnr lnr-map-marker"></i>
+                                <span> lnr-map-marker</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e833" class="unit size1of2" />
@@ -964,10 +860,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-map">
-                                
-                                </span>
-                                <span class="mls"> lnr-map</span>
+                                <i class="lnr lnr-map"></i>
+                                <span> lnr-map</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e834" class="unit size1of2" />
@@ -982,10 +876,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-location">
-                                
-                                </span>
-                                <span class="mls"> lnr-location</span>
+                                <i class="lnr lnr-location"></i>
+                                <span> lnr-location</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e835" class="unit size1of2" />
@@ -1000,10 +892,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-calendar-full">
-                                
-                                </span>
-                                <span class="mls"> lnr-calendar-full</span>
+                                <i class="lnr lnr-calendar-full"></i>
+                                <span> lnr-calendar-full</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e836" class="unit size1of2" />
@@ -1018,10 +908,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-keyboard">
-                                
-                                </span>
-                                <span class="mls"> lnr-keyboard</span>
+                                <i class="lnr lnr-keyboard"></i>
+                                <span> lnr-keyboard</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e837" class="unit size1of2" />
@@ -1036,10 +924,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-spell-check">
-                                
-                                </span>
-                                <span class="mls"> lnr-spell-check</span>
+                                <i class="lnr lnr-spell-check"></i>
+                                <span> lnr-spell-check</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e838" class="unit size1of2" />
@@ -1054,10 +940,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-screen">
-                                
-                                </span>
-                                <span class="mls"> lnr-screen</span>
+                                <i class="lnr lnr-screen"></i>
+                                <span> lnr-screen</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e839" class="unit size1of2" />
@@ -1072,10 +956,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-smartphone">
-                                
-                                </span>
-                                <span class="mls"> lnr-smartphone</span>
+                                <i class="lnr lnr-smartphone"></i>
+                                <span> lnr-smartphone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83a" class="unit size1of2" />
@@ -1090,10 +972,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-tablet">
-                                
-                                </span>
-                                <span class="mls"> lnr-tablet</span>
+                                <i class="lnr lnr-tablet"></i>
+                                <span> lnr-tablet</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83b" class="unit size1of2" />
@@ -1108,10 +988,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-laptop">
-                                
-                                </span>
-                                <span class="mls"> lnr-laptop</span>
+                                <i class="lnr lnr-laptop"></i>
+                                <span> lnr-laptop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83c" class="unit size1of2" />
@@ -1126,10 +1004,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-laptop-phone">
-                                
-                                </span>
-                                <span class="mls"> lnr-laptop-phone</span>
+                                <i class="lnr lnr-laptop-phone"></i>
+                                <span> lnr-laptop-phone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83d" class="unit size1of2" />
@@ -1144,10 +1020,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-power-switch">
-                                
-                                </span>
-                                <span class="mls"> lnr-power-switch</span>
+                                <i class="lnr lnr-power-switch"></i>
+                                <span> lnr-power-switch</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83e" class="unit size1of2" />
@@ -1162,10 +1036,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bubble">
-                                
-                                </span>
-                                <span class="mls"> lnr-bubble</span>
+                                <i class="lnr lnr-bubble"></i>
+                                <span> lnr-bubble</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83f" class="unit size1of2" />
@@ -1180,10 +1052,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-heart-pulse">
-                                
-                                </span>
-                                <span class="mls"> lnr-heart-pulse</span>
+                                <i class="lnr lnr-heart-pulse"></i>
+                                <span> lnr-heart-pulse</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e840" class="unit size1of2" />
@@ -1198,10 +1068,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-construction">
-                                
-                                </span>
-                                <span class="mls"> lnr-construction</span>
+                                <i class="lnr lnr-construction"></i>
+                                <span> lnr-construction</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e841" class="unit size1of2" />
@@ -1216,10 +1084,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pie-chart">
-                                
-                                </span>
-                                <span class="mls"> lnr-pie-chart</span>
+                                <i class="lnr lnr-pie-chart"></i>
+                                <span> lnr-pie-chart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e842" class="unit size1of2" />
@@ -1234,10 +1100,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chart-bars">
-                                
-                                </span>
-                                <span class="mls"> lnr-chart-bars</span>
+                                <i class="lnr lnr-chart-bars"></i>
+                                <span> lnr-chart-bars</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e843" class="unit size1of2" />
@@ -1252,10 +1116,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-gift">
-                                
-                                </span>
-                                <span class="mls"> lnr-gift</span>
+                                <i class="lnr lnr-gift"></i>
+                                <span> lnr-gift</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e844" class="unit size1of2" />
@@ -1270,10 +1132,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-diamond">
-                                
-                                </span>
-                                <span class="mls"> lnr-diamond</span>
+                                <i class="lnr lnr-diamond"></i>
+                                <span> lnr-diamond</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e845" class="unit size1of2" />
@@ -1288,10 +1148,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-linearicons">
-                                
-                                </span>
-                                <span class="mls"> lnr-linearicons</span>
+                                <i class="lnr lnr-linearicons"></i>
+                                <span> lnr-linearicons</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e846" class="unit size1of2" />
@@ -1306,10 +1164,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-dinner">
-                                
-                                </span>
-                                <span class="mls"> lnr-dinner</span>
+                                <i class="lnr lnr-dinner"></i>
+                                <span> lnr-dinner</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e847" class="unit size1of2" />
@@ -1324,10 +1180,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-coffee-cup">
-                                
-                                </span>
-                                <span class="mls"> lnr-coffee-cup</span>
+                                <i class="lnr lnr-coffee-cup"></i>
+                                <span> lnr-coffee-cup</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e848" class="unit size1of2" />
@@ -1342,10 +1196,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-leaf">
-                                
-                                </span>
-                                <span class="mls"> lnr-leaf</span>
+                                <i class="lnr lnr-leaf"></i>
+                                <span> lnr-leaf</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e849" class="unit size1of2" />
@@ -1360,10 +1212,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-paw">
-                                
-                                </span>
-                                <span class="mls"> lnr-paw</span>
+                                <i class="lnr lnr-paw"></i>
+                                <span> lnr-paw</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84a" class="unit size1of2" />
@@ -1378,10 +1228,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-rocket">
-                                
-                                </span>
-                                <span class="mls"> lnr-rocket</span>
+                                <i class="lnr lnr-rocket"></i>
+                                <span> lnr-rocket</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84b" class="unit size1of2" />
@@ -1396,10 +1244,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-briefcase">
-                                
-                                </span>
-                                <span class="mls"> lnr-briefcase</span>
+                                <i class="lnr lnr-briefcase"></i>
+                                <span> lnr-briefcase</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84c" class="unit size1of2" />
@@ -1414,10 +1260,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bus">
-                                
-                                </span>
-                                <span class="mls"> lnr-bus</span>
+                                <i class="lnr lnr-bus"></i>
+                                <span> lnr-bus</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84d" class="unit size1of2" />
@@ -1432,10 +1276,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-car">
-                                
-                                </span>
-                                <span class="mls"> lnr-car</span>
+                                <i class="lnr lnr-car"></i>
+                                <span> lnr-car</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84e" class="unit size1of2" />
@@ -1450,10 +1292,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-train">
-                                
-                                </span>
-                                <span class="mls"> lnr-train</span>
+                                <i class="lnr lnr-train"></i>
+                                <span> lnr-train</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84f" class="unit size1of2" />
@@ -1468,10 +1308,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bicycle">
-                                
-                                </span>
-                                <span class="mls"> lnr-bicycle</span>
+                                <i class="lnr lnr-bicycle"></i>
+                                <span> lnr-bicycle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e850" class="unit size1of2" />
@@ -1486,10 +1324,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-wheelchair">
-                                
-                                </span>
-                                <span class="mls"> lnr-wheelchair</span>
+                                <i class="lnr lnr-wheelchair"></i>
+                                <span> lnr-wheelchair</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e851" class="unit size1of2" />
@@ -1504,10 +1340,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-select">
-                                
-                                </span>
-                                <span class="mls"> lnr-select</span>
+                                <i class="lnr lnr-select"></i>
+                                <span> lnr-select</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e852" class="unit size1of2" />
@@ -1522,10 +1356,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-earth">
-                                
-                                </span>
-                                <span class="mls"> lnr-earth</span>
+                                <i class="lnr lnr-earth"></i>
+                                <span> lnr-earth</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e853" class="unit size1of2" />
@@ -1540,10 +1372,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-smile">
-                                
-                                </span>
-                                <span class="mls"> lnr-smile</span>
+                                <i class="lnr lnr-smile"></i>
+                                <span> lnr-smile</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e854" class="unit size1of2" />
@@ -1558,10 +1388,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-sad">
-                                
-                                </span>
-                                <span class="mls"> lnr-sad</span>
+                                <i class="lnr lnr-sad"></i>
+                                <span> lnr-sad</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e855" class="unit size1of2" />
@@ -1576,10 +1404,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-neutral">
-                                
-                                </span>
-                                <span class="mls"> lnr-neutral</span>
+                                <i class="lnr lnr-neutral"></i>
+                                <span> lnr-neutral</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e856" class="unit size1of2" />
@@ -1594,10 +1420,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-mustache">
-                                
-                                </span>
-                                <span class="mls"> lnr-mustache</span>
+                                <i class="lnr lnr-mustache"></i>
+                                <span> lnr-mustache</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e857" class="unit size1of2" />
@@ -1612,10 +1436,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-alarm">
-                                
-                                </span>
-                                <span class="mls"> lnr-alarm</span>
+                                <i class="lnr lnr-alarm"></i>
+                                <span> lnr-alarm</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e858" class="unit size1of2" />
@@ -1630,10 +1452,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bullhorn">
-                                
-                                </span>
-                                <span class="mls"> lnr-bullhorn</span>
+                                <i class="lnr lnr-bullhorn"></i>
+                                <span> lnr-bullhorn</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e859" class="unit size1of2" />
@@ -1648,10 +1468,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-volume-high">
-                                
-                                </span>
-                                <span class="mls"> lnr-volume-high</span>
+                                <i class="lnr lnr-volume-high"></i>
+                                <span> lnr-volume-high</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85a" class="unit size1of2" />
@@ -1666,9 +1484,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-volume-medium">
-                                
-                                </span>
+                                <i class="lnr lnr-volume-medium"></i>
                                 <small>lnr-volume-medium</small>
                             </p>
                             <fieldset class="">
@@ -1684,10 +1500,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-volume-low">
-                                
-                                </span>
-                                <span class="mls"> lnr-volume-low</span>
+                                <i class="lnr lnr-volume-low"></i>
+                                <span> lnr-volume-low</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85c" class="unit size1of2" />
@@ -1702,10 +1516,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-volume">
-                                
-                                </span>
-                                <span class="mls"> lnr-volume</span>
+                                <i class="lnr lnr-volume"></i>
+                                <span> lnr-volume</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85d" class="unit size1of2" />
@@ -1720,10 +1532,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-mic">
-                                
-                                </span>
-                                <span class="mls"> lnr-mic</span>
+                                <i class="lnr lnr-mic"></i>
+                                <span> lnr-mic</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85e" class="unit size1of2" />
@@ -1738,10 +1548,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-hourglass">
-                                
-                                </span>
-                                <span class="mls"> lnr-hourglass</span>
+                                <i class="lnr lnr-hourglass"></i>
+                                <span> lnr-hourglass</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85f" class="unit size1of2" />
@@ -1756,10 +1564,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-undo">
-                                
-                                </span>
-                                <span class="mls"> lnr-undo</span>
+                                <i class="lnr lnr-undo"></i>
+                                <span> lnr-undo</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e860" class="unit size1of2" />
@@ -1774,10 +1580,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-redo">
-                                
-                                </span>
-                                <span class="mls"> lnr-redo</span>
+                                <i class="lnr lnr-redo"></i>
+                                <span> lnr-redo</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e861" class="unit size1of2" />
@@ -1792,10 +1596,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-sync">
-                                
-                                </span>
-                                <span class="mls"> lnr-sync</span>
+                                <i class="lnr lnr-sync"></i>
+                                <span> lnr-sync</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e862" class="unit size1of2" />
@@ -1810,10 +1612,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-history">
-                                
-                                </span>
-                                <span class="mls"> lnr-history</span>
+                                <i class="lnr lnr-history"></i>
+                                <span> lnr-history</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e863" class="unit size1of2" />
@@ -1828,10 +1628,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-clock">
-                                
-                                </span>
-                                <span class="mls"> lnr-clock</span>
+                                <i class="lnr lnr-clock"></i>
+                                <span> lnr-clock</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e864" class="unit size1of2" />
@@ -1846,10 +1644,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-download">
-                                
-                                </span>
-                                <span class="mls"> lnr-download</span>
+                                <i class="lnr lnr-download"></i>
+                                <span> lnr-download</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e865" class="unit size1of2" />
@@ -1864,10 +1660,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-upload">
-                                
-                                </span>
-                                <span class="mls"> lnr-upload</span>
+                                <i class="lnr lnr-upload"></i>
+                                <span> lnr-upload</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e866" class="unit size1of2" />
@@ -1882,10 +1676,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-enter-down">
-                                
-                                </span>
-                                <span class="mls"> lnr-enter-down</span>
+                                <i class="lnr lnr-enter-down"></i>
+                                <span> lnr-enter-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e867" class="unit size1of2" />
@@ -1900,10 +1692,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-exit-up">
-                                
-                                </span>
-                                <span class="mls"> lnr-exit-up</span>
+                                <i class="lnr lnr-exit-up"></i>
+                                <span> lnr-exit-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e868" class="unit size1of2" />
@@ -1918,10 +1708,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bug">
-                                
-                                </span>
-                                <span class="mls"> lnr-bug</span>
+                                <i class="lnr lnr-bug"></i>
+                                <span> lnr-bug</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e869" class="unit size1of2" />
@@ -1936,10 +1724,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-code">
-                                
-                                </span>
-                                <span class="mls"> lnr-code</span>
+                                <i class="lnr lnr-code"></i>
+                                <span> lnr-code</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86a" class="unit size1of2" />
@@ -1954,10 +1740,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-link">
-                                
-                                </span>
-                                <span class="mls"> lnr-link</span>
+                                <i class="lnr lnr-link"></i>
+                                <span> lnr-link</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86b" class="unit size1of2" />
@@ -1972,10 +1756,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-unlink">
-                                
-                                </span>
-                                <span class="mls"> lnr-unlink</span>
+                                <i class="lnr lnr-unlink"></i>
+                                <span> lnr-unlink</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86c" class="unit size1of2" />
@@ -1990,10 +1772,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-thumbs-up">
-                                
-                                </span>
-                                <span class="mls"> lnr-thumbs-up</span>
+                                <i class="lnr lnr-thumbs-up"></i>
+                                <span> lnr-thumbs-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86d" class="unit size1of2" />
@@ -2008,10 +1788,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-thumbs-down">
-                                
-                                </span>
-                                <span class="mls"> lnr-thumbs-down</span>
+                                <i class="lnr lnr-thumbs-down"></i>
+                                <span> lnr-thumbs-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86e" class="unit size1of2" />
@@ -2026,10 +1804,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-magnifier">
-                                
-                                </span>
-                                <span class="mls"> lnr-magnifier</span>
+                                <i class="lnr lnr-magnifier"></i>
+                                <span> lnr-magnifier</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86f" class="unit size1of2" />
@@ -2044,10 +1820,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cross">
-                                
-                                </span>
-                                <span class="mls"> lnr-cross</span>
+                                <i class="lnr lnr-cross"></i>
+                                <span> lnr-cross</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e870" class="unit size1of2" />
@@ -2062,10 +1836,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-menu">
-                                
-                                </span>
-                                <span class="mls"> lnr-menu</span>
+                                <i class="lnr lnr-menu"></i>
+                                <span> lnr-menu</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e871" class="unit size1of2" />
@@ -2080,10 +1852,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-list">
-                                
-                                </span>
-                                <span class="mls"> lnr-list</span>
+                                <i class="lnr lnr-list"></i>
+                                <span> lnr-list</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e872" class="unit size1of2" />
@@ -2098,10 +1868,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-up">
-                                
-                                </span>
-                                <span class="mls"> lnr-chevron-up</span>
+                                <i class="lnr lnr-chevron-up"></i>
+                                <span> lnr-chevron-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e873" class="unit size1of2" />
@@ -2116,10 +1884,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-down">
-                                
-                                </span>
-                                <span class="mls"> lnr-chevron-down</span>
+                                <i class="lnr lnr-chevron-down"></i>
+                                <span> lnr-chevron-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e874" class="unit size1of2" />
@@ -2134,10 +1900,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-left">
-                                
-                                </span>
-                                <span class="mls"> lnr-chevron-left</span>
+                                <i class="lnr lnr-chevron-left"></i>
+                                <span> lnr-chevron-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e875" class="unit size1of2" />
@@ -2152,10 +1916,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-right">
-                                
-                                </span>
-                                <span class="mls"> lnr-chevron-right</span>
+                                <i class="lnr lnr-chevron-right"></i>
+                                <span> lnr-chevron-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e876" class="unit size1of2" />
@@ -2170,10 +1932,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-up">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-up</span>
+                                <i class="lnr lnr-arrow-up"></i>
+                                <span> lnr-arrow-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e877" class="unit size1of2" />
@@ -2188,10 +1948,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-down">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-down</span>
+                                <i class="lnr lnr-arrow-down"></i>
+                                <span> lnr-arrow-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e878" class="unit size1of2" />
@@ -2206,10 +1964,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-left">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-left</span>
+                                <i class="lnr lnr-arrow-left"></i>
+                                <span> lnr-arrow-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e879" class="unit size1of2" />
@@ -2224,10 +1980,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-right">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-right</span>
+                                <i class="lnr lnr-arrow-right"></i>
+                                <span> lnr-arrow-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87a" class="unit size1of2" />
@@ -2242,10 +1996,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-move">
-                                
-                                </span>
-                                <span class="mls"> lnr-move</span>
+                                <i class="lnr lnr-move"></i>
+                                <span> lnr-move</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87b" class="unit size1of2" />
@@ -2260,10 +2012,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-warning">
-                                
-                                </span>
-                                <span class="mls"> lnr-warning</span>
+                                <i class="lnr lnr-warning"></i>
+                                <span> lnr-warning</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87c" class="unit size1of2" />
@@ -2278,10 +2028,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-question-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-question-circle</span>
+                                <i class="lnr lnr-question-circle"></i>
+                                <span> lnr-question-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87d" class="unit size1of2" />
@@ -2296,10 +2044,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-menu-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-menu-circle</span>
+                                <i class="lnr lnr-menu-circle"></i>
+                                <span> lnr-menu-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87e" class="unit size1of2" />
@@ -2314,9 +2060,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-checkmark-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-checkmark-circle"></i>
                                 <small>lnr-checkmark-circle</small>
                             </p>
                             <fieldset class="">
@@ -2332,10 +2076,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-cross-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-cross-circle</span>
+                                <i class="lnr lnr-cross-circle"></i>
+                                <span> lnr-cross-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e880" class="unit size1of2" />
@@ -2350,10 +2092,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-plus-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-plus-circle</span>
+                                <i class="lnr lnr-plus-circle"></i>
+                                <span> lnr-plus-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e881" class="unit size1of2" />
@@ -2368,10 +2108,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-circle-minus">
-                                
-                                </span>
-                                <span class="mls"> lnr-circle-minus</span>
+                                <i class="lnr lnr-circle-minus"></i>
+                                <span> lnr-circle-minus</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e882" class="unit size1of2" />
@@ -2386,10 +2124,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-up-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-up-circle</span>
+                                <i class="lnr lnr-arrow-up-circle"></i>
+                                <span> lnr-arrow-up-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e883" class="unit size1of2" />
@@ -2404,9 +2140,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-down-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-arrow-down-circle"></i>
                                 <small>lnr-arrow-down-circle</small>
                             </p>
                             <fieldset class="">
@@ -2422,10 +2156,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-left-circle">
-                                
-                                </span>
-                                <span class="mls"> lnr-arrow-left-circle</span>
+                                <i class="lnr lnr-arrow-left-circle"></i>
+                                <span> lnr-arrow-left-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e885" class="unit size1of2" />
@@ -2440,9 +2172,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-arrow-right-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-arrow-right-circle"></i>
                                 <small>lnr-arrow-right-circle</small>
                             </p>
                             <fieldset class="">
@@ -2458,9 +2188,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-up-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-chevron-up-circle"></i>
                                 <small>lnr-chevron-up-circle</small>
                             </p>
                             <fieldset class="">
@@ -2476,9 +2204,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-down-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-chevron-down-circle"></i>
                                 <small> lnr-chevron-down-circle</small>
                             </p>
                             <fieldset class="">
@@ -2494,9 +2220,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-left-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-chevron-left-circle"></i>
                                 <small> lnr-chevron-left-circle</small>
                             </p>
                             <fieldset class="">
@@ -2512,9 +2236,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-chevron-right-circle">
-                                
-                                </span>
+                                <i class="lnr lnr-chevron-right-circle"></i>
                                 <small> lnr-chevron-right-circle</small>
                             </p>
                             <fieldset class="">
@@ -2530,10 +2252,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-crop">
-                                
-                                </span>
-                                <span class="mls"> lnr-crop</span>
+                                <i class="lnr lnr-crop"></i>
+                                <span> lnr-crop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88b" class="unit size1of2" />
@@ -2548,10 +2268,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-frame-expand">
-                                
-                                </span>
-                                <span class="mls"> lnr-frame-expand</span>
+                                <i class="lnr lnr-frame-expand"></i>
+                                <span> lnr-frame-expand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88c" class="unit size1of2" />
@@ -2566,10 +2284,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-frame-contract">
-                                
-                                </span>
-                                <span class="mls"> lnr-frame-contract</span>
+                                <i class="lnr lnr-frame-contract"></i>
+                                <span> lnr-frame-contract</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88d" class="unit size1of2" />
@@ -2584,10 +2300,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-layers">
-                                
-                                </span>
-                                <span class="mls"> lnr-layers</span>
+                                <i class="lnr lnr-layers"></i>
+                                <span> lnr-layers</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88e" class="unit size1of2" />
@@ -2602,10 +2316,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-funnel">
-                                
-                                </span>
-                                <span class="mls"> lnr-funnel</span>
+                                <i class="lnr lnr-funnel"></i>
+                                <span> lnr-funnel</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88f" class="unit size1of2" />
@@ -2620,10 +2332,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-format">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-format</span>
+                                <i class="lnr lnr-text-format"></i>
+                                <span> lnr-text-format</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e890" class="unit size1of2" />
@@ -2638,9 +2348,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-format-remove">
-                                
-                                </span>
+                                <i class="lnr lnr-text-format-remove"></i>
                                 <small> lnr-text-format-remove</small>
                             </p>
                             <fieldset class="">
@@ -2656,10 +2364,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-size">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-size</span>
+                                <i class="lnr lnr-text-size"></i>
+                                <span> lnr-text-size</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e892" class="unit size1of2" />
@@ -2674,10 +2380,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-bold">
-                                
-                                </span>
-                                <span class="mls"> lnr-bold</span>
+                                <i class="lnr lnr-bold"></i>
+                                <span> lnr-bold</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e893" class="unit size1of2" />
@@ -2692,10 +2396,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-italic">
-                                
-                                </span>
-                                <span class="mls"> lnr-italic</span>
+                                <i class="lnr lnr-italic"></i>
+                                <span> lnr-italic</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e894" class="unit size1of2" />
@@ -2710,10 +2412,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-underline">
-                                
-                                </span>
-                                <span class="mls"> lnr-underline</span>
+                                <i class="lnr lnr-underline"></i>
+                                <span> lnr-underline</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e895" class="unit size1of2" />
@@ -2728,10 +2428,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-strikethrough">
-                                
-                                </span>
-                                <span class="mls"> lnr-strikethrough</span>
+                                <i class="lnr lnr-strikethrough"></i>
+                                <span> lnr-strikethrough</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e896" class="unit size1of2" />
@@ -2746,10 +2444,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-highlight">
-                                
-                                </span>
-                                <span class="mls"> lnr-highlight</span>
+                                <i class="lnr lnr-highlight"></i>
+                                <span> lnr-highlight</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e897" class="unit size1of2" />
@@ -2764,10 +2460,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-align-left">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-align-left</span>
+                                <i class="lnr lnr-text-align-left"></i>
+                                <span> lnr-text-align-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e898" class="unit size1of2" />
@@ -2782,10 +2476,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-align-center">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-align-center</span>
+                                <i class="lnr lnr-text-align-center"></i>
+                                <small> lnr-text-align-center</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e899" class="unit size1of2" />
@@ -2800,10 +2492,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-align-right">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-align-right</span>
+                                <i class="lnr lnr-text-align-right"></i>
+                                <span> lnr-text-align-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89a" class="unit size1of2" />
@@ -2818,10 +2508,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-text-align-justify">
-                                
-                                </span>
-                                <span class="mls"> lnr-text-align-justify</span>
+                                <i class="lnr lnr-text-align-justify"></i>
+                                <span> lnr-text-align-justify</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89b" class="unit size1of2" />
@@ -2836,10 +2524,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-line-spacing">
-                                
-                                </span>
-                                <span class="mls"> lnr-line-spacing</span>
+                                <i class="lnr lnr-line-spacing"></i>
+                                <span> lnr-line-spacing</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89c" class="unit size1of2" />
@@ -2854,10 +2540,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-indent-increase">
-                                
-                                </span>
-                                <span class="mls"> lnr-indent-increase</span>
+                                <i class="lnr lnr-indent-increase"></i>
+                                <span> lnr-indent-increase</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89d" class="unit size1of2" />
@@ -2872,9 +2556,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-indent-decrease">
-                                
-                                </span>
+                                <i class="lnr lnr-indent-decrease"></i>
                                 <small> lnr-indent-decrease</small>
                             </p>
                             <fieldset class="">
@@ -2890,10 +2572,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pilcrow">
-                                
-                                </span>
-                                <span class="mls"> lnr-pilcrow</span>
+                                <i class="lnr lnr-pilcrow"></i>
+                                <span> lnr-pilcrow</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89f" class="unit size1of2" />
@@ -2908,10 +2588,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-direction-ltr">
-                                
-                                </span>
-                                <span class="mls"> lnr-direction-ltr</span>
+                                <i class="lnr lnr-direction-ltr"></i>
+                                <span> lnr-direction-ltr</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a0" class="unit size1of2" />
@@ -2926,10 +2604,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-direction-rtl">
-                                
-                                </span>
-                                <span class="mls"> lnr-direction-rtl</span>
+                                <i class="lnr lnr-direction-rtl"></i>
+                                <span> lnr-direction-rtl</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a1" class="unit size1of2" />
@@ -2944,10 +2620,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-page-break">
-                                
-                                </span>
-                                <span class="mls"> lnr-page-break</span>
+                                <i class="lnr lnr-page-break"></i>
+                                <span> lnr-page-break</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a2" class="unit size1of2" />
@@ -2962,10 +2636,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-sort-alpha-asc">
-                                
-                                </span>
-                                <span class="mls"> lnr-sort-alpha-asc</span>
+                                <i class="lnr lnr-sort-alpha-asc"></i>
+                                <span> lnr-sort-alpha-asc</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a3" class="unit size1of2" />
@@ -2980,9 +2652,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-sort-amount-asc">
-                                
-                                </span>
+                                <i class="lnr lnr-sort-amount-asc"></i>
                                 <small> lnr-sort-amount-asc</small>
                             </p>
                             <fieldset class="">
@@ -2998,10 +2668,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-hand">
-                                
-                                </span>
-                                <span class="mls"> lnr-hand</span>
+                                <i class="lnr lnr-hand"></i>
+                                <span> lnr-hand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a5" class="unit size1of2" />
@@ -3016,10 +2684,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pointer-up">
-                                
-                                </span>
-                                <span class="mls"> lnr-pointer-up</span>
+                                <i class="lnr lnr-pointer-up"></i>
+                                <span> lnr-pointer-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a6" class="unit size1of2" />
@@ -3034,10 +2700,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pointer-right">
-                                
-                                </span>
-                                <span class="mls"> lnr-pointer-right</span>
+                                <i class="lnr lnr-pointer-right"></i>
+                                <span> lnr-pointer-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a7" class="unit size1of2" />
@@ -3052,10 +2716,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pointer-down">
-                                
-                                </span>
-                                <span class="mls"> lnr-pointer-down</span>
+                                <i class="lnr lnr-pointer-down"></i>
+                                <span> lnr-pointer-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a8" class="unit size1of2" />
@@ -3070,10 +2732,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <span class="lnr lnr-pointer-left">
-                                
-                                </span>
-                                <span class="mls"> lnr-pointer-left</span>
+                                <i class="lnr lnr-pointer-left"></i>
+                                <span> lnr-pointer-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a9" class="unit size1of2" />

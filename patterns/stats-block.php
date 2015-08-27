@@ -11,14 +11,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Stats Block</h1>
-                <div class="sub__nav--wrap">
-                    <ul class="sub__nav">
-                        <li>Stats Block</li>
-                    </ul>
-                </div>
 
                 <div class="l-container l-margin-tm">
-                    <h2>Stats Block</h2>
 
                     <div class="row">
                         <div class="four columns">

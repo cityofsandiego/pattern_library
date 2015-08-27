@@ -16,6 +16,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				        <li>Bar Graph</li>
 				        <li>Line Graph</li>
 				        <li>Pie Chart</li>
+				        <li>Tables</li>
 				    </ul>
 				</div>
 

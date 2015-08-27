@@ -11,11 +11,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Modal</h1>
-                <div class="sub__nav--wrap">
-                    <ul class="sub__nav">
-                        <li>Modal</li>
-                    </ul>
-                </div>
 
                 <!-- Lightbox -->
                 <div class="l-container l-margin-vm">
