@@ -1,3 +1,71 @@
+<footer class="l-constrained">
+    <div class="row">
+        <div class="three columns footer--left l-padding-ad l-padding-vm">
+            <div class="row l-padding-desktop-ld">
+                <div class="twelve columns no-gutters">
+                    <img src="/assets/dist/img/logo--white--sm.png" alt="The City of San Diego - logo" width="49" height="39">
+                    <ul class="socials">
+                        <li><a href=""><i class="icon-googleplus"></i></a></li>
+                        <li><a href=""><i class="icon-facebook"></i></a></li>
+                        <li><a href=""><i class="icon-youtube"></i></a></li>
+                        <li><a href=""><i class="icon-twitter"></i></a></li>
+                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                        <li><a href=""><i class="icon-rss"></i></a></li>
+                    </ul>
+                    <p class="copyright">
+                    Copyrighted © 2002-2015<br>
+                    City of San Diego. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nine columns no-gutters">
+            <div class="footer--right l-padding-am row">
+                <div class="four columns">
+                    <p class=""><strong>Council Districts</strong></p>
+                    <ul class="two-columns">
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <p class=""><strong>City Officials</strong></p>
+                    <ul>
+                        <li><a href="">Office of the City Attorney</a></li>
+                        <li><a href="">Office of the City Clerk</a></li>
+                        <li><a href="">Office of the City Auditor</a></li>
+                        <li><a href="">Office of the Independent Budget Analyst</a></li>
+                    </ul>
+                </div>
+                <div class="four columns">
+                    <p class=""><strong>Government Agencies</strong></p>
+                    <ul>
+                        <li><a href="">County of San Diego</a></li>
+                        <li><a href="">State of California</a></li>
+                        <li><a href="">Federal Government</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer__privacy">
+        <div class="l-constrained row text-center l-padding-vd">
+            <ul>
+                <li><a href="">Disclaimers</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms & Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

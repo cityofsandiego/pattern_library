@@ -6,6 +6,8 @@
 /* Header
    ========================================================================== */
 header {
+    background: white;
+
     @include mq( $from: tablet ) {
         background: $cerulean;
     }
@@ -105,6 +107,16 @@ header {
                     @extend %gray-gradient;
                 }
 
+                &.current,
+                &:hover {
+                    > a,
+                    > a i,
+                    > a span {
+                        color: white;
+                        background: $tulip;
+                    }
+                }
+
                 &:last-child > a:after {
                     content: '';
                     width: 1px;
@@ -121,9 +133,10 @@ header {
             }
 
             > a {
+
                 color: white;
                 padding: 1em 1.5em;
-                
+
                 transition: color .15s ease;
                 @include rem( 'font-size', 13px );
 
@@ -153,22 +166,24 @@ header {
                         font-size: 30px;
                         color: $spruce;
                     }
+
+                    &:before {
+                        content:'';
+                        width: 0;
+                        height: 0;
+                        z-index: 21;
+                        position: absolute;
+                        top: 100%; left: 5px;
+                        border-style: solid;
+                        border-width: 10px 13px 0 13px;
+                        border-color: $off-black transparent transparent transparent;
+                    }
                 }
 
             }
 
             a {
                 text-transform: uppercase;
-            }
-
-            &.current,
-            &:hover {
-                > a,
-                > a i,
-                > a span {
-                    color: white;
-                    background: $tulip;
-                }
             }
 
         }
@@ -189,6 +204,7 @@ header {
             vertical-align: text-bottom;
             @include rem( 'font-size', 18px );
         }
+
         span {
             display: block;
             font-weight: 400;
@@ -196,8 +212,15 @@ header {
             // transition: color .1s ease-in;
             @include rem( 'font-size', 11px );
         }
+
         &:hover {
-            color: black;
+            color: $off-white;
+        }
+
+        @include mq( $from: tablet ) {
+            &:hover {
+                color: black;
+            }
         }
 
     }
@@ -213,7 +236,7 @@ header {
 
     // MEGA MENU
     .dropdown {
-        z-index: 1;
+        z-index: 2;
         padding: 1em;
         @extend %white-gradient;
 
@@ -798,7 +821,6 @@ header {
 /* Comments */
 
 .card--comment {
-    margin: 1em;
     padding: 1em;
     border-bottom: 2px solid $mercury;
 
@@ -894,7 +916,10 @@ header {
 
 /* Entry
    ========================================================================== */
+
 .post__meta {
+    margin: 1em 0;
+
     @include mq( $from: tablet ) {
         @include rem( 'font-size', 13px );
     }
@@ -910,11 +935,50 @@ header {
     }
 }
 
-
 .article__teaser {
     padding: 1em;
     &:nth-child(2n+1) {
         background-color: $off-white;
+    }
+}
+
+.entry {
+
+}
+
+.entry__content {
+    img {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: inline-block;
+    }
+}
+
+.entry__image {
+    img {
+        width: 100%;
+    }
+}
+
+.entry__pagination {
+    @include mq( $from: tablet ) {
+        padding-left: 5em;
+        padding-right: 5em;
+        @include rem( 'font-size', 13px );
+
+        .entry--prev {
+            text-align: right;
+        }
+
+        .six {
+            padding-left: 2em;
+            padding-right: 2em;
+        }
+
+        .six:first-child {
+            border-right: 1px solid $alto;
+        }
+        
     }
 }
 
@@ -930,8 +994,8 @@ header {
     }
 
     .main__heading {
+        margin: 0;
         color: white;
-        margin: 0 0 .15em;
         @include rem( 'font-size', 48px );
     }
 
@@ -946,6 +1010,10 @@ header {
 
     &.main__message {
         background-color: white;
+
+        a {
+            color: $off-black;
+        }
 
         .main__heading {
             color: $off-black;
@@ -1178,9 +1246,21 @@ span[class^="text-"] {
 
 
 
-/* Blog
+/* Page containers
    ========================================================================== */
 
+main {
+    @include mq( $from: tablet ) {
+        > .nine {
+            border-right: 1px solid $alto;
+        }
+
+        > .six {
+            border-left: 1px solid $alto;
+            border-right: 1px solid $alto;
+        }
+    }
+}
 
 /* Accordion
    ========================================================================== */
@@ -1424,14 +1504,30 @@ figure {
 /* Footer
    ========================================================================== */
 footer {
-    
+
+    background: $spruce;
     text-align: center;
+
     @include mq( $from: mobile-landscape ) {
         text-align: left;
     }
 
+    // @include mq( $from: tablet ) {
+    //     > .row {
+    //         &:before {
+    //             content: '';
+    //             display: block;
+    //             height: 100%;
+    //             background: darken( $spruce, 10% );
+    //             width: 100%;
+    //             position: absolute;
+    //             left: -50%;
+    //         }
+    //     }
+    // }
+
     > .row {
-        background: darken( $spruce, 10% );
+
         @include mq( $from: tablet ) {
             display: block;
             display: -webkit-flex;
@@ -1444,12 +1540,24 @@ footer {
     }
 
     .socials {
-        li {
-            margin: .5em .1em 0;
-        }
+
         @include mq( $from: tablet ) {
+            margin: 0 .5em;
             display: inline-block;
             vertical-align: bottom;
+        }
+
+        li {
+            margin: .5em .25em 0;
+        }
+
+        a {
+            background: rgba(246, 246, 246, 0.8);
+
+            &:hover {
+                background: $off-white;
+                color: darken( $spruce, 25% );
+            }
         }
     }
 
@@ -1496,32 +1604,27 @@ footer {
 
     }
 
-    a {
-        color: white;
-        text-decoration: none;
-        &:hover {
-            color: lighten( $spruce, 25% );
-        }
+    .footer--left {
+        background: darken( $spruce, 10% );
     }
 
     .footer--right {
 
-        .six {
-            padding-left: 1.5em;
-            padding-right: 1.5em;
-        }
+        background: $spruce;
 
-        @include mq( $from: tablet ) {
-            .six {
+        @include mq( $from: tablet-landscape ) {
+            .four {
                 &:after {
                     content: '';
-                    background: darken( $spruce, 10% );
                     display: block;
                     width: 2px;
-                    height: 100%;
+                    height: 125px ;
                     position: absolute;
-                    top: 0; right: .5em;
+                    right: 5%;
+                    top: 0;
+                    background: darken( $spruce, 10% );
                 }
+
                 &:last-child::after {
                     display: none;
                 }
@@ -1529,6 +1632,41 @@ footer {
         }
 
     }
+
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: lighten( $spruce, 25% );
+        }
+    }
 }
 
+.footer__privacy {
+    background: $alto;
 
+    li {
+        margin: 0 .25em;
+        display: inline-block;
+        color: lighten( $spruce, 25% );
+
+        &:after {
+            content: '|';
+            margin-left: .65em;
+        }
+
+        &:last-child::after {
+            content: '';
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        color: lighten( $spruce, 25% );
+        @include rem( 'font-size', 13px );
+
+        &:hover {
+            color: $spruce;
+        }
+    }
+}

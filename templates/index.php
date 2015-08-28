@@ -14,7 +14,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-tm">
                     <ul>
                         <li><a href="blog.php">Blog</a></li>
-                        <li><a href="blog-detail.php">Blog Detail</a></li>
+                        <li><a href="blog-detail-1-column.php">Blog Detail 1 Column</a></li>
+                        <li><a href="blog-detail-2-column.php">Blog Detail 2 Column</a></li>
+                        <li><a href="blog-detail-3-column.php">Blog Detail 3 Column</a></li>
                     </ul>
                 </div>
 
