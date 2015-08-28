@@ -71,7 +71,10 @@
             },
 
             slides : function() {
-              
+                $('.hero__wrap').flexslider({
+                    controlNav: false,
+                    smoothHeight: true,
+                });
             },
 
             buttons : function() {

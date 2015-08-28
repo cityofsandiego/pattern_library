@@ -41,6 +41,8 @@ header {
 
 /* Pattern Library */
 .library__header {
+    padding: 1em 0;
+
     li {
         display: inline-block;
         margin-left: .5em;
@@ -49,8 +51,65 @@ header {
 }
 
 .hero__wrap {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    @include mq( $until: site ) {
+        .six {
+            width: 100%;
+        }
+    }
+}
+
+.hero__bg {
+    padding: 4em 0;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mq( $from: site ) {
+        padding: 4em 0 15em;
+    }
+}
+
+.hero__content {
+    color: white;
+    position: relative;
+    padding: 2.75em 3.5em;
+    background: rgba(0, 0, 0, 0.35);
+
+    h1 {
+        margin: 0;
+        color: white;
+        @include rem( 'font-size', 60px );
+    }
+
+    p {
+        @include rem( 'font-size', 24px );
+    }
+
+    .btn {
+        margin-top: 2em;
+        font-weight: 600;
+        padding: 1.25em 2.5em;
+    }
+}
+
+.hero__img {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    max-height: 550px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+
+        @include mq( $until: tablet ) {
+            display: none;
+        }
+    }
 }
 
 
@@ -1261,6 +1320,17 @@ main {
         }
     }
 }
+
+main[role="main"] {
+    position: relative;
+    z-index: 10;
+
+    @include mq( $from: site ) {
+        margin-top: -10em;
+    }
+}
+
+
 
 /* Accordion
    ========================================================================== */

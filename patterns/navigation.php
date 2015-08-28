@@ -308,7 +308,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained row patterns l-padding-mobile-hd">
+        <div class="l-constrained row patterns background-white l-padding-mobile-hd">
             <aside>
                 <div class="three columns">
                     <?php require_once( ABSPATH . PARTIALS . '/patterns-nav.php' ); ?>

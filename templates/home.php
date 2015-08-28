@@ -5,20 +5,41 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
         <!-- <div class="hero__wrap">
             <img src="../assets/dist/img/cysd-hero-bg.jpg" alt="Blog Archive" class="hero__img">
         </div> -->
-        <div class="hero__wrap" style="background-image:url('../assets/dist/img/home-hero-1.jpg');">
-            <!-- <img src="../assets/dist/img/home-hero-1.jpg" alt=""> -->
 
-            <div class="l-constrained">
-                <div class="hero__content">
-                    <h1>Event permits</h1>
-                    <p>Get your event permit today.</p>
-                    <a href="" class="btn">Apply Now</a>
-                </div>
-            </div>
+        <div class="hero__wrap">
+            <ul class="slides">
+                <li>
+                    <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');">
+                        <div class="l-constrained row">
+                            <div class="six columns">
+                                <div class="hero__content">
+                                    <h1>Event permits</h1>
+                                    <p>Get your event permit today.</p>
+                                    <a href="" class="btn btn--secondary">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');">
+                        <div class="l-constrained row">
+                            <div class="six columns">
+                                <div class="hero__content">
+                                    <h1>Slide 2</h1>
+                                    <p>Another slide</p>
+                                    <a href="" class="btn btn--secondary">Apply Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white l-margin-tl">
-            <main>
+        <main role="main">
+            <div class="l-constrained l-padding-mobile-hd background-white">
                 <div class="l-container l-padding-hd">
                     <div class="row">
                         <div class="twelve columns">
@@ -306,8 +327,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
                     </div>
                 </div>
-            </main>
-        </div> <!-- row -->
+            </div> <!-- row -->
+        </main>
         
 
 <?php
