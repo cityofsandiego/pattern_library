@@ -4337,7 +4337,7 @@ header.library__header {
     display: block;
 }
 .main__navigation .dropdown {
-    z-index: 2;
+    z-index: 10;
     padding: 1em;
 }
 @media screen and (max-width: 47.99em) {
@@ -4634,15 +4634,23 @@ header.library__header {
 }
 
 .card__container {
-    display: -webkit-inline-flex;
-    /* Safari */
-    display:         inline-flex;
+    position: relative;
+}
+@media screen and (min-width: 30em) {
+    .card__container {
+        display: -webkit-inline-flex;
+        /* Safari */
+        display:         inline-flex;
 
-    -webkit-justify-content: center;
-    /* Safari */
-            justify-content: center;
-    -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
+        -webkit-justify-content: center;
+        /* Safari */
+                justify-content: center;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+}
+.card__container.mobile-flexslider {
+    height: 100% !important;
 }
 .card__container .card__wrap {
     padding: .75em;
@@ -4748,6 +4756,26 @@ header.library__header {
     font-size: 3.125rem; 
     font-weight: 700;
     line-height: 1;
+}
+
+.card--notification i {
+    font-size: 24px;
+    font-size: 1.5rem; 
+    padding: .3em;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    color: white;
+    border-radius: 50%;
+    background: #0098db;
+}
+.card--notification .date {
+    font-family: "Merriweather", serif; 
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 48em) {
@@ -8480,11 +8508,12 @@ html[xmlns] .flexslider .slides {
     height: 11px;
     cursor: pointer;
     text-indent: -9999px;
+    border: 2px solid white;
     -webkit-border-radius: 20px;
        -moz-border-radius: 20px;
             border-radius: 20px; 
-    background: #666;
-    background: rgba(0, 0, 0, .5);
+    background: #0098db;
+    background: rgba(91, 205, 255, .5);
     -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
        -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
             box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
@@ -8492,13 +8521,12 @@ html[xmlns] .flexslider .slides {
          -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, .3);
 }
 .flex-control-nav a:hover {
-    background: #333;
-    background: rgba(0, 0, 0, .7);
+    background: #0098db;
 }
 .flex-control-nav a.flex-active {
-    cursor: default; 
-    background: #000;
-    background: rgba(0, 0, 0, .9);
+    cursor: default;
+    border: 2px solid #0098db; 
+    background: white;
 }
 #slider-basic .flex-control-nav {
     position: relative;
@@ -8643,4 +8671,17 @@ html[xmlns] .flexslider .slides {
         -webkit-transform: none !important;
                 transform: none !important;
     }
+}
+
+/* ====================================================================================================================
+ * MOBILE FLEXSLIDER
+ * ====================================================================================================================*/
+.mobile-flexslider .slides {
+    overflow: hidden; 
+    height: 100%;
+}
+.mobile-flexslider .flex-control-nav {
+    position: relative;
+    bottom: 0;
+    margin-top: 1em;
 }

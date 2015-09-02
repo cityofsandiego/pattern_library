@@ -18,6 +18,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="blog-detail-1-column.php">Blog Detail 1 Column</a></li>
                         <li><a href="blog-detail-2-column.php">Blog Detail 2 Column</a></li>
                         <li><a href="blog-detail-3-column.php">Blog Detail 3 Column</a></li>
+                        <li><a href="department.php">Department</a></li>
                     </ul>
                 </div>
 

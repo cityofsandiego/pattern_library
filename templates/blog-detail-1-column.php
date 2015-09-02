@@ -123,71 +123,9 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 </div>
                             </div>
                         </div>
-                    </div> <!-- Nine columns -->
+                    </div> <!-- Twelve columns -->
 
                 </main>
-
-                <!-- <aside class="l-margin-mobile-vd l-margin-bm">
-                    <div class="three columns">
-                        <div class="widget l-padding-hs l-margin-bd">
-                            <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                                <div><div class="container-inline">
-                                    <h2 class="visuallyhidden">Search form</h2>
-                                    <div class="form-item form-type-textfield form-item-search-block-form">
-                                        <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-                                        <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
-                                    </div>
-                                    <div class="form-actions form-wrapper" id="edit-actions">
-                                        <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-                                    </div>
-                                    <input type="hidden" name="form_build_id" value="">
-                                    <input type="hidden" name="form_id" value="search_block_form">
-                                </div></div>
-                            </form>
-                        </div>
-
-                        <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Categories</h4>
-                            <ul>
-                                <li>Press Releases<a href="" class="pull-right">(22)</a></li>
-                                <li>Event Recaps<a href="" class="pull-right">(2)</a></li>
-                                <li>City Initiatives<a href="" class="pull-right">(10)</a></li>
-                                <li>Last Category<a href="" class="pull-right">(9)</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Archives</h4>
-                            <ul>
-                                <li><a href="">July 2015</a></li>
-                                <li><a href="">June 2015</a></li>
-                                <li><a href="">May 2015</a></li>
-                                <li><a href="">April 2015</a></li>
-                                <li><a href="">March 2015</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Helpful Links</h4>
-                            <ul>
-                                <li><a href="">This Awesome Link</a></li>
-                                <li><a href="">Another Great Link</a></li>
-                                <li><a href="">More Greatness</a></li>
-                                <li><a href="">Click Here</a></li>
-                                <li><a href="">Here is Information</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="widget l-padding-hs l-margin-bd">
-                            <div class="card card__cta card__cta--graphic" style="background-image:url(../assets/dist/img/cta-graphic.jpg);">
-                                <a href="">
-                                    <p>Signup for Junior Lifeguards</p>
-                                    <span href="" class="btn btn--secondary">Signup Today</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </aside> -->
             </div> <!-- row -->
             
         </div> <!-- l-constrained -->

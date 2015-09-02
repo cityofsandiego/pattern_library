@@ -37,7 +37,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
      <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
         function initialize() {
 
             var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
@@ -47,17 +47,17 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                 center: myLatlng
             }
 
-            var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-            var wideMap = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
-
             var image = '../assets/dist/img/map-marker.png';
 
-            var marker = new google.maps.Marker({
-              position: myLatlng,
-              map: map,
-              icon: image
-            });
+            // var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+            // var marker = new google.maps.Marker({
+            //   position: myLatlng,
+            //   map: map,
+            //   icon: image
+            // });
+
+            var wideMap = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 
             var marker = new google.maps.Marker({
               position: myLatlng,
@@ -118,10 +118,17 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
-        </script>
+    </script>
 
 </head>
 <body<?php echo $body_class; ?>>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=295948633946506";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>

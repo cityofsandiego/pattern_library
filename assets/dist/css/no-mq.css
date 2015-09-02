@@ -2331,7 +2331,7 @@ header.library__header {
 }
 .main__navigation .dropdown {
     position: absolute;
-    z-index: 2;
+    z-index: 10;
     top: 100%;
     left: 0;
     display: none;
@@ -2593,6 +2593,7 @@ header.library__header {
 }
 
 .card__container {
+    position: relative;
     display: -webkit-inline-flex;
     /* Safari */
     display:         inline-flex;
@@ -2602,6 +2603,9 @@ header.library__header {
             justify-content: center;
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+}
+.card__container.mobile-flexslider {
+    height: 100% !important;
 }
 .card__container .card__wrap {
     float: left;
@@ -2691,6 +2695,26 @@ header.library__header {
     font-size: 3.125rem; 
     font-weight: 700;
     line-height: 1;
+}
+
+.card--notification i {
+    font-size: 24px;
+    font-size: 1.5rem; 
+    padding: .3em;
+    vertical-align: middle;
+    vertical-align: -webkit-baseline-middle;
+    color: white;
+    border-radius: 50%;
+    background: #0098db;
+}
+.card--notification .date {
+    font-family: "Merriweather", serif; 
+    font-size: 12px;
+    font-size: .75rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: .1em;
+    text-transform: uppercase;
 }
 
 .event__wrap .six:first-child {

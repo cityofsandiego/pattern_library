@@ -88,7 +88,6 @@
 
                 // Mobile only slider
                 if ( $(window).width() < 480 ) {
-                    alert( 'Greater than 768 pixels wide. :)' );
 
                     $(".mobile-flexslider").flexslider({
                         // controlNav: false,

@@ -34,7 +34,8 @@ input[type="submit"] {
         background-color: lighten( $cerulean, 10% );
     }
     i {
-        padding: .25em;
+        padding: .4em;
+        font-weight: 600;
         color: $cerulean;
         background: white;
         border-radius: 50%;
@@ -90,6 +91,21 @@ input[type="submit"] {
     }
 }
 
+.btn--icon {
+    padding: 1em;
+    display: block;
+    text-align: left;
+
+    .lnr-chevron-right {
+        padding: 0;
+        color: white;
+        float: right;
+        line-height: 1.4;
+        border-radius: 0;
+        display: inline-block;
+        background: transparent;
+    }
+}
 
 
 
