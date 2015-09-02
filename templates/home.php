@@ -2,40 +2,55 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <!-- <div class="hero__wrap">
-            <img src="../assets/dist/img/cysd-hero-bg.jpg" alt="Blog Archive" class="hero__img">
-        </div> -->
+        <div class="hero__slides">
+            <div class="l-constrained row">
+                <div class="six columns hero__content">
+                    <div class="hero__slides--content">
+                        <ul class="slides">
+                            <li>
+                                <h1>Event permits</h1>
+                                <p>Get your event permit today.</p>
+                                <a href="" class="btn btn--secondary">Apply Now</a>
+                            </li>
 
-        <div class="hero__wrap">
-            <ul class="slides">
-                <li>
-                    <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');">
-                        <div class="l-constrained row">
-                            <div class="six columns">
-                                <div class="hero__content">
-                                    <h1>Event permits</h1>
-                                    <p>Get your event permit today.</p>
-                                    <a href="" class="btn btn--secondary">Apply Now</a>
-                                </div>
+                            <li>
+                                <h1>Slide 2</h1>
+                                <p>Another slide</p>
+                                <a href="" class="btn btn--secondary">Apply Now</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="custom-navigation">
+                      <a href="#" class="flex-prev"><i class="lnr lnr-chevron-left"></i></a>
+                      <a href="#" class="flex-next"><i class="lnr lnr-chevron-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero__slides--img">
+                <ul class="slides">
+                    <li>
+                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
+                        <div class="hero--credit">
+                            <div class="l-constrained--desktop">
+                                <p>Image by Cindy Devin</p>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
 
-                <li>
-                    <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');">
-                        <div class="l-constrained row">
-                            <div class="six columns">
-                                <div class="hero__content">
-                                    <h1>Slide 2</h1>
-                                    <p>Another slide</p>
-                                    <a href="" class="btn btn--secondary">Apply Now</a>
-                                </div>
+                    <li>
+                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
+                        <div class="hero--credit">
+                            <div class="l-constrained--desktop">
+                                <p>Image by Cindy Devin</p>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+
         </div>
 
         <main role="main">
@@ -97,19 +112,19 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <div class="row">
                         <div class="two columns">
                         </div>
-                        <div class="two columns">
+                        <div class="sm-six two columns">
                             <img src="http://placehold.it/110x110">
                             <p><strong>Label</strong></p>
                         </div>
-                        <div class="two columns">
+                        <div class="sm-six two columns">
                             <img src="http://placehold.it/110x110">
                             <p><strong>Label</strong></p>
                         </div>
-                        <div class="two columns">
+                        <div class="sm-six two columns">
                             <img src="http://placehold.it/110x110">
                             <p><strong>Label</strong></p>
                         </div>
-                        <div class="two columns">
+                        <div class="sm-six two columns">
                             <img src="http://placehold.it/110x110">
                             <p><strong>Label</strong></p>
                         </div>
@@ -125,114 +140,116 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <div class="l-container">
                                 <h2>Our San Diego</h2>
 
-                                <div class="card__container l-margin-vd">
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                <div class="mobile-flexslider card__container l-margin-vd">
+                                    <ul class="slides">
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
 
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
 
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
 
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
 
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
 
-                                    <div class="card__wrap">
-                                        <div class="card background-off-white">
-                                            <div class="card__image">
-                                                <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                            </div>
-                                            <div class="card__content">
-                                                <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
-                                                <div class="card__meta">
-                                                    <span class="card__date">23 July 2015</span>
-                                                    |
-                                                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        <li class="card__wrap">
+                                            <div class="card background-off-white">
+                                                <div class="card__image">
+                                                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                <a href="" class="btn card__btn">Read More</a>
+                                                <div class="card__content">
+                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <div class="card__meta">
+                                                        <span class="card__date">23 July 2015</span>
+                                                        |
+                                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                                    <a href="" class="btn card__btn">Read More</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -240,7 +257,16 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="three columns">
                             <div class="l-container">
-                                <h2>Notifications</h2>
+                                <h2 class="border border--bottom">Notifications <a href="" class="view-more">See all <i class="lnr lnr-chevron-right"></i></a></h2>
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center">
+                                        <i class="lnr lnr-lighter"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Fire Warning For North County Residents <a href="">Learn More</a></p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="l-container">
@@ -329,7 +355,6 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 </div>
             </div> <!-- row -->
         </main>
-        
 
 <?php
 require_once( ABSPATH . PARTIALS . '/template-footer.php' ); ?>

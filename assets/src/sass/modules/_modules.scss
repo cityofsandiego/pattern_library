@@ -50,50 +50,175 @@ header {
     }
 }
 
-.hero__wrap {
+.hero__slides {
     width: 100%;
     height: 100%;
-    overflow: hidden;
     position: relative;
 
-    @include mq( $until: site ) {
-        .six {
-            width: 100%;
+    @include mq( $from: site ) {
+        > .row {
+            padding: 5em 0 12em;
         }
+    }
+
+}
+
+.hero__slides--img {
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100% !important;
+
+    li {
+        &:after {
+            content: '';
+            z-index: 5;
+            display: block;
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        @include mq( $from: site ) {
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .slides,
+    li,
+    .hero__bg {
+        height: 100%;
+    }
+
+    .hero__bg {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-.hero__bg {
-    padding: 4em 0;
-    background-size: cover;
-    background-repeat: no-repeat;
+.hero--credit {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+
+    p {
+        margin: 0;
+        color: $alto;
+        padding: .5em 1em;
+        font-style: italic;
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.75);
+        @include rem( 'font-size', 12px );
+    }
 
     @include mq( $from: site ) {
-        padding: 4em 0 15em;
+        bottom: 8em;
+        text-align: right;
+    }
+}
+
+.hero__slides--content {
+
+    .slides {
+        overflow: hidden;
     }
 }
 
 .hero__content {
+    z-index: 4;
     color: white;
+    margin: 0 0 3em;
+    padding: 1.5em;
     position: relative;
-    padding: 2.75em 3.5em;
-    background: rgba(0, 0, 0, 0.35);
 
     h1 {
         margin: 0;
         color: white;
-        @include rem( 'font-size', 60px );
+        @include rem( 'font-size', 45px );
     }
 
     p {
-        @include rem( 'font-size', 24px );
+        @include rem( 'font-size', 18px );
     }
 
     .btn {
-        margin-top: 2em;
+        display: block;
+        margin-top: 6em;
         font-weight: 600;
         padding: 1.25em 2.5em;
     }
+
+    @include mq( $from: mobile-landscape ) {
+        padding: 1.75em 2.5em;
+
+        h1 {
+            @include rem( 'font-size', 60px );
+        }
+
+        p {
+            @include rem( 'font-size', 24px );
+        }
+
+        .btn {
+            margin-top: 2em;
+            display: inline-block;
+        }
+    }
+
+    @include mq( $from: site ) {
+        margin: 0;
+        padding: 2.75em 3.5em;
+        background: rgba(0, 0, 0, 0.35);
+    }
+
+    @include mq( $until: site ) {
+        width: auto;
+    }
+
+    .custom-navigation {
+
+        a {
+            z-index: 10;
+            color: white;
+            padding: .25em .5em;
+            background: $cerulean;
+            text-decoration: none;
+            display: inline-block;
+
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+            &.flex-next {
+                left: auto;
+                right: 0;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background: darken( $cerulean, 10% );
+            }
+        }
+
+        @include mq( $from: mobile-landscape ) {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            a {
+                position: relative;
+            }
+        }
+
+    }
+
 }
 
 .hero__img {
@@ -295,7 +420,7 @@ header {
 
     // MEGA MENU
     .dropdown {
-        z-index: 2;
+        z-index: 10;
         padding: 1em;
         @extend %white-gradient;
 
@@ -635,12 +760,21 @@ header {
 }
 
 .card__container {
-    display: -webkit-inline-flex; /* Safari */
-    display: inline-flex;
-    -webkit-justify-content: center; /* Safari */
-    justify-content:         center;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    position: relative;
+
+    @include mq( $from: mobile-landscape ) {
+        display: -webkit-inline-flex; /* Safari */
+        display: inline-flex;
+        -webkit-justify-content: center; /* Safari */
+        justify-content:         center;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    &.mobile-flexslider {
+        height: 100% !important;
+    }
+
     .card__wrap {
         padding: .75em;
         @include mq( mobile-landscape, tablet ) {
@@ -734,6 +868,27 @@ header {
         line-height: 1;
         font-weight: 700;
         @include rem( 'font-size', 50px );
+    }
+}
+
+.card--notification {
+    i {
+        color: white;
+        padding: .3em;
+        background: $cerulean;
+        border-radius: 50%;
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
+        @include rem( 'font-size', 24px );
+    }
+
+    .date {
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+        @include rem( 'font-size', 12px );
+        font-family: $font-family-secondary;
     }
 }
 
@@ -1323,10 +1478,10 @@ main {
 
 main[role="main"] {
     position: relative;
-    z-index: 10;
+    z-index: 5;
 
     @include mq( $from: site ) {
-        margin-top: -10em;
+        margin-top: -6em;
     }
 }
 

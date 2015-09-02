@@ -254,8 +254,9 @@ html[xmlns] .flexslider .slides {
     width: 11px;
     height: 11px;
     display: block;
-    background: #666;
-    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    background: $cerulean;
+    background: rgba(91, 205, 255, 0.5);
     cursor: pointer;
     text-indent: -9999px;
     -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
@@ -266,13 +267,12 @@ html[xmlns] .flexslider .slides {
     -moz-border-radius: 20px;
     border-radius: 20px;
     &:hover {
-      background: #333;
-      background: rgba(0, 0, 0, 0.7);
+      background: $cerulean;
     }
     &.flex-active {
-      background: #000;
-      background: rgba(0, 0, 0, 0.9);
+      background: white;
       cursor: default;
+      border: 2px solid $cerulean;
     }
   }
   #slider-basic & {
@@ -418,5 +418,22 @@ html[xmlns] .flexslider .slides {
       -webkit-transform: none !important;
       transform: none !important;
     }
+  }
+}
+
+/* ====================================================================================================================
+ * MOBILE FLEXSLIDER
+ * ====================================================================================================================*/
+
+.mobile-flexslider {
+  .slides {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .flex-control-nav {
+    bottom: 0;
+    position: relative;
+    margin-top: 1em;
   }
 }
