@@ -20,6 +20,12 @@
     @extend %l-constrained;
     max-width: $site-constraint;
 }
+
+.l-constrained--desktop {
+    @extend %l-constrained;
+    max-width: $desktop-wide;
+}
+
 .l-container {
     @extend %clearfix;
 }

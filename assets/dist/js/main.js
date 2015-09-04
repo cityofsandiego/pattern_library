@@ -71,10 +71,32 @@
             },
 
             slides : function() {
-                $('.hero__wrap').flexslider({
-                    controlNav: false,
+                $('.hero__slides--img').flexslider({
+                    // controlNav: false,
                     smoothHeight: true,
+                    directionNav: false,
+                    controlNav: false
                 });
+ 
+                $('.hero__slides--content').flexslider({
+                    // controlNav: false
+                    controlNav: false,
+                    sync: $(".hero__slides--img"),
+                    controlsContainer: $(".custom-controls-container"),
+                    customDirectionNav: $(".custom-navigation a")
+                });
+
+                // Mobile only slider
+                if ( $(window).width() < 480 ) {
+
+                    $(".mobile-flexslider").flexslider({
+                        // controlNav: false,
+                        animation: "slide",
+                        smoothHeight: true,
+                        directionNav: false
+                    });
+                }
+
             },
 
             buttons : function() {
