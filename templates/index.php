@@ -23,6 +23,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="events.php">Events Calendar</a></li>
                         <li><a href="faqs.php">FAQs</a></li>
                         <li><a href="location.php">Location</a></li>
+                        <li><a href="directory.php">Directory</a></li>
                     </ul>
                 </div>
 
