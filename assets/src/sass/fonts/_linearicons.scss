@@ -547,4 +547,8 @@
 	border-radius: 50%;
 	display: inline-block;
 	background: $cerulean;
+
+	&.sunshade {
+		background: $sunshade;
+	}
 }

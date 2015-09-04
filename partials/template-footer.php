@@ -1,4 +1,4 @@
-<footer class="l-constrained">
+<footer class="l-constrained text-center--mobile">
     <div class="row">
         <div class="three columns footer--left l-padding-ad l-padding-vm">
             <div class="row l-padding-desktop-ld">
