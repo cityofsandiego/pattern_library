@@ -534,3 +534,17 @@
 .lnr-pointer-left:before {
 	content: "\e8a9";
 }
+
+// Modifiers
+
+.lnr-xl {
+	@include rem( 'font-size', 60px );
+}
+
+.lnr-circle {
+	color: white;
+	padding: .5em;
+	border-radius: 50%;
+	display: inline-block;
+	background: $cerulean;
+}

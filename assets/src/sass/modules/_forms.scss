@@ -325,9 +325,9 @@ header {
 
 // Form Steps
 .form__step {
-    text-align: center;
     position: relative;
     margin-bottom: 1.5em;
+    @include rem( 'font-size', 18px );
 
     &:after {
         content: "\7c";
@@ -353,6 +353,10 @@ header {
         border-color: $spruce;
     }
 
+    @include mq( $from: mobile-landscape ) {
+        text-align: center;
+    }
+
     @include mq( $from: tablet ) {
         text-align: left;
         margin-bottom: 0;
@@ -367,12 +371,14 @@ header {
     }
 }
 .form__step--header {
+    @include rem( 'font-size', 20px );
+    font-family: $font-family-secondary;
+
     @include mq( $from: tablet ) {
         position: absolute;
         top: -.8em;
         background-color: white;
         padding: 0 .5em;
+        @include rem( 'font-size', 16px );
     }
-    @include rem( 'font-size', 16px );
-    font-family: $font-family-secondary;
 }

@@ -2116,7 +2116,22 @@ header.library__header {
 .hero__slides--img .hero__bg {
     height: 100%;
 }
-.hero__slides--img .hero__bg {
+
+.hero__wrap {
+    position: relative;
+}
+.hero__wrap:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 75%;
+    content: "";
+    background-color: #0098db;
+}
+
+.hero__bg {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -2594,6 +2609,7 @@ header.library__header {
 
 .card__container {
     position: relative;
+    display: block;
     display: -webkit-inline-flex;
     /* Safari */
     display:         inline-flex;
@@ -2719,9 +2735,6 @@ header.library__header {
 
 .event__wrap .six:first-child {
     border-right: 1px solid #dde2e5;
-}
-.event__wrap .six:last-child {
-    padding-left: 1em;
 }
 
 .event__date {
@@ -2950,7 +2963,7 @@ header.library__header {
     background-color: #f6f6f6;
 }
 
-.entry__content img {
+.entry__content > img {
     display: inline-block; 
     margin-top: 2em;
     margin-bottom: 2em;
@@ -3009,6 +3022,12 @@ header.library__header {
 }
 .main__message.main__message .main__content {
     color: #0098db;
+}
+.main__message.main__message--transparent {
+    background: transparent;
+}
+.main__message.main__message--transparent .main__heading {
+    color: white;
 }
 
 .message {
@@ -3347,9 +3366,24 @@ main[role="main"] {
 .table__accordion .accordion__drawer {
     display: block; 
     padding: 0;
+    border: none;
+}
+.table__accordion .accordion__link {
+    display: block;
+}
+.table__accordion .accordion__link i {
+    line-height: 1.5;
 }
 .table__accordion .accordion__heading {
-    line-height: 2.5;
+    padding: .25em 0;
+    background: transparent;
+}
+.table__accordion .is-open .accordion__drawer {
+    border: 1px solid #a7abad;
+    border-top: none;
+}
+.table__accordion .is-open .accordion__heading {
+    border-bottom: none;
 }
 .table__accordion td:first-child,
 .table__accordion th:first-child {
@@ -3363,6 +3397,7 @@ table {
 }
 table th {
     font-family: "Merriweather", serif; 
+    padding: .25em;
     text-align: left;
     border-bottom: 1px solid #dde2e5;
     background: transparent;
@@ -3370,7 +3405,7 @@ table th {
 table tr {
     line-height: 1.6;
 }
-table tr:nth-child(odd) {
+table tr:nth-child(even) {
     background: #e4e9eb;
 }
 table tr.subheading,
@@ -3385,7 +3420,8 @@ table tr.subheading td {
 }
 table td {
     font-size: 13px;
-    font-size: .8125rem;
+    font-size: .8125rem; 
+    line-height: 1.8;
 }
 table td:first-child {
     padding-left: .5em;
@@ -3421,6 +3457,10 @@ figure figcaption {
 }
 .card--video img {
     width: 100%;
+}
+
+.fb_iframe_widget iframe {
+    border-radius: 4px;
 }
 
 /* Footer
@@ -3662,7 +3702,8 @@ input[type="submit"]:hover {
 }
 .btn i,
 input[type="submit"] i {
-    padding: .25em;
+    font-weight: 600;
+    padding: .4em;
     text-align: center; 
     color: #0098db;
     border-radius: 50%;
@@ -3717,6 +3758,21 @@ input[type="submit"] .icon-arrow-left {
 .btn--outline:hover {
     color: white;
     background-color: #0098db;
+}
+
+.btn--icon {
+    display: block;
+    padding: 1em;
+    text-align: left;
+}
+.btn--icon .lnr-chevron-right {
+    line-height: 1.4;
+    display: inline-block;
+    float: right;
+    padding: 0;
+    color: white;
+    border-radius: 0;
+    background: transparent;
 }
 
 /* Sizes
@@ -4166,9 +4222,6 @@ header .form--search input[type="submit"]:hover {
 }
 .form__step:last-child::after {
     display: none;
-}
-.form__step p {
-    margin-bottom: 0;
 }
 .form__step .btn {
     padding: .75em;
