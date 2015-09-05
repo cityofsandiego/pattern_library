@@ -7,8 +7,10 @@
    ========================================================================== */
 header {
     background: white;
+    z-index: 10;
 
     @include mq( $from: tablet ) {
+        position: relative;
         background: $cerulean;
     }
 
@@ -61,6 +63,10 @@ header {
         }
     }
 
+    .flex-control-nav {
+        display: none;
+    }
+
 }
 
 .hero__slides--img {
@@ -99,21 +105,21 @@ header {
 .hero__wrap {
     position: relative;
 
-    &:before { // fallback color if no image provided
-        z-index: -1;
-        content: '';
-        display: block;
-        position: absolute;
-        width: 100%; height: 75%;
-        top: 0; left: 0;
-        background-color: $cerulean;
-    }
+    // &:before { // fallback color if no image provided
+    //     z-index: -1;
+    //     content: '';
+    //     display: block;
+    //     position: absolute;
+    //     width: 100%; height: 75%;
+    //     top: 0; left: 0;
+    //     background-color: $cerulean;
+    // }
 
-    @include mq( $from: tablet ) {
-        &:before {
-            z-index: 0;
-        }
-    }
+    // @include mq( $from: tablet ) {
+    //     &:before {
+    //         z-index: 0;
+    //     }
+    // }
 }
 
 .hero__bg {
@@ -256,6 +262,35 @@ header {
             display: none;
         }
     }
+}
+
+.hero__slides--secondary {
+    @include mq( $until: site ) {
+        padding-bottom: 2em;
+    }
+
+    .flex-control-nav {
+        display: block;
+
+        @include mq( $until: site ) {
+            bottom: 0;
+        }
+    }
+}
+
+.hero__wrap--empty {
+    min-height: 250px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+
+    @include mq( $from: tablet ) {
+        top: 164px;
+    }
+}
+
+.flex-direction-nav {
+    display: none;
 }
 
 
@@ -552,22 +587,95 @@ header {
 // Microsite/Portal nav
 .portal {
     header {
-        background: $cerulean;
+        @include mq( $from: tablet ) {
+            background: $cerulean;
+        }
     }
-    .main__navigation--portal {
-        li {
-            margin: 0 .5em;
-            @include mq( $from: tablet ) {
-                @include rem( 'font-size', 13px );
+
+    .logo {
+        display: block;
+        padding: .5em;
+        position: relative;
+
+        img {
+            z-index: 2;
+            position: relative;
+            display: inline-block;
+
+            @include mq( $until: tablet ) {
+                max-width: 140px;
+                max-height: 55px;
             }
         }
-        a {
-            color: white;
-            font-weight: normal;
-            text-transform: capitalize;
-            &:hover {
-                color: lighten( $cerulean, 40% );
+
+        &:before {
+            content: '';
+            display: block;
+            width: 100%; height: 100%;
+            position: absolute;
+            top: 0em; left: 0;
+            z-index: 2;
+            background: white;
+        }
+
+        @include mq( $from: tablet ) {
+            text-align: center;
+        }
+
+        @include mq( $from: site ) {
+            padding: 0;
+
+            &:before {
+                top: -1em;
+                height: 180%;
             }
+
+            img {
+                top: .5em;
+            }
+        }
+
+    }
+
+    .menu-toggle {
+        @include mq( $until: tablet ) {
+            top: 3.7em;
+        }
+    }
+}
+
+.main__navigation--portal {
+    @include mq( $until: tablet ) {
+        padding: 1em;
+    }
+
+    li {
+        margin: 0 .25em;
+        padding: .5em 0;
+        @include rem( 'font-size', 18px );
+
+        @include mq( $until: tablet ) {
+            float: none;
+        }
+
+        @include mq( $from: tablet ) {
+            padding: 0;
+            display: inline-block;
+            @include rem( 'font-size', 13px );
+        }
+
+        @include mq( $from: site ) {
+            margin: 0 .75em;
+            padding-top: 2.5em;
+        }
+
+    }
+    a {
+        color: white;
+        font-weight: normal;
+        text-transform: capitalize;
+        &:hover {
+            color: lighten( $cerulean, 40% );
         }
     }
 }
@@ -575,7 +683,7 @@ header {
 // Top Navigation Strip (On portal pages)
 .top-nav-strip {
     color: white;
-    padding: 1em;
+    padding:.5em;
     background: $science;
 
     p {
@@ -608,6 +716,7 @@ header {
 
 
     @include mq( $from: tablet ) {
+        padding: 1em;
         @include rem( 'font-size', 13px );
 
         .six:last-child {
@@ -807,7 +916,7 @@ header {
         }
     }
     .card__content {
-        padding: 1em;
+        padding: 1.5em;
         @include mq( $from: tablet ) {
             @include rem( 'font-size', 13px );
         }
@@ -1217,8 +1326,10 @@ header {
 /* Messaging
    ========================================================================== */
 .main__message {
+    z-index: 2;
     padding: 1.5em;
     text-align: center;
+    position: relative;
     background-color: rgba(0, 152, 219, 0.9);;
 
     @include mq( $from: mobile ) {
@@ -1240,7 +1351,7 @@ header {
         color: $gold;
     }
 
-    &.main__message {
+    &.main__message--white {
         background-color: white;
 
         a {
@@ -1491,8 +1602,9 @@ span[class^="text-"] {
 
 main {
     @include mq( $from: tablet ) {
-        > .nine {
+        > .nine:first-child {
             border-right: 1px solid $alto;
+            border-left: 1px solid $alto;
         }
 
         > .six {
@@ -1502,8 +1614,11 @@ main {
     }
 }
 
-main[role="main"] {
+[role="main"] {
     position: relative;
+}
+
+main[role="main"] {
     z-index: 5;
 
     @include mq( $from: site ) {

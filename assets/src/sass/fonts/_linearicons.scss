@@ -552,3 +552,11 @@
 		background: $sunshade;
 	}
 }
+
+.lnr-outline {
+	padding: .2em;
+	border: 2px solid;
+	border-radius: 50%;
+    font-weight: 600;
+    @include rem( 'font-size', 10px );
+}

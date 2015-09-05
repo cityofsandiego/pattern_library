@@ -113,6 +113,11 @@
           });
         </script>
 
+        <script>
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            var lineChart = new Chart(ctx).Line(data);
+        </script>
+
         <script type="text/javascript">
             jQuery(window).load(function() {
                 jQuery('.flexslider').flexslider({

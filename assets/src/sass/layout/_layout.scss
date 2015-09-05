@@ -16,6 +16,12 @@
 .l-constrained {
     @extend %l-constrained;
 }
+
+.l-constrained--site {
+    @extend %l-constrained;
+    max-width: $site;
+}
+
 .l-constrained--wide {
     @extend %l-constrained;
     max-width: $site-constraint;
