@@ -34,8 +34,23 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <div class="l-container l-padding-hd l-margin-vm background-off-white">
 
                         <div class="row">
-                            <div class="twelve columns text-right">
-                                <p>Search Events</p>
+                            <div class="three columns push-nine no-gutters">
+                                <div class="l-margin-vd">
+                                    <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+                                        <div><div class="container-inline">
+                                            <h2 class="visuallyhidden">Search form</h2>
+                                            <div class="form-item form-type-textfield form-item-search-block-form">
+                                                <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+                                                <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search All Events" size="15" maxlength="128" class="form-text">
+                                            </div>
+                                            <div class="form-actions form-wrapper" id="edit-actions">
+                                                <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                                            </div>
+                                            <input type="hidden" name="form_build_id" value="">
+                                            <input type="hidden" name="form_id" value="search_block_form">
+                                        </div></div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
 
@@ -51,7 +66,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <div class="date-heading text-center ten columns">
                                                     <h3>July 2015</h3>
                                                 </div>
-                                                <div class="date-next one columns">
+                                                <div class="date-next one columns text-right">
                                                     <span class="next views-summary"> <a href="https://www.stemcell.ucla.edu/calendar/2015-08" title="Navigate to next month" rel="nofollow" class="samewindow">Next »</a></span>
                                                 </div>
                                             </div>
@@ -198,7 +213,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Surf Cam [video feed]</p></a>
+                                            <p class="card__headline"><a href="">Shoutin' in the Library presents Swing Dance Under the Dome!</a></p>
+                                            <p><strong>When:</strong>   August 3, 2015 6:30 PM - 8:00 PM</p>
+                                            <p><strong>Where:</strong>  Central Library / Deck - 9th Floor</p>
+                                            <a href="" class="btn btn--wide">Learn More</a>
                                         </div>
                                     </div>
                                 </li>
@@ -209,7 +227,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Summer Recreation Programs</p></a>
+                                            <p class="card__headline"><a href="">Week of Wearables, Soft Circuits, and More!</a></p>
+                                            <p><strong>When:</strong>   August 3, 2015 6:30 PM - 8:00 PM</p>
+                                            <p><strong>Where:</strong>  Central Library / Deck - 9th Floor</p>
+                                            <a href="" class="btn btn--wide">Learn More</a>
                                         </div>
                                     </div>
                                 </li>
@@ -220,7 +241,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Junior Life Guard Programs</p></a>
+                                            <p class="card__headline"><a href="">Communication and Job Search for 55+</a></p>
+                                            <p><strong>When:</strong>   August 3, 2015 6:30 PM - 8:00 PM</p>
+                                            <p><strong>Where:</strong>  Central Library / Deck - 9th Floor</p>
+                                            <a href="" class="btn btn--wide">Learn More</a>
                                         </div>
                                     </div>
                                 </li>
@@ -229,7 +253,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
 
                     <div class="l-container l-margin-vm l-padding-hd">
-                        
+                        <div class="row">
+                            <div class="three columns">
+                                <a href="" class="btn btn--secondary btn--wide"><strong>All Upcoming Events</strong></a>
+                            </div>
+                            <div class="three columns">
+                                <a href="" class="btn btn--secondary btn--wide"><strong>View Past Events</strong></a>
+                            </div>
+                        </div>
                     </div>
 
                 </main>

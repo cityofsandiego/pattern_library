@@ -547,10 +547,18 @@
 	border-radius: 50%;
 	display: inline-block;
 	background: $cerulean;
+}
 
-	&.sunshade {
-		background: $sunshade;
-	}
+.lnr-science {
+	background: $science;
+} 
+
+.lnr-sunshade {
+	background: $sunshade;
+}
+
+.lnr-cerulean {
+	background: $cerulean;
 }
 
 .lnr-outline {

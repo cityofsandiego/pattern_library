@@ -7,19 +7,19 @@
    ========================================================================== */
 
 ::-webkit-input-placeholder {
-   color: $alto;
+   color: $shuttle;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $alto;
+   color: $shuttle;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-   color: $alto;
+   color: $shuttle;
 }
 
 :-ms-input-placeholder {
-   color: $alto;
+   color: $shuttle;
 }
 
 %select {
@@ -79,6 +79,7 @@ button {
  * Normalize sets as 'content-box'
  */
 input[type="search"] {
+    margin: 0;
   @include box-sizing( border-box ); /* 1 */
 }
 
@@ -225,6 +226,8 @@ form {
 
 .form--search {
     overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
 
     input[type="search"] {
         border-right: none;
@@ -302,16 +305,14 @@ header {
 
         input {
             border-color: white;
-            border-bottom: 2px solid lighten( $chateau, 10% );
             &:focus { 
                 border-top-color: white;
                 border-left-color: white;
             }
         }
         input[type="submit"] {
-            border-color: $mercury;
             border-left: none;
-            border-bottom: 2px solid $chateau;
+            border-color: $mercury;
             background-color: $mercury;
             background-image: url(../img/search-icon-blue.png);
             &:hover {

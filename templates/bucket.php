@@ -3,6 +3,8 @@ require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__wrap" style="background-image:url('');">
+            <div class="hero__bg hero__bg--solid"></div>
+
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">

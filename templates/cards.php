@@ -47,7 +47,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -65,7 +65,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -83,7 +83,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -101,7 +101,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -119,7 +119,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -137,7 +137,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -155,7 +155,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -173,7 +173,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |
@@ -191,7 +191,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                             <div class="card__meta">
                                                 <span class="card__date">23 July 2015</span>
                                                 |

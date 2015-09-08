@@ -50,7 +50,6 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </li>
                 </ul>
             </div>
-
         </div>
 
         <main role="main">
@@ -148,14 +147,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -166,14 +165,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -184,14 +183,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -202,14 +201,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -220,14 +219,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -238,14 +237,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                                 </div>
                                                 <div class="card__content">
-                                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                                     <div class="card__meta">
                                                         <span class="card__date">23 July 2015</span>
                                                         |
                                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                                     </div>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                                    <a href="" class="btn card__btn">Read More</a>
+                                                    <a href="" class="">Read More</a>
                                                 </div>
                                             </div>
                                         </li>
@@ -256,21 +255,52 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
 
                         <div class="three columns">
-                            <div class="l-container">
-                                <h2 class="border border--bottom">Notifications <a href="" class="view-more">See all <i class="lnr lnr-chevron-right"></i></a></h2>
+                            <div class="l-container text-center--mobile">
+                                <h2>Notifications <a href="" class="view-more">See all <i class="lnr lnr-chevron-right"></i></a></h2>
+                                <hr class="hr--dashed">
                                 <div class="card--notification row">
-                                    <div class="icon two columns text-center">
-                                        <i class="lnr lnr-lighter"></i>
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="lnr lnr-lighter lnr-sunshade"></i>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>
-                                        <p>Fire Warning For North County Residents <a href="">Learn More</a></p>
+                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="lnr lnr-home lnr-science"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>City Closed July 3rd <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="twelve columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Mayor Faulconer Hires New Chief to Lead Infrastructure and Public Works <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="lnr lnr-lighter lnr-sunshade"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="l-container">
+                            <div class="l-container l-margin-tm">
                                 <h2>A Message From the Mayor</h2>
+                                <img src="../assets/dist/img/avatar-mayor.png" width="51" height="51" alt="" class="pull-left l-margin-rs">
+                                <p class="text-small">I am committed to creating a City with great opportunities for every resident in every neighborhood. Together, we will fix our streets, bolster our innovative economy and make every neighborhood safe in One San Diego. </p>
+                                <a href="" class="btn btn--secondary btn--wide l-margin-ts">Visit the Mayor's page</a>
                             </div>
                         </div>
                     </div>
@@ -284,69 +314,115 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
 
                     <div class="row l-margin-bm">
-                        <div class="six columns">
-                            <div id="map-canvas" style="width:100%; height: 360px;"></div>
+                        <div class="six columns l-margin-mobile-bd">
+                            <div id="wide-map-canvas" style="width:100%; height: 360px;"></div>
                         </div>
                         <div class="six columns">
-                            <div class="row l-padding-hd event__wrap">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <h6 class="l-margin-tn l-padding-hd">I am looking for...</h6>
+                                </div>
                                 <div class="six columns">
-                                    <h6><img src="../assets/dist/img/event-marker.png" width="14" height="16" alt=""> Nearby Events</h6>
-
-                                    <div class="row">
-                                        <div class="event__date">
-                                            <span class="event--day">4</span>
-                                            <span class="event--month">Jul</span>
-                                        </div>
-                                        <div class="event__info">
-                                            <h6 class="l-margin-bn"><strong>Big Bay Boom</strong></h6>
-                                            <p class="l-margin-bn text-small">Fourth of July fireworks</p>
-                                            <p><a href="">Learn More</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="event__date">
-                                            <span class="event--day">8</span>
-                                            <span class="event--month">Jul</span>
-                                        </div>
-                                        <div class="event__info">
-                                            <h6 class="l-margin-bn"><strong>Comic Con</strong></h6>
-                                            <p class="l-margin-bn text-small">San Diego Comic Con 2015</p>
-                                            <p><a href="">Learn More</a></p>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="event__date">
-                                            <span class="event--day">10</span>
-                                            <span class="event--month">Jul</span>
-                                        </div>
-                                        <div class="event__info">
-                                            <h6 class="l-margin-bn"><strong>Concert in the Park</strong></h6>
-                                            <p class="l-margin-bn text-small">Free summer concerts in the park</p>
-                                            <p><a href="">Learn More</a></p>
-                                        </div>
+                                    <div class="l-margin-bd l-padding-hd">
+                                        <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+                                            <div><div class="container-inline">
+                                                <h2 class="visuallyhidden">Search form</h2>
+                                                <div class="form-item form-type-textfield form-item-search-block-form">
+                                                    <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+                                                    <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+                                                </div>
+                                                <div class="form-actions form-wrapper" id="edit-actions">
+                                                    <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                                                </div>
+                                                <input type="hidden" name="form_build_id" value="">
+                                                <input type="hidden" name="form_id" value="search_block_form">
+                                            </div></div>
+                                        </form>
                                     </div>
                                 </div>
                                 <div class="six columns">
-                                    <h6><img src="../assets/dist/img/attraction-marker.png" width="14" height="16" alt=""> Nearby Attractions</h6>
-
-                                    <div class="">
-                                        <h6 class="l-margin-bn"><strong>Gaslamp Museum</strong></h6>
-                                        <p class="l-margin-bn text-small">Programs and tours offered through the William Heath Davis House</p>
-                                        <p><a href="">Learn More</a></p>
+                                    <div class="l-margin-bd l-padding-hd">
+                                        <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+                                            <div><div class="container-inline">
+                                                <h2 class="visuallyhidden">Search form</h2>
+                                                <div class="form-item form-type-textfield form-item-search-block-form">
+                                                    <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+                                                    <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Date Filter" size="15" maxlength="128" class="form-text">
+                                                </div>
+                                                <div class="form-actions form-wrapper" id="edit-actions">
+                                                    <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+                                                </div>
+                                                <input type="hidden" name="form_build_id" value="">
+                                                <input type="hidden" name="form_id" value="search_block_form">
+                                            </div></div>
+                                        </form>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="row event__wrap">
+                                <div class="six columns">
+                                    <div class="l-padding-hd">
+                                        <h6><img src="../assets/dist/img/event-marker.png" width="14" height="16" alt=""> Nearby Events</h6>
 
-                                    <div class="">
-                                        <h6 class="l-margin-bn"><strong>Star of India</strong></h6>
-                                        <p class="l-margin-bn text-small">The world's oldest active sailing ship</p>
-                                        <p><a href="">Learn More</a></p>
+                                        <div class="row">
+                                            <div class="event__date">
+                                                <span class="event--day">4</span>
+                                                <span class="event--month">Jul</span>
+                                            </div>
+                                            <div class="event__info">
+                                                <h6 class="l-margin-bn"><strong>Big Bay Boom</strong></h6>
+                                                <p class="l-margin-bn text-small">Fourth of July fireworks</p>
+                                                <p><a href="">Learn More</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="event__date">
+                                                <span class="event--day">8</span>
+                                                <span class="event--month">Jul</span>
+                                            </div>
+                                            <div class="event__info">
+                                                <h6 class="l-margin-bn"><strong>Comic Con</strong></h6>
+                                                <p class="l-margin-bn text-small">San Diego Comic Con 2015</p>
+                                                <p><a href="">Learn More</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="event__date">
+                                                <span class="event--day">10</span>
+                                                <span class="event--month">Jul</span>
+                                            </div>
+                                            <div class="event__info">
+                                                <h6 class="l-margin-bn"><strong>Concert in the Park</strong></h6>
+                                                <p class="l-margin-bn text-small">Free summer concerts in the park</p>
+                                                <p><a href="">Learn More</a></p>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
+                                </div>
+                                <div class="six columns">
+                                    <div class="l-padding-hd">
+                                        <h6><img src="../assets/dist/img/attraction-marker.png" width="14" height="16" alt=""> Nearby Attractions</h6>
 
-                                    <div class="">
-                                        <h6 class="l-margin-bn"><strong>San Diego Zoo</strong></h6>
-                                        <p class="l-margin-bn text-small">The World Famous San Diego Zoo</p>
-                                        <p><a href="">Learn More</a></p>
+                                        <div class="">
+                                            <h6 class="l-margin-bn"><strong>Gaslamp Museum</strong></h6>
+                                            <p class="l-margin-bn text-small">Programs and tours offered through the William Heath Davis House</p>
+                                            <p><a href="">Learn More</a></p>
+                                        </div>
+
+                                        <div class="">
+                                            <h6 class="l-margin-bn"><strong>Star of India</strong></h6>
+                                            <p class="l-margin-bn text-small">The world's oldest active sailing ship</p>
+                                            <p><a href="">Learn More</a></p>
+                                        </div>
+
+                                        <div class="">
+                                            <h6 class="l-margin-bn"><strong>San Diego Zoo</strong></h6>
+                                            <p class="l-margin-bn text-small">The World Famous San Diego Zoo</p>
+                                            <p><a href="">Learn More</a></p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -64,7 +64,7 @@ input[type="submit"] {
 .btn--secondary {
     background-color: $sunshade;
     &:hover {
-        background-color: lighten( $sunshade, 10% );
+        background-color: darken( $sunshade, 10% );
     }
     i {
         color: $sunshade;

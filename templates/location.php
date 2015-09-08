@@ -31,9 +31,9 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
             <div class="row">
                 <main>
-                    <div class="twelve columns no-gutters background-off-white">
+                    <div class="twelve columns no-gutters">
 
-                        <div class="entry__content l-padding-ad l-margin-vd">
+                        <div class="entry__content l-padding-ad l-margin-vd background-off-white">
                             <div class="row">
                                 <div class="eight columns">
                                 <h2>Overview</h2>
@@ -63,13 +63,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             </div>
                         </div>
 
-                        <div class="row l-margin-bm">
+                        <div class="row">
                             <div class="twelve columns no-gutters">
                                 <div id="wide-map-canvas" style="width:100%; height: 360px;"></div>
                             </div>
                         </div>
 
-                        <div class="entry__content l-padding-ad l-margin-vd">
+                        <div class="entry__content l-padding-ad l-padding-vm background-off-white">
                             <div class="row">
                                 <div class="twelve columns">
                                     <h2>Amenities</h2>
@@ -102,14 +102,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <p>These items are restricted at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle sunshade"></i> Glass Bottles</strong></p>
-                                    <p><strong><i class="lnr lnr-drop l-margin-rs lnr-circle sunshade"></i> Alcohol</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle sunshade"></i> Smoking</strong></p>
+                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle lnr-sunshade"></i> Glass Bottles</strong></p>
+                                    <p><strong><i class="lnr lnr-drop l-margin-rs lnr-circle lnr-sunshade"></i> Alcohol</strong></p>
+                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle lnr-sunshade"></i> Smoking</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle sunshade"></i> Littering</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle sunshade"></i> Excessive Noise</strong></p>
-                                    <p><strong><i class="lnr lnr-car l-margin-rs lnr-circle sunshade"></i> Camping</strong></p>
+                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle lnr-sunshade"></i> Littering</strong></p>
+                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle lnr-sunshade"></i> Excessive Noise</strong></p>
+                                    <p><strong><i class="lnr lnr-car l-margin-rs lnr-circle lnr-sunshade"></i> Camping</strong></p>
                                 </div>
                             </div>
                         </div>

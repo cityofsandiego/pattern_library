@@ -22,7 +22,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
@@ -173,7 +173,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                 </div>
                 <div class="two columns no-gutters text-right hide-on-mobile">
                     <div class="card--weather">
-                        <i class="icon-search"></i>
+                        <i class="lnr lnr-sun"></i>
                         <p class="temperature"><span class="degrees">73</span>&deg;</p>
                         <p><strong>San Diego <br> Weather</strong></p>
                     </div>
@@ -200,7 +200,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             <p>With its great weather, miles of sandy beaches, and major attractions, San Diego is known worldwide as one of the best tourist destinations and a great place for residents to relax year round.</p>
                                         </div>
                                         <div class="four columns">
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="six columns">
                                                     <a href=""><h4>Parks</h4></a>
                                                 </div>
@@ -212,7 +212,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="six columns">
                                                     <a href=""><h4>Outdoors</h4></a>
                                                 </div>
@@ -269,12 +269,12 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             <p>Maecenas maximus enim quis pulvinar condimentum. Vestibulum turpis ex, ultrices nec velit quis, mattis suscipit diam. Nunc sed felis sed odio interdum viverra.</p>
                                         </div>
                                         <div class="four columns">
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Website Tools</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Indexes</h4></a>
                                                 </div>
@@ -316,12 +316,12 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             <p>Maecenas maximus enim quis pulvinar condimentum. Vestibulum turpis ex, ultrices nec velit quis, mattis suscipit diam. Nunc sed felis sed odio interdum viverra.</p>
                                         </div>
                                         <div class="four columns">
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Forums</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Neighborhoods & Council Districts</h4></a>
                                                 </div>
@@ -365,7 +365,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             <p>Maecenas maximus enim quis pulvinar condimentum. Vestibulum turpis ex, ultrices nec velit quis, mattis suscipit diam. Nunc sed felis sed odio interdum viverra.</p>
                                         </div>
                                         <div class="four columns">
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="six columns">
                                                     <a href=""><h4>Police</h4></a>
                                                 </div>
@@ -377,7 +377,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="six columns">
                                                     <a href=""><h4>Fire</h4></a>
                                                 </div>
@@ -433,27 +433,27 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             <p>Maecenas maximus enim quis pulvinar condimentum. Vestibulum turpis ex, ultrices nec velit quis, mattis suscipit diam. Nunc sed felis sed odio interdum viverra.</p>
                                         </div>
                                         <div class="four columns">
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Mayor</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Community Board</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Employment</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Cost of Living</h4></a>
                                                 </div>
                                             </div>
-                                            <div class="row border border--bottom">
+                                            <div class="row border">
                                                 <div class="twelve columns">
                                                     <a href=""><h4>Long-Term Planning</h4></a>
                                                 </div>

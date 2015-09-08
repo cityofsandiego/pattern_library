@@ -81,18 +81,18 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                             <div class="l-padding-vd">
                                 <div class="card card--comment row">
+                                    <div class="card__meta eleven columns push-one">
+                                        <div class="six columns no-gutters comments">
+                                            <p class=""><strong>15 Comments</strong></p>
+                                        </div>
+                                        <div class="six columns no-gutters favorites text-right">
+                                            <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
+                                        </div>
+                                    </div>
                                     <div class="one columns card__image text-center no-gutters">
                                         <img src="http://placehold.it/65x65">
                                     </div>
                                     <div class="eleven columns">
-                                        <div class="card__meta row">
-                                            <div class="six columns no-gutters comments">
-                                                <p class=""><strong>15 Comments</strong></p>
-                                            </div>
-                                            <div class="six columns no-gutters favorites text-right">
-                                                <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
-                                            </div>
-                                        </div>
                                         <div class="card__content">
                                             <form class="user-info-from-cookie form--comments" action="" method="post" id="" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
 

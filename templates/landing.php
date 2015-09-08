@@ -2,7 +2,8 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <div class="hero__wrap hero__wrap--empty hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
+        <div class="hero__wrap hero__wrap--empty">
+            <div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');"></div>
         </div>
 
         <div class="l-constrained l-padding-mobile-hd l-margin-tl background-white" role="main">

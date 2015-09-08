@@ -236,7 +236,20 @@ p.nav-ex {
 .view-all-link {
     font-family: $font-family;
     @include rem( 'font-size', 16px );
-} 
+}
+
+.view-more {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    font-family: $font-family;
+    @include rem( 'font-size', 13px );
+
+    i {
+        font-weight: 600;
+        @include rem( 'font-size', 8px );
+    }
+}
 
 
 
@@ -320,7 +333,9 @@ p.nav-ex {
 /* Horiziontal Rules
    ========================================================================== */
 
-
+.hr--dashed {
+    border-top: 1px dashed $alto;
+}
 
 /* Backgrounds
    ========================================================================== */
