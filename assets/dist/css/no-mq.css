@@ -336,7 +336,7 @@ input[type="search"] {
     /* 2 */
             box-sizing: content-box; 
 
-    -webkit-appearance: textfield;
+    -webkit-appearance: none;
 }
 
 /**
@@ -409,6 +409,9 @@ body {
     font-size: 1em;
     line-height: 1.4;
     background-color: #dde2e5;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -890,7 +893,7 @@ p.nav-ex {
     /* Opera 11.10+ */
     background:     -ms-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* IE10+ */
-    background: linear, to bottom, rgba(255, 255, 255, .9) 0, white 100%;
+    background:         linear-gradient(to bottom, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* W3C */
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );
@@ -912,7 +915,7 @@ p.nav-ex {
     /* Opera 11.10+ */
     background:     -ms-linear-gradient(top, #fff 0%, #d4d4d4 100%);
     /* IE10+ */
-    background: linear, to bottom, #fff 0, #d4d4d4 100%;
+    background:         linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
     /* W3C */
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 );
@@ -2113,9 +2116,50 @@ header nav a {
 header.library__header {
     background: white;
 }
-header .columns {
-    display: inline-block; 
-    width: auto;
+header > .row {
+    position: relative;
+}
+header > .l-constrained {
+    padding-bottom: 2.5em;
+}
+header > .l-constrained .two {
+    float: left; 
+    width: 25%;
+}
+header > .l-constrained .three {
+    float: left; 
+    width: 25%;
+    text-align: right;
+}
+header > .l-constrained .seven {
+    position: static;
+    float: left; 
+    width: 50%;
+}
+header .quicklinks {
+    text-align: right;
+}
+header .card--weather {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+    text-align: center;
+}
+header .card--weather i,
+header .card--weather p,
+header .card--weather p.temperature {
+    font-size: 13px;
+    font-size: .8125rem;
+}
+header .card--weather br {
+    display: none;
+}
+header > .row {
+    padding-right: .5em; 
+    padding-left: .5em;
 }
 
 /* Pattern Library */
@@ -2361,7 +2405,11 @@ header .columns {
 .main__navigation > ul > li > a {
     font-size: 13px;
     font-size: .8125rem;
+    min-height: 83px;
+    min-height: 100px; 
     padding: 1em 1.5em;
+    padding: 1em .75em;
+    padding: 1em;
     transition: color .15s ease;
     color: white;
     color: #37424a;
@@ -2411,8 +2459,17 @@ header .columns {
     padding: 1em;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
 }
-.main__navigation .dropdown h4 {
+.main__navigation .dropdown li {
+    margin: .25em 0;
+}
+.main__navigation .dropdown h4 a {
+    font-size: 18px;
+    font-size: 1.125rem; 
     text-transform: capitalize;
+    color: #37424a;
+}
+.main__navigation .dropdown h4 a:hover {
+    color: black;
 }
 .main__navigation .dropdown .nav__heading {
     font-family: "Merriweather", serif; 
@@ -2424,6 +2481,8 @@ header .columns {
     border-bottom: 1px solid #dde2e5;
 }
 .main__navigation .dropdown .border {
+    margin-bottom: 0;
+    padding-bottom: 0; 
     border: none;
     border-bottom: 1px dashed #dde2e5;
 }
@@ -2439,6 +2498,9 @@ header .columns {
     text-decoration: underline; 
     text-transform: capitalize;
     color: #0098db;
+}
+.main__navigation .dropdown .nav__event a:hover {
+    color: #0fb6ff;
 }
 .main__navigation .dropdown .nav__event img {
     float: left;
@@ -2712,6 +2774,8 @@ header .columns {
 .card__container .card__wrap {
     float: left;
     width: 33.3333333333%;
+    margin: 0 .5em;
+    margin: 0;
     padding: .75em;
     padding-right: 1.0416588541%; 
     padding-left: 1.0416588541%;
@@ -3041,7 +3105,12 @@ header .columns {
     font-size: .8125rem;
 }
 .post__meta .social-share__wrap {
+    margin-top: 1.5em; 
+    text-align: left;
+}
+.post__meta .social-share__wrap {
     margin: 1em 0;
+    text-align: center;
 }
 
 .post__author a {
@@ -3088,7 +3157,7 @@ header .columns {
     position: relative;
     z-index: 2;
     padding: 1.5em;
-    padding: 2.5em; 
+    padding: 2.5em 1em; 
     text-align: center;
     background-color: rgba(0, 152, 219, .9);
 }
@@ -3582,7 +3651,11 @@ figure figcaption {
     z-index: 4;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, .75);
 }
 .card--video img {
@@ -4442,27 +4515,22 @@ header .form--search input[type="submit"]:hover {
 }
 
 header .search-icon {
-    display: inline-block; 
+    display: inline-block;
+    display: none; 
+    margin-top: .5em;
     padding: .25em .5em;
     text-decoration: none;
+    color: white;
+    color: #0098db;
     border-radius: 4px;
+    background: #0098db;
     background: white;
 }
-header i {
+header .search-icon i {
     font-weight: 600;
 }
 header .form--search-wrap {
     position: static;
-}
-header .form--search {
-    position: absolute;
-    z-index: 10;
-    top: 6em;
-    left: 0;
-    display: none;
-    width: 100%;
-    padding: .25em 3em;
-    background-color: #656667;
 }
 
 .notification {

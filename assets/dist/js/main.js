@@ -11,6 +11,7 @@
                 // this.maps();
                 this.buttons();
                 this.accordion();
+                this.search();
             },
             vals : {
                 $window : $(window)
@@ -190,6 +191,15 @@
 
                 });
             },
+
+            search : function() {
+
+                $(".search-icon--open").click(function(){
+                    event.preventDefault();
+                    $(this).toggleClass("search-open");
+                    $("#search-block-form").slideToggle();
+                });
+            }
 
             // maps : function() {
             //   (function($) {

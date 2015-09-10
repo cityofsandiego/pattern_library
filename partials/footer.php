@@ -16,7 +16,7 @@
         </script>
 
         <script>
-          var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+          var editor = CodeMirror.fromTextArea(document.getElementsByClassName("code-mirror"), {
             lineNumbers: true,
             mode: "application/x-ejs",
             indentUnit: 1,
