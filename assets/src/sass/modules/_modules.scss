@@ -9,11 +9,6 @@ header {
     background: white;
     z-index: 10;
 
-    @include mq( $from: tablet ) {
-        position: relative;
-        background: $cerulean;
-    }
-
     nav {
         line-height: 2;
         ul {
@@ -38,7 +33,101 @@ header {
                 max-width: 70px;
             }
         }
+
+        > .l-constrained {
+            position: relative;
+            padding-bottom: 1em;
+        }
+
+        > .l-constrained .columns {
+            &.two {
+                float: left;
+            }
+
+            width: auto;
+            display: inline-block;
+        }
     }
+
+    @include mq( $from: tablet ) {
+        position: relative;
+        background: $cerulean;
+
+        > .row {
+            position: relative;
+        }
+    }
+
+    @include mq( tablet, site ) {
+
+        > .l-constrained {
+            padding-bottom: 2.5em;
+
+            .two {
+                @include span( 3 of 12 no-gutters );
+            }
+            .three {
+                text-align: right;
+                @include span( 3 of 12 no-gutters );
+            }
+            .seven {
+                position: static;
+                @include span( 6 of 12 no-gutters );
+            }
+        }
+    }
+
+    @include mq( $until: site ) {
+
+        .quicklinks {
+            text-align: right;
+        }
+
+        .card--weather {
+            display: block;
+            margin-top: .5em;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+
+            i, p, p.temperature {
+                @include rem( 'font-size', 13px );
+            }
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    @include mq( $from: site ) {
+        > .l-constrained {
+            padding-bottom: 1em;
+        }
+
+        .quicklinks {
+            float: left;
+            display: inline-block;
+        }
+
+        .form--search-wrap {
+            padding: 0 2em;
+        }
+
+        .card--weather {
+            float: right;
+        }
+    }
+
+    @include mq( $until: site-constraint ) {
+        > .row {
+            padding-left: .5em;
+            padding-right: .5em;
+        }
+    }
+
 }
 
 /* Pattern Library */
@@ -99,48 +188,6 @@ header {
     .hero__bg {
         height: 100%;
     }
-
-}
-
-.hero__wrap {
-    position: relative;
-
-    // &:before { // fallback color if no image provided
-    //     z-index: -1;
-    //     content: '';
-    //     display: block;
-    //     position: absolute;
-    //     width: 100%; height: 75%;
-    //     top: 0; left: 0;
-    //     background-color: $cerulean;
-    // }
-
-    // @include mq( $from: tablet ) {
-    //     &:before {
-    //         z-index: 0;
-    //     }
-    // }
-}
-
-.hero__bg {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.hero__bg--secondary {
-    position: absolute;
-    width: 100%; height: 150%;
-    top: 0; left: 0;
-    z-index: 0;
-}
-
-.hero__bg--solid {
-    background: $cerulean;
-    position: absolute;
-    width: 100%; height: 15em;
-    top: 0; left: 0;
-    z-index: 0;
 }
 
 .hero--credit {
@@ -163,13 +210,6 @@ header {
     @include mq( $from: site ) {
         bottom: 8em;
         text-align: right;
-    }
-}
-
-.hero__slides--content {
-
-    .slides {
-        overflow: hidden;
     }
 }
 
@@ -260,22 +300,12 @@ header {
         }
 
     }
-
 }
 
-.hero__img {
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-    max-height: 550px;
-    overflow: hidden;
+.hero__slides--content {
 
-    img {
-        width: 100%;
-
-        @include mq( $until: tablet ) {
-            display: none;
-        }
+    .slides {
+        overflow: hidden;
     }
 }
 
@@ -293,16 +323,45 @@ header {
     }
 }
 
-// If no content is provided, add this class to .hero__wrap
-.hero__wrap--empty {
-    min-height: 250px;
-    position: absolute;
-    width: 100%;
-    z-index: 0;
-}
-
 .flex-direction-nav {
     display: none;
+}
+
+.hero__wrap {
+    position: relative;
+
+    // If no content is provided, add this class to .hero__wrap
+    &.hero__wrap--empty {
+        min-height: 250px;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+}
+
+// Background image element height is equal to that of the hero content
+.hero__bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // Background image element height is not equal to that of the hero content
+    &.hero__bg--secondary {
+        position: absolute;
+        width: 100%; height: 150%;
+        max-height: 20em;
+        top: 0; left: 0;
+        z-index: 0;
+    }
+
+    // Solid background color behind hero content
+    &.hero__bg--solid {
+        background: $cerulean;
+        position: absolute;
+        width: 100%; height: 15em;
+        top: 0; left: 0;
+        z-index: 0;
+    }
 }
 
 
@@ -386,7 +445,6 @@ header {
 
                 color: white;
                 padding: 1em 1.5em;
-
                 transition: color .15s ease;
                 @include rem( 'font-size', 13px );
 
@@ -428,6 +486,16 @@ header {
                         border-width: 10px 13px 0 13px;
                         border-color: $off-black transparent transparent transparent;
                     }
+                }
+
+                @include mq( $until: site-constraint ) {
+                    padding: 1em .75em;
+                    min-height: 83px;
+                }
+
+                @include mq( tablet, site ) {
+                    padding: 1em;
+                    min-height: 100px;
                 }
 
             }
@@ -473,6 +541,7 @@ header {
             }
         }
 
+
     }
 
     .has__dropdown {
@@ -511,8 +580,20 @@ header {
             box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
         }
 
+        li {
+            margin: .25em 0;
+        }
+
         h4 {
-            text-transform: capitalize;
+            a {
+                color: $spruce;
+                text-transform: capitalize;
+                @include rem( 'font-size', 18px );
+
+                &:hover {
+                    color: black;
+                }
+            }
         }
 
         .nav__heading {
@@ -527,6 +608,8 @@ header {
         .border {
             border: none;
             border-bottom: 1px dashed $alto;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         .nav__event {
@@ -539,6 +622,10 @@ header {
                 color: $cerulean;
                 text-transform: capitalize;
                 text-decoration: underline;
+
+                &:hover {
+                    color: lighten( $link-color, 10% );
+                }
             }
             img {
                 float: left;
@@ -916,7 +1003,12 @@ header {
     }
 
     .card__wrap {
-        padding: .75em;
+        margin: 0 .5em;
+
+        @include mq( $from: mobile-landscape ) {
+            margin: 0;
+            padding: .75em;
+        }
         @include mq( mobile-landscape, tablet ) {
             @include span( 6 );
         }
@@ -1192,6 +1284,14 @@ header {
         .form-actions {
             text-align: center;
         }
+
+        .card__meta {
+            margin-left: 0;
+        }
+
+        .card__content {
+            margin-top: 1em;
+        }
     }
 }
 
@@ -1278,13 +1378,20 @@ header {
 
 .post__meta {
 
-    @include mq( $from: tablet ) {
-        @include rem( 'font-size', 13px );
+    .social-share__wrap {
+        text-align: left;
+        margin-top: 1.5em;
     }
 
-    .social-share__wrap {
-        margin: 1em 0;
+    @include mq( $from: tablet ) {
+        @include rem( 'font-size', 13px );
+
+        .social-share__wrap {
+            margin: 1em 0;
+            text-align: center;
+        }
     }
+
 }
 
 .post__author {
@@ -1347,10 +1454,10 @@ header {
     padding: 1.5em;
     text-align: center;
     position: relative;
-    background-color: rgba(0, 152, 219, 0.9);;
+    background-color: rgba(0, 152, 219, 0.9);
 
     @include mq( $from: mobile ) {
-        padding: 2.5em;
+        padding: 2.5em 1em;
     }
 
     .main__heading {
@@ -1944,6 +2051,10 @@ figure {
         z-index: 4;
         position: absolute;
         top: 50%; left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         color: rgba(255, 255, 255, 0.75);
         @include rem( 'font-size', 48px );

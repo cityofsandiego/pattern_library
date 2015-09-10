@@ -2,10 +2,8 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <!-- <div class="hero__wrap">
-            <img src="../assets/dist/img/cysd-hero-bg.jpg" alt="Blog Archive" class="hero__img">
-        </div> -->
-        <div class="hero__wrap hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
+
+        <div class="hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters">
@@ -187,7 +185,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <h2 class="visuallyhidden">Search form</h2>
                                 <div class="form-item form-type-textfield form-item-search-block-form">
                                     <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-                                    <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+                                    <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search Blog" size="15" maxlength="128" class="form-text">
                                 </div>
                                 <div class="form-actions form-wrapper" id="edit-actions">
                                     <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">

@@ -757,6 +757,20 @@ p.nav-ex {
     font-size: 1rem;
 }
 
+.view-more {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-size: .8125rem; 
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.view-more i {
+    font-size: 8px;
+    font-size: .5rem; 
+    font-weight: 600;
+}
+
 /* Alignment
    ========================================================================== */
 .pull-center {
@@ -823,6 +837,10 @@ p.nav-ex {
 
 /* Horiziontal Rules
    ========================================================================== */
+.hr--dashed {
+    border-top: 1px dashed #dde2e5;
+}
+
 /* Backgrounds
    ========================================================================== */
 .background--dark {
@@ -879,7 +897,7 @@ p.nav-ex {
     /* IE6-9 */
 }
 
-.main__navigation > ul > li > a:before,
+.main__navigation > ul > li:before,
 .main__navigation > ul > li:last-child > a:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
     background: #fff;
@@ -1131,6 +1149,10 @@ dd {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto;
+}
+
+.l-constrained--main {
+    position: relative;
 }
 
 .l-constrained--site {
@@ -2091,6 +2113,10 @@ header nav a {
 header.library__header {
     background: white;
 }
+header .columns {
+    display: inline-block; 
+    width: auto;
+}
 
 /* Pattern Library */
 .library__header {
@@ -2135,16 +2161,6 @@ header.library__header {
     height: 100%;
 }
 
-.hero__wrap {
-    position: relative;
-}
-
-.hero__bg {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .hero--credit {
     position: absolute;
     z-index: 10; 
@@ -2161,10 +2177,6 @@ header.library__header {
     padding: .5em 1em;
     color: #dde2e5;
     background: rgba(0, 0, 0, .75);
-}
-
-.hero__slides--content .slides {
-    overflow: hidden;
 }
 
 .hero__content {
@@ -2232,15 +2244,8 @@ header.library__header {
     position: relative;
 }
 
-.hero__img {
-    position: absolute;
-    z-index: 0;
-    overflow: hidden; 
-    width: 100%;
-    max-height: 550px;
-}
-.hero__img img {
-    width: 100%;
+.hero__slides--content .slides {
+    overflow: hidden;
 }
 
 .hero__slides--secondary {
@@ -2251,16 +2256,42 @@ header.library__header {
     display: block;
 }
 
-.hero__wrap--empty {
+.flex-direction-nav {
+    display: none;
+}
+
+.hero__wrap {
+    position: relative;
+}
+.hero__wrap.hero__wrap--empty {
     position: absolute;
-    z-index: 0;
-    top: 164px; 
+    z-index: 0; 
     width: 100%;
     min-height: 250px;
 }
 
-.flex-direction-nav {
-    display: none;
+.hero__bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__bg.hero__bg--secondary {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    max-height: 20em;
+}
+.hero__bg.hero__bg--solid {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15em;
+    background: #0098db;
 }
 
 /* Navigation
@@ -2304,10 +2335,8 @@ header.library__header {
     transition: background .15s ease;
     border-bottom: none;
 }
-.main__navigation > ul > li > a:before {
+.main__navigation > ul > li:before {
     position: absolute; 
-    bottom: 0;
-    left: 0;
     width: 1px;
     height: 100%;
     content: "";
@@ -2394,9 +2423,9 @@ header.library__header {
 .main__navigation .dropdown .nav__heading p {
     border-bottom: 1px solid #dde2e5;
 }
-.main__navigation .dropdown .border--bottom {
-    padding-bottom: 0; 
+.main__navigation .dropdown .border {
     border: none;
+    border-bottom: 1px dashed #dde2e5;
 }
 .main__navigation .dropdown .nav__event {
     font-size: 13px;
@@ -2657,7 +2686,7 @@ header.library__header {
     background: white;
 }
 
-.card a {
+.card > a {
     text-decoration: none;
 }
 .card.background-off-white {
@@ -2692,10 +2721,15 @@ header.library__header {
     font-size: .8125rem; 
     padding: 1.5em;
 }
-.card__container .card__headline {
+.card__container .card__content > a {
+    font-size: 16px;
+    font-size: 1rem;
+}
+.card__container .card__headline a {
     font-family: "Merriweather", serif;
     font-size: 16px;
     font-size: 1rem; 
+    text-decoration: none;
     color: #37424a;
 }
 .card__container .card__meta {
@@ -2770,6 +2804,9 @@ header.library__header {
     line-height: 1;
 }
 
+.card--notification p {
+    margin-bottom: 0;
+}
 .card--notification i {
     font-size: 24px;
     font-size: 1.5rem; 
@@ -2778,7 +2815,6 @@ header.library__header {
     vertical-align: -webkit-baseline-middle;
     color: white;
     border-radius: 50%;
-    background: #0098db;
 }
 .card--notification .date {
     font-family: "Merriweather", serif; 
@@ -3002,8 +3038,7 @@ header.library__header {
    ========================================================================== */
 .post__meta {
     font-size: 13px;
-    font-size: .8125rem; 
-    margin: 1em 0;
+    font-size: .8125rem;
 }
 .post__meta .social-share__wrap {
     margin: 1em 0;
@@ -3080,7 +3115,7 @@ header.library__header {
     color: #222;
 }
 .main__message.main__message--white .main__content {
-    color: #0098db;
+    color: #2dc2e3;
 }
 .main__message.main__message--transparent {
     background: transparent;
@@ -3129,6 +3164,7 @@ header.library__header {
     font-family: "Merriweather", serif;
     display: inline-block;
     padding: .25em .75em;
+    text-align: left;
     color: white;
     border-radius: 3px;
     background-color: #0078ad;
@@ -3137,7 +3173,7 @@ header.library__header {
     font-size: 11px;
     font-size: .6875rem; 
     display: inline-block;
-    margin: 0;
+    margin: 0 .2em;
     vertical-align: middle;
     text-transform: uppercase;
 }
@@ -3301,7 +3337,9 @@ main > .six {
     position: relative;
 }
 
-main[role="main"] {
+main[role="main"],
+.role-main {
+    position: relative; 
     z-index: 5;
 }
 
@@ -3885,7 +3923,7 @@ input[type="submit"] .icon-arrow-left {
     background-color: #ffa02f;
 }
 .btn--secondary:hover {
-    background-color: #ffb762;
+    background-color: #fb8800;
 }
 .btn--secondary i {
     color: #ffa02f;
@@ -4063,21 +4101,21 @@ input[type="submit"] .icon-arrow-left {
 /* General
    ========================================================================== */
 ::-webkit-input-placeholder {
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 :-ms-input-placeholder {
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 .form select {
@@ -4151,6 +4189,7 @@ input[type="search"] {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    margin: 0;
     /* 1 */
 }
 
@@ -4269,6 +4308,8 @@ textarea {
 
 .form--search {
     overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 -1px rgba(0, 0, 0, .15);
 }
 .form--search input[type="search"] {
     border-right: none;
@@ -4332,7 +4373,6 @@ textarea {
 
 header .form--search input {
     border-color: white;
-    border-bottom: 2px solid #c1c4c6;
 }
 header .form--search input:focus {
     border-top-color: white;
@@ -4340,7 +4380,6 @@ header .form--search input:focus {
 }
 header .form--search input[type="submit"] {
     border-color: #e4e9eb;
-    border-bottom: 2px solid #a7abad;
     border-left: none;
     background-color: #e4e9eb;
     background-image: url(../img/search-icon-blue.png);
@@ -4400,6 +4439,30 @@ header .form--search input[type="submit"]:hover {
     top: -.8em;
     padding: 0 .5em;
     background-color: white;
+}
+
+header .search-icon {
+    display: inline-block; 
+    padding: .25em .5em;
+    text-decoration: none;
+    border-radius: 4px;
+    background: white;
+}
+header i {
+    font-weight: 600;
+}
+header .form--search-wrap {
+    position: static;
+}
+header .form--search {
+    position: absolute;
+    z-index: 10;
+    top: 6em;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: .25em 3em;
+    background-color: #656667;
 }
 
 .notification {

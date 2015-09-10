@@ -255,15 +255,11 @@ html[xmlns] .flexslider .slides {
     width: 11px;
     height: 11px;
     display: block;
-    border: 2px solid transparent;
+    border: 2px solid white;
     background: $cerulean;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(0, 152, 219, 0.5);
     cursor: pointer;
     text-indent: -9999px;
-    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-    -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -271,9 +267,9 @@ html[xmlns] .flexslider .slides {
       background: $cerulean;
     }
     &.flex-active {
-      background: transparent;
       cursor: default;
-      border: 2px solid white;
+      background: transparent;
+      border: 2px solid $cerulean;
     } 
   }
   #slider-basic & {

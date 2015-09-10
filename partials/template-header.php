@@ -137,15 +137,16 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hd">
-            <div class="l-constrained row l-padding-td l-padding-desktop-tm l-padding-bd">
+        <header class="l-padding-mobile-hs">
+            <div class="l-constrained row l-padding-td l-padding-desktop-tm">
                 <div class="two columns no-gutters">
                     <a href="/" class="logo">
                         <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                         <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                     </a>
                 </div>
-                <div class="three columns hide-on-mobile">
+                <div class="three columns form--search-wrap">
+                    <a href="" class="search-icon search-icon--open"><i class="lnr lnr-magnifier"></i> </a>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                         <div><div class="container-inline">
                             <h2 class="visuallyhidden">Search form</h2>
@@ -161,8 +162,8 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                         </div></div>
                     </form>
                 </div>
-                <div class="five columns hide-on-mobile">
-                    <div class="quicklinks background--cerulean l-padding-ts">
+                <div class="seven columns no-gutters hide-on-mobile">
+                    <div class="quicklinks background--cerulean l-padding-td">
                         <ul>
                             <li><a href="">Login</a></li>
                             <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
@@ -170,8 +171,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                             <li><a href="">High Contrast</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="two columns no-gutters text-right hide-on-mobile">
+
                     <div class="card--weather">
                         <i class="lnr lnr-sun"></i>
                         <p class="temperature"><span class="degrees">73</span>&deg;</p>
@@ -202,7 +202,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                         <div class="four columns">
                                             <div class="row border">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Parks</h4></a>
+                                                    <h4><a href="">Parks</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -214,7 +214,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             </div>
                                             <div class="row border">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Outdoors</h4></a>
+                                                    <h4><a href="">Outdoors</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -226,7 +226,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             </div>
                                             <div class="row">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Things to Do</h4></a>
+                                                    <h4><a href="">Things to Do</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -271,17 +271,17 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                         <div class="four columns">
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Website Tools</h4></a>
+                                                    <h4><a href="">Website Tools</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Indexes</h4></a>
+                                                    <h4><a href="">Indexes</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Account Management</h4></a>
+                                                    <h4><a href="">Account Management</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -318,17 +318,17 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                         <div class="four columns">
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Forums</h4></a>
+                                                    <h4><a href="">Forums</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Neighborhoods & Council Districts</h4></a>
+                                                    <h4><a href="">Neighborhoods & Council Districts</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Initiatives</h4></a>
+                                                    <h4><a href="">Initiatives</a></h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -367,7 +367,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                         <div class="four columns">
                                             <div class="row border">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Police</h4></a>
+                                                    <h4><a href="">Police</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -379,7 +379,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             </div>
                                             <div class="row border">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Fire</h4></a>
+                                                    <h4><a href="">Fire</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -391,7 +391,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                             </div>
                                             <div class="row">
                                                 <div class="six columns">
-                                                    <a href=""><h4>Lifeguards</h4></a>
+                                                    <h4><a href="">Lifeguards</a></h4>
                                                 </div>
                                                 <div class="six columns">
                                                     <ul>
@@ -435,32 +435,32 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                         <div class="four columns">
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Mayor</h4></a>
+                                                    <h4><a href="">Mayor</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Community Board</h4></a>
+                                                    <h4><a href="">Community Board</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Employment</h4></a>
+                                                    <h4><a href="">Employment</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Cost of Living</h4></a>
+                                                    <h4><a href="">Cost of Living</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row border">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Long-Term Planning</h4></a>
+                                                    <h4><a href="">Long-Term Planning</a></h4>
                                                 </div>
                                             </div>
                                             <div class="row">
                                                 <div class="twelve columns">
-                                                    <a href=""><h4>Planning Initiatives</h4></a>
+                                                    <h4><a href="">Planning Initiatives</a></h4>
                                                 </div>
                                             </div>
                                         </div>

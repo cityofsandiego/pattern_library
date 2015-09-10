@@ -2,7 +2,7 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <div class="hero__wrap" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
+        <div class="hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters">
@@ -23,14 +23,15 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <span class="post__date">23 July 2015</span>
                                 |
                                 <span class="post__author"><a href="">by Name Lastname</a></span>
-                            </div>
-                            <div class="social-share__wrap">
-                                <span class='st_sharethis_large' displayText='ShareThis'></span>
-                                <span class='st_facebook_large' displayText='Facebook'></span>
-                                <span class='st_twitter_large' displayText='Tweet'></span>
-                                <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                                <span class='st_pinterest_large' displayText='Pinterest'></span>
-                                <span class='st_email_large' displayText='Email'></span>
+                            
+                                <div class="social-share__wrap">
+                                    <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                    <span class='st_facebook_large' displayText='Facebook'></span>
+                                    <span class='st_twitter_large' displayText='Tweet'></span>
+                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                    <span class='st_email_large' displayText='Email'></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,7 +147,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <h2 class="visuallyhidden">Search form</h2>
                                     <div class="form-item form-type-textfield form-item-search-block-form">
                                         <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-                                        <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+                                        <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search Blog" size="15" maxlength="128" class="form-text">
                                     </div>
                                     <div class="form-actions form-wrapper" id="edit-actions">
                                         <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">

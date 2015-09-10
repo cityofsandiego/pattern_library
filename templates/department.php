@@ -28,7 +28,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-container l-padding-mobile-hd background-white">
+        <div class="l-constrained l-constrained--main l-padding-mobile-hd background-white">
 
             <div class="row">
                 <main>

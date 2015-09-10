@@ -383,3 +383,76 @@ header {
         @include rem( 'font-size', 16px );
     }
 }
+
+header {
+    .search-icon {
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        background: $cerulean;
+        display: inline-block;
+
+        i {
+            font-weight: 600;
+        }
+
+        @include mq( $from: tablet ) {
+            color: $cerulean;
+            margin-top: .5em;
+            background: white;
+            padding: .25em .5em;
+        }
+
+        @include mq( $from: tablet ) {
+            display: none;
+        }
+    }
+
+    @include mq( $until: tablet ) {
+        .form--search-wrap {
+            float: right;
+            margin-right: 5em;
+        }
+
+        .search-icon {
+            padding: 0;
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            @include rem( 'font-size', 28px );
+
+            &.search-open {
+                background: darken( $cerulean, 5% );
+            }
+        }
+
+        .form--search {
+            display: none;
+            z-index: 10;
+            position: absolute;
+            left: 0; top: 100%;
+            width: 100%;
+            border-radius: 0;
+            padding: .5em 3em;
+            background-color: rgba(255, 255, 255, 0.9);
+
+            input[type="search"] {
+                border: 1px solid $chateau;
+                border-right: none;
+            }
+
+            input[type="submit"] {
+                border: 1px solid $chateau;
+                border-left: none;
+            }
+        }
+
+    }
+
+    @include mq( $until: site ) {
+        .form--search-wrap {
+            position: static;
+        }
+    }
+}
