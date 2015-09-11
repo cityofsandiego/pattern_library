@@ -92,7 +92,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 					<div class="l-container">
 						<p class=""><em>Within header element:</em></p>
-						<header class="l-padding-hd">
+						<header class="l-padding-ad">
 							<div class="row">
 								<div class="four columns">
 									<form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">

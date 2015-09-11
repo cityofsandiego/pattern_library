@@ -893,7 +893,7 @@ p.nav-ex {
     /* Opera 11.10+ */
     background:     -ms-linear-gradient(top, rgba(255, 255, 255, .9) 0%, #fff 100%);
     /* IE10+ */
-    background:         linear-gradient(to bottom, rgba(255, 255, 255, .9) 0%, #fff 100%);
+    background: linear, to bottom, rgba(255, 255, 255, .9) 0, white 100%;
     /* W3C */
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );
@@ -915,7 +915,7 @@ p.nav-ex {
     /* Opera 11.10+ */
     background:     -ms-linear-gradient(top, #fff 0%, #d4d4d4 100%);
     /* IE10+ */
-    background:         linear-gradient(to bottom, #fff 0%, #d4d4d4 100%);
+    background: linear, to bottom, #fff 0, #d4d4d4 100%;
     /* W3C */
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 );
@@ -972,7 +972,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: "Merriweather", serif; 
     font-weight: normal;
     margin: .5em 0;
@@ -982,7 +988,11 @@ h6 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
     line-height: 1.3;
 }
 
@@ -2968,7 +2978,7 @@ header > .row {
     top: 0;
     left: 0;
     display: none;
-    padding: .5em;
+    padding: .5em 1em;
     color: white;
     border-radius: 2px;
     background: #37424a;

@@ -75,7 +75,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="code" name="code">
 <!-- Full width -->
 <div class="row">
     <div class="twelve columns">
@@ -150,16 +150,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
-<div class="row">
-    <div class="sm-four columns">
-        <p>Small-4</p>
-    </div>
-    <div class="sm-eight columns">
-        <p>Small-8</p>
-    </div>
-</div>
-
+                                <form><textarea class="pattern" id="index-code-2" name="code">
 <div class="row">
     <div class="sm-six four columns">
         <p class="l-margin-bn border l-padding-ad">6 small columns, 4 large columns</p>

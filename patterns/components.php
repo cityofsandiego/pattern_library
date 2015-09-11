@@ -47,14 +47,49 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-vm">
                     <h2>Accordion</h2>
 
-                    <div class="accordions js-toggle-accordion">
-                        <div class="accordion">
-                            <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
-                            <div class="accordion__drawer" style="display: none;">
-                                <p>Vehicles cannot be parked or stored on a public street for long periods of time. Storage of a vehicle is considered to be a vehicle in excess of 72 hours without being moved at least one tenth of a mile. Vehicles stored longer than 72 hours are subject to being towed or cited.</p>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <div class="accordions js-toggle-accordion">
+                                <div class="accordion">
+                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+                                    <div class="accordion__drawer" style="display: none;">
+                                        <p>Vehicles cannot be parked or stored on a public street for long periods of time. Storage of a vehicle is considered to be a vehicle in excess of 72 hours without being moved at least one tenth of a mile. Vehicles stored longer than 72 hours are subject to being towed or cited.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+                                    <div class="accordion__drawer" style="display: none;">
+                                        <p>Vehicles cannot be parked or stored on a public street for long periods of time. Storage of a vehicle is considered to be a vehicle in excess of 72 hours without being moved at least one tenth of a mile. Vehicles stored longer than 72 hours are subject to being towed or cited.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <div class="six columns">
+                            <p><strong>Notes</strong></p>
+                            <p>Wrap each group of accordion items in a container with <strong>.js-toggle-accordion</strong>. This class controls the on click event to open the accordion; this code is location in <strong>main.js</strong>.</p>
+                        </div>
+                        <div class="six columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-1" name="code">
+<div class="accordions js-toggle-accordion">
+    <div class="accordion">
+        <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+        <div class="accordion__drawer" style="display: none;">
+            <p>Vehicles cannot be parked or stored on a public street for long periods of time. Storage of a vehicle is considered to be a vehicle in excess of 72 hours without being moved at least one tenth of a mile. Vehicles stored longer than 72 hours are subject to being towed or cited.</p>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+        <div class="accordion__drawer" style="display: none;">
+            <p>Vehicles cannot be parked or stored on a public street for long periods of time. Storage of a vehicle is considered to be a vehicle in excess of 72 hours without being moved at least one tenth of a mile. Vehicles stored longer than 72 hours are subject to being towed or cited.</p>
+        </div>
+    </div>
+</div></textarea> </form> </div>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <!-- Post Meta -->
@@ -121,8 +156,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <div class="row">
                         <div class="six columns">
-<div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-2" name="code">
 <a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
     <i class="icon-play"></i>
     <div class="overlay"></div> <!-- Dark opacity -->
@@ -132,7 +167,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                         <div class="six columns">
                             <p><strong><em>Notes</em></strong></p>
-                            <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of .js-modal-video to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
+                            <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of <strong>.js-modal-video </strong>to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
                         </div>
                     </div>
                 </div>
@@ -195,23 +230,30 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-vm">
                     <h2>Tools Tips</h2>
                     <div class="row">
-                        <div class="twelve columns">
+                        <div class="four columns">
                             <p>What's this?
                                 <span class="tooltip__wrap">
-                                    <i><i class="lnr lnr-question-circle"></i>
-                                    <span class="tooltip tooltip--bottom">Bottom Tooltip</span>
+                                    <i class="lnr lnr-question-circle"></i>
+                                    <span class="tooltip tooltip--bottom">Bottom Tooltip Content</span>
                                 </span>
                             </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="twelve columns">
+
                             <p>
                             <span class="tooltip__wrap">
-                                <i><i class="lnr lnr-question-circle"></i>
-                                <span class="tooltip tooltip--left">Left Tooltip</span>
+                                <i class="lnr lnr-question-circle"></i>
+                                <span class="tooltip tooltip--left">Left Tooltip Content</span>
                             </span>
                             What's this?</p>
+                        </div>
+                        <div class="eight columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-3" name="code">
+<a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
+    <i class="icon-play"></i>
+    <div class="overlay"></div> <!-- Dark opacity -->
+    <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250"> <!-- Video screenshot -->
+</a>
+</textarea> </form> </div>
                         </div>
                     </div>
                 </div>

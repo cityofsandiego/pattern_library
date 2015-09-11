@@ -5,23 +5,29 @@
         <script src="/assets/dist/js/main.js"></script>
 
         <script>
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var myNewChart = new Chart(ctx).Bar(data);
+            // var ctx = document.getElementById("myChart").getContext("2d");
+            // var myNewChart = new Chart(ctx).Bar(data);
 
-            var ctx = document.getElementById("lineChart").getContext("2d");
-            var lineChart = new Chart(ctx).Line(data);
+            // var ctx = document.getElementById("lineChart").getContext("2d");
+            // var lineChart = new Chart(ctx).Line(data);
 
-            var ctx = document.getElementById("pieChart").getContext("2d");
-            var myPieChart = new Chart(ctx).Pie(pieData);
+            // var ctx = document.getElementById("pieChart").getContext("2d");
+            // var myPieChart = new Chart(ctx).Pie(pieData);
         </script>
 
         <script>
-          var editor = CodeMirror.fromTextArea(document.getElementsByClassName("code-mirror"), {
-            lineNumbers: true,
-            mode: "application/x-ejs",
-            indentUnit: 1,
-            indentWithTabs: true
-          });
+          var els = document.querySelectorAll("textarea.pattern");
+
+            Array.prototype.forEach.call(els, function(el) {
+                var id = el.id;
+
+                var editor = CodeMirror.fromTextArea(document.getElementById(id), {
+                    lineNumbers: true,
+                    mode: "htmlmixed"
+                  });
+
+            });
+
         </script>
 
         <script type="text/javascript">

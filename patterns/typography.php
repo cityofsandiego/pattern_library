@@ -117,10 +117,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    </div>
 				    </div>
 
-				    <div class="row l-margin-tm">
+				    <div class="row l-margin-vl">
 				    	<div class="six columns">
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="type-code-1" name="code">
 <p class="h1">This is actually a &lt;p&gt;.</p>
 <h4 class="h2">This is actually a &lt;h4&gt;.</h4></textarea> </form> </div>
                         </div>
@@ -132,7 +132,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="row l-margin-tm">
+                    <div class="row l-margin-vl">
                         <div class="six columns">
                             <p><strong>Notes</strong></p>
                         	<p>Additional helper classes available for headings:</p>
@@ -145,15 +145,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<li><strong>.heading--normal</strong> for no text-transform</li>
 							</ul>
 							<p>Lastly, the <strong>.subheading</strong> class is ideally used on an &lt;h2&gt; or &lt;p&gt; directlybeneath an &lt;h1&gt;.</p>
-							<p class="fine-print">These classes, along with default heading styles, are location in <em>typography.scss</em>.</p>
                         </div>
                         <div class="six columns">
                         	<h1 class="heading--trim">Main Page Title</h1>
 							<p class="subheading">Supporting Sub-Title</p>
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="type-code-2" name="code">
 <h1 class="heading--trim">Main Page Title</h1>
 <p class="subheading">Supporting Sub-Title</p></textarea> </form> </div>
+                        </div>
+                        <div class="twelve columns">
+                        	<p class="fine-print">These classes, along with default heading styles, are located in <em>typography.scss</em>.</p>
                         </div>
                     </div>
 
@@ -207,7 +209,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<p>When displaying addresses and contact information, it is good practice to include <a href="http://schema.org/" target="_blank">schema.org</a> metadata for search engine utility.</p>
 
 					    		<div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="type-code-3" name="code">
 <address>
 	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<span itemprop="streetAddress">2600 Golf Course Drive <br></span>
