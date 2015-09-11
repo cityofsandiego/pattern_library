@@ -2,8 +2,9 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <div class="hero__wrap" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
-            <div class="l-constrained l-padding-mobile-hd">
+        <div class="hero__wrap">
+            <div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');"></div>
+            <div class="l-constrained l-constrained--main l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
                         <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
@@ -25,14 +26,15 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                         <span class="post__date">23 July 2015</span>
                                         |
                                         <span class="post__author"><a href="">by Name Lastname</a></span>
-                                    </div>
-                                    <div class="social-share__wrap">
-                                        <span class='st_sharethis_large' displayText='ShareThis'></span>
-                                        <span class='st_facebook_large' displayText='Facebook'></span>
-                                        <span class='st_twitter_large' displayText='Tweet'></span>
-                                        <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                                        <span class='st_pinterest_large' displayText='Pinterest'></span>
-                                        <span class='st_email_large' displayText='Email'></span>
+                                    
+                                        <div class="social-share__wrap">
+                                            <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                            <span class='st_facebook_large' displayText='Facebook'></span>
+                                            <span class='st_twitter_large' displayText='Tweet'></span>
+                                            <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                            <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                            <span class='st_email_large' displayText='Email'></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -70,18 +72,18 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                             <div class="l-padding-vd">
                                 <div class="card card--comment row">
+                                    <div class="card__meta eleven columns push-one">
+                                        <div class="six columns no-gutters comments">
+                                            <p class=""><strong>15 Comments</strong></p>
+                                        </div>
+                                        <div class="six columns no-gutters favorites text-right">
+                                            <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
+                                        </div>
+                                    </div>
                                     <div class="one columns card__image text-center no-gutters">
                                         <img src="http://placehold.it/65x65">
                                     </div>
                                     <div class="eleven columns">
-                                        <div class="card__meta row">
-                                            <div class="six columns no-gutters comments">
-                                                <p class=""><strong>15 Comments</strong></p>
-                                            </div>
-                                            <div class="six columns no-gutters favorites text-right">
-                                                <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
-                                            </div>
-                                        </div>
                                         <div class="card__content">
                                             <form class="user-info-from-cookie form--comments" action="" method="post" id="" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
 

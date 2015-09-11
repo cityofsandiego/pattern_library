@@ -35,16 +35,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<div class="l-container l-margin-vm">
-				    <h2>Address</h2>
-				    <address>
-						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-							<span itemprop="streetAddress">2600 Golf Course Drive <br></span>
-							<span itemprop="addressLocality">San Diego</span>,
-							<span itemprop="addressRegion">CA</span>
-							<span itemprop="postalCode">92102</span>
-						</div>
-						<span itemprop="telephone">(619) 123-4567</span>
-				    </address>
 
 				    <div class="l-container l-margin-vm">
 					    <h2>Headings</h2>
@@ -127,6 +117,48 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    </div>
 				    </div>
 
+				    <div class="row l-margin-vl">
+				    	<div class="six columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-1" name="code">
+<p class="h1">This is actually a &lt;p&gt;.</p>
+<h4 class="h2">This is actually a &lt;h4&gt;.</h4></textarea> </form> </div>
+                        </div>
+                        <div class="six columns">
+                            <p><strong>Notes</strong></p>
+                            Helper classes are available to style typographic tags as header elements. This is helpful if you want the style of, say, an &lt;h2&gt;, but the placement of an &lt;h2&gt; doesn't make semantic sense on the page.
+                            <p class="h1">This is actually a &lt;p&gt;.</p>
+                        	<h4 class="h2">This is actually a &lt;h4&gt;.</h4>
+                        </div>
+                    </div>
+
+                    <div class="row l-margin-vl">
+                        <div class="six columns">
+                            <p><strong>Notes</strong></p>
+                        	<p>Additional helper classes available for headings:</p>
+                        	<ul>
+								<li><strong>.heading--center</strong> for centered headings</li>
+								<li><strong>.heading--right</strong> for right aligned headings</li>
+								<li><strong>.heading--trim</strong> for no margins</li>
+								<li><strong>.heading--snug</strong> for no top margin</li>
+								<li><strong>.heading--light</strong> for white heading text</li>
+								<li><strong>.heading--normal</strong> for no text-transform</li>
+							</ul>
+							<p>Lastly, the <strong>.subheading</strong> class is ideally used on an &lt;h2&gt; or &lt;p&gt; directlybeneath an &lt;h1&gt;.</p>
+                        </div>
+                        <div class="six columns">
+                        	<h1 class="heading--trim">Main Page Title</h1>
+							<p class="subheading">Supporting Sub-Title</p>
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-2" name="code">
+<h1 class="heading--trim">Main Page Title</h1>
+<p class="subheading">Supporting Sub-Title</p></textarea> </form> </div>
+                        </div>
+                        <div class="twelve columns">
+                        	<p class="fine-print">These classes, along with default heading styles, are located in <em>typography.scss</em>.</p>
+                        </div>
+                    </div>
+
 
 				    <div class="l-container l-margin-vm">
 				    	<div class="row">
@@ -153,6 +185,42 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    			<p class="subheading">Sub Section</p>
 				    			<p>We are the closest golf course to downtown San Diego. Conveniently located near Route 94 and Interstate 5 freeways. Facilities include an 18-hole golf course and a 9-hole executive golf course, driving range, practice putting greens, coffee shop and half-way house. The Pro Shop offers golf merchandise for sale and the rental of clubs, hand and power golf carts. The Professional Golf instruction staff offers group and individual golf lessons.</p>
 				    		</div>
+				    	</div>
+				    </div>
+
+				    <div class="l-container l-margin-vm">
+				    	<div class="row">
+				    		<div class="twelve columns">
+				    			<h2>Address</h2>
+				    		</div>
+				    		<div class="four columns">
+							    <address>
+									<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+										<span itemprop="streetAddress">2600 Golf Course Drive <br></span>
+										<span itemprop="addressLocality">San Diego</span>,
+										<span itemprop="addressRegion">CA</span>
+										<span itemprop="postalCode">92102</span>
+									</div>
+									<span itemprop="telephone">(619) 123-4567</span>
+							    </address>	
+					    	</div>
+					    	<div class="eight columns">
+					    		<p><strong>Notes</strong></p>
+					    		<p>When displaying addresses and contact information, it is good practice to include <a href="http://schema.org/" target="_blank">schema.org</a> metadata for search engine utility.</p>
+
+					    		<div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-3" name="code">
+<address>
+	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		<span itemprop="streetAddress">2600 Golf Course Drive <br></span>
+		<span itemprop="addressLocality">San Diego</span>,
+		<span itemprop="addressRegion">CA</span>
+		<span itemprop="postalCode">92102</span>
+	</div>
+	<span itemprop="telephone">(619) 123-4567</span>
+</address>	</textarea> </form> </div>
+                        </div>
+					    	</div>
 				    	</div>
 				    </div>
 

@@ -37,7 +37,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                     <div class="card__meta">
                                         <span class="card__date">23 July 2015</span>
                                         |
@@ -55,7 +55,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                     <div class="card__meta">
                                         <span class="card__date">23 July 2015</span>
                                         |
@@ -73,7 +73,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Blog Post Headline Goes Here and Is Two Lines Long</p></a>
+                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
                                     <div class="card__meta">
                                         <span class="card__date">23 July 2015</span>
                                         |
@@ -99,7 +99,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Surf Cam [video feed]</p></a>
+                                    <p class="card__headline"><a href="">Surf Cam [video feed]</a></p>
                                 </div>
                             </div>
                         </div>
@@ -110,7 +110,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Summer Recreation Programs</p></a>
+                                    <p class="card__headline"><a href="">Summer Recreation Programs</a></p>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <a href=""><p class="card__headline">Junior Life Guard Programs</p></a>
+                                    <p class="card__headline"><a href="">Junior Life Guard Programs</a></p>
                                 </div>
                             </div>
                         </div>

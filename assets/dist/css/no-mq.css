@@ -336,7 +336,7 @@ input[type="search"] {
     /* 2 */
             box-sizing: content-box; 
 
-    -webkit-appearance: textfield;
+    -webkit-appearance: none;
 }
 
 /**
@@ -409,6 +409,9 @@ body {
     font-size: 1em;
     line-height: 1.4;
     background-color: #dde2e5;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -602,6 +605,7 @@ form label.focusable:focus,
 }
 
 .l-constrained,
+.l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop,
 .l-container,
@@ -625,12 +629,14 @@ form label.focusable:focus,
     *zoom: 1;
 }
 .l-constrained:before,
+.l-constrained--site:before,
 .l-constrained--wide:before,
 .l-constrained--desktop:before,
 .l-container:before,
 .comment-list article.comment-body footer:before,
 .form--newsletter:before,
 .l-constrained:after,
+.l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
 .l-container:after,
@@ -642,6 +648,7 @@ form label.focusable:focus,
     /* 2 */
 }
 .l-constrained:after,
+.l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
 .l-container:after,
@@ -753,6 +760,20 @@ p.nav-ex {
     font-size: 1rem;
 }
 
+.view-more {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-size: .8125rem; 
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.view-more i {
+    font-size: 8px;
+    font-size: .5rem; 
+    font-weight: 600;
+}
+
 /* Alignment
    ========================================================================== */
 .pull-center {
@@ -819,6 +840,10 @@ p.nav-ex {
 
 /* Horiziontal Rules
    ========================================================================== */
+.hr--dashed {
+    border-top: 1px dashed #dde2e5;
+}
+
 /* Backgrounds
    ========================================================================== */
 .background--dark {
@@ -838,6 +863,10 @@ p.nav-ex {
 
 .background--cerulean {
     background-color: #0098db;
+}
+
+.background--science {
+    background-color: #005bbb;
 }
 
 .overlay {
@@ -871,7 +900,7 @@ p.nav-ex {
     /* IE6-9 */
 }
 
-.main__navigation > ul > li > a:before,
+.main__navigation > ul > li:before,
 .main__navigation > ul > li:last-child > a:after {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
     background: #fff;
@@ -943,7 +972,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: "Merriweather", serif; 
     font-weight: normal;
     margin: .5em 0;
@@ -953,7 +988,11 @@ h6 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
     line-height: 1.3;
 }
 
@@ -1117,11 +1156,20 @@ dd {
 /* Containers
    ========================================================================== */
 .l-constrained,
+.l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop {
     width: 100%;
     max-width: 1200px; 
     margin: 0 auto;
+}
+
+.l-constrained--main {
+    position: relative;
+}
+
+.l-constrained--site {
+    max-width: 960px;
 }
 
 .l-constrained--wide {
@@ -2057,6 +2105,8 @@ dd {
 /* Header
    ========================================================================== */
 header {
+    position: relative;
+    z-index: 10;
     background: white;
     background: #0098db;
 }
@@ -2076,6 +2126,51 @@ header nav a {
 header.library__header {
     background: white;
 }
+header > .row {
+    position: relative;
+}
+header > .l-constrained {
+    padding-bottom: 2.5em;
+}
+header > .l-constrained .two {
+    float: left; 
+    width: 25%;
+}
+header > .l-constrained .three {
+    float: left; 
+    width: 25%;
+    text-align: right;
+}
+header > .l-constrained .seven {
+    position: static;
+    float: left; 
+    width: 50%;
+}
+header .quicklinks {
+    text-align: right;
+}
+header .card--weather {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-top: .5em;
+    text-align: center;
+}
+header .card--weather i,
+header .card--weather p,
+header .card--weather p.temperature {
+    font-size: 13px;
+    font-size: .8125rem;
+}
+header .card--weather br {
+    display: none;
+}
+header > .row {
+    padding-right: .5em; 
+    padding-left: .5em;
+}
 
 /* Pattern Library */
 .library__header {
@@ -2091,6 +2186,9 @@ header.library__header {
     position: relative; 
     width: 100%;
     height: 100%;
+}
+.hero__slides .flex-control-nav {
+    display: none;
 }
 
 .hero__slides--img {
@@ -2117,26 +2215,6 @@ header.library__header {
     height: 100%;
 }
 
-.hero__wrap {
-    position: relative;
-}
-.hero__wrap:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 75%;
-    content: "";
-    background-color: #0098db;
-}
-
-.hero__bg {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
 .hero--credit {
     position: absolute;
     z-index: 10; 
@@ -2153,10 +2231,6 @@ header.library__header {
     padding: .5em 1em;
     color: #dde2e5;
     background: rgba(0, 0, 0, .75);
-}
-
-.hero__slides--content .slides {
-    overflow: hidden;
 }
 
 .hero__content {
@@ -2224,15 +2298,54 @@ header.library__header {
     position: relative;
 }
 
-.hero__img {
-    position: absolute;
-    z-index: 0;
-    overflow: hidden; 
-    width: 100%;
-    max-height: 550px;
+.hero__slides--content .slides {
+    overflow: hidden;
 }
-.hero__img img {
+
+.hero__slides--secondary {
+    padding-bottom: 2em;
+}
+.hero__slides--secondary .flex-control-nav {
+    bottom: 0; 
+    display: block;
+}
+
+.flex-direction-nav {
+    display: none;
+}
+
+.hero__wrap {
+    position: relative;
+}
+.hero__wrap.hero__wrap--empty {
+    position: absolute;
+    z-index: 0; 
     width: 100%;
+    min-height: 250px;
+}
+
+.hero__bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__bg.hero__bg--secondary {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    max-height: 20em;
+}
+.hero__bg.hero__bg--solid {
+    position: absolute;
+    z-index: 0; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15em;
+    background: #0098db;
 }
 
 /* Navigation
@@ -2276,10 +2389,8 @@ header.library__header {
     transition: background .15s ease;
     border-bottom: none;
 }
-.main__navigation > ul > li > a:before {
+.main__navigation > ul > li:before {
     position: absolute; 
-    bottom: 0;
-    left: 0;
     width: 1px;
     height: 100%;
     content: "";
@@ -2304,7 +2415,11 @@ header.library__header {
 .main__navigation > ul > li > a {
     font-size: 13px;
     font-size: .8125rem;
+    min-height: 83px;
+    min-height: 100px; 
     padding: 1em 1.5em;
+    padding: 1em .75em;
+    padding: 1em;
     transition: color .15s ease;
     color: white;
     color: #37424a;
@@ -2354,8 +2469,17 @@ header.library__header {
     padding: 1em;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
 }
-.main__navigation .dropdown h4 {
+.main__navigation .dropdown li {
+    margin: .25em 0;
+}
+.main__navigation .dropdown h4 a {
+    font-size: 18px;
+    font-size: 1.125rem; 
     text-transform: capitalize;
+    color: #37424a;
+}
+.main__navigation .dropdown h4 a:hover {
+    color: black;
 }
 .main__navigation .dropdown .nav__heading {
     font-family: "Merriweather", serif; 
@@ -2366,9 +2490,11 @@ header.library__header {
 .main__navigation .dropdown .nav__heading p {
     border-bottom: 1px solid #dde2e5;
 }
-.main__navigation .dropdown .border--bottom {
+.main__navigation .dropdown .border {
+    margin-bottom: 0;
     padding-bottom: 0; 
     border: none;
+    border-bottom: 1px dashed #dde2e5;
 }
 .main__navigation .dropdown .nav__event {
     font-size: 13px;
@@ -2382,6 +2508,9 @@ header.library__header {
     text-decoration: underline; 
     text-transform: capitalize;
     color: #0098db;
+}
+.main__navigation .dropdown .nav__event a:hover {
+    color: #0fb6ff;
 }
 .main__navigation .dropdown .nav__event img {
     float: left;
@@ -2434,23 +2563,52 @@ header.library__header {
 .portal header {
     background: #0098db;
 }
-.portal .main__navigation--portal li {
+.portal .logo {
+    position: relative;
+    display: block;
+    padding: .5em;
+    text-align: center;
+}
+.portal .logo img {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+.portal .logo:before {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: white;
+}
+
+.main__navigation--portal li {
+    font-size: 18px;
+    font-size: 1.125rem;
     font-size: 13px;
     font-size: .8125rem; 
-    margin: 0 .5em;
+    display: inline-block;
+    margin: 0 .25em;
+    padding: .5em 0;
+    padding: 0;
 }
-.portal .main__navigation--portal a {
+.main__navigation--portal a {
     font-weight: normal;
     text-transform: capitalize; 
     color: white;
 }
-.portal .main__navigation--portal a:hover {
+.main__navigation--portal a:hover {
     color: #a8e4ff;
 }
 
 .top-nav-strip {
     font-size: 13px;
     font-size: .8125rem; 
+    padding: .5em;
     padding: 1em;
     color: white;
     background: #005bbb;
@@ -2600,7 +2758,7 @@ header.library__header {
     background: white;
 }
 
-.card a {
+.card > a {
     text-decoration: none;
 }
 .card.background-off-white {
@@ -2626,6 +2784,8 @@ header.library__header {
 .card__container .card__wrap {
     float: left;
     width: 33.3333333333%;
+    margin: 0 .5em;
+    margin: 0;
     padding: .75em;
     padding-right: 1.0416588541%; 
     padding-left: 1.0416588541%;
@@ -2633,12 +2793,17 @@ header.library__header {
 .card__container .card__content {
     font-size: 13px;
     font-size: .8125rem; 
-    padding: 1em;
+    padding: 1.5em;
 }
-.card__container .card__headline {
+.card__container .card__content > a {
+    font-size: 16px;
+    font-size: 1rem;
+}
+.card__container .card__headline a {
     font-family: "Merriweather", serif;
     font-size: 16px;
     font-size: 1rem; 
+    text-decoration: none;
     color: #37424a;
 }
 .card__container .card__meta {
@@ -2713,6 +2878,9 @@ header.library__header {
     line-height: 1;
 }
 
+.card--notification p {
+    margin-bottom: 0;
+}
 .card--notification i {
     font-size: 24px;
     font-size: 1.5rem; 
@@ -2721,7 +2889,6 @@ header.library__header {
     vertical-align: -webkit-baseline-middle;
     color: white;
     border-radius: 50%;
-    background: #0098db;
 }
 .card--notification .date {
     font-family: "Merriweather", serif; 
@@ -2811,7 +2978,7 @@ header.library__header {
     top: 0;
     left: 0;
     display: none;
-    padding: .5em;
+    padding: .5em 1em;
     color: white;
     border-radius: 2px;
     background: #37424a;
@@ -2945,11 +3112,15 @@ header.library__header {
    ========================================================================== */
 .post__meta {
     font-size: 13px;
-    font-size: .8125rem; 
-    margin: 1em 0;
+    font-size: .8125rem;
+}
+.post__meta .social-share__wrap {
+    margin-top: 1.5em; 
+    text-align: left;
 }
 .post__meta .social-share__wrap {
     margin: 1em 0;
+    text-align: center;
 }
 
 .post__author a {
@@ -2993,8 +3164,10 @@ header.library__header {
 /* Messaging
    ========================================================================== */
 .main__message {
+    position: relative;
+    z-index: 2;
     padding: 1.5em;
-    padding: 2.5em; 
+    padding: 2.5em 1em; 
     text-align: center;
     background-color: rgba(0, 152, 219, .9);
 }
@@ -3011,17 +3184,17 @@ header.library__header {
 .main__message a {
     color: #fed100;
 }
-.main__message.main__message {
+.main__message.main__message--white {
     background-color: white;
 }
-.main__message.main__message a {
+.main__message.main__message--white a {
     color: #222;
 }
-.main__message.main__message .main__heading {
+.main__message.main__message--white .main__heading {
     color: #222;
 }
-.main__message.main__message .main__content {
-    color: #0098db;
+.main__message.main__message--white .main__content {
+    color: #2dc2e3;
 }
 .main__message.main__message--transparent {
     background: transparent;
@@ -3070,6 +3243,7 @@ header.library__header {
     font-family: "Merriweather", serif;
     display: inline-block;
     padding: .25em .75em;
+    text-align: left;
     color: white;
     border-radius: 3px;
     background-color: #0078ad;
@@ -3078,7 +3252,7 @@ header.library__header {
     font-size: 11px;
     font-size: .6875rem; 
     display: inline-block;
-    margin: 0;
+    margin: 0 .2em;
     vertical-align: middle;
     text-transform: uppercase;
 }
@@ -3229,16 +3403,22 @@ span[class^="text-"].text-lg {
 
 /* Page containers
    ========================================================================== */
-main > .nine {
+main > .nine:first-child {
     border-right: 1px solid #dde2e5;
+    border-left: 1px solid #dde2e5;
 }
 main > .six {
     border-right: 1px solid #dde2e5; 
     border-left: 1px solid #dde2e5;
 }
 
-main[role="main"] {
+[role="main"] {
     position: relative;
+}
+
+main[role="main"],
+.role-main {
+    position: relative; 
     z-index: 5;
 }
 
@@ -3268,6 +3448,7 @@ main[role="main"] {
 }
 
 .accordion__link {
+    display: block;
     text-decoration: none; 
     color: #37424a;
 }
@@ -3422,12 +3603,40 @@ table td {
     font-size: 13px;
     font-size: .8125rem; 
     line-height: 1.8;
+    padding-top: .25em;
+    padding-bottom: .25em;
 }
 table td:first-child {
     padding-left: .5em;
 }
 table td.table--break {
     padding-left: 0;
+}
+
+.table--thirds th:first-child,
+.table--thirds td:first-child {
+    float: left;
+    width: 41.6666666667%;
+    padding-right: 1.0416588541%; 
+    padding-left: 1.0416588541%;
+}
+.table--thirds th:nth-child(2),
+.table--thirds td:nth-child(2) {
+    float: left;
+    width: 33.3333333333%;
+    padding-right: 1.0416588541%; 
+    padding-left: 1.0416588541%;
+}
+.table--thirds th:last-child,
+.table--thirds td:last-child {
+    float: left;
+    width: 25%;
+    padding-right: 1.0416588541%; 
+    padding-left: 1.0416588541%;
+}
+.table--thirds p {
+    line-height: 1.7; 
+    margin: 0;
 }
 
 /* Media
@@ -3452,7 +3661,11 @@ figure figcaption {
     z-index: 4;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, .75);
 }
 .card--video img {
@@ -3461,6 +3674,65 @@ figure figcaption {
 
 .fb_iframe_widget iframe {
     border-radius: 4px;
+}
+
+.google-map {
+    margin-bottom: 2em;
+    margin-bottom: 0;
+}
+
+.calendar .days {
+    text-align: center;
+}
+.calendar .day {
+    font-family: "Merriweather", serif;
+    font-size: 18px;
+    font-size: 1.125rem;
+    padding: 0 .25em;
+    text-align: right; 
+    color: #ffa02f;
+}
+.calendar table {
+    width: 100%;
+}
+.calendar tr:nth-child(even) {
+    background: white;
+}
+.calendar th {
+    border: 1px solid #656667;
+    border-right: none;
+    border-bottom: none;
+    background: #ffa02f;
+}
+.calendar th:last-child {
+    border-right: 1px solid #656667;
+}
+.calendar th,
+.calendar td {
+    float: left; 
+    width: 14.2857142857%;
+}
+.calendar td {
+    min-height: 10em;
+    border: 1px solid #656667;
+    border-right: none; 
+    border-bottom: none;
+}
+.calendar td:last-child {
+    border-right: 1px solid #656667;
+}
+.calendar tr:last-child td {
+    border-bottom: 1px solid #656667;
+}
+.calendar .view-item-event_calendar {
+    line-height: 1.4;
+    margin-bottom: .25em;
+    padding: .25em;
+    background: #005bbb;
+}
+.calendar .view-item-event_calendar a {
+    text-decoration: none; 
+    color: white;
 }
 
 /* Footer
@@ -3734,7 +4006,7 @@ input[type="submit"] .icon-arrow-left {
     background-color: #ffa02f;
 }
 .btn--secondary:hover {
-    background-color: #ffb762;
+    background-color: #fb8800;
 }
 .btn--secondary i {
     color: #ffa02f;
@@ -3912,21 +4184,21 @@ input[type="submit"] .icon-arrow-left {
 /* General
    ========================================================================== */
 ::-webkit-input-placeholder {
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 :-moz-placeholder {
     /* Firefox 18- */
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 ::-moz-placeholder {
     /* Firefox 19+ */
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 :-ms-input-placeholder {
-    color: #dde2e5;
+    color: #5d676f;
 }
 
 .form select {
@@ -4000,6 +4272,7 @@ input[type="search"] {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    margin: 0;
     /* 1 */
 }
 
@@ -4118,6 +4391,8 @@ textarea {
 
 .form--search {
     overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 -1px rgba(0, 0, 0, .15);
 }
 .form--search input[type="search"] {
     border-right: none;
@@ -4181,7 +4456,6 @@ textarea {
 
 header .form--search input {
     border-color: white;
-    border-bottom: 2px solid #c1c4c6;
 }
 header .form--search input:focus {
     border-top-color: white;
@@ -4189,7 +4463,6 @@ header .form--search input:focus {
 }
 header .form--search input[type="submit"] {
     border-color: #e4e9eb;
-    border-bottom: 2px solid #a7abad;
     border-left: none;
     background-color: #e4e9eb;
     background-image: url(../img/search-icon-blue.png);
@@ -4201,6 +4474,8 @@ header .form--search input[type="submit"]:hover {
 }
 
 .form__step {
+    font-size: 18px;
+    font-size: 1.125rem;
     font-size: 13px;
     font-size: .8125rem; 
     position: relative;
@@ -4238,13 +4513,34 @@ header .form--search input[type="submit"]:hover {
 }
 
 .form__step--header {
-    font-family: "Merriweather", serif; 
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    font-size: 1.25rem;
     font-size: 16px;
-    font-size: 1rem;
+    font-size: 1rem; 
     position: absolute;
     top: -.8em;
     padding: 0 .5em;
     background-color: white;
+}
+
+header .search-icon {
+    display: inline-block;
+    display: none; 
+    margin-top: .5em;
+    padding: .25em .5em;
+    text-decoration: none;
+    color: white;
+    color: #0098db;
+    border-radius: 4px;
+    background: #0098db;
+    background: white;
+}
+header .search-icon i {
+    font-weight: 600;
+}
+header .form--search-wrap {
+    position: static;
 }
 
 .notification {

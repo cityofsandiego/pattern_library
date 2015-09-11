@@ -548,3 +548,23 @@
 	display: inline-block;
 	background: $cerulean;
 }
+
+.lnr-science {
+	background: $science;
+} 
+
+.lnr-sunshade {
+	background: $sunshade;
+}
+
+.lnr-cerulean {
+	background: $cerulean;
+}
+
+.lnr-outline {
+	padding: .2em;
+	border: 2px solid;
+	border-radius: 50%;
+    font-weight: 600;
+    @include rem( 'font-size', 10px );
+}

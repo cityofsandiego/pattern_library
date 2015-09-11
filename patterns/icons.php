@@ -10,17 +10,30 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
 
-                <h1>Stats Block</h1>
-                <div class="sub__nav--wrap">
-                    <ul class="sub__nav">
-                        <li>Icon Library</li>
-                    </ul>
-                </div>
+                <h1>Icon Library</h1>
 
                 <div class="l-container l-margin-tm">
-                    <h2>Icon Library</h2>
-
                     <p class="subheading">Font Name:</span> Linearicons-Free <small>(Glyphs:&nbsp;170)</small></p>
+
+                    <div class="row l-margin-bm">
+                        <div class="six columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="icon-code-1" name="code">
+<i class="lnr lnr-home"></i>
+<i class="lnr lnr-magnifier lnr-circle"></i>
+<i class="lnr lnr-chevron-down-circle lnr-circle lnr-xl"></i>
+</textarea> </form> </div>
+                        </div>
+                        <div class="six columns">
+                            <p><strong>Notes</strong></p>
+                            <p>Helper classes are located in linearicons.scss for icon variations. These include:</p>
+                            <ul>
+                                <li><strong>.lnr-xl</strong> for larger font-size</li>
+                                <li><strong>.lnr-circle</strong> for an icon nested in a solid circle</li>
+                                <li><strong>.lnr-outline</strong> for an icon nested in an outlined circle</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">

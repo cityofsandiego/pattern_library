@@ -11,6 +11,7 @@
                 // this.maps();
                 this.buttons();
                 this.accordion();
+                this.search();
             },
             vals : {
                 $window : $(window)
@@ -80,7 +81,6 @@
  
                 $('.hero__slides--content').flexslider({
                     // controlNav: false
-                    controlNav: false,
                     sync: $(".hero__slides--img"),
                     controlsContainer: $(".custom-controls-container"),
                     customDirectionNav: $(".custom-navigation a")
@@ -191,6 +191,15 @@
 
                 });
             },
+
+            search : function() {
+
+                $(".search-icon--open").click(function(){
+                    event.preventDefault();
+                    $(this).toggleClass("search-open");
+                    $("#search-block-form").slideToggle();
+                });
+            }
 
             // maps : function() {
             //   (function($) {

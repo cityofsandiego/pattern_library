@@ -40,12 +40,12 @@
  */
 $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
 
+// Small columns begin from mobile
 @for $i from 1 through 12 {
 
     $class: nth( $classes, $i );
-
-    // 'Small' column classes for mobile columns
-    @include mq( $until: tablet ) {
+    
+    @media only screen {
         .sm-#{$class} {
             @include span( $i );
             &.no-gutters {
@@ -56,6 +56,13 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
             }
         }
     }
+
+}
+
+// Large columns for tablet and up viewport widths
+@for $i from 1 through 12 {
+
+    $class: nth( $classes, $i );
 
     @include mq( $from: tablet ) {
         .#{$class} { 
@@ -68,7 +75,12 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
             }
         }
     }
+}
 
+// Offsets
+@for $i from 1 through 12 {
+
+    $class: nth( $classes, $i );
 
     .push-#{$class} {
         @include pre( $i );
@@ -77,5 +89,4 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
     .pull-#{$class} {
         @include post( $i );
     }
-
 }

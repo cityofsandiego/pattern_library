@@ -2,7 +2,8 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
-        <div class="hero__wrap hero__bg" style="background-image:url('../assets/dist/img/department-hero.jpg');">
+        <div class="hero__wrap">
+            <div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/department-hero.jpg');"></div>
             <div class="l-constrained">
                 <div class="row">
                     <div class="twelve columns no-gutters">
@@ -27,7 +28,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained l-constrained--main l-padding-mobile-hd background-white">
 
             <div class="row">
                 <main>
@@ -269,7 +270,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
 
                         <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Golf Courses</h4>
+                            <h4 class="h2">Golf Courses</h4>
                             <ul>
                                 <li><a href="">Torrey Pines Golf Course</a></li>
                                 <li><a href="">Mission Bay Golf Course and Practice Center</a></li>
@@ -280,7 +281,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
 
                         <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Location</h4>
+                            <h4 class="h2">Location</h4>
                             <div id="wide-map-canvas" class="l-margin-bd" style="width:100%; height: 360px;"></div>
 
                             <address>
@@ -290,7 +291,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
 
                         <div class="widget l-padding-hs l-margin-bd">
-                            <h4>Contact Location</h4>
+                            <h4 class="h2">Contact Location</h4>
                             <p><strong>Admin. Office: Info & Tee Times:</strong> <br> 619-235-1184</p>
                             <p><strong>Golf Shop: Retail/Range/Rentals:</strong> <br> 619-239-1660</p>
                             <p><strong>Automated Reservation System:</strong> <br> 619-570-1234</p>

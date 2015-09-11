@@ -75,7 +75,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="code" name="code">
 <!-- Full width -->
 <div class="row">
     <div class="twelve columns">
@@ -116,33 +116,54 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="twelve columns">
                             <p><strong>Notes</strong></p>
                             <p>The grid layout is loosely based on <a href="http://foundation.zurb.com/" target="_blank">Foundation</a>.</p>
-                            <p>Columns will break down to 100% at tablet viewport width (768px); to utilize column widths on mobile viewport sizes, prefix the class name with 'small-'.</p>
+                            <p>Columns will break down to 100% width at tablet viewport width (768px); to utilize column widths at viewports smaller than this, prefix the class name with 'sm-'.</p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="small-four columns">
-                            <p class="l-margin-bn border l-padding-ad">Small-4</p>
+                        <div class="sm-four columns">
+                            <p class="l-margin-bn border l-padding-ad">4 small columns</p>
                         </div>
-                        <div class="small-eight columns">
-                            <p class="l-margin-bn border l-padding-ad">Small-8 - will keep width constraints, even on small screens.</p>
+                        <div class="sm-eight columns">
+                            <p class="l-margin-bn border l-padding-ad">8 small columns - will keep width constraints, even on small screens.</p>
                         </div>
                     </div>
 
-                    <!-- <div class="row">
+                    <div class="row l-margin-tm">
+                        <div class="twelve columns">
+                            <p>These classes can be mixed and matched for different widths on smaller and larger screens.</p>
+                        </div>
+                    </div>
+
+                    <div class="row l-margin-vd">
+                        <div class="sm-six four columns">
+                            <p class="l-margin-bn border l-padding-ad">6 small columns, 4 large columns</p>
+                        </div>
+                        <div class="sm-six four columns">
+                            <p class="l-margin-bn border l-padding-ad">6 small columns, 4 large columns</p>
+                        </div>
+                        <div class="sm-twelve four columns l-margin-mobile-td">
+                            <p class="l-margin-bn border l-padding-ad">12 small columns, 4 large columns</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
                         <div class="twelve columns">
                             <div class="code__examples">
-                                <form><textarea class="code-mirror" id="code" name="code">
+                                <form><textarea class="pattern" id="index-code-2" name="code">
 <div class="row">
-    <div class="small-four columns">
-        <p>Small-4</p>
+    <div class="sm-six four columns">
+        <p class="l-margin-bn border l-padding-ad">6 small columns, 4 large columns</p>
     </div>
-    <div class="small-eight columns">
-        <p>Small-8</p>
+    <div class="sm-six four columns">
+        <p class="l-margin-bn border l-padding-ad">6 small columns, 4 large columns</p>
+    </div>
+    <div class="sm-twelve four columns">
+        <p class="l-margin-bn border l-padding-ad">12 small columns, 4 large columns</p>
     </div>
 </div></textarea> </form> </div>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
 
 
