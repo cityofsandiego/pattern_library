@@ -86,6 +86,21 @@
                     customDirectionNav: $(".custom-navigation a")
                 });
 
+                $('.flexslider').flexslider({
+                    selector: ".slides > li",
+                    animation: "slide",
+                    controlNav: true,
+                    directionNav: false,
+                    slideshow: false,
+                    smoothHeight: true,
+                    start: function(){
+                        jQuery('.slides').children('li').css({
+                            'opacity': 1,
+                            'position': 'relative'
+                        });
+                    }
+                });
+
                 // Mobile only slider
                 if ( $(window).width() < 480 ) {
 

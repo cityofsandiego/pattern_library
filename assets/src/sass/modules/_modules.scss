@@ -23,10 +23,6 @@ header {
         }
     }
 
-    &.library__header {
-        background: white;
-    }
-
     @include mq( $until: tablet ) {
         .logo {
             img {
@@ -132,7 +128,12 @@ header {
 
 /* Pattern Library */
 .library__header {
-    padding: 1em 0;
+background: transparent;
+
+    > .l-constrained {
+        padding: 1em 0;
+        background: white;
+    }
 
     li {
         display: inline-block;
@@ -376,6 +377,7 @@ header {
 
 .main__navigation {
 
+    background: white;
     position: relative;
 
     ul {
@@ -445,6 +447,7 @@ header {
 
                 color: white;
                 padding: 1em 1.5em;
+                text-transform: uppercase;
                 transition: color .15s ease;
                 @include rem( 'font-size', 13px );
 
@@ -498,10 +501,6 @@ header {
                     min-height: 100px;
                 }
 
-            }
-
-            a {
-                text-transform: uppercase;
             }
 
         }

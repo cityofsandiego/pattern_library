@@ -536,9 +536,24 @@
 }
 
 // Modifiers
+.lnr--xs {
+    font-size: 55%;
+}
 
-.lnr-xl {
-	@include rem( 'font-size', 60px );
+.lnr--sm {
+    font-size: 70%
+}
+
+.lnr--md {
+    font-size: 85%;
+}
+
+.lnr--lg {
+    font-size: 115%;
+}
+
+.lnr--xl {
+    font-size: 130%;
 }
 
 .lnr-circle {

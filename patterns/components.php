@@ -18,9 +18,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li>Single Comment</li>
                         <li>Post Meta</li>
                         <li>Tool Tips</li>
-                        <li>Card Teasers</li>
-                        <li>Text Teasers</li>
-                        <li>Image Gallery</li>
                         <li>Video Player</li>
                         <li>Steps (1-10)</li>
                         <li>Weather</li>
@@ -256,39 +253,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 </textarea> </form> </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Card Teasers -->
-                <div class="l-container l-margin-vm">
-                    <h2>Card Teasers</h2>
-                    <p><a href="/patterns/cards.php">See Card Teasers</a></p>
-                </div>
-
-                <!-- Text Teasers -->
-                <div class="l-container l-margin-vm">
-                    <h2>Text Teasers</h2>
-                    <p><a href="/patterns/list-teaser.php">See List Teasers</a></p>
-                </div>
-
-                <!-- Image gallery -->
-                <div class="l-container l-margin-vm">
-                    <h2>Image Gallery</h2>
-
-                    <div class="flex-container l-margin-bm">
-                        <div class="flexslider">
-                            <ul class="slides">
-                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <p><strong><em>Notes</em></strong></p>
-                    <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>.</p>
-
                 </div>
 
                 <!-- Maps -->

@@ -126,13 +126,40 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="l-container">
                     <div class="row">
                         <div class="twelve columns">
                             <h3>Notes</h3>
-                            <p>Cards are wrapped in a container set to flexbox.</p>
+                            <p>Cards are wrapped in a <strong>.card__container</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
                         </div>
                     </div>
+                </div>
+
+                <div class="l-container l-margin-vm">
+                    <div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-1" name="code">
+<div class="card__container">
+    <div class="card__wrap">
+        <div class="card">
+            <div class="card__image">
+                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+            </div>
+            <div class="card__content">
+                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                <div class="card__meta">
+                    <span class="card__date">23 July 2015</span>
+                    |
+                    <span class="card__author"><a href="">by Name Lastname</a></span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                <a href="" class="btn card__btn">Read More</a>
+            </div>
+        </div>
+    </div>
+</div></textarea> </form> </div>
+
                 </div>
 
             </div>

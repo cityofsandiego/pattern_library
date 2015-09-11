@@ -5,14 +5,14 @@
         <script src="/assets/dist/js/main.js"></script>
 
         <script>
-            // var ctx = document.getElementById("myChart").getContext("2d");
-            // var myNewChart = new Chart(ctx).Bar(data);
+            var ctx = document.getElementById("myChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Bar(data);
 
-            // var ctx = document.getElementById("lineChart").getContext("2d");
-            // var lineChart = new Chart(ctx).Line(data);
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            var lineChart = new Chart(ctx).Line(data);
 
-            // var ctx = document.getElementById("pieChart").getContext("2d");
-            // var myPieChart = new Chart(ctx).Pie(pieData);
+            var ctx = document.getElementById("pieChart").getContext("2d");
+            var myPieChart = new Chart(ctx).Pie(pieData);
         </script>
 
         <script>
@@ -23,33 +23,12 @@
 
                 var editor = CodeMirror.fromTextArea(document.getElementById(id), {
                     lineNumbers: true,
+                    lineWrapping: true,
                     mode: "htmlmixed"
                   });
 
             });
 
-        </script>
-
-        <script type="text/javascript">
-            jQuery(window).load(function() {
-                jQuery('.flexslider').flexslider({
-                    //declare the slider items
-                    selector: ".slides > li",
-                    animation: "slide",
-                    //do not add navigation for paging control of each slide
-                    controlNav: true,
-                    directionNav: false,
-                    slideshow: false,
-                    //Allow height of the slider to animate smoothly in horizontal mode
-                    smoothHeight: true,
-                    start: function(){
-                        jQuery('.slides').children('li').css({
-                            'opacity': 1,
-                            'position': 'relative'
-                        });
-                    }
-                });
-            });
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

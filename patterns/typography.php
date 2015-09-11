@@ -26,15 +26,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<div class="l-container l-margin-vm">
-				    <h2>Byline</h2>
-				    <div class="post__meta">
-                        <span class="post__date">23 July 2015</span>
-                        |
-                        <span class="post__author"><a href="">by Name Lastname</a></span>
-                    </div>
-				</div>
-
-				<div class="l-container l-margin-vm">
 
 				    <div class="l-container l-margin-vm">
 					    <h2>Headings</h2>
@@ -161,6 +152,27 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 
 				    <div class="l-container l-margin-vm">
+					    <h2>Byline</h2>
+					    <div class="four columns">
+					    	<div class="post__meta">
+		                        <span class="post__date">23 July 2015</span>
+		                        |
+		                        <span class="post__author"><a href="">by Name Lastname</a></span>
+		                    </div>
+					    </div>
+					    <div class="eight columns">
+					    	<p><strong>Notes</strong></p>
+					    	<p>Wrap article information within a <strong>.post__meta</strong> container. Additional information, such as social sharing icons, is also appropriate in this area.</p>
+					    	<div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-3" name="code">
+<div class="post__meta">
+	<span class="post__date">23 July 2015</span> |
+    <span class="post__author"><a href="">by Name Lastname</a></span>
+</div></textarea> </form> </div>
+					    </div>
+					</div>
+
+				    <div class="l-container l-margin-vm">
 				    	<div class="row">
 				    		<div class="twelve columns">
 				    			<h2>Blockquotes</h2>
@@ -209,7 +221,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<p>When displaying addresses and contact information, it is good practice to include <a href="http://schema.org/" target="_blank">schema.org</a> metadata for search engine utility.</p>
 
 					    		<div class="code__examples">
-                                <form><textarea class="pattern" id="type-code-3" name="code">
+                                <form><textarea class="pattern" id="type-code-4" name="code">
 <address>
 	<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 		<span itemprop="streetAddress">2600 Golf Course Drive <br></span>

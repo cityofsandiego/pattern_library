@@ -22,48 +22,102 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<!-- General -->
-				<div class="l-container l-margin-vm background-off-white border border--dark l-padding-ad border-radius form--general">
-					<h3 class="l-margin-tn text-center">General Sign Up</h3>
-					<form class="user-info-from-cookie contact-form" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
-						<div>
+				<div class="l-container l-margin-vm">
+					<div class="row">
+						<div class="twelve columns">
+							<div class="background-off-white border border--dark l-padding-ad border-radius form--general">
+								<h3 class="l-margin-tn text-center">General Sign Up</h3>
+								<form class="user-info-from-cookie contact-form" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+									<div>
 
-							<div class="row">
-								<div class="form-item six columns form-type-textfield form-item-fname">
-									<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
-									<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
-									<!-- <div class="messages error">This field is required!</div> -->
-								</div>
+										<div class="row">
+											<div class="form-item six columns form-type-textfield form-item-fname">
+												<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
+												<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
+												<!-- <div class="messages error">This field is required!</div> -->
+											</div>
 
-								<div class="form-item six columns form-type-textfield form-item-lname">
-									<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
-									<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
-									<!-- <div class="messages error">This field is required!</div> -->
-								</div>
+											<div class="form-item six columns form-type-textfield form-item-lname">
+												<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
+												<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
+												<!-- <div class="messages error">This field is required!</div> -->
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="form-item six columns form-type-textfield form-item-mail">
+												<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+												<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
+												<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
+											</div>
+
+											<div class="form-item six columns form-type-textfield form-item-number">
+												<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+												<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
+												<!-- <div class="messages error">This field is required!</div> -->
+											</div>
+										</div>
+
+										<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
+										<input type="hidden" name="form_id" value="contact_site_form">
+
+										<div class="form-actions form-wrapper" id="edit-actions">
+											<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+										</div>
+
+									</div>
+								</form>
 							</div>
-
-							<div class="row">
-								<div class="form-item six columns form-type-textfield form-item-mail">
-									<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-									<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
-									<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
-								</div>
-
-								<div class="form-item six columns form-type-textfield form-item-number">
-									<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
-									<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
-									<!-- <div class="messages error">This field is required!</div> -->
-								</div>
-							</div>
-
-							<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
-							<input type="hidden" name="form_id" value="contact_site_form">
-
-							<div class="form-actions form-wrapper" id="edit-actions">
-								<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
-							</div>
-
 						</div>
-					</form>
+						<div class="twelve columns">
+							<div class="code__examples">
+                                <form><textarea class="pattern" id="form-code-1" name="code">
+<div class="background-off-white border border--dark l-padding-ad border-radius form--general">
+	<h3 class="l-margin-tn text-center">General Sign Up</h3>
+	<form class="user-info-from-cookie contact-form" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+		<div>
+
+			<div class="row">
+				<div class="form-item six columns form-type-textfield form-item-fname">
+					<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
+					<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
+					<!-- <div class="messages error">This field is required!</div> -->
+				</div>
+
+				<div class="form-item six columns form-type-textfield form-item-lname">
+					<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
+					<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
+					<!-- <div class="messages error">This field is required!</div> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="form-item six columns form-type-textfield form-item-mail">
+					<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+					<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
+					<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
+				</div>
+
+				<div class="form-item six columns form-type-textfield form-item-number">
+					<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+					<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
+					<!-- <div class="messages error">This field is required!</div> -->
+				</div>
+			</div>
+
+			<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
+			<input type="hidden" name="form_id" value="contact_site_form">
+
+			<div class="form-actions form-wrapper" id="edit-actions">
+				<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+			</div>
+
+		</div>
+	</form>
+</div></textarea> </form> </div>
+						</div>
+					</div>
+
 
 				</div>
 

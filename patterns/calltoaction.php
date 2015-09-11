@@ -30,6 +30,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    			</a>
 				    		</div>
 				    	</div>
+				    	<div class="seven columns">
+				    		<p><strong>Notes</strong></p>
+				    		<p>Call to action cards utilize the <strong>.card</strong> variation classes, <strong>.card__cta</strong> and <strong>.card__cta--graphic</strong>.</p>
+				    		<div class="code__examples">
+                                <form><textarea class="pattern" id="cta-code-1" name="code">
+<div class="card card__cta card__cta--graphic" style="background-image:url(../assets/dist/img/cta-graphic.jpg);">
+	<a href="">
+		<p>Signup for Junior Lifeguards</p>
+		<span href="" class="btn btn--secondary">Signup Today</span>
+	</a>
+</div></textarea></form> </div>
+				    	</div>
 				    </div>
 				</div>
 
@@ -74,6 +86,33 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    			</div>
 
 				    		</div>
+				    	</div>
+				    	<div class="seven columns">
+				    		<div class="code__examples">
+                                <form><textarea class="pattern" id="cta-code-2" name="code">
+<div class="alert">
+	<p class="alert__heading">Alerts for July 10</p>
+	<div class="row alert__content l-margin-bs">
+		<div class="two columns">
+			<i class="icon-search"></i>
+		</div>
+		<div class="ten columns">
+			<p>Hours of Operation: <em>7AM - 10PM</em></p>
+		</div>
+	</div>
+
+	<p class="alert__heading">July Notices</p>
+	<div class="row alert__content l-margin-bs">
+		<div class="two columns">
+			<i class="icon-play"></i>
+		</div>
+		<div class="ten columns">
+			<p><strong>New City of San Diego Junior Amateur Championship</strong></p>
+			<p>Coming this July, The Junior City Amateur Championship. 2015 City of San Diego Junior Amateur Championship</p>
+		</div>
+	</div>
+
+</div></textarea></form> </div>
 				    	</div>
 				    </div>
 				</div>

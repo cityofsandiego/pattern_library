@@ -339,6 +339,64 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="l-container">
                         <h2 class="l-margin-bn">Primary with Advanced Dropdown</h2>
                         <p class="subheading"><em>See above</em></p>
+
+                        <div class="row">
+                            <div class="twelve columns">
+                                <p><strong>Notes</strong></p>
+                                <p>The main navigation has quite a bit of content. Utilize the <strong>.hide-on-mobile</strong> class for content that should only display on desktop.</p>
+                            </div>
+                            <div class="twelve columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-1" name="code">
+<nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
+    <ul>
+        <li class="has__dropdown"><a href="">Leisure <i class="icon-arrow-down"></i><span>Explore, Play + Events</span></a>
+            <div class="dropdown">
+                <div class="row hide-on-mobile nav__heading">
+                    <div class="twelve columns">
+                        <p class="l-margin-bn">Leisure</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="four columns hide-on-mobile">
+                        <p>With its great weather, miles of sandy beaches, and major attractions, San Diego is known worldwide as one of the best tourist destinations and a great place for residents to relax year round.</p>
+                    </div>
+                    <div class="four columns">
+                        <div class="row border border--bottom">
+                            <div class="six columns">
+                                <a href=""><h4>Parks</h4></a>
+                            </div>
+                            <div class="six columns">
+                                <ul>
+                                    <li><a href="">Community Parks</a></li>
+                                    <li><a href="">Recreation Centers</a></li>
+                                    <li><a href="">Book an Event</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four columns hide-on-mobile">
+                        <div class="nav__event">
+                            <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
+                            <p>Celebrate the Balboa Park Centennial <a href="">Learn More</a></p>
+                        </div>
+                        <div class="nav__event">
+                            <img src="/assets/dist/img/nav-event-2.jpg" width="74" height="74" alt="Event 2">
+                            <p>Get an Event Permit <a href="">Learn More</a></p>
+                        </div>
+                        <div class="nav__event">
+                            <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
+                            <p>Book Your Tee Time <a href="">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</nav></textarea> </form> </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="l-container l-margin-vm">
@@ -396,6 +454,56 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 </div>
                             </div>
                         </footer>
+
+                        <div class="row l-margin-vm">
+                            <div class="twelve columns">
+                                <p><strong>Notes</strong></p>
+                                <p>Within the footer is a <strong>.row</strong> set to flexbox, to account for the <strong>.footer--left</strong> background color.</p>
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-2" name="code">
+<footer>
+    <div class="row">
+        <div class="four columns footer--left l-padding-ad l-padding-vm">
+
+            <div class="row l-padding-hd">
+                <div class="twelve columns no-gutters">
+                    <img src="/assets/dist/img/logo--white--sm.png" alt="The City of San Diego - logo" width="49" height="39">
+                    <ul class="socials">
+                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                    </ul>
+                    <p class="copyright">
+                    Copyrighted © 2002-2015<br>
+                    City of San Diego. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="eight columns background--dark footer--right l-padding-vm">
+
+            <div class="row">
+                <div class="six columns">
+                    <p class=""><strong>Council Districts</strong></p>
+                    <ul class="two-columns">
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 1</a></li>
+                    </ul>
+                </div>
+                <div class="six columns">
+                    <p class=""><strong>City Officials</strong></p>
+                    <ul>
+                        <li><a href="">Office of the City Attorney</a></li>
+                        <li><a href="">Office of the City Clerk</a></li>
+                        <li><a href="">Office of the City Auditor</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer></textarea> </form> </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="l-container l-margin-vm">
