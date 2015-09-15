@@ -152,7 +152,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                             <h2 class="visuallyhidden">Search form</h2>
                             <div class="form-item form-type-textfield form-item-search-block-form">
                                 <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-                                <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+                                <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search sandiego.gov" size="15" maxlength="128" class="form-text">
                             </div>
                             <div class="form-actions form-wrapper" id="edit-actions">
                                 <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
