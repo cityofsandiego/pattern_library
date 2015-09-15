@@ -634,6 +634,22 @@ background: transparent;
     }
 }
 
+.sub__nav--library {
+    background: white;
+
+    .sub__nav {
+        padding: 0;
+
+        li:first-child {
+            margin-left: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
 .sub__nav--wrap {
     margin-bottom: 1em;
     background: $spruce;
@@ -1120,6 +1136,10 @@ background: transparent;
         vertical-align: middle;
         vertical-align: -webkit-baseline-middle;
         @include rem( 'font-size', 24px );
+
+        @include mq( tablet, site ) {
+            @include rem( 'font-size', 18px );
+        }
     }
 
     .date {
@@ -1798,7 +1818,7 @@ main[role="main"],
     top: 50%;
     overflow: hidden;
     .csstransforms3d & {
-        @include transform(rotate( 0deg ));
+        // @include transform(rotate( 0deg ));
         @include transition( transform .25s );
     }
     &:before,
@@ -1889,7 +1909,9 @@ main[role="main"],
     }
 
     .accordion__heading {
+        border: none;
         padding: .25em 0;
+        line-height: 2.5;
         background: transparent;
     }
 
@@ -1953,9 +1975,13 @@ table {
     th {
         padding: .25em;
         text-align: left;
+        word-wrap: break-word;
         background: transparent;
-        border-bottom: 1px solid $alto;
         font-family: $font-family-secondary;
+
+        @include mq( $from: tablet ) {
+            border-bottom: 1px solid $alto;
+        }
     }
 
     tr {
@@ -1969,6 +1995,9 @@ table {
         }
 
         &.subheading {
+            color: $spruce;
+            font-family: $font-family;
+
             td {
                 padding-left: 0;
                 @include mq( $from: tablet ) {

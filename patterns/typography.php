@@ -11,13 +11,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Typography</h1>
-				<div class="sub__nav--wrap">
+				<div class="sub__nav--library">
 				    <ul class="sub__nav">
-				        <li>Byline</li>
-				        <li>Address</li>
-				        <li>Heading Group</li>
-				        <li>Blockquote w/ Citation</li>
-				        <li>Intro Text</li>
+				    	<li><a href="#headings">Headings</a></li>
+				        <li><a href="#byline">Byline</a></li>
+				        <li><a href="#blockquotes">Blockquotes</a></li>
+				        <li><a href="#body-content">Body Content</a></li>
+				        <li><a href="#address">Address</a></li>
+				        <li><a href="#buttons">Buttons</a></li>
 				    </ul>
 				</div>
 
@@ -25,7 +26,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<p>We're utilizing Google Fonts sitewide; <a href="https://www.google.com/fonts/specimen/Merriweather" target="_blank">Merriweather</a> for headline text, and <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> for body copy.</p>
 				</div>
 
-				<div class="l-container l-margin-vm">
+				<div id="headings" class="l-container l-margin-vm">
 
 				    <div class="l-container l-margin-vm">
 					    <h2>Headings</h2>
@@ -135,7 +136,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<li><strong>.heading--light</strong> for white heading text</li>
 								<li><strong>.heading--normal</strong> for no text-transform</li>
 							</ul>
-							<p>Lastly, the <strong>.subheading</strong> class is ideally used on an &lt;h2&gt; or &lt;p&gt; directlybeneath an &lt;h1&gt;.</p>
+							<p>Lastly, the <strong>.subheading</strong> class is ideally used on an &lt;h2&gt; or &lt;p&gt; directly beneath an &lt;h1&gt;.</p>
                         </div>
                         <div class="six columns">
                         	<h1 class="heading--trim">Main Page Title</h1>
@@ -151,7 +152,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
 
-				    <div class="l-container l-margin-vm">
+				    <div id="byline" class="l-container l-margin-vm">
 					    <h2>Byline</h2>
 					    <div class="four columns">
 					    	<div class="post__meta">
@@ -172,7 +173,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    </div>
 					</div>
 
-				    <div class="l-container l-margin-vm">
+				    <div id="blockquotes" class="l-container l-margin-vm">
 				    	<div class="row">
 				    		<div class="twelve columns">
 				    			<h2>Blockquotes</h2>
@@ -181,7 +182,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    	</div>
 				    </div>
 
-				    <div class="l-container l-margin-vm">
+				    <div id="body-content" class="l-container l-margin-vm">
 				    	<div class="row">
 				    		<div class="twelve columns">
 				    			<h2>Intro</h2>
@@ -200,7 +201,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    	</div>
 				    </div>
 
-				    <div class="l-container l-margin-vm">
+				    <div id="address" class="l-container l-margin-vm">
 				    	<div class="row">
 				    		<div class="twelve columns">
 				    			<h2>Address</h2>
@@ -236,7 +237,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    	</div>
 				    </div>
 
-				    <div class="l-container l-margin-vm">
+				    <div id="buttons" class="l-container l-margin-vm">
 				    	<h2>Buttons</h2>
 						<div class="row l-padding-vd">
 							<a class="btn btn--primary" href="#">Primary</a>

@@ -11,14 +11,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Media</h1>
-				<div class="sub__nav--wrap">
+				<div class="sub__nav--library">
 				    <ul class="sub__nav">
-				        <li>Figure w/ Caption</li>
-                        <li>Image Gallery</li>
+				        <li><a href="#figure">Figure</a></li>
+                        <li><a href="#gallery">Image Gallery</a></li>
+                        <li><a href="#mobile-gallery">Mobile Gallery</a></li>
+                        <li><a href="#video"></a></li>
 				    </ul>
 				</div>
 
-				<div class="l-container l-margin-tm">
+				<div id="figure" class="l-container l-margin-tm">
 				    <h2>Figure with caption</h2>
                     <figure>
                         <img src="../assets/dist/img/fig-img.jpg" alt="Fig. Alt. Title" width="563" height="283">
@@ -27,7 +29,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
                 <!-- Image gallery -->
-                <div class="l-container l-margin-vm">
+                <div id="gallery" class="l-container l-margin-vm">
                     <h2>Image Gallery</h2>
 
                     <div class="flex-container l-margin-bm">
@@ -65,7 +67,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </div>
 
                 <!-- Mobile Image gallery -->
-                <div class="l-container l-margin-vm">
+                <div id="mobile-gallery" class="l-container l-margin-vm">
                     <h2>Mobile Image Gallery</h2>
 
                     <div class="flex-container">
@@ -98,6 +100,44 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
         </ul>
     </div>
 </div></textarea> </form> </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video -->
+                <div id="video" class="l-container l-margin-vm">
+                    <h2>Video Player</h2>
+                    <div class="row l-margin-bm">
+                        <div class="four columns no-gutters">
+                            <div class="card card--video">
+                                <a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
+                                    <i class="icon-play"></i>
+                                    <div class="overlay"></div>
+                                    <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="eight columns">
+                            <h6 class="l-margin-tn"><strong>Name of this Video</strong></h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+                            <a href="">Watch Video</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="six columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-2" name="code">
+<a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
+    <i class="icon-play"></i>
+    <div class="overlay"></div> <!-- Dark opacity -->
+    <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250"> <!-- Video screenshot -->
+</a>
+</textarea> </form> </div>
+                        </div>
+                        <div class="six columns">
+                            <p><strong><em>Notes</em></strong></p>
+                            <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of <strong>.js-modal-video </strong>to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
                         </div>
                     </div>
                 </div>

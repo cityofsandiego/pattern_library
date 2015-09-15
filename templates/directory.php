@@ -33,11 +33,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 <main>
                     <div class="twelve columns no-gutters background-off-white">
 
-                        <div class="entry__content l-padding-ad l-margin-vd">
-                            <div class="row l-margin-vm">
+                        <div class="entry__content l-padding-desktop-ad">
+                            <div class="row">
                                 <div class="nine columns"></div>
-                                <div class="three columns no-gutters">
-                                    <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+                                <div class="three columns no-gutters l-margin-bd">
+                                    <form action="" method="post" id="search-directory" class="form--search form--directory" accept-charset="UTF-8">
                                         <div><div class="container-inline">
                                             <h2 class="visuallyhidden">Search form</h2>
                                             <div class="form-item form-type-textfield form-item-search-block-form">

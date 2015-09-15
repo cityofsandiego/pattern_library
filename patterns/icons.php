@@ -13,7 +13,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Icon Library</h1>
 
                 <div class="l-container l-margin-tm">
-                    <p class="subheading">Font Name:</span> Linearicons-Free <small>(Glyphs:&nbsp;170)</small></p>
+                    <h2>Font Name:</span> Linearicons-Free <small>(Glyphs:&nbsp;170)</small></h2>
 
                     <div class="row l-margin-bm">
                         <div class="six columns">

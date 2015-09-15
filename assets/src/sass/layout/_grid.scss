@@ -49,10 +49,8 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
         .sm-#{$class} {
             @include span( $i );
             &.no-gutters {
-                @include mq( $from: tablet ) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }
@@ -68,10 +66,8 @@ $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twe
         .#{$class} { 
             @include span( $i );
             &.no-gutters {
-                @include mq( $from: tablet ) {
-                    padding-left: 0;
-                    padding-right: 0;
-                }
+                padding-left: 0;
+                padding-right: 0;
             }
         }
     }

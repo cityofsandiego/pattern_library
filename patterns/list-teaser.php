@@ -11,18 +11,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>List Teaser</h1>
-				<div class="sub__nav--wrap">
-				    <ul class="sub__nav">
-				        <li>Thumb (image/video)</li>
-				        <li>Headline</li>
-				        <li>Byline</li>
-				        <li>Date</li>
-				        <li>Summary</li>
-				        <li>Link/button</li>
-				    </ul>
-				</div>
 
 				<div class="l-container l-margin-tm">
+					<div class="row">
+						<div class="twelve columns">
+							<p>Teasers are used on archive pages and should include: an image or video thumbnail, headline, byline, date, summary, and direct link or button.</p>
+							<hr>
+						</div>
+					</div>
 					<article class="row article__teaser">
 						<h4>Post Title</h4>
 						<div class="two columns">

@@ -317,25 +317,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Navigation</h1>
-                <div class="sub__nav--wrap">
+                <div class="sub__nav--library">
                     <ul class="sub__nav">
-                        <li>Primary</li>
-                        <li>Footer</li>
-                        <li>Breadcrumbs</li>
-                        <li>Pagination</li>
-                        <li>Tabs</li>
-                        <li>Sidebar</li>
-                        <li>Mircosite</li>
-                        <li>Quick Nav</li>
-                        <li>Social</li>
-                        <li>Tags</li>
-                        <li>Site Exit Link</li>
-                        <li>Image Thumbnails</li>
-                        <li>Quicklinks</li>
+                        <li><a href="#primary">Primary</a></li>
+                        <li><a href="#footer">Footer</a></li>
+                        <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                        <li><a href="#pagination">Pagination</a></li>
+                        <li><a href="#tabs">Tabs</a></li>
+                        <li><a href="#sidebar">Sidebar</a></li>
+                        <li><a href="#micro">Mircosite</a></li>
+                        <li><a href="#quicknav">Quick Nav</a></li>
+                        <li><a href="#social">Social</a></li>
+                        <li><a href="#tags">Tags</a></li>
+                        <li><a href="#quicklinks">Quicklinks</a></li>
                     </ul>
                 </div>
 
-                <div class="l-container l-margin-tm">
+                <div id="primary" class="l-container l-margin-tm">
                     <div class="l-container">
                         <h2 class="l-margin-bn">Primary with Advanced Dropdown</h2>
                         <p class="subheading"><em>See above</em></p>
@@ -399,7 +397,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Footer -->
+                    <div id="footer" class="l-container l-margin-vm">
                         <h2>Footer</h2>
                         <footer>
                             <div class="row">
@@ -506,7 +505,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Breadcrumbs -->
+                    <div id="breadcrumbs" class="l-container l-margin-vm">
                         <h2>Breadcrumbs</h2>
                         <div class="l-container breadcrumbs">
                             <a href="" class="breadcrumbs__link">Home</a>
@@ -519,7 +519,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Pagination -->
+                    <div id="pagination" class="l-container l-margin-vm">
                         <h2>Pagination</h2>
                         <div class="item-list">
                             <ul class="pager">
@@ -541,7 +542,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Tabs -->
+                    <div id="tabs" class="l-container l-margin-vm">
                         <h2>Tabs</h2>
                         <nav>
                             <ul>
@@ -550,7 +552,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Sidebar -->
+                    <div id="sidebar" class="l-container l-margin-vm">
                         <h2>Sidebar Sub-Navigation with Flyout Menu</h2>
                         <nav class="sub-navigation">
                             <ul>
@@ -562,7 +565,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </nav>
                     </div>
 
-                    <div class="l-container l-margin-vm">
+                    <!-- Micro Sub-Nav -->
+                    <div id="micro" class="l-container l-margin-vm">
                         <h2>Mircosite Sub-Navigation</h2>
                         <section class="portal">
                             <header>
@@ -580,7 +584,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
                     <!-- Quick nav (top-nav-strip) -->
-                    <div class="l-container l-margin-vm">
+                    <div id="quicknav" class="l-container l-margin-vm">
                         <h2>Quick Nav</h2>
                         <div class="l-container top-nav-strip">
                             <div class="row">
@@ -602,7 +606,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
                     <!-- Social Media Icons -->
-                    <div class="l-container l-margin-vm">
+                    <div id="social" class="l-container l-margin-vm">
                         <h2>Social Properties</h2>
                         <div class="l-container l-margin-vm">
                             <div class="row">
@@ -621,7 +625,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
                     <!-- Tags -->
-                    <div class="l-container l-margin-vm">
+                    <div id="tags" class="l-container l-margin-vm">
                         <h2>Tags</h2>
                         <ul class="tag-list">
                             <li class="tag-list__item"><a class="tag-list__link" href="">City Council</a></li>
@@ -630,28 +634,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </ul>
                     </div>
 
-                    <!-- Site Exit Link -->
-                    <div class="l-container l-margin-vm">
-                        <h2>Site Exit Link</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-
-                    <!-- Image Thumbnails -->
-                    <div class="l-container l-margin-vm">
-                        <h2>Image Thumbnails</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
-                    </div>
-
                     <!-- Quicklinks -->
-                    <div class="l-container l-margin-vm">
+                    <div id="quicklinks" class="l-container l-margin-vm">
                         <h2>Quicklinks, dropdown</h2>
                         <div class="quicklinks background--cerulean l-padding-ad">
                             <nav>

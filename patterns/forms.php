@@ -11,23 +11,24 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Forms</h1>
-				<div class="sub__nav--wrap">
+				<div class="sub__nav--library">
 				    <ul class="sub__nav">
-				        <li>Search</li>
-				        <li>Comment Form</li>
-				        <li>Newsletter Signup</li>
-				        <li>I Want To</li>
-				        <li>Login</li>
+				    	<li><a href="#general">General Sign Up</a></li>
+				        <li><a href="#search">Search</a></li>
+				        <li><a href="#i-want-to">I Want To...</a></li>
+				        <li><a href="#comments">Comments</a></li>
+				        <li><a href="#newsletter">Newsletter Signup</a></li>
+				        <li><a href="#login">Login</a></li>
 				    </ul>
 				</div>
 
 				<!-- General -->
-				<div class="l-container l-margin-vm">
+				<div id="general" class="l-container l-margin-vm">
 					<div class="row">
 						<div class="twelve columns">
 							<div class="background-off-white border border--dark l-padding-ad border-radius form--general">
 								<h3 class="l-margin-tn text-center">General Sign Up</h3>
-								<form class="user-info-from-cookie contact-form" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+								<form class="user-info-from-cookie contact-form" action="" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
 									<div>
 
 										<div class="row">
@@ -58,7 +59,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 											</div>
 										</div>
 
-										<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
+										<input type="hidden" name="form_build_id" value="">
 										<input type="hidden" name="form_id" value="contact_site_form">
 
 										<div class="form-actions form-wrapper" id="edit-actions">
@@ -74,7 +75,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="form-code-1" name="code">
 <div class="background-off-white border border--dark l-padding-ad border-radius form--general">
 	<h3 class="l-margin-tn text-center">General Sign Up</h3>
-	<form class="user-info-from-cookie contact-form" action="/drupal_51997/?q=contacts" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
+	<form class="user-info-from-cookie contact-form" action="" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
 		<div>
 
 			<div class="row">
@@ -105,7 +106,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 			</div>
 
-			<input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
+			<input type="hidden" name="form_build_id" value="">
 			<input type="hidden" name="form_id" value="contact_site_form">
 
 			<div class="form-actions form-wrapper" id="edit-actions">
@@ -122,7 +123,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<!-- Search -->
-				<div class="l-container">
+				<div id="search" class="l-container">
 				    <h2>Search</h2>
 
 					<div class="row l-margin-bd">
@@ -171,7 +172,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<!-- I Want to... -->
-				<div class="l-container l-margin-vm">
+				<div id="i-want-to" class="l-container l-margin-vm">
 					<h2>I Want To...</h2>
 					<div class="row form__steps">
 						<div class="three columns form__step">
@@ -216,10 +217,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<!-- Comments -->
-				<div class="l-container l-margin-vm">
+				<div id="comments" class="l-container l-margin-vm">
 					<h2>Comments</h2>
 
-					<div class="l-padding-vd background-off-white">
+					<div class="l-padding-ad background-off-white">
 						<div class="card card--comment row">
 							<div class="one columns card__image text-center no-gutters">
 								<img src="http://placehold.it/65x65">
@@ -261,9 +262,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 				<!-- Newsletter -->
-				<div class="l-container l-margin-vm">
+				<div id="newsletter" class="l-container l-margin-vm">
 					<h2>Newsletter Signup</h2>
-				    <p><em>No newsletter form in design</em></p>
 
 					<div class="row l-margin-bd">
 						<div class="six columns no-gutters background-off-white border border--dark l-padding-ad border-radius">
@@ -295,7 +295,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				</div>
 
-				<div class="l-container">
+				<div id="login" class="l-container">
 				    <h2>Login</h2>
 				    <p><em>Dropdown, modal, or new page?</em></p>
 				</div>

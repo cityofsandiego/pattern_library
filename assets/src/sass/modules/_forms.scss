@@ -263,6 +263,10 @@ form {
     .form-actions {
         float: left;
     }
+
+    &.form--directory {
+        margin-bottom: 1em;
+    }
 }
 
 .form--comments {
@@ -375,10 +379,18 @@ header {
     @include rem( 'font-size', 20px );
     font-family: $font-family-secondary;
 
+    @include mq( tablet, site ) {
+        padding: 0;
+        @include rem( 'font-size', 14px );
+    }
+
     @include mq( $from: tablet ) {
         position: absolute;
-        top: -.8em;
+        left: 1em; top: -.8em;
         background-color: white;
+    }
+
+    @include mq( $from: site ) {
         padding: 0 .5em;
         @include rem( 'font-size', 16px );
     }

@@ -27,11 +27,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <p>square miles</p>
                             </div>
                         </div>
-                        <!-- <div class="five columns">
-                            <div class="card card--stats">
-                                
-                            </div>
-                        </div> -->
                     </div>
                 </div>
 

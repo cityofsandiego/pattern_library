@@ -10,16 +10,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
                 <h1>Call to Action</h1>
-				<div class="sub__nav--wrap">
+				<div class="sub__nav--library">
 				    <ul class="sub__nav">
-				        <li>Graphical w/ Button</li>
-				        <li>Text w/ Button</li>
-				        <li>Alerts (weather, traffic, etc.)</li>
+				        <li><a href="#graphic">Graphic</a></li>
+				        <li><a href="#text">Text</a></li>
+				        <li><a href="#alert">Alerts</a></li>
 				    </ul>
 				</div>
 
 				<!-- Graphic -->
-				<div class="l-container l-margin-tm">
+				<div id="graphic" class="l-container l-margin-tm">
 				    <h2>Graphic</h2>
 				    <div class="row">
 				    	<div class="five columns">
@@ -46,7 +46,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 			    <!-- Text -->
-			    <div class="l-container l-margin-vm">
+			    <div id="text" class="l-container l-margin-vm">
 			    	<h2>Text</h2>
 				    <div class="row">
 				    	<div class="twelve columns">
@@ -59,7 +59,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 			    </div>
 
 				<!-- Alert -->
-				<div class="l-container l-margin-vm">
+				<div id="alert" class="l-container l-margin-vm">
 				    <h2>Alerts</h2>
 				    <div class="row">
 				    	<div class="five columns">

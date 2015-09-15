@@ -11,13 +11,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Messaging</h1>
-				<div class="sub__nav--wrap">
-				    <ul class="sub__nav">
-				        <li>Alert: Success</li>
-				        <li>Alert: Warning</li>
-				        <li>Alert: Error</li>
-				    </ul>
-				</div>
 
 				<div class="l-container l-margin-vm">
 				    <h2>Success</h2>
