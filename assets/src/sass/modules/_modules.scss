@@ -577,6 +577,10 @@ background: transparent;
             top: 100%;
             left: 0;
             box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
+
+            h4 a {
+                color: $spruce;
+            }
         }
 
         li {
@@ -585,7 +589,6 @@ background: transparent;
 
         h4 {
             a {
-                color: $spruce;
                 text-transform: capitalize;
                 @include rem( 'font-size', 18px );
 
@@ -607,8 +610,8 @@ background: transparent;
         .border {
             border: none;
             border-bottom: 1px dashed $alto;
-            margin-bottom: 0;
-            padding-bottom: 0;
+            margin-bottom: .5em;
+            padding-bottom: .5em;
         }
 
         .nav__event {
@@ -675,6 +678,9 @@ background: transparent;
 // Template sub-navigation
 .sub-navigation {
     background: $spruce;
+    position: relative;
+    z-index: 10;
+
     ul {
         padding: .5em;
         list-style: none;
@@ -1030,6 +1036,7 @@ background: transparent;
         @include mq( $from: tablet ) {
             @include span( 4 );
         }
+
     }
     .card__content {
         padding: 1.5em;
@@ -1181,6 +1188,18 @@ background: transparent;
 
     h6 {
         margin-top: 0;
+    }
+}
+
+.mobile-flexslider {
+    @include mq( $until: tablet ) {
+        .card__wrap {
+            margin: 0;
+        }
+
+        iframe {
+            padding: 0;
+        }
     }
 }
 

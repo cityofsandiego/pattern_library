@@ -65,7 +65,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <div class="row l-margin-vm">
                                 <div class="twelve columns accordions js-toggle-accordion table__accordion">
                                     <div class="accordion">
-                                        <p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <i class="lnr lnr-cross hide-on-desktop pull-right"></i></a></p>
+                                        <p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"></span></a></p>
                                         <div class="accordion__drawer row">
                                             <table class="twelve columns">
                                                 <tr class="hide-on-desktop">
