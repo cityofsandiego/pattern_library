@@ -340,7 +340,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                         <div class="row">
                             <div class="twelve columns">
-                                <p><strong>Notes</strong></p>
+                                <p class="l-margin-bn"><strong>Notes</strong></p>
                                 <p>The main navigation has quite a bit of content. Utilize the <strong>.hide-on-mobile</strong> class for content that should only display on desktop.</p>
                             </div>
                             <div class="twelve columns">
@@ -456,7 +456,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                         <div class="row l-margin-vm">
                             <div class="twelve columns">
-                                <p><strong>Notes</strong></p>
+                                <p class="l-margin-bn"><strong>Notes</strong></p>
                                 <p>Within the footer is a <strong>.row</strong> set to flexbox, to account for the <strong>.footer--left</strong> background color.</p>
                                 <div class="code__examples">
                                 <form><textarea class="pattern" id="nav-code-2" name="code">

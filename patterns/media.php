@@ -16,7 +16,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				        <li><a href="#figure">Figure</a></li>
                         <li><a href="#gallery">Image Gallery</a></li>
                         <li><a href="#mobile-gallery">Mobile Gallery</a></li>
-                        <li><a href="#video"></a></li>
+                        <li><a href="#video">Video</a></li>
 				    </ul>
 				</div>
 
@@ -47,7 +47,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-vm">
                     <div class="row">
                         <div class="twelve columns">
-                            <p><strong><em>Notes</em></strong></p>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                     <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>. For default usage, wrap a <strong>ul.slides</strong> within a containing <strong>.flexslider</strong>. Each li contains a single slide. Additional configuration can be found through Flexslider documentation.</p>
 
                     <div class="code__examples">
@@ -85,7 +85,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container l-margin-vm">
                     <div class="row">
                         <div class="twelve columns">
-                            <p><strong><em>Notes</em></strong></p>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                     <p>Additionally, use the <strong>.mobile-flexslider</strong> class (instead of .flexslider) to enable Flexslider on mobile viewports (480px and below). Preview this on a small screen to see it enabled.</p>
 
                     <div class="code__examples">
@@ -136,7 +136,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 </textarea> </form> </div>
                         </div>
                         <div class="six columns">
-                            <p><strong><em>Notes</em></strong></p>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of <strong>.js-modal-video </strong>to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
                         </div>
                     </div>

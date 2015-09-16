@@ -16,13 +16,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <ul class="sub__nav">
                         <li><a href="#general">General</a></li>
                         <li><a href="#headline-only">Headline Only</a></li>
-                        <!-- <li>Thumb (image/video thumb)</li>
-                        <li>Block Thumb Headline</li>
-                        <li>Card Headline</li>
-                        <li>Card Byline</li>
-                        <li>Card Date</li>
-                        <li>Card Summary</li>
-                        <li>Card link/button</li> -->
                     </ul>
                 </div>
 
@@ -167,7 +160,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="l-container">
                     <div class="row">
                         <div class="twelve columns">
-                            <h3>Notes</h3>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Cards are wrapped in a <strong>.card__container</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
                         </div>
                     </div>

@@ -92,7 +92,7 @@
                     $(".mobile-flexslider").flexslider({
                         // controlNav: false,
                         animation: "slide",
-                        smoothHeight: true,
+                        smoothHeight: false,
                         directionNav: false
                     });
                 }

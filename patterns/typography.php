@@ -117,7 +117,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <h4 class="h2">This is actually a &lt;h4&gt;.</h4></textarea> </form> </div>
                         </div>
                         <div class="six columns">
-                            <p><strong>Notes</strong></p>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             Helper classes are available to style typographic tags as header elements. This is helpful if you want the style of, say, an &lt;h2&gt;, but the placement of an &lt;h2&gt; doesn't make semantic sense on the page.
                             <p class="h1">This is actually a &lt;p&gt;.</p>
                         	<h4 class="h2">This is actually a &lt;h4&gt;.</h4>
@@ -126,7 +126,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <div class="row l-margin-vl">
                         <div class="six columns">
-                            <p><strong>Notes</strong></p>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                         	<p>Additional helper classes available for headings:</p>
                         	<ul>
 								<li><strong>.heading--center</strong> for centered headings</li>
@@ -162,7 +162,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 		                    </div>
 					    </div>
 					    <div class="eight columns">
-					    	<p><strong>Notes</strong></p>
+					    	<p class="l-margin-bn"><strong>Notes</strong></p>
 					    	<p>Wrap article information within a <strong>.post__meta</strong> container. Additional information, such as social sharing icons, is also appropriate in this area.</p>
 					    	<div class="code__examples">
                                 <form><textarea class="pattern" id="type-code-3" name="code">
@@ -218,7 +218,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							    </address>	
 					    	</div>
 					    	<div class="eight columns">
-					    		<p><strong>Notes</strong></p>
+					    		<p class="l-margin-bn"><strong>Notes</strong></p>
 					    		<p>When displaying addresses and contact information, it is good practice to include <a href="http://schema.org/" target="_blank">schema.org</a> metadata for search engine utility.</p>
 
 					    		<div class="code__examples">

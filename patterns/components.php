@@ -63,11 +63,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 </div>
                             </div>
                         </div>
-                        <div class="six columns">
-                            <p><strong>Notes</strong></p>
+                        <div class="four columns">
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Wrap each group of accordion items in a container with <strong>.js-toggle-accordion</strong>. This class controls the on click event to open the accordion; this code is location in <strong>main.js</strong>.</p>
                         </div>
-                        <div class="six columns">
+                        <div class="eight columns">
                             <div class="code__examples">
                                 <form><textarea class="pattern" id="comp-code-1" name="code">
 <div class="accordions js-toggle-accordion">
@@ -134,19 +134,38 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <!-- Weather -->
                 <div id="weather" class="l-container l-margin-vm">
-                    <h2>Weather</h2>
-                    <div class="card--weather">
-                        <i class="icon-search"></i>
-                        <p class="temperature"><span class="degrees">73</span>&deg;</p>
-                        <p><strong>San Diego <br> Weather</strong></p>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h2>Weather</h2>
+                        </div>
+                        <div class="three columns">
+                            <div class="card--weather">
+                                <i class="lnr lnr-sun"></i>
+                                <p class="temperature"><span class="degrees">73</span>&deg;</p>
+                                <p><strong>San Diego <br> Weather</strong></p>
+                            </div>
+                        </div>
+                        <div class="nine columns">
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
+                            <p>The weather widget utilizes a modifier of <strong>.card</strong>.</p>
+                            <div class="code__examples">
+<form><textarea class="pattern" id="comp-code-weather" name="code">
+<div class="card--weather">
+    <i class="lnr lnr-sun"></i>
+    <p class="temperature"><span class="degrees">73</span>&deg;</p>
+    <p><strong>San Diego <br> Weather</strong></p>
+</div>
+</textarea> </form> </div>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <!-- Tool tips -->
                 <div id="tool-tips" class="l-container l-margin-vm">
                     <h2>Tools Tips</h2>
                     <div class="row">
-                        <div class="four columns">
+                        <div class="three columns">
                             <p>What's this?
                                 <span class="tooltip__wrap">
                                     <i class="lnr lnr-question-circle"></i>
@@ -161,7 +180,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </span>
                             What's this?</p>
                         </div>
-                        <div class="eight columns">
+                        <div class="nine columns">
                             <div class="code__examples">
                                 <form><textarea class="pattern" id="comp-code-3" name="code">
 <p>
@@ -264,15 +283,33 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <!-- Lightbox -->
                 <div id="lightbox" class="l-container l-margin-vm">
-                    <h2>Lightbox</h2>
-                    <a href="#test-modal" class="popup-modal">Lightbox example</a>
-                    <div id="test-modal" class="white-popup mfp-hide">
-                        <h1>Modal dialog</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <h2>Lightbox</h2>
+                        </div>
+                        <div class="four columns">
+                            <a href="#test-modal" class="popup-modal">Lightbox example</a>
+                            <div id="test-modal" class="white-popup mfp-hide">
+                                <h1>Modal dialog</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                        <div class="eight columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-4" name="code">
+<a href="#test-modal" class="popup-modal">Lightbox example</a> <!-- href value targets the modal ID; class initiates the popup instance -->
+<div id="test-modal" class="white-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
+    <h1>Modal dialog</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+</textarea> </form> </div>
+                        </div>
 
-                    <p class="l-margin-tm l-margin-bn"><em><strong>Notes</strong></em></p>
-                    <p>We're utilizing <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> for lightboxes.</p>
+                        <div class="twelve columns">
+                            <p class="l-margin-tm l-margin-bn"><strong>Notes</strong></p>
+                            <p>We're utilizing <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> for lightboxes. This example is using the basic, default setting (as seen in <em>main.js</em>). A list of options is available for customizing behavior from the <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html" target="_blank">documentation</a>.</p>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Stats Block -->

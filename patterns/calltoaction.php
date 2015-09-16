@@ -31,8 +31,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    		</div>
 				    	</div>
 				    	<div class="seven columns">
-				    		<p><strong>Notes</strong></p>
-				    		<p>Call to action cards utilize the <strong>.card</strong> variation classes, <strong>.card__cta</strong> and <strong>.card__cta--graphic</strong>.</p>
+				    		<p class="l-margin-bn"><strong>Notes</strong></p>
+				    		<p>Call to action cards utilize the <strong>.card</strong> modifier classes, <strong>.card__cta</strong> and <strong>.card__cta--graphic</strong>.</p>
 				    		<div class="code__examples">
                                 <form><textarea class="pattern" id="cta-code-1" name="code">
 <div class="card card__cta card__cta--graphic" style="background-image:url(../assets/dist/img/cta-graphic.jpg);">

@@ -109,6 +109,21 @@
     @extend %hidden;
 }
 
+/* Hidden
+   ========================================================================== */
+
+.hide-on-mobile {
+    @include mq( $until: tablet ) {
+        display: none !important;
+    }
+}
+
+.hide-on-desktop {
+    @include mq( $from: tablet ) {
+        display: none !important;
+    }
+}
+
 /* Corners
    ========================================================================== */
 
@@ -156,8 +171,18 @@
 }
 
 
-/* Text
+/* Text Formatting
    ========================================================================== */
+
+
+.fine-print {
+    @include rem( 'font-size', 12px );
+}
+
+.text-accent {
+    @include rem( 'font-size', 22px );
+}
+
 
 .text-center {
     text-align: center;
@@ -219,6 +244,10 @@
     @include mq( $from: tablet ) {
         @include rem( 'font-size', 13px );
     }
+}
+
+.text-white {
+    color: white;
 }
 .text-gray {
     color: $gray;
@@ -294,9 +323,7 @@ p.nav-ex {
         margin: 0 auto;
     }
 }
-.text-white {
-    color: white;
-}
+
 
 
 /* Lists
@@ -315,20 +342,6 @@ p.nav-ex {
         text-indent: -1em;
     }
 }
-/* Hidden
-   ========================================================================== */
-
-.hide-on-mobile {
-    @include mq( $until: tablet ) {
-        display: none !important;
-    }
-}
-
-.hide-on-desktop {
-    @include mq( $from: tablet ) {
-        display: none !important;
-    }
-}
 
 /* Horiziontal Rules
    ========================================================================== */
@@ -340,7 +353,7 @@ p.nav-ex {
 /* Backgrounds
    ========================================================================== */
 .background--dark {
-    background: $spruce;
+    background-color: $spruce;
     &.text-white {
         > * {
             color: white; 

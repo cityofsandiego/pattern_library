@@ -150,7 +150,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 </script></textarea> </form> </div>
 						</div>
 						<div class="six columns">
-							<p><strong><em>Notes</em></strong></p>
+							<p class="l-margin-bn"><strong>Notes</strong></p>
 							<p>Charts are built using <a href="http://www.chartjs.org/" target="_blank">chart.js</a>, a javascript library that allows easy implementation of various charts. Customization options available include responsive charts, animation, and more.</p>	
 						</div>
 					</div>
@@ -236,7 +236,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 					<div class="row l-margin-td">
 						<div class="four columns">
-							<p><strong>Notes</strong></p>
+							<p class="l-margin-bn"><strong>Notes</strong></p>
 							<p>Apply <strong>.accordion</strong> classes for accordion ability.</p>
 						</div>
 						<div class="eight columns">

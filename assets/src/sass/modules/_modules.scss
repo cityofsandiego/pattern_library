@@ -670,7 +670,6 @@ background: transparent;
         color: $chateau;
         display: inline-block;
         vertical-align: text-top;
-        @include rem( 'font-size', 13px );
     }
 }
 
@@ -1664,7 +1663,10 @@ span[class^="text-"] {
         background: $off-white;
         @include rem( 'font-size', 16px );
         i {
-            vertical-align: bottom;
+            height: 1.5em;
+            line-height: 1.5em;
+            display: block;
+            vertical-align: middle;
         }
     }
 }
@@ -2039,9 +2041,6 @@ table {
 
         @include mq( $from: tablet ) {
             @include rem( 'font-size', 13px );
-            &:first-child {
-                max-width: 
-            }
         }
 
         &:first-child {
@@ -2259,6 +2258,8 @@ footer {
         }
     }
 
+   
+
     .socials {
 
         @include mq( $from: tablet ) {
@@ -2359,6 +2360,13 @@ footer {
         &:hover {
             color: lighten( $spruce, 25% );
         }
+    }
+}
+
+ // ie fallback
+.no-flexbox footer {
+    > .row {
+        display: table-cell;
     }
 }
 
