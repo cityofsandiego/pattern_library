@@ -327,9 +327,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="#sidebar">Sidebar</a></li>
                         <li><a href="#micro">Mircosite</a></li>
                         <li><a href="#quicknav">Quick Nav</a></li>
+                        <li><a href="#quicklinks">Quicklinks</a></li>
                         <li><a href="#social">Social</a></li>
                         <li><a href="#tags">Tags</a></li>
-                        <li><a href="#quicklinks">Quicklinks</a></li>
                     </ul>
                 </div>
 
@@ -340,7 +340,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                         <div class="row">
                             <div class="twelve columns">
-                                <p class="l-margin-bn"><strong>Notes</strong></p>
                                 <p>The main navigation has quite a bit of content. Utilize the <strong>.hide-on-mobile</strong> class for content that should only display on desktop.</p>
                             </div>
                             <div class="twelve columns">
@@ -393,9 +392,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
     </ul>
 </nav></textarea> </form> </div>
                             </div>
+                        </div>
+
+                        <div class="row l-margin-tm">
+                            <div class="six columns">
+                                <div class="code__examples">
+                                    <form><textarea class="pattern" id="nav-code-btn" name="code">
+<div class="menu-btn menu-btn--open">
+    <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
+</div></textarea> </form> </div>
+                            </div>
+                            <div class="six columns">
+                                The <strong>.menu-toggle</strong> icon displays on smaller viewports to access the off-canvas navigation. This element must be placed <strong>directly above</strong> the &lt;nav&gt;.
                             </div>
                         </div>
+
                     </div>
+                </div>
 
                     <!-- Footer -->
                     <div id="footer" class="l-container l-margin-vm">
@@ -404,16 +417,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="row">
                                 <div class="four columns footer--left l-padding-ad l-padding-vm">
 
-                                    <div class="row l-padding-hd">
+                                    <div class="row l-padding-hs">
                                         <div class="twelve columns no-gutters">
                                             <img src="/assets/dist/img/logo--white--sm.png" alt="The City of San Diego - logo" width="49" height="39">
                                             <ul class="socials">
+                                                <li><a href=""><i class="icon-googleplus"></i></a></li>
+                                                <li><a href=""><i class="icon-facebook"></i></a></li>
+                                                <li><a href=""><i class="icon-youtube"></i></a></li>
+                                                <li><a href=""><i class="icon-twitter"></i></a></li>
                                                 <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                                <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                                <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                                <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                                <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                                <li><a href=""><i class="icon-dribbble"></i></a></li>
+                                                <li><a href=""><i class="icon-rss"></i></a></li>
                                             </ul>
                                             <p class="copyright">
                                             Copyrighted © 2002-2015<br>
@@ -555,52 +568,179 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <!-- Sidebar -->
                     <div id="sidebar" class="l-container l-margin-vm">
                         <h2>Sidebar Sub-Navigation with Flyout Menu</h2>
-                        <nav class="sub-navigation">
-                            <ul>
-                                <li><a href="">Parks & Recreation</a></li>
-                                <li><a href="">General Information</a></li>
-                                <li><a href="">Recreation Centers and Pools</a></li>
-                                <li><a href="">Parks & Open Spaces</a></li>
-                            </ul>
-                        </nav>
+                        <div class="l-container">
+                            <div class="row">
+                                <div class="three columns">
+
+                                    <div class="widget">
+                                        <h4>Helpful Links</h4>
+                                        <ul>
+                                            <li><a href="">This Awesome Link</a></li>
+                                            <li class="widget-dropdown"><a href="">Here is Information</a>
+                                                <div class="menu transition">
+                                                  <p class="hide-on-mobile">Dropdown Title</p>
+                                                  <ul>
+                                                      <li><a href="">Choice 1</a></li>
+                                                      <li><a href="">Choice 2</a></li>
+                                                      <li><a href="">Choice 3</a></li>
+                                                  </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="">More Greatness</a></li>
+                                            <li><a href="">Click Here</a></li>
+                                            <li class="widget-dropdown"><a href="">Here is Information</a>
+                                                <div class="menu transition">
+                                                    <p class="hide-on-mobile">Dropdown Title</p>
+                                                  <ul>
+                                                      <li><a href="">Choice 1</a></li>
+                                                      <li><a href="">Choice 2</a></li>
+                                                      <li><a href="">Choice 3</a></li>
+                                                  </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <div class="nine columns">
+                                    <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-flyout" name="code">
+<ul>
+    <li><a href="">Click Here</a></li>
+    <li class="widget-dropdown"><a href="">Here is Information</a>
+        <div class="menu transition">
+          <p class="hide-on-mobile">Dropdown Title</p>
+          <ul>
+              <li><a href="">Choice 1</a></li>
+              <li><a href="">Choice 2</a></li>
+              <li><a href="">Choice 3</a></li>
+          </ul>
+        </div>
+    </li>
+</ul></textarea> </form> </div>
+                                </div>
+
+                                <div class="twelve columns l-margin-td">
+                                    <p>Because a flyout menu should ideally be placed within a sidebar <strong>.widget</strong> menu, the dropdown menu will be targeted with a <strong>.widget</strong> modifier.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Micro Sub-Nav -->
                     <div id="micro" class="l-container l-margin-vm">
                         <h2>Mircosite Sub-Navigation</h2>
-                        <section class="portal">
-                            <header>
-                                <nav class="main__navigation--portal">
-                                    <ul>
-                                        <li><a href="">Nav Item 1</a></li>
-                                        <li><a href="">Nav Item 2</a></li>
-                                        <li><a href="">Nav Item 3</a></li>
-                                        <li><a href="">Nav Item 4</a></li>
-                                        <li><a href="">Nav Item 5</a></li>
-                                    </ul>
-                                </nav>
-                            </header>
-                        </section>
+                        <div class="row">
+                            <div class="six columns">
+                                <section class="portal">
+                                    <header>
+                                        <nav class="main__navigation--portal">
+                                            <ul>
+                                                <li><a href="">Nav Item 1</a></li>
+                                                <li><a href="">Nav Item 2</a></li>
+                                                <li><a href="">Nav Item 3</a></li>
+                                                <li><a href="">Nav Item 4</a></li>
+                                            </ul>
+                                        </nav>
+                                    </header>
+                                </section>
+                                <p class="l-margin-tm">This sub-navigation is simply a modifier of <strong>.main__navigation</strong>.</p>
+                            </div>
+                            <div class="six columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-micro" name="code">
+<header>
+    <nav class="main__navigation--portal">
+        <ul>
+            <li><a href="">Nav Item 1</a></li>
+            <li><a href="">Nav Item 2</a></li>
+            <li><a href="">Nav Item 3</a></li>
+            <li><a href="">Nav Item 4</a></li>
+        </ul>
+    </nav>
+</header></textarea> </form> </div>
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <!-- Quick nav (top-nav-strip) -->
                     <div id="quicknav" class="l-container l-margin-vm">
                         <h2>Quick Nav</h2>
-                        <div class="l-container top-nav-strip">
-                            <div class="row">
-                                <div class="six columns no-gutters">
-                                    <p>Visit <a href="">sandiego.gov</a></p>
-                                </div>
-                                <div class="six columns no-gutters">
-                                    <ul class="socials">
-                                        <li><a href=""><i class="icon-googleplus"></i></a></li>
-                                        <li><a href=""><i class="icon-facebook"></i></a></li>
-                                        <li><a href=""><i class="icon-youtube"></i></a></li>
-                                        <li><a href=""><i class="icon-twitter"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                        <li><a href=""><i class="icon-rss"></i></a></li>
-                                    </ul>
-                                </div>
+                        <div class="row top-nav-strip l-margin-bm">
+                            <div class="six columns">
+                                <p>Visit <a href="">sandiego.gov</a></p>
+                            </div>
+                            <div class="six columns">
+                                <ul class="socials">
+                                    <li><a href=""><i class="icon-googleplus"></i></a></li>
+                                    <li><a href=""><i class="icon-facebook"></i></a></li>
+                                    <li><a href=""><i class="icon-youtube"></i></a></li>
+                                    <li><a href=""><i class="icon-twitter"></i></a></li>
+                                    <li><a href=""><i class="icon-dribbble"></i></a></li>
+                                    <li><a href=""><i class="icon-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="seven columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-quicknav" name="code">
+<div class="row top-nav-strip">
+    <div class="six columns">
+        <p>Visit <a href="">sandiego.gov</a></p>
+    </div>
+    <div class="six columns">
+        <ul class="socials">
+            <li><a href=""><i class="icon-googleplus"></i></a></li>
+            <li><a href=""><i class="icon-facebook"></i></a></li>
+            <li><a href=""><i class="icon-youtube"></i></a></li>
+            <li><a href=""><i class="icon-twitter"></i></a></li>
+            <li><a href=""><i class="icon-dribbble"></i></a></li>
+            <li><a href=""><i class="icon-rss"></i></a></li>
+        </ul>
+    </div>
+</div></textarea> </form> </div>
+                            </div>
+                            <div class="five columns">
+                                <p>This navigation is meant to be placed above a main navigation area, directly within a &lt;header&gt; element.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quicklinks -->
+                    <div id="quicklinks" class="l-container l-margin-vm">
+                        <h2>Quicklinks</h2>
+                        <div class="quicklinks background--cerulean l-padding-ad l-margin-bm">
+                            <nav>
+                                <ul>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
+                                    <li><a href="">Translate</a></li>
+                                    <li><a href="">High Contrast</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="row">
+                            <div class="seven columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-quicklinks" name="code">
+<div class="quicklinks">
+    <nav>
+        <ul>
+            <li><a href="">Login</a></li>
+            <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
+            <li><a href="">Translate</a></li>
+            <li><a href="">High Contrast</a></li>
+        </ul>
+    </nav>
+</div></textarea></form> </div>
+                            </div>
+                            <div class="five columns">
+                                <p>Quicklinks are meant for navigation items that don't group into a main navigation, or support specific department content. Wrap this list with a <strong>.quicklinks</strong> for list items to be displayed horizontally.</p>
+                                <p>Note that this type of navigation could be used within a Quick Nav block (above).</p>
                             </div>
                         </div>
                     </div>
@@ -610,7 +750,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <h2>Social Properties</h2>
                         <div class="l-container l-margin-vm">
                             <div class="row">
-                                <div class="six columns">
+                                <div class="four columns">
                                     <ul class="socials">
                                         <li><a href=""><i class="icon-googleplus"></i></a></li>
                                         <li><a href=""><i class="icon-facebook"></i></a></li>
@@ -620,6 +760,22 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         <li><a href=""><i class="icon-rss"></i></a></li>
                                     </ul>
                                 </div>
+                                <div class="eight columns">
+                                    <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-socials" name="code">
+<ul class="socials">
+    <li><a href=""><i class="icon-googleplus"></i></a></li>
+    <li><a href=""><i class="icon-facebook"></i></a></li>
+    <li><a href=""><i class="icon-youtube"></i></a></li>
+    <li><a href=""><i class="icon-twitter"></i></a></li>
+    <li><a href=""><i class="icon-dribbble"></i></a></li>
+    <li><a href=""><i class="icon-rss"></i></a></li>
+</ul></textarea> </form> </div>
+                                </div>
+
+                                <div class="twelve columns l-margin-tm">
+                                    <p>A list of social icons simply needs to be given the <strong>.socials</strong> class. The icons are a separate font from the default icon font, Linearicons, and thus have different classes.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -627,25 +783,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <!-- Tags -->
                     <div id="tags" class="l-container l-margin-vm">
                         <h2>Tags</h2>
-                        <ul class="tag-list">
-                            <li class="tag-list__item"><a class="tag-list__link" href="">City Council</a></li>
-                            <li class="tag-list__item"><a class="tag-list__link" href="">Transit</a></li>
-                            <li class="tag-list__item"><a class="tag-list__link" href="">Community Events</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Quicklinks -->
-                    <div id="quicklinks" class="l-container l-margin-vm">
-                        <h2>Quicklinks, dropdown</h2>
-                        <div class="quicklinks background--cerulean l-padding-ad">
-                            <nav>
-                                <ul>
-                                    <li><a href="">Login</a></li>
-                                    <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
-                                    <li><a href="">Translate</a></li>
-                                    <li><a href="">High Contrast</a></li>
+                        <div class="row">
+                            <div class="four columns">
+                                <ul class="tag-list">
+                                    <li class="tag-list__item"><a class="tag-list__link" href="">City Council</a></li>
+                                    <li class="tag-list__item"><a class="tag-list__link" href="">Transit</a></li>
+                                    <li class="tag-list__item"><a class="tag-list__link" href="">Community Events</a></li>
                                 </ul>
-                            </nav>
+                            </div>
+                            <div class="eight columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-tags" name="code">
+<ul class="tag-list">
+    <li class="tag-list__item"><a class="tag-list__link" href="">City Council</a></li>
+    <li class="tag-list__item"><a class="tag-list__link" href="">Transit</a></li>
+    <li class="tag-list__item"><a class="tag-list__link" href="">Community Events</a></li>
+</ul></form></textarea> </div>
+                            </div>
                         </div>
                     </div>
 

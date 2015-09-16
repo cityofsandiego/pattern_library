@@ -128,7 +128,7 @@ header {
 
 /* Pattern Library */
 .library__header {
-background: transparent;
+    background: transparent;
 
     > .l-constrained {
         padding: 1em 0;
@@ -139,6 +139,12 @@ background: transparent;
         display: inline-block;
         margin-left: .5em;
         margin-right: .5em;
+    }
+
+    a {
+        font-weight: 600;
+        text-transform: none;
+        line-height: 2.75;
     }
 }
 
@@ -304,7 +310,6 @@ background: transparent;
 }
 
 .hero__slides--content {
-
     .slides {
         overflow: hidden;
     }
@@ -639,6 +644,7 @@ background: transparent;
 
 .sub__nav--library {
     background: white;
+    margin-top: .5em;
 
     .sub__nav {
         padding: 0;
@@ -817,7 +823,7 @@ background: transparent;
 
     .socials {
         a {
-            opacity: 0.9;
+            opacity: 0.85;
             color: $science;
             -webkit-transition-property: opacity;
             -moz-transition-property: opacity;
@@ -938,22 +944,61 @@ background: transparent;
 .patterns {
     aside {
         ul {
+            display: block;
             list-style: none;
             margin: 0;
             padding: 0;
-        }
-        a {
-            padding: .75em;
-            display: block;
-            color: $charcoal;
-            border-radius: 4px;
-            text-decoration: none;
-            &:hover {
-                background: lighten( $sunshade, 30% );
+
+            li {
+                float: none;
+                width: auto;
+                border: none;
+                margin: .5em 0;
+
+                &:before {
+                    display: none;
+                }
             }
-            &.active {
-                color: white;
-                background: $sunshade;
+
+            a {
+                min-height: 0;
+                padding: .75em;
+                display: block;
+                color: $charcoal;
+                border-radius: 4px;
+                text-transform: none;
+                text-decoration: none;
+                background: transparent;
+                transition: background .15s ease;
+                @include rem( 'font-size', 16px );
+
+                &:hover {
+                    color: $charcoal;
+                    background: lighten( $sunshade, 30% );
+                }
+                &.active {
+                    color: white;
+                    background: $sunshade;
+                }
+                &:before,
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @include mq( $from: tablet ) {
+        .menu-toggle {
+            display: none;
+        }
+    }
+
+    @include mq( $until: tablet ) {
+        .js-ready & {
+            .nav-primary {
+                padding: 0 1em;
+                background-color: transparent;
             }
         }
     }
@@ -978,6 +1023,10 @@ background: transparent;
     }
     .content {
         color: black;
+    }
+
+    .CodeMirror-scroll {
+        max-height: 350px;
     }
 }
 
@@ -1702,6 +1751,7 @@ span[class^="text-"] {
 }
 
 .tag-list__item {
+    margin: .25em 0;
     padding: 0 1em .5em 0;
     display: inline-block;
 }

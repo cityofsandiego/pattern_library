@@ -178,7 +178,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div class="row l-margin-vm">
 							<div class="twelve columns accordions js-toggle-accordion table__accordion">
 								<div class="accordion">
-									<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"></span></a></p>
+									<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon hide-on-desktop"></span></a></p>
 									<div class="accordion__drawer row">
 										<table class="twelve columns">
 											<tr class="hide-on-desktop">
@@ -224,11 +224,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 										</table>
 									</div> <!-- accordion drawer -->
 								</div>
-								<!-- <table>
-									<tr class="subheading accordion__heading">
-										<td><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong></a></td>
-									</tr>
-								</table> -->
 							</div>
 						</div>
 
@@ -244,49 +239,33 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="char-code-2" name="code">
 <div class="accordions js-toggle-accordion table__accordion">
 	<div class="accordion">
-		<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"></span></a></p>
+		<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon hide-on-desktop"></span></a></p>
 		<div class="accordion__drawer row">
 			<table class="twelve columns">
 				<tr class="hide-on-desktop">
-					<th></th>
 					<th>SD City Resident *</th>
-					<th>Non-Resident</th>
-				</tr>
+					<th>Non-Resident</th> </tr>
 				<tr>
 					<td>18-Hole Course</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>18-Hole Course Senior (62 and over)</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>18-Hole Course Junior (17 and under)</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>18-Hole Course Twilight</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>9-Hole Course</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>9-Hole Course Senior (62 and over)</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 				<tr>
 					<td>9-Hole Course Junior (17 and under)</td>
-					<td>$32</td>
-					<td>$40</td>
-				</tr>
+					<td>$32</td> </tr>
 			</table>
 		</div> <!-- accordion drawer -->
 	</div>

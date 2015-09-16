@@ -42,6 +42,25 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 				</div>
 
+				<div class="l-container">
+					<div class="row">
+						<div class="six columns">
+							<p>Messages use a simple <strong>.message</strong> class with type modifiers.</p>
+						</div>
+						<div class="six columns">
+							<div class="code__examples">
+                        <form><textarea class="pattern" id="comp-code-msg" name="code">
+<div class="message message--error">
+<p>
+	<i class="icon-search"></i>
+	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a>
+</p>
+</div></textarea> </form> </div>
+						</div>
+					</div>
+				</div>
+
             </div>
         </div>
         

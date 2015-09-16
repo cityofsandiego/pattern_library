@@ -255,7 +255,7 @@ html[xmlns] .flexslider .slides {
     width: 11px;
     height: 11px;
     display: block;
-    border: 2px solid white;
+    border: 2px solid transparent;
     background: $cerulean;
     background: rgba(0, 152, 219, 0.5);
     cursor: pointer;
@@ -269,7 +269,7 @@ html[xmlns] .flexslider .slides {
     &.flex-active {
       cursor: default;
       background: transparent;
-      border: 2px solid $cerulean;
+      border: 2px solid white;
     } 
   }
   #slider-basic & {

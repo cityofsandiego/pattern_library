@@ -670,6 +670,20 @@ form label.focusable:focus,
  */
 /* Visibility
    ========================================================================== */
+/* Hidden
+   ========================================================================== */
+@media screen and (max-width: 47.99em) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .hide-on-desktop {
+        display: none !important;
+    }
+}
+
 /* Corners
    ========================================================================== */
 .corner {
@@ -710,8 +724,18 @@ form label.focusable:focus,
     border-radius: 4px;
 }
 
-/* Text
+/* Text Formatting
    ========================================================================== */
+.fine-print {
+    font-size: 12px;
+    font-size: .75rem;
+}
+
+.text-accent {
+    font-size: 22px;
+    font-size: 1.375rem;
+}
+
 .text-center {
     text-align: center;
 }
@@ -773,6 +797,10 @@ form label.focusable:focus,
         font-size: 13px;
         font-size: .8125rem;
     }
+}
+
+.text-white {
+    color: white;
 }
 
 .text-gray {
@@ -850,10 +878,6 @@ p.nav-ex {
     }
 }
 
-.text-white {
-    color: white;
-}
-
 /* Lists
    ========================================================================== */
 .no-bullets {
@@ -874,20 +898,6 @@ p.nav-ex {
     text-indent: -1em;
 }
 
-/* Hidden
-   ========================================================================== */
-@media screen and (max-width: 47.99em) {
-    .hide-on-mobile {
-        display: none !important;
-    }
-}
-
-@media screen and (min-width: 48em) {
-    .hide-on-desktop {
-        display: none !important;
-    }
-}
-
 /* Horiziontal Rules
    ========================================================================== */
 .hr--dashed {
@@ -897,7 +907,7 @@ p.nav-ex {
 /* Backgrounds
    ========================================================================== */
 .background--dark {
-    background: #37424a;
+    background-color: #37424a;
 }
 
 .background--dark.text-white > * {
@@ -1192,18 +1202,6 @@ dd {
     font-size: 20px;
     font-size: 1.25rem;
     color: #28bdff;
-}
-
-/* Formatting
-   ========================================================================== */
-.fine-print {
-    font-size: 12px;
-    font-size: .75rem;
-}
-
-.text-accent {
-    font-size: 22px;
-    font-size: 1.375rem;
 }
 
 /* Containers
@@ -4148,6 +4146,12 @@ header nav a {
     margin-left: .5em;
 }
 
+.library__header a {
+    font-weight: 600;
+    line-height: 2.75;
+    text-transform: none;
+}
+
 .hero__slides {
     position: relative;
     width: 100%;
@@ -4653,6 +4657,7 @@ header nav a {
 }
 
 .sub__nav--library {
+    margin-top: .5em;
     background: white;
 }
 
@@ -4680,8 +4685,6 @@ header nav a {
 }
 
 .sub__nav li {
-    font-size: 13px;
-    font-size: .8125rem;
     font-weight: 600;
     line-height: 1.6;
     display: inline-block;
@@ -4857,7 +4860,7 @@ header nav a {
     -webkit-transition-property: opacity;
        -moz-transition-property: opacity;
             transition-property: opacity;
-    opacity: .9;
+    opacity: .85;
     color: #005bbb;
 }
 
@@ -4957,26 +4960,63 @@ header nav a {
 /* Pattern Library
    ========================================================================== */
 .patterns aside ul {
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.patterns aside a {
-    display: block;
-    padding: .75em;
-    text-decoration: none;
-    color: #333332;
-    border-radius: 4px;
+.patterns aside ul li {
+    float: none;
+    width: auto;
+    margin: .5em 0;
+    border: none;
 }
 
-.patterns aside a:hover {
+.patterns aside ul li:before {
+    display: none;
+}
+
+.patterns aside ul a {
+    font-size: 16px;
+    font-size: 1rem;
+    display: block;
+    min-height: 0;
+    padding: .75em;
+    transition: background .15s ease;
+    text-decoration: none;
+    text-transform: none;
+    color: #333332;
+    border-radius: 4px;
+    background: transparent;
+}
+
+.patterns aside ul a:hover {
+    color: #333332;
     background: #ffe6c8;
 }
 
-.patterns aside a.active {
+.patterns aside ul a.active {
     color: white;
     background: #ffa02f;
+}
+
+.patterns aside ul a:before,
+.patterns aside ul a:after {
+    display: none;
+}
+
+@media screen and (min-width: 48em) {
+    .patterns .menu-toggle {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .js-ready .patterns .nav-primary {
+        padding: 0 1em;
+        background-color: transparent;
+    }
 }
 
 .code__examples {
@@ -5727,7 +5767,10 @@ span[class^="text-"].text-lg {
 }
 
 .socials a i {
-    vertical-align: bottom;
+    line-height: 1.5em;
+    display: block;
+    height: 1.5em;
+    vertical-align: middle;
 }
 
 .social-share__wrap span[class^="st"] {
@@ -5757,6 +5800,7 @@ span[class^="text-"].text-lg {
 
 .tag-list__item {
     display: inline-block;
+    margin: .25em 0;
     padding: 0 1em .5em 0;
 }
 
@@ -6432,6 +6476,10 @@ footer a {
 
 footer a:hover {
     color: #6e8393;
+}
+
+.no-flexbox footer > .row {
+    display: table-cell;
 }
 
 .footer__privacy {
@@ -7895,9 +7943,11 @@ header .search-icon i {
     list-style-type: none;
 }
 
-.widget li {
-    font-size: 13px;
-    font-size: .8125rem;
+@media screen and (min-width: 48em) {
+    .widget li {
+        font-size: 13px;
+        font-size: .8125rem;
+    }
 }
 
 .widget__heading {
@@ -7956,6 +8006,60 @@ header .search-icon i {
 
 .widget-recent-posts .entry-content {
     color: #656667;
+}
+
+.widget-dropdown {
+    position: relative;
+}
+
+.widget-dropdown ul {
+    margin: 0;
+}
+
+.widget-dropdown li:first-child {
+    margin-top: 0;
+}
+
+.widget-dropdown .menu {
+    padding: .75em;
+}
+
+@media screen and (min-width: 48em) {
+    .widget-dropdown:after {
+        font-family: "Linearicons";
+        font-size: 75%;
+        font-weight: 600;
+        line-height: 2;
+        float: right;
+        margin-right: .5em;
+        content: "\e876";
+        color: #0098db;
+    }
+    .widget-dropdown .menu {
+        position: absolute;
+        z-index: 10;
+        top: -.5em;
+        left: 100%;
+        display: none;
+        visibility: hidden;
+        width: 100%;
+        -webkit-transition: opacity .25s;
+           -moz-transition: opacity .25s;
+                transition: opacity .25s;
+        opacity: 0;
+        background: white;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+           -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+                box-shadow: 0 0 5px rgba(0, 0, 0, .15);
+    }
+    .widget-dropdown:hover {
+        cursor: pointer;
+    }
+    .widget-dropdown:hover .menu {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
 }
 
 /* BASICS */

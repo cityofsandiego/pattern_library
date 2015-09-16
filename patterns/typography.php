@@ -118,7 +118,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                         <div class="six columns">
                             <p class="l-margin-bn"><strong>Notes</strong></p>
-                            Helper classes are available to style typographic tags as header elements. This is helpful if you want the style of, say, an &lt;h2&gt;, but the placement of an &lt;h2&gt; doesn't make semantic sense on the page.
+                            <p>Helper classes are available to style typographic tags as header elements. This is helpful if you want the style of, say, an &lt;h2&gt;, but the placement of an &lt;h2&gt; doesn't make semantic sense on the page.</p>
                             <p class="h1">This is actually a &lt;p&gt;.</p>
                         	<h4 class="h2">This is actually a &lt;h4&gt;.</h4>
                         </div>
@@ -239,46 +239,146 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				    <div id="buttons" class="l-container l-margin-vm">
 				    	<h2>Buttons</h2>
-						<div class="row l-padding-vd">
-							<a class="btn btn--primary" href="#">Primary</a>
-							<a class="btn btn--secondary" href="#">Secondary</a>
-							<a class="btn btn--tertiary" href="#">Tertiary</a>
-							<a class="btn btn--outline" href="#">Outline</a>
+						<div class="row l-padding-vm">
+							<div class="six columns">
+								<a class="btn btn--primary l-margin-vs" href="#">Primary</a>
+								<a class="btn btn--secondary l-margin-vs" href="#">Secondary</a>
+								<a class="btn btn--tertiary l-margin-vs" href="#">Tertiary</a>
+								<a class="btn btn--outline l-margin-vs" href="#">Outline</a>
+							</div>
+							<div class="six columns">
+	                            <p class="l-margin-bn"><strong>Notes</strong></p>
+	                            <p>Numerous <strong>.btn</strong> modifiers provide access to many button choices for (hopefully) any scenario that should arise. Here are primary modifiers:</p>
+
+	                            <div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn" name="code">
+<a class="btn btn--primary" href="#">Primary</a>
+<a class="btn btn--secondary" href="#">Secondary</a>
+<a class="btn btn--tertiary" href="#">Tertiary</a>
+<a class="btn btn--outline" href="#">Outline</a></textarea> </form> </div>
+							</div>
 						</div>
-						<div class="row">
-							<a class="btn btn--primary" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
-							<a class="btn btn--secondary" href="#"><i class="icon-flickr"></i> Icon Button</a>
-							<a class="btn btn--tertiary" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a>
+
+						<div class="row l-padding-vm">
+							<div class="six columns">
+								<a class="btn btn--primary l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
+								<a class="btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a>
+								<a class="btn btn--tertiary l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a>
+							</div>
+							<div class="six columns">
+	                            <p>Default modifiers with icons</p>
+
+	                            <div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-2" name="code">
+<a class="btn btn--primary" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
+<a class="btn btn--secondary" href="#"><i class="icon-flickr"></i> Icon Button</a>
+<a class="btn btn--tertiary" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a></textarea> </form> </div>
+							</div>
+
 						</div>
-						<div class="row l-padding-vd">
-							<a class="btn btn--xs" href="#">Extra Small</a>
-							<a class="btn btn--sm" href="#">Small</a>
-							<a class="btn btn--md" href="#">Medium</a>
-							<a class="btn btn--lg" href="#">Large</a>
-							<a class="btn btn--xl" href="#">Extra Large</a>
+
+						<div class="row l-padding-vm">
+							<div class="six columns">
+								<a class="btn btn--xs l-margin-vs" href="#">Extra Small</a>
+								<a class="btn btn--sm l-margin-vs" href="#">Small</a>
+								<a class="btn btn--md l-margin-vs" href="#">Medium</a>
+								<a class="btn btn--lg l-margin-vs" href="#">Large</a>
+								<a class="btn btn--xl l-margin-vs" href="#">Extra Large</a>
+							</div>
+							<div class="six columns">
+								<p>Font size variations</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-3" name="code">
+<a class="btn btn--xs" href="#">Extra Small</a>
+<a class="btn btn--sm" href="#">Small</a>
+<a class="btn btn--md" href="#">Medium</a>
+<a class="btn btn--lg" href="#">Large</a>
+<a class="btn btn--xl" href="#">Extra Large</a></textarea> </form> </div>
+							</div>
 						</div>
-						<div class="row l-padding-vd">
-							<a class="btn btn--round" href="#">Rounded Corners</a>
-							<a class="btn btn--oval" href="#">Pill Button</a>
-							<a class="btn btn--pill-right" href="#">Pill Right</a>
-							<a class="btn btn--pill-left" href="#">Pill Left</a>
+
+						<div class="row l-padding-vm">
+							<div class="six columns">
+								<a class="btn btn--round l-margin-vs" href="#">Rounded Corners</a>
+								<a class="btn btn--oval l-margin-vs" href="#">Pill Button</a>
+								<a class="btn btn--pill-right l-margin-vs" href="#">Pill Right</a>
+								<a class="btn btn--pill-left l-margin-vs" href="#">Pill Left</a>
+							</div>
+							<div class="six columns">
+								<p>Border variations</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-4" name="code">
+<a class="btn btn--round" href="#">Rounded Corners</a>
+<a class="btn btn--oval" href="#">Pill Button</a>
+<a class="btn btn--pill-right" href="#">Pill Right</a>
+<a class="btn btn--pill-left" href="#">Pill Left</a> </textarea> </form> </div>
+							</div>
 						</div>
+
 						<div class="row l-padding-vd">
-							<p><a class="btn btn--wide" href="#">Wide</a></p>
-							<p><a class="btn btn--half" href="#">Half</a></p>
-							<p><a class="btn btn--third" href="#">Third</a></p>
+							<div class="six columns">
+								<p><a class="btn btn--wide l-margin-vs" href="#">Wide</a></p>
+								<p><a class="btn btn--half l-margin-vs" href="#">Half</a></p>
+								<p><a class="btn btn--third l-margin-vs" href="#">Third</a></p>
+							</div>
+							<div class="six columns">
+								<p>Width variations</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-5" name="code">
+<a class="btn btn--wide" href="#">Wide</a>
+<a class="btn btn--half" href="#">Half</a>
+<a class="btn btn--third" href="#">Third</a></textarea> </form> </div>
+							</div>
 						</div>
+
 						<div class="row l-padding-vd">
-							<a class="btn btn--icon-left" href="#"><i class="icon-arrow-left"></i>Previous</a>
-							<a class="btn btn--icon-right" href="#">Next<i class="icon-arrow-right"></i></a>
+							<div class="six columns">
+								<a class="btn btn--icon-left l-margin-vs" href="#"><i class="icon-arrow-left"></i>Previous</a>
+								<a class="btn btn--icon-right l-margin-vs" href="#">Next<i class="icon-arrow-right"></i></a>
+							</div>
+							<div class="six columns">
+								<p>Directional</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-6" name="code">
+<a class="btn btn--icon-left" href="#"><i class="icon-arrow-left"></i>Previous</a>
+<a class="btn btn--icon-right" href="#">Next<i class="icon-arrow-right"></i></a></textarea> </form> </div>
+							</div>
 						</div>
+
 						<div class="row l-padding-vd">
-							<a class="btn btn--success" href="#">Success</a>
-							<a class="btn btn--warning" href="#">Warning</a>
-							<a class="btn btn--error" href="#">Error</a>
+							<div class="six columns">
+								<a class="btn btn--success l-margin-vs" href="#">Success</a>
+								<a class="btn btn--warning l-margin-vs" href="#">Warning</a>
+								<a class="btn btn--error l-margin-vs" href="#">Error</a>
+							</div>
+							<div class="six columns">
+								<p>Messaging variations</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-7" name="code">
+<a class="btn btn--success" href="#">Success</a>
+<a class="btn btn--warning" href="#">Warning</a>
+<a class="btn btn--error" href="#">Error</a></textarea> </form> </div>
+							</div>
+							
 						</div>
+
 						<div class="row l-padding-vd">
-							<a class="btn btn--disabled" href="#">Disabled</a>
+							<div class="six columns">
+								<a class="btn btn--disabled" href="#">Disabled</a>
+							</div>
+							<div class="six columns">
+								<p>Disabled</p>
+
+								<div class="code__examples">
+                                	<form><textarea class="pattern" id="type-code-btn-8" name="code">
+<a class="btn btn--disabled" href="#">Disabled</a></textarea> </form> </div>
+							</div>
+							
 						</div>
 				    </div>
 

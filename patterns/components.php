@@ -28,8 +28,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Social -->
                 <div id="socials" class="l-container l-margin-tm">
                     <div class="row">
-                        <div class="twelve columns">
-                            <h2>Social Share</h2>
+                        <h2>Social Share</h2>
+                        <div class="four columns">
                             <div class="social-share__wrap">
                                 <span class='st_sharethis_large' displayText='ShareThis'></span>
                                 <span class='st_facebook_large' displayText='Facebook'></span>
@@ -37,7 +37,22 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <span class='st_linkedin_large' displayText='LinkedIn'></span>
                                 <span class='st_pinterest_large' displayText='Pinterest'></span>
                                 <span class='st_email_large' displayText='Email'></span>
-                            </div>  
+                            </div>
+                        </div>
+                        <div class="eight columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-social" name="code">
+<div class="social-share__wrap">
+    <span class='st_sharethis_large' displayText='ShareThis'></span>
+    <span class='st_facebook_large' displayText='Facebook'></span>
+    <span class='st_twitter_large' displayText='Tweet'></span>
+    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+    <span class='st_pinterest_large' displayText='Pinterest'></span>
+    <span class='st_email_large' displayText='Email'></span>
+</div></textarea> </form> </div>
+                        </div>
+                        <div class="twelve columns l-margin-tm">
+                            <p>We're currently using the <a href="http://www.sharethis.com/" target="_blank">ShareThis</a> plugin for social sharing, and overriding some default styles on hover.</p>
                         </div>
                     </div>
                 </div>
@@ -114,20 +129,40 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <h2>Steps (1-10)</h2>
                     <div class="steps__wrap">
                         <div class="step__single">
-                            <i class="icon-dribbble"></i>
+                            <i class="lnr lnr-pencil"></i>
                             <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
                         </div>
                         <div class="step__single">
-                            <i class="icon-dribbble"></i>
+                            <i class="lnr lnr-cloud-download"></i>
                             <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
                         </div>
                         <div class="step__single">
-                            <i class="icon-dribbble"></i>
+                            <i class="lnr lnr-cog"></i>
                             <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
                         </div>
                         <div class="step__single">
-                            <i class="icon-dribbble"></i>
+                            <i class="lnr lnr-star"></i>
                             <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
+                        </div>
+                    </div>
+
+                    <div class="row l-margin-td">
+                        <div class="six columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-steps" name="code">
+<div class="steps__wrap">
+    <div class="step__single">
+        <i class="lnr lnr-star-half"></i>
+        <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
+    </div>
+    <div class="step__single">
+        <i class="lnr lnr-star"></i>
+        <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+    </div>
+</div></textarea> </form> </div>
+                        </div>
+                        <div class="six columns">
+                            <p>Step outlines are a unique element, so they have a set of unique class names. Wrap the groups of steps in a <strong>.steps__wrap</strong>, then give each individual step <strong>.step__single</strong>. The title and description also have individual classes. Lastly, try to find an icon that relates as best as possible to what's being described.</p>
                         </div>
                     </div>
                 </div>
@@ -146,7 +181,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </div>
                         <div class="nine columns">
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>The weather widget utilizes a modifier of <strong>.card</strong>.</p>
                             <div class="code__examples">
 <form><textarea class="pattern" id="comp-code-weather" name="code">
@@ -202,7 +236,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row l-margin-bm">
                         <p class="subheading">With multiple locations and location types</p>
                         <div class="six columns no-gutters">
-                            <div id="map-canvas" style="width:100%; height: 360px;"></div>
+                            <div id="multi-map" style="width:100%; height: 360px;"></div>
                         </div>
                         <div class="six columns no-gutters">
                             <div class="row l-padding-hd event__wrap">
@@ -273,11 +307,38 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <p class="subheading">Single location, full width</p>
                     <div class="row l-margin-bm">
                         <div class="twelve columns">
-                            <div id="wide-map-canvas" style="width:100%; height: 360px;"></div>
+                            <div id="single-map" style="width:100%; height: 360px;"></div>
                         </div>
                     </div>
 
-                    <p><em>If the site is built with Drupal, is there a plugin/module that utilizes google maps? If so, how much customization in code can be done now?</em></p>
+                    <div class="row">
+                        <div class="twelve columns">
+                            <p>Here, we're using the <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps Javascript API</a>. Options are set up in <em>main.js</em>. Create a wrapper of <strong>#single-map</strong> for a single location, and <strong>#multi-map</strong> for multiple locations.</p>
+                            <p>Drupal may have a Google Maps widget or tool that sets this script up differently. If so, be sure to include the identifying marker images when initializing.</p>
+                        </div>
+                        <div class="twelve columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-map" name="code">
+<div id="single-map" style="width:100%; height: 360px;"></div>
+
+<script>
+var image = 'map-marker.png'; // the single center marker
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  icon: image
+});
+
+var eventImage = {
+    url    : 'event-marker.png',
+    size   : new google.maps.Size(14,16),
+    origin : new google.maps.Point(0,0),
+    anchor : new google.maps.Point(0,0)
+};
+setMarkers(map, events, eventImage); // A categorized location marker. Call this multiple times to the same map with different marker variables to distinguish location types.
+</script></textarea> </form> </div>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -328,6 +389,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <p class="card__headline">372</p>
                                 <p>square miles</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="row l-margin-vd">
+                        <div class="seven columns">
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="comp-code-stats" name="code">
+<div class="card card--stats">
+    <p class="card__headline">1.356 mm</p>
+    <p>people in San Diego</p>
+</div></textarea> </form> </div>
+                        </div>
+                        <div class="five columns">
+                            <p>Stats cards use a modifier of <strong>.card</strong>.</p>
                         </div>
                     </div>
 

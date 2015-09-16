@@ -29,43 +29,39 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<div class="background-off-white border border--dark l-padding-ad border-radius form--general">
 								<h3 class="l-margin-tn text-center">General Sign Up</h3>
 								<form class="user-info-from-cookie contact-form" action="" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
-									<div>
-
-										<div class="row">
-											<div class="form-item six columns form-type-textfield form-item-fname">
-												<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
-												<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
-												<!-- <div class="messages error">This field is required!</div> -->
-											</div>
-
-											<div class="form-item six columns form-type-textfield form-item-lname">
-												<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
-												<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
-												<!-- <div class="messages error">This field is required!</div> -->
-											</div>
+									<div class="row">
+										<div class="form-item six columns form-type-textfield form-item-fname">
+											<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
+											<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
+											<!-- <div class="messages error">This field is required!</div> -->
 										</div>
 
-										<div class="row">
-											<div class="form-item six columns form-type-textfield form-item-mail">
-												<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-												<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
-												<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
-											</div>
+										<div class="form-item six columns form-type-textfield form-item-lname">
+											<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
+											<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
+											<!-- <div class="messages error">This field is required!</div> -->
+										</div>
+									</div>
 
-											<div class="form-item six columns form-type-textfield form-item-number">
-												<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
-												<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
-												<!-- <div class="messages error">This field is required!</div> -->
-											</div>
+									<div class="row">
+										<div class="form-item six columns form-type-textfield form-item-mail">
+											<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+											<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
+											<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
 										</div>
 
-										<input type="hidden" name="form_build_id" value="">
-										<input type="hidden" name="form_id" value="contact_site_form">
-
-										<div class="form-actions form-wrapper" id="edit-actions">
-											<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+										<div class="form-item six columns form-type-textfield form-item-number">
+											<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+											<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
+											<!-- <div class="messages error">This field is required!</div> -->
 										</div>
+									</div>
 
+									<input type="hidden" name="form_build_id" value="">
+									<input type="hidden" name="form_id" value="contact_site_form">
+
+									<div class="form-actions form-wrapper" id="edit-actions">
+										<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
 									</div>
 								</form>
 							</div>
@@ -76,43 +72,39 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="background-off-white border border--dark l-padding-ad border-radius form--general">
 	<h3 class="l-margin-tn text-center">General Sign Up</h3>
 	<form class="user-info-from-cookie contact-form" action="" method="post" id="contact-site-form" accept-charset="UTF-8" empowered="1" novalidate="novalidate">
-		<div>
-
-			<div class="row">
-				<div class="form-item six columns form-type-textfield form-item-fname">
-					<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
-					<!-- <div class="messages error">This field is required!</div> -->
-				</div>
-
-				<div class="form-item six columns form-type-textfield form-item-lname">
-					<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
-					<!-- <div class="messages error">This field is required!</div> -->
-				</div>
+		<div class="row">
+			<div class="form-item six columns form-type-textfield form-item-fname">
+				<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="edit-fname" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
+				<!-- <div class="messages error">This field is required!</div> -->
 			</div>
 
-			<div class="row">
-				<div class="form-item six columns form-type-textfield form-item-mail">
-					<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
-					<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
-				</div>
+			<div class="form-item six columns form-type-textfield form-item-lname">
+				<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="edit-lname" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
+				<!-- <div class="messages error">This field is required!</div> -->
+			</div>
+		</div>
 
-				<div class="form-item six columns form-type-textfield form-item-number">
-					<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
-					<!-- <div class="messages error">This field is required!</div> -->
-				</div>
+		<div class="row">
+			<div class="form-item six columns form-type-textfield form-item-mail">
+				<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
+				<!-- <div class="messages error">This field is required!<br>Please enter a valid email address!</div> -->
 			</div>
 
-			<input type="hidden" name="form_build_id" value="">
-			<input type="hidden" name="form_id" value="contact_site_form">
-
-			<div class="form-actions form-wrapper" id="edit-actions">
-				<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+			<div class="form-item six columns form-type-textfield form-item-number">
+				<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="edit-number" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
+				<!-- <div class="messages error">This field is required!</div> -->
 			</div>
+		</div>
 
+		<input type="hidden" name="form_build_id" value="">
+		<input type="hidden" name="form_id" value="contact_site_form">
+
+		<div class="form-actions form-wrapper" id="edit-actions">
+			<input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
 		</div>
 	</form>
 </div></textarea> </form> </div>
@@ -127,46 +119,48 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <h2>Search</h2>
 
 					<div class="row l-margin-bd">
-						<div class="four columns no-gutters">
-							<form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-						    	<div><div class="container-inline">
-									<h2 class="visuallyhidden">Search form</h2>
-							    	<div class="form-item form-type-textfield form-item-search-block-form">
-							  			<label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-							 			<input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
-									</div>
-									<div class="form-actions form-wrapper" id="edit-actions">
-										<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-									</div>
-									<input type="hidden" name="form_build_id" value="">
-									<input type="hidden" name="form_id" value="search_block_form">
-								</div></div>
-							</form>
-						</div>
-					</div>
-
-					<div class="l-container">
-						<p class=""><em>Within header element:</em></p>
-						<header class="l-padding-ad">
-							<div class="row">
-								<div class="four columns">
-									<form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-								    	<div><div class="container-inline">
-											<h2 class="visuallyhidden">Search form</h2>
-									    	<div class="form-item form-type-textfield form-item-search-block-form">
-									  			<label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-									 			<input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
-											</div>
-											<div class="form-actions form-wrapper" id="edit-actions">
-												<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-											</div>
-											<input type="hidden" name="form_build_id" value="">
-											<input type="hidden" name="form_id" value="search_block_form">
-										</div></div>
-									</form>
-								</div>
+						<div class="four columns">
+							<div class="l-padding-ad l-margin-td">
+								<form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+							    	<div><div class="container-inline">
+										<h2 class="visuallyhidden">Search form</h2>
+								    	<div class="form-item form-type-textfield form-item-search-block-form">
+								  			<label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+								 			<input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+										</div>
+										<div class="form-actions form-wrapper" id="edit-actions">
+											<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+										</div>
+										<input type="hidden" name="form_build_id" value="">
+										<input type="hidden" name="form_id" value="search_block_form">
+									</div></div>
+								</form>
 							</div>
-						</header>
+						</div>
+
+						<div class="four columns">
+							<p class="fine-print l-margin-vn"><em>Within header element:</em></p>
+							<header class="l-padding-ad">
+								<form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
+							    	<div><div class="container-inline">
+										<h2 class="visuallyhidden">Search form</h2>
+								    	<div class="form-item form-type-textfield form-item-search-block-form">
+								  			<label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+								 			<input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="I need to..." size="15" maxlength="128" class="form-text">
+										</div>
+										<div class="form-actions form-wrapper" id="edit-actions">
+											<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+										</div>
+										<input type="hidden" name="form_build_id" value="">
+										<input type="hidden" name="form_id" value="search_block_form">
+									</div></div>
+								</form>
+							</header>
+						</div>
+
+						<div class="eight columns l-margin-tm">
+							<p>Form code output may differ in Drupal; all search form styles extend from <strong>.form--search</strong> which is assigned to the &lt;form&gt; tag.</p>
+						</div>
 					</div>
 
 				</div>
@@ -174,7 +168,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				<!-- I Want to... -->
 				<div id="i-want-to" class="l-container l-margin-vm">
 					<h2>I Want To...</h2>
-					<div class="row form__steps">
+					<div class="row form__steps l-margin-tm">
 						<div class="three columns form__step">
 							<div class="border l-padding-ad">
 								<p class="form__step--header">1. I need to...</p>

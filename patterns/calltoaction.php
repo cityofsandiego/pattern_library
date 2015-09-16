@@ -56,6 +56,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    		</div>
 				    	</div>
 				    </div>
+
+				    <div class="row l-margin-td">
+				    	<div class="twelve columns">
+				    		<div class="code__examples">
+                                <form><textarea class="pattern" id="cta-code-3" name="code">
+<div class="main__message">
+	<h1 class="main__heading">Movies in the Park</h1>
+	<p class="main__content">Come join the fun with this year’s Summer Movies in the Park! <a href="">Learn More</a></p>
+</div></textarea></form> </div>
+				    	</div>
+				    </div>
 			    </div>
 
 				<!-- Alert -->

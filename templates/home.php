@@ -44,7 +44,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
                         <div class="hero--credit">
                             <div class="l-constrained--desktop">
-                                <p>Image by Cindy Devin</p>
+                                <p>Image by Devin Cindy</p>
                             </div>
                         </div>
                     </li>

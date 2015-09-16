@@ -4,6 +4,7 @@
         <script src="/assets/dist/js/plugins.js"></script>
         <script src="/assets/dist/js/main.js"></script>
 
+        <?php if ($current_page == "charts-graphs.php"){ ?>
         <script>
             var ctx = document.getElementById("myChart").getContext("2d");
             var myNewChart = new Chart(ctx).Bar(data);
@@ -14,6 +15,7 @@
             var ctx = document.getElementById("pieChart").getContext("2d");
             var myPieChart = new Chart(ctx).Pie(pieData);
         </script>
+        <?php } ?>
 
         <script>
           var els = document.querySelectorAll("textarea.pattern");
