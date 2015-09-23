@@ -407,6 +407,10 @@
                     $("#form__step-2 fieldset").height(function (index, height) {
                         return (height + difference);
                     });
+
+                    $("#form__step-3 fieldset").height(function (index, height) {
+                        return (height + difference);
+                    });
                 }
             }
 

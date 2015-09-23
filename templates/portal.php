@@ -66,34 +66,62 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
 
                         <div class="twelve columns">
                             <div class="steps__wrap">
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">1</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+                            </div>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">2</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+                                    </div>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">3</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
+                                    </div>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">4</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
+                                    </div>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Permits & Approvals:</span> <span class="step__desc">Do you have everything you need to obtain your permits & approvals?</span></h4>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">5</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Permits & Approvals:</span> <span class="step__desc">Do you have everything you need to obtain your permits & approvals?</span></h4>
+                                    </div>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Inspection</span>: <span class="step__desc">Are you ready for an inspection?</span></h4>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">6</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Inspection</span>: <span class="step__desc">Are you ready for an inspection?</span></h4>
                                 </div>
-                                <div class="step__single">
-                                    <i class="icon-dribbble"></i>
-                                    <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
+                            </div>
+                                <div class="step__single row">
+                                    <div class="one columns no-gutters">
+                                        <p class="icon--circle">7</p>
+                                    </div>
+                                    <div class="eleven columns-no-gutters">
+                                        <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>

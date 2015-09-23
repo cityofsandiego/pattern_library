@@ -429,10 +429,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<fieldset>
 										<legend class="form__step--header"><span class="icon--circle">3</span> Pay Your Ticket:</legend>
 										<div class="row">
-											<div class="seven columns">
+											<div class="twelve columns">
 												<p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
-											</div>
-											<div class="five columns">
 												<a href="" class="btn">Pay Ticket Now</a>
 											</div>
 										</div>
