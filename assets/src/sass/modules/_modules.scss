@@ -1422,14 +1422,16 @@ header {
     text-align: center;
     border: 1px solid $chateau;
 
-    i {
-        display: inline-block;
-        color: white;
-        background-color: $cerulean;
-        border-radius: 50%;
-        padding: .5em;
-        vertical-align: -webkit-baseline-middle;
-        @include rem( 'font-size', 20px );
+    .icon--circle {
+        width: 2em;
+        height: 2em;
+        text-align: center;
+        margin: 0;
+        line-height: 2em;
+        padding: 0;
+        vertical-align: middle;
+        font-family: $font-family-secondary;
+        @include rem( 'font-size', 22px );
     }
 
     @include mq( $from: mobile-wide ) {
@@ -2012,9 +2014,32 @@ main[role="main"],
         background: transparent;
     }
 
+    .toggle-icon {
+        position: static;
+        margin: 0;
+        line-height: 1;
+        width: auto;
+        height: 1em;
+        vertical-align: middle;
+        @include rem( 'font-size', 32px );
+
+        &:after,
+        &:before {
+            display: none;
+        }
+
+        i {
+            line-height: 1;
+        }
+    }
+
     .is-open {
         .accordion__heading {
             border-bottom: none;
+        }
+
+        .toggle-icon {
+            @include transform(rotate( 180deg ));
         }
     }
 

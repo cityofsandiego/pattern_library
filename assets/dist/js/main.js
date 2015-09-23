@@ -17,6 +17,7 @@
                 this.menu();
                 this.tabs();
             },
+
             vals : {
                 $window : $(window)
             },
@@ -90,7 +91,7 @@
 
                     var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
 
-                    var image = '../assets/dist/img/map-marker.png';
+                    var image = '../assets/dist/img/marker.png';
 
                     var marker = new google.maps.Marker({
                       position: myLatlng,
@@ -161,18 +162,15 @@
             },
 
             slides : function() {
-                $('.hero__slides--img').flexslider({
-                    // controlNav: false,
-                    smoothHeight: true,
-                    directionNav: false,
-                    controlNav: false
-                });
- 
-                $('.hero__slides--content').flexslider({
+
+                $('#hero__slides--primary').flexslider({
                     controlNav: false,
-                    // sync: $(".hero__slides--img"),
-                    // controlsContainer: $(".custom-controls-container"),
-                    customDirectionNav: $(".custom-navigation a")
+                    customDirectionNav: $(".custom-navigation--primary a")
+                });
+
+                $('#hero__slides--secondary').flexslider({
+                    controlNav: false,
+                    customDirectionNav: $(".custom-navigation--secondary a")
                 });
 
                 $('.flexslider--default').flexslider({
@@ -198,7 +196,17 @@
                     slideshow: false,
                     smoothHeight: true,
                     directionNav: false,
-                    controlNav: "thumbnails"
+                    controlNav: false,
+                    sync: ".flexslider--thumbnails-nav"
+                });
+
+                $('.flexslider--thumbnails-nav').flexslider({
+                    animation: "slide",
+                    itemWidth: 150,
+                    itemMargin: 5,
+                    slideshow: false,
+                    controlNav: false,
+                    asNavFor: ".flexslider--thumbnails"
                 });
 
                 // Mobile only slider

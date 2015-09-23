@@ -83,7 +83,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <div class="row">
                         <div class="four columns">
-                            <p>Cards can be used universally throughout the site for multiple content purposes. Cards don't require all content as in the examples above, but modifier classes exist for specific content uses (titles, dates, buttons).</p>
+                            <p>Cards can be used universally throughout the site for multiple content purposes.</p>
                         </div>
 
                         <div class="eight columns">

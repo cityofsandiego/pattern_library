@@ -70,14 +70,35 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container l-margin-bm">
                         <div class="flexslider flexslider--thumbnails">
                             <ul class="slides">
-                                <li data-thumb="../assets/dist/img/slide2-thumb.jpg">
+                                <li>
                                     <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li data-thumb="../assets/dist/img/slide1-thumb.jpg">
+                                <li>
                                     <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li data-thumb="../assets/dist/img/slide4-thumb.jpg">
+                                <li>
                                     <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li data-thumb="../assets/dist/img/slide3-thumb.jpg">
+                                <li>
                                     <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                    <li>
+                                    <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li>
+                                    <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li>
+                                    <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li>
+                                    <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                            </ul>
+                        </div>
+
+                        <div class="flexslider flexslider--thumbnails-nav">
+                            <ul class="slides">
+                                <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
+                                <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -86,24 +107,45 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="row">
                             <div class="twelve columns">
                                 <p class="l-margin-bn"><strong>Notes</strong></p>
-                                <p>Use <strong>.flexslider--thumbnails</strong> for thumbnail navigation instead of direction arrows. Thumbnails of each image will need to be generated, and added as a <em>data-thumb</em> attribute to each &lt;li&gt;.</p>
+                                <p>For a gallery with thumbnail navigation, an additional <strong>.flexslider</strong> will need to be created with the thumbnail images. This list requires a <strong>.flexslider--thumbnails-nav</strong> that acts as navigation to <strong>.flexslider--thumbnails</strong>.</p>
 
                                 <div class="code__examples">
                                     <form><textarea class="pattern" id="img-code-thumbs" name="code">
 <div class="flex-container l-margin-bm">
     <div class="flexslider flexslider--thumbnails">
         <ul class="slides">
-            <li data-thumb="../assets/dist/img/slide2-thumb.jpg">
+            <li>
                 <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li data-thumb="../assets/dist/img/slide1-thumb.jpg">
+            <li>
                 <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li data-thumb="../assets/dist/img/slide4-thumb.jpg">
+            <li>
                 <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li data-thumb="../assets/dist/img/slide3-thumb.jpg">
+            <li>
+                <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                <li>
+                <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li>
+                <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li>
+                <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li>
                 <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
         </ul>
     </div>
-</div></textarea> </form> </div>
+
+    <div class="flexslider flexslider--thumbnails-nav">
+        <ul class="slides">
+            <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
+            <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
+        </ul>
+    </div>
+</div> </textarea> </form> </div>
                             </div>
                         </div>
                     </div>

@@ -583,18 +583,21 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                             <div id="tab-item-2" class="tabs__bucket">
                                                 <h3 class="tab-header l-margin-vn">Tab Content 2</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                             </div>
 
                                             <div id="tab-item-3" class="tabs__bucket">
                                                 <a id="docs-downloads"></a>
                                                 <h3 class="tab-header l-margin-vn">Tab Content 3</h3>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             </div>
 
                                             <div id="tab-item-4" class="tabs__bucket">
                                                 <h3 class="tab-header l-margin-vn">Tab Content 4</h3>
                                                 <div class="l-container">
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                                 </div>
                                             </div>
 
@@ -794,26 +797,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="row l-margin-bm">
                             <header class="l-padding-ad">
                                 <div class="row">
-                                    <div class="two columns no-gutters l-padding-ts">
+                                    <div class="three columns l-padding-ts">
                                         <a href="/" class="logo">
                                             <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                                             <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                                         </a>
                                     </div>
 
-                                    <div class="ten columns">
-                                        <div class="menu-btn menu-btn--open">
-                                            <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
-                                        </div>
-
-                                        <nav id="nav" class="main__navigation--portal nav-primary">
-                                            <ul>
-                                                <li><a href="">Nav Item 1 and More</a></li>
-                                                <li><a href="">Nav Item 2 Wrapping</a></li>
-                                                <li><a href="">Nav Item 3</a></li>
-                                                <li><a href=""><i class="icon-home"></i> Logout</a></li>
-                                            </ul>
-                                        </nav>
+                                    <div class="nine columns">
+                                        <h1 class="text-white heading--trim">Application Headline</h1>
+                                        <p class="text-white l-margin-bn">Supporting Content Sub Headline</p>
                                     </div>
                                 </div>
                             </header>
@@ -825,26 +818,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="nav-code-dashboard" name="code">
 <header class="l-padding-ad">
     <div class="row">
-        <div class="two columns no-gutters l-padding-ts">
+        <div class="three columns l-padding-ts">
             <a href="/" class="logo">
                 <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                 <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
             </a>
         </div>
 
-        <div class="ten columns">
-            <div class="menu-btn menu-btn--open">
-                <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
-            </div>
-
-            <nav id="nav" class="main__navigation--portal nav-primary">
-                <ul>
-                    <li><a href="">Nav Item 1 and More</a></li>
-                    <li><a href="">Nav Item 2 Wrapping</a></li>
-                    <li><a href="">Nav Item 3</a></li>
-                    <li><a href=""><i class="icon-home"></i> Logout</a></li>
-                </ul>
-            </nav>
+        <div class="nine columns">
+            <h1 class="text-white heading--trim">Application Headline</h1>
+            <p class="text-white l-margin-bn">Supporting Content Sub Headline</p>
         </div>
     </div>
 </header></textarea> </form> </div>

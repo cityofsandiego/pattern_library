@@ -177,8 +177,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<!-- Table - Accordion -->
 						<div class="row l-margin-tm">
 							<div class="twelve columns accordions js-toggle-accordion table__accordion">
-								<div class="accordion">
-									<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"></span></a></p>
+								<div class="accordion current is-open">
+									<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"><i class="icon-chevron-down"></i></span></a></p>
 									<div class="accordion__drawer row">
 										<table class="twelve columns">
 											<tr class="hide-on-desktop">
@@ -239,7 +239,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="char-code-2" name="code">
 <div class="accordions js-toggle-accordion table__accordion">
 	<div class="accordion">
-		<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"></span></a></p>
+		<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"><i class="icon-chevron-down"></i></span></a></p>
 		<div class="accordion__drawer row">
 			<table class="twelve columns">
 				<tr class="hide-on-desktop">

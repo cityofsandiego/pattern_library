@@ -10,13 +10,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
                 <h1>Hero</h1>
-				<!-- <div class="sub__nav--library">
-				    <ul class="sub__nav">
-				        <li><a href="#graphic">Graphic</a></li>
-				        <li><a href="#text">Text</a></li>
-				        <li><a href="#alert">Alerts</a></li>
-				    </ul>
-				</div> -->
 
 			    <div class="l-container">
 			    	<div class="row">
@@ -34,7 +27,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    <div class="hero__slides fine-print">
 				            <div class="l-constrained row">
 				                <div class="six columns hero__content">
-				                    <div class="hero__slides--content">
+				                    <div id="hero__slides--primary" class="hero__slides--content">
 				                        <ul class="slides">
 				                            <li>
 				                                <h1>Event permits</h1>
@@ -50,7 +43,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                        </ul>
 				                    </div>
 
-				                    <div class="custom-navigation">
+				                    <div class="custom-navigation custom-navigation--primary">
 				                      <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
 				                      <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
 				                    </div>
@@ -65,15 +58,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                        <div class="hero--credit">
 				                            <div class="l-constrained">
 				                                <p>Image by Cindy Devin</p>
-				                            </div>
-				                        </div>
-				                    </li>
-
-				                    <li>
-				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
-				                        <div class="hero--credit">
-				                            <div class="l-constrained">
-				                                <p>Image by Devin Cindy</p>
 				                            </div>
 				                        </div>
 				                    </li>
@@ -92,7 +76,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="hero__slides">
     <div class="l-constrained row">
         <div class="six columns hero__content">
-            <div class="hero__slides--content">
+            <div id="hero__slides--primary" class="hero__slides--content">
                 <ul class="slides">
                     <li>
                         <h1>Event permits</h1>
@@ -108,7 +92,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </ul>
             </div>
 
-            <div class="custom-navigation">
+            <div class="custom-navigation custom-navigation--primary">
               <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
               <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
             </div>
@@ -126,19 +110,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
-                <div class="hero--credit">
-                    <div class="l-constrained">
-                        <p>Image by Devin Cindy</p>
-                    </div>
-                </div>
-            </li>
         </ul>
     </div>
-</div>
-</textarea> </form> </div>
+</div> </textarea> </form> </div>
 			        	</div>
 			        </div>
 			    </div>
@@ -151,7 +125,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    <div class="hero__slides hero__slides--secondary fine-print">
 				            <div class="l-constrained--site row">
 				                <div class="twelve columns hero__content">
-				                    <div class="hero__slides--content">
+				                    <div id="hero__slides--secondary" class="hero__slides--content">
 				                        <ul class="slides">
 				                            <li>
 				                                <p class="main__content">Get your event permit today.</p>
@@ -165,9 +139,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                        </ul>
 				                    </div>
 
-				                    <div class="custom-navigation">
-				                      <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
-				                      <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
+				                    <div class="custom-navigation custom-navigation--secondary">
+				                        <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+				                        <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
 				                    </div>
 				                </div>
 
@@ -183,18 +157,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                            </div>
 				                        </div>
 				                    </li>
-
-				                    <li>
-				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
-				                        <div class="hero--credit">
-				                            <div class="l-constrained">
-				                                <p>Image by Cindy Devin</p>
-				                            </div>
-				                        </div>
-				                    </li>
 				                </ul>
 				            </div>
-
 				        </div>
 			        </div>
 
@@ -205,10 +169,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 			        	<div class="six columns">
 			        		<div class="code__examples">
                                 <form><textarea class="pattern" id="char-code-slides-sec" name="code">
-<div class="hero__slides hero__slides--secondary">
+<div class="hero__slides hero__slides--secondary fine-print">
     <div class="l-constrained--site row">
         <div class="twelve columns hero__content">
-            <div class="hero__slides--content">
+            <div id="hero__slides--secondary" class="hero__slides--content">
                 <ul class="slides">
                     <li>
                         <p class="main__content">Get your event permit today.</p>
@@ -222,7 +186,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </ul>
             </div>
 
-            <div class="custom-controls-container"></div>
+            <div class="custom-navigation custom-navigation--secondary">
+                <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+                <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
+            </div>
         </div>
 
     </div>
@@ -237,18 +204,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
                 </div>
             </li>
-
-            <li>
-                <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
-                <div class="hero--credit">
-                    <div class="l-constrained">
-                        <p>Image by Cindy Devin</p>
-                    </div>
-                </div>
-            </li>
         </ul>
     </div>
-
 </div></textarea> </form> </div>
 			        	</div>
 			        </div>

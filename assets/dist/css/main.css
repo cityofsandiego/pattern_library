@@ -608,7 +608,6 @@ address {
 .l-constrained--desktop,
 .l-container,
 .row,
-.tabs-list,
 .comment-list article.comment-body footer,
 .form--newsletter {
     /*
@@ -635,7 +634,6 @@ address {
 .l-constrained--desktop:before,
 .l-container:before,
 .row:before,
-.tabs-list:before,
 .comment-list article.comment-body footer:before,
 .form--newsletter:before,
 .l-constrained:after,
@@ -644,7 +642,6 @@ address {
 .l-constrained--desktop:after,
 .l-container:after,
 .row:after,
-.tabs-list:after,
 .comment-list article.comment-body footer:after,
 .form--newsletter:after {
     /* 1 */
@@ -659,7 +656,6 @@ address {
 .l-constrained--desktop:after,
 .l-container:after,
 .row:after,
-.tabs-list:after,
 .comment-list article.comment-body footer:after,
 .form--newsletter:after {
     clear: both;
@@ -4673,12 +4669,6 @@ header nav a {
     margin: 0 .5em;
 }
 
-@media screen and (min-width: 60em) {
-    .sub-navigation li {
-        max-width: 200px;
-    }
-}
-
 .sub-navigation a {
     font-weight: bold;
     text-decoration: none;
@@ -4794,12 +4784,12 @@ header nav a {
     }
     .main__navigation--portal li:last-child {
         float: right;
+        margin-top: .25em;
     }
 }
 
 @media screen and (min-width: 60em) {
     .main__navigation--portal li {
-        width: 12.5%;
         margin: 0 .75em;
     }
 }
@@ -5428,15 +5418,17 @@ header nav a {
     background: white;
 }
 
-.step__single i {
-    font-size: 20px;
-    font-size: 1.25rem;
-    display: inline-block;
-    padding: .5em;
-    vertical-align: -webkit-baseline-middle;
-    color: white;
-    border-radius: 50%;
-    background-color: #0098db;
+.step__single .icon--circle {
+    font-family: "Merriweather", serif;
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 2em;
+    width: 2em;
+    height: 2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -6318,6 +6310,9 @@ figure figcaption {
    ========================================================================== */
 .tabs-list {
     z-index: 1;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     border: 1px solid #dde2e5;
     background: #f6f6f6;
 }
@@ -6328,35 +6323,21 @@ figure figcaption {
     }
 }
 
-@media screen and (min-width: 20em) and (max-width: 29.99em) {
-    .tabs-list {
-        border-bottom: none;
-    }
-}
-
 .tabs-list__item {
     font-size: 14px;
     font-size: .875rem;
     z-index: 3;
     display: inline-block;
+    margin: 0;
     cursor: pointer;
     border-top: none;
     background: white;
-}
-
-@media screen and (max-width: 37.49em) {
-    .tabs-list__item {
-        width: 100%;
-        border-top: 1px solid #dde2e5;
-    }
 }
 
 @media screen and (min-width: 20em) and (max-width: 29.99em) {
     .tabs-list__item {
         float: left;
         width: 50%;
-        border-right: 1px solid #dde2e5;
-        border-bottom: 1px solid #dde2e5;
     }
     .tabs-list__item:last-child {
         border-right: none;
@@ -6398,6 +6379,7 @@ figure figcaption {
 .tabs-list__link {
     display: block;
     padding: .5em;
+    text-decoration: none;
     color: #a7abad;
     border-top: 3px solid transparent;
 }
@@ -6406,11 +6388,6 @@ figure figcaption {
 .is-active .tabs-list__link {
     color: #37424a;
     border-color: #0098db;
-}
-
-.tabs-list__link.tab-order-now {
-    font-weight: 600;
-    color: #0098db;
 }
 
 .tabs-container {
@@ -9965,6 +9942,28 @@ html[xmlns] .flexslider .slides {
         -webkit-transform: none !important;
                 transform: none !important;
     }
+}
+
+.flexslider--thumbnails-nav li img {
+    padding: 5px;
+    -webkit-transition: opacity .25s ease;
+       -moz-transition: opacity .25s ease;
+        -ms-transition: opacity .25s ease;
+         -o-transition: opacity .25s ease;
+            transition: opacity .25s ease;
+    opacity: .7;
+}
+
+.flexslider--thumbnails-nav li:hover {
+    cursor: pointer;
+}
+
+.flexslider--thumbnails-nav li:hover img {
+    opacity: 1;
+}
+
+.flexslider--thumbnails-nav li.flex-active-slide img {
+    opacity: 1;
 }
 
 /* ====================================================================================================================
