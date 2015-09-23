@@ -10,7 +10,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
                     <ul>
-                        <li class="has__dropdown"><a href="">Leisure <i class="icon-arrow-down"></i><span>Explore, Play + Events</span></a>
+                        <li class="has__dropdown"><a href="">Leisure <i class="icon-chevron-down"></i><span>Explore, Play + Events</span></a>
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
                                     <div class="twelve columns">
@@ -78,7 +78,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </li>
 
-                        <li class="has__dropdown"><a href="">Resident Resources <i class="icon-arrow-down"></i><span>Pay Now, Parking + Help</span></a>
+                        <li class="has__dropdown"><a href="">Resident Resources <i class="icon-chevron-down"></i><span>Pay Now, Parking + Help</span></a>
 
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
@@ -125,7 +125,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </li>
 
-                        <li class="has__dropdown"><a href="">Doing Business <i class="icon-arrow-down"></i><span>Fix, Plan + Build</span></a>
+                        <li class="has__dropdown"><a href="">Doing Business <i class="icon-chevron-down"></i><span>Fix, Plan + Build</span></a>
 
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
@@ -174,7 +174,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                         <li><a href="">Library <span>Learn, Connect + Grow</span></a></li>
 
-                        <li class="has__dropdown"><a href="">Public Safety <i class="icon-arrow-down"></i><span>Police, Fire + Lifeguards</span></a>
+                        <li class="has__dropdown"><a href="">Public Safety <i class="icon-chevron-down"></i><span>Police, Fire + Lifeguards</span></a>
 
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
@@ -242,7 +242,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </li>
 
-                        <li class="has__dropdown"><a href="">City Hall <i class="icon-arrow-down"></i><span>Governing, News + Initiatives</span></a>
+                        <li class="has__dropdown"><a href="">City Hall <i class="icon-chevron-down"></i><span>Governing, News + Initiatives</span></a>
 
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
@@ -326,6 +326,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="#tabs">Tabs</a></li>
                         <li><a href="#sidebar">Sidebar</a></li>
                         <li><a href="#micro">Mircosite</a></li>
+                        <li><a href="#department">Department</a></li>
                         <li><a href="#quicknav">Quick Nav</a></li>
                         <li><a href="#quicklinks">Quicklinks</a></li>
                         <li><a href="#social">Social</a></li>
@@ -347,7 +348,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="nav-code-1" name="code">
 <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
     <ul>
-        <li class="has__dropdown"><a href="">Leisure <i class="icon-arrow-down"></i><span>Explore, Play + Events</span></a>
+        <li class="has__dropdown"><a href="">Leisure <i class="icon-chevron-down"></i><span>Explore, Play + Events</span></a>
             <div class="dropdown">
                 <div class="row hide-on-mobile nav__heading">
                     <div class="twelve columns">
@@ -558,11 +559,97 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <!-- Tabs -->
                     <div id="tabs" class="l-container l-margin-vm">
                         <h2>Tabs</h2>
-                        <nav>
-                            <ul>
-                                
-                            </ul>
-                        </nav>
+                        
+                        <div class="l-container">
+                            <div class="row">
+                                <div class="twelve columns">
+                                    <div class="tabs">
+                                        <ul class="tabs-list js-tabs-list">
+                                            <li class="tabs-list__item is-active"><a class="tabs-list__link" href="#tab-item-1">Tab Content 1</a></li>
+                                            <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-2">Tab Content 2</a></li>
+                                            <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-3">Tab Content 3</a></li>
+                                            <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-4">Tab Content 4</a></li>
+                                        </ul>
+
+                                        <div class="tabs-container">
+
+                                            <div id="tab-item-1" class="tabs__bucket is-active">
+                                                <h3 class="tab-header l-margin-vn">Tab Content 1</h3>
+                                                <div class="l-container">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+
+                                            <div id="tab-item-2" class="tabs__bucket">
+                                                <h3 class="tab-header l-margin-vn">Tab Content 2</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+
+                                            <div id="tab-item-3" class="tabs__bucket">
+                                                <a id="docs-downloads"></a>
+                                                <h3 class="tab-header l-margin-vn">Tab Content 3</h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            </div>
+
+                                            <div id="tab-item-4" class="tabs__bucket">
+                                                <h3 class="tab-header l-margin-vn">Tab Content 4</h3>
+                                                <div class="l-container">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row l-margin-td">
+                                <div class="twelve columns">
+                                    <p>Wrap both the navigational &lt;ul&gt; and <strong>.tabs-container</strong> within a <strong>.tabs</strong>. Give the first navigation link and content block <strong>.is-active</strong> to initiate an active content block on page load. Give each tab content block a unique ID, and target the navigation links appropriately. The controlling javascript for tabs is located in <em>main.js</em>.</p>
+                                    <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-tabs" name="code">
+<div class="tabs">
+    <ul class="tabs-list js-tabs-list">
+        <li class="tabs-list__item is-active"><a class="tabs-list__link" href="#tab-item-1">Tab Content 1</a></li>
+        <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-2">Tab Content 2</a></li>
+        <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-3">Tab Content 3</a></li>
+        <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-4">Tab Content 4</a></li>
+    </ul>
+
+    <div class="tabs-container">
+
+        <div id="tab-item-1" class="tabs__bucket is-active">
+            <h3 class="tab-header l-margin-vn">Tab Content 1</h3>
+            <div class="l-container">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+        <div id="tab-item-2" class="tabs__bucket">
+            <h3 class="tab-header l-margin-vn">Tab Content 2</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div id="tab-item-3" class="tabs__bucket">
+            <a id="docs-downloads"></a>
+            <h3 class="tab-header l-margin-vn">Tab Content 3</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div id="tab-item-4" class="tabs__bucket">
+            <h3 class="tab-header l-margin-vn">Tab Content 4</h3>
+            <div class="l-container">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </div>
+
+</div></textarea> </form> </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Sidebar -->
@@ -662,6 +749,110 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                         </div>
                         
+                    </div>
+
+                    <!-- Department -->
+                    <div id="department" class="l-container l-margin-vm">
+                        <h2>Department</h2>
+                        <div class="row l-margin-bm">
+                            <nav class="sub-navigation sub-navigation--department">
+                                <ul>
+                                    <li><a href="">Nav Item 1</a></li>
+                                    <li><a href="">Nav Item 2 with Wrapping Title</a></li>
+                                    <li><a href="">Nav Item 3</a></li>
+                                    <li><a href="">Nav Item 4</a></li>
+                                    <li><a href="">Nav Item 5</a></li>
+                                    <li><a href="">Nav Item 6 with Wrapping Title</a></li>
+                                    <li><a href="">Nav Item 7 More Content Here</a></li>
+                                    <li><a href="">Nav Item 8 for a Big Department</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="row">
+                            <div class="seven columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-dept" name="code">
+<nav class="sub-navigation sub-navigation--department">
+    <ul>
+        <li><a href="">Nav Item 1</a></li>
+        <li><a href="">Nav Item 2 with Wrapping Title</a></li>
+        <li><a href="">Nav Item 3</a></li>
+        <li><a href="">Nav Item 4</a></li>
+    </ul>
+</nav></textarea> </form> </div>
+                            </div>
+                            <div class="five columns">
+                                <p>This navigation is meant to be placed above a main navigation area, directly within a &lt;header&gt; element.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard -->
+                    <div id="Dashboard" class="l-container l-margin-vm">
+                        <h2>App Dashboard</h2>
+                        <div class="row l-margin-bm">
+                            <header class="l-padding-ad">
+                                <div class="row">
+                                    <div class="two columns no-gutters l-padding-ts">
+                                        <a href="/" class="logo">
+                                            <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
+                                            <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
+                                        </a>
+                                    </div>
+
+                                    <div class="ten columns">
+                                        <div class="menu-btn menu-btn--open">
+                                            <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
+                                        </div>
+
+                                        <nav id="nav" class="main__navigation--portal nav-primary">
+                                            <ul>
+                                                <li><a href="">Nav Item 1 and More</a></li>
+                                                <li><a href="">Nav Item 2 Wrapping</a></li>
+                                                <li><a href="">Nav Item 3</a></li>
+                                                <li><a href=""><i class="icon-home"></i> Logout</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
+
+                        <div class="row">
+                            <div class="twelve columns">
+                                <div class="code__examples">
+                                <form><textarea class="pattern" id="nav-code-dashboard" name="code">
+<header class="l-padding-ad">
+    <div class="row">
+        <div class="two columns no-gutters l-padding-ts">
+            <a href="/" class="logo">
+                <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
+                <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
+            </a>
+        </div>
+
+        <div class="ten columns">
+            <div class="menu-btn menu-btn--open">
+                <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
+            </div>
+
+            <nav id="nav" class="main__navigation--portal nav-primary">
+                <ul>
+                    <li><a href="">Nav Item 1 and More</a></li>
+                    <li><a href="">Nav Item 2 Wrapping</a></li>
+                    <li><a href="">Nav Item 3</a></li>
+                    <li><a href=""><i class="icon-home"></i> Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header></textarea> </form> </div>
+                            </div>
+                            <div class="twelve columns l-margin-td">
+                                <p>This navigation uses the modifier class <strong>.main__navigation--portal</strong></p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- Quick nav (top-nav-strip) -->
@@ -774,7 +965,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 </div>
 
                                 <div class="twelve columns l-margin-tm">
-                                    <p>A list of social icons simply needs to be given the <strong>.socials</strong> class. The icons are a separate font from the default icon font, Linearicons, and thus have different classes.</p>
+                                    <p>A list of social icons simply needs to be given the <strong>.socials</strong> class.</p>
                                 </div>
                             </div>
                         </div>

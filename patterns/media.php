@@ -31,47 +31,90 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Image gallery -->
                 <div id="gallery" class="l-container l-margin-vm">
                     <h2>Image Gallery</h2>
+                    <p class="subheading">Default Usage</p>
 
                     <div class="flex-container l-margin-bm">
-                        <div class="flexslider">
+                        <div class="flexslider flexslider--default">
                             <ul class="slides">
-                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li><img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
                             </ul>
                         </div>
                     </div>
-                </div>
 
-                <div class="l-container l-margin-vm">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
-                    <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>. For default usage, wrap a <strong>ul.slides</strong> within a containing <strong>.flexslider</strong>. Each li contains a single slide. Additional configuration can be found through Flexslider documentation.</p>
+                    <div class="l-container l-margin-vm">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <p class="l-margin-bn"><strong>Notes</strong></p>
+                                <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>. For default usage, wrap a <strong>ul.slides</strong> within a containing <strong>.flexslider</strong>. Each &lt;li&gt; contains a single slide. Add a &lt;p&gt; with <strong>.flex-caption</strong> for descriptions. Additional configuration can be found through Flexslider documentation.</p>
 
-                    <div class="code__examples">
-                                <form><textarea class="pattern" id="img-code-1" name="code">
+                                <div class="code__examples">
+                                    <form><textarea class="pattern" id="img-code-1" name="code">
 <div class="flex-container l-margin-bm">
-    <div class="flexslider">
+    <div class="flexslider flexslider--default">
         <ul class="slides">
-            <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
-            <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
-            <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
-            <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
+            <li><img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
         </ul>
     </div>
 </div></textarea> </form> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="subheading">Thumbnail Navigation</p>
+                    <div class="flex-container l-margin-bm">
+                        <div class="flexslider flexslider--thumbnails">
+                            <ul class="slides">
+                                <li data-thumb="../assets/dist/img/slide2-thumb.jpg">
+                                    <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li data-thumb="../assets/dist/img/slide1-thumb.jpg">
+                                    <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li data-thumb="../assets/dist/img/slide4-thumb.jpg">
+                                    <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                                <li data-thumb="../assets/dist/img/slide3-thumb.jpg">
+                                    <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="l-container l-margin-vm">
+                        <div class="row">
+                            <div class="twelve columns">
+                                <p class="l-margin-bn"><strong>Notes</strong></p>
+                                <p>Use <strong>.flexslider--thumbnails</strong> for thumbnail navigation instead of direction arrows. Thumbnails of each image will need to be generated, and added as a <em>data-thumb</em> attribute to each &lt;li&gt;.</p>
+
+                                <div class="code__examples">
+                                    <form><textarea class="pattern" id="img-code-thumbs" name="code">
+<div class="flex-container l-margin-bm">
+    <div class="flexslider flexslider--thumbnails">
+        <ul class="slides">
+            <li data-thumb="../assets/dist/img/slide2-thumb.jpg">
+                <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li data-thumb="../assets/dist/img/slide1-thumb.jpg">
+                <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li data-thumb="../assets/dist/img/slide4-thumb.jpg">
+                <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li data-thumb="../assets/dist/img/slide3-thumb.jpg">
+                <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+        </ul>
+    </div>
+</div></textarea> </form> </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Mobile Image gallery -->
                 <div id="mobile-gallery" class="l-container l-margin-vm">
-                    <h2>Mobile Image Gallery</h2>
+                    <p class="subheading">Mobile Gallery</p>
 
                     <div class="flex-container">
-                        <div class="mobile-flexslider">
+                        <div class="flexslider flexslider--mobile">
                             <ul class="slides">
                                 <li><img src="http://lorempixel.com/350/200/city/" alt=""  class="l-margin-vd"></li>
                                 <li><img src="http://lorempixel.com/350/200/food/" alt=""  class="l-margin-vd"></li>
@@ -86,12 +129,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <p class="l-margin-bn"><strong>Notes</strong></p>
-                    <p>Additionally, use the <strong>.mobile-flexslider</strong> class (instead of .flexslider) to enable Flexslider on mobile viewports (480px and below). Preview this on a small screen to see it enabled.</p>
+                    <p>Additionally, use the <strong>.flexslider--mobile</strong> class to enable Flexslider on mobile viewports (480px and below). Preview this on a small screen to see it enabled.</p>
 
                     <div class="code__examples">
                                 <form><textarea class="pattern" id="img-code-2" name="code">
 <div class="flex-container">
-    <div class="mobile-flexslider">
+    <div class="flexslider flexslider--mobile">
         <ul class="slides">
             <li><img src="http://lorempixel.com/350/200/city/" alt=""  class="l-margin-vd"></li>
             <li><img src="http://lorempixel.com/350/200/food/" alt=""  class="l-margin-vd"></li>

@@ -39,7 +39,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                    <a href="" class="btn card__btn">Read More</a>
+                                    <a href="" class="">Read More</a>
                                 </div>
                             </div>
                         </div>
@@ -57,13 +57,13 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                     </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                    <a href="" class="btn card__btn">Read More</a>
+                                    <a href="" class="btn btn--outline card__btn">Read More</a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card__wrap">
-                            <div class="card">
+                            <div class="card border l-padding-bn">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
@@ -82,8 +82,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 
                     <div class="row">
-                        <div class="twelve columns">
+                        <div class="four columns">
                             <p>Cards can be used universally throughout the site for multiple content purposes. Cards don't require all content as in the examples above, but modifier classes exist for specific content uses (titles, dates, buttons).</p>
+                        </div>
+
+                        <div class="eight columns">
+                            <ul class="l-margin-tn">
+                                <li>Images should be wrapped in a <strong>.card__image</strong> element.</li>
+                                <li>All content (title, post info, description, and link) should be wrapped in a <strong>.card__content</strong> element.</li>
+                                <li>Title should be given <strong>.card__headline</strong>.</li>
+                                <li>Post information should be wrapped in <strong>.card__meta</strong>, with <strong>.card__date</strong> and <strong>.card__author</strong> inside, if applicable.</li>
+                                <li>If a button link is used, it should have class <strong>.card__btn</strong>.</li>
+                            </ul>
                         </div>
 
                         <div class="twelve columns">

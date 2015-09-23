@@ -212,19 +212,19 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <div class="two columns">
                             </div>
                             <div class="sm-six two columns">
-                                <i class="lnr lnr-leaf lnr-xl lnr-circle"></i>
+                                <i class="icon-leaf icon--xl icon--circle"></i>
                                 <h6>Label</h6>
                             </div>
                             <div class="sm-six two columns">
-                                <i class="lnr lnr-cloud lnr-xl lnr-circle"></i>
+                                <i class="icon-cloud icon--xl icon--circle"></i>
                                 <h6>Label</h6>
                             </div>
                             <div class="sm-six two columns">
-                                <i class="lnr lnr-pencil lnr-xl lnr-circle"></i>
+                                <i class="icon-pencil icon--xl icon--circle"></i>
                                 <h6>Label</h6>
                             </div>
                             <div class="sm-six two columns">
-                                <i class="lnr lnr-magic-wand lnr-xl lnr-circle"></i>
+                                <i class="icon-magic-wand icon--xl icon--circle"></i>
                                 <h6>Label</h6>
                             </div>
                             <div class="two columns">
@@ -248,7 +248,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Surf Cam [video feed]</p></a>
+                                            <p class="card__headline"><a href="">Surf Cam [video feed]</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -259,7 +259,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Summer Recreation Programs</p></a>
+                                            <p class="card__headline"><a href="">Summer Recreation Programs</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -270,7 +270,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                         </div>
                                         <div class="card__content">
-                                            <a href=""><p class="card__headline">Junior Life Guard Programs</p></a>
+                                            <p class="card__headline"><a href="">Junior Life Guard Programs</a></p>
                                         </div>
                                     </div>
                                 </li>
@@ -286,16 +286,16 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
                         <div class="row l-margin-bm">
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-leaf"></i> Parks + Rec <i class="lnr lnr-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Parks + Rec <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-sun"></i> Lifeguards <i class="lnr lnr-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-sun"></i> Lifeguards <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-home"></i> Neighborhoods <i class="lnr lnr-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-home"></i> Neighborhoods <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-map"></i> Council Districts <i class="lnr lnr-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-map"></i> Council Districts <i class="icon-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>

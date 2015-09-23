@@ -18,6 +18,7 @@
         <li><a class="<?php if ($current_page == "list-teaser.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/list-teaser.php'; ?>">List Teaser</a></li>
         <li><a class="<?php if ($current_page == "comments.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/comments.php'; ?>">Comment Thread</a></li>
         <li><a class="<?php if ($current_page == "charts-graphs.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/charts-graphs.php'; ?>">Charts/Graphs</a></li>
+        <li><a class="<?php if ($current_page == "calendar.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/calendar.php'; ?>">Calendar</a></li>
         <li><a class="<?php if ($current_page == "helpers.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/helpers.php'; ?>">Helpers</a></li>
     </ul>
 </nav>

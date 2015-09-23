@@ -141,26 +141,26 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
             <div class="l-constrained row l-padding-td l-padding-bd">
 
-                <div class="three columns no-gutters">
+                <div class="two columns no-gutters">
                     <a href="/" class="logo">
                         <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                         <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                     </a>
                 </div>
 
-                <div class="nine columns">
+                <div class="ten columns">
                     <div class="menu-btn menu-btn--open">
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
                     <nav id="nav" class="main__navigation--portal nav-primary">
                         <ul>
-                            <li><a href="">Nav Item 1</a></li>
-                            <li><a href="">Nav Item 2</a></li>
+                            <li><a href="">Nav Item 1 and More and More</a></li>
+                            <li><a href="">Nav Item 2 with Wrapping Title</a></li>
                             <li><a href="">Nav Item 3</a></li>
                             <li><a href="">Nav Item 4</a></li>
                             <li><a href="">Nav Item 5</a></li>
-                            <li class="pull-right"><a href=""><i class="lnr lnr-home"></i> Logout</a></li>
+                            <li><a href=""><i class="icon-home"></i> Logout</a></li>
                         </ul>
                     </nav>
                 </div>

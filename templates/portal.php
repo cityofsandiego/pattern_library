@@ -117,19 +117,19 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="lnr lnr-arrow-down lnr-outline"></i> Download</a>
+                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
                                 </div>
 
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="lnr lnr-arrow-down lnr-outline"></i> Download</a>
+                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
                                 </div>
 
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="lnr lnr-arrow-down lnr-outline"></i> Download</a>
+                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
                                 </div>
 
                             </div>

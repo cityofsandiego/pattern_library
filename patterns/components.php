@@ -128,21 +128,37 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div id="steps" class="l-container l-margin-vm">
                     <h2>Steps (1-10)</h2>
                     <div class="steps__wrap">
-                        <div class="step__single">
-                            <i class="lnr lnr-pencil"></i>
-                            <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
+                        <div class="step__single row">
+                            <div class="one columns no-gutters">
+                                <i class="icon-pencil"></i>
+                            </div>
+                            <div class="eleven columns no-gutters">
+                                <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span> <span class="step__num">1</span></h4>
+                            </div>
                         </div>
-                        <div class="step__single">
-                            <i class="lnr lnr-cloud-download"></i>
-                            <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+                        <div class="step__single row">
+                            <div class="one columns no-gutters">
+                                <i class="icon-cloud-download"></i>
+                            </div>
+                            <div class="eleven columns no-gutters">
+                                <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span> <span class="step__num">2</span></h4>
+                            </div>
                         </div>
-                        <div class="step__single">
-                            <i class="lnr lnr-cog"></i>
-                            <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
+                        <div class="step__single row">
+                            <div class="one columns no-gutters">
+                                <i class="icon-cog"></i>
+                            </div>
+                            <div class="eleven columns no-gutters">
+                                <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span> <span class="step__num">3</span></h4>
+                            </div>
                         </div>
-                        <div class="step__single">
-                            <i class="lnr lnr-star"></i>
-                            <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
+                        <div class="step__single row">
+                            <div class="one columns no-gutters">
+                                <i class="icon-star"></i>
+                            </div>
+                            <div class="eleven columns no-gutters">
+                                <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes? <span class="step__num">4</span></span></h4>
+                            </div>
                         </div>
                     </div>
 
@@ -151,13 +167,21 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="code__examples">
                                 <form><textarea class="pattern" id="comp-code-steps" name="code">
 <div class="steps__wrap">
-    <div class="step__single">
-        <i class="lnr lnr-star-half"></i>
-        <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
+    <div class="step__single row">
+        <div class="one columns no-gutters">
+            <i class="icon-pencil"></i>
+        </div>
+        <div class="eleven columns no-gutters">
+            <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span> <span class="step__num">1</span></h4>
+        </div>
     </div>
-    <div class="step__single">
-        <i class="lnr lnr-star"></i>
-        <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+    <div class="step__single row">
+        <div class="one columns no-gutters">
+            <i class="icon-cloud-download"></i>
+        </div>
+        <div class="eleven columns no-gutters">
+            <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span> <span class="step__num">2</span></h4>
+        </div>
     </div>
 </div></textarea> </form> </div>
                         </div>
@@ -175,7 +199,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                         <div class="three columns">
                             <div class="card--weather">
-                                <i class="lnr lnr-sun"></i>
+                                <i class="icon-sun"></i>
                                 <p class="temperature"><span class="degrees">73</span>&deg;</p>
                                 <p><strong>San Diego <br> Weather</strong></p>
                             </div>
@@ -185,7 +209,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="code__examples">
 <form><textarea class="pattern" id="comp-code-weather" name="code">
 <div class="card--weather">
-    <i class="lnr lnr-sun"></i>
+    <i class="icon-sun"></i>
     <p class="temperature"><span class="degrees">73</span>&deg;</p>
     <p><strong>San Diego <br> Weather</strong></p>
 </div>
@@ -202,14 +226,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="three columns">
                             <p>What's this?
                                 <span class="tooltip__wrap">
-                                    <i class="lnr lnr-question-circle"></i>
+                                    <i class="icon-question-circle"></i>
                                     <span class="tooltip tooltip--bottom">Bottom Tooltip Content</span>
                                 </span>
                             </p>
 
                             <p>
                             <span class="tooltip__wrap">
-                                <i class="lnr lnr-question-circle"></i>
+                                <i class="icon-question-circle"></i>
                                 <span class="tooltip tooltip--left">Left Tooltip Content</span>
                             </span>
                             What's this?</p>
@@ -219,7 +243,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="comp-code-3" name="code">
 <p>
     <span class="tooltip__wrap">
-        <i class="lnr lnr-question-circle"></i>
+        <i class="icon-question-circle"></i>
         <span class="tooltip tooltip--left">Left Tooltip Content</span>
     </span>
     What's this?

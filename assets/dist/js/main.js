@@ -7,11 +7,15 @@
             init : function() {
                 this.utils.init();
                 this.modal();
-                this.slides();
                 this.maps();
+                this.slides();
                 this.buttons();
+                this.close();
                 this.accordion();
                 this.search();
+                this.close();
+                this.menu();
+                this.tabs();
             },
             vals : {
                 $window : $(window)
@@ -118,14 +122,14 @@
 
                 var eventImage = {
                     url    : '../assets/dist/img/event-marker.png',
-                    size   : new google.maps.Size(14,16),
+                    size   : new google.maps.Size(13,19),
                     origin : new google.maps.Point(0,0),
                     anchor : new google.maps.Point(0,0)
                 };
 
                 var attractionImage = {
                     url    : '../assets/dist/img/attraction-marker.png',
-                    size   : new google.maps.Size(14,16),
+                    size   : new google.maps.Size(13,19),
                     origin : new google.maps.Point(0,0),
                     anchor : new google.maps.Point(0,0)
                 };
@@ -165,29 +169,46 @@
                 });
  
                 $('.hero__slides--content').flexslider({
-                    // controlNav: false
-                    sync: $(".hero__slides--img"),
-                    controlsContainer: $(".custom-controls-container"),
+                    controlNav: false,
+                    // sync: $(".hero__slides--img"),
+                    // controlsContainer: $(".custom-controls-container"),
                     customDirectionNav: $(".custom-navigation a")
                 });
 
-                $('.flexslider').flexslider({
-                    selector: ".slides > li",
+                $('.flexslider--default').flexslider({
                     animation: "slide",
-                    controlNav: true,
-                    directionNav: false,
                     slideshow: false,
-                    smoothHeight: true
+                    smoothHeight: true,
+                    start: function(slider) {
+                        var count = $('.total-slides').text(slider.count);
+                    },
+                    after: function(slider) {
+                        $('.current-slide').text(slider.currentSlide+1);
+                    }
+                });
+
+                var counter = '<li class="flex-counter"><span class="current-slide">1</span> / <span class="total-slides"></span></li>';
+                $('.flexslider .flex-control-nav').append( counter );
+
+                var index = $('.flexslider li:has(.flex-active)').index('.flex-control-nav li')+1;
+                var total = $('.flexslider .flex-control-nav li').length;
+
+                $('.flexslider--thumbnails').flexslider({
+                    animation: "slide",
+                    slideshow: false,
+                    smoothHeight: true,
+                    directionNav: false,
+                    controlNav: "thumbnails"
                 });
 
                 // Mobile only slider
                 if ( $(window).width() < 480 ) {
 
-                    $(".mobile-flexslider").flexslider({
+                    $(".flexslider--mobile").flexslider({
                         // controlNav: false,
                         animation: "slide",
                         smoothHeight: false,
-                        directionNav: false
+                        directionNav: true
                     });
                 }
 
@@ -293,7 +314,76 @@
                     $(this).toggleClass("search-open");
                     $("#search-block-form").slideToggle();
                 });
-            }
+            },
+
+            close : function() {
+                $(".close-icon").click(function( event ){
+                    event.preventDefault();
+                    $(this).parents(".message").slideUp();
+                });
+            },
+
+            menu : function() {
+
+                function checkWidth() {
+                    var windowsize = $(window).width();
+
+                    if ( windowsize < 768 ) {
+                        $('.main__navigation .has__dropdown > a').click(function( e ){
+                            e.preventDefault();
+                            $(this).toggleClass('open-dropdown');
+                            $(this).next('.dropdown').slideToggle();
+                        });
+                    }
+                }
+
+                checkWidth();
+                $(window).resize(checkWidth);
+
+            },
+
+            tabs : function() {
+
+                /**
+                 * @todo set/check hash in url
+                 *
+                 * remove default is-active classes defined in html
+                 * and set programmatically via js
+                 */
+
+                function change_tab( $this ) {
+                    if( ! $this.hasClass('is-active' ) ) {
+
+                        var $bucket = $( $this.find('.tabs-list__link').attr('href') );
+
+                        // set active tab class
+                        $this.addClass('is-active');
+                        $bucket.addClass('is-active');
+
+                        // remove active class on other items
+                        $('.tabs-list__item').not( $this ).removeClass('is-active');
+                        $('.tabs__bucket').not( $bucket ).removeClass('is-active');
+
+                        // set the hashtag on the url
+                        if ( history.pushState ) {
+                            history.pushState(null, null, '#' + $this.attr('id'));
+                        } else {
+                            location.hash = $this.attr('id');
+                        }
+                    }
+                }
+
+                // set active tab on tab click
+                $('.js-tabs-list').on( 'click', '.tabs-list__link', function( e ) {
+                    e.preventDefault();
+
+                    var $this = $(this).closest('.tabs-list__item');
+
+                    // set active tab
+                    change_tab( $this );
+                });
+
+            },
 
         };
 

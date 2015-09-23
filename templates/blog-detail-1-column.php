@@ -77,7 +77,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <p class=""><strong>15 Comments</strong></p>
                                         </div>
                                         <div class="six columns no-gutters favorites text-right">
-                                            <p class=""><i class="lnr lnr-star"></i> <strong>12</strong></p>
+                                            <p class=""><i class="icon-star"></i> <strong>12</strong></p>
                                         </div>
                                     </div>
                                     <div class="one columns card__image text-center no-gutters">

@@ -4,24 +4,25 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__slides hero__slides--secondary">
             <div class="l-constrained--site row">
-                <div class="twelve columns main__message">
+                <div class="twelve columns hero__content">
                     <div class="hero__slides--content">
                         <ul class="slides">
                             <li>
-                                <p class="main__content">Get your event permit today.</p>
+                                <p>Get your event permit today.</p>
                                 <h1 class="main__heading">Nam et nulla in nulla fermentum. </h1>
-                                <!-- <a href="" class="btn btn--secondary">Apply Now</a> -->
                             </li>
 
                             <li>
-                                <p class="main__content">Lorem ipsum dolor sit amet.</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
                                 <h1 class="main__heading">Nam et nulla in nulla fermentum. </h1>
-                                <!-- <a href="" class="btn btn--secondary">Apply Now</a> -->
                             </li>
                         </ul>
                     </div>
 
-                    <div class="custom-controls-container"></div>
+                    <div class="custom-navigation">
+                      <a href="#" class="flex-prev"><i class="icon-arrow-left"></i></a>
+                      <a href="#" class="flex-next"><i class="icon-arrow-right"></i></a>
+                    </div>
                 </div>
 
             </div>
@@ -31,7 +32,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <li>
                         <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
                         <div class="hero--credit">
-                            <div class="l-constrained--desktop">
+                            <div class="l-constrained">
                                 <p>Image by Cindy Devin</p>
                             </div>
                         </div>
@@ -40,7 +41,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <li>
                         <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
                         <div class="hero--credit">
-                            <div class="l-constrained--desktop">
+                            <div class="l-constrained">
                                 <p>Image by Cindy Devin</p>
                             </div>
                         </div>

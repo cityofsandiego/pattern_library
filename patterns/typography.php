@@ -245,6 +245,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<a class="btn btn--secondary l-margin-vs" href="#">Secondary</a>
 								<a class="btn btn--tertiary l-margin-vs" href="#">Tertiary</a>
 								<a class="btn btn--outline l-margin-vs" href="#">Outline</a>
+								<div class="row l-margin-td">
+									<div class="six columns">
+										<a class="btn btn--primary l-margin-vs" href="#">Primary with Wrapping Content</a>
+									</div>
+								</div>
 							</div>
 							<div class="six columns">
 	                            <p class="l-margin-bn"><strong>Notes</strong></p>
@@ -261,9 +266,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 						<div class="row l-padding-vm">
 							<div class="six columns">
-								<a class="btn btn--primary l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
-								<a class="btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a>
-								<a class="btn btn--tertiary l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a>
+								<a class="btn--icon btn btn--primary btn--icon-right l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
+								<a class="btn--icon btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a>
+								<a class="btn--icon btn btn--tertiary btn--icon-right l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a>
+								<a class="btn--icon btn btn--outline btn--icon-left l-margin-vs" href="#"><i class="icon-arrow-left"></i> Icon Button <i class="icon-twitter"></i></a>
 							</div>
 							<div class="six columns">
 	                            <p>Default modifiers with icons</p>

@@ -51,8 +51,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                    </div>
 
 				                    <div class="custom-navigation">
-				                      <a href="#" class="flex-prev"><i class="lnr lnr-chevron-left"></i></a>
-				                      <a href="#" class="flex-next"><i class="lnr lnr-chevron-right"></i></a>
+				                      <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+				                      <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
 				                    </div>
 				                </div>
 
@@ -63,7 +63,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                    <li>
 				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
 				                        <div class="hero--credit">
-				                            <div class="l-constrained--desktop">
+				                            <div class="l-constrained">
 				                                <p>Image by Cindy Devin</p>
 				                            </div>
 				                        </div>
@@ -72,7 +72,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                    <li>
 				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
 				                        <div class="hero--credit">
-				                            <div class="l-constrained--desktop">
+				                            <div class="l-constrained">
 				                                <p>Image by Devin Cindy</p>
 				                            </div>
 				                        </div>
@@ -109,8 +109,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </div>
 
             <div class="custom-navigation">
-              <a href="#" class="flex-prev"><i class="lnr lnr-chevron-left"></i></a>
-              <a href="#" class="flex-next"><i class="lnr lnr-chevron-right"></i></a>
+              <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+              <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
             </div>
         </div>
 
@@ -121,7 +121,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <li>
                 <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
                 <div class="hero--credit">
-                    <div class="l-constrained--desktop">
+                    <div class="l-constrained">
                         <p>Image by Cindy Devin</p>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <li>
                 <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
                 <div class="hero--credit">
-                    <div class="l-constrained--desktop">
+                    <div class="l-constrained">
                         <p>Image by Devin Cindy</p>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <div class="l-margin-as">
 					    <div class="hero__slides hero__slides--secondary fine-print">
 				            <div class="l-constrained--site row">
-				                <div class="twelve columns main__message">
+				                <div class="twelve columns hero__content">
 				                    <div class="hero__slides--content">
 				                        <ul class="slides">
 				                            <li>
@@ -165,7 +165,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                        </ul>
 				                    </div>
 
-				                    <div class="custom-controls-container"></div>
+				                    <div class="custom-navigation">
+				                      <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+				                      <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
+				                    </div>
 				                </div>
 
 				            </div>
@@ -175,7 +178,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                    <li>
 				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
 				                        <div class="hero--credit">
-				                            <div class="l-constrained--desktop">
+				                            <div class="l-constrained">
 				                                <p>Image by Cindy Devin</p>
 				                            </div>
 				                        </div>
@@ -184,7 +187,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				                    <li>
 				                        <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
 				                        <div class="hero--credit">
-				                            <div class="l-constrained--desktop">
+				                            <div class="l-constrained">
 				                                <p>Image by Cindy Devin</p>
 				                            </div>
 				                        </div>
@@ -204,7 +207,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="char-code-slides-sec" name="code">
 <div class="hero__slides hero__slides--secondary">
     <div class="l-constrained--site row">
-        <div class="twelve columns main__message">
+        <div class="twelve columns hero__content">
             <div class="hero__slides--content">
                 <ul class="slides">
                     <li>
@@ -229,7 +232,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <li>
                 <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
                 <div class="hero--credit">
-                    <div class="l-constrained--desktop">
+                    <div class="l-constrained">
                         <p>Image by Cindy Devin</p>
                     </div>
                 </div>
@@ -238,7 +241,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <li>
                 <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-2.jpg');"></div>
                 <div class="hero--credit">
-                    <div class="l-constrained--desktop">
+                    <div class="l-constrained">
                         <p>Image by Cindy Devin</p>
                     </div>
                 </div>

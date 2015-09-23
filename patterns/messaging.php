@@ -16,9 +16,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <h2>Success</h2>
 				    <div class="message message--success">
 				    	<p>
-				    	<i class="icon-search"></i>
+				    	<i class="icon-flag l-margin-rs"></i>
 				    	<strong>Success!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
-				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
+				    	<a href="" class="pull-right"><i class="icon-cross-circle"></i></a></p>
 				    </div>
 				</div>
 
@@ -26,9 +26,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<h2>Warning</h2>
 					<div class="message message--warning">
 				    	<p>
-				    	<i class="icon-search"></i>
+				    	<i class="icon-flag l-margin-rs"></i>
 				    	<strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
-				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
+				    	<a href="" class="pull-right"><i class="icon-cross-circle"></i></a></p>
 					</div>
 				</div>
 
@@ -36,9 +36,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<h2>Error</h2>
 					<div class="message message--error">
 				    	<p>
-				    	<i class="icon-search"></i>
+				    	<i class="icon-flag l-margin-rs"></i>
 				    	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
-				    	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a></p>
+				    	<a href="" class="pull-right"><i class="icon-cross-circle"></i></a></p>
 					</div>
 				</div>
 
@@ -52,9 +52,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <form><textarea class="pattern" id="comp-code-msg" name="code">
 <div class="message message--error">
 <p>
-	<i class="icon-search"></i>
+	<i class="icon-flag"></i>
 	<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
-	<a href="" class="pull-right"><i class="lnr lnr-cross-circle"></i></a>
+	<a href="" class="pull-right"><i class="icon-cross-circle"></i></a>
 </p>
 </div></textarea> </form> </div>
 						</div>

@@ -76,21 +76,21 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <p>These are the amenities you will find at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Lifeguard</strong></p>
-                                    <p><strong><i class="lnr lnr-drop l-margin-rs lnr-circle"></i> Swimming</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle"></i> Wheelchair Accessible</strong></p>
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Pier</strong></p>
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Fire Pits</strong></p>
-                                    <p><strong><i class="lnr lnr-drop l-margin-rs lnr-circle"></i> Showers</strong></p>
-                                    <p><strong><i class="lnr lnr-bus l-margin-rs lnr-circle"></i> Public Transportation</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Lifeguard</strong></p>
+                                    <p><strong><i class="icon-drop l-margin-rs icon--circle"></i> Swimming</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle"></i> Wheelchair Accessible</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Pier</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Fire Pits</strong></p>
+                                    <p><strong><i class="icon-drop l-margin-rs icon--circle"></i> Showers</strong></p>
+                                    <p><strong><i class="icon-bus l-margin-rs icon--circle"></i> Public Transportation</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Surfing</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle"></i> Disabled Access</strong></p>
-                                    <p><strong><i class="lnr lnr-car l-margin-rs lnr-circle"></i> Parking</strong></p>
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Volleyball</strong></p>
-                                    <p><strong><i class="lnr lnr-users l-margin-rs lnr-circle"></i> Restrooms</strong></p>
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle"></i> Fishing</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Surfing</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle"></i> Disabled Access</strong></p>
+                                    <p><strong><i class="icon-car l-margin-rs icon--circle"></i> Parking</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Volleyball</strong></p>
+                                    <p><strong><i class="icon-users l-margin-rs icon--circle"></i> Restrooms</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Fishing</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -102,14 +102,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <p>These items are restricted at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle lnr-sunshade"></i> Glass Bottles</strong></p>
-                                    <p><strong><i class="lnr lnr-drop l-margin-rs lnr-circle lnr-sunshade"></i> Alcohol</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle lnr-sunshade"></i> Smoking</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--sunshade"></i> Glass Bottles</strong></p>
+                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--sunshade"></i> Alcohol</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--sunshade"></i> Smoking</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="lnr lnr-pencil l-margin-rs lnr-circle lnr-sunshade"></i> Littering</strong></p>
-                                    <p><strong><i class="lnr lnr-wheelchair l-margin-rs lnr-circle lnr-sunshade"></i> Excessive Noise</strong></p>
-                                    <p><strong><i class="lnr lnr-car l-margin-rs lnr-circle lnr-sunshade"></i> Camping</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--sunshade"></i> Littering</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--sunshade"></i> Excessive Noise</strong></p>
+                                    <p><strong><i class="icon-car l-margin-rs icon--circle background--sunshade"></i> Camping</strong></p>
                                 </div>
                             </div>
                         </div>

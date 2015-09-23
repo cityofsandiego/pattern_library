@@ -13,25 +13,56 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Icon Library</h1>
 
                 <div class="l-container l-margin-tm">
-                    <h2>Font Name:</span> Linearicons-Free <small>(Glyphs:&nbsp;170)</small></h2>
 
                     <div class="row l-margin-bm">
-                        <div class="six columns">
-                            <div class="code__examples">
-                                <form><textarea class="pattern" id="icon-code-1" name="code">
-<i class="lnr lnr-home"></i>
-<i class="lnr lnr-magnifier lnr-circle"></i>
-<i class="lnr lnr-chevron-down-circle lnr-circle lnr-xl"></i>
-</textarea> </form> </div>
+                        <div class="twelve columns">
+                            <h2>Font Name:</span> Icomoon <small>(Glyphs:&nbsp;171)</small></h2>
                         </div>
                         <div class="six columns">
-                            <p><strong>Notes</strong></p>
+                            <table class="twelve columns">
+                                <tbody>
+                                <tr>
+                                    <th>Class</th>
+                                    <th>Output</th>
+                                </tr>
+                                <tr>
+                                    <td>.icon--xs</td>
+                                    <td><i class="icon-magnifier icon--xs"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--sm</td>
+                                    <td><i class="icon-magnifier icon--sm"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--md</td>
+                                    <td><i class="icon-magnifier icon--md"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--lg</td>
+                                    <td><i class="icon-magnifier icon--lg"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--xl</td>
+                                    <td><i class="icon-magnifier icon--xl"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--circle</td>
+                                    <td><i class="icon-magnifier icon--circle"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>.icon--outline</td>
+                                    <td><i class="icon-magnifier icon--outline"></i></td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                        <div class="six columns">
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Helper classes are located in linearicons.scss for icon variations. These include:</p>
-                            <ul>
-                                <li><strong>.lnr-xl</strong> for larger font-size</li>
-                                <li><strong>.lnr-circle</strong> for an icon nested in a solid circle</li>
-                                <li><strong>.lnr-outline</strong> for an icon nested in an outlined circle</li>
-                            </ul>
+                            <div class="code__examples">
+                                <form><textarea class="pattern" id="icon-code-1" name="code">
+<i class="icon-home"></i>
+<i class="icon-magnifier icon--circle"></i>
+<i class="icon-pencil icon--outline icon--xl"></i> </textarea> </form> </div>
                         </div>
                     </div>
                 </div>
@@ -41,12 +72,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-home"></i>
-                                <span> lnr-home</span>
+                                <i class="icon-home"></i>
+                                <span>icon-home</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e800" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe800;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe800;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -57,12 +88,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-apartment"></i>
-                                <span> lnr-apartment</span>
+                                <i class="icon-apartment"></i>
+                                <span>icon-apartment</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e801" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe801;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe801;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -73,12 +104,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pencil"></i>
-                                <span> lnr-pencil</span>
+                                <i class="icon-pencil"></i>
+                                <span>icon-pencil</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e802" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe802;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe802;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -89,12 +120,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-magic-wand"></i>
-                                <span> lnr-magic-wand</span>
+                                <i class="icon-magic-wand"></i>
+                                <span>icon-magic-wand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e803" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe803;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe803;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -105,12 +136,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-drop"></i>
-                                <span> lnr-drop</span>
+                                <i class="icon-drop"></i>
+                                <span>icon-drop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e804" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe804;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe804;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -121,12 +152,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-lighter"></i>
-                                <span> lnr-lighter</span>
+                                <i class="icon-lighter"></i>
+                                <span>icon-lighter</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e805" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe805;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe805;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -137,28 +168,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-poop"></i>
-                                <span> lnr-poop</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e806" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe806;" class="unitRight size1of2 talign-right lnr btn" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="poop, toilet" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="lnr lnr-sun"></i>
-                                <span> lnr-sun</span>
+                                <i class="icon-sun"></i>
+                                <span>icon-sun</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e807" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe807;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe807;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -169,12 +184,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-moon"></i>
-                                <span> lnr-moon</span>
+                                <i class="icon-moon"></i>
+                                <span>icon-moon</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e808" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe808;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe808;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -185,12 +200,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cloud"></i>
-                                <span> lnr-cloud</span>
+                                <i class="icon-cloud"></i>
+                                <span>icon-cloud</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e809" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe809;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe809;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -201,12 +216,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cloud-upload"></i>
-                                <span> lnr-cloud-upload</span>
+                                <i class="icon-cloud-upload"></i>
+                                <span>icon-cloud-upload</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -217,12 +232,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cloud-download"></i>
-                                <small>lnr-cloud-download</small>
+                                <i class="icon-cloud-download"></i>
+                                <small>icon-cloud-download</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -233,12 +248,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cloud-sync"></i>
-                                <span> lnr-cloud-sync</span>
+                                <i class="icon-cloud-sync"></i>
+                                <span>icon-cloud-sync</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -249,12 +264,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cloud-check"></i>
-                                <span> lnr-cloud-check</span>
+                                <i class="icon-cloud-check"></i>
+                                <span>icon-cloud-check</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -265,12 +280,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-database"></i>
-                                <span> lnr-database</span>
+                                <i class="icon-database"></i>
+                                <span>icon-database</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -281,12 +296,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-lock"></i>
-                                <span> lnr-lock</span>
+                                <i class="icon-lock"></i>
+                                <span>icon-lock</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -297,12 +312,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cog"></i>
-                                <span> lnr-cog</span>
+                                <i class="icon-cog"></i>
+                                <span>icon-cog</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e810" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe810;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe810;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -313,12 +328,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-trash"></i>
-                                <span> lnr-trash</span>
+                                <i class="icon-trash"></i>
+                                <span>icon-trash</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e811" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe811;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe811;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -329,12 +344,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-dice"></i>
-                                <span> lnr-dice</span>
+                                <i class="icon-dice"></i>
+                                <span>icon-dice</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e812" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe812;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe812;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -345,12 +360,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-heart"></i>
-                                <span> lnr-heart</span>
+                                <i class="icon-heart"></i>
+                                <span>icon-heart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e813" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe813;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe813;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -361,12 +376,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-star"></i>
-                                <span> lnr-star</span>
+                                <i class="icon-star"></i>
+                                <span>icon-star</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e814" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe814;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe814;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -377,12 +392,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-star-half"></i>
-                                <span> lnr-star-half</span>
+                                <i class="icon-star-half"></i>
+                                <span>icon-star-half</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e815" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe815;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe815;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -393,12 +408,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-star-empty"></i>
-                                <span> lnr-star-empty</span>
+                                <i class="icon-star-empty"></i>
+                                <span>icon-star-empty</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e816" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe816;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe816;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -409,12 +424,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-flag"></i>
-                                <span> lnr-flag</span>
+                                <i class="icon-flag"></i>
+                                <span>icon-flag</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e817" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe817;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe817;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -425,12 +440,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-envelope"></i>
-                                <span> lnr-envelope</span>
+                                <i class="icon-envelope"></i>
+                                <span>icon-envelope</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e818" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe818;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe818;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -441,12 +456,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-paperclip"></i>
-                                <span> lnr-paperclip</span>
+                                <i class="icon-paperclip"></i>
+                                <span>icon-paperclip</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e819" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe819;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe819;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -457,12 +472,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-inbox"></i>
-                                <span> lnr-inbox</span>
+                                <i class="icon-inbox"></i>
+                                <span>icon-inbox</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -473,12 +488,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-eye"></i>
-                                <span> lnr-eye</span>
+                                <i class="icon-eye"></i>
+                                <span>icon-eye</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -489,12 +504,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-printer"></i>
-                                <span> lnr-printer</span>
+                                <i class="icon-printer"></i>
+                                <span>icon-printer</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -505,12 +520,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-file-empty"></i>
-                                <span> lnr-file-empty</span>
+                                <i class="icon-file-empty"></i>
+                                <span>icon-file-empty</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -521,12 +536,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-file-add"></i>
-                                <span> lnr-file-add</span>
+                                <i class="icon-file-add"></i>
+                                <span>icon-file-add</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -537,12 +552,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-enter"></i>
-                                <span> lnr-enter</span>
+                                <i class="icon-enter"></i>
+                                <span>icon-enter</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -553,12 +568,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-exit"></i>
-                                <span> lnr-exit</span>
+                                <i class="icon-exit"></i>
+                                <span>icon-exit</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e820" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe820;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe820;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -569,12 +584,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-graduation-hat"></i>
-                                <span> lnr-graduation-hat</span>
+                                <i class="icon-graduation-hat"></i>
+                                <small>icon-graduation-hat</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e821" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe821;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe821;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -585,12 +600,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-license"></i>
-                                <span> lnr-license</span>
+                                <i class="icon-license"></i>
+                                <span>icon-license</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e822" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe822;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe822;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -601,12 +616,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-music-note"></i>
-                                <span> lnr-music-note</span>
+                                <i class="icon-music-note"></i>
+                                <span>icon-music-note</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e823" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe823;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe823;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -617,12 +632,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-film-play"></i>
-                                <span> lnr-film-play</span>
+                                <i class="icon-film-play"></i>
+                                <span>icon-film-play</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e824" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe824;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe824;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -633,12 +648,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-camera-video"></i>
-                                <span> lnr-camera-video</span>
+                                <i class="icon-camera-video"></i>
+                                <span>icon-camera-video</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e825" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe825;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe825;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -649,12 +664,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-camera"></i>
-                                <span> lnr-camera</span>
+                                <i class="icon-camera"></i>
+                                <span>icon-camera</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e826" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe826;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe826;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -665,12 +680,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-picture"></i>
-                                <span> lnr-picture</span>
+                                <i class="icon-picture"></i>
+                                <span>icon-picture</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e827" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe827;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe827;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -681,12 +696,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-book"></i>
-                                <span> lnr-book</span>
+                                <i class="icon-book"></i>
+                                <span>icon-book</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e828" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe828;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe828;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -697,12 +712,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bookmark"></i>
-                                <span> lnr-bookmark</span>
+                                <i class="icon-bookmark"></i>
+                                <span>icon-bookmark</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e829" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe829;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe829;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -713,12 +728,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-user"></i>
-                                <span> lnr-user</span>
+                                <i class="icon-user"></i>
+                                <span>icon-user</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -729,12 +744,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-users"></i>
-                                <span> lnr-users</span>
+                                <i class="icon-users"></i>
+                                <span>icon-users</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -745,12 +760,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-shirt"></i>
-                                <span> lnr-shirt</span>
+                                <i class="icon-shirt"></i>
+                                <span>icon-shirt</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -761,12 +776,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-store"></i>
-                                <span> lnr-store</span>
+                                <i class="icon-store"></i>
+                                <span>icon-store</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -777,12 +792,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cart"></i>
-                                <span> lnr-cart</span>
+                                <i class="icon-cart"></i>
+                                <span>icon-cart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -793,12 +808,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-tag"></i>
-                                <span> lnr-tag</span>
+                                <i class="icon-tag"></i>
+                                <span>icon-tag</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -809,12 +824,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-phone-handset"></i>
-                                <span> lnr-phone-handset</span>
+                                <i class="icon-phone-handset"></i>
+                                <small>icon-phone-handset</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e830" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe830;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe830;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -825,12 +840,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-phone"></i>
-                                <span> lnr-phone</span>
+                                <i class="icon-phone"></i>
+                                <span>icon-phone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e831" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe831;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe831;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -841,12 +856,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pushpin"></i>
-                                <span> lnr-pushpin</span>
+                                <i class="icon-pushpin"></i>
+                                <span>icon-pushpin</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e832" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe832;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe832;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -857,12 +872,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-map-marker"></i>
-                                <span> lnr-map-marker</span>
+                                <i class="icon-map-marker"></i>
+                                <span>icon-map-marker</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e833" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe833;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe833;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -873,12 +888,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-map"></i>
-                                <span> lnr-map</span>
+                                <i class="icon-map"></i>
+                                <span>icon-map</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e834" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe834;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe834;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -889,12 +904,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-location"></i>
-                                <span> lnr-location</span>
+                                <i class="icon-location"></i>
+                                <span>icon-location</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e835" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe835;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe835;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -905,12 +920,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-calendar-full"></i>
-                                <span> lnr-calendar-full</span>
+                                <i class="icon-calendar-full"></i>
+                                <span>icon-calendar-full</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e836" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe836;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe836;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -921,12 +936,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-keyboard"></i>
-                                <span> lnr-keyboard</span>
+                                <i class="icon-keyboard"></i>
+                                <span>icon-keyboard</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e837" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe837;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe837;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -937,12 +952,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-spell-check"></i>
-                                <span> lnr-spell-check</span>
+                                <i class="icon-spell-check"></i>
+                                <span>icon-spell-check</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e838" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe838;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe838;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -953,12 +968,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-screen"></i>
-                                <span> lnr-screen</span>
+                                <i class="icon-screen"></i>
+                                <span>icon-screen</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e839" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe839;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe839;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -969,12 +984,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-smartphone"></i>
-                                <span> lnr-smartphone</span>
+                                <i class="icon-smartphone"></i>
+                                <span>icon-smartphone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -985,12 +1000,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-tablet"></i>
-                                <span> lnr-tablet</span>
+                                <i class="icon-tablet"></i>
+                                <span>icon-tablet</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1001,12 +1016,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-laptop"></i>
-                                <span> lnr-laptop</span>
+                                <i class="icon-laptop"></i>
+                                <span>icon-laptop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1017,12 +1032,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-laptop-phone"></i>
-                                <span> lnr-laptop-phone</span>
+                                <i class="icon-laptop-phone"></i>
+                                <span>icon-laptop-phone</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1033,12 +1048,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-power-switch"></i>
-                                <span> lnr-power-switch</span>
+                                <i class="icon-power-switch"></i>
+                                <span>icon-power-switch</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1049,12 +1064,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bubble"></i>
-                                <span> lnr-bubble</span>
+                                <i class="icon-bubble"></i>
+                                <span>icon-bubble</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1065,12 +1080,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-heart-pulse"></i>
-                                <span> lnr-heart-pulse</span>
+                                <i class="icon-heart-pulse"></i>
+                                <span>icon-heart-pulse</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e840" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe840;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe840;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1081,12 +1096,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-construction"></i>
-                                <span> lnr-construction</span>
+                                <i class="icon-construction"></i>
+                                <span>icon-construction</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e841" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe841;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe841;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1097,12 +1112,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pie-chart"></i>
-                                <span> lnr-pie-chart</span>
+                                <i class="icon-pie-chart"></i>
+                                <span>icon-pie-chart</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e842" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe842;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe842;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1113,12 +1128,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chart-bars"></i>
-                                <span> lnr-chart-bars</span>
+                                <i class="icon-chart-bars"></i>
+                                <span>icon-chart-bars</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e843" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe843;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe843;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1129,12 +1144,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-gift"></i>
-                                <span> lnr-gift</span>
+                                <i class="icon-gift"></i>
+                                <span>icon-gift</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e844" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe844;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe844;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1145,12 +1160,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-diamond"></i>
-                                <span> lnr-diamond</span>
+                                <i class="icon-diamond"></i>
+                                <span>icon-diamond</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e845" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe845;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe845;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1161,12 +1176,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-linearicons"></i>
-                                <span> lnr-linearicons</span>
+                                <i class="icon-linearicons"></i>
+                                <span>icon-linearicons</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e846" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe846;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe846;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1177,12 +1192,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-dinner"></i>
-                                <span> lnr-dinner</span>
+                                <i class="icon-dinner"></i>
+                                <span>icon-dinner</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e847" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe847;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe847;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1193,12 +1208,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-coffee-cup"></i>
-                                <span> lnr-coffee-cup</span>
+                                <i class="icon-coffee-cup"></i>
+                                <span>icon-coffee-cup</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e848" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe848;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe848;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1209,12 +1224,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-leaf"></i>
-                                <span> lnr-leaf</span>
+                                <i class="icon-leaf"></i>
+                                <span>icon-leaf</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e849" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe849;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe849;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1225,12 +1240,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-paw"></i>
-                                <span> lnr-paw</span>
+                                <i class="icon-paw"></i>
+                                <span>icon-paw</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1241,12 +1256,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-rocket"></i>
-                                <span> lnr-rocket</span>
+                                <i class="icon-rocket"></i>
+                                <span>icon-rocket</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1257,12 +1272,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-briefcase"></i>
-                                <span> lnr-briefcase</span>
+                                <i class="icon-briefcase"></i>
+                                <span>icon-briefcase</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1273,12 +1288,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bus"></i>
-                                <span> lnr-bus</span>
+                                <i class="icon-bus"></i>
+                                <span>icon-bus</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1289,12 +1304,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-car"></i>
-                                <span> lnr-car</span>
+                                <i class="icon-car"></i>
+                                <span>icon-car</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1305,12 +1320,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-train"></i>
-                                <span> lnr-train</span>
+                                <i class="icon-train"></i>
+                                <span>icon-train</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1321,12 +1336,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bicycle"></i>
-                                <span> lnr-bicycle</span>
+                                <i class="icon-bicycle"></i>
+                                <span>icon-bicycle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e850" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe850;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe850;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1337,12 +1352,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-wheelchair"></i>
-                                <span> lnr-wheelchair</span>
+                                <i class="icon-wheelchair"></i>
+                                <span>icon-wheelchair</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e851" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe851;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe851;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1353,12 +1368,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-select"></i>
-                                <span> lnr-select</span>
+                                <i class="icon-select"></i>
+                                <span>icon-select</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e852" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe852;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe852;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1369,12 +1384,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-earth"></i>
-                                <span> lnr-earth</span>
+                                <i class="icon-earth"></i>
+                                <span>icon-earth</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e853" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe853;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe853;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1385,12 +1400,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-smile"></i>
-                                <span> lnr-smile</span>
+                                <i class="icon-smile"></i>
+                                <span>icon-smile</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e854" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe854;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe854;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1401,12 +1416,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-sad"></i>
-                                <span> lnr-sad</span>
+                                <i class="icon-sad"></i>
+                                <span>icon-sad</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e855" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe855;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe855;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1417,12 +1432,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-neutral"></i>
-                                <span> lnr-neutral</span>
+                                <i class="icon-neutral"></i>
+                                <span>icon-neutral</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e856" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe856;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe856;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1433,12 +1448,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-mustache"></i>
-                                <span> lnr-mustache</span>
+                                <i class="icon-mustache"></i>
+                                <span>icon-mustache</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e857" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe857;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe857;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1449,12 +1464,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-alarm"></i>
-                                <span> lnr-alarm</span>
+                                <i class="icon-alarm"></i>
+                                <span>icon-alarm</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e858" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe858;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe858;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1465,12 +1480,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bullhorn"></i>
-                                <span> lnr-bullhorn</span>
+                                <i class="icon-bullhorn"></i>
+                                <span>icon-bullhorn</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e859" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe859;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe859;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1481,12 +1496,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-volume-high"></i>
-                                <span> lnr-volume-high</span>
+                                <i class="icon-volume-high"></i>
+                                <span>icon-volume-high</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1497,12 +1512,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-volume-medium"></i>
-                                <small>lnr-volume-medium</small>
+                                <i class="icon-volume-medium"></i>
+                                <small>icon-volume-medium</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1513,12 +1528,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-volume-low"></i>
-                                <span> lnr-volume-low</span>
+                                <i class="icon-volume-low"></i>
+                                <span>icon-volume-low</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1529,12 +1544,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-volume"></i>
-                                <span> lnr-volume</span>
+                                <i class="icon-volume"></i>
+                                <span>icon-volume</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1545,12 +1560,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-mic"></i>
-                                <span> lnr-mic</span>
+                                <i class="icon-mic"></i>
+                                <span>icon-mic</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1561,12 +1576,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-hourglass"></i>
-                                <span> lnr-hourglass</span>
+                                <i class="icon-hourglass"></i>
+                                <span>icon-hourglass</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1577,12 +1592,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-undo"></i>
-                                <span> lnr-undo</span>
+                                <i class="icon-undo"></i>
+                                <span>icon-undo</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e860" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe860;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe860;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1593,12 +1608,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-redo"></i>
-                                <span> lnr-redo</span>
+                                <i class="icon-redo"></i>
+                                <span>icon-redo</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e861" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe861;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe861;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1609,12 +1624,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-sync"></i>
-                                <span> lnr-sync</span>
+                                <i class="icon-sync"></i>
+                                <span>icon-sync</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e862" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe862;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe862;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1625,12 +1640,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-history"></i>
-                                <span> lnr-history</span>
+                                <i class="icon-history"></i>
+                                <span>icon-history</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e863" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe863;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe863;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1641,12 +1656,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-clock"></i>
-                                <span> lnr-clock</span>
+                                <i class="icon-clock"></i>
+                                <span>icon-clock</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e864" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe864;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe864;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1657,12 +1672,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-download"></i>
-                                <span> lnr-download</span>
+                                <i class="icon-download"></i>
+                                <span>icon-download</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e865" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe865;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe865;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1673,12 +1688,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-upload"></i>
-                                <span> lnr-upload</span>
+                                <i class="icon-upload"></i>
+                                <span>icon-upload</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e866" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe866;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe866;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1689,12 +1704,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-enter-down"></i>
-                                <span> lnr-enter-down</span>
+                                <i class="icon-enter-down"></i>
+                                <span>icon-enter-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e867" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe867;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe867;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1705,12 +1720,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-exit-up"></i>
-                                <span> lnr-exit-up</span>
+                                <i class="icon-exit-up"></i>
+                                <span>icon-exit-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e868" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe868;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe868;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1721,12 +1736,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bug"></i>
-                                <span> lnr-bug</span>
+                                <i class="icon-bug"></i>
+                                <span>icon-bug</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e869" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe869;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe869;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1737,12 +1752,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-code"></i>
-                                <span> lnr-code</span>
+                                <i class="icon-code"></i>
+                                <span>icon-code</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1753,12 +1768,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-link"></i>
-                                <span> lnr-link</span>
+                                <i class="icon-link"></i>
+                                <span>icon-link</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1769,12 +1784,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-unlink"></i>
-                                <span> lnr-unlink</span>
+                                <i class="icon-unlink"></i>
+                                <span>icon-unlink</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1785,12 +1800,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-thumbs-up"></i>
-                                <span> lnr-thumbs-up</span>
+                                <i class="icon-thumbs-up"></i>
+                                <span>icon-thumbs-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1801,12 +1816,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-thumbs-down"></i>
-                                <span> lnr-thumbs-down</span>
+                                <i class="icon-thumbs-down"></i>
+                                <span>icon-thumbs-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1817,12 +1832,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-magnifier"></i>
-                                <span> lnr-magnifier</span>
+                                <i class="icon-magnifier"></i>
+                                <span>icon-magnifier</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1833,12 +1848,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cross"></i>
-                                <span> lnr-cross</span>
+                                <i class="icon-cross"></i>
+                                <span>icon-cross</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e870" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe870;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe870;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1849,12 +1864,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-menu"></i>
-                                <span> lnr-menu</span>
+                                <i class="icon-menu"></i>
+                                <span>icon-menu</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e871" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe871;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe871;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1865,12 +1880,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-list"></i>
-                                <span> lnr-list</span>
+                                <i class="icon-list"></i>
+                                <span>icon-list</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e872" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe872;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe872;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1881,12 +1896,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-up"></i>
-                                <span> lnr-chevron-up</span>
+                                <i class="icon-chevron-up"></i>
+                                <span>icon-chevron-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e873" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe873;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe873;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1897,12 +1912,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-down"></i>
-                                <span> lnr-chevron-down</span>
+                                <i class="icon-chevron-down"></i>
+                                <span>icon-chevron-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e874" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe874;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe874;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1913,12 +1928,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-left"></i>
-                                <span> lnr-chevron-left</span>
+                                <i class="icon-chevron-left"></i>
+                                <span>icon-chevron-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e875" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe875;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe875;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1929,12 +1944,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-right"></i>
-                                <span> lnr-chevron-right</span>
+                                <i class="icon-chevron-right"></i>
+                                <span>icon-chevron-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e876" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe876;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe876;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1945,12 +1960,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-up"></i>
-                                <span> lnr-arrow-up</span>
+                                <i class="icon-arrow-up"></i>
+                                <span>icon-arrow-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e877" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe877;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe877;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1961,12 +1976,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-down"></i>
-                                <span> lnr-arrow-down</span>
+                                <i class="icon-arrow-down"></i>
+                                <span>icon-arrow-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e878" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe878;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe878;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1977,12 +1992,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-left"></i>
-                                <span> lnr-arrow-left</span>
+                                <i class="icon-arrow-left"></i>
+                                <span>icon-arrow-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e879" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe879;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe879;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1993,12 +2008,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-right"></i>
-                                <span> lnr-arrow-right</span>
+                                <i class="icon-arrow-right"></i>
+                                <span>icon-arrow-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2009,12 +2024,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-move"></i>
-                                <span> lnr-move</span>
+                                <i class="icon-move"></i>
+                                <span>icon-move</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2025,12 +2040,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-warning"></i>
-                                <span> lnr-warning</span>
+                                <i class="icon-warning"></i>
+                                <span>icon-warning</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2041,12 +2056,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-question-circle"></i>
-                                <span> lnr-question-circle</span>
+                                <i class="icon-question-circle"></i>
+                                <span>icon-question-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2057,12 +2072,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-menu-circle"></i>
-                                <span> lnr-menu-circle</span>
+                                <i class="icon-menu-circle"></i>
+                                <span>icon-menu-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2073,12 +2088,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-checkmark-circle"></i>
-                                <small>lnr-checkmark-circle</small>
+                                <i class="icon-checkmark-circle"></i>
+                                <small>icon-checkmark-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2089,12 +2104,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-cross-circle"></i>
-                                <span> lnr-cross-circle</span>
+                                <i class="icon-cross-circle"></i>
+                                <span>icon-cross-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e880" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe880;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe880;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2105,12 +2120,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-plus-circle"></i>
-                                <span> lnr-plus-circle</span>
+                                <i class="icon-plus-circle"></i>
+                                <span>icon-plus-circle</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e881" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe881;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe881;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2121,12 +2136,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-circle-minus"></i>
-                                <span> lnr-circle-minus</span>
+                                <i class="icon--circle-minus"></i>
+                                <span>icon--circle-minus</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e882" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe882;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe882;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2137,12 +2152,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-up-circle"></i>
-                                <span> lnr-arrow-up-circle</span>
+                                <i class="icon-arrow-up-circle"></i>
+                                <small>icon-arrow-up-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e883" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe883;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe883;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2153,12 +2168,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-down-circle"></i>
-                                <small>lnr-arrow-down-circle</small>
+                                <i class="icon-arrow-down-circle"></i>
+                                <small>icon-arrow-down-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e884" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe884;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe884;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2169,12 +2184,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-left-circle"></i>
-                                <span> lnr-arrow-left-circle</span>
+                                <i class="icon-arrow-left-circle"></i>
+                                <small>icon-arrow-left-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e885" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe885;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe885;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2185,12 +2200,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-arrow-right-circle"></i>
-                                <small>lnr-arrow-right-circle</small>
+                                <i class="icon-arrow-right-circle"></i>
+                                <small>icon-arrow-right-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e886" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe886;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe886;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2201,12 +2216,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-up-circle"></i>
-                                <small>lnr-chevron-up-circle</small>
+                                <i class="icon-chevron-up-circle"></i>
+                                <small>icon-chevron-up-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e887" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe887;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe887;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2217,12 +2232,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-down-circle"></i>
-                                <small> lnr-chevron-down-circle</small>
+                                <i class="icon-chevron-down-circle"></i>
+                                <small>icon-chevron-down-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e888" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe888;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe888;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2233,12 +2248,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-left-circle"></i>
-                                <small> lnr-chevron-left-circle</small>
+                                <i class="icon-chevron-left-circle"></i>
+                                <small>icon-chevron-left-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e889" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe889;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe889;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2249,12 +2264,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-chevron-right-circle"></i>
-                                <small> lnr-chevron-right-circle</small>
+                                <i class="icon-chevron-right-circle"></i>
+                                <small>icon-chevron-right-circle</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2265,12 +2280,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-crop"></i>
-                                <span> lnr-crop</span>
+                                <i class="icon-crop"></i>
+                                <span>icon-crop</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2281,12 +2296,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-frame-expand"></i>
-                                <span> lnr-frame-expand</span>
+                                <i class="icon-frame-expand"></i>
+                                <span>icon-frame-expand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2297,12 +2312,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-frame-contract"></i>
-                                <span> lnr-frame-contract</span>
+                                <i class="icon-frame-contract"></i>
+                                <small>icon-frame-contract</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2313,12 +2328,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-layers"></i>
-                                <span> lnr-layers</span>
+                                <i class="icon-layers"></i>
+                                <span>icon-layers</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2329,12 +2344,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-funnel"></i>
-                                <span> lnr-funnel</span>
+                                <i class="icon-funnel"></i>
+                                <span>icon-funnel</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2345,12 +2360,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-format"></i>
-                                <span> lnr-text-format</span>
+                                <i class="icon-text-format"></i>
+                                <span>icon-text-format</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e890" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe890;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe890;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2361,12 +2376,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-format-remove"></i>
-                                <small> lnr-text-format-remove</small>
+                                <i class="icon-text-format-remove"></i>
+                                <small>icon-text-format-remove</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e891" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe891;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe891;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2377,12 +2392,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-size"></i>
-                                <span> lnr-text-size</span>
+                                <i class="icon-text-size"></i>
+                                <span>icon-text-size</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e892" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe892;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe892;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2393,12 +2408,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-bold"></i>
-                                <span> lnr-bold</span>
+                                <i class="icon-bold"></i>
+                                <span>icon-bold</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e893" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe893;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe893;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2409,12 +2424,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-italic"></i>
-                                <span> lnr-italic</span>
+                                <i class="icon-italic"></i>
+                                <span>icon-italic</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e894" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe894;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe894;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2425,12 +2440,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-underline"></i>
-                                <span> lnr-underline</span>
+                                <i class="icon-underline"></i>
+                                <span>icon-underline</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e895" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe895;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe895;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2441,12 +2456,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-strikethrough"></i>
-                                <span> lnr-strikethrough</span>
+                                <i class="icon-strikethrough"></i>
+                                <span>icon-strikethrough</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e896" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe896;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe896;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2457,12 +2472,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-highlight"></i>
-                                <span> lnr-highlight</span>
+                                <i class="icon-highlight"></i>
+                                <span>icon-highlight</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e897" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe897;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe897;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2473,12 +2488,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-align-left"></i>
-                                <span> lnr-text-align-left</span>
+                                <i class="icon-text-align-left"></i>
+                                <span>icon-text-align-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e898" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe898;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe898;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2489,12 +2504,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-align-center"></i>
-                                <small> lnr-text-align-center</small>
+                                <i class="icon-text-align-center"></i>
+                                <small>icon-text-align-center</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e899" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe899;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe899;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2505,12 +2520,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-align-right"></i>
-                                <span> lnr-text-align-right</span>
+                                <i class="icon-text-align-right"></i>
+                                <span>icon-text-align-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89a;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89a;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2521,12 +2536,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-text-align-justify"></i>
-                                <span> lnr-text-align-justify</span>
+                                <i class="icon-text-align-justify"></i>
+                                <small>icon-text-align-justify</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89b;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89b;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2537,12 +2552,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-line-spacing"></i>
-                                <span> lnr-line-spacing</span>
+                                <i class="icon-line-spacing"></i>
+                                <span>icon-line-spacing</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89c;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89c;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2553,12 +2568,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-indent-increase"></i>
-                                <span> lnr-indent-increase</span>
+                                <i class="icon-indent-increase"></i>
+                                <small>icon-indent-increase</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89d;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89d;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2569,12 +2584,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-indent-decrease"></i>
-                                <small> lnr-indent-decrease</small>
+                                <i class="icon-indent-decrease"></i>
+                                <small>icon-indent-decrease</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89e;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89e;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2585,12 +2600,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pilcrow"></i>
-                                <span> lnr-pilcrow</span>
+                                <i class="icon-pilcrow"></i>
+                                <span>icon-pilcrow</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89f;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89f;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2601,12 +2616,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-direction-ltr"></i>
-                                <span> lnr-direction-ltr</span>
+                                <i class="icon-direction-ltr"></i>
+                                <span>icon-direction-ltr</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a0" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a0;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a0;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2617,12 +2632,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-direction-rtl"></i>
-                                <span> lnr-direction-rtl</span>
+                                <i class="icon-direction-rtl"></i>
+                                <span>icon-direction-rtl</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a1" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a1;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a1;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2633,12 +2648,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-page-break"></i>
-                                <span> lnr-page-break</span>
+                                <i class="icon-page-break"></i>
+                                <span>icon-page-break</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a2" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a2;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a2;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2649,12 +2664,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-sort-alpha-asc"></i>
-                                <span> lnr-sort-alpha-asc</span>
+                                <i class="icon-sort-alpha-asc"></i>
+                                <span>icon-sort-alpha-asc</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a3" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a3;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a3;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2665,12 +2680,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-sort-amount-asc"></i>
-                                <small> lnr-sort-amount-asc</small>
+                                <i class="icon-sort-amount-asc"></i>
+                                <small>icon-sort-amount-asc</small>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a4" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a4;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a4;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2681,12 +2696,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-hand"></i>
-                                <span> lnr-hand</span>
+                                <i class="icon-hand"></i>
+                                <span>icon-hand</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a5" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a5;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a5;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2697,12 +2712,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pointer-up"></i>
-                                <span> lnr-pointer-up</span>
+                                <i class="icon-pointer-up"></i>
+                                <span>icon-pointer-up</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a6" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a6;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a6;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2713,12 +2728,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pointer-right"></i>
-                                <span> lnr-pointer-right</span>
+                                <i class="icon-pointer-right"></i>
+                                <span>icon-pointer-right</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a7" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a7;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a7;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2729,12 +2744,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pointer-down"></i>
-                                <span> lnr-pointer-down</span>
+                                <i class="icon-pointer-down"></i>
+                                <span>icon-pointer-down</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a8" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a8;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a8;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2745,12 +2760,44 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="sm-six three columns">
                         <div class="card border l-padding-ad">
                             <p>
-                                <i class="lnr lnr-pointer-left"></i>
-                                <span> lnr-pointer-left</span>
+                                <i class="icon-pointer-left"></i>
+                                <span>icon-pointer-left</span>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a9" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a9;" class="unitRight size1of2 talign-right lnr btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a9;" class="unitRight size1of2 talign-right icon-btn" />
+                            </fieldset>
+                            <div class="visuallyhidden">
+                                <span>liga: </span>
+                                <input type="text" readonly value="pointer-left, hand5" class="liga unitRight" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="sm-six three columns">
+                        <div class="card border l-padding-ad">
+                            <p>
+                                <i class="icon-close"></i>
+                                <span>icon-close</span>
+                            </p>
+                            <fieldset class="">
+                                <input type="text" readonly value="78" class="unit size1of2" />
+                                <input type="button" maxlength="1" readonly value="&#x78;" class="unitRight size1of2 talign-right icon-btn" />
+                            </fieldset>
+                            <div class="visuallyhidden">
+                                <span>liga: </span>
+                                <input type="text" readonly value="pointer-left, hand5" class="liga unitRight" />
+                            </div>
+                        </div>
+                        </div>
+                        <div class="sm-six three columns">
+                        <div class="card border l-padding-ad">
+                            <p>
+                                <i class="icon-play"></i>
+                                <span>icon-play</span>
+                            </p>
+                            <fieldset class="">
+                                <input type="text" readonly value="e608" class="unit size1of2" />
+                                <input type="button" maxlength="1" readonly value="&#xe608;" class="unitRight size1of2 talign-right icon-btn" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2771,11 +2818,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <input id="testText" type="text" class="phl size1of1 mvl"
                 placeholder="Type some text to test..." value=""/>
                 </label>
-                <div id="testDrive" class="lnr">&nbsp;
+                <div id="testDrive" class="">&nbsp;
                 </div>
             </div> -->
             <!--<![endif]-->
-            <div class="bgc1 clearfix">
+            <div class="twelve columns">
                 <p><a href="https://linearicons.com/" target="_blank">Linearicons</a> provided by <a href="https://perxis.com/" target="_blank">Perxis</a>.</p>
                 <p>Generated by <a href="https://icomoon.io/app">IcoMoon</a></p>
             </div>

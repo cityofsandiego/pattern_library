@@ -22,8 +22,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
 
                     <div class="custom-navigation">
-                      <a href="#" class="flex-prev"><i class="lnr lnr-chevron-left"></i></a>
-                      <a href="#" class="flex-next"><i class="lnr lnr-chevron-right"></i></a>
+                      <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
+                      <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
 
@@ -60,42 +60,65 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <h2>Get It Done</h2>
                         </div>
                     </div>
-                    <div class="row l-margin-vd form__steps">
+                    <div class="row form__steps l-margin-td">
                         <div class="three columns form__step">
-                            <div class="border l-padding-ad">
-                                <p class="form__step--header">1. I need to...</p>
+                            <form action="">
+                                <fieldset>
+                                    <legend class="form__step--header"><span class="icon--circle">1</span> I need to...</legend>
+                                    <div class="field">
+                                      <div class="radio checkbox">
+                                        <input type="radio" name="activity" checked="" tabindex="0" class="">
+                                        <label>Make a Payment</label>
+                                      </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="radio checkbox">
+                                        <input type="radio" name="activity" tabindex="0" class="">
+                                        <label>Check Status</label>
+                                      </div>
+                                    </div>
+                                    <div class="field">
+                                      <div class="radio checkbox">
+                                        <input type="radio" name="activity" tabindex="0" class="">
+                                        <label>Report an Issue</label>
+                                      </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="three columns form__step">
+                            <div class="">
                                 <form action="">
-                                    <input type="radio" name="task" value="payment">Make a Payment<br>
-                                    <input type="radio" name="task" value="status">Check Status<br>
-                                    <input type="radio" name="task" value="issue">Report an Issue
+                                    <fieldset>
+                                        <legend class="form__step--header"><span class="icon--circle">2</span> Payment:</legend>
+                                        <div class="field l-margin-desktop-td">
+                                            <select>
+                                              <option value="">Select One</option>
+                                              <option value="0">Option 1</option>
+                                              <option value="1">Option 2</option>
+                                              <option value="2">Option 3</option>
+                                              <option value="3">Option 4</option>
+                                            </select>
+                                        </div>
+                                    </fieldset>
                                 </form>
                             </div>
                         </div>
-                        <div class="three columns form__step">
-                            <div class="border l-padding-ad text-center">
-                                <p class="form__step--header">2. Make a Payment for:</p>
-                                <div class="l-padding-vd">
-                                    <select>
-                                      <option value="parking">A Parking Ticket</option>
-                                      <option value="electric">Electric Bill</option>
-                                      <option value="tax">Property Tax</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
                         <div class="six columns form__step">
-                            <div class="border l-padding-ad">
-                                <p class="form__step--header">3. Pay Your Ticket:</p>
-                                <div class="form__step--info">
-                                    <div class="row">
-                                        <div class="eight columns">
-                                            <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
+                            <div class="form__step--info">
+                                <form action="">
+                                    <fieldset>
+                                        <legend class="form__step--header"><span class="icon--circle">3</span> Pay Your Ticket:</legend>
+                                        <div class="row">
+                                            <div class="seven columns">
+                                                <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
+                                            </div>
+                                            <div class="five columns">
+                                                <a href="" class="btn btn--wide">Pay Ticket Now</a>
+                                            </div>
                                         </div>
-                                        <div class="four columns">
-                                            <a href="" class="btn">Pay Ticket Now</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </fieldset>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -256,11 +279,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="three columns">
                             <div class="l-container text-center--mobile">
-                                <h2>Notifications <a href="" class="view-more">See all <i class="lnr lnr-chevron-right"></i></a></h2>
+                                <h2>Notifications <a href="" class="view-more">See all <i class="icon-chevron-right"></i></a></h2>
                                 <hr class="hr--dashed">
                                 <div class="card--notification row">
                                     <div class="icon two columns text-center l-margin-mobile-bd">
-                                        <i class="lnr lnr-lighter lnr-sunshade"></i>
+                                        <i class="icon-lighter background--sunshade"></i>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>
@@ -270,7 +293,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <hr class="hr--dashed">
                                 <div class="card--notification row">
                                     <div class="icon two columns text-center l-margin-mobile-bd">
-                                        <i class="lnr lnr-home lnr-science"></i>
+                                        <i class="icon-home background--science"></i>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>
@@ -287,7 +310,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <hr class="hr--dashed">
                                 <div class="card--notification row">
                                     <div class="icon two columns text-center l-margin-mobile-bd">
-                                        <i class="lnr lnr-lighter lnr-sunshade"></i>
+                                        <i class="icon-lighter background--sunshade"></i>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>

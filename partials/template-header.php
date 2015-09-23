@@ -139,14 +139,14 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <div id="inner-wrap">
         <header class="l-padding-mobile-hs">
             <div class="l-constrained row l-padding-td l-padding-desktop-tm">
-                <div class="two columns no-gutters">
+                <div class="two columns no-gutters logo--wrap">
                     <a href="/" class="logo">
                         <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                         <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                     </a>
                 </div>
                 <div class="three columns form--search-wrap">
-                    <a href="" class="search-icon search-icon--open"><i class="lnr lnr-magnifier"></i> </a>
+                    <a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                         <div><div class="container-inline">
                             <h2 class="visuallyhidden">Search form</h2>
@@ -173,7 +173,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                     </div>
 
                     <div class="card--weather">
-                        <i class="lnr lnr-sun"></i>
+                        <i class="icon-sun"></i>
                         <p class="temperature"><span class="degrees">73</span>&deg;</p>
                         <p><strong>San Diego <br> Weather</strong></p>
                     </div>
@@ -188,7 +188,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
                     <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
                         <ul>
-                            <li class="has__dropdown"><a href=""><i class="icon-arrow-right hide-on-desktop"></i>Leisure <i class="icon-arrow-down hide-on-mobile"></i><span>Explore, Play + Events</span></a>
+                            <li class="has__dropdown"><a href=""><i class="icon-chevron-right hide-on-desktop"></i>Leisure <i class="icon-chevron-down hide-on-mobile"></i><span>Explore, Play + Events</span></a>
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">
                                         <div class="twelve columns">
@@ -256,7 +256,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                 </div>
                             </li>
 
-                            <li class="has__dropdown"><a href=""><i class="icon-arrow-right hide-on-desktop"></i>Resident Resources <i class="icon-arrow-down hide-on-mobile"></i><span>Pay Now, Parking + Help</span></a>
+                            <li class="has__dropdown"><a href=""><i class="icon-chevron-right hide-on-desktop"></i>Resident Resources <i class="icon-chevron-down hide-on-mobile"></i><span>Pay Now, Parking + Help</span></a>
 
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">
@@ -303,7 +303,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                 </div>
                             </li>
 
-                            <li class="has__dropdown"><a href=""><i class="icon-arrow-right hide-on-desktop"></i>Doing Business <i class="icon-arrow-down hide-on-mobile"></i><span>Fix, Plan + Build</span></a>
+                            <li class="has__dropdown"><a href=""><i class="icon-chevron-right hide-on-desktop"></i>Doing Business <i class="icon-chevron-down hide-on-mobile"></i><span>Fix, Plan + Build</span></a>
 
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">
@@ -352,7 +352,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
                             <li><a href="">Library <span>Learn, Connect + Grow</span></a></li>
 
-                            <li class="has__dropdown"><a href=""><i class="icon-arrow-right hide-on-desktop"></i>Public Safety <i class="icon-arrow-down hide-on-mobile"></i><span>Police, Fire + Lifeguards</span></a>
+                            <li class="has__dropdown"><a href=""><i class="icon-chevron-right hide-on-desktop"></i>Public Safety <i class="icon-chevron-down hide-on-mobile"></i><span>Police, Fire + Lifeguards</span></a>
 
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">
@@ -420,7 +420,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                 </div>
                             </li>
 
-                            <li class="has__dropdown"><a href=""><i class="icon-arrow-right hide-on-desktop"></i>City Hall <i class="icon-arrow-down hide-on-mobile"></i><span>Governing, News + Initiatives</span></a>
+                            <li class="has__dropdown"><a href=""><i class="icon-chevron-right hide-on-desktop"></i>City Hall <i class="icon-chevron-down hide-on-mobile"></i><span>Governing, News + Initiatives</span></a>
 
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">

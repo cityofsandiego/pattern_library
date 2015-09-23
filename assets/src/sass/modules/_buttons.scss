@@ -11,7 +11,7 @@
     text-align: center;
     position: relative;
     line-height: normal;
-    padding: .75em 2.5em;
+    padding: .75em 2em;
     display: inline-block;
     text-decoration: none;
     background-color: $cerulean;
@@ -26,13 +26,15 @@
    ========================================================================== */
 
 .btn,
-input[type="submit"] {
+input[type="submit"],
+input[type="button"] {
     @extend %btn;
     &:hover {
         color: white;
         text-decoration: none;
         background-color: lighten( $cerulean, 10% );
     }
+
     i {
         padding: .4em;
         font-weight: 600;
@@ -40,7 +42,9 @@ input[type="submit"] {
         background: white;
         border-radius: 50%;
         text-align: center;
+        margin-right: .5em;
     }
+
     .icon-arrow-right,
     .icon-arrow-left {
         padding: 0;
@@ -64,7 +68,7 @@ input[type="submit"] {
 .btn--secondary {
     background-color: $sunshade;
     &:hover {
-        background-color: darken( $sunshade, 10% );
+        background-color: lighten( $sunshade, 10% );
     }
     i {
         color: $sunshade;
@@ -88,15 +92,28 @@ input[type="submit"] {
     &:hover {
         color: white;
         background-color: $cerulean;
+
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        color: white;
+        background: $cerulean;
+    }
+
+    .icon-arrow-left, 
+    .icon-arrow-right {
+        color: $cerulean;
     }
 }
 
 .btn--icon {
     padding: 1em;
-    display: block;
     text-align: left;
 
-    .lnr-chevron-right {
+    .icon-chevron-right {
         padding: 0;
         color: white;
         float: right;
@@ -186,7 +203,8 @@ input[type="submit"] {
 .btn--icon-right {
     position: relative;
 
-    [class^="icon-"], [class*=" icon-"] {
+    .icon-arrow-left,
+    .icon-arrow-right {
         position: absolute;
         top: 50%;
         @include transform( translateY( -50% ) );
@@ -196,16 +214,22 @@ input[type="submit"] {
 .btn--icon-left {
     padding-left: 3.5em;
 
-    [class^="icon-"], [class*=" icon-"] {
+    i {
+        margin: 0 0 0 .5em;
+    }
+
+    .icon-arrow-left {
         left: .75em;
+        margin: 0;
     }
 }
 
 .btn--icon-right {
     padding-right: 3.5em;
 
-    [class^="icon-"], [class*=" icon-"] {
+    .icon-arrow-right {
         right: 0.75em;
+        margin-right: 0;
     }
 }
 

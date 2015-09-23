@@ -13,7 +13,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <h1 class="main__heading">Parks & Recreation</h1>
                                 </div>
 
-                                <nav class="sub-navigation">
+                                <nav class="sub-navigation sub-navigation--department">
                                     <ul class="l-margin-vn">
                                         <li><a href="">Parks & Recreation</a></li>
                                         <li><a href="">General Information</a></li>
@@ -183,13 +183,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <h2>Resources</h2>
                             <div class="row l-margin-bm">
                                 <div class="four columns no-gutters">
-                                    <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-leaf"></i> Parks + Rec <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Parks + Rec <i class="icon-chevron-right"></i></a>
                                 </div>
                                 <div class="four columns">
-                                    <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-leaf"></i> Jobs <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Jobs <i class="icon-chevron-right"></i></a>
                                 </div>
                                 <div class="four columns no-gutters">
-                                    <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="lnr lnr-leaf"></i> Other Golf Courses <i class="lnr lnr-chevron-right"></i></a>
+                                    <a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Other Golf Courses <i class="icon-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -248,7 +248,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <p class="alert__heading">Alerts for July 10</p>
                                     <div class="row alert__content l-margin-bs">
                                         <div class="two columns">
-                                            <i class="icon-search"></i>
+                                            <i class="icon-flag"></i>
                                         </div>
                                         <div class="ten columns">
                                             <p>Hours of Operation: <em>7AM - 10PM</em></p>

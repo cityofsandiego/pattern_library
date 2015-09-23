@@ -4,6 +4,8 @@ global $body_class;
 
 $html_class = ( isset( $html_class ) ) ? $html_class . ' ' : '';
 $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
+
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="<?php echo $html_class; ?>no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
@@ -49,6 +51,16 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <div id="outer-wrap">
     <div id="inner-wrap">
         <header class="library__header">
+            <?php if ($current_page == "messaging.php"){ ?>
+                <div class="message message--warning">
+                    <div class="l-constrained">
+                        <p>
+                        <i class="icon-flag l-margin-rs"></i>
+                        <strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+                        <a href="" class="close-icon pull-right"><i class="icon-cross-circle"></i></a></p>
+                    </div>
+                </div>
+            <?php }?>
             <div class="l-constrained row">
                 <div class="one columns logo l-padding-mobile-hd">
                     <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego - logo" width="163" height="132">
@@ -59,10 +71,6 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                             <li><a href="/">Patterns</a></li>
                             <li><a href="/templates/">Templates</a></li>
                         </ul>
-
-                        <?php
-                          $current_page = basename($_SERVER['PHP_SELF']);
-                        ?>
                     </nav>
                 </div>
             </div>

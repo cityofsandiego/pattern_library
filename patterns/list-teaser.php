@@ -147,6 +147,172 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 				</div>
 
+				<!-- Alert -->
+				<div id="alert" class="l-container l-margin-vm">
+				    <h2>Notifications</h2>
+				    <p class="subheading">Alerts</p>
+				    <div class="row">
+				    	<div class="four columns">
+				    		<div class="alert">
+				    			<p class="alert__heading">Alerts for July 10</p>
+				    			<div class="row alert__content l-margin-bs">
+				    				<div class="two columns">
+				    					<i class="icon-clock"></i>
+				    				</div>
+				    				<div class="ten columns">
+				    					<p>Hours of Operation: <em>7AM - 10PM</em></p>
+				    				</div>
+				    			</div>
+
+				    			<p class="alert__heading">July Notices</p>
+				    			<div class="row alert__content l-margin-bs">
+				    				<div class="two columns">
+				    					<i class="icon-play"></i>
+				    				</div>
+				    				<div class="ten columns">
+				    					<p><strong>New City of San Diego Junior Amateur Championship</strong></p>
+				    					<p>Coming this July, The Junior City Amateur Championship. 2015 City of San Diego Junior Amateur Championship</p>
+				    				</div>
+				    			</div>
+
+				    			<div class="row alert__content l-margin-bs">
+				    				<div class="two columns">
+				    					<i class="icon-play"></i>
+				    				</div>
+				    				<div class="ten columns">
+				    					<p><strong>New City of San Diego Junior Amateur Championship</strong></p>
+				    					<p>Coming this July, The Junior City Amateur Championship. 2015 City of San Diego Junior Amateur Championship</p>
+				    				</div>
+				    			</div>
+
+				    		</div>
+				    	</div>
+				    	<div class="eight columns">
+				    		<p class="l-margin-bn"><strong>Notes</strong></p>
+				    		<p>Each notification is a <strong>.row</strong> with <strong>.alert__content</strong>. Headings are given <strong>.alert__content</strong></p>
+				    		<div class="code__examples">
+                                <form><textarea class="pattern" id="cta-code-2" name="code">
+<div class="alert">
+	<p class="alert__heading">Alerts for July 10</p>
+	<div class="row alert__content l-margin-bs">
+		<div class="two columns">
+			<i class="icon-clock"></i>
+		</div>
+		<div class="ten columns">
+			<p>Hours of Operation: <em>7AM - 10PM</em></p>
+		</div>
+	</div>
+
+	<p class="alert__heading">July Notices</p>
+	<div class="row alert__content l-margin-bs">
+		<div class="two columns">
+			<i class="icon-play"></i>
+		</div>
+		<div class="ten columns">
+			<p><strong>New City of San Diego Junior Amateur Championship</strong></p>
+			<p>Coming this July, The Junior City Amateur Championship. 2015 City of San Diego Junior Amateur Championship</p>
+		</div>
+	</div>
+</div></textarea></form> </div>
+				    	</div>
+				    </div>
+				</div>
+
+				<div class="l-container l-margin-vm">
+					<p class="subheading">Notification List</p>
+					<div class="row">
+						<div class="four columns">
+							<div class="l-container text-center--mobile">
+                                <h2>Notifications <a href="" class="view-more">See all <i class="icon-chevron-right"></i></a></h2>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="icon-lighter background--sunshade"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="icon-home background--science"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>City Closed July 3rd <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="twelve columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Mayor Faulconer Hires New Chief to Lead Infrastructure and Public Works <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                                <hr class="hr--dashed">
+                                <div class="card--notification row">
+                                    <div class="icon two columns text-center l-margin-mobile-bd">
+                                        <i class="icon-lighter background--sunshade"></i>
+                                    </div>
+                                    <div class="ten columns">
+                                        <p class="date">11:32am | June 24, 2015</p>
+                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+                                    </div>
+                                </div>
+                            </div>
+						</div>
+
+						<div class="eight columns">
+							<p class="l-margin-bn"><strong>Notes</strong></p>
+							<p>Notifications use the modifier class <strong>.card__notification</strong> with <strong>.row</strong>. There are no additional modifiers for these - they are simple rows with content. Use <strong>.date</strong> for date information, and separate each notification with a <strong>hr.dashed</strong>.</p>
+							<div class="code__examples">
+                                <form><textarea class="pattern" id="cta-code-notifications" name="code">
+<div class="l-container text-center--mobile">
+    <h2>Notifications <a href="" class="view-more">See all <i class="icon-chevron-right"></i></a></h2>
+    <hr class="hr--dashed">
+    <div class="card--notification row">
+        <div class="icon two columns text-center l-margin-mobile-bd">
+            <i class="icon-lighter background--sunshade"></i>
+        </div>
+        <div class="ten columns">
+            <p class="date">11:32am | June 24, 2015</p>
+            <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+        </div>
+    </div>
+    <hr class="hr--dashed">
+    <div class="card--notification row">
+        <div class="icon two columns text-center l-margin-mobile-bd">
+            <i class="icon-home background--science"></i>
+        </div>
+        <div class="ten columns">
+            <p class="date">11:32am | June 24, 2015</p>
+            <p>City Closed July 3rd <a href="" class="text-small">Learn More</a></p>
+        </div>
+    </div>
+    <hr class="hr--dashed">
+    <div class="card--notification row">
+        <div class="twelve columns">
+            <p class="date">11:32am | June 24, 2015</p>
+            <p>Mayor Faulconer Hires New Chief to Lead Infrastructure and Public Works <a href="" class="text-small">Learn More</a></p>
+        </div>
+    </div>
+    <hr class="hr--dashed">
+    <div class="card--notification row">
+        <div class="icon two columns text-center l-margin-mobile-bd">
+            <i class="icon-lighter background--sunshade"></i>
+        </div>
+        <div class="ten columns">
+            <p class="date">11:32am | June 24, 2015</p>
+            <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+        </div>
+    </div>
+</div></textarea></form> </div>
+						</div>
+					</div>
+				</div>
+
             </div>
         </div>
         
