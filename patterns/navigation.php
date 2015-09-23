@@ -793,7 +793,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <!-- Dashboard -->
                     <div id="Dashboard" class="l-container l-margin-vm">
-                        <h2>App Dashboard</h2>
+                        <h2>Application Header</h2>
                         <div class="row l-margin-bm">
                             <header class="l-padding-ad">
                                 <div class="row">
