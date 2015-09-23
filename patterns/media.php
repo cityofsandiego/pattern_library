@@ -91,14 +91,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                         <div class="flexslider flexslider--thumbnails-nav">
                             <ul class="slides">
-                                <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
+                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
                             </ul>
                         </div>
                     </div>
