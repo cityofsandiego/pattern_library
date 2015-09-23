@@ -110,6 +110,32 @@ input[type="radio"] {
 textarea {
 }
 
+fieldset {
+   padding: 1em;
+   position: relative;
+   border-radius: 4px;
+   border: 1px solid $off-black;
+}
+
+legend {
+   font-weight: 600;
+   padding: 0 .5em;
+   @include rem( 'font-size', 13px );
+   font-family: $font-family-secondary;
+
+   @include mq( tablet, site ) {
+       @include rem( 'font-size', 14px );
+   }
+
+   @include mq( $from: site ) {
+       @include rem( 'font-size', 16px );
+   }
+}
+
+.form-error {
+   color: $error;
+   @include rem( 'font-size', 11px );
+}
 
 .form--general {
 

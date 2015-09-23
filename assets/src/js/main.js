@@ -397,9 +397,12 @@
             },
 
             steps : function() {
+
                 var one = $("#form__step-1 fieldset").height();
 
                 var two = $("#form__step-2 fieldset").height();
+
+                var three = $("#form__step-1").height();
 
                 var difference = one - two;
 
@@ -408,9 +411,7 @@
                         return (height + difference);
                     });
 
-                    $("#form__step-3 fieldset").height(function (index, height) {
-                        return (height + difference);
-                    });
+                    $("#form__step-3 fieldset").css( "min-height", three );
                 }
             }
 
