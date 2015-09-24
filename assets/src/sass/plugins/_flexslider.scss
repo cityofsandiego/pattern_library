@@ -83,6 +83,7 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 
 .flex-viewport {
+  min-height: 100%;
   max-height: 2000px;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;

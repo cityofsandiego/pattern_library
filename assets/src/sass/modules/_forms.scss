@@ -110,13 +110,6 @@ input[type="radio"] {
 textarea {
 }
 
-fieldset {
-   padding: 1em;
-   position: relative;
-   border-radius: 4px;
-   border: 1px solid $off-black;
-}
-
 legend {
    font-weight: 600;
    padding: 0 .5em;
@@ -149,8 +142,6 @@ legend {
         }
 
         .form-submit {
-            @include rem( 'font-size', 21px );
-
             @include mq( $until: mobile-landscape ) {
                 width: 100%;
                 padding: 1.25em 0;
@@ -301,6 +292,16 @@ legend {
 
     &.form--directory {
         margin-bottom: 1em;
+    }
+}
+
+.form-item {
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    @include mq( $from: tablet ) {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 

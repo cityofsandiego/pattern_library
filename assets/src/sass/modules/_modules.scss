@@ -125,6 +125,48 @@ header {
 
 }
 
+.header--app {
+    padding: .75em 0;
+    text-align: center;
+    background-color: $cerulean;
+
+    .row {
+        padding: 0;
+    }
+
+    @include mq( $from: mobile-wide ) {
+        text-align: left;
+
+        .row {
+            padding: 0 .5em;
+            -webkit-align-items: center; /* Safari */
+            align-items:         center;
+            display: block; /* Fallback IE9 */
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            -webkit-justify-content: space-between; /* Safari */
+            justify-content:         space-between;
+            -webkit-flex-wrap: nowrap; /* Safari */
+            flex-wrap:         nowrap;
+        }
+    }
+
+    @include mq( $until: tablet ) {
+        .logo {
+            img {
+                max-width: 155px;
+                margin-bottom: .75em;
+            }
+        }
+    }
+
+    @include mq( $until: mobile-landscape ) {
+        h1 {
+            @include rem( 'font-size', 28px );
+        }
+    }
+}
+
 /* Pattern Library */
 .library__header {
     background: transparent;
@@ -706,12 +748,32 @@ header {
     z-index: 10;
 
     ul {
+        margin: 0;
         padding: .5em;
         list-style: none;
+        overflow: hidden;
+        display: block;
+        display: -webkit-flex; /* Safari */
+        display: flex;
+        -webkit-justify-content: left; /* Safari */
+        justify-content:         left;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
     }
+
     li {
         margin: 0 .5em;
         display: inline-block;
+
+        @include mq( $from: tablet ) {
+            float: left;
+            padding: 0 .25em;
+            max-width: span( 1 of 6 no-gutters );
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
     }
     a {
         color: $chateau;
@@ -730,6 +792,10 @@ header {
 
         a {
             color: $mercury;
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
@@ -795,6 +861,8 @@ header {
 }
 
 .main__navigation--portal {
+    background-color: $cerulean;
+
     @include mq( $until: tablet ) {
         padding: 1em;
     }
@@ -1988,9 +2056,9 @@ main[role="main"],
         padding: 0;
         border: none;
         display: block;
-        @include mq( $until: tablet ) {
-            display: none;
-        }
+        // @include mq( $until: tablet ) {
+        //     display: none;
+        // }
 
     }
 
@@ -2069,7 +2137,6 @@ main[role="main"],
 
         .accordion__heading {
             padding: .75em .5em;
-            border: 1px solid $chateau;
             @include rem( 'font-size', 18px );
         }
     }

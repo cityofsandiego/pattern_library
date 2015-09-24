@@ -166,23 +166,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 
 					<div class="row l-padding-as background-off-white">
-						<table class="twelve columns table__accordion hide-on-mobile l-padding-as l-padding-bn">
-							<tr>
-								<th>Balboa Park Golf Course</th>
-								<th>SD City Resident*</th>
-								<th>Non-Resident</th>
-							</tr>
-						</table>
 
 						<!-- Table - Accordion -->
-						<div class="row l-margin-tm">
+						<div class="row">
 							<div class="twelve columns accordions js-toggle-accordion table__accordion">
 								<div class="accordion current is-open">
 									<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"><i class="icon-chevron-down"></i></span></a></p>
 									<div class="accordion__drawer row">
 										<table class="twelve columns">
-											<tr class="hide-on-desktop">
-												<th></th>
+											<tr>
+												<th><span class="hide-on-mobile">Balboa Park Golf Course</span></th>
 												<th>SD City Resident *</th>
 												<th>Non-Resident</th>
 											</tr>
@@ -238,39 +231,54 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<div class="code__examples">
                                 <form><textarea class="pattern" id="char-code-2" name="code">
 <div class="accordions js-toggle-accordion table__accordion">
-	<div class="accordion">
+	<div class="accordion current is-open">
 		<p class="accordion__heading"><a class="accordion__link" href="#"><strong>Weekday (Monday - Friday)</strong> <span class="toggle-icon"><i class="icon-chevron-down"></i></span></a></p>
 		<div class="accordion__drawer row">
 			<table class="twelve columns">
-				<tr class="hide-on-desktop">
+				<tr>
+					<th><span class="hide-on-mobile">Balboa Park Golf Course</span></th>
 					<th>SD City Resident *</th>
-					<th>Non-Resident</th> </tr>
+					<th>Non-Resident</th>
+				</tr>
 				<tr>
 					<td>18-Hole Course</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>18-Hole Course Senior (62 and over)</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>18-Hole Course Junior (17 and under)</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>18-Hole Course Twilight</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>9-Hole Course</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>9-Hole Course Senior (62 and over)</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 				<tr>
 					<td>9-Hole Course Junior (17 and under)</td>
-					<td>$32</td> </tr>
+					<td>$32</td>
+					<td>$40</td>
+				</tr>
 			</table>
 		</div> <!-- accordion drawer -->
 	</div>
-</div>
-</textarea> </form> </div>
+</div> </textarea> </form> </div>
 						</div>
 					</div>
 

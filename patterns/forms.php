@@ -18,7 +18,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				        <li><a href="#i-want-to">I Want To...</a></li>
 				        <li><a href="#comments">Comments</a></li>
 				        <li><a href="#newsletter">Newsletter Signup</a></li>
-				        <li><a href="#login">Login</a></li>
 				    </ul>
 				</div>
 
@@ -117,7 +116,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									      </div>
 										</div>
 
-										<div class="four columns">
+										<div class="form-item four columns">
 											<p>Checkboxes: <span class="form-required" title="This field is required.">*</span></p>
 								            <div class="field">
 										        <div class="checkbox">
@@ -167,7 +166,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<input type="hidden" name="form_id" value="contact_site_form">
 
 									<div class="row l-margin-td form-actions form-wrapper" id="">
-										<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+										<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--md">
 									</div>
 								</form>
 							</div>
@@ -175,72 +174,60 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div class="twelve columns">
 							<div class="code__examples">
                                 <form><textarea class="pattern" id="form-code-1" name="code">
-<div class="background-off-white border border--dark l-padding-ad border-radius form--general">
+<div class="border border--dark l-padding-ad border-radius form--general">
 	<div class="twelve columns">
 		<h3 class="l-margin-tn text-center">General Sign Up</h3>
 	</div>
-	<form class="" action="" method="post" id="" accept-charset="UTF-8" novalidate="novalidate">
-		<fieldset>
-			<div class="row">
-				<div class="twelve columns l-margin-bd">
-					<legend>General Sign Up Form</legend>
-					<p class="fine-print text-right text-pom"><em>Required</em> <span class="form-required" title="This field is required.">*</span></p>
+	<form class="" action="#" method="post" id="" name="form-1" accept-charset="UTF-8" novalidate="novalidate">
+		<div class="row">
+			<div class="twelve columns l-margin-bd">
+				<div class="message message--error">
+			    	<p> <strong>Error!</strong> Please fill out missing fields below.</p>
 				</div>
-				<div class="form-item six columns form-type-textfield form-item-fname">
-					<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
-				</div>
-
-				<div class="form-item six columns form-type-textfield form-item-lname">
-					<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
-				</div>
+				<p class="fine-print text-right text-pom"><em>Required</em> <span class="form-required" title="This field is required.">*</span></p>
+			</div>
+			<div class="form-item six columns form-type-textfield form-item-fname">
+				<div class="form-error">This field is required!</div>
+				<label for="edit-fname" original-title="" data-title="Enter your name here">First name <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="" name="fname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="First name">
+				
 			</div>
 
-			<div class="row">
-				<div class="form-item six columns form-type-textfield form-item-mail">
-					<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
-				</div>
+			<div class="form-item six columns form-type-textfield form-item-lname">
+				<div class="form-error">This field is required!</div>
+				<label for="edit-lname" original-title="" data-title="Enter your name here">Last name <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="" name="lname" value="" size="60" maxlength="255" class="form-text required error" data-error="1" placeholder="Last name">
+				
+			</div>
+		</div>
 
-				<div class="form-item six columns form-type-textfield form-item-number">
-					<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
-					<input type="text" id="" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
-				</div>
+		<div class="row">
+			<div class="form-item six columns form-type-textfield form-item-mail">
+				<div class="form-error">This field is required!<br>Please enter a valid email address!</div>
+				<label for="edit-mail" original-title="" data-title="Enter your contact Email here">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="" name="mail" value="" size="60" maxlength="255" class="form-text required" placeholder="Email">
 			</div>
 
-			<div class="row">
-				<div class="form-item twelve columns form-type-textarea">
-					<label for="edit-mail" original-title="" data-title="Comments">Comments</label>
-					<textarea name="message" id="" cols="30" rows="10">Comments</ textarea>
-				</div>
-			</div>
+			<div class="form-item six columns form-type-textfield form-item-number">
 
-			<div class="row">
-				<div class="form-item four columns form-type-radio">
-					<div class="grouped fields">
-						<p>Radio buttons: <span class="form-required" title="This field is required.">*</span></p>
-				        <div class="field">
-				          <div class="radio checkbox">
-				            <label for="parks">
-				            <input type="radio" id="parks" name="parks" checked="" tabindex="0" class="">
-				            Parks</label>
-				          </div>
-				        </div>
-				        <div class="field">
-				          <div class="radio checkbox">
-				            <label for="beach">
-				            <input type="radio" id="beach" name="beach" tabindex="0" class="">
-				            Beach</label>
-				          </div>
-				        </div>
-				        <div class="field">
-				          <div class="radio checkbox">
-				            <label for="nightlife">
-				            <input type="radio" id="nightlife" name="nightlife" tabindex="0" class="">
-				            Nightlife</label>
-				          </div>
-				        </div>
+				<label for="edit-phone" original-title="" data-title="Enter your phone number">Phone number <span class="form-required" title="This field is required.">*</span></label>
+				<input type="text" id="" name="number" value="" size="60" maxlength="255" class="form-text required" placeholder="Phone number">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-item twelve columns form-type-textarea">
+				<label for="edit-mail" original-title="" data-title="Comments">Comments</label>
+				<textarea name="message" id="" cols="30" rows="10"></ textarea> <!-- Extra space in closing textarea tag is only added for example rendering. Ignore in actual code use. -->
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="form-item four columns form-type-radio">
+				<div class="grouped fields">
+					<p>Radio buttons: <span class="form-required" title="This field is required.">*</span></p>
+					<fieldset>
+						<legend>Fieldset 1</legend>
 				        <div class="field">
 				          <div class="radio checkbox">
 				            <label for="vacation">
@@ -248,62 +235,88 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				            Vacation</label>
 				          </div>
 				        </div>
-			      </div>
-				</div>
+				        <div class="field">
+				          <div class="radio checkbox">
+				            <label for="parks">
+				            <input type="radio" id="parks" name="parks" checked="" tabindex="0" class="">
+				            Parks</label>
 
-				<div class="form-item four columns">
-					<p>Checkboxes:</p>
-					<div class="field">
-				        <div class="checkbox">
-				          <label for="option-1">
-				          <input type="checkbox" id="option-1" tabindex="0" class="">
-				          Option 1</label>
+				            <fieldset>
+				            	<legend>Fieldset 2 (Nested)</legend>
+				            	<div class="field">
+						          <div class="radio checkbox">
+						            <label for="beach">
+						            <input type="radio" id="beach" name="beach" tabindex="0" class="">
+						            Beach</label>
+						          </div>
+						        </div>
+						        <div class="field">
+						          <div class="radio checkbox">
+						            <label for="nightlife">
+						            <input type="radio" id="nightlife" name="nightlife" tabindex="0" class="">
+						            Nightlife</label>
+						          </div>
+						        </div>
+						    </fieldset>
+				          </div>
 				        </div>
-				    </div>
-				    <div class="field">
-				        <div class="checkbox">
-				          <label for="option-2">
-				          <input type="checkbox" id="option-2" tabindex="0" class="">
-				          Option 2</label>
-				        </div>
-				    </div>
-				    <div class="field">
-				        <div class="checkbox">
-				          <label for="option-3">
-				          <input type="checkbox" id="option-3" tabindex="0" class="">
-				          Option 3</label>
-				        </div>
-				    </div>
-				    <div class="field">
-				        <div class="checkbox">
-				          <label for="option-4">
-				          <input type="checkbox" id="option-4" tabindex="0" class="">
-				          Option 4</label>
-				        </div>
-				    </div>
-				</div>
 
-				<div class="form-item four columns">
-					<p>Select dropdown:</p>
-					<div class="field">
-				        <select>
-				          <option value="">Select One</option>
-				          <option value="0">Option 1</option>
-				          <option value="1">Option 2</option>
-				          <option value="2">Option 3</option>
-				          <option value="3">Option 4</option>
-				        </select>
-				    </div>
-				</div>
+					</fieldset>
+		      </div>
 			</div>
 
-			<input type="hidden" name="form_build_id" value="">
-			<input type="hidden" name="form_id" value="contact_site_form">
-
-			<div class="row l-margin-td form-actions form-wrapper" id="">
-				<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
+			<div class="form-item four columns">
+				<p>Checkboxes: <span class="form-required" title="This field is required.">*</span></p>
+	            <div class="field">
+			        <div class="checkbox">
+			          <label for="option-1">
+			          <input type="checkbox" id="option-1" tabindex="0" class="">
+			          Option 1</label>
+			        </div>
+			    </div>
+			    <div class="field">
+			        <div class="checkbox">
+			          <label for="option-2">
+			          <input type="checkbox" id="option-2" tabindex="0" class="">
+			          Option 2</label>
+			        </div>
+			    </div>
+			    <div class="field">
+			        <div class="checkbox">
+			          <label for="option-3">
+			          <input type="checkbox" id="option-3" tabindex="0" class="">
+			          Option 3</label>
+			        </div>
+			    </div>
+			    <div class="field">
+			        <div class="checkbox">
+			          <label for="option-4">
+			          <input type="checkbox" id="option-4" tabindex="0" class="">
+			          Option 4</label>
+			        </div>
+			    </div>
 			</div>
-		</fieldset>
+
+			<div class="form-item four columns">
+				<p>Select dropdown:</p>
+				<div class="field">
+			        <select>
+			          <option value="">Select One</option>
+			          <option value="0">Option 1</option>
+			          <option value="1">Option 2</option>
+			          <option value="2">Option 3</option>
+			          <option value="3">Option 4</option>
+			        </select>
+			    </div>
+			</div>
+		</div>
+
+		<input type="hidden" name="form_build_id" value="">
+		<input type="hidden" name="form_id" value="contact_site_form">
+
+		<div class="row l-margin-td form-actions form-wrapper" id="">
+			<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--md">
+		</div>
 	</form>
 </div></textarea> </form> </div>
 						</div>
@@ -373,38 +386,44 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<legend class="form__step--header"><span class="icon--circle">1</span> I need to...</legend>
 									<div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" checked="" tabindex="0" class="">
-							            <label>Make a Payment</label>
+							            <label for="payment">
+							            <input type="radio" id="payment" name="payment" tabindex="0" class="">
+							            Make a Payment</label>
 							          </div>
 							        </div>
 							        <div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" tabindex="0" class="">
-							            <label>Check Status</label>
+							            <label for="status">
+							            <input type="radio" id="status" name="status" tabindex="0" class="">
+							            Check Status</label>
 							          </div>
 							        </div>
 							        <div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" tabindex="0" class="">
-							            <label>Report an Issue</label>
+							            <label for="issue">
+							            <input type="radio" id="issue" name="issue" tabindex="0" class="">
+							            Report an Issue</label>
 							          </div>
 							        </div>
 							        <div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" checked="" tabindex="0" class="">
-							            <label>Make a Payment</label>
+							            <label for="payment-2">
+							            <input type="radio" id="payment-2" name="payment-2" tabindex="0" class="">
+							            Make a Payment</label>
 							          </div>
 							        </div>
 							        <div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" tabindex="0" class="">
-							            <label>Check Status</label>
+							            <label for="status-2">
+							            <input type="radio" id="status-2" name="status-2" tabindex="0" class="">
+							            Check Status</label>
 							          </div>
 							        </div>
 							        <div class="field">
 							          <div class="radio checkbox">
-							            <input type="radio" name="activity" tabindex="0" class="">
-							            <label>Report an Issue</label>
+							            <label for="issue-2">
+							            <input type="radio" id="issue-2" name="issue-2" tabindex="0" class="">
+							            Report an Issue</label>
 							          </div>
 							        </div>
 								</fieldset>
@@ -521,11 +540,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						</div>
 					</div>
 
-				</div>
-
-				<div id="login" class="l-container">
-				    <h2>Login</h2>
-				    <p><em>Dropdown, modal, or new page?</em></p>
 				</div>
 
             </div>

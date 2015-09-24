@@ -34,7 +34,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <li>
                         <div class="hero__bg" style="background-image:url('../assets/dist/img/home-hero-1.jpg');"></div>
                         <div class="hero--credit">
-                            <div class="l-constrained--desktop">
+                            <div class="l-constrained">
                                 <p>Image by Cindy Devin</p>
                             </div>
                         </div>
@@ -51,33 +51,36 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <h2>Get It Done</h2>
                         </div>
                     </div>
-                    <div class="row form__steps l-margin-td">
-                        <div class="three columns form__step">
+                    <div class="row form__steps l-margin-tm">
+                        <div class="three columns form__step" id="form__step-1">
                             <form action="">
                                 <fieldset>
                                     <legend class="form__step--header"><span class="icon--circle">1</span> I need to...</legend>
                                     <div class="field">
                                       <div class="radio checkbox">
-                                        <input type="radio" name="activity" checked="" tabindex="0" class="">
-                                        <label>Make a Payment</label>
+                                        <label for="payment">
+                                        <input type="radio" id="payment" name="payment" tabindex="0" class="">
+                                        Make a Payment</label>
                                       </div>
                                     </div>
                                     <div class="field">
                                       <div class="radio checkbox">
-                                        <input type="radio" name="activity" tabindex="0" class="">
-                                        <label>Check Status</label>
+                                        <label for="status">
+                                        <input type="radio" id="status" name="status" tabindex="0" class="">
+                                        Check Status</label>
                                       </div>
                                     </div>
                                     <div class="field">
                                       <div class="radio checkbox">
-                                        <input type="radio" name="activity" tabindex="0" class="">
-                                        <label>Report an Issue</label>
+                                        <label for="issue">
+                                        <input type="radio" id="issue" name="issue" tabindex="0" class="">
+                                        Report an Issue</label>
                                       </div>
                                     </div>
                                 </fieldset>
                             </form>
                         </div>
-                        <div class="three columns form__step">
+                        <div class="three columns form__step" id="form__step-2">
                             <div class="">
                                 <form action="">
                                     <fieldset>
@@ -95,16 +98,16 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 </form>
                             </div>
                         </div>
-                        <div class="six columns form__step">
+                        <div class="six columns form__step" id="form__step-3">
                             <div class="form__step--info">
                                 <form action="">
                                     <fieldset>
                                         <legend class="form__step--header"><span class="icon--circle">3</span> Pay Your Ticket:</legend>
-                                        <div class="row">
-                                            <div class="seven columns">
+                                        <div class="row l-margin-desktop-td">
+                                            <div class="eight columns">
                                                 <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
                                             </div>
-                                            <div class="five columns">
+                                            <div class="four columns">
                                                 <a href="" class="btn btn--wide">Pay Ticket Now</a>
                                             </div>
                                         </div>

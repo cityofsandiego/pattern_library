@@ -43,11 +43,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
         </div>
 
         <div class="l-constrained l-padding-mobile-hd background-white role-main">
-            <nav class="sub-navigation">
+            <nav class="sub-navigation sub-navigation--department">
                 <ul class="l-margin-vn">
                     <li><a href="">Parks & Recreation</a></li>
                     <li><a href="">General Information</a></li>
-                    <li><a href="">Recreation Centers and Pools</a></li>
+                    <li><a href="">Recreation Centers & Pools</a></li>
                     <li><a href="">Parks & Open Spaces</a></li>
                 </ul>
             </nav>

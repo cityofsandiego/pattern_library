@@ -17,7 +17,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <ul class="l-margin-vn">
                                         <li><a href="">Parks & Recreation</a></li>
                                         <li><a href="">General Information</a></li>
-                                        <li><a href="">Recreation Centers and Pools</a></li>
+                                        <li><a href="">Recreation Centers & Pools</a></li>
                                         <li><a href="">Parks & Open Spaces</a></li>
                                     </ul>
                                 </nav>
@@ -145,35 +145,86 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         <div class="entry__content l-padding-am">
                             <h2>Get It Done</h2>
                             <div class="row form__steps l-margin-tm">
-                                <div class="four columns form__step">
-                                    <div class="border l-padding-ad">
-                                        <p class="form__step--header">1. I need to...</p>
+                                <div class="three columns form__step" id="form__step-1">
+                                    <form action="">
+                                        <fieldset>
+                                            <legend class="form__step--header"><span class="icon--circle">1</span> I need to...</legend>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="payment">
+                                                <input type="radio" id="payment" name="payment" tabindex="0" class="">
+                                                Make a Payment</label>
+                                              </div>
+                                            </div>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="status">
+                                                <input type="radio" id="status" name="status" tabindex="0" class="">
+                                                Check Status</label>
+                                              </div>
+                                            </div>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="issue">
+                                                <input type="radio" id="issue" name="issue" tabindex="0" class="">
+                                                Report an Issue</label>
+                                              </div>
+                                            </div>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="payment-2">
+                                                <input type="radio" id="payment-2" name="payment-2" tabindex="0" class="">
+                                                Make a Payment</label>
+                                              </div>
+                                            </div>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="status-2">
+                                                <input type="radio" id="status-2" name="status-2" tabindex="0" class="">
+                                                Check Status</label>
+                                              </div>
+                                            </div>
+                                            <div class="field">
+                                              <div class="radio checkbox">
+                                                <label for="issue-2">
+                                                <input type="radio" id="issue-2" name="issue-2" tabindex="0" class="">
+                                                Report an Issue</label>
+                                              </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                                <div class="three columns form__step" id="form__step-2">
+                                    <div class="">
                                         <form action="">
-                                            <input type="radio" name="task" value="payment">Make a Payment<br>
-                                            <input type="radio" name="task" value="status">Check Status<br>
-                                            <input type="radio" name="task" value="issue">Report an Issue
+                                            <fieldset>
+                                                <legend class="form__step--header"><span class="icon--circle">2</span> Payment:</legend>
+                                                <div class="field l-margin-desktop-td">
+                                                    <select>
+                                                      <option value="">Select One</option>
+                                                      <option value="0">Option 1</option>
+                                                      <option value="1">Option 2</option>
+                                                      <option value="2">Option 3</option>
+                                                      <option value="3">Option 4</option>
+                                                    </select>
+                                                </div>
+                                            </fieldset>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="four columns form__step">
-                                    <div class="border l-padding-ad text-center">
-                                        <p class="form__step--header">2. Payment:</p>
-                                        <div class="l-padding-vd">
-                                            <select>
-                                              <option value="parking">A Parking Ticket</option>
-                                              <option value="electric">Electric Bill</option>
-                                              <option value="tax">Property Tax</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="four columns form__step">
-                                    <div class="border l-padding-ad">
-                                        <p class="form__step--header">3. Pay Your Ticket:</p>
-                                        <div class="form__step--info">
-                                            <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
-                                            <a href="" class="btn">Pay Ticket Now</a>
-                                        </div>
+                                <div class="six columns form__step" id="form__step-3">
+                                    <div class="form__step--info">
+                                        <form action="">
+                                            <fieldset>
+                                                <legend class="form__step--header"><span class="icon--circle">3</span> Pay Your Ticket:</legend>
+                                                <div class="row">
+                                                    <div class="twelve columns">
+                                                        <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
+                                                        <a href="" class="btn">Pay Ticket Now</a>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
                                     </div>
                                 </div>
                             </div>

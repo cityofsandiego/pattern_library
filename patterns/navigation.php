@@ -760,14 +760,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="row l-margin-bm">
                             <nav class="sub-navigation sub-navigation--department">
                                 <ul>
-                                    <li><a href="">Nav Item 1</a></li>
-                                    <li><a href="">Nav Item 2 with Wrapping Title</a></li>
-                                    <li><a href="">Nav Item 3</a></li>
-                                    <li><a href="">Nav Item 4</a></li>
-                                    <li><a href="">Nav Item 5</a></li>
-                                    <li><a href="">Nav Item 6 with Wrapping Title</a></li>
-                                    <li><a href="">Nav Item 7 More Content Here</a></li>
-                                    <li><a href="">Nav Item 8 for a Big Department</a></li>
+                                    <li><a href="">Parks & Recreation</a></li>
+                                    <li><a href="">General Information</a></li>
+                                    <li><a href="">Recreation Centers & Pools</a></li>
+                                    <li><a href="">Parks & Open Spaces</a></li>
+                                    <li><a href="">Another Long Titled Department</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -795,12 +792,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div id="Dashboard" class="l-container l-margin-vm">
                         <h2>Application Header</h2>
                         <div class="row l-margin-bm">
-                            <header class="l-padding-ad">
+                            <header class="l-padding-ad header--app">
                                 <div class="row">
                                     <div class="three columns l-padding-ts">
                                         <a href="/" class="logo">
-                                            <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
-                                            <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
+                                            <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50">
                                         </a>
                                     </div>
 
@@ -816,7 +812,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="twelve columns">
                                 <div class="code__examples">
                                 <form><textarea class="pattern" id="nav-code-dashboard" name="code">
-<header class="l-padding-ad">
+<header class="l-padding-ad header--app">
     <div class="row">
         <div class="three columns l-padding-ts">
             <a href="/" class="logo">
