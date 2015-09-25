@@ -148,7 +148,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                 <div class="three columns form--search-wrap">
                     <a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                        <div><div class="container-inline">
+                        <div><div class="l-container">
                             <h2 class="visuallyhidden">Search form</h2>
                             <div class="form-item form-type-textfield form-item-search-block-form">
                                 <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>

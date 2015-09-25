@@ -47,7 +47,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 </tr>
                                 <tr>
                                     <td>.icon--circle</td>
-                                    <td><i class="icon-magnifier icon--circle"></i></td>
+                                    <td><i class="icon-magnifier icon--circle background--cerulean"></i></td>
                                 </tr>
                                 <tr>
                                     <td>.icon--outline</td>
@@ -61,7 +61,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="code__examples">
                                 <form><textarea class="pattern" id="icon-code-1" name="code">
 <i class="icon-home"></i>
-<i class="icon-magnifier icon--circle"></i>
+<i class="icon-magnifier icon--circle background--cerulean"></i>
 <i class="icon-pencil icon--outline icon--xl"></i> </textarea> </form> </div>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e800" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe800;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe800;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -93,7 +93,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e801" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe801;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe801;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -109,7 +109,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e802" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe802;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe802;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -125,7 +125,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e803" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe803;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe803;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -141,7 +141,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e804" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe804;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe804;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -157,7 +157,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e805" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe805;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe805;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -173,7 +173,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e807" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe807;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe807;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -189,7 +189,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e808" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe808;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe808;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -205,7 +205,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e809" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe809;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe809;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -221,7 +221,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -237,7 +237,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -253,7 +253,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -269,7 +269,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -285,7 +285,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -301,7 +301,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e80f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe80f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -317,7 +317,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e810" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe810;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe810;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -333,7 +333,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e811" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe811;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe811;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -349,7 +349,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e812" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe812;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe812;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -365,7 +365,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e813" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe813;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe813;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -381,7 +381,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e814" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe814;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe814;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -397,7 +397,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e815" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe815;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe815;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -413,7 +413,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e816" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe816;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe816;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -429,7 +429,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e817" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe817;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe817;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -445,7 +445,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e818" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe818;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe818;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -461,7 +461,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e819" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe819;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe819;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -477,7 +477,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -493,7 +493,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -509,7 +509,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -525,7 +525,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -541,7 +541,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -557,7 +557,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e81f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe81f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -573,7 +573,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e820" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe820;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe820;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -589,7 +589,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e821" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe821;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe821;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -605,7 +605,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e822" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe822;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe822;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -621,7 +621,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e823" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe823;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe823;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -637,7 +637,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e824" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe824;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe824;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -653,7 +653,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e825" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe825;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe825;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -669,7 +669,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e826" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe826;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe826;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -685,7 +685,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e827" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe827;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe827;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -701,7 +701,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e828" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe828;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe828;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -717,7 +717,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e829" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe829;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe829;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -733,7 +733,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -749,7 +749,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -765,7 +765,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -781,7 +781,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -797,7 +797,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -813,7 +813,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e82f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe82f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -829,7 +829,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e830" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe830;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe830;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -845,7 +845,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e831" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe831;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe831;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -861,7 +861,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e832" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe832;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe832;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -877,7 +877,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e833" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe833;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe833;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -893,7 +893,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e834" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe834;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe834;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -909,7 +909,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e835" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe835;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe835;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -925,7 +925,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e836" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe836;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe836;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -941,7 +941,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e837" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe837;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe837;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -957,7 +957,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e838" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe838;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe838;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -973,7 +973,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e839" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe839;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe839;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -989,7 +989,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1005,7 +1005,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1021,7 +1021,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1037,7 +1037,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1053,7 +1053,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1069,7 +1069,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e83f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe83f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1085,7 +1085,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e840" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe840;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe840;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1101,7 +1101,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e841" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe841;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe841;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1117,7 +1117,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e842" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe842;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe842;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1133,7 +1133,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e843" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe843;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe843;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1149,7 +1149,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e844" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe844;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe844;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1165,7 +1165,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e845" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe845;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe845;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1181,7 +1181,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e846" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe846;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe846;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1197,7 +1197,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e847" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe847;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe847;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1213,7 +1213,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e848" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe848;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe848;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1229,7 +1229,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e849" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe849;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe849;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1245,7 +1245,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1261,7 +1261,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1277,7 +1277,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1293,7 +1293,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1309,7 +1309,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1325,7 +1325,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e84f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe84f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1341,7 +1341,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e850" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe850;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe850;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1357,7 +1357,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e851" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe851;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe851;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1373,7 +1373,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e852" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe852;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe852;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1389,7 +1389,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e853" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe853;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe853;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1405,7 +1405,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e854" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe854;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe854;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1421,7 +1421,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e855" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe855;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe855;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1437,7 +1437,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e856" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe856;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe856;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1453,7 +1453,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e857" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe857;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe857;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1469,7 +1469,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e858" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe858;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe858;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1485,7 +1485,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e859" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe859;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe859;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1501,7 +1501,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1517,7 +1517,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1533,7 +1533,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1549,7 +1549,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1565,7 +1565,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1581,7 +1581,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e85f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe85f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1597,7 +1597,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e860" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe860;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe860;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1613,7 +1613,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e861" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe861;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe861;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1629,7 +1629,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e862" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe862;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe862;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1645,7 +1645,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e863" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe863;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe863;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1661,7 +1661,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e864" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe864;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe864;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1677,7 +1677,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e865" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe865;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe865;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1693,7 +1693,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e866" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe866;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe866;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1709,7 +1709,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e867" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe867;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe867;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1725,7 +1725,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e868" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe868;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe868;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1741,7 +1741,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e869" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe869;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe869;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1757,7 +1757,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1773,7 +1773,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1789,7 +1789,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1805,7 +1805,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1821,7 +1821,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1837,7 +1837,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e86f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe86f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1853,7 +1853,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e870" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe870;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe870;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1869,7 +1869,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e871" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe871;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe871;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1885,7 +1885,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e872" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe872;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe872;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1901,7 +1901,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e873" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe873;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe873;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1917,7 +1917,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e874" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe874;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe874;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1933,7 +1933,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e875" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe875;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe875;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1949,7 +1949,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e876" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe876;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe876;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1965,7 +1965,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e877" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe877;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe877;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1981,7 +1981,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e878" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe878;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe878;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -1997,7 +1997,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e879" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe879;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe879;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2013,7 +2013,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2029,7 +2029,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2045,7 +2045,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2061,7 +2061,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2077,7 +2077,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2093,7 +2093,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e87f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe87f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2109,7 +2109,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e880" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe880;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe880;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2125,7 +2125,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e881" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe881;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe881;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2141,7 +2141,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e882" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe882;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe882;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2157,7 +2157,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e883" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe883;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe883;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2173,7 +2173,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e884" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe884;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe884;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2189,7 +2189,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e885" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe885;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe885;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2205,7 +2205,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e886" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe886;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe886;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2221,7 +2221,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e887" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe887;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe887;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2237,7 +2237,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e888" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe888;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe888;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2253,7 +2253,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e889" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe889;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe889;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2269,7 +2269,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2285,7 +2285,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2301,7 +2301,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2317,7 +2317,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2333,7 +2333,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2349,7 +2349,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e88f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe88f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2365,7 +2365,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e890" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe890;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe890;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2381,7 +2381,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e891" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe891;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe891;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2397,7 +2397,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e892" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe892;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe892;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2413,7 +2413,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e893" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe893;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe893;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2429,7 +2429,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e894" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe894;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe894;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2445,7 +2445,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e895" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe895;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe895;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2461,7 +2461,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e896" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe896;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe896;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2477,7 +2477,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e897" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe897;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe897;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2493,7 +2493,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e898" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe898;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe898;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2509,7 +2509,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e899" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe899;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe899;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2525,7 +2525,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89a;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2541,7 +2541,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89b;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2557,7 +2557,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89c;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2573,7 +2573,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89d;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2589,7 +2589,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89e;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2605,7 +2605,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e89f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89f;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe89f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2621,7 +2621,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a0" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a0;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a0;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2637,7 +2637,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a1" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a1;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a1;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2653,7 +2653,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a2" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a2;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a2;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2669,7 +2669,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a3" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a3;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a3;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2685,7 +2685,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a4" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a4;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a4;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2701,7 +2701,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a5" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a5;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a5;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2717,7 +2717,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a6" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a6;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a6;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2733,7 +2733,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a7" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a7;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a7;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2749,7 +2749,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a8" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a8;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a8;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2765,7 +2765,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e8a9" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a9;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe8a9;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2781,7 +2781,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="78" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#x78;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#x78;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>
@@ -2797,7 +2797,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </p>
                             <fieldset class="">
                                 <input type="text" readonly value="e608" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe608;" class="unitRight size1of2 talign-right icon-btn" />
+                                <input type="button" maxlength="1" readonly value="&#xe608;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
                             </fieldset>
                             <div class="visuallyhidden">
                                 <span>liga: </span>

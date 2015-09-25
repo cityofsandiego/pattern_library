@@ -129,36 +129,20 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <h2>Steps (1-10)</h2>
                     <div class="steps__wrap">
                         <div class="step__single row">
-                            <div class="one columns no-gutters">
-                                <p class="icon--circle">1</p>
-                            </div>
-                            <div class="eleven columns no-gutters">
-                                <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
-                            </div>
+                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">1</p>
+                            <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
                         </div>
                         <div class="step__single row">
-                            <div class="one columns no-gutters">
-                                <p class="icon--circle">2</p>
-                            </div>
-                            <div class="eleven columns no-gutters">
-                                <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
-                            </div>
+                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">1</p>
+                            <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
                         </div>
                         <div class="step__single row">
-                            <div class="one columns no-gutters">
-                                <p class="icon--circle">3</p>
-                            </div>
-                            <div class="eleven columns no-gutters">
-                                <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
-                            </div>
+                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">3</p>
+                            <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
                         </div>
                         <div class="step__single row">
-                            <div class="one columns no-gutters">
-                                <p class="icon--circle">4</p>
-                            </div>
-                            <div class="eleven columns no-gutters">
-                                <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</h4>
-                            </div>
+                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">4</p>
+                            <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</h4>
                         </div>
                     </div>
 

@@ -170,7 +170,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
-                    <nav id="nav" class="main__navigation--portal nav-primary" role="navigation">
+                    <nav id="nav" class="main__navigation--portal nav-primary l-margin-td" role="navigation">
                         <ul>
                             <li><a href="">Nav Item 1</a></li>
                             <li><a href="">Nav Item 2</a></li>
@@ -183,7 +183,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
                 <div class="three columns hide-on-mobile l-margin-td">
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                        <div><div class="container-inline">
+                        <div><div class="l-container">
                             <h2 class="visuallyhidden">Search form</h2>
                             <div class="form-item form-type-textfield form-item-search-block-form">
                                 <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>

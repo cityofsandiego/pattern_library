@@ -92,7 +92,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <input type="hidden" name="form_id" value="contact_site_form">
 
                                                 <div class="form-actions form-wrapper" id="edit-actions">
-                                                    <input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled">
+                                                    <input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled btn btn--primary">
                                                 </div>
 
                                             </form>
@@ -125,7 +125,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     <div class="three columns">
                         <div class="widget l-padding-hs l-margin-bd">
                             <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                                <div><div class="container-inline">
+                                <div><div class="l-container">
                                     <h2 class="visuallyhidden">Search form</h2>
                                     <div class="form-item form-type-textfield form-item-search-block-form">
                                         <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>

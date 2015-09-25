@@ -1276,6 +1276,7 @@ header {
         color: white;
         padding: .3em;
         border-radius: 50%;
+        display: inline-block;
         vertical-align: middle;
         vertical-align: -webkit-baseline-middle;
         @include rem( 'font-size', 24px );
@@ -1483,7 +1484,7 @@ header {
         width: 2em;
         height: 2em;
         text-align: center;
-        margin: 0;
+        margin-bottom: 0;
         line-height: 2em;
         padding: 0;
         vertical-align: middle;
@@ -2541,22 +2542,24 @@ footer {
         @include mq( $from: tablet ) {
             @include rem( 'font-size', 11px );
         }
+
         li {
             padding: 0;
             margin: 0 0 .5em;
         }
 
         &.two-columns {
-            -webkit-columns: 1;
+            -webkit-column-count: 1;
+            -moz-column-count: 1;
+            -ms-column-count: 1;
             column-count: 1;
 
-            li {
-                padding: 0;
-            }
-
             @include mq( $from: mobile-landscape ) {
-                -webkit-columns: 2;
-                column-count: 2;
+                li {
+                    width: 48%;
+                    float: left;
+                    padding: 0 1%;
+                }
             }
         }
 
@@ -2603,7 +2606,7 @@ footer {
  // ie fallback
 .no-flexbox footer {
     > .row {
-        display: table-cell;
+        display: block;
     }
 }
 

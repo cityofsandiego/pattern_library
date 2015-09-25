@@ -74,7 +74,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <input type="hidden" name="form_build_id" value="form-CMfXRs6eUo0EHsImgQNVktOisI_oN9jlXDqaBS5Y8wU">
                                                 <input type="hidden" name="form_id" value="contact_site_form">
 
-                                                <div class="form-actions form-wrapper" id="edit-actions">
+                                                <div class="form-actions form-wrapper text-center" id="edit-actions">
                                                     <input type="submit" id="edit-submit" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--lg">
                                                 </div>
 

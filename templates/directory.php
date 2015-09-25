@@ -38,7 +38,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <div class="nine columns"></div>
                                 <div class="three columns no-gutters l-margin-bd">
                                     <form action="" method="post" id="search-directory" class="form--search form--directory" accept-charset="UTF-8">
-                                        <div><div class="container-inline">
+                                        <div><div class="l-container">
                                             <h2 class="visuallyhidden">Search form</h2>
                                             <div class="form-item form-type-textfield form-item-search-block-form">
                                                 <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
