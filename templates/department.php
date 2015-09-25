@@ -13,7 +13,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <h1 class="main__heading">Parks & Recreation</h1>
                                 </div>
 
-                                <nav class="sub-navigation sub-navigation--department">
+                                <nav class="sub-navigation">
                                     <ul class="l-margin-vn">
                                         <li><a href="">Parks & Recreation</a></li>
                                         <li><a href="">General Information</a></li>

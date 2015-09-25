@@ -165,8 +165,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<input type="hidden" name="form_build_id" value="">
 									<input type="hidden" name="form_id" value="contact_site_form">
 
-									<div class="row l-margin-td form-actions form-wrapper" id="">
-										<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary btn--md">
+									<div class="row l-margin-td form-actions form-wrapper text-center" id="">
+										<input type="submit" id="" name="op" value="Submit Request" class="form-submit disabled btn btn--secondary">
 									</div>
 								</form>
 							</div>

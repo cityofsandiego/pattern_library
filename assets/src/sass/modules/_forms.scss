@@ -78,7 +78,6 @@ button[type="submit"] {
 
 select {
     width: 100%;
-    height: 2.5em;
     display: block;
     background: white;
     padding: .62em 1em;
@@ -133,13 +132,6 @@ legend {
 .form--general {
 
     .form-actions {
-        text-align: center;
-        input[type="submit"] {
-            background-color: $sunshade;
-            &:hover {
-                background-color: lighten( $sunshade, 10% );
-            }
-        }
 
         .form-submit {
             @include mq( $until: mobile-landscape ) {

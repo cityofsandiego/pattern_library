@@ -266,19 +266,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 						<div class="row l-padding-vm">
 							<div class="six columns">
-								<a class="btn--icon btn btn--primary btn--icon-right l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
-								<a class="btn--icon btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a>
-								<a class="btn--icon btn btn--tertiary btn--icon-right l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a>
-								<a class="btn--icon btn btn--outline btn--icon-left l-margin-vs" href="#"><i class="icon-arrow-left"></i> Icon Button <i class="icon-twitter"></i></a>
+								<a class="btn--icon btn--half btn btn--primary btn--icon-right l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+								<a class="btn--icon btn--half btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a><br>
+								<a class="btn--icon btn--half btn btn--tertiary btn--icon-right l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+								<a class="btn--icon btn--half btn btn--outline btn--icon-left l-margin-vs" href="#"><i class="icon-chevron-left"></i> Icon Button <i class="icon-twitter"></i></a>
 							</div>
 							<div class="six columns">
 	                            <p>Default modifiers with icons</p>
 
 	                            <div class="code__examples">
                                 	<form><textarea class="pattern" id="type-code-btn-2" name="code">
-<a class="btn btn--primary" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-arrow-right"></i></a>
+<a class="btn btn--primary" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-chevron-right"></i></a>
 <a class="btn btn--secondary" href="#"><i class="icon-flickr"></i> Icon Button</a>
-<a class="btn btn--tertiary" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-arrow-right"></i></a></textarea> </form> </div>
+<a class="btn btn--tertiary" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a></textarea> </form> </div>
 							</div>
 
 						</div>
@@ -342,8 +342,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 						<div class="row l-padding-vd">
 							<div class="six columns">
-								<a class="btn btn--icon-left l-margin-vs" href="#"><i class="icon-arrow-left"></i>Previous</a>
-								<a class="btn btn--icon-right l-margin-vs" href="#">Next<i class="icon-arrow-right"></i></a>
+								<a class="btn btn--icon-left l-margin-vs" href="#"><i class="icon-chevron-left"></i>Previous</a>
+								<a class="btn btn--icon-right l-margin-vs" href="#">Next<i class="icon-chevron-right"></i></a>
 							</div>
 							<div class="six columns">
 								<p>Directional</p>

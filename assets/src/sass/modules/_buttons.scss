@@ -43,10 +43,11 @@ input[type="button"] {
         border-radius: 50%;
         text-align: center;
         margin-right: .5em;
+        vertical-align: middle;
     }
 
-    .icon-arrow-right,
-    .icon-arrow-left {
+    i.icon-chevron-right,
+    i.icon-chevron-left {
         padding: 0;
         color: white;
         font-size: 150%;
@@ -55,34 +56,93 @@ input[type="button"] {
         vertical-align: sub;
         line-height: .4;
     }
-}
 
-.btn--primary {
-    background-color: $cerulean;
-    color: white;
-    &:hover {
-        background-color: lighten( $cerulean, 10% );
+    &.btn--primary {
+        background-color: $cerulean;
+        color: white;
+        &:hover {
+            background-color: lighten( $cerulean, 10% );
+        }
     }
-}
 
-.btn--secondary {
-    background-color: $sunshade;
-    &:hover {
-        background-color: lighten( $sunshade, 10% );
+    &.btn--secondary {
+        background-color: $sunshade;
+        &:hover {
+            background-color: lighten( $sunshade, 10% );
+        }
+        i {
+            color: $sunshade;
+        }
     }
-    i {
-        color: $sunshade;
-    }
-}
 
-.btn--tertiary {
-    background-color: $font-color;
-    &:hover {
-        background-color: lighten( $font-color, 10% );
+    &.btn--tertiary {
+        background-color: $font-color;
+        &:hover {
+            background-color: lighten( $font-color, 10% );
+        }
+        i {
+            color: $font-color;
+        }
     }
-    i {
-        color: $font-color;
+
+    &.btn--icon {
+        padding: 1em;
+        text-align: left;
+
+        .icon-chevron-right,
+        .icon-chevron-left {
+            color: white;
+        }
+
+        .icon-chevron-right {
+            padding: 0;
+            color: white;
+            float: none;
+            line-height: 1;
+            border-radius: 0;
+            background: transparent;
+        }
     }
+
+
+    /* Icons
+       ========================================================================== */
+
+    &.btn--icon-left,
+    &.btn--icon-right {
+        position: relative;
+
+        .icon-chevron-left,
+        .icon-chevron-right {
+            position: absolute;
+            top: 50%;
+            @include transform( translateY( -50% ) );
+        }
+    }
+
+    &.btn--icon-left {
+        padding-left: 3.5em;
+
+        i {
+            margin: 0 0 0 .5em;
+        }
+
+        .icon-chevron-left {
+            left: .75em;
+            margin: 0;
+        }
+    }
+
+    &.btn--icon-right {
+        padding-right: 3.5em;
+
+        .icon-chevron-right {
+            right: 0.75em;
+            margin-right: 0;
+        }
+    }
+
+
 }
 
 .btn--outline {
@@ -103,24 +163,9 @@ input[type="button"] {
         background: $cerulean;
     }
 
-    .icon-arrow-left, 
-    .icon-arrow-right {
-        color: $cerulean;
-    }
-}
-
-.btn--icon {
-    padding: 1em;
-    text-align: left;
-
+    .icon-chevron-left, 
     .icon-chevron-right {
-        padding: 0;
-        color: white;
-        float: right;
-        line-height: 1.4;
-        border-radius: 0;
-        display: inline-block;
-        background: transparent;
+        color: $cerulean;
     }
 }
 
@@ -191,49 +236,6 @@ input[type="button"] {
 .btn--third {
     width: 33.33333%;
 }
-
-
-
-
-
-/* Icons
-   ========================================================================== */
-
-.btn--icon-left,
-.btn--icon-right {
-    position: relative;
-
-    .icon-arrow-left,
-    .icon-arrow-right {
-        position: absolute;
-        top: 50%;
-        @include transform( translateY( -50% ) );
-    }
-}
-
-.btn--icon-left {
-    padding-left: 3.5em;
-
-    i {
-        margin: 0 0 0 .5em;
-    }
-
-    .icon-arrow-left {
-        left: .75em;
-        margin: 0;
-    }
-}
-
-.btn--icon-right {
-    padding-right: 3.5em;
-
-    .icon-arrow-right {
-        right: 0.75em;
-        margin-right: 0;
-    }
-}
-
-
 
 
 

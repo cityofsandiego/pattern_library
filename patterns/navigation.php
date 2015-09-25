@@ -758,7 +758,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div id="department" class="l-container l-margin-vm">
                         <h2>Department</h2>
                         <div class="row l-margin-bm">
-                            <nav class="sub-navigation sub-navigation--department">
+                            <nav class="sub-navigation">
                                 <ul>
                                     <li><a href="">Parks & Recreation</a></li>
                                     <li><a href="">General Information</a></li>
@@ -773,7 +773,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="seven columns">
                                 <div class="code__examples">
                                 <form><textarea class="pattern" id="nav-code-dept" name="code">
-<nav class="sub-navigation sub-navigation--department">
+<nav class="sub-navigation">
     <ul>
         <li><a href="">Nav Item 1</a></li>
         <li><a href="">Nav Item 2 with Wrapping Title</a></li>

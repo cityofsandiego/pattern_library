@@ -276,6 +276,7 @@ header {
     }
 
     @include mq( $from: site ) {
+        right: 0;
         bottom: 8em;
         text-align: right;
     }
@@ -743,7 +744,7 @@ header {
 
 // Template sub-navigation
 .sub-navigation {
-    background: $spruce;
+    background: $teal;
     position: relative;
     z-index: 10;
 
@@ -776,7 +777,7 @@ header {
         }
     }
     a {
-        color: $chateau;
+        color: $mercury;
         font-weight: bold;
         text-decoration: none;
         &:hover {
@@ -784,18 +785,6 @@ header {
         }
         @include mq( $from: tablet ) {
             @include rem( 'font-size', 13px );
-        }
-    }
-
-    &.sub-navigation--department {
-        background: $teal;
-
-        a {
-            color: $mercury;
-
-            &:hover {
-                color: white;
-            }
         }
     }
 }
