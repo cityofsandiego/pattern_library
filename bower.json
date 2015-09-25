@@ -4,6 +4,6 @@
  "devDependencies": {
    "susy": "2.2.5",
    "sass-mq": "~3.2.3",
-   "bourbon": "4.2.3"
+   "bourbon": "3.2.3"
  }
 }
