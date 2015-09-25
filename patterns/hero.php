@@ -66,7 +66,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 			        <div class="row l-margin-vd">
 			        	<div class="six columns">
-			        		<p>The default usage of the hero slideshow has a full-width background image and half-width, semi-transparent content block. Two flexslider instances are used: one on <strong>.hero__slides--content</strong> and one on <strong>.hero__slides--img</strong>. Flexslider's <em>sync</em> option allows the two to work together.</p>
+			        		<p>The default usage of the hero slideshow has a full-width background image and half-width, semi-transparent content block. Use <strong>#hero__slides--primary</strong> as the wrap for <strong>.slides</strong>.</p>
 			        	</div>
 			        	<div class="six columns">
 			        		<div class="code__examples">
@@ -158,7 +158,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 			        <div class="row l-margin-vd">
 			        	<div class="six columns">
-			        		<p>The alternative version of the hero slideshow is the same as the default with a couple differences. Add <strong>.hero__slides--secondary</strong> to the wrap. The content is full-width, and instead of direction navigation, it's using a control navgation based on the number of slides.</p>
+			        		<p>The alternative version of the hero slideshow is the same as the default with a couple differences. Add <strong>#hero__slides--secondary</strong> to the wrap. The content is full-width, and instead of direction navigation, it's using a control navgation based on the number of slides.</p>
 			        	</div>
 			        	<div class="six columns">
 			        		<div class="code__examples">

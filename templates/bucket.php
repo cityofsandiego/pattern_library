@@ -56,7 +56,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                             <h6 class="l-margin-tn">I am looking for...</h6>
                                             <div class="l-margin-bd">
                                                 <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                                                    <div><div class="container-inline">
+                                                    <div><div class="l-container">
                                                         <h2 class="visuallyhidden">Search form</h2>
                                                         <div class="form-item form-type-textfield form-item-search-block-form">
                                                             <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
@@ -73,7 +73,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                                             <div class="l-margin-bd">
                                                 <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                                                    <div><div class="container-inline">
+                                                    <div><div class="l-container">
                                                         <h2 class="visuallyhidden">Search form</h2>
                                                         <div class="form-item form-type-textfield form-item-search-block-form">
                                                             <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
@@ -90,7 +90,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                                             <div class="l-margin-bd">
                                                 <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                                                    <div><div class="container-inline">
+                                                    <div><div class="l-container">
                                                         <h2 class="visuallyhidden">Search form</h2>
                                                         <div class="form-item form-type-textfield form-item-search-block-form">
                                                             <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
@@ -331,16 +331,16 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
                         <div class="row l-margin-bm">
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Parks + Rec <i class="icon-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--wide btn--icon l-margin-mobile-vd" href="#"><i class="icon-leaf"></i> Parks + Rec <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-sun"></i> Lifeguards <i class="icon-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--wide btn--icon l-margin-mobile-vd" href="#"><i class="icon-sun"></i> Lifeguards <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-home"></i> Neighborhoods <i class="icon-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--wide btn--icon l-margin-mobile-vd" href="#"><i class="icon-home"></i> Neighborhoods <i class="icon-chevron-right"></i></a>
                             </div>
                             <div class="three columns">
-                                <a class="btn btn--secondary btn--icon l-margin-mobile-vd" href="#"><i class="icon-map"></i> Council Districts <i class="icon-chevron-right"></i></a>
+                                <a class="btn btn--secondary btn--wide btn--icon l-margin-mobile-vd" href="#"><i class="icon-map"></i> Council Districts <i class="icon-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>

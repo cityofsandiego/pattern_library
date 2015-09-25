@@ -14,9 +14,8 @@
     padding: .75em 2em;
     display: inline-block;
     text-decoration: none;
-    background-color: $cerulean;
     text-transform: capitalize;
-    @include rem( 'font-size', 16px );
+    background-color: $cerulean;
     @include transition-property( color, background, border );
     @include transition-duration( .15s );
 }
@@ -25,10 +24,9 @@
 /* Main
    ========================================================================== */
 
-.btn,
-input[type="submit"],
-input[type="button"] {
+.btn {
     @extend %btn;
+
     &:hover {
         color: white;
         text-decoration: none;
@@ -43,11 +41,12 @@ input[type="button"] {
         border-radius: 50%;
         text-align: center;
         margin-right: .5em;
+        display: inline-block;
         vertical-align: middle;
     }
 
-    i.icon-chevron-right,
-    i.icon-chevron-left {
+    .icon-chevron-right,
+    .icon-chevron-left {
         padding: 0;
         color: white;
         font-size: 150%;
@@ -56,92 +55,6 @@ input[type="button"] {
         vertical-align: sub;
         line-height: .4;
     }
-
-    &.btn--primary {
-        background-color: $cerulean;
-        color: white;
-        &:hover {
-            background-color: lighten( $cerulean, 10% );
-        }
-    }
-
-    &.btn--secondary {
-        background-color: $sunshade;
-        &:hover {
-            background-color: lighten( $sunshade, 10% );
-        }
-        i {
-            color: $sunshade;
-        }
-    }
-
-    &.btn--tertiary {
-        background-color: $font-color;
-        &:hover {
-            background-color: lighten( $font-color, 10% );
-        }
-        i {
-            color: $font-color;
-        }
-    }
-
-    &.btn--icon {
-        padding: 1em;
-        text-align: left;
-
-        .icon-chevron-right,
-        .icon-chevron-left {
-            color: white;
-        }
-
-        .icon-chevron-right {
-            padding: 0;
-            color: white;
-            float: none;
-            line-height: 1;
-            border-radius: 0;
-            background: transparent;
-        }
-    }
-
-
-    /* Icons
-       ========================================================================== */
-
-    &.btn--icon-left,
-    &.btn--icon-right {
-        position: relative;
-
-        .icon-chevron-left,
-        .icon-chevron-right {
-            position: absolute;
-            top: 50%;
-            @include transform( translateY( -50% ) );
-        }
-    }
-
-    &.btn--icon-left {
-        padding-left: 3.5em;
-
-        i {
-            margin: 0 0 0 .5em;
-        }
-
-        .icon-chevron-left {
-            left: .75em;
-            margin: 0;
-        }
-    }
-
-    &.btn--icon-right {
-        padding-right: 3.5em;
-
-        .icon-chevron-right {
-            right: 0.75em;
-            margin-right: 0;
-        }
-    }
-
 
 }
 
@@ -163,13 +76,104 @@ input[type="button"] {
         background: $cerulean;
     }
 
-    .icon-chevron-left, 
-    .icon-chevron-right {
+    i.icon-chevron-left,
+    i.icon-chevron-right {
         color: $cerulean;
+    }
+
+    &:hover {
+        i.icon-chevron-left,
+        i.icon-chevron-right {
+            color: white;
+        }
     }
 }
 
 
+.btn--primary {
+    background-color: $cerulean;
+    color: white;
+    &:hover {
+        background-color: lighten( $cerulean, 10% );
+    }
+}
+
+.btn--secondary {
+    background-color: $sunshade;
+    &:hover {
+        background-color: lighten( $sunshade, 10% );
+    }
+    i {
+        color: $sunshade;
+    }
+}
+
+.btn--tertiary {
+    background-color: $font-color;
+    &:hover {
+        background-color: lighten( $font-color, 10% );
+    }
+    i {
+        color: $font-color;
+    }
+}
+
+.btn--icon {
+    padding: 1em;
+    text-align: left;
+
+    .icon-chevron-right,
+    .icon-chevron-left {
+        color: white;
+    }
+
+    .icon-chevron-right {
+        padding: 0;
+        color: white;
+        float: right;
+        line-height: 1;
+        border-radius: 0;
+        background: transparent;
+    }
+}
+
+
+/* Icons
+   ========================================================================== */
+
+.btn--icon-left,
+.btn--icon-right {
+    position: relative;
+
+    .icon-chevron-left,
+    .icon-chevron-right {
+        position: absolute;
+        top: 50%;
+        @include transform( translateY( -50% ) );
+    }
+}
+
+.btn--icon-left {
+    padding-left: 3.5em;
+
+    i {
+        margin: 0 0 0 .5em;
+    }
+
+    .icon-chevron-left {
+        left: .75em;
+        margin: 0;
+    }
+}
+
+.btn--icon-right {
+    padding-right: 3.5em;
+
+    .icon-chevron-right {
+        right: 0.75em;
+        margin-right: 0;
+    }
+}
 
 
 /* Sizes

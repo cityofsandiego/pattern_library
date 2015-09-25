@@ -53,7 +53,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         <input type="hidden" name="form_id" value="contact_site_form">
 
                                         <div class="form-actions form-wrapper" id="edit-actions">
-                                            <input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled">
+                                            <input type="submit" id="" name="op" value="Leave Comment" class="form-submit disabled btn btn--primary">
                                         </div>
 
                                     </form>

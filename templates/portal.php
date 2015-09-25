@@ -65,60 +65,33 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
                         <div class="twelve columns">
                             <div class="steps__wrap">
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">1</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
+                                        <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">1</p>
                                         <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span></h4>
-                                </div>
+
                             </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">2</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
-                                    </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">2</p>
+                                    <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
                                 </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">3</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
-                                    </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">3</p>
+                                    <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
                                 </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">4</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
-                                    </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">4</p>
+                                    <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</span></h4>
                                 </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">5</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Permits & Approvals:</span> <span class="step__desc">Do you have everything you need to obtain your permits & approvals?</span></h4>
-                                    </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">5</p>
+                                    <h4 class="step__header"><span>Permits & Approvals:</span> <span class="step__desc">Do you have everything you need to obtain your permits & approvals?</span></h4>
                                 </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">6</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Inspection</span>: <span class="step__desc">Are you ready for an inspection?</span></h4>
-                                </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">6</p>
+                                    <h4 class="step__header"><span>Inspection</span>: <span class="step__desc">Are you ready for an inspection?</span></h4>
                             </div>
                                 <div class="step__single row">
-                                    <div class="one columns no-gutters">
-                                        <p class="icon--circle">7</p>
-                                    </div>
-                                    <div class="eleven columns-no-gutters">
-                                        <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
-                                </div>
+                                    <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">7</p>
+                                    <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
                             </div>
                             </div>
                         </div>
@@ -134,19 +107,19 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
+                                    <a href=""><i class="icon-chevron-down icon--outline"></i> Download</a>
                                 </div>
 
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
+                                    <a href=""><i class="icon-chevron-down icon--outline"></i> Download</a>
                                 </div>
 
                                 <div class="card l-margin-bm">
                                     <h4>Name of This Resource</h4>
                                     <p class="text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus</p>
-                                    <a href=""><i class="icon-arrow-down icon--outline"></i> Download</a>
+                                    <a href=""><i class="icon-chevron-down icon--outline"></i> Download</a>
                                 </div>
 
                             </div>

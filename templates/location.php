@@ -45,7 +45,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <div class="card l-padding-ad text-center--mobile l-margin-mobile-td">
                                         <div class="row">
                                             <div class="three columns">
-                                                <img src="../assets/dist/img/map-marker.png" alt="" width="83" height="83">
+                                                <img src="../assets/dist/img/marker.png" alt="" width="83" height="83">
                                             </div>
                                             <div class="nine columns">
                                                 <address>
@@ -76,21 +76,21 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     <p>These are the amenities you will find at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Lifeguard</strong></p>
-                                    <p><strong><i class="icon-drop l-margin-rs icon--circle"></i> Swimming</strong></p>
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle"></i> Wheelchair Accessible</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Pier</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Fire Pits</strong></p>
-                                    <p><strong><i class="icon-drop l-margin-rs icon--circle"></i> Showers</strong></p>
-                                    <p><strong><i class="icon-bus l-margin-rs icon--circle"></i> Public Transportation</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Lifeguard</strong></p>
+                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--cerulean"></i> Swimming</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Wheelchair Accessible</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Pier</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Fire Pits</strong></p>
+                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--cerulean"></i> Showers</strong></p>
+                                    <p><strong><i class="icon-bus l-margin-rs icon--circle background--cerulean"></i> Public Transportation</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Surfing</strong></p>
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle"></i> Disabled Access</strong></p>
-                                    <p><strong><i class="icon-car l-margin-rs icon--circle"></i> Parking</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Volleyball</strong></p>
-                                    <p><strong><i class="icon-users l-margin-rs icon--circle"></i> Restrooms</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle"></i> Fishing</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Surfing</strong></p>
+                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Disabled Access</strong></p>
+                                    <p><strong><i class="icon-car l-margin-rs icon--circle background--cerulean"></i> Parking</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Volleyball</strong></p>
+                                    <p><strong><i class="icon-users l-margin-rs icon--circle background--cerulean"></i> Restrooms</strong></p>
+                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Fishing</strong></p>
                                 </div>
                             </div>
                         </div>
