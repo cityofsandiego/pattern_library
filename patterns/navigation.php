@@ -762,9 +762,24 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <ul>
                                     <li><a href="">Parks & Recreation</a></li>
                                     <li><a href="">General Information</a></li>
-                                    <li><a href="">Recreation Centers & Pools</a></li>
+                                    <li><a href="">Rec Centers & Pools</a></li>
                                     <li><a href="">Parks & Open Spaces</a></li>
-                                    <li><a href="">Another Long Titled Department</a></li>
+                                    <li><a href="">Another Long Titled Department Name Here</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="row l-margin-bm">
+                            <nav class="sub-navigation sub-navigation--long">
+                                <ul>
+                                    <li><a href="">Parks & Recreation</a></li>
+                                    <li><a href="">General Information</a></li>
+                                    <li><a href="">Rec Centers & Pools</a></li>
+                                    <li><a href="">Parks & Open Spaces</a></li>
+                                    <li><a href="">Another Long Titled Department Name Here</a></li>
+                                    <li><a href="">Rec Centers & Pools</a></li>
+                                    <li><a href="">Parks & Open Spaces</a></li>
+                                    <li><a href="">Another Long Titled Department Name Here</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -780,10 +795,24 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
         <li><a href="">Nav Item 3</a></li>
         <li><a href="">Nav Item 4</a></li>
     </ul>
+</nav>
+
+<nav class="sub-navigation sub-navigation--long">
+    <ul>
+        <li><a href="">Parks & Recreation</a></li>
+        <li><a href="">General Information</a></li>
+        <li><a href="">Rec Centers & Pools</a></li>
+        <li><a href="">Parks & Open Spaces</a></li>
+        <li><a href="">Another Long Titled Department Name Here</a></li>
+        <li><a href="">Rec Centers & Pools</a></li>
+        <li><a href="">Parks & Open Spaces</a></li>
+        <li><a href="">Another Long Titled Department Name Here</a></li>
+    </ul>
 </nav></textarea> </form> </div>
                             </div>
                             <div class="five columns">
-                                <p>This navigation is meant to be placed above a main navigation area, directly within a &lt;header&gt; element.</p>
+                                <p>This navigation is meant to be placed above a main navigation area, directly within a &lt;header&gt; element. Each menu item has a max-width of 25% to account for longer titles; by default, all items will squeeze into one line if there are more than 5.</p>
+                                <p>For long menus, use the modifier class <strong>.sub-navigation--long</strong>.</p>
                             </div>
                         </div>
                     </div>

@@ -647,6 +647,10 @@ header {
 
             h4 a {
                 color: $spruce;
+
+                &:hover {
+                    color: black;
+                }
             }
         }
 
@@ -658,10 +662,6 @@ header {
             a {
                 text-transform: capitalize;
                 @include rem( 'font-size', 18px );
-
-                &:hover {
-                    color: black;
-                }
             }
         }
 
@@ -760,16 +760,29 @@ header {
         justify-content:         left;
         -webkit-flex-wrap: wrap;
         flex-wrap: wrap;
+
+        @include mq( $from: tablet ) {
+            -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+    }
+
+    &.sub-navigation--long {
+        ul {
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
     }
 
     li {
-        margin: 0 .5em;
+        margin: .5em;
+        line-height: 1em;
         display: inline-block;
 
         @include mq( $from: tablet ) {
             float: left;
-            padding: 0 .25em;
-            max-width: span( 1 of 6 no-gutters );
+            margin: 0 .5em;
+            max-width: 20%;
 
             &:first-child {
                 padding-left: 0;
