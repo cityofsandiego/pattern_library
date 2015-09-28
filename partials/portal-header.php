@@ -47,15 +47,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                 center: myLatlng
             }
 
-            var image = '../assets/dist/img/map-marker.png';
-
-            // var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-            // var marker = new google.maps.Marker({
-            //   position: myLatlng,
-            //   map: map,
-            //   icon: image
-            // });
+            var image = '../assets/dist/img/marker.png';
 
             var wideMap = new google.maps.Map(document.getElementById('wide-map-canvas'), mapOptions);
 
@@ -64,9 +56,6 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
               map: wideMap,
               icon: image
             });
-
-            setMarkers(map, events, eventImage);
-            setMarkers(map, attractions, attractionImage);
         }
 
         var events = [

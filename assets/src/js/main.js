@@ -7,7 +7,7 @@
             init : function() {
                 this.utils.init();
                 this.modal();
-                this.maps();
+                // this.maps();
                 this.slides();
                 this.buttons();
                 this.close();
@@ -93,9 +93,9 @@
                             center: myLatlng
                         }
 
-                        var map = new google.maps.Map($multi[0], mapOptions);
+                        var map = new google.maps.Map(document.getElementById('multi-map'), mapOptions);
 
-                        var wideMap = new google.maps.Map($single[0], mapOptions);
+                        var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
 
                         var image = '../assets/dist/img/marker.png';
 
@@ -105,7 +105,7 @@
                           icon: image
                         });
 
-                        var marker = new google.maps.Marker({
+                        var wideMarker = new google.maps.Marker({
                           position: myLatlng,
                           map: wideMap,
                           icon: image

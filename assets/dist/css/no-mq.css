@@ -3265,6 +3265,10 @@ header > .row {
     color: #37424a;
 }
 
+.main__navigation .dropdown h4 a:hover {
+    color: black;
+}
+
 .main__navigation .dropdown li {
     margin: .25em 0;
 }
@@ -3273,10 +3277,6 @@ header > .row {
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: capitalize;
-}
-
-.main__navigation .dropdown h4 a:hover {
-    color: black;
 }
 
 .main__navigation .dropdown .nav__heading {
@@ -3379,14 +3379,22 @@ header > .row {
             justify-content: left;
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+    -webkit-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+}
+
+.sub-navigation.sub-navigation--long ul {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
 }
 
 .sub-navigation li {
+    line-height: 1em;
     display: inline-block;
     float: left;
-    max-width: 16.6666666667%;
+    max-width: 20%;
+    margin: .5em;
     margin: 0 .5em;
-    padding: 0 .25em;
 }
 
 .sub-navigation li:first-child {

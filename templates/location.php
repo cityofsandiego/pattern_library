@@ -65,7 +65,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="row">
                             <div class="twelve columns no-gutters">
-                                <div id="wide-map-canvas" style="width:100%; height: 360px;"></div>
+                                <div id="multi-map" style="width:100%; height: 360px;"></div>
                             </div>
                         </div>
 

@@ -330,7 +330,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                     <div class="row l-margin-bm">
                         <div class="six columns l-margin-mobile-bd">
-                            <div id="wide-map-canvas" style="width:100%; height: 360px;"></div>
+                            <div id="multi-map" style="width:100%; height: 360px;"></div>
                         </div>
                         <div class="six columns">
                             <div class="row">

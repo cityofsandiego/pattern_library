@@ -4601,6 +4601,9 @@ header nav a {
     .main__navigation .dropdown h4 a {
         color: #37424a;
     }
+    .main__navigation .dropdown h4 a:hover {
+        color: black;
+    }
 }
 
 .main__navigation .dropdown li {
@@ -4611,10 +4614,6 @@ header nav a {
     font-size: 18px;
     font-size: 1.125rem;
     text-transform: capitalize;
-}
-
-.main__navigation .dropdown h4 a:hover {
-    color: black;
 }
 
 .main__navigation .dropdown .nav__heading {
@@ -4719,16 +4718,29 @@ header nav a {
             flex-wrap: wrap;
 }
 
+@media screen and (min-width: 48em) {
+    .sub-navigation ul {
+        -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+    }
+}
+
+.sub-navigation.sub-navigation--long ul {
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
 .sub-navigation li {
+    line-height: 1em;
     display: inline-block;
-    margin: 0 .5em;
+    margin: .5em;
 }
 
 @media screen and (min-width: 48em) {
     .sub-navigation li {
         float: left;
-        max-width: 16.6666666667%;
-        padding: 0 .25em;
+        max-width: 20%;
+        margin: 0 .5em;
     }
     .sub-navigation li:first-child {
         padding-left: 0;
