@@ -322,7 +322,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <p>Here, we're using the <a href="https://developers.google.com/maps/documentation/javascript/" target="_blank">Google Maps Javascript API</a>. Options are set up in <em>main.js</em>. Create a wrapper of <strong>#single-map</strong> for a single location, and <strong>#multi-map</strong> for multiple locations.</p>
-                            <p>Drupal may have a Google Maps widget or tool that sets this script up differently. If so, be sure to include the identifying marker images when initializing.</p>
+                            <p>Drupal may have a Google Maps widget or tool that sets this script up differently. If so, be sure to include the identifying marker images and locations when initializing.</p>
                         </div>
                         <div class="twelve columns">
                             <div class="code__examples">

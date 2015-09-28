@@ -49,7 +49,7 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
                             <p>Phasellus ligula ipsum, blandit et mi eu, pretium aliquet urna. Maecenas ultricies erat eu justo vehicula placerat. Maecenas placerat ex lorem, sed auctor dui pretium sed. Nunc justo orci, gravida in justo id, convallis vestibulum ligula. Cras aliquam sodales sem, vitae elementum arcu tincidunt convallis. Praesent commodo leo turpis, non viverra dui ultricies sit amet. </p>
                         </div>
                         <div class="four columns">
-                            <div id="wide-map-canvas" class="l-margin-vs" style="width:100%; height: 360px;"></div>
+                            <div id="single-map" class="l-margin-vs" style="width:100%; height: 360px;"></div>
                         </div>
                     </div>
                     

@@ -33,6 +33,10 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
+    <!-- Google Maps -->
+     <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
+
 </head>
 <body<?php echo $body_class; ?>>
 <script>(function(d, s, id) {
@@ -42,11 +46,6 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
   js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=295948633946506";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- Google Maps -->
-<script type="text/javascript"
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
-
 
 
         <!--[if lt IE 8]>

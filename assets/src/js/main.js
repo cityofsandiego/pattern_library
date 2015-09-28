@@ -7,7 +7,7 @@
             init : function() {
                 this.utils.init();
                 this.modal();
-                // this.maps();
+                this.maps();
                 this.slides();
                 this.buttons();
                 this.close();
@@ -82,9 +82,9 @@
                 var $multi  = $('#multi-map'),
                     $single = $('#single-map');
 
-                if ( $multi.length || $single.length ) {
+                if ( $multi.length ) {
 
-                    function initialize() {
+                    function start() {
 
                         var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
 
@@ -95,19 +95,12 @@
 
                         var map = new google.maps.Map(document.getElementById('multi-map'), mapOptions);
 
-                        var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
 
                         var image = '../assets/dist/img/marker.png';
 
                         var marker = new google.maps.Marker({
                           position: myLatlng,
                           map: map,
-                          icon: image
-                        });
-
-                        var wideMarker = new google.maps.Marker({
-                          position: myLatlng,
-                          map: wideMap,
                           icon: image
                         });
 
@@ -161,6 +154,33 @@
                             });
                         }
 
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', start);
+
+                }
+
+                if ( $single.length ) {
+
+                    function initialize() {
+
+                        var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
+
+                        var mapOptions = {
+                            zoom: 13,
+                            center: myLatlng
+                        }
+
+
+                        var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
+
+                        var image = '../assets/dist/img/marker.png';
+
+                        var wideMarker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: wideMap,
+                          icon: image
+                        });
                     }
 
                     google.maps.event.addDomListener(window, 'load', initialize);
