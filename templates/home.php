@@ -148,7 +148,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
                 </div>
 
-                <div class="l-container l-padding-hd">
+                <div class="l-container l-padding-hd l-margin-mobile-tm">
                     <div class="row">
                         <div class="nine columns">
                             <div class="l-container">
@@ -321,7 +321,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
                 </div>
 
-                <div class="l-container l-padding-hd">
+                <div class="l-container l-padding-hd l-margin-mobile-tm">
                     <div class="row">
                         <div class="twelve columns">
                             <h2>Explore San Diego</h2>

@@ -82,9 +82,9 @@
                 var $multi  = $('#multi-map'),
                     $single = $('#single-map');
 
-                if ( $multi.length || $single.length ) {
+                if ( $multi.length ) {
 
-                    function initialize() {
+                    function start() {
 
                         var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
 
@@ -93,21 +93,14 @@
                             center: myLatlng
                         }
 
-                        var map = new google.maps.Map($multi[0], mapOptions);
+                        var map = new google.maps.Map(document.getElementById('multi-map'), mapOptions);
 
-                        var wideMap = new google.maps.Map($single[0], mapOptions);
 
                         var image = '../assets/dist/img/marker.png';
 
                         var marker = new google.maps.Marker({
                           position: myLatlng,
                           map: map,
-                          icon: image
-                        });
-
-                        var marker = new google.maps.Marker({
-                          position: myLatlng,
-                          map: wideMap,
                           icon: image
                         });
 
@@ -161,6 +154,33 @@
                             });
                         }
 
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', start);
+
+                }
+
+                if ( $single.length ) {
+
+                    function initialize() {
+
+                        var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
+
+                        var mapOptions = {
+                            zoom: 13,
+                            center: myLatlng
+                        }
+
+
+                        var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
+
+                        var image = '../assets/dist/img/marker.png';
+
+                        var wideMarker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: wideMap,
+                          icon: image
+                        });
                     }
 
                     google.maps.event.addDomListener(window, 'load', initialize);
@@ -340,10 +360,11 @@
 
             menu : function() {
 
-                function checkWidth() {
-                    var windowsize = $(window).width();
+                var windowWidth = $(window).width();
+                // console.log ( windowWidth );
 
-                    if ( windowsize < 768 ) {
+                function checkWidth() {
+                    if ( windowWidth < 768 ) {
                         $('.main__navigation .has__dropdown > a').each(function(){
                             $(this).click(function( e ){
                                 e.preventDefault();
@@ -355,7 +376,24 @@
                 }
 
                 checkWidth();
-                $(window).resize(checkWidth);
+
+                $(window).resize(function(){
+                    windowWidth = $(window).width();
+                    console.log ( windowWidth );
+
+                    if ( windowWidth < 768 ) {
+                        $('.main__navigation .has__dropdown > a').each(function(){
+                            var navButton = this;
+
+                            $(this).click(function( e ){
+                                $(this).toggleClass('open-dropdown');
+                                $(this).next('.dropdown').slideToggle();
+                                e.preventDefault();
+                            });
+
+                        });
+                    }
+                });
 
             },
 

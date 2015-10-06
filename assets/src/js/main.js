@@ -89,6 +89,7 @@
                         var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
 
                         var mapOptions = {
+                            scrollwheel: false,
                             zoom: 13,
                             center: myLatlng
                         }
@@ -361,21 +362,32 @@
             menu : function() {
 
                 function checkWidth() {
-                    var windowsize = $(window).width();
+                    var windowWidth = $(window).width();
 
-                    if ( windowsize < 768 ) {
-                        $('.main__navigation .has__dropdown > a').each(function(){
-                            $(this).click(function( e ){
+                    if ( windowWidth < 768 ) {
+
+                        $(".main__navigation .has__dropdown > a").each(function(){
+                            var $this = $(this);
+                            var $dropdown = $this.siblings(".dropdown");
+                            $this.click(function( e ){
                                 e.preventDefault();
-                                $(this).toggleClass('open-dropdown');
-                                $(this).next('.dropdown').slideToggle();
+                                $dropdown.slideToggle();
+                                $this.toggleClass("open-dropdown");
                             });
                         });
                     }
                 }
 
-                checkWidth();
-                $(window).resize(checkWidth);
+                $(window).on('resize', checkWidth());
+
+                $(window).on('resize', function(){
+                    var windowWidth = $(window).width();
+
+                    if ( windowWidth > 768 ) {
+                        $(".main__navigation .has__dropdown > a").removeClass("open-dropdown");
+                        $(".main__navigation .has__dropdown > .dropdown").css( "display", "");
+                    }
+                });
 
             },
 
