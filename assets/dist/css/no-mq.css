@@ -2924,6 +2924,7 @@ header > .row {
 
 .hero__slides {
     position: relative;
+    z-index: 100;
     width: 100%;
     height: 100%;
 }
