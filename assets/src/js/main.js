@@ -379,12 +379,15 @@
 
                 }
 
-                // If window width is tablet or below on load, run function
+                // If window width is tablet or below ON LOAD, run function
                 if ( windowWidth < 768 ) {
                     checkWidth();
                 }
 
                 $(window).on('resize', function(){
+
+                    var windowWidth = $(window).width();
+                    // console.log ( windowWidth );
 
                     var $parent = $(".main__navigation .dropdown-parent");
 
