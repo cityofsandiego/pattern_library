@@ -89,7 +89,6 @@
                         var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
 
                         var mapOptions = {
-                            scrollwheel: false,
                             zoom: 13,
                             center: myLatlng
                         }
@@ -361,30 +360,58 @@
 
             menu : function() {
 
+                // Check window width on load
+                var windowWidth = $(window).width();
+
                 function checkWidth() {
-                    var windowWidth = $(window).width();
 
-                    if ( windowWidth < 768 ) {
+                    $(".main__navigation .dropdown-parent").each(function(){
 
-                        $(".main__navigation .has__dropdown > a").each(function(){
-                            var $this = $(this);
-                            var $dropdown = $this.siblings(".dropdown");
-                            $this.click(function( e ){
-                                e.preventDefault();
-                                $dropdown.slideToggle();
-                                $this.toggleClass("open-dropdown");
-                            });
+                        var $this = $(this);
+                        var $dropdown = $this.siblings(".dropdown");
+
+                        $this.on("click", function( e ){
+                            e.preventDefault();
+                            $dropdown.slideToggle();
+                            $this.toggleClass("open-dropdown");
                         });
-                    }
+                    });
+
                 }
 
-                $(window).on('resize', checkWidth());
+                // If window width is tablet or below on load, run function
+                if ( windowWidth < 768 ) {
+                    checkWidth();
+                }
 
                 $(window).on('resize', function(){
-                    var windowWidth = $(window).width();
+
+                    var $parent = $(".main__navigation .dropdown-parent");
+
+                    // Check events attached to parent links
+                    var $events = jQuery._data($parent[0], "events" );
+
+                    // If viewport is at tablet width or below and no click event is bound to link
+                    if ( windowWidth < 768 && $events === undefined ) {
+
+                        $parent.on("click", function( e ){
+
+                            e.preventDefault();
+
+                            var $dropdown = $(this).siblings(".dropdown");
+                            $(this).toggleClass("open-dropdown");
+                            $dropdown.slideToggle();
+                        });
+
+                    }
 
                     if ( windowWidth > 768 ) {
-                        $(".main__navigation .has__dropdown > a").removeClass("open-dropdown");
+
+                        // Remove click handler event once viewport is larger than tablet
+                        $parent.each(function(){
+                            $(this).off();
+                            $(this).removeClass("open-dropdown");
+                        });
                         $(".main__navigation .has__dropdown > .dropdown").css( "display", "");
                     }
                 });

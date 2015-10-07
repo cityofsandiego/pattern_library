@@ -4136,7 +4136,7 @@ header nav a {
 
 .hero__slides {
     position: relative;
-    z-index: 100;
+    z-index: 4;
     width: 100%;
     height: 100%;
 }
