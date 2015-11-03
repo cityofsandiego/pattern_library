@@ -2202,7 +2202,7 @@ table {
         padding-top: .25em;
 
         @include mq( $from: tablet ) {
-            @include rem( 'font-size', 13px );
+            @include rem( 'font-size', 30px );
         }
 
         &:first-child {

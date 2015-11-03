@@ -12,7 +12,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Grid System</h1>
                 <div class="sub__nav--library">
                     <ul class="sub__nav">
-                        <li><a href="#grid-sizes">Grid Sizes</a></li>
+                        <li><a href="#grid-sizes">San Diego Grid Sizes</a></li>
                         <li><a href="#resp-cols">Responsive Columns</a></li>
                     </ul>
                 </div>
@@ -166,7 +166,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
             </div>
         </div>
-        
+
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
