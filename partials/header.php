@@ -4,6 +4,8 @@ global $body_class;
 
 $html_class = ( isset( $html_class ) ) ? $html_class . ' ' : '';
 $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
+
+$current_page = basename($_SERVER['PHP_SELF']);
 ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="<?php echo $html_class; ?>no-js lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
@@ -22,13 +24,25 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
+
+    <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+    <!-- Google Maps -->
+     <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
+
 </head>
 <body<?php echo $body_class; ?>>
+<div id="fb-root"></div>
+
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -36,21 +50,27 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
         <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="border border--bottom">
-            <div class="l-constrained">
-                <div class="one columns">
+        <header class="library__header">
+            <?php if ($current_page == "messaging.php"){ ?>
+                <div class="message message--warning">
+                    <div class="l-constrained">
+                        <p>
+                        <i class="icon-flag l-margin-rs"></i>
+                        <strong>Warning!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+                        <a href="" class="close-icon pull-right"><i class="icon-cross-circle"></i></a></p>
+                    </div>
+                </div>
+            <?php }?>
+            <div class="l-constrained row">
+                <div class="one columns logo l-padding-mobile-hd">
                     <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego - logo" width="163" height="132">
                 </div>
                 <div class="eleven columns">
                     <nav>
                         <ul>
                             <li><a href="/">Patterns</a></li>
-                            <li><a href="/">Templates</a></li>
+                            <li><a href="/templates/">Templates</a></li>
                         </ul>
-
-                        <?php
-                          $current_page = basename($_SERVER['PHP_SELF']);
-                        ?>
                     </nav>
                 </div>
             </div>

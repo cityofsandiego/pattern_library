@@ -14,6 +14,9 @@ body {
     font-size: 16px;
     font-size: 1em;
     line-height: 1.4;
+    background-color: $alto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -60,16 +63,6 @@ img,
 svg,
 video {
     vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
 }
 
 /*

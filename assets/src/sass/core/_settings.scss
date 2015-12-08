@@ -73,6 +73,7 @@
 
     $cerulean                                : #0098db;
     $robin                                   : #00c7b2;
+    $teal                                    : #009581;
     $sunshade                                : #ffa02f;
     $schoolbus                               : #fcd900;
     $spruce                                  : #37424a;
@@ -81,9 +82,12 @@
     // Secondary
     // ----------------------------------------------------------------------
 
+    $tulip                                   : #e89e3b; // orange
     $chateau                                 : #a7abad; // light gray
     $science                                 : #005bbb; // blue
     $shuttle                                 : #5d676f; // gray
+    $gold                                    : #fed100;
+    $picton                                  : #2dc2e3; // teal
 
     // Global
     // ----------------------------------------------------------------------
@@ -91,7 +95,7 @@
     $off-white                               : #f6f6f6;
     $off-black                               : #222222;
     $mercury                                 : #e4e9eb;
-    $alto                                    : #d6d7d8;
+    $alto                                    : #dde2e5;
     $gray                                    : #656667;
     $charcoal                                : #333332;
     $pomegranate                             : #ee3228; // red
@@ -119,7 +123,7 @@
 
     $success                                 : #659f13;
     $success-lt                              : #f2fae3;
-    $error                                   : #d85030;
+    $error                                   : #c51313;
     $error-lt                                : #fff1f0;
     $warning                                 : #e28327;
     $warning-lt                              : #fffceb;
@@ -133,5 +137,5 @@
     $font-family-tertiary                    : 'Source Sans Pro', sans-serif;
     $font-size                               : 16px;
     $font-color                              : $spruce;
-    $link-color                              : $spruce;
+    $link-color                              : $cerulean;
     $selection-highlight                     : $error;

@@ -5,17 +5,16 @@
 
 %btn {
     color: white;
+    border: none;
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
     position: relative;
     line-height: normal;
-    padding: .75em 2.5em;
+    padding: .75em 2em;
     display: inline-block;
     text-decoration: none;
     background-color: $cerulean;
-    text-transform: capitalize;
-    @include rem( 'font-size', 16px );
     @include transition-property( color, background, border );
     @include transition-duration( .15s );
 }
@@ -24,23 +23,29 @@
 /* Main
    ========================================================================== */
 
-.btn,
-input[type="submit"] {
+.btn {
     @extend %btn;
+
     &:hover {
         color: white;
         text-decoration: none;
         background-color: lighten( $cerulean, 10% );
     }
+
     i {
-        padding: .25em;
+        padding: .4em;
+        font-weight: 600;
         color: $cerulean;
         background: white;
         border-radius: 50%;
         text-align: center;
+        margin-right: .5em;
+        display: inline-block;
+        vertical-align: middle;
     }
-    .icon-arrow-right,
-    .icon-arrow-left {
+
+    .icon-chevron-right,
+    .icon-chevron-left {
         padding: 0;
         color: white;
         font-size: 150%;
@@ -49,7 +54,40 @@ input[type="submit"] {
         vertical-align: sub;
         line-height: .4;
     }
+
 }
+
+.btn--outline {
+    color: $cerulean;
+    border: 1px solid $cerulean;
+    background-color: transparent;
+    &:hover {
+        color: white;
+        background-color: $cerulean;
+
+        i {
+            color: white;
+        }
+    }
+
+    i {
+        color: white;
+        background: $cerulean;
+    }
+
+    i.icon-chevron-left,
+    i.icon-chevron-right {
+        color: $cerulean;
+    }
+
+    &:hover {
+        i.icon-chevron-left,
+        i.icon-chevron-right {
+            color: white;
+        }
+    }
+}
+
 
 .btn--primary {
     background-color: $cerulean;
@@ -79,18 +117,62 @@ input[type="submit"] {
     }
 }
 
-.btn--outline {
-    color: $cerulean;
-    border: 1px solid $cerulean;
-    background-color: transparent;
-    &:hover {
+.btn--icon {
+    padding: 1em;
+    text-align: left;
+
+    .icon-chevron-right,
+    .icon-chevron-left {
         color: white;
-        background-color: $cerulean;
+    }
+
+    .icon-chevron-right {
+        padding: 0;
+        color: white;
+        float: right;
+        line-height: 1;
+        border-radius: 0;
+        background: transparent;
     }
 }
 
 
+/* Icons
+   ========================================================================== */
 
+.btn--icon-left,
+.btn--icon-right {
+    position: relative;
+
+    .icon-chevron-left,
+    .icon-chevron-right {
+        position: absolute;
+        top: 50%;
+        @include transform( translateY( -50% ) );
+    }
+}
+
+.btn--icon-left {
+    padding-left: 3.5em;
+
+    i {
+        margin: 0 0 0 .5em;
+    }
+
+    .icon-chevron-left {
+        left: .75em;
+        margin: 0;
+    }
+}
+
+.btn--icon-right {
+    padding-right: 3.5em;
+
+    .icon-chevron-right {
+        right: 0.75em;
+        margin-right: 0;
+    }
+}
 
 
 /* Sizes
@@ -157,42 +239,6 @@ input[type="submit"] {
 .btn--third {
     width: 33.33333%;
 }
-
-
-
-
-
-/* Icons
-   ========================================================================== */
-
-.btn--icon-left,
-.btn--icon-right {
-    position: relative;
-
-    [class^="icon-"], [class*=" icon-"] {
-        position: absolute;
-        top: 50%;
-        @include transform( translateY( -50% ) );
-    }
-}
-
-.btn--icon-left {
-    padding-left: 3.5em;
-
-    [class^="icon-"], [class*=" icon-"] {
-        left: .75em;
-    }
-}
-
-.btn--icon-right {
-    padding-right: 3.5em;
-
-    [class^="icon-"], [class*=" icon-"] {
-        right: 0.75em;
-    }
-}
-
-
 
 
 

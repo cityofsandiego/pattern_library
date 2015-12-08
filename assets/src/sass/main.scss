@@ -45,20 +45,19 @@
 // Fonts
 // ==========================================================================
 
-@import "fonts/icomoon",
-        "fonts/icomoon-socials";
+@import "fonts/icomoon";
 
 // ==========================================================================
 // Modules
 // ==========================================================================
 
 @import "modules/modules",
+        "modules/offcanvas",
         "modules/comments",
-        "modules/buttons",
         "modules/forms",
+        "modules/buttons",
         "modules/mq-check",
         "modules/notifications",
-        "modules/offcanvas",
         "modules/pagination",
         "modules/social-profiles",
         "modules/widgets",

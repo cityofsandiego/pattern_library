@@ -40,20 +40,49 @@
  */
 $classes: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve;
 
+// Small columns begin from mobile
 @for $i from 1 through 12 {
 
     $class: nth( $classes, $i );
-
-    .#{$class} {
-        @include mq( $from: mobile-landscape ) {
+    
+    @media only screen {
+        .sm-#{$class} {
             @include span( $i );
-        }
-        &.no-gutters {
-            @include mq( $from: mobile-landscape ) {
+            &.no-gutters {
                 padding-left: 0;
                 padding-right: 0;
             }
         }
     }
 
+}
+
+// Large columns for tablet and up viewport widths
+@for $i from 1 through 12 {
+
+    $class: nth( $classes, $i );
+
+    @include mq( $from: tablet ) {
+        .#{$class} { 
+            @include span( $i );
+            &.no-gutters {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+// Offsets
+@for $i from 1 through 12 {
+
+    $class: nth( $classes, $i );
+
+    .push-#{$class} {
+        @include pre( $i );
+    }
+
+    .pull-#{$class} {
+        @include post( $i );
+    }
 }

@@ -73,7 +73,12 @@ module.exports = function ( grunt ) {
                         '<%= config.src %>/js/plugins/offcanvas.js',
                         '<%= config.src %>/js/plugins/codemirror.js',
                         '<%= config.src %>/js/plugins/javascript.js',
-                        '<%= config.src %>/js/plugins/htmlembedded.js'
+                        '<%= config.src %>/js/plugins/htmlembedded.js',
+                        '<%= config.src %>/js/plugins/css.js',
+                        '<%= config.src %>/js/plugins/htmlmixed.js',
+                        '<%= config.src %>/js/plugins/multiplex.js',
+                        '<%= config.src %>/js/plugins/xml.js',
+                        '<%= config.src %>/js/plugins/Chart.js'
                     ]
                 }
             }

@@ -7,11 +7,18 @@
             init : function() {
                 this.utils.init();
                 this.modal();
+                this.maps();
                 this.slides();
-                // this.maps();
                 this.buttons();
+                this.close();
                 this.accordion();
+                this.search();
+                this.close();
+                this.menu();
+                this.tabs();
+                this.steps();
             },
+
             vals : {
                 $window : $(window)
             },
@@ -70,86 +77,173 @@
                 }
             },
 
+            maps : function() {
+
+                var $multi  = $('#multi-map'),
+                    $single = $('#single-map');
+
+                if ( $multi.length ) {
+
+                    function start() {
+
+                        var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
+
+                        var mapOptions = {
+                            zoom: 13,
+                            center: myLatlng
+                        }
+
+                        var map = new google.maps.Map(document.getElementById('multi-map'), mapOptions);
+
+
+                        var image = '../assets/dist/img/marker.png';
+
+                        var marker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: map,
+                          icon: image
+                        });
+
+                        setMarkers(map, events, eventImage);
+                        setMarkers(map, attractions, attractionImage);
+                    }
+
+                    var events = [
+                        ['Big Bay Boom', 32.7090, -117.1711, 1],
+                        ['Comic Con', 32.7063, -117.1612, 2],
+                        ['Concerts in the Park', 32.7039, -117.1643, 3],
+                    ]
+
+                    var attractions = [
+                        ['Gaslamp Museum', 32.7105728, -117.1606412],
+                        ['Star of India', 32.7202992, -117.1735802],
+                        ['San Diego Zoo', 32.7359631, -117.1507747],
+                    ]
+
+                    var eventImage = {
+                        url    : '../assets/dist/img/event-marker.png',
+                        size   : new google.maps.Size(13,19),
+                        origin : new google.maps.Point(0,0),
+                        anchor : new google.maps.Point(0,0)
+                    };
+
+                    var attractionImage = {
+                        url    : '../assets/dist/img/attraction-marker.png',
+                        size   : new google.maps.Size(13,19),
+                        origin : new google.maps.Point(0,0),
+                        anchor : new google.maps.Point(0,0)
+                    };
+
+                    function setMarkers(map, locations, icon) {
+
+                        var shape = {
+                            coords: [1, 1, 1, 20, 18, 20, 18 , 1],
+                            type: 'poly'
+                        };
+
+                        for (var i = 0; i < locations.length; i++) {
+                            var event = locations[i];
+                            var myLatLng = new google.maps.LatLng(event[1], event[2]);
+                            var marker = new google.maps.Marker({
+                                position: myLatLng,
+                                map: map,
+                                icon: icon,
+                                shape: shape,
+                                title: event[0],
+                                zIndex: event[3]
+                            });
+                        }
+
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', start);
+
+                }
+
+                if ( $single.length ) {
+
+                    function initialize() {
+
+                        var myLatlng = new google.maps.LatLng(32.7117,-117.1592);
+
+                        var mapOptions = {
+                            zoom: 13,
+                            center: myLatlng
+                        }
+
+
+                        var wideMap = new google.maps.Map(document.getElementById('single-map'), mapOptions);
+
+                        var image = '../assets/dist/img/marker.png';
+
+                        var wideMarker = new google.maps.Marker({
+                          position: myLatlng,
+                          map: wideMap,
+                          icon: image
+                        });
+                    }
+
+                    google.maps.event.addDomListener(window, 'load', initialize);
+
+                }
+
+            },
+
             slides : function() {
-              // basic slideshow
-              // the synced thumbnail nav
-              $('#slider-nav-basic').flexslider({
-                animation: "slide",
-                directionNav: false,
-                controlNav: false,
-                itemWidth: 80,
-                itemMargin: 5,
-                asNavFor: '#slider-basic'
-              });
 
-              $('#slider-basic').flexslider({
-                animation: "slide",
-                directionNav: true,
-                maxItems: 1,
-                itemWidth: 960,
-                sync: "#slider-nav-basic"
-              });
+                $('#hero__slides--primary').flexslider({
+                    controlNav: false,
+                    customDirectionNav: $(".custom-navigation--primary a")
+                });
 
-              // slideshow with counter
-              // the synced thumbnail nav
-              $('#slider-nav').flexslider({
-                animation: "slide",
-                controlNav: false,
-                itemWidth: 80,
-                itemMargin: 5,
-                asNavFor: '#slider'
-              });
+                $('#hero__slides--secondary').flexslider({
+                    controlNav: false,
+                    customDirectionNav: $(".custom-navigation--secondary a")
+                });
 
-              $('#slider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                directionNav: true,
-                maxItems: 1,
-                itemWidth: 960,
-                sync: "#slider-nav",
-                start: function(slider) {
-                    var count = $('.total-slides').text(slider.count);
-                },
-                after: function(slider) {
-                    $('.current-slide').text(slider.currentSlide+1);
+                $('.flexslider--default').flexslider({
+                    animation: "slide",
+                    slideshow: false,
+                    start: function(slider) {
+                        var count = $('.total-slides').text(slider.count);
+                    },
+                    after: function(slider) {
+                        $('.current-slide').text(slider.currentSlide+1);
+                    }
+                });
+
+                var counter = '<li class="flex-counter"><span class="current-slide">1</span> / <span class="total-slides"></span></li>';
+                $('.flexslider .flex-control-nav').append( counter );
+
+                var index = $('.flexslider li:has(.flex-active)').index('.flex-control-nav li')+1;
+                var total = $('.flexslider .flex-control-nav li').length;
+
+                $('.flexslider--thumbnails').flexslider({
+                    animation: "slide",
+                    slideshow: false,
+                    controlNav: false,
+                    sync: ".flexslider--thumbnails-nav"
+                });
+
+                $('.flexslider--thumbnails-nav').flexslider({
+                    animation: "slide",
+                    itemWidth: 150,
+                    itemMargin: 5,
+                    slideshow: false,
+                    controlNav: false,
+                    asNavFor: ".flexslider--thumbnails"
+                });
+
+                // Mobile only slider
+                if ( $(window).width() < 480 ) {
+
+                    $(".flexslider--mobile").flexslider({
+                        // controlNav: false,
+                        animation: "slide",
+                        smoothHeight: false,
+                        directionNav: true
+                    });
                 }
-              });
-
-              // home slideshow
-              // the synced thumbnail nav
-              $('#home-slider-nav').flexslider({
-                animation: "slide",
-                pauseOnHover: true,
-                controlNav: false,
-                directionNav: false,
-                itemWidth: 288,
-                itemMargin: 5,
-                asNavFor: '#home-slider'
-              });
-
-              $('#home-slider').flexslider({
-                animation: "slide",
-                directionNav: true,
-                slideshowSpeed: 6000,
-                itemWidth: 1200,
-                keyboard: true,
-                minItems: 1,
-                maxItems: 1,
-                sync: "#home-slider-nav",
-                start: function(slider) {
-                    $('.total-slides').text(slider.count);
-                },
-                after: function(slider) {
-                    $('.current-slide').text(slider.currentSlide+1);
-                }
-              });
-
-              var counter = '<li class="flex-counter"><span class="current-slide">1</span>/<span class="total-slides"></span></li>';
-              var count = $("#slider .slides li").length;
-              if( count > 1 ) {
-                $("#slider .flex-direction-nav").append( counter );
-              }
-              $("#home-slider .flex-direction-nav").append( counter );
 
             },
 
@@ -200,9 +294,10 @@
                     mainClass : 'mfp-fade'
                 });
 
-                $('.card--modal').magnificPopup({
+                $('.popup-modal').magnificPopup({
                     type:'inline',
-                    mainClass : 'mfp-fade'
+                    midClick: true,
+                    closeBtnInside:true
                 });
             },
 
@@ -245,164 +340,148 @@
                 });
             },
 
-            // maps : function() {
-            //   (function($) {
-            //     /*
-            //     *  render_map
-            //     *
-            //     *  This function will render a Google Map onto the selected jQuery element
-            //     *
-            //     *  @type  function
-            //     *  @date  8/11/2013
-            //     *  @since 4.3.0
-            //     *
-            //     *  @param $el (jQuery element)
-            //     *  @return  n/a
-            //     */
+            search : function() {
 
-            //     function render_map( $el ) {
+                $(".search-icon--open").click(function(){
+                    event.preventDefault();
+                    $(this).toggleClass("search-open");
+                    $("#search-block-form").slideToggle();
+                });
+            },
 
-            //       // var
-            //       var $markers = $el.find('.marker');
+            close : function() {
+                $(".close-icon").each(function() {
+                    $(this).click(function( event ){
+                        event.preventDefault();
+                        $(this).parents(".message").slideUp();
+                    });
+                });
+            },
 
-            //       // vars
-            //       var args = {
-            //         zoom    : 16,
-            //         center    : new google.maps.LatLng(0, 0),
-            //         mapTypeId : google.maps.MapTypeId.ROADMAP
-            //       };
+            menu : function() {
 
-            //       // create map           
-            //       var map = new google.maps.Map( $el[0], args);
+                // Check window width on load
+                var windowWidth = $(window).width();
 
-            //       // add a markers reference
-            //       map.markers = [];
+                function checkWidth() {
 
-            //       // add markers
-            //       $markers.each(function(){
+                    $(".main__navigation .dropdown-parent").each(function(){
 
-            //           add_marker( $(this), map );
+                        var $this = $(this);
+                        var $dropdown = $this.siblings(".dropdown");
 
-            //       });
+                        $this.on("click", function( e ){
+                            e.preventDefault();
+                            $dropdown.slideToggle();
+                            $this.toggleClass("open-dropdown");
+                        });
+                    });
 
-            //       // center map
-            //       center_map( map );
+                }
 
-            //     }
+                // If window width is tablet or below ON LOAD, run function
+                if ( windowWidth < 768 ) {
+                    checkWidth();
+                }
 
-            //     /*
-            //     *  add_marker
-            //     *
-            //     *  This function will add a marker to the selected Google Map
-            //     *
-            //     *  @type  function
-            //     *  @date  8/11/2013
-            //     *  @since 4.3.0
-            //     *
-            //     *  @param $marker (jQuery element)
-            //     *  @param map (Google Map object)
-            //     *  @return  n/a
-            //     */
+                $(window).on('resize', function(){
 
-            //     function add_marker( $marker, map ) {
+                    var windowWidth = $(window).width();
+                    // console.log ( windowWidth );
 
-            //       // var
-            //       var latlng = new google.maps.LatLng( $marker.attr('data-lat'), $marker.attr('data-lng') );
+                    var $parent = $(".main__navigation .dropdown-parent");
 
-            //       // create marker
-            //       var marker = new google.maps.Marker({
-            //         position  : latlng,
-            //         map     : map
-            //       });
+                    // Check events attached to parent links
+                    var $events = jQuery._data($parent[0], "events" );
 
-            //       // add to array
-            //       map.markers.push( marker );
+                    // If viewport is at tablet width or below and no click event is bound to link
+                    if ( windowWidth < 768 && $events === undefined ) {
 
-            //       // if marker contains HTML, add it to an infoWindow
-            //       if( $marker.html() )
-            //       {
-            //         // create info window
-            //         var infowindow = new google.maps.InfoWindow({
-            //           content   : $marker.html()
-            //         });
+                        $parent.on("click", function( e ){
 
-            //         // show info window when marker is clicked
-            //         google.maps.event.addListener(marker, 'click', function() {
+                            e.preventDefault();
 
-            //           infowindow.open( map, marker );
+                            var $dropdown = $(this).siblings(".dropdown");
+                            $(this).toggleClass("open-dropdown");
+                            $dropdown.slideToggle();
+                        });
 
-            //         });
-            //       }
+                    }
 
-            //     }
+                    if ( windowWidth > 768 ) {
 
-            //     /*
-            //     *  center_map
-            //     *
-            //     *  This function will center the map, showing all markers attached to this map
-            //     *
-            //     *  @type  function
-            //     *  @date  8/11/2013
-            //     *  @since 4.3.0
-            //     *
-            //     *  @param map (Google Map object)
-            //     *  @return  n/a
-            //     */
+                        // Remove click handler event once viewport is larger than tablet
+                        $parent.each(function(){
+                            $(this).off();
+                            $(this).removeClass("open-dropdown");
+                        });
+                        $(".main__navigation .has__dropdown > .dropdown").css( "display", "");
+                    }
+                });
 
-            //     function center_map( map ) {
+            },
 
-            //       // vars
-            //       var bounds = new google.maps.LatLngBounds();
+            tabs : function() {
 
-            //       // loop through all markers and create bounds
-            //       $.each( map.markers, function( i, marker ){
+                /**
+                 * @todo set/check hash in url
+                 *
+                 * remove default is-active classes defined in html
+                 * and set programmatically via js
+                 */
 
-            //         var latlng = new google.maps.LatLng( marker.position.lat(), marker.position.lng() );
+                function change_tab( $this ) {
+                    if( ! $this.hasClass('is-active' ) ) {
 
-            //         bounds.extend( latlng );
+                        var $bucket = $( $this.find('.tabs-list__link').attr('href') );
 
-            //       });
+                        // set active tab class
+                        $this.addClass('is-active');
+                        $bucket.addClass('is-active');
 
-            //       // only 1 marker?
-            //       if( map.markers.length == 1 )
-            //       {
-            //         // set center of map
-            //           map.setCenter( bounds.getCenter() );
-            //           map.setZoom( 16 );
-            //       }
-            //       else
-            //       {
-            //         // fit to bounds
-            //         map.fitBounds( bounds );
-            //       }
+                        // remove active class on other items
+                        $('.tabs-list__item').not( $this ).removeClass('is-active');
+                        $('.tabs__bucket').not( $bucket ).removeClass('is-active');
 
-            //     }
+                        // set the hashtag on the url
+                        if ( history.pushState ) {
+                            history.pushState(null, null, '#' + $this.attr('id'));
+                        } else {
+                            location.hash = $this.attr('id');
+                        }
+                    }
+                }
 
-            //     /*
-            //     *  document ready
-            //     *
-            //     *  This function will render each map when the document is ready (page has loaded)
-            //     *
-            //     *  @type  function
-            //     *  @date  8/11/2013
-            //     *  @since 5.0.0
-            //     *
-            //     *  @param n/a
-            //     *  @return  n/a
-            //     */
+                // set active tab on tab click
+                $('.js-tabs-list').on( 'click', '.tabs-list__link', function( e ) {
+                    e.preventDefault();
 
-            //     $(document).ready(function(){
+                    var $this = $(this).closest('.tabs-list__item');
 
-            //       $('.acf-map').each(function(){
+                    // set active tab
+                    change_tab( $this );
+                });
 
-            //         render_map( $(this) );
+            },
 
-            //       });
+            steps : function() {
 
-            //     });
+                var one = $("#form__step-1 fieldset").height();
 
-            //   })(jQuery);
-            // }
+                var two = $("#form__step-2 fieldset").height();
+
+                var three = $("#form__step-1").height();
+
+                var difference = one - two;
+
+                if( two < one ) {
+                    $("#form__step-2 fieldset").height(function (index, height) {
+                        return (height + difference);
+                    });
+
+                    $("#form__step-3 fieldset").css( "min-height", three );
+                }
+            }
 
         };
 

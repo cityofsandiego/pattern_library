@@ -7,35 +7,38 @@
  * Type uses Modular Scale - Major Third (1.250)
  * http://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&webfont=Libre+Baskerville&font-family=%27Libre%20Baskerville%27,%20serif&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
  */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
     margin: .5em 0;
     color: $spruce;
     font-weight: normal;
     font-family: $font-family-secondary;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.2;
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {
+  line-height: 1.3;
 }
 
 h1, .h1 {
-    @include rem( 'font-size', 39px ); // 2.441em
+    @include rem( 'font-size', 36px ); // 2.441em
 }
 
 h2, .h2 {
-    @include rem( 'font-size', 31px ); // 1.953em
+    @include rem( 'font-size', 27px ); // 1.953em
 }
 
 h3, .h3 {
-    @include rem( 'font-size', 25px ); // 1.563em
+    @include rem( 'font-size', 24px ); // 1.563em
 }
 
 h4, .h4 {
-    @include rem( 'font-size', 20px ); // 1.25em
+    font-weight: 600;
+    @include rem( 'font-size', 16px ); // 1.25em
 }
 
 h5, .h5 {
-    @include rem( 'font-size', 18px ); // 1.125em
+    @include rem( 'font-size', 16px ); // 1.125em
 }
 
 h6, .h6 {
@@ -80,7 +83,6 @@ blockquote {
         text-align: right;
         font-style: normal;
         font-family: $font-family;
-        text-transform: uppercase;
         @include rem( 'font-size', 12px );
     }
 }
@@ -107,9 +109,6 @@ dt {
 dd {
     margin: 0 0 .75em 0;
 }
-
-
-
 
 
 /* Heading
@@ -142,27 +141,12 @@ dd {
 }
 
 
-
-
-
 /* Subheadline
    ========================================================================== */
 
 .subheading {
-    color: lighten( $cerulean, 15% );
+    color: $teal;
     @include rem( 'font-size', 20px );
     font-family: $font-family-secondary;
 }
 
-
-
-/* Formatting
-   ========================================================================== */
-
-.fine-print {
-    @include rem( 'font-size', 12px );
-}
-
-.text-accent {
-    @include rem( 'font-size', 22px );
-}
