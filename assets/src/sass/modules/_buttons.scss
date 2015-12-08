@@ -14,7 +14,6 @@
     padding: .75em 2em;
     display: inline-block;
     text-decoration: none;
-    text-transform: capitalize;
     background-color: $cerulean;
     @include transition-property( color, background, border );
     @include transition-duration( .15s );

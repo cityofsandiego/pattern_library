@@ -25,7 +25,6 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-weight: 600;
     @include rem( 'font-size', 27px ); // 1.953em
 }
 
@@ -84,7 +83,6 @@ blockquote {
         text-align: right;
         font-style: normal;
         font-family: $font-family;
-        text-transform: uppercase;
         @include rem( 'font-size', 12px );
     }
 }

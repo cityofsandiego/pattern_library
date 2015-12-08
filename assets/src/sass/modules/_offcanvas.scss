@@ -41,6 +41,20 @@
     }
 }
 
+.csstransforms3d.csstransitions.js-ready {
+    @include mq( $until: tablet ) {
+        #nav {
+            visibility: hidden;
+        }
+    }
+
+    &.js-nav {
+        #nav {
+            visibility: visible;
+        }
+    }
+}
+
 .nav-primary { // #nav
     @include mq( $until: tablet ) {
         position: absolute;
