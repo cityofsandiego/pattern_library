@@ -363,7 +363,7 @@ p.nav-ex {
     }
 }
 .background-off-white {
-    background-color: $off-white;
+    background-color: lighten( $mercury, 2% );
 }
 
 .background-white {

@@ -1062,7 +1062,6 @@ h2,
 .h2 {
     font-size: 27px;
     font-size: 1.6875rem;
-    font-weight: 600;
 }
 
 h3,
@@ -1135,7 +1134,6 @@ blockquote .author {
     display: block;
     margin: 1em 0;
     text-align: right;
-    text-transform: uppercase;
     color: #37424a;
 }
 
@@ -3950,6 +3948,12 @@ dd {
 
 /* Header
    ========================================================================== */
+@media screen and (max-width: 47.99em) {
+    #nav {
+        visibility: hidden;
+    }
+}
+
 header {
     z-index: 20;
     background: white;
@@ -4044,16 +4048,6 @@ header nav a {
 @media screen and (min-width: 60em) {
     header > .l-constrained {
         padding-bottom: 1em;
-    }
-    header .quicklinks {
-        display: inline-block;
-        float: left;
-    }
-    header .form--search-wrap {
-        padding: 0 2em;
-    }
-    header .card--weather {
-        float: right;
     }
 }
 
@@ -4419,7 +4413,8 @@ header nav a {
                 flex-wrap: nowrap;
     }
     .main__navigation > ul .has__dropdown:hover .dropdown {
-        display: block;
+        visibility: visible;
+        opacity: 1;
     }
 }
 
@@ -4441,6 +4436,10 @@ header nav a {
         width: 1px;
         height: 100%;
         content: "";
+    }
+    .main__navigation > ul > li.current,
+    .main__navigation > ul > li:hover {
+        background: #e89e3b;
     }
     .main__navigation > ul > li.current > a,
     .main__navigation > ul > li.current > a i,
@@ -4555,7 +4554,7 @@ header nav a {
     font-size: .6875rem;
     font-weight: 400;
     display: block;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .main__navigation a:hover {
@@ -4586,7 +4585,6 @@ header nav a {
         font-size: 18px;
         font-size: 1.125rem;
         line-height: 1.5;
-        text-transform: capitalize;
     }
 }
 
@@ -4595,8 +4593,14 @@ header nav a {
         position: absolute;
         top: 100%;
         left: 0;
-        display: none;
+        visibility: hidden;
         width: 100%;
+        transition: opacity .5s ease;
+        -webkit-transition-delay: 500ms;
+           -moz-transition-delay: 500ms;
+             -o-transition-delay: 500ms;
+                transition-delay: 400ms;
+        opacity: 0;
         box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
     }
     .main__navigation .dropdown h4 a {
@@ -4614,7 +4618,7 @@ header nav a {
 .main__navigation .dropdown h4 a {
     font-size: 18px;
     font-size: 1.125rem;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .main__navigation .dropdown .nav__heading {
@@ -4646,7 +4650,7 @@ header nav a {
 
 .main__navigation .dropdown .nav__event a {
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: none;
     color: #0098db;
 }
 
@@ -4871,7 +4875,6 @@ header nav a {
 
 .main__navigation--portal a {
     font-weight: normal;
-    text-transform: capitalize;
     color: white;
 }
 
@@ -5106,6 +5109,13 @@ header nav a {
     background: white;
 }
 
+@media screen and (max-width: 47.99em) {
+    .card {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
 .card > a {
     text-decoration: none;
 }
@@ -5125,9 +5135,24 @@ header nav a {
         /* Safari */
         display:         inline-flex;
 
-        -webkit-justify-content: center;
+        -webkit-justify-content: flex-start;
         /* Safari */
-                justify-content: center;
+                justify-content: flex-start;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 30em) {
+    .card__container .slides {
+        display: block;
+        display: -webkit-inline-flex;
+        /* Safari */
+        display:         inline-flex;
+
+        -webkit-justify-content: flex-start;
+        /* Safari */
+                justify-content: flex-start;
         -webkit-flex-wrap: wrap;
                 flex-wrap: wrap;
     }
@@ -6166,12 +6191,13 @@ main[role="main"],
 /* Tables
    ========================================================================== */
 table {
+    margin-bottom: 1em;
     background: #f6f6f6;
 }
 
 table th {
     font-family: "Merriweather", serif;
-    padding: .25em;
+    padding: .5em 1em;
     text-align: left;
     word-wrap: break-word;
     background: transparent;
@@ -6215,19 +6241,12 @@ table tr.subheading td {
 
 table td {
     line-height: 1.8;
-    padding-top: .25em;
-    padding-bottom: .25em;
-}
-
-@media screen and (min-width: 48em) {
-    table td {
-        font-size: 13px;
-        font-size: .8125rem;
-    }
+    padding: .5em 1em;
+    vertical-align: top;
 }
 
 table td:first-child {
-    padding-left: .5em;
+    padding-left: 1em;
 }
 
 table td.table--break {
@@ -6675,6 +6694,10 @@ footer a:hover {
     color: #37424a;
 }
 
+.field-collection-container a {
+    text-decoration: none;
+}
+
 #outer-wrap {
     position: relative;
     overflow: hidden;
@@ -6726,6 +6749,16 @@ footer a:hover {
              -o-transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
                 transform: translate3d(-70%, 0, 0) scale3d(1, 1, 1);
     }
+}
+
+@media screen and (max-width: 47.99em) {
+    .csstransforms3d.csstransitions.js-ready #nav {
+        visibility: hidden;
+    }
+}
+
+.csstransforms3d.csstransitions.js-ready.js-nav #nav {
+    visibility: visible;
 }
 
 .nav-primary {
@@ -7673,7 +7706,6 @@ header .search-icon i {
             transition-property: color, background, border;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
     color: white;
     border: none;
     border-radius: 4px;
@@ -9653,10 +9685,6 @@ img.mfp-img {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.flex-pauseplay span {
-    text-transform: capitalize;
 }
 
 /* ====================================================================================================================

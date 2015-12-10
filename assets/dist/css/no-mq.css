@@ -1012,7 +1012,6 @@ h2,
 .h2 {
     font-size: 27px;
     font-size: 1.6875rem;
-    font-weight: 600;
 }
 
 h3,
@@ -1085,7 +1084,6 @@ blockquote .author {
     display: block;
     margin: 1em 0;
     text-align: right;
-    text-transform: uppercase;
     color: #37424a;
 }
 
@@ -3164,7 +3162,8 @@ header > .row {
 }
 
 .main__navigation > ul .has__dropdown:hover .dropdown {
-    display: block;
+    visibility: visible;
+    opacity: 1;
 }
 
 .main__navigation > ul > li {
@@ -3182,6 +3181,11 @@ header > .row {
     width: 1px;
     height: 100%;
     content: "";
+}
+
+.main__navigation > ul > li.current,
+.main__navigation > ul > li:hover {
+    background: #e89e3b;
 }
 
 .main__navigation > ul > li.current > a,
@@ -3240,7 +3244,7 @@ header > .row {
     font-size: .6875rem;
     font-weight: 400;
     display: block;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .main__navigation a:hover {
@@ -3256,9 +3260,15 @@ header > .row {
     z-index: 10;
     top: 100%;
     left: 0;
-    display: none;
+    visibility: hidden;
     width: 100%;
     padding: 1em;
+    transition: opacity .5s ease;
+    -webkit-transition-delay: 500ms;
+       -moz-transition-delay: 500ms;
+         -o-transition-delay: 500ms;
+            transition-delay: 400ms;
+    opacity: 0;
     box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .4);
 }
 
@@ -3277,7 +3287,7 @@ header > .row {
 .main__navigation .dropdown h4 a {
     font-size: 18px;
     font-size: 1.125rem;
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .main__navigation .dropdown .nav__heading {
@@ -3309,7 +3319,7 @@ header > .row {
 
 .main__navigation .dropdown .nav__event a {
     text-decoration: underline;
-    text-transform: capitalize;
+    text-transform: none;
     color: #0098db;
 }
 
@@ -3465,7 +3475,6 @@ header > .row {
 
 .main__navigation--portal a {
     font-weight: normal;
-    text-transform: capitalize;
     color: white;
 }
 
@@ -3697,9 +3706,22 @@ header > .row {
     /* Safari */
     display:         inline-flex;
 
-    -webkit-justify-content: center;
+    -webkit-justify-content: flex-start;
     /* Safari */
-            justify-content: center;
+            justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+}
+
+.card__container .slides {
+    display: block;
+    display: -webkit-inline-flex;
+    /* Safari */
+    display:         inline-flex;
+
+    -webkit-justify-content: flex-start;
+    /* Safari */
+            justify-content: flex-start;
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
 }
@@ -4610,12 +4632,13 @@ main[role="main"],
 /* Tables
    ========================================================================== */
 table {
+    margin-bottom: 1em;
     background: #f6f6f6;
 }
 
 table th {
     font-family: "Merriweather", serif;
-    padding: .25em;
+    padding: .5em 1em;
     text-align: left;
     word-wrap: break-word;
     border-bottom: 1px solid #dde2e5;
@@ -4648,15 +4671,13 @@ table tr.subheading td {
 }
 
 table td {
-    font-size: 13px;
-    font-size: .8125rem;
     line-height: 1.8;
-    padding-top: .25em;
-    padding-bottom: .25em;
+    padding: .5em 1em;
+    vertical-align: top;
 }
 
 table td:first-child {
-    padding-left: .5em;
+    padding-left: 1em;
 }
 
 table td.table--break {
@@ -4994,6 +5015,10 @@ footer a:hover {
     color: #37424a;
 }
 
+.field-collection-container a {
+    text-decoration: none;
+}
+
 .comments-title {
     font-size: 24px;
     font-size: 1.5rem;
@@ -5128,7 +5153,6 @@ footer a:hover {
             transition-property: color, background, border;
     text-align: center;
     text-decoration: none;
-    text-transform: capitalize;
     color: white;
     border: none;
     border-radius: 4px;
@@ -5933,6 +5957,10 @@ header .form--search-wrap {
 #inner-wrap {
     position: relative;
     width: 100%;
+}
+
+.csstransforms3d.csstransitions.js-ready.js-nav #nav {
+    visibility: visible;
 }
 
 .nav-primary {

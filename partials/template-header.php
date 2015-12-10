@@ -56,14 +56,31 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <div id="outer-wrap">
     <div id="inner-wrap">
         <header class="l-padding-mobile-hs">
-            <div class="l-constrained row l-padding-td l-padding-desktop-tm">
-                <div class="two columns no-gutters logo--wrap">
+            <div class="l-constrained row l-padding-td l-padding-desktop-tn">
+                <div class="twelve columns hide-on-mobile text-right">
+                    <div class="quicklinks background--cerulean">
+                        <ul class="l-margin-bs l-margin-tn">
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
+                            <li><a href="">Translate</a></li>
+                            <li><a href="">High Contrast</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="three columns no-gutters logo--wrap">
                     <a href="/" class="logo">
                         <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                         <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                     </a>
                 </div>
-                <div class="three columns form--search-wrap">
+                <div class="six columns text-center hide-on-mobile">
+                    <div class="card--weather">
+                        <i class="icon-sun"></i>
+                        <p class="temperature"><span class="degrees">73</span>&deg;</p>
+                        <p><strong>San Diego <br> Weather</strong></p>
+                    </div>
+                </div>
+                <div class="three columns no-gutters form--search-wrap">
                     <a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                         <div><div class="l-container">
@@ -79,22 +96,6 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                             <input type="hidden" name="form_id" value="search_block_form">
                         </div></div>
                     </form>
-                </div>
-                <div class="seven columns no-gutters hide-on-mobile">
-                    <div class="quicklinks background--cerulean l-padding-td">
-                        <ul>
-                            <li><a href="">Login</a></li>
-                            <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
-                            <li><a href="">Translate</a></li>
-                            <li><a href="">High Contrast</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="card--weather">
-                        <i class="icon-sun"></i>
-                        <p class="temperature"><span class="degrees">73</span>&deg;</p>
-                        <p><strong>San Diego <br> Weather</strong></p>
-                    </div>
                 </div>
             </div>
 
@@ -156,7 +157,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="four columns hide-on-mobile">
+                                        <div class="four columns">
                                             <div class="nav__event">
                                                 <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
                                                 <p>Celebrate the Balboa Park Centennial <a href="">Learn More</a></p>
@@ -203,7 +204,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="four columns hide-on-mobile">
+                                        <div class="four columns">
                                             <div class="nav__event">
                                                 <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
                                                 <p>Make a Payment <a href="">Learn More</a></p>
@@ -250,7 +251,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="four columns hide-on-mobile">
+                                        <div class="four columns">
                                             <div class="nav__event">
                                                 <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
                                                 <p>Signup for a Class <a href="">Learn More</a></p>
@@ -320,7 +321,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="four columns hide-on-mobile">
+                                        <div class="four columns">
                                             <div class="nav__event">
                                                 <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
                                                 <p>Read the Safety Forum <a href="">Learn More</a></p>
@@ -382,7 +383,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="four columns hide-on-mobile">
+                                        <div class="four columns">
                                             <div class="nav__event">
                                                 <img src="/assets/dist/img/nav-event-1.jpg" width="74" height="74" alt="Event 1">
                                                 <p>See Town Hall Events and Community Forums <a href="">Learn More</a></p>

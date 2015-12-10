@@ -154,7 +154,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <div class="l-container">
                                 <h2>Our San Diego</h2>
 
-                                <div class="mobile-flexslider card__container l-margin-vd">
+                                <div class="flexslider--mobile card__container l-margin-vd">
                                     <ul class="slides">
                                         <li class="card__wrap">
                                             <div class="card background-off-white">

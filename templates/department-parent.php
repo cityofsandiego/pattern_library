@@ -43,7 +43,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
         <div class="l-constrained l-padding-mobile-hd background-white role-main">
            <nav class="sub-navigation">
                 <ul>
-                    <li><a href="">Parks & Recreation</a></li>
+                    <li class="active"><a href="">Parks & Recreation</a></li>
                     <li><a href="">General Information</a></li>
                     <li><a href="">Recreation Centers & Pools</a></li>
                     <li><a href="">Parks & Open Spaces</a></li>
@@ -63,23 +63,25 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
 
             <div class="l-container l-padding-ad">
-                <div class="row">
+                <div class="row dept-parent-intro">
                     <div class="six columns">
                         <div class="l-padding-desktop-hl l-margin-vd row">
                             <div class="three columns border border--right hide-on-mobile">
                                 <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="l-padding-rd l-padding-ts">
                             </div>
                             <div class="nine columns">
-                                <h1 class="l-margin-tn l-padding-desktop-ls">Parks & Recreation</h1>
-                                <p>General Park & Recreation<br>
-                                Information Phone: <br> <a href="tel:619-525-8213">(619) 525-8213</a></p>
-                                <div class="social-share__wrap">
-                                    <span class='st_sharethis_large' displayText='ShareThis'></span>
-                                    <span class='st_facebook_large' displayText='Facebook'></span>
-                                    <span class='st_twitter_large' displayText='Tweet'></span>
-                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
-                                    <span class='st_email_large' displayText='Email'></span>
+                                <div class="l-padding-desktop-ld">
+                                    <h1 class="l-margin-tn">Parks & Recreation</h1>
+                                    <p>General Park & Recreation<br>
+                                    Information Phone: <br> <a href="tel:619-525-8213">(619) 525-8213</a></p>
+                                    <div class="social-share__wrap">
+                                        <span class='st_sharethis_large' displayText='ShareThis'></span>
+                                        <span class='st_facebook_large' displayText='Facebook'></span>
+                                        <span class='st_twitter_large' displayText='Tweet'></span>
+                                        <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                        <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                        <span class='st_email_large' displayText='Email'></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -107,78 +109,80 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="entry__content l-padding-hm l-padding-vd">
                             <h2>Parks News and Announcements</h2>
-                            <div class="card__container l-margin-vd">
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                            <div class="flexslider--mobile card__container l-margin-vd">
+                                <ul class="slides">
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
 
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
 
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
 
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
 
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
 
-                                <div class="card__wrap">
-                                    <div class="card">
-                                        <div class="card__image">
-                                            <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    <li class="card__wrap">
+                                        <div class="card">
+                                            <div class="card__image">
+                                                <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                            </div>
+                                            <div class="card__content">
+                                                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                                <a href="" class="">Read More</a>
+                                            </div>
                                         </div>
-                                        <div class="card__content">
-                                            <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                            <a href="" class="">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                    </li>
+                                </ul>
 
                             </div>
 

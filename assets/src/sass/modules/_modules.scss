@@ -85,16 +85,11 @@ header {
         }
 
         .card--weather {
-            display: block;
             margin-top: .5em;
             text-align: center;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            bottom: 0;
 
             i, p, p.temperature {
-                @include rem( 'font-size', 13px );
+                @include rem( 'font-size', 16px );
             }
 
             br {
@@ -109,16 +104,21 @@ header {
         }
 
         .quicklinks {
-            float: left;
-            display: inline-block;
+            // float: left;
+            // display: inline-block;
         }
 
         .form--search-wrap {
-            padding: 0 2em;
+            // padding: 0 2em;
         }
 
         .card--weather {
-            float: right;
+            
+        }
+
+        .twelve {
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 
@@ -474,7 +474,8 @@ header {
             .has__dropdown {
                 &:hover {
                     .dropdown {
-                        display: block;
+                        visibility: visible;
+                        opacity: 1;
                     }
                 }
             }
@@ -646,12 +647,18 @@ header {
         }
 
         @include mq( $from: tablet ) {
-            display: none;
             position: absolute;
             width: 100%;
             top: 100%;
             left: 0;
             box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.4);
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity .5s ease;
+            -webkit-transition-delay: 500ms;
+            -moz-transition-delay: 500ms;
+            -o-transition-delay: 500ms;
+            transition-delay: 400ms;
 
             h4 a {
                 color: $spruce;
@@ -668,6 +675,7 @@ header {
 
         h4 {
             a {
+                text-transform: none;
                 @include rem( 'font-size', 18px );
             }
         }
@@ -689,22 +697,37 @@ header {
         }
 
         .nav__event {
-            @include rem( 'font-size', 13px );
+            @include rem( 'font-size', 18px );
             clear: both;
             overflow: hidden;
             margin-bottom: .5em;
             padding-bottom: .5em;
+
             a {
                 color: $cerulean;
+                text-transform: none;
                 text-decoration: underline;
 
                 &:hover {
                     color: lighten( $link-color, 10% );
                 }
             }
+
             img {
                 float: left;
                 margin-right: 1em;
+            }
+
+            &:first-child {
+                margin-top: 2em;
+            }
+
+            @include mq( $from: tablet ) {
+                @include rem( 'font-size', 13px );
+
+                &:first-child {
+                    margin-top: 0em;
+                }
             }
         }
     }
@@ -754,20 +777,25 @@ header {
     position: relative;
     z-index: 10;
 
+    @include mq( $from: tablet ) {
+        background: transparent;
+    }
+
     ul {
         margin: 0;
-        padding: .5em;
+        padding: 0;
         list-style: none;
         overflow: hidden;
-        display: block;
-        display: -webkit-flex; /* Safari */
-        display: flex;
-        -webkit-justify-content: left; /* Safari */
-        justify-content:         left;
-        -webkit-flex-wrap: wrap;
-        flex-wrap: wrap;
 
         @include mq( $from: tablet ) {
+            background: transparent;
+            display: block;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+            -webkit-justify-content: left; /* Safari */
+            justify-content:         left;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
             -webkit-flex-wrap: nowrap;
             flex-wrap: nowrap;
         }
@@ -782,27 +810,41 @@ header {
 
     li {
         margin: .5em;
+        padding: .5em;
+        display: block;
         line-height: 1em;
-        display: inline-block;
+        background: $teal;
+
+        &.active {
+            background: darken( $teal, 5% );
+        }
 
         @include mq( $from: tablet ) {
+            padding: 0;
+            display: inline-block;
+            display: -webkit-flex;
+            display: flex;
             float: left;
-            margin: 0 .5em;
+            margin: 0 .25em;
             max-width: 20%;
 
             &:first-child {
-                padding-left: 0;
+                margin-left: 0;
             }
         }
     }
     a {
+        display: block;
         color: $mercury;
         font-weight: bold;
         text-decoration: none;
+
         &:hover {
             color: white;
         }
+
         @include mq( $from: tablet ) {
+            padding: .5em;
             @include rem( 'font-size', 13px );
         }
     }
@@ -970,8 +1012,7 @@ header {
 
 .quicklinks {
     ul {
-        margin: 0;
-        padding: 0;
+        padding: .25em 0 0;
         list-style: none;
     }
 
@@ -1243,6 +1284,14 @@ header {
     .card__btn {
         display: block;
         font-weight: 600;
+    }
+
+    &.flexslider--mobile {
+        .card__wrap {
+            @include mq( $until: tablet ) {
+                margin: 0;
+            }
+        }
     }
 }
 
@@ -1931,8 +1980,16 @@ span[class^="text-"] {
 main {
     @include mq( $from: tablet ) {
         > .nine:first-child {
-            border-right: 1px solid $alto;
+            border-right: 1px solid darken( $alto, 4% );
             border-left: 1px solid $alto;
+
+            &:after {
+                content: '';
+                background: lighten( $mercury, 2% );
+                position: absolute;
+                top: 0; right: -33.6%;
+                height: 100%; width: 33.5%;
+            }
         }
 
         > .six {
@@ -1952,11 +2009,25 @@ main[role="main"],
     position: relative;
 
     @include mq( $from: site ) {
-        margin-top: -6em;
+        .sub-navigation {
+            margin-top: -6em;
+        }
+    }
+
+    .breadcrumbs {
+        + .l-container {
+            background: white;
+        }
     }
 }
 
-
+.dept-parent-intro {
+    @include mq( $from: site ) {
+        h1 {
+            min-height: 92px;
+        }
+    }
+}
 
 /* Accordion
    ========================================================================== */
