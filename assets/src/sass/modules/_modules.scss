@@ -99,6 +99,19 @@ header {
     }
 
     @include mq( $from: site ) {
+        // fixed header
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 88888;
+        backface-visibility: hidden;
+
+        // offset header height of sibling container
+        + div {
+            margin-top: 169px;
+        }
+
         > .l-constrained {
             padding-bottom: 1em;
         }
