@@ -55,7 +55,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hs">
+        <header class="l-padding-mobile-hs header--fixed">
             <div class="l-constrained row l-padding-td l-padding-desktop-tn">
                 <div class="twelve columns hide-on-mobile text-right">
                     <div class="quicklinks background--cerulean">

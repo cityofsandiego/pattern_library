@@ -907,7 +907,7 @@ p.nav-ex {
 }
 
 .background-off-white {
-    background-color: #f6f6f6;
+    background-color: #eaeeef;
 }
 
 .background-white {
@@ -4026,19 +4026,14 @@ header nav a {
         text-align: right;
     }
     header .card--weather {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: block;
-        width: 100%;
         margin-top: .5em;
         text-align: center;
     }
     header .card--weather i,
     header .card--weather p,
     header .card--weather p.temperature {
-        font-size: 13px;
-        font-size: .8125rem;
+        font-size: 16px;
+        font-size: 1rem;
     }
     header .card--weather br {
         display: none;
@@ -4046,8 +4041,24 @@ header nav a {
 }
 
 @media screen and (min-width: 60em) {
+    header {
+        position: fixed;
+        z-index: 88888;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        backface-visibility: hidden;
+    }
+    header + div {
+        margin-top: 169px;
+    }
     header > .l-constrained {
         padding-bottom: 1em;
+    }
+    header .twelve {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 
@@ -4640,8 +4651,8 @@ header nav a {
 }
 
 .main__navigation .dropdown .nav__event {
-    font-size: 13px;
-    font-size: .8125rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     clear: both;
     overflow: hidden;
     margin-bottom: .5em;
@@ -4661,6 +4672,20 @@ header nav a {
 .main__navigation .dropdown .nav__event img {
     float: left;
     margin-right: 1em;
+}
+
+.main__navigation .dropdown .nav__event:first-child {
+    margin-top: 2em;
+}
+
+@media screen and (min-width: 48em) {
+    .main__navigation .dropdown .nav__event {
+        font-size: 13px;
+        font-size: .8125rem;
+    }
+    .main__navigation .dropdown .nav__event:first-child {
+        margin-top: 0;
+    }
 }
 
 .sub__nav--library {
@@ -4706,25 +4731,32 @@ header nav a {
     background: #009581;
 }
 
+@media screen and (min-width: 48em) {
+    .sub-navigation {
+        background: transparent;
+    }
+}
+
 .sub-navigation ul {
-    display: block;
-    display: -webkit-flex;
-    /* Safari */
-    display:         flex;
     overflow: hidden;
     margin: 0;
-    padding: .5em;
+    padding: 0;
     list-style: none;
-
-    -webkit-justify-content: left;
-    /* Safari */
-            justify-content: left;
-    -webkit-flex-wrap: wrap;
-            flex-wrap: wrap;
 }
 
 @media screen and (min-width: 48em) {
     .sub-navigation ul {
+        display: block;
+        display: -webkit-flex;
+        /* Safari */
+        display:         flex;
+        background: transparent;
+
+        -webkit-justify-content: left;
+        /* Safari */
+                justify-content: left;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
         -webkit-flex-wrap: nowrap;
                 flex-wrap: nowrap;
     }
@@ -4737,23 +4769,34 @@ header nav a {
 
 .sub-navigation li {
     line-height: 1em;
-    display: inline-block;
+    display: block;
     margin: .5em;
+    padding: .5em;
+    background: #009581;
+}
+
+.sub-navigation li.active {
+    background: #007c6b;
 }
 
 @media screen and (min-width: 48em) {
     .sub-navigation li {
+        display: inline-block;
+        display: -webkit-flex;
+        display:         flex;
         float: left;
         max-width: 20%;
-        margin: 0 .5em;
+        margin: 0 .25em;
+        padding: 0;
     }
     .sub-navigation li:first-child {
-        padding-left: 0;
+        margin-left: 0;
     }
 }
 
 .sub-navigation a {
     font-weight: bold;
+    display: block;
     text-decoration: none;
     color: #e4e9eb;
 }
@@ -4766,6 +4809,7 @@ header nav a {
     .sub-navigation a {
         font-size: 13px;
         font-size: .8125rem;
+        padding: .5em;
     }
 }
 
@@ -4947,8 +4991,7 @@ header nav a {
 }
 
 .quicklinks ul {
-    margin: 0;
-    padding: 0;
+    padding: .25em 0 0;
     list-style: none;
 }
 
@@ -5232,6 +5275,12 @@ header nav a {
 .card__container .card__btn {
     font-weight: 600;
     display: block;
+}
+
+@media screen and (max-width: 47.99em) {
+    .card__container.flexslider--mobile .card__wrap {
+        margin: 0;
+    }
 }
 
 .card__cta--graphic {
@@ -5930,8 +5979,17 @@ span[class^="text-"].text-lg {
    ========================================================================== */
 @media screen and (min-width: 48em) {
     main > .nine:first-child {
-        border-right: 1px solid #dde2e5;
+        border-right: 1px solid #d1d8dc;
         border-left: 1px solid #dde2e5;
+    }
+    main > .nine:first-child:after {
+        position: absolute;
+        top: 0;
+        right: -33.6%;
+        width: 33.5%;
+        height: 100%;
+        content: "";
+        background: #eaeeef;
     }
     main > .six {
         border-right: 1px solid #dde2e5;
@@ -5950,9 +6008,20 @@ main[role="main"],
 }
 
 @media screen and (min-width: 60em) {
-    main[role="main"],
-    .role-main {
+    main[role="main"] .sub-navigation,
+    .role-main .sub-navigation {
         margin-top: -6em;
+    }
+}
+
+main[role="main"] .breadcrumbs + .l-container,
+.role-main .breadcrumbs + .l-container {
+    background: white;
+}
+
+@media screen and (min-width: 60em) {
+    .dept-parent-intro h1 {
+        min-height: 92px;
     }
 }
 

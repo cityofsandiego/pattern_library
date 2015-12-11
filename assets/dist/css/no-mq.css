@@ -863,7 +863,7 @@ p.nav-ex {
 }
 
 .background-off-white {
-    background-color: #f6f6f6;
+    background-color: #eaeeef;
 }
 
 .background-white {
@@ -2843,11 +2843,6 @@ header .quicklinks {
 }
 
 header .card--weather {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
     margin-top: .5em;
     text-align: center;
 }
@@ -2855,8 +2850,8 @@ header .card--weather {
 header .card--weather i,
 header .card--weather p,
 header .card--weather p.temperature {
-    font-size: 13px;
-    font-size: .8125rem;
+    font-size: 16px;
+    font-size: 1rem;
 }
 
 header .card--weather br {
@@ -3309,6 +3304,8 @@ header > .row {
 }
 
 .main__navigation .dropdown .nav__event {
+    font-size: 18px;
+    font-size: 1.125rem;
     font-size: 13px;
     font-size: .8125rem;
     clear: both;
@@ -3330,6 +3327,14 @@ header > .row {
 .main__navigation .dropdown .nav__event img {
     float: left;
     margin-right: 1em;
+}
+
+.main__navigation .dropdown .nav__event:first-child {
+    margin-top: 2em;
+}
+
+.main__navigation .dropdown .nav__event:first-child {
+    margin-top: 0;
 }
 
 .sub__nav--library {
@@ -3373,6 +3378,7 @@ header > .row {
     position: relative;
     z-index: 10;
     background: #009581;
+    background: transparent;
 }
 
 .sub-navigation ul {
@@ -3382,8 +3388,9 @@ header > .row {
     display:         flex;
     overflow: hidden;
     margin: 0;
-    padding: .5em;
+    padding: 0;
     list-style: none;
+    background: transparent;
 
     -webkit-justify-content: left;
     /* Safari */
@@ -3401,21 +3408,33 @@ header > .row {
 
 .sub-navigation li {
     line-height: 1em;
+    display: block;
     display: inline-block;
+    display: -webkit-flex;
+    display:         flex;
     float: left;
     max-width: 20%;
     margin: .5em;
-    margin: 0 .5em;
+    margin: 0 .25em;
+    padding: .5em;
+    padding: 0;
+    background: #009581;
+}
+
+.sub-navigation li.active {
+    background: #007c6b;
 }
 
 .sub-navigation li:first-child {
-    padding-left: 0;
+    margin-left: 0;
 }
 
 .sub-navigation a {
     font-size: 13px;
     font-size: .8125rem;
     font-weight: bold;
+    display: block;
+    padding: .5em;
     text-decoration: none;
     color: #e4e9eb;
 }
@@ -3543,8 +3562,7 @@ header > .row {
 }
 
 .quicklinks ul {
-    margin: 0;
-    padding: 0;
+    padding: .25em 0 0;
     list-style: none;
 }
 
@@ -4416,8 +4434,18 @@ span[class^="text-"].text-lg {
 /* Page containers
    ========================================================================== */
 main > .nine:first-child {
-    border-right: 1px solid #dde2e5;
+    border-right: 1px solid #d1d8dc;
     border-left: 1px solid #dde2e5;
+}
+
+main > .nine:first-child:after {
+    position: absolute;
+    top: 0;
+    right: -33.6%;
+    width: 33.5%;
+    height: 100%;
+    content: "";
+    background: #eaeeef;
 }
 
 main > .six {
@@ -4433,6 +4461,11 @@ main[role="main"],
 .role-main {
     position: relative;
     z-index: 5;
+}
+
+main[role="main"] .breadcrumbs + .l-container,
+.role-main .breadcrumbs + .l-container {
+    background: white;
 }
 
 /* Accordion

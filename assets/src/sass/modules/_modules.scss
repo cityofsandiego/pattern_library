@@ -100,16 +100,18 @@ header {
 
     @include mq( $from: site ) {
         // fixed header
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 88888;
-        backface-visibility: hidden;
+        &.header--fixed {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 88888;
+            backface-visibility: hidden;
 
-        // offset header height of sibling container
-        + div {
-            margin-top: 169px;
+            // offset header height of sibling container
+            + div {
+                margin-top: 169px;
+            }
         }
 
         > .l-constrained {
@@ -188,6 +190,7 @@ header {
 
 /* Pattern Library */
 .library__header {
+    position: static;
     background: transparent;
 
     > .l-constrained {
@@ -564,14 +567,23 @@ header {
 
                     i {
                         position: absolute;
-                        right: 5px;
-                        top: 50%;
+                        right: 1em; top: 50%;
+                        font-size: 30px;
+                        color: $spruce;
                         transform: translateY(-50%);
                         -webkit-transform: translateY(-50%);
                         -moz-transform: translateY(-50%);
                         -ms-transform: translateY(-50%);
-                        font-size: 30px;
-                        color: $spruce;
+                        transition: transform .25s ease;
+                    }
+
+                    &.open-dropdown {
+                        i {
+                            transform: rotate(90deg) translateX(-50%);
+                            -webkit-transform: rotate(90deg) translateX(-50%);
+                            -moz-transform: rotate(90deg) translateX(-50%);
+                            -ms-transform: rotate(90deg) translateX(-50%);
+                        }
                     }
 
                     &.open-dropdown:before {
@@ -838,7 +850,7 @@ header {
             display: -webkit-flex;
             display: flex;
             float: left;
-            margin: 0 .25em;
+            margin: 0 .4em;
             max-width: 20%;
 
             &:first-child {
@@ -857,7 +869,7 @@ header {
         }
 
         @include mq( $from: tablet ) {
-            padding: .5em;
+            padding: .5em .75em;
             @include rem( 'font-size', 13px );
         }
     }

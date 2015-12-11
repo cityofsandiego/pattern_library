@@ -243,6 +243,7 @@
                         smoothHeight: false,
                         directionNav: true
                     });
+
                 }
 
             },
