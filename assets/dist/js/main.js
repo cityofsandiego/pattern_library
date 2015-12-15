@@ -369,9 +369,10 @@
                     $(".main__navigation .dropdown-parent").each(function(){
 
                         var $this = $(this);
+                        var $icon = $(this).find("i");
                         var $dropdown = $this.siblings(".dropdown");
 
-                        $this.on("click", function( e ){
+                        $icon.on("click", function( e ){
                             e.preventDefault();
                             $dropdown.slideToggle();
                             $this.toggleClass("open-dropdown");
@@ -391,6 +392,7 @@
                     // console.log ( windowWidth );
 
                     var $parent = $(".main__navigation .dropdown-parent");
+                    var $icon   = $parent.find("i");
 
                     // Check events attached to parent links
                     var $events = jQuery._data($parent[0], "events" );
@@ -398,10 +400,10 @@
                     // If viewport is at tablet width or below and no click event is bound to link
                     if ( windowWidth < 768 && $events === undefined ) {
 
-                        $parent.on("click", function( e ){
-
-                            e.preventDefault();
-
+                        // $parent.on("click", function( e ){
+                        //     e.preventDefault();
+                        // }
+                        $icon.on("click", function(){
                             var $dropdown = $(this).siblings(".dropdown");
                             $(this).toggleClass("open-dropdown");
                             $dropdown.slideToggle();

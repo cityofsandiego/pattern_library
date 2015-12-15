@@ -8,6 +8,8 @@
 @include mq( $until: tablet ) {
     #nav {
         visibility: hidden;
+        height: auto;
+        overflow: scroll;
     }
 }
 
@@ -31,6 +33,11 @@ header {
 
     @include mq( $until: tablet ) {
         .logo {
+            position: fixed;
+            top: 1em;
+            left: .5em;
+            z-index: 8888;
+
             img {
                 max-width: 70px;
             }
@@ -99,20 +106,6 @@ header {
     }
 
     @include mq( $from: site ) {
-        // fixed header
-        &.header--fixed {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 88888;
-            backface-visibility: hidden;
-
-            // offset header height of sibling container
-            + div {
-                margin-top: 169px;
-            }
-        }
 
         > .l-constrained {
             padding-bottom: 1em;
@@ -141,6 +134,59 @@ header {
         > .row {
             padding-left: .5em;
             padding-right: .5em;
+        }
+    }
+
+
+    // fixed header
+    &.header--fixed {
+
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+        -webkit-transition-duration: 500ms;
+        -moz-transition-duration: 500ms;
+        transition-duration: 500ms;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+
+        + div {
+            margin-top: 96px;
+        }
+
+        @include mq( $until: tablet ) {
+            > div:first-child {
+                background: white;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 96px;
+                z-index: 100;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+        @include mq( $from: tablet ) {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 88888;
+            backface-visibility: hidden;
+            transition-duration: none;
+            box-shadow: none;
+
+            // offset header height of sibling container
+            + div {
+                margin-top: 227px;
+            }
+        }
+
+        @include mq( $from: site ) {
+            // offset header height of sibling container
+            + div {
+                margin-top: 169px;
+            }
         }
     }
 
@@ -472,9 +518,17 @@ header {
         margin: 0;
         padding: 0;
         list-style: none;
+
+        @include mq( $until: tablet ) {
+            background: $spruce;
+        }
     }
 
     > ul {
+
+        @include mq( $until: tablet ) {
+            overflow: scroll;
+        }
 
         @include mq( $from: tablet ) {
             min-height: 63px;
@@ -660,6 +714,7 @@ header {
         @include mq( $until: tablet ) {
             background: transparent;
             display: none;
+            overflow: scroll;
 
             * {
                 color: white;

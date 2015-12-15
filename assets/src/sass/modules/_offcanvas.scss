@@ -26,7 +26,7 @@
     .csstransforms3d.csstransitions.js-ready & {
         @include mq( $until: tablet ) {
             right: 0 !important;
-            @include transform( translate3d( 0, 0, 0 ) );
+            // @include transform( translate3d( 0, 0, 0 ) );
             @include transition-duration( 500ms );
             @include transition-timing-function( ease-in-out );
             @include backface-visibility( hidden );
@@ -35,9 +35,33 @@
 
     .csstransforms3d.csstransitions.js-nav & {
         @include mq( $until: tablet ) {
-            @include transform( translate3d( -70%, 0, 0 ) scale3d( 1, 1, 1 ) );
+            right: 70% !important;
+            // @include transform( translate3d( -70%, 0, 0 ) scale3d( 1, 1, 1 ) );
         }
+    }
+}
 
+// fixed header elements on open menu
+.csstransforms3d.csstransitions.js-nav {
+    @include mq( $until: tablet ) {
+        .header--fixed {
+            > div:first-child {
+                left: auto;
+                right: 70%;
+                // @include transform( translate3d( -70%, 0, 0 ) scale3d( 1, 1, 1 ) );
+            }
+
+            .menu-toggle {
+                left: auto;
+                right: 75%;
+            }
+
+            .logo,
+            .search-icon {
+                left: auto;
+                right: 100%;
+            }
+        }        
     }
 }
 
@@ -88,8 +112,7 @@
 
     .csstransforms3d.csstransitions.js-ready & {
         @include mq( $until: tablet ) {
-            right: 0;
-            @include transform( translate3d( 100%, 0, 0 ) );
+            @include transform( translate3d( 0%, 0, 0 ) );
             @include backface-visibility( hidden );
         }
     }
@@ -194,6 +217,7 @@
         position: absolute;
         top: 1em;
         right: 1em;
+        position: fixed;
     }
 }
 

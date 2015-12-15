@@ -4041,7 +4041,7 @@ header nav a {
 }
 
 @media screen and (min-width: 60em) {
-    header {
+    header.header--fixed {
         position: fixed;
         z-index: 88888;
         top: 0;
@@ -4050,7 +4050,7 @@ header nav a {
 
         backface-visibility: hidden;
     }
-    header + div {
+    header.header--fixed + div {
         margin-top: 169px;
     }
     header > .l-constrained {
@@ -4119,6 +4119,7 @@ header nav a {
 
 /* Pattern Library */
 .library__header {
+    position: static;
     background: transparent;
 }
 
@@ -4507,12 +4508,19 @@ header nav a {
         font-size: 30px;
         position: absolute;
         top: 50%;
-        right: 5px;
+        right: 1em;
+        transition: transform .25s ease;
         -webkit-transform: translateY(-50%);
            -moz-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
                 transform: translateY(-50%);
         color: #37424a;
+    }
+    .main__navigation > ul > li > a.open-dropdown i {
+        -webkit-transform: rotate(90deg) translateX(-50%);
+           -moz-transform: rotate(90deg) translateX(-50%);
+            -ms-transform: rotate(90deg) translateX(-50%);
+                transform: rotate(90deg) translateX(-50%);
     }
     .main__navigation > ul > li > a.open-dropdown:before {
         position: absolute;
@@ -4786,7 +4794,7 @@ header nav a {
         display:         flex;
         float: left;
         max-width: 20%;
-        margin: 0 .25em;
+        margin: 0 .4em;
         padding: 0;
     }
     .sub-navigation li:first-child {
@@ -4809,7 +4817,7 @@ header nav a {
     .sub-navigation a {
         font-size: 13px;
         font-size: .8125rem;
-        padding: .5em;
+        padding: .5em .75em;
     }
 }
 

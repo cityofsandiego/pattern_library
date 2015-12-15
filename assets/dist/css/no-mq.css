@@ -2895,6 +2895,7 @@ header > .row {
 
 /* Pattern Library */
 .library__header {
+    position: static;
     background: transparent;
 }
 
@@ -3415,7 +3416,7 @@ header > .row {
     float: left;
     max-width: 20%;
     margin: .5em;
-    margin: 0 .25em;
+    margin: 0 .4em;
     padding: .5em;
     padding: 0;
     background: #009581;
@@ -3434,7 +3435,7 @@ header > .row {
     font-size: .8125rem;
     font-weight: bold;
     display: block;
-    padding: .5em;
+    padding: .5em .75em;
     text-decoration: none;
     color: #e4e9eb;
 }

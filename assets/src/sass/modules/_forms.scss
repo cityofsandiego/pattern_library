@@ -468,10 +468,6 @@ header {
     }
 
     @include mq( $until: tablet ) {
-        .form--search-wrap {
-            float: right;
-            margin-right: 5em;
-        }
 
         .search-icon {
             padding: 0;
@@ -479,7 +475,16 @@ header {
             height: 64px;
             line-height: 64px;
             text-align: center;
-            @include rem( 'font-size', 28px );
+
+            float: right;
+            position: fixed;
+            top: 1em; right: 6em;
+            z-index: 8888;
+
+            i {
+                line-height: 2.2;
+                @include rem( 'font-size', 28px );
+            }
 
             &.search-open {
                 background: darken( $cerulean, 5% );
@@ -509,7 +514,7 @@ header {
 
     }
 
-    @include mq( $until: site ) {
+    @include mq( tablet, site ) {
         .form--search-wrap {
             position: static;
         }
