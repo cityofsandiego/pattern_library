@@ -2863,6 +2863,33 @@ header > .row {
     padding-left: .5em;
 }
 
+header.header--fixed {
+    position: fixed;
+    z-index: 88888;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-transition-timing-function: ease-in-out;
+       -moz-transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 500ms;
+       -moz-transition-duration: 500ms;
+            transition-duration: 500ms;
+            transition-duration: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    box-shadow: none;
+
+    backface-visibility: hidden;
+}
+
+header.header--fixed + div {
+    margin-top: 96px;
+}
+
+header.header--fixed + div {
+    margin-top: 227px;
+}
+
 .header--app {
     padding: .75em 0;
     text-align: center;

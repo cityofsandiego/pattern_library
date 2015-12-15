@@ -32,12 +32,8 @@ header {
     }
 
     @include mq( $until: tablet ) {
-        .logo {
-            position: fixed;
-            top: 1em;
-            left: .5em;
-            z-index: 8888;
 
+        .logo {
             img {
                 max-width: 70px;
             }
@@ -163,6 +159,13 @@ header {
                 height: 96px;
                 z-index: 100;
                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            }
+
+            .logo {
+                position: fixed;
+                top: 1em;
+                left: .5em;
+                z-index: 8888;
             }
         }
         

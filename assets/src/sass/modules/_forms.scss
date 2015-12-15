@@ -477,9 +477,6 @@ header {
             text-align: center;
 
             float: right;
-            position: fixed;
-            top: 1em; right: 6em;
-            z-index: 8888;
 
             i {
                 line-height: 2.2;
@@ -509,6 +506,14 @@ header {
             input[type="submit"] {
                 border: 1px solid $chateau;
                 border-left: none;
+            }
+        }
+
+        &.header--fixed {
+            .search-icon {
+                position: fixed;
+                top: 1em; right: 6em;
+                z-index: 8888;
             }
         }
 
