@@ -3978,12 +3978,6 @@ header nav a {
 }
 
 @media screen and (max-width: 47.99em) {
-    header .logo {
-        position: fixed;
-        z-index: 8888;
-        top: 1em;
-        left: .5em;
-    }
     header .logo img {
         max-width: 70px;
     }
@@ -4088,6 +4082,12 @@ header.header--fixed + div {
         height: 96px;
         background: white;
         box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    }
+    header.header--fixed .logo {
+        position: fixed;
+        z-index: 8888;
+        top: 1em;
+        left: .5em;
     }
 }
 
@@ -7042,10 +7042,12 @@ footer a:hover {
 @media screen and (max-width: 47.99em) {
     .menu-toggle {
         position: absolute;
-        position: fixed;
         top: 1em;
         right: 1em;
         display: block;
+    }
+    .header--fixed .menu-toggle {
+        position: fixed;
     }
 }
 

@@ -9,7 +9,6 @@
     #nav {
         visibility: hidden;
         height: auto;
-        overflow: scroll;
     }
 }
 
@@ -529,10 +528,6 @@ header {
 
     > ul {
 
-        @include mq( $until: tablet ) {
-            overflow: scroll;
-        }
-
         @include mq( $from: tablet ) {
             min-height: 63px;
             overflow: hidden;
@@ -717,7 +712,6 @@ header {
         @include mq( $until: tablet ) {
             background: transparent;
             display: none;
-            overflow: scroll;
 
             * {
                 color: white;
