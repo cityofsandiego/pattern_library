@@ -3951,7 +3951,6 @@ dd {
 @media screen and (max-width: 47.99em) {
     #nav {
         visibility: hidden;
-        overflow: scroll;
         height: auto;
     }
 }
@@ -4458,12 +4457,6 @@ header.header--fixed + div {
     }
 }
 
-@media screen and (max-width: 47.99em) {
-    .main__navigation > ul {
-        overflow: scroll;
-    }
-}
-
 @media screen and (min-width: 48em) {
     .main__navigation > ul {
         display: block;
@@ -4651,7 +4644,6 @@ header.header--fixed + div {
 @media screen and (max-width: 47.99em) {
     .main__navigation .dropdown {
         display: none;
-        overflow: scroll;
         background: transparent;
     }
     .main__navigation .dropdown * {

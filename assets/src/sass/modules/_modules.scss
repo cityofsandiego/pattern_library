@@ -145,29 +145,6 @@ header {
         -moz-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
 
-        + div {
-            margin-top: 96px;
-        }
-
-        @include mq( $until: tablet ) {
-            > div:first-child {
-                background: white;
-                position: fixed;
-                top: 0;
-                left: 0;
-                height: 96px;
-                z-index: 100;
-                box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            }
-
-            .logo {
-                position: fixed;
-                top: 1em;
-                left: .5em;
-                z-index: 8888;
-            }
-        }
-        
         @include mq( $from: tablet ) {
             width: 100%;
             position: fixed;
