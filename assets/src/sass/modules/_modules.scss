@@ -1291,6 +1291,7 @@ header {
     }
 
     .card__wrap {
+        height: auto;
         margin: 0 .5em;
 
         @include mq( $from: mobile-landscape ) {

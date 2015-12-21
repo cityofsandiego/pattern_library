@@ -2883,10 +2883,6 @@ header.header--fixed {
 }
 
 header.header--fixed + div {
-    margin-top: 96px;
-}
-
-header.header--fixed + div {
     margin-top: 227px;
 }
 
