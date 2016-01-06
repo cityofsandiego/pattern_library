@@ -3775,6 +3775,7 @@ header.header--fixed + div {
 .card__container .card__wrap {
     float: left;
     width: 33.3333333333%;
+    height: auto;
     margin: 0 .5em;
     margin: 0;
     padding: .75em;

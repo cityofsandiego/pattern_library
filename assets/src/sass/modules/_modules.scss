@@ -709,10 +709,10 @@ header {
             visibility: hidden;
             opacity: 0;
             transition: opacity .5s ease;
-            -webkit-transition-delay: 500ms;
-            -moz-transition-delay: 500ms;
-            -o-transition-delay: 500ms;
-            transition-delay: 400ms;
+            -webkit-transition-delay: 1000ms;
+            -moz-transition-delay: 1000ms;
+            -o-transition-delay: 1000ms;
+            transition-delay: 1000ms;
 
             h4 a {
                 color: $spruce;
@@ -1242,6 +1242,11 @@ header {
     background: white;
     border-radius: 4px;
 
+    &.border {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
     @include mq( $until: tablet ) {
         margin-top: 1em;
         margin-bottom: 1em;
@@ -1265,8 +1270,8 @@ header {
 
     @include mq( $from: mobile-landscape ) {
         display: block;
-        display: -webkit-inline-flex; /* Safari */
-        display: inline-flex;
+        display: -webkit-flex; /* Safari */
+        display: flex;
         -webkit-justify-content: flex-start; /* Safari */
         justify-content:         flex-start;
         -webkit-flex-wrap: wrap;
@@ -1277,12 +1282,13 @@ header {
     @include mq( $from: mobile-landscape ) {
         .slides {
             display: block;
-            display: -webkit-inline-flex; /* Safari */
-            display: inline-flex;
+            display: -webkit-flex; /* Safari */
+            display: flex;
             -webkit-justify-content: flex-start; /* Safari */
             justify-content:         flex-start;
             -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
+
         }
     }
 
@@ -1297,10 +1303,18 @@ header {
         @include mq( $from: mobile-landscape ) {
             margin: 0;
             padding: .75em;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+
+            .card {
+                flex: 0 1 auto;
+            }
         }
+
         @include mq( mobile-landscape, tablet ) {
             @include span( 6 );
         }
+
         @include mq( $from: tablet ) {
             @include span( 4 );
         }

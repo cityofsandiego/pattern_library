@@ -42,6 +42,8 @@
         margin-right: .5em;
         display: inline-block;
         vertical-align: middle;
+        @include transition-property( color, background );
+        @include transition-duration( .15s );
     }
 
     .icon-chevron-right,
@@ -59,8 +61,8 @@
 
 .btn--outline {
     color: $cerulean;
+    background-color: white;
     border: 1px solid $cerulean;
-    background-color: transparent;
     &:hover {
         color: white;
         background-color: $cerulean;

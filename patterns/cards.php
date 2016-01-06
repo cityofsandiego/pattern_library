@@ -56,7 +56,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         |
                                         <span class="card__author"><a href="">by Name Lastname</a></span>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                                    <p>Lorem ipsum dolor sit amet. Maecenas nulla lectus, viverra a augue...</p>
                                     <a href="" class="btn btn--outline card__btn">Read More</a>
                                 </div>
                             </div>

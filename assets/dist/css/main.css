@@ -5242,6 +5242,7 @@ header.header--fixed {
 }
 
 .card__container .card__wrap {
+    height: auto;
     margin: 0 .5em;
 }
 
