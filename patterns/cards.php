@@ -27,7 +27,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
                     <div class="card__container l-margin-vd">
                         <div class="card__wrap">
-                            <div class="card">
+                            <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
@@ -45,7 +45,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
 
                         <div class="card__wrap">
-                            <div class="card">
+                            <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
@@ -63,7 +63,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
 
                         <div class="card__wrap">
-                            <div class="card border l-padding-bn">
+                            <div class="card border l-padding-bn background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
