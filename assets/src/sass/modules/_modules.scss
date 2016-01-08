@@ -516,14 +516,6 @@ header {
             -webkit-flex-wrap: nowrap; /* Safari */
             flex-wrap:         nowrap;
 
-            .has__dropdown {
-                &:hover {
-                    .dropdown {
-                        visibility: visible;
-                        opacity: 1;
-                    }
-                }
-            }
         }
 
         > li {
@@ -709,10 +701,15 @@ header {
             visibility: hidden;
             opacity: 0;
             transition: opacity .5s ease;
-            -webkit-transition-delay: 1000ms;
-            -moz-transition-delay: 1000ms;
-            -o-transition-delay: 1000ms;
-            transition-delay: 1000ms;
+            // -webkit-transition-delay: 1000ms;
+            // -moz-transition-delay: 1000ms;
+            // -o-transition-delay: 1000ms;
+            // transition-delay: 1000ms;
+
+            &.visible {
+                visibility: visible;
+                opacity: 1;
+            }
 
             h4 a {
                 color: $spruce;
