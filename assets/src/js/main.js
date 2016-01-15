@@ -366,8 +366,8 @@
 
                     $(this).hoverIntent({
                         over: function(){ dropdown.addClass("visible") },
-                        timeout: 500,
-                        interval: 400,
+                        timeout: 0,
+                        interval: 200,
                         out: function(){ dropdown.removeClass("visible") }
                     });
                 })

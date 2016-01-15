@@ -361,6 +361,18 @@
 
             menu : function() {
 
+                jQuery("#nav .has__dropdown").each(function(){
+                    var dropdown = $(this).children(".dropdown");
+
+                    $(this).hoverIntent({
+                        over: function(){ dropdown.addClass("visible") },
+                        timeout: 500,
+                        interval: 400,
+                        out: function(){ dropdown.removeClass("visible") }
+                    });
+                })
+
+
                 // Check window width on load
                 var windowWidth = $(window).width();
 
