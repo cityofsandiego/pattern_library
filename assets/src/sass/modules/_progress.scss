@@ -1,0 +1,140 @@
+
+// ==========================================================================
+// Progress
+// ==========================================================================
+
+
+.progress {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.progress__item {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include mq( $from: mobile-landscape ) {
+        // width: 25%;
+        min-width: 25%;
+        display: inline-block;
+    }
+}
+
+.progress__lining {
+    @include mq( $from: mobile-landscape ) {
+        @include rem( 'margin', 1.5px 3px 1.5px 0 );
+    }
+}
+
+.progress__link {
+    position: relative;
+    display: block;
+    background-color: $mercury;
+    text-decoration: none;
+    color: $font-color;
+    @include rem( 'padding', 12px 8px 12px 48px );
+    @include rem( 'font-size', 14px );
+
+    &:hover {
+        color: $font-color;
+    }
+
+    @include mq( $from: mobile-landscape ) {
+
+        &:before,
+        &:after {
+            content: '';
+            margin-top: -21.5px;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 50%;
+            border-style: solid;
+            border-width: 21.5px 0 21.5px 12px;
+        }
+
+        &:before {
+            left: 0;
+            border-color: transparent transparent transparent white;
+        }
+
+        &:after {
+            right: -12px;
+            z-index: 2;
+            border-color: transparent transparent transparent $mercury;
+        }
+
+        .progress__item:first-child & {
+            @include mq( $from: mobile-landscape ) {
+                @include rem( 'padding-left', 40px );
+            }
+        }
+    }
+
+    .progress__item:first-child & {
+        border-radius: 4px 0 0 4px;
+
+        &:before {
+            content: normal;
+        }
+    }
+
+    .progress__item:last-child & {
+        border-radius: 0 4px 4px 0;
+
+        &:after {
+            content: normal;
+        }
+    }
+
+    .is-active & {
+        background-color: $cerulean;
+
+        &:after {
+            border-color: transparent transparent transparent $cerulean;
+        }
+    }
+}
+
+.progress__num {
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    background-color: white;
+    border-radius: 500px;
+    box-shadow: 0 0 0 1px rgba( black, .1 );
+    text-align: center;
+    color: $cerulean;
+    @include transition( all .15s );
+
+    .progress__link:hover & {
+        background-color: $cerulean;
+        box-shadow: none;
+        color: white;
+    }
+
+    .is-active .progress__link:hover & {
+        background-color: white;
+        box-shadow: 0 0 0 1px rgba( black ,.1 );
+        color: $cerulean;
+    }
+
+    .progress__item:first-child & {
+        @include mq( $from: mobile-landscape ) {
+            left: 8px;
+        }
+    }
+}
+
+.progress__label {
+
+    .is-active & {
+        color: white;
+    }
+}
