@@ -47,6 +47,41 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </li>
                 </ul>
 
+                <p><strong>Notes</strong></p>
+                <p>Each progress step is an &lt;li&gt; element. The active step gets the <strong>.is-active</strong> class.</p>
+
+                <div class="code__examples l-margin-tm">
+                <form><textarea class="pattern" id="comp-code-progress" name="code">
+<ul class="progress">
+    <li class="progress__item">
+            <div class="progress__lining">
+            <a class="progress__link" href="#">
+                <span class="progress__num">1</span>
+                <span class="progress__label">Lorem</span>
+            </a>
+        </div>
+    </li>
+    <li class="progress__item is-active">
+        <div class="progress__lining">
+            <a class="progress__link" href="#">
+                <span class="progress__num">2</span>
+                <span class="progress__label">Ipsum</span>
+            </a>
+        </div>
+    </li>
+    <li class="progress__item">
+        <div class="progress__lining">
+            <a class="progress__link" href="#">
+                <span class="progress__num">3</span>
+                <span class="progress__label">Dolor Sit</span>
+            </a>
+        </div>
+    </li>
+</ul>
+</textarea> </form>
+                </div>
+
+
             </div>
         </div>
 
