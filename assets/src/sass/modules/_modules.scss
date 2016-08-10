@@ -533,7 +533,7 @@ header {
                     width: 1px;
                     height: 100%;
                     position: absolute;
-                    @extend %gray-gradient;
+                    @include gray-gradient;
                 }
 
                 &.current,
@@ -555,7 +555,7 @@ header {
                     right: 0;
                     bottom: 0;
                     position: absolute;
-                    @extend %gray-gradient;
+                    @include gray-gradient;
                 }
             }
 

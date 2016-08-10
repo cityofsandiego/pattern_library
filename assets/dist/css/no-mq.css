@@ -913,28 +913,6 @@ p.nav-ex {
     /* IE6-9 */
 }
 
-.main__navigation > ul > li:before,
-.main__navigation > ul > li:last-child > a:after {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
-    background: #fff;
-    /* Old browsers */
-    background:    -moz-linear-gradient(top, #fff 0%, #d4d4d4 100%);
-    /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #d4d4d4));
-    /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #fff 0%, #d4d4d4 100%);
-    /* Chrome10+,Safari5.1+ */
-    background:      -o-linear-gradient(top, #fff 0%, #d4d4d4 100%);
-    /* Opera 11.10+ */
-    background:     -ms-linear-gradient(top, #fff 0%, #d4d4d4 100%);
-    /* IE10+ */
-    background: linear, to bottom, #fff 0, #d4d4d4 100%;
-    /* W3C */
-
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 );
-    /* IE6-9 */
-}
-
 html {
     background: white;
 }
@@ -3195,6 +3173,24 @@ header.header--fixed + div {
     width: 1px;
     height: 100%;
     content: "";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
+    background: #fff;
+    /* Old browsers */
+    background:    -moz-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #d4d4d4));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* IE10+ */
+    background: linear, to bottom, #fff 0, #d4d4d4 100%;
+    /* W3C */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 );
+    /* IE6-9 */
 }
 
 .main__navigation > ul > li.current,
@@ -3219,6 +3215,24 @@ header.header--fixed + div {
     width: 1px;
     height: 100%;
     content: "";
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,d4d4d4+100 */
+    background: #fff;
+    /* Old browsers */
+    background:    -moz-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #d4d4d4));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* Chrome10+,Safari5.1+ */
+    background:      -o-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* Opera 11.10+ */
+    background:     -ms-linear-gradient(top, #fff 0%, #d4d4d4 100%);
+    /* IE10+ */
+    background: linear, to bottom, #fff 0, #d4d4d4 100%;
+    /* W3C */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 );
+    /* IE6-9 */
 }
 
 .main__navigation > ul > li > a {
@@ -4556,9 +4570,9 @@ main[role="main"] .breadcrumbs + .l-container,
 }
 
 .csstransforms3d .toggle-icon {
-    -webkit-transition: -webkit-transform;
-       -moz-transition:    -moz-transform;
-            transition:         transform;
+    -webkit-transition: -webkit-transform .25s;
+       -moz-transition:    -moz-transform .25s;
+            transition:         transform .25s;
 }
 
 .toggle-icon:before,
@@ -4572,9 +4586,9 @@ main[role="main"] .breadcrumbs + .l-container,
 .csstransforms3d .toggle-icon:before,
 .csstransforms3d .toggle-icon:after {
     top: 50%;
-    -webkit-transition: -webkit-transform, opacity;
-       -moz-transition:    -moz-transform, opacity;
-            transition:         transform, opacity;
+    -webkit-transition: -webkit-transform .25s, opacity .25s;
+       -moz-transition:    -moz-transform .25s, opacity .25s;
+            transition:         transform .25s, opacity .25s;
     -webkit-transform: translate3d(0, -50%, 0);
        -moz-transform: translate3d(0, -50%, 0);
         -ms-transform: translate3d(0, -50%, 0);
@@ -6130,9 +6144,9 @@ header .form--search-wrap {
 }
 
 .menu-toggle__line:before {
-    -webkit-transition: -webkit-transform;
-       -moz-transition:    -moz-transform;
-            transition:         transform;
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition:    -moz-transform .3s;
+            transition:         transform .3s;
     -webkit-transform: translateY(-6px);
        -moz-transform: translateY(-6px);
         -ms-transform: translateY(-6px);
@@ -6149,9 +6163,9 @@ header .form--search-wrap {
 }
 
 .menu-toggle__line:after {
-    -webkit-transition: -webkit-transform;
-       -moz-transition:    -moz-transform;
-            transition:         transform;
+    -webkit-transition: -webkit-transform .3s;
+       -moz-transition:    -moz-transform .3s;
+            transition:         transform .3s;
     -webkit-transform: translateY(6px);
        -moz-transform: translateY(6px);
         -ms-transform: translateY(6px);
