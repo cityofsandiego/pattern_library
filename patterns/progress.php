@@ -87,4 +87,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 
 <?php
+<<<<<<< HEAD
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+=======
+require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+>>>>>>> 50b79e8e8afddbf7440e636be70c19b6566062b1
