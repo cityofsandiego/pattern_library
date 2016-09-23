@@ -13,6 +13,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Typography</h1>
 				<div class="sub__nav--library">
 				    <ul class="sub__nav">
+				    	<li><a href="#typefaces">Typefaces</a></li>
 				    	<li><a href="#headings">Headings</a></li>
 				        <li><a href="#byline">Byline</a></li>
 				        <li><a href="#blockquotes">Blockquotes</a></li>
@@ -22,13 +23,34 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    </ul>
 				</div>
 
-				<div class="l-container l-margin-tm">
-					<p>We're utilizing Google Fonts sitewide; <a href="https://www.google.com/fonts/specimen/Merriweather" target="_blank">Merriweather</a> for headline text, and <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> for body copy.</p>
+				<div id="typefaces" class="l-container l-margin-tm">
+
+				    <div class="l-container l-margin-bm">
+					    <h2>Typefaces</h2>
+						<p>We're utilizing Google Fonts sitewide; <a href="https://www.google.com/fonts/specimen/Merriweather" target="_blank">Merriweather</a> for headline text, and <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a> for body copy.</p>
+						
+						<div class="row l-margin-tm">
+							<div class="three columns">
+							<h3 class="l-margin-tn">Merriweather</h3>
+							</div>
+							<div class="nine columns text-accent">
+							<p style="font-family:'Merriweather'">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>a b c d e f g h i j k l m n o p q r s t u v w x y z<br>1 2 3 4 5 6 7 8 9 0</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="three columns">
+							<p class="h3 l-margin-tn" style="font-family:'Open Sans'">Open Sans</p>
+							</div>
+							<div class="nine columns text-accent">
+							<p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z<br>a b c d e f g h i j k l m n o p q r s t u v w x y z<br>1 2 3 4 5 6 7 8 9 0</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
-				<div id="headings" class="l-container l-margin-vm">
+				<div id="headings" class="l-container">
 
-				    <div class="l-container l-margin-vm">
+				    <div class="l-container l-margin-bm">
 					    <h2>Headings</h2>
 					    <div class="row border border--bottom l-padding-ts">
 					    	<div class="six columns">
@@ -294,13 +316,44 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<div class="six columns">
 								<p>Font size variations</p>
 
-								<div class="code__examples">
+								
+					<div class="row l-margin-vd">
+					
+					
+						<div id="font-vars-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#font-vars-tab-item-1">Code</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#font-vars-tab-item-2">Notes</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="font-vars-tab-item-1" class="tabs__bucket is-active">
+									<div class="code__examples">
                                 	<form><textarea class="pattern" id="type-code-btn-3" name="code">
 <a class="btn btn--xs" href="#">Extra Small</a>
 <a class="btn btn--sm" href="#">Small</a>
 <a class="btn btn--md" href="#">Medium</a>
 <a class="btn btn--lg" href="#">Large</a>
 <a class="btn btn--xl" href="#">Extra Large</a></textarea> </form> </div>
+            					</div>
+
+								<div id="font-vars-tab-item-2" class="tabs__bucket is-active">
+									<p>Default size for home page buttons is Large (btn--lg).</p>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+								
+								
+								
+								
+								
+								
 							</div>
 						</div>
 
@@ -325,18 +378,50 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 						<div class="row l-padding-vd">
 							<div class="six columns">
-								<p><a class="btn btn--wide l-margin-vs" href="#">Wide</a></p>
-								<p><a class="btn btn--half l-margin-vs" href="#">Half</a></p>
-								<p><a class="btn btn--third l-margin-vs" href="#">Third</a></p>
+								<p><a class="btn btn--wide" href="#">Wide</a></p>
+								<p><a class="btn btn--half" href="#">Half</a></p>
+								<p><a class="btn btn--third" href="#">Third</a></p>
 							</div>
 							<div class="six columns">
 								<p>Width variations</p>
 
-								<div class="code__examples">
+					<div class="row l-margin-vd">
+					
+					
+						<div id="btn-width-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#btn-width-tab-item-1">Code</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#btn-width-tab-item-2">Notes</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="btn-width-tab-item-1" class="tabs__bucket is-active">
+									<div class="code__examples">
                                 	<form><textarea class="pattern" id="type-code-btn-5" name="code">
 <a class="btn btn--wide" href="#">Wide</a>
 <a class="btn btn--half" href="#">Half</a>
 <a class="btn btn--third" href="#">Third</a></textarea> </form> </div>
+            					</div>
+
+								<div id="btn-width-tab-item-2" class="tabs__bucket is-active">
+									<p>Button width is dependent on parent div's width.</p>
+									<ul>
+										<li>Wide takes up 100% of the parent div's width.</li>
+										<li>Half takes up 50% of the parent div's width.</li>
+										<li>Third takes up 33.3% of the parent div's width.</li>
+									</ul>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+								
+								
+								
 							</div>
 						</div>
 
@@ -396,3 +481,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+<script type="text/javascript">
+$( document ).ready(function() {
+$(".tabs__bucket").removeClass("is-active");
+$(".tabs-container div:first-child").addClass("is-active");
+});
+</script>

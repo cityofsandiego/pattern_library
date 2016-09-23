@@ -26,7 +26,7 @@
     .csstransforms3d.csstransitions.js-ready & {
         @include mq( $until: tablet ) {
             right: 0 !important;
-            @include transform( translate3d( 0, 0, 0 ) );
+            //@include transform( translate3d( 0, 0, 0 ) );
             @include transition-duration( 500ms );
             @include transition-timing-function( ease-in-out );
             @include backface-visibility( hidden );

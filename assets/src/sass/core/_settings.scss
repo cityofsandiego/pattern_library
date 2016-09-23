@@ -57,7 +57,7 @@
     // Susy
     $susy : (
         columns                              : 12,
-        gutters                              : .33333, // [libsass] 2.0 doesn't handle decimals (e.g. 1/3)
+        gutters                              : .33333,
         global-box-sizing                    : border-box,
         gutter-position                      : inside
     );
@@ -138,4 +138,4 @@
     $font-size                               : 16px;
     $font-color                              : $spruce;
     $link-color                              : $cerulean;
-    $selection-highlight                     : $error;
+    $selection-highlight                     : #f3ec7a;

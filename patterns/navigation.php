@@ -10,6 +10,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
                     <ul>
+						<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="color:black;font-size:24px;"></i></a></li>
                         <li class="has__dropdown"><a href="">Leisure <i class="icon-chevron-down"></i><span>Explore, Play + Events</span></a>
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">
@@ -325,8 +326,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="#pagination">Pagination</a></li>
                         <li><a href="#tabs">Tabs</a></li>
                         <li><a href="#sidebar">Sidebar</a></li>
-                        <li><a href="#micro">Mircosite</a></li>
+                        <li><a href="#micro">Microsite</a></li>
                         <li><a href="#department">Department</a></li>
+                        <li><a href="#appheader">Application Header</a></li>
                         <li><a href="#quicknav">Quick Nav</a></li>
                         <li><a href="#quicklinks">Quicklinks</a></li>
                         <li><a href="#social">Social</a></li>
@@ -563,7 +565,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="l-container">
                             <div class="row">
                                 <div class="twelve columns">
-                                    <div class="tabs">
+                                    <div id="tab-group" class="tabs">
                                         <ul class="tabs-list js-tabs-list">
                                             <li class="tabs-list__item is-active"><a class="tabs-list__link" href="#tab-item-1">Tab Content 1</a></li>
                                             <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-2">Tab Content 2</a></li>
@@ -609,10 +611,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                             <div class="row l-margin-td">
                                 <div class="twelve columns">
-                                    <p>Wrap both the navigational &lt;ul&gt; and <strong>.tabs-container</strong> within a <strong>.tabs</strong>. Give the first navigation link and content block <strong>.is-active</strong> to initiate an active content block on page load. Give each tab content block a unique ID, and target the navigation links appropriately. The controlling javascript for tabs is located in <em>main.js</em>.</p>
+                                    <p>The tab group must have a unique ID to ensure multiple tab groups on a single page work correctly. Wrap both the navigational &lt;ul&gt; and <strong>.tabs-container</strong> within a <strong>.tabs</strong>. Give the first navigation link and content block <strong>.is-active</strong> to initiate an active content block on page load. Give each tab content block a unique ID, and target the navigation links appropriately. The controlling javascript for tabs is located in <em>main.js</em>.</p>
                                     <div class="code__examples">
                                 <form><textarea class="pattern" id="nav-code-tabs" name="code">
-<div class="tabs">
+<div id="tab-group" class="tabs">
     <ul class="tabs-list js-tabs-list">
         <li class="tabs-list__item is-active"><a class="tabs-list__link" href="#tab-item-1">Tab Content 1</a></li>
         <li class="tabs-list__item"><a class="tabs-list__link" href="#tab-item-2">Tab Content 2</a></li>
@@ -719,7 +721,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <!-- Micro Sub-Nav -->
                     <div id="micro" class="l-container l-margin-vm">
-                        <h2>Mircosite Sub-Navigation</h2>
+                        <h2>Microsite Sub-Navigation</h2>
                         <div class="row">
                             <div class="six columns">
                                 <section class="portal">
@@ -817,8 +819,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         </div>
                     </div>
 
-                    <!-- Dashboard -->
-                    <div id="Dashboard" class="l-container l-margin-vm">
+                    <!-- Application Header -->
+                    <div id="appheader" class="l-container l-margin-vm">
                         <h2>Application Header</h2>
                         <div class="row l-margin-bm">
                             <header class="l-padding-ad header--app">
@@ -837,6 +839,21 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </header>
                         </div>
 
+                        <div class="row l-margin-bm">
+                            <header class="l-padding-ad header--app">
+                                <div class="row">
+                                    <div class="three columns l-padding-ts">
+                                        <a href="/" class="logo">
+                                            <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50">
+                                        </a>
+                                    </div>
+
+                                    <div class="nine columns">
+                                        <h1 class="text-white heading--trim">Application Headline</h1>
+                                    </div>
+                                </div>
+                            </header>
+                        </div>
                         <div class="row">
                             <div class="twelve columns">
                                 <div class="code__examples">
@@ -852,7 +869,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
         <div class="nine columns">
             <h1 class="text-white heading--trim">Application Headline</h1>
-            <p class="text-white l-margin-bn">Supporting Content Sub Headline</p>
+            <p class="text-white l-margin-bn">Supporting Content Sub Headline</p> <!-- optional -->
         </div>
     </div>
 </header></textarea> </form> </div>

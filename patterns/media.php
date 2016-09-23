@@ -192,6 +192,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Video -->
                 <div id="video" class="l-container l-margin-vm">
                     <h2>Video Player</h2>
+					<h3>Popup Video</h3>
                     <div class="row l-margin-bm">
                         <div class="four columns no-gutters">
                             <div class="card card--video">
@@ -212,7 +213,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="six columns">
                             <div class="code__examples">
-                                <form><textarea class="pattern" id="comp-code-2" name="code">
+                                <form><textarea class="pattern" id="comp-code-1" name="code">
 <a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
     <i class="icon-play"></i>
     <div class="overlay"></div> <!-- Dark opacity -->
@@ -225,6 +226,56 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of <strong>.js-modal-video </strong>to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
                         </div>
                     </div>
+					<h3>Embedded Video</h3>
+					<div class="row">
+						<div class="twelve columns">
+		<div class="video-wrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+		</div>
+						</div>
+					</div>
+					
+					<div class="row l-margin-vd">
+					
+					
+						<div id="vid-emb-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#vid-emb-tab-item-1">Code</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#s-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#vid-emb-tab-item-3">Notes</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="vid-emb-tab-item-1" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form>
+											<textarea class="pattern" id="char-code-2" name="code">
+<div class="video-wrapper">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+</div>
+											</textarea>
+										</form>
+									</div>
+            					</div>
+
+								<!--<div id="vid-emb-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="vid-emb-tab-item-3" class="tabs__bucket">
+									<p>The video-wrapper class maintains a responsive 16:9 aspect ratio.</p>
+									<p>With YouTube videos, add ?wmode=transparent to the embed code to allow z-indexed elements to appear above the video.</p>
+
+								</div>
+
+							</div>
+
+						</div>
+					
+					</div>					
+					
                 </div>
 
             </div>

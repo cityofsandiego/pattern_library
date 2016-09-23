@@ -366,8 +366,8 @@
 
                     $(this).hoverIntent({
                         over: function(){ dropdown.addClass("visible") },
-                        timeout: 500,
-                        interval: 400,
+                        timeout: 0,
+                        interval: 200,
                         out: function(){ dropdown.removeClass("visible") }
                     });
                 })
@@ -445,7 +445,7 @@
                  * and set programmatically via js
                  */
 
-                function change_tab( $this ) {
+                /*function change_tab( $this ) {
                     if( ! $this.hasClass('is-active' ) ) {
 
                         var $bucket = $( $this.find('.tabs-list__link').attr('href') );
@@ -457,6 +457,28 @@
                         // remove active class on other items
                         $('.tabs-list__item').not( $this ).removeClass('is-active');
                         $('.tabs__bucket').not( $bucket ).removeClass('is-active');
+
+                        // set the hashtag on the url
+                        if ( history.pushState ) {
+                            history.pushState(null, null, '#' + $this.attr('id'));
+                        } else {
+                            location.hash = $this.attr('id');
+                        }
+                    }
+                }*/
+				
+				function change_tab( $this ) {
+                    if( ! $this.hasClass('is-active' ) ) {
+						var $tabid = $( $this ).closest('div').attr('id');
+                        var $bucket = $( $this.find('.tabs-list__link').attr('href') );
+
+                        // set active tab class
+                        $('#'+$tabid+' .'+$this.attr('class')).addClass('is-active');
+                        $('#'+$tabid+' #'+$bucket.attr('id')).addClass('is-active');
+
+                        // remove active class on other items
+                        $('#'+$tabid+' .tabs-list__item').not( $this ).removeClass('is-active');
+                        $('#'+$tabid+' .tabs__bucket').not( $bucket ).removeClass('is-active');
 
                         // set the hashtag on the url
                         if ( history.pushState ) {

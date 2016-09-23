@@ -46,6 +46,23 @@ summary {
   display: block;
 }
 
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+	@media print {
+		page-break-before: always;
+	}
+}
+
 /**
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
@@ -392,6 +409,7 @@ fieldset {
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
+  background-color: white;
 }
 
 /**

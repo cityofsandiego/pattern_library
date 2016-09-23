@@ -10,14 +10,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
 
-                <h1>Icon Library</h1>
+                <h1>Icon Library</h1>				
+				
+                <div class="sub__nav--library">
+                    <ul class="sub__nav">
+                        <li><a href="#icomoon">Icomoon</a></li>
+                        <li><a href="#socials">Socials</a></li>
+                    </ul>
+                </div>
+
 
                 <div class="l-container l-margin-tm">
 
                     <div class="row l-margin-bm">
-                        <div class="twelve columns">
-                            <h2>Font Name:</span> Icomoon <small>(Glyphs:&nbsp;171)</small></h2>
-                        </div>
                         <div class="six columns">
                             <table class="twelve columns">
                                 <tbody>
@@ -58,2754 +63,2485 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="six columns">
                             <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Helper classes are located in linearicons.scss for icon variations. These include:</p>
-                            <div class="code__examples">
+                            <div class="code__examples l-margin-bd">
                                 <form><textarea class="pattern" id="icon-code-1" name="code">
 <i class="icon-home"></i>
 <i class="icon-magnifier icon--circle background--cerulean"></i>
 <i class="icon-pencil icon--outline icon--xl"></i> </textarea> </form> </div>
+							<p>Since the Icomoon and Socials fonts are hosted on the City of San Diego's website server, the icons can only be used on <a href="https://www.sandiego.gov">www.sandiego.gov</a> web pages.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
+<div id="icomoon"></div>
+<h2>Font Name:</span> Icomoon <small>(Glyphs:&nbsp;351)</small></h2>
 
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-home"></i>
-                                <span>icon-home</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e800" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe800;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="home, building" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-apartment"></i>
-                                <span>icon-apartment</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e801" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe801;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="apartment, building2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pencil"></i>
-                                <span>icon-pencil</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e802" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe802;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pencil, write" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-magic-wand"></i>
-                                <span>icon-magic-wand</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e803" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe803;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="magic-wand, tool" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-drop"></i>
-                                <span>icon-drop</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e804" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe804;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="drop, droplet" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-lighter"></i>
-                                <span>icon-lighter</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e805" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe805;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="lighter, fire" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-sun"></i>
-                                <span>icon-sun</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e807" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe807;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="sun, brightness" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-moon"></i>
-                                <span>icon-moon</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e808" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe808;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="moon, night" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cloud"></i>
-                                <span>icon-cloud</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e809" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe809;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cloud, weather" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cloud-upload"></i>
-                                <span>icon-cloud-upload</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cloud-upload, cloud2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cloud-download"></i>
-                                <small>icon-cloud-download</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cloud-download, cloud3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cloud-sync"></i>
-                                <span>icon-cloud-sync</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cloud-sync, cloud4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cloud-check"></i>
-                                <span>icon-cloud-check</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cloud-check, cloud5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-database"></i>
-                                <span>icon-database</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="database, storage" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-lock"></i>
-                                <span>icon-lock</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e80f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe80f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="lock, privacy" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cog"></i>
-                                <span>icon-cog</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e810" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe810;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cog, gear" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-trash"></i>
-                                <span>icon-trash</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e811" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe811;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="trash, bin" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-dice"></i>
-                                <span>icon-dice</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e812" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe812;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="dice, game" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-heart"></i>
-                                <span>icon-heart</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e813" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe813;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="heart, love" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-star"></i>
-                                <span>icon-star</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e814" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe814;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="star, rating" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-star-half"></i>
-                                <span>icon-star-half</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e815" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe815;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="star-half, rating2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-star-empty"></i>
-                                <span>icon-star-empty</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e816" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe816;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="star-empty, rating3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-flag"></i>
-                                <span>icon-flag</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e817" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe817;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="flag, report" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-envelope"></i>
-                                <span>icon-envelope</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e818" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe818;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="envelope, mail" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-paperclip"></i>
-                                <span>icon-paperclip</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e819" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe819;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="paperclip, attachment" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-inbox"></i>
-                                <span>icon-inbox</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="inbox, drawer" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-eye"></i>
-                                <span>icon-eye</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="eye, vision" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-printer"></i>
-                                <span>icon-printer</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="printer, print" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-file-empty"></i>
-                                <span>icon-file-empty</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="file-empty, file" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-file-add"></i>
-                                <span>icon-file-add</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="file-add, file2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-enter"></i>
-                                <span>icon-enter</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e81f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe81f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="enter, door" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-exit"></i>
-                                <span>icon-exit</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e820" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe820;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="exit, door2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-graduation-hat"></i>
-                                <small>icon-graduation-hat</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e821" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe821;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="graduation-hat, education" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-license"></i>
-                                <span>icon-license</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e822" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe822;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="license, certificate" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-music-note"></i>
-                                <span>icon-music-note</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e823" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe823;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="music-note, music" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-film-play"></i>
-                                <span>icon-film-play</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e824" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe824;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="film-play, video" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-camera-video"></i>
-                                <span>icon-camera-video</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e825" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe825;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="camera-video, video2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-camera"></i>
-                                <span>icon-camera</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e826" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe826;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="camera, photo" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-picture"></i>
-                                <span>icon-picture</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e827" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe827;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="picture, photo2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-book"></i>
-                                <span>icon-book</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e828" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe828;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="book, read" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bookmark"></i>
-                                <span>icon-bookmark</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e829" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe829;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bookmark, ribbon" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-user"></i>
-                                <span>icon-user</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="user, persona" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-users"></i>
-                                <span>icon-users</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="users, group" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-shirt"></i>
-                                <span>icon-shirt</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="shirt, clothing" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-store"></i>
-                                <span>icon-store</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="store, shop" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cart"></i>
-                                <span>icon-cart</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cart, shop2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-tag"></i>
-                                <span>icon-tag</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e82f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe82f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="tag, price" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-phone-handset"></i>
-                                <small>icon-phone-handset</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e830" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe830;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="phone-handset, telephone" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-phone"></i>
-                                <span>icon-phone</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e831" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe831;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="phone, telephone2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pushpin"></i>
-                                <span>icon-pushpin</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e832" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe832;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pushpin, pin" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-map-marker"></i>
-                                <span>icon-map-marker</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e833" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe833;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="map-marker, pin2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-map"></i>
-                                <span>icon-map</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e834" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe834;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="map, guide" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-location"></i>
-                                <span>icon-location</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e835" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe835;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="location, compass" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-calendar-full"></i>
-                                <span>icon-calendar-full</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e836" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe836;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="calendar-full, calendar" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-keyboard"></i>
-                                <span>icon-keyboard</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e837" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe837;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="keyboard, type" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-spell-check"></i>
-                                <span>icon-spell-check</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e838" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe838;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="spell-check, spelling" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-screen"></i>
-                                <span>icon-screen</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e839" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe839;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="screen, monitor" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-smartphone"></i>
-                                <span>icon-smartphone</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="smartphone, mobile" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-tablet"></i>
-                                <span>icon-tablet</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="tablet, mobile2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-laptop"></i>
-                                <span>icon-laptop</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="laptop, computer" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-laptop-phone"></i>
-                                <span>icon-laptop-phone</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="laptop-phone, devices" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-power-switch"></i>
-                                <span>icon-power-switch</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="power-switch, toggle" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bubble"></i>
-                                <span>icon-bubble</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e83f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe83f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bubble, chat" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-heart-pulse"></i>
-                                <span>icon-heart-pulse</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e840" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe840;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="heart-pulse, health" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-construction"></i>
-                                <span>icon-construction</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e841" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe841;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="construction, road-sign" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pie-chart"></i>
-                                <span>icon-pie-chart</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e842" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe842;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pie-chart, chart" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chart-bars"></i>
-                                <span>icon-chart-bars</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e843" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe843;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chart-bars, chart2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-gift"></i>
-                                <span>icon-gift</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e844" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe844;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="gift, birthday" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-diamond"></i>
-                                <span>icon-diamond</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e845" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe845;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="diamond, jewelry" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-linearicons"></i>
-                                <span>icon-linearicons</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e846" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe846;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="linearicons, perxis" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-dinner"></i>
-                                <span>icon-dinner</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e847" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe847;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="dinner, food" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-coffee-cup"></i>
-                                <span>icon-coffee-cup</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e848" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe848;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="coffee-cup, drink" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-leaf"></i>
-                                <span>icon-leaf</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e849" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe849;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="leaf, nature" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-paw"></i>
-                                <span>icon-paw</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="paw, pet" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-rocket"></i>
-                                <span>icon-rocket</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="rocket, spaceship" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-briefcase"></i>
-                                <span>icon-briefcase</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="briefcase, suitcase" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bus"></i>
-                                <span>icon-bus</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bus, travel" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-car"></i>
-                                <span>icon-car</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="car, travel2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-train"></i>
-                                <span>icon-train</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e84f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe84f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="train, travel3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bicycle"></i>
-                                <span>icon-bicycle</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e850" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe850;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bicycle, exercise" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-wheelchair"></i>
-                                <span>icon-wheelchair</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e851" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe851;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="wheelchair, disabled" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-select"></i>
-                                <span>icon-select</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e852" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe852;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="select, cursor" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-earth"></i>
-                                <span>icon-earth</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e853" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe853;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="earth, globe" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-smile"></i>
-                                <span>icon-smile</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e854" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe854;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="smile, emoticon" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-sad"></i>
-                                <span>icon-sad</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e855" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe855;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="sad, emoticon2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-neutral"></i>
-                                <span>icon-neutral</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e856" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe856;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="neutral, emoticon3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-mustache"></i>
-                                <span>icon-mustache</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e857" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe857;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="mustache, emoticon4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-alarm"></i>
-                                <span>icon-alarm</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e858" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe858;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="alarm, bell" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bullhorn"></i>
-                                <span>icon-bullhorn</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e859" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe859;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bullhorn, megaphone" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-volume-high"></i>
-                                <span>icon-volume-high</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="volume-high, speaker" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-volume-medium"></i>
-                                <small>icon-volume-medium</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="volume-medium, speaker2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-volume-low"></i>
-                                <span>icon-volume-low</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="volume-low, speaker3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-volume"></i>
-                                <span>icon-volume</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="volume, speaker4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-mic"></i>
-                                <span>icon-mic</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="mic, voice" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-hourglass"></i>
-                                <span>icon-hourglass</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e85f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe85f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="hourglass, loading" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-undo"></i>
-                                <span>icon-undo</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e860" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe860;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="undo, ccw" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-redo"></i>
-                                <span>icon-redo</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e861" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe861;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="redo, cw" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-sync"></i>
-                                <span>icon-sync</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e862" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe862;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="sync, spinner" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-history"></i>
-                                <span>icon-history</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e863" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe863;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="history, archive" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-clock"></i>
-                                <span>icon-clock</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e864" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe864;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="clock, time" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-download"></i>
-                                <span>icon-download</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e865" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe865;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="download, down" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-upload"></i>
-                                <span>icon-upload</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e866" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe866;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="upload, up" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-enter-down"></i>
-                                <span>icon-enter-down</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e867" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe867;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="enter-down, down2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-exit-up"></i>
-                                <span>icon-exit-up</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e868" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe868;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="exit-up, up2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bug"></i>
-                                <span>icon-bug</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e869" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe869;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bug, insect" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-code"></i>
-                                <span>icon-code</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="code, embed" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-link"></i>
-                                <span>icon-link</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="link, url" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-unlink"></i>
-                                <span>icon-unlink</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="unlink, url2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-thumbs-up"></i>
-                                <span>icon-thumbs-up</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="thumbs-up, like" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-thumbs-down"></i>
-                                <span>icon-thumbs-down</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="thumbs-down, dislike" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-magnifier"></i>
-                                <span>icon-magnifier</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e86f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe86f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="magnifier, search" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cross"></i>
-                                <span>icon-cross</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e870" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe870;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cross, cancel" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-menu"></i>
-                                <span>icon-menu</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e871" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe871;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="menu, options" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-list"></i>
-                                <span>icon-list</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e872" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe872;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="list, options2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-up"></i>
-                                <span>icon-chevron-up</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e873" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe873;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-up, up3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-down"></i>
-                                <span>icon-chevron-down</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e874" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe874;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-down, down3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-left"></i>
-                                <span>icon-chevron-left</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e875" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe875;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-left, left" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-right"></i>
-                                <span>icon-chevron-right</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e876" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe876;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-right, right" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-up"></i>
-                                <span>icon-arrow-up</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e877" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe877;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-up, up4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-down"></i>
-                                <span>icon-arrow-down</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e878" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe878;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-down, down4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-left"></i>
-                                <span>icon-arrow-left</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e879" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe879;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-left, left2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-right"></i>
-                                <span>icon-arrow-right</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-right, right2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-move"></i>
-                                <span>icon-move</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="move, arrows" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-warning"></i>
-                                <span>icon-warning</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="warning, alert" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-question-circle"></i>
-                                <span>icon-question-circle</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="question-circle, help" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-menu-circle"></i>
-                                <span>icon-menu-circle</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="menu-circle, menu2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-checkmark-circle"></i>
-                                <small>icon-checkmark-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e87f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe87f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="checkmark-circle, checkmark" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-cross-circle"></i>
-                                <span>icon-cross-circle</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e880" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe880;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="cross-circle, cross2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-plus-circle"></i>
-                                <span>icon-plus-circle</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e881" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe881;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="plus-circle, plus" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon--circle-minus"></i>
-                                <span>icon--circle-minus</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e882" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe882;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="circle-minus, minus" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-up-circle"></i>
-                                <small>icon-arrow-up-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e883" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe883;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-up-circle, up5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-down-circle"></i>
-                                <small>icon-arrow-down-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e884" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe884;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-down-circle, down5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-left-circle"></i>
-                                <small>icon-arrow-left-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e885" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe885;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-left-circle, left3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-arrow-right-circle"></i>
-                                <small>icon-arrow-right-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e886" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe886;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="arrow-right-circle, right3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-up-circle"></i>
-                                <small>icon-chevron-up-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e887" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe887;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-up-circle, up6" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-down-circle"></i>
-                                <small>icon-chevron-down-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e888" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe888;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-down-circle, down6" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-left-circle"></i>
-                                <small>icon-chevron-left-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e889" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe889;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-left-circle, left4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-chevron-right-circle"></i>
-                                <small>icon-chevron-right-circle</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="chevron-right-circle, right4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-crop"></i>
-                                <span>icon-crop</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="crop, cut" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-frame-expand"></i>
-                                <span>icon-frame-expand</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="frame-expand, maximize" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-frame-contract"></i>
-                                <small>icon-frame-contract</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="frame-contract, minimize" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-layers"></i>
-                                <span>icon-layers</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="layers, stack" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-funnel"></i>
-                                <span>icon-funnel</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e88f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe88f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="funnel, filter" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-format"></i>
-                                <span>icon-text-format</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e890" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe890;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-format, typography" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-format-remove"></i>
-                                <small>icon-text-format-remove</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e891" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe891;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-format-remove, typography2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-size"></i>
-                                <span>icon-text-size</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e892" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe892;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-size, typography3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-bold"></i>
-                                <span>icon-bold</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e893" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe893;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="bold, typography4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-italic"></i>
-                                <span>icon-italic</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e894" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe894;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="italic, typography5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-underline"></i>
-                                <span>icon-underline</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e895" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe895;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="underline, typography6" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-strikethrough"></i>
-                                <span>icon-strikethrough</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e896" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe896;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="strikethrough, typography7" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-highlight"></i>
-                                <span>icon-highlight</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e897" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe897;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="highlight, magic-marker" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-align-left"></i>
-                                <span>icon-text-align-left</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e898" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe898;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-align-left, typography8" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-align-center"></i>
-                                <small>icon-text-align-center</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e899" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe899;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-align-center, typography9" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-align-right"></i>
-                                <span>icon-text-align-right</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89a" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89a;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-align-right, typography10" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-text-align-justify"></i>
-                                <small>icon-text-align-justify</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89b" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89b;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="text-align-justify, typography11" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-line-spacing"></i>
-                                <span>icon-line-spacing</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89c" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89c;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="line-spacing, typography12" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-indent-increase"></i>
-                                <small>icon-indent-increase</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89d" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89d;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="indent-increase, typography13" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-indent-decrease"></i>
-                                <small>icon-indent-decrease</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89e" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89e;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="indent-decrease, typography14" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pilcrow"></i>
-                                <span>icon-pilcrow</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e89f" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe89f;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pilcrow, typography15" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-direction-ltr"></i>
-                                <span>icon-direction-ltr</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a0" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a0;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="direction-ltr, typography16" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-direction-rtl"></i>
-                                <span>icon-direction-rtl</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a1" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a1;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="direction-rtl, typography17" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-page-break"></i>
-                                <span>icon-page-break</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a2" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a2;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="page-break" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-sort-alpha-asc"></i>
-                                <span>icon-sort-alpha-asc</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a3" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a3;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="sort-alpha-asc, sort" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-sort-amount-asc"></i>
-                                <small>icon-sort-amount-asc</small>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a4" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a4;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="sort-amount-asc, sort2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-hand"></i>
-                                <span>icon-hand</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a5" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a5;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="hand, drag" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pointer-up"></i>
-                                <span>icon-pointer-up</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a6" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a6;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-up, hand2" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pointer-right"></i>
-                                <span>icon-pointer-right</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a7" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a7;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-right, hand3" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pointer-down"></i>
-                                <span>icon-pointer-down</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a8" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a8;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-down, hand4" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div> <!-- card -->
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-pointer-left"></i>
-                                <span>icon-pointer-left</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e8a9" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe8a9;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-left, hand5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div>
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-close"></i>
-                                <span>icon-close</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="78" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#x78;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-left, hand5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div>
-                        <div class="sm-six three columns">
-                        <div class="card border l-padding-ad">
-                            <p>
-                                <i class="icon-play"></i>
-                                <span>icon-play</span>
-                            </p>
-                            <fieldset class="">
-                                <input type="text" readonly value="e608" class="unit size1of2" />
-                                <input type="button" maxlength="1" readonly value="&#xe608;" class="unitRight size1of2 talign-right icon-btn btn btn--primary" />
-                            </fieldset>
-                            <div class="visuallyhidden">
-                                <span>liga: </span>
-                                <input type="text" readonly value="pointer-left, hand5" class="liga unitRight" />
-                            </div>
-                        </div>
-                        </div>
-                    </div> <!-- card container -->
+				<div class="row l-margin-tm">
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-left"></i></p>
+<p>icon-chevron-left</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-right"></i></p>
+<p>icon-chevron-right</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-up"></i></p>
+<p>icon-chevron-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-down"></i></p>
+<p>icon-chevron-down</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-close"></i></p>
+<p>icon-close</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-play"></i></p>
+<p>icon-play</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-home"></i></p>
+<p>icon-home</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-home4"></i></p>
+<p>icon-home4</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bathtub"></i></p>
+<p>icon-bathtub</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-city"></i></p>
+<p>icon-city</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-apartment"></i></p>
+<p>icon-apartment</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pencil"></i></p>
+<p>icon-pencil</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pen"></i></p>
+<p>icon-pen</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pencil3"></i></p>
+<p>icon-pencil3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pencil5"></i></p>
+<p>icon-pencil5</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-brush2"></i></p>
+<p>icon-brush2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-spray"></i></p>
+<p>icon-spray</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-paint-roller"></i></p>
+<p>icon-paint-roller</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-stamp"></i></p>
+<p>icon-stamp</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tape"></i></p>
+<p>icon-tape</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-desk-tape"></i></p>
+<p>icon-desk-tape</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-palette"></i></p>
+<p>icon-palette</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bucket"></i></p>
+<p>icon-bucket</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-magic-wand"></i></p>
+<p>icon-magic-wand</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-magnet"></i></p>
+<p>icon-magnet</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pencil-ruler"></i></p>
+<p>icon-pencil-ruler</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pencil-ruler2"></i></p>
+<p>icon-pencil-ruler2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-compass"></i></p>
+<p>icon-compass</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bottle"></i></p>
+<p>icon-bottle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-drop-crossed"></i></p>
+<p>icon-drop-crossed</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-drop2"></i></p>
+<p>icon-drop2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-snow"></i></p>
+<p>icon-snow</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-snow2"></i></p>
+<p>icon-snow2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-fire"></i></p>
+<p>icon-fire</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lighter"></i></p>
+<p>icon-lighter</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-toilet-paper"></i></p>
+<p>icon-toilet-paper</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-umbrella"></i></p>
+<p>icon-umbrella</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-umbrella2"></i></p>
+<p>icon-umbrella2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-rain"></i></p>
+<p>icon-rain</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tornado"></i></p>
+<p>icon-tornado</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-wind"></i></p>
+<p>icon-wind</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-sun-small"></i></p>
+<p>icon-sun-small</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-sun"></i></p>
+<p>icon-sun</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-moon"></i></p>
+<p>icon-moon</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud"></i></p>
+<p>icon-cloud</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-upload"></i></p>
+<p>icon-cloud-upload</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-download"></i></p>
+<p>icon-cloud-download</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-rain"></i></p>
+<p>icon-cloud-rain</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-hailstones"></i></p>
+<p>icon-cloud-hailstones</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-snow"></i></p>
+<p>icon-cloud-snow</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-windy"></i></p>
+<p>icon-cloud-windy</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-sun-wind"></i></p>
+<p>icon-sun-wind</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-sun"></i></p>
+<p>icon-cloud-sun</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-lightning"></i></p>
+<p>icon-cloud-lightning</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cloud-database"></i></p>
+<p>icon-cloud-database</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-database"></i></p>
+<p>icon-database</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-server"></i></p>
+<p>icon-server</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shield"></i></p>
+<p>icon-shield</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shield-check"></i></p>
+<p>icon-shield-check</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shield-alert"></i></p>
+<p>icon-shield-alert</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shield-cross"></i></p>
+<p>icon-shield-cross</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lock"></i></p>
+<p>icon-lock</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-unlock"></i></p>
+<p>icon-unlock</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-key"></i></p>
+<p>icon-key</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-key-hole"></i></p>
+<p>icon-key-hole</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-toggle-off"></i></p>
+<p>icon-toggle-off</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-toggle-on"></i></p>
+<p>icon-toggle-on</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cog"></i></p>
+<p>icon-cog</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cog2"></i></p>
+<p>icon-cog2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-wrench"></i></p>
+<p>icon-wrench</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-hammer-wrench"></i></p>
+<p>icon-hammer-wrench</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-hammer"></i></p>
+<p>icon-hammer</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shovel"></i></p>
+<p>icon-shovel</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-factory2"></i></p>
+<p>icon-factory2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-recycle"></i></p>
+<p>icon-recycle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-trash2"></i></p>
+<p>icon-trash2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-broom"></i></p>
+<p>icon-broom</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-gamepad"></i></p>
+<p>icon-gamepad</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-dice"></i></p>
+<p>icon-dice</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-heart"></i></p>
+<p>icon-heart</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-star"></i></p>
+<p>icon-star</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-flag"></i></p>
+<p>icon-flag</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-flag3"></i></p>
+<p>icon-flag3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-at-sign"></i></p>
+<p>icon-at-sign</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-envelope"></i></p>
+<p>icon-envelope</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-envelope-open"></i></p>
+<p>icon-envelope-open</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-paperclip"></i></p>
+<p>icon-paperclip</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-paper-plane"></i></p>
+<p>icon-paper-plane</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-box"></i></p>
+<p>icon-box</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-archive2"></i></p>
+<p>icon-archive2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-drawers3"></i></p>
+<p>icon-drawers3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-eye"></i></p>
+<p>icon-eye</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-binoculars"></i></p>
+<p>icon-binoculars</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-disc"></i></p>
+<p>icon-disc</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-printer"></i></p>
+<p>icon-printer</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shredder"></i></p>
+<p>icon-shredder</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-file-empty"></i></p>
+<p>icon-file-empty</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-files"></i></p>
+<p>icon-files</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-folder"></i></p>
+<p>icon-folder</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-scissors"></i></p>
+<p>icon-scissors</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-clipboard-empty"></i></p>
+<p>icon-clipboard-empty</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-clipboard-text"></i></p>
+<p>icon-clipboard-text</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-clipboard-check"></i></p>
+<p>icon-clipboard-check</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-clipboard-user"></i></p>
+<p>icon-clipboard-user</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-papers"></i></p>
+<p>icon-papers</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-news"></i></p>
+<p>icon-news</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-reading"></i></p>
+<p>icon-reading</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-document2"></i></p>
+<p>icon-document2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-graduation-hat"></i></p>
+<p>icon-graduation-hat</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-medal-empty"></i></p>
+<p>icon-medal-empty</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-trophy2"></i></p>
+<p>icon-trophy2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-music-note"></i></p>
+<p>icon-music-note</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-music-note3"></i></p>
+<p>icon-music-note3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-headphones"></i></p>
+<p>icon-headphones</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-theater"></i></p>
+<p>icon-theater</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ticket"></i></p>
+<p>icon-ticket</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-film-play"></i></p>
+<p>icon-film-play</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-film"></i></p>
+<p>icon-film</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-surveillance"></i></p>
+<p>icon-surveillance</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-camera"></i></p>
+<p>icon-camera</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-camera-crossed"></i></p>
+<p>icon-camera-crossed</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-camera2"></i></p>
+<p>icon-camera2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-picture"></i></p>
+<p>icon-picture</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-book"></i></p>
+<p>icon-book</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-book2"></i></p>
+<p>icon-book2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bookmark"></i></p>
+<p>icon-bookmark</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bookmark2"></i></p>
+<p>icon-bookmark2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-library"></i></p>
+<p>icon-library</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-library2"></i></p>
+<p>icon-library2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-profile"></i></p>
+<p>icon-profile</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-user"></i></p>
+<p>icon-user</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-users"></i></p>
+<p>icon-users</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-users2"></i></p>
+<p>icon-users2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-group-work"></i></p>
+<p>icon-group-work</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-baby"></i></p>
+<p>icon-baby</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-baby2"></i></p>
+<p>icon-baby2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-walk"></i></p>
+<p>icon-walk</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-run"></i></p>
+<p>icon-run</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-woman2"></i></p>
+<p>icon-woman2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-man2"></i></p>
+<p>icon-man2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-man-woman"></i></p>
+<p>icon-man-woman</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-shirt"></i></p>
+<p>icon-shirt</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-store"></i></p>
+<p>icon-store</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-barcode"></i></p>
+<p>icon-barcode</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-barcode3"></i></p>
+<p>icon-barcode3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bag"></i></p>
+<p>icon-bag</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cart"></i></p>
+<p>icon-cart</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tag"></i></p>
+<p>icon-tag</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-receipt"></i></p>
+<p>icon-receipt</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-credit-card"></i></p>
+<p>icon-credit-card</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cash-dollar"></i></p>
+<p>icon-cash-dollar</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-calculator2"></i></p>
+<p>icon-calculator2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-telephone"></i></p>
+<p>icon-telephone</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-telephone2"></i></p>
+<p>icon-telephone2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pushpin"></i></p>
+<p>icon-pushpin</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-map-marker"></i></p>
+<p>icon-map-marker</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-map2"></i></p>
+<p>icon-map2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-location"></i></p>
+<p>icon-location</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-road-sign"></i></p>
+<p>icon-road-sign</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-calendar-empty"></i></p>
+<p>icon-calendar-empty</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-calendar-31"></i></p>
+<p>icon-calendar-31</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-calendar-full"></i></p>
+<p>icon-calendar-full</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-mouse"></i></p>
+<p>icon-mouse</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-keyboard"></i></p>
+<p>icon-keyboard</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-screen"></i></p>
+<p>icon-screen</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-signal"></i></p>
+<p>icon-signal</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-smartphone"></i></p>
+<p>icon-smartphone</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-smartphone-vibration"></i></p>
+<p>icon-smartphone-vibration</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-smartphone-waves"></i></p>
+<p>icon-smartphone-waves</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-laptop"></i></p>
+<p>icon-laptop</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-window"></i></p>
+<p>icon-window</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tv"></i></p>
+<p>icon-tv</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-remote-control"></i></p>
+<p>icon-remote-control</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-power-switch"></i></p>
+<p>icon-power-switch</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-power"></i></p>
+<p>icon-power</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lamp"></i></p>
+<p>icon-lamp</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cord"></i></p>
+<p>icon-cord</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-battery-empty"></i></p>
+<p>icon-battery-empty</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-battery-full"></i></p>
+<p>icon-battery-full</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-battery-charging"></i></p>
+<p>icon-battery-charging</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bubble"></i></p>
+<p>icon-bubble</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bubbles"></i></p>
+<p>icon-bubbles</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bubble-alert"></i></p>
+<p>icon-bubble-alert</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bubble-question"></i></p>
+<p>icon-bubble-question</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bubble-text"></i></p>
+<p>icon-bubble-text</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-phone-bubble"></i></p>
+<p>icon-phone-bubble</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-dna"></i></p>
+<p>icon-dna</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-heart-pulse"></i></p>
+<p>icon-heart-pulse</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pulse"></i></p>
+<p>icon-pulse</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-syringe"></i></p>
+<p>icon-syringe</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-first-aid"></i></p>
+<p>icon-first-aid</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lifebuoy"></i></p>
+<p>icon-lifebuoy</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-skull"></i></p>
+<p>icon-skull</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bone"></i></p>
+<p>icon-bone</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-construction"></i></p>
+<p>icon-construction</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-construction-cone"></i></p>
+<p>icon-construction-cone</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pie-chart"></i></p>
+<p>icon-pie-chart</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-graph"></i></p>
+<p>icon-graph</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chart-growth"></i></p>
+<p>icon-chart-growth</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cake"></i></p>
+<p>icon-cake</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-gift"></i></p>
+<p>icon-gift</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lotus"></i></p>
+<p>icon-lotus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-diamond2"></i></p>
+<p>icon-diamond2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-teacup"></i></p>
+<p>icon-teacup</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bottle2"></i></p>
+<p>icon-bottle2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-glass2"></i></p>
+<p>icon-glass2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-dinner"></i></p>
+<p>icon-dinner</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pizza"></i></p>
+<p>icon-pizza</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chicken"></i></p>
+<p>icon-chicken</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-fish"></i></p>
+<p>icon-fish</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ice-cream"></i></p>
+<p>icon-ice-cream</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-coffee-cup"></i></p>
+<p>icon-coffee-cup</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cherry"></i></p>
+<p>icon-cherry</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-apple"></i></p>
+<p>icon-apple</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-leaf"></i></p>
+<p>icon-leaf</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pine-tree"></i></p>
+<p>icon-pine-tree</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tree"></i></p>
+<p>icon-tree</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cactus"></i></p>
+<p>icon-cactus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-paw"></i></p>
+<p>icon-paw</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-rocket"></i></p>
+<p>icon-rocket</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-hammer2"></i></p>
+<p>icon-hammer2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-balance"></i></p>
+<p>icon-balance</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-briefcase"></i></p>
+<p>icon-briefcase</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-plane"></i></p>
+<p>icon-plane</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-helicopter"></i></p>
+<p>icon-helicopter</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-traffic-lights"></i></p>
+<p>icon-traffic-lights</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-road"></i></p>
+<p>icon-road</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-gas"></i></p>
+<p>icon-gas</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bus2"></i></p>
+<p>icon-bus2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-car2"></i></p>
+<p>icon-car2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-train"></i></p>
+<p>icon-train</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ship2"></i></p>
+<p>icon-ship2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-anchor"></i></p>
+<p>icon-anchor</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-boat"></i></p>
+<p>icon-boat</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bicycle"></i></p>
+<p>icon-bicycle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bicycle2"></i></p>
+<p>icon-bicycle2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-dumbbell"></i></p>
+<p>icon-dumbbell</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-swim"></i></p>
+<p>icon-swim</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-football"></i></p>
+<p>icon-football</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-baseball-bat"></i></p>
+<p>icon-baseball-bat</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-baseball"></i></p>
+<p>icon-baseball</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tennis"></i></p>
+<p>icon-tennis</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-tennis2"></i></p>
+<p>icon-tennis2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ping-pong"></i></p>
+<p>icon-ping-pong</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-hockey"></i></p>
+<p>icon-hockey</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-8ball"></i></p>
+<p>icon-8ball</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bowling"></i></p>
+<p>icon-bowling</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bowling-pins"></i></p>
+<p>icon-bowling-pins</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-golf"></i></p>
+<p>icon-golf</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-golf2"></i></p>
+<p>icon-golf2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-archery"></i></p>
+<p>icon-archery</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-soccer"></i></p>
+<p>icon-soccer</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-basketball"></i></p>
+<p>icon-basketball</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cube"></i></p>
+<p>icon-cube</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-puzzle"></i></p>
+<p>icon-puzzle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-glasses2"></i></p>
+<p>icon-glasses2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-wheelchair"></i></p>
+<p>icon-wheelchair</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-fence"></i></p>
+<p>icon-fence</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-select2"></i></p>
+<p>icon-select2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-site-map"></i></p>
+<p>icon-site-map</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-earth"></i></p>
+<p>icon-earth</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-planet"></i></p>
+<p>icon-planet</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-happy"></i></p>
+<p>icon-happy</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-smile"></i></p>
+<p>icon-smile</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-halloween"></i></p>
+<p>icon-halloween</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-christmas"></i></p>
+<p>icon-christmas</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-easter-egg"></i></p>
+<p>icon-easter-egg</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-alarm"></i></p>
+<p>icon-alarm</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-alarm-ringing"></i></p>
+<p>icon-alarm-ringing</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bullhorn"></i></p>
+<p>icon-bullhorn</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-volume-high"></i></p>
+<p>icon-volume-high</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-lan"></i></p>
+<p>icon-lan</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-wifi"></i></p>
+<p>icon-wifi</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-antenna"></i></p>
+<p>icon-antenna</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-satellite"></i></p>
+<p>icon-satellite</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-satellite2"></i></p>
+<p>icon-satellite2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-mic"></i></p>
+<p>icon-mic</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-mic2"></i></p>
+<p>icon-mic2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-spotlights"></i></p>
+<p>icon-spotlights</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-clock3"></i></p>
+<p>icon-clock3</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-watch"></i></p>
+<p>icon-watch</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-download2"></i></p>
+<p>icon-download2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-upload2"></i></p>
+<p>icon-upload2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-exit-up"></i></p>
+<p>icon-exit-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-exit-down"></i></p>
+<p>icon-exit-down</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-bug"></i></p>
+<p>icon-bug</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-code"></i></p>
+<p>icon-code</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-thumbs-up"></i></p>
+<p>icon-thumbs-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-thumbs-down"></i></p>
+<p>icon-thumbs-down</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-magnifier"></i></p>
+<p>icon-magnifier</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cross"></i></p>
+<p>icon-cross</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-menu"></i></p>
+<p>icon-menu</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-exclamation"></i></p>
+<p>icon-exclamation</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-question"></i></p>
+<p>icon-question</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-check"></i></p>
+<p>icon-check</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cross2"></i></p>
+<p>icon-cross2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-plus"></i></p>
+<p>icon-plus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-minus"></i></p>
+<p>icon-minus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-up"></i></p>
+<p>icon-arrow-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-down"></i></p>
+<p>icon-arrow-down</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-left"></i></p>
+<p>icon-arrow-left</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-right"></i></p>
+<p>icon-arrow-right</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-up-right"></i></p>
+<p>icon-arrow-up-right</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-move"></i></p>
+<p>icon-move</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-warning"></i></p>
+<p>icon-warning</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-notification-circle"></i></p>
+<p>icon-notification-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-question-circle"></i></p>
+<p>icon-question-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-menu-circle"></i></p>
+<p>icon-menu-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-checkmark-circle"></i></p>
+<p>icon-checkmark-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cross-circle"></i></p>
+<p>icon-cross-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-plus-circle"></i></p>
+<p>icon-plus-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-circle-minus"></i></p>
+<p>icon-circle-minus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-up-circle"></i></p>
+<p>icon-arrow-up-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-down-circle"></i></p>
+<p>icon-arrow-down-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-left-circle"></i></p>
+<p>icon-arrow-left-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-right-circle"></i></p>
+<p>icon-arrow-right-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-up-circle"></i></p>
+<p>icon-chevron-up-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-down-circle"></i></p>
+<p>icon-chevron-down-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-left-circle"></i></p>
+<p>icon-chevron-left-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-right-circle"></i></p>
+<p>icon-chevron-right-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-backward-circle"></i></p>
+<p>icon-backward-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-first-circle"></i></p>
+<p>icon-first-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-previous-circle"></i></p>
+<p>icon-previous-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-stop-circle"></i></p>
+<p>icon-stop-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-play-circle"></i></p>
+<p>icon-play-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pause-circle"></i></p>
+<p>icon-pause-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-next-circle"></i></p>
+<p>icon-next-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-last-circle"></i></p>
+<p>icon-last-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-forward-circle"></i></p>
+<p>icon-forward-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-layers"></i></p>
+<p>icon-layers</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ruler"></i></p>
+<p>icon-ruler</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-plus-square"></i></p>
+<p>icon-plus-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-minus-square"></i></p>
+<p>icon-minus-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-up-square"></i></p>
+<p>icon-arrow-up-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-down-square"></i></p>
+<p>icon-arrow-down-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-left-square"></i></p>
+<p>icon-arrow-left-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-arrow-right-square"></i></p>
+<p>icon-arrow-right-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-up-square"></i></p>
+<p>icon-chevron-up-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-down-square"></i></p>
+<p>icon-chevron-down-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-left-square"></i></p>
+<p>icon-chevron-left-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-chevron-right-square"></i></p>
+<p>icon-chevron-right-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-check-square"></i></p>
+<p>icon-check-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-cross-square"></i></p>
+<p>icon-cross-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-menu-square"></i></p>
+<p>icon-menu-square</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-prohibited"></i></p>
+<p>icon-prohibited</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-text-format"></i></p>
+<p>icon-text-format</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-text-size"></i></p>
+<p>icon-text-size</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-hand"></i></p>
+<p>icon-hand</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-pointer-up"></i></p>
+<p>icon-pointer-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-reminder"></i></p>
+<p>icon-reminder</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-ellipsis"></i></p>
+<p>icon-ellipsis</p>
+</div>
+				
+				</div>
+				
+<div id="socials"></div>				
+<h2>Font Name:</span> Socials <small>(Glyphs:&nbsp;12)</small></h2>		
+				<div class="row l-margin-tm">
+				
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-facebook"></i></p>
+<p>icon-facebook</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-twitter"></i></p>
+<p>icon-twitter</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-youtube"></i></p>
+<p>icon-youtube</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-nextdoor"></i></p>
+<p>icon-nextdoor</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-instagram"></i></p>
+<p>icon-instagram</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-googleplus"></i></p>
+<p>icon-googleplus</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-email"></i></p>
+<p>icon-email</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-rss"></i></p>
+<p>icon-rss</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-share"></i></p>
+<p>icon-share</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-appleinc"></i></p>
+<p>icon-appleinc</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-android"></i></p>
+<p>icon-android</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-microsoft"></i></p>
+<p>icon-microsoft</p>
+</div>
+
+				
+				</div>				
+                <!--<table>
+				<tr>
+<td><i class="icon--lg icon-home"></i></td><td>icon-home</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-home4"></i></td><td>icon-home4</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bathtub"></i></td><td>icon-bathtub</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-city"></i></td><td>icon-city</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pencil"></i></td><td>icon-pencil</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pencil3"></i></td><td>icon-pencil3</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pencil5"></i></td><td>icon-pencil5</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-brush2"></i></td><td>icon-brush2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-spray"></i></td><td>icon-spray</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-paint-roller"></i></td><td>icon-paint-roller</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-stamp"></i></td><td>icon-stamp</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tape"></i></td><td>icon-tape</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-desk-tape"></i></td><td>icon-desk-tape</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-palette"></i></td><td>icon-palette</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bucket"></i></td><td>icon-bucket</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-magic-wand"></i></td><td>icon-magic-wand</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-magnet"></i></td><td>icon-magnet</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pencil-ruler"></i></td><td>icon-pencil-ruler</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pencil-ruler2"></i></td><td>icon-pencil-ruler2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-compass"></i></td><td>icon-compass</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bottle"></i></td><td>icon-bottle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-drop-crossed"></i></td><td>icon-drop-crossed</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-drop2"></i></td><td>icon-drop2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-snow"></i></td><td>icon-snow</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-snow2"></i></td><td>icon-snow2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-fire"></i></td><td>icon-fire</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-lighter"></i></td><td>icon-lighter</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-umbrella"></i></td><td>icon-umbrella</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-umbrella2"></i></td><td>icon-umbrella2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-rain"></i></td><td>icon-rain</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tornado"></i></td><td>icon-tornado</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-wind"></i></td><td>icon-wind</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-sun"></i></td><td>icon-sun</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-moon"></i></td><td>icon-moon</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud"></i></td><td>icon-cloud</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-upload"></i></td><td>icon-cloud-upload</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-download"></i></td><td>icon-cloud-download</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-rain"></i></td><td>icon-cloud-rain</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-hailstones"></i></td><td>icon-cloud-hailstones</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-snow"></i></td><td>icon-cloud-snow</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-windy"></i></td><td>icon-cloud-windy</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-sun-wind"></i></td><td>icon-sun-wind</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-sun"></i></td><td>icon-cloud-sun</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-lightning"></i></td><td>icon-cloud-lightning</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cloud-database"></i></td><td>icon-cloud-database</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-database"></i></td><td>icon-database</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-server"></i></td><td>icon-server</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shield"></i></td><td>icon-shield</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shield-check"></i></td><td>icon-shield-check</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shield-alert"></i></td><td>icon-shield-alert</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shield-cross"></i></td><td>icon-shield-cross</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-lock"></i></td><td>icon-lock</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-unlock"></i></td><td>icon-unlock</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-key"></i></td><td>icon-key</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-key-hole"></i></td><td>icon-key-hole</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cog"></i></td><td>icon-cog</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cog2"></i></td><td>icon-cog2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-wrench"></i></td><td>icon-wrench</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-hammer-wrench"></i></td><td>icon-hammer-wrench</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shovel"></i></td><td>icon-shovel</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-factory2"></i></td><td>icon-factory2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-recycle"></i></td><td>icon-recycle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-trash2"></i></td><td>icon-trash2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-gamepad"></i></td><td>icon-gamepad</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-dice"></i></td><td>icon-dice</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-heart"></i></td><td>icon-heart</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-star"></i></td><td>icon-star</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-flag"></i></td><td>icon-flag</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-flag3"></i></td><td>icon-flag3</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-at-sign"></i></td><td>icon-at-sign</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-envelope"></i></td><td>icon-envelope</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-envelope-open"></i></td><td>icon-envelope-open</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-paperclip"></i></td><td>icon-paperclip</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-paper-plane"></i></td><td>icon-paper-plane</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-box"></i></td><td>icon-box</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-archive2"></i></td><td>icon-archive2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-drawers3"></i></td><td>icon-drawers3</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-eye"></i></td><td>icon-eye</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-binoculars2"></i></td><td>icon-binoculars2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-disc"></i></td><td>icon-disc</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-printer"></i></td><td>icon-printer</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-shredder"></i></td><td>icon-shredder</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-file-empty"></i></td><td>icon-file-empty</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-files"></i></td><td>icon-files</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-folder"></i></td><td>icon-folder</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-clipboard-text"></i></td><td>icon-clipboard-text</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-clipboard-check"></i></td><td>icon-clipboard-check</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-clipboard-user"></i></td><td>icon-clipboard-user</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-papers"></i></td><td>icon-papers</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-news"></i></td><td>icon-news</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-reading"></i></td><td>icon-reading</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-graduation-hat"></i></td><td>icon-graduation-hat</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-medal-empty"></i></td><td>icon-medal-empty</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-trophy2"></i></td><td>icon-trophy2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-music-note2"></i></td><td>icon-music-note2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-headphones"></i></td><td>icon-headphones</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-theater"></i></td><td>icon-theater</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-ticket"></i></td><td>icon-ticket</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-film-play"></i></td><td>icon-film-play</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-film"></i></td><td>icon-film</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-surveillance"></i></td><td>icon-surveillance</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-camera"></i></td><td>icon-camera</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-camera2"></i></td><td>icon-camera2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-picture"></i></td><td>icon-picture</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-book"></i></td><td>icon-book</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bookmark"></i></td><td>icon-bookmark</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bookmark2"></i></td><td>icon-bookmark2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-library"></i></td><td>icon-library</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-library2"></i></td><td>icon-library2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-profile"></i></td><td>icon-profile</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-user"></i></td><td>icon-user</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-users"></i></td><td>icon-users</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-group-work"></i></td><td>icon-group-work</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-baby"></i></td><td>icon-baby</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-baby2"></i></td><td>icon-baby2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-walk"></i></td><td>icon-walk</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-run"></i></td><td>icon-run</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-woman2"></i></td><td>icon-woman2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-man2"></i></td><td>icon-man2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-man-woman"></i></td><td>icon-man-woman</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-store"></i></td><td>icon-store</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-barcode"></i></td><td>icon-barcode</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-barcode3"></i></td><td>icon-barcode3</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bag"></i></td><td>icon-bag</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cart"></i></td><td>icon-cart</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tag"></i></td><td>icon-tag</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-receipt"></i></td><td>icon-receipt</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-credit-card"></i></td><td>icon-credit-card</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cash-dollar"></i></td><td>icon-cash-dollar</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-calculator2"></i></td><td>icon-calculator2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-telephone"></i></td><td>icon-telephone</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-telephone2"></i></td><td>icon-telephone2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pushpin"></i></td><td>icon-pushpin</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-map-marker"></i></td><td>icon-map-marker</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-map2"></i></td><td>icon-map2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-location"></i></td><td>icon-location</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-road-sign"></i></td><td>icon-road-sign</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-calendar-empty"></i></td><td>icon-calendar-empty</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-calendar-31"></i></td><td>icon-calendar-31</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-calendar-full"></i></td><td>icon-calendar-full</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-mouse"></i></td><td>icon-mouse</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-keyboard"></i></td><td>icon-keyboard</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-screen"></i></td><td>icon-screen</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-signal"></i></td><td>icon-signal</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-smartphone"></i></td><td>icon-smartphone</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-smartphone-vibration"></i></td><td>icon-smartphone-vibration</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-smartphone-embed"></i></td><td>icon-smartphone-embed</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-smartphone-waves"></i></td><td>icon-smartphone-waves</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-laptop"></i></td><td>icon-laptop</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tv"></i></td><td>icon-tv</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-radio"></i></td><td>icon-radio</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-remote-control"></i></td><td>icon-remote-control</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-power-switch"></i></td><td>icon-power-switch</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-power"></i></td><td>icon-power</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-lamp"></i></td><td>icon-lamp</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-battery-empty"></i></td><td>icon-battery-empty</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bubble"></i></td><td>icon-bubble</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bubbles"></i></td><td>icon-bubbles</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bubble-alert"></i></td><td>icon-bubble-alert</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bubble-question"></i></td><td>icon-bubble-question</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bubble-text"></i></td><td>icon-bubble-text</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-phone-bubble"></i></td><td>icon-phone-bubble</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-dna"></i></td><td>icon-dna</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-heart-pulse"></i></td><td>icon-heart-pulse</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pulse"></i></td><td>icon-pulse</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-syringe"></i></td><td>icon-syringe</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-first-aid"></i></td><td>icon-first-aid</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-lifebuoy"></i></td><td>icon-lifebuoy</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-skull"></i></td><td>icon-skull</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bone"></i></td><td>icon-bone</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-construction"></i></td><td>icon-construction</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-construction-cone"></i></td><td>icon-construction-cone</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pie-chart"></i></td><td>icon-pie-chart</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-graph"></i></td><td>icon-graph</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chart-growth"></i></td><td>icon-chart-growth</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cake"></i></td><td>icon-cake</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-gift"></i></td><td>icon-gift</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-diamond2"></i></td><td>icon-diamond2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-teacup"></i></td><td>icon-teacup</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bottle2"></i></td><td>icon-bottle2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-dinner"></i></td><td>icon-dinner</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-dinner2"></i></td><td>icon-dinner2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chicken"></i></td><td>icon-chicken</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-fish"></i></td><td>icon-fish</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-ice-cream"></i></td><td>icon-ice-cream</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-coffee-cup"></i></td><td>icon-coffee-cup</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cherry"></i></td><td>icon-cherry</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-leaf"></i></td><td>icon-leaf</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pine-tree"></i></td><td>icon-pine-tree</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tree"></i></td><td>icon-tree</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cactus"></i></td><td>icon-cactus</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-paw"></i></td><td>icon-paw</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-rocket"></i></td><td>icon-rocket</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-hammer2"></i></td><td>icon-hammer2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-balance"></i></td><td>icon-balance</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-briefcase"></i></td><td>icon-briefcase</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-plane"></i></td><td>icon-plane</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-helicopter"></i></td><td>icon-helicopter</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-traffic-lights"></i></td><td>icon-traffic-lights</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-road"></i></td><td>icon-road</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-coolant-temperature"></i></td><td>icon-coolant-temperature</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-gas"></i></td><td>icon-gas</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bus2"></i></td><td>icon-bus2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-car2"></i></td><td>icon-car2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-train"></i></td><td>icon-train</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-ship2"></i></td><td>icon-ship2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-anchor"></i></td><td>icon-anchor</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-boat"></i></td><td>icon-boat</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bicycle"></i></td><td>icon-bicycle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bicycle2"></i></td><td>icon-bicycle2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-dumbbell"></i></td><td>icon-dumbbell</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-swim"></i></td><td>icon-swim</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-football"></i></td><td>icon-football</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-baseball-bat"></i></td><td>icon-baseball-bat</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-baseball"></i></td><td>icon-baseball</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tennis"></i></td><td>icon-tennis</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-tennis2"></i></td><td>icon-tennis2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-ping-pong"></i></td><td>icon-ping-pong</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-hockey"></i></td><td>icon-hockey</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-8ball"></i></td><td>icon-8ball</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bowling"></i></td><td>icon-bowling</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bowling-pins"></i></td><td>icon-bowling-pins</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-golf"></i></td><td>icon-golf</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-golf2"></i></td><td>icon-golf2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-archery"></i></td><td>icon-archery</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-soccer"></i></td><td>icon-soccer</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-basketball"></i></td><td>icon-basketball</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cube"></i></td><td>icon-cube</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-puzzle"></i></td><td>icon-puzzle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-glasses2"></i></td><td>icon-glasses2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-wheelchair"></i></td><td>icon-wheelchair</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-fence"></i></td><td>icon-fence</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-select2"></i></td><td>icon-select2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-site-map"></i></td><td>icon-site-map</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-earth"></i></td><td>icon-earth</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-happy"></i></td><td>icon-happy</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-smile"></i></td><td>icon-smile</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-halloween"></i></td><td>icon-halloween</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-christmas"></i></td><td>icon-christmas</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-easter-egg"></i></td><td>icon-easter-egg</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-alarm"></i></td><td>icon-alarm</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-alarm-ringing"></i></td><td>icon-alarm-ringing</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bullhorn"></i></td><td>icon-bullhorn</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-volume-high"></i></td><td>icon-volume-high</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-lan"></i></td><td>icon-lan</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-wifi"></i></td><td>icon-wifi</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-antenna"></i></td><td>icon-antenna</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-satellite2"></i></td><td>icon-satellite2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-mic"></i></td><td>icon-mic</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-mic2"></i></td><td>icon-mic2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-spotlights"></i></td><td>icon-spotlights</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-clock3"></i></td><td>icon-clock3</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-watch"></i></td><td>icon-watch</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-download2"></i></td><td>icon-download2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-upload2"></i></td><td>icon-upload2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-exit-up"></i></td><td>icon-exit-up</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-exit-down"></i></td><td>icon-exit-down</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-bug"></i></td><td>icon-bug</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-code"></i></td><td>icon-code</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-thumbs-up"></i></td><td>icon-thumbs-up</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-thumbs-down"></i></td><td>icon-thumbs-down</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-magnifier"></i></td><td>icon-magnifier</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cross"></i></td><td>icon-cross</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-menu"></i></td><td>icon-menu</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-exclamation"></i></td><td>icon-exclamation</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-question"></i></td><td>icon-question</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-check"></i></td><td>icon-check</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cross2"></i></td><td>icon-cross2</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-plus"></i></td><td>icon-plus</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-minus"></i></td><td>icon-minus</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-up"></i></td><td>icon-chevron-up</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-down"></i></td><td>icon-chevron-down</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-left"></i></td><td>icon-chevron-left</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-right"></i></td><td>icon-chevron-right</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevrons-expand-vertical"></i></td><td>icon-chevrons-expand-vertical</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevrons-expand-horizontal"></i></td><td>icon-chevrons-expand-horizontal</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevrons-contract-vertical"></i></td><td>icon-chevrons-contract-vertical</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevrons-contract-horizontal"></i></td><td>icon-chevrons-contract-horizontal</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-up"></i></td><td>icon-arrow-up</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-down"></i></td><td>icon-arrow-down</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-left"></i></td><td>icon-arrow-left</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-right"></i></td><td>icon-arrow-right</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-up-right"></i></td><td>icon-arrow-up-right</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-move"></i></td><td>icon-move</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-warning"></i></td><td>icon-warning</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-notification-circle"></i></td><td>icon-notification-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-question-circle"></i></td><td>icon-question-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-checkmark-circle"></i></td><td>icon-checkmark-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cross-circle"></i></td><td>icon-cross-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-plus-circle"></i></td><td>icon-plus-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-circle-minus"></i></td><td>icon-circle-minus</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-up-circle"></i></td><td>icon-arrow-up-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-down-circle"></i></td><td>icon-arrow-down-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-left-circle"></i></td><td>icon-arrow-left-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-right-circle"></i></td><td>icon-arrow-right-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-up-circle"></i></td><td>icon-chevron-up-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-down-circle"></i></td><td>icon-chevron-down-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-left-circle"></i></td><td>icon-chevron-left-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-right-circle"></i></td><td>icon-chevron-right-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-backward-circle"></i></td><td>icon-backward-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-first-circle"></i></td><td>icon-first-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-previous-circle"></i></td><td>icon-previous-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-stop-circle"></i></td><td>icon-stop-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-play-circle"></i></td><td>icon-play-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pause-circle"></i></td><td>icon-pause-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-next-circle"></i></td><td>icon-next-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-last-circle"></i></td><td>icon-last-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-forward-circle"></i></td><td>icon-forward-circle</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-layers"></i></td><td>icon-layers</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-plus-square"></i></td><td>icon-plus-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-minus-square"></i></td><td>icon-minus-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-up-square"></i></td><td>icon-arrow-up-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-down-square"></i></td><td>icon-arrow-down-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-left-square"></i></td><td>icon-arrow-left-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-arrow-right-square"></i></td><td>icon-arrow-right-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-up-square"></i></td><td>icon-chevron-up-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-down-square"></i></td><td>icon-chevron-down-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-left-square"></i></td><td>icon-chevron-left-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-chevron-right-square"></i></td><td>icon-chevron-right-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-check-square"></i></td><td>icon-check-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-cross-square"></i></td><td>icon-cross-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-menu-square"></i></td><td>icon-menu-square</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-prohibited"></i></td><td>icon-prohibited</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-text-format"></i></td><td>icon-text-format</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-text-size"></i></td><td>icon-text-size</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-hand"></i></td><td>icon-hand</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-pointer-up"></i></td><td>icon-pointer-up</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-reminder"></i></td><td>icon-reminder</td>
+</tr>
+<tr>
+<td><i class="icon--lg icon-ellipsis"></i></td><td>icon-ellipsis</td>
+</tr>
+
+
+				
+				</table>-->
 
             <!--[if gt IE 8]><!-->
             <!-- <div class="mhl mbl">
@@ -2823,12 +2559,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </div> -->
             <!--<![endif]-->
             <div class="twelve columns">
-                <p><a href="https://linearicons.com/" target="_blank">Linearicons</a> provided by <a href="https://perxis.com/" target="_blank">Perxis</a>.</p>
-                <p>Generated by <a href="https://icomoon.io/app">IcoMoon</a></p>
+                <p><a href="https://linearicons.com/" target="_blank">Linearicons</a> by <a href="https://perxis.com/" target="_blank">Perxis</a>. Generated by <a href="https://icomoon.io/app">IcoMoon</a></p>
             </div>
 
         </div>
-
+	</div>
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>

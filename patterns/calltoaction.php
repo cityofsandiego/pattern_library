@@ -30,18 +30,62 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    		</div>
 				    	</div>
 				    	<div class="seven columns">
-				    		<p class="l-margin-bn"><strong>Notes</strong></p>
-				    		<p>Call to action cards utilize the <strong>.card</strong> modifier classes, <strong>.card__cta</strong> and <strong>.card__cta--graphic</strong>.</p>
-				    		<div class="code__examples">
-                                <form><textarea class="pattern" id="cta-code-1" name="code">
+				    		
+				    	</div>
+				    </div>
+					
+					<div class="row l-margin-vd">
+					
+					
+						<div id="cta-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#cta-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#cta-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#cta-tab-item-3">Code</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#cta-tab-item-4">Notes</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="cta-tab-item-1" class="tabs__bucket">
+									<p>Call to action cards utilize the <strong>.card</strong> modifier classes, <strong>.card__cta</strong> and <strong>.card__cta--graphic</strong>.</p>
+
+								</div>
+
+								<!--<div id="cta-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="cta-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form>
+											<textarea class="pattern" id="cta-code-1" name="code">
 <div class="card card__cta card__cta--graphic" style="background-image:url(../assets/dist/img/cta-graphic.jpg);">
 	<a href="">
 		<p>Signup for Junior Lifeguards</p>
 		<span href="" class="btn btn--secondary">Signup Today</span>
 	</a>
-</div></textarea></form> </div>
-				    	</div>
-				    </div>
+</div>
+											</textarea>
+										</form>
+									</div>
+            					</div>
+
+								<div id="cta-tab-item-4" class="tabs__bucket is-active">
+									<p>For the blue overlay in the graphic, use #0098db with 85% opacity.</p>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+					
+					
+					
+					
+					
 				</div>
 
 			    <!-- Text -->
@@ -74,3 +118,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+<script type="text/javascript">
+$( document ).ready(function() {
+$(".tabs__bucket").removeClass("is-active");
+$(".tabs-container div:first-child").addClass("is-active");
+});
+</script>

@@ -101,6 +101,7 @@ button {
 /**
  * Normalize sets as 'content-box'
  */
+input.search-type,
 input[type="search"] {
     margin: 0;
   @include box-sizing( border-box ); /* 1 */
@@ -150,6 +151,7 @@ legend {
 .form {
     overflow: hidden;
     input[type="email"],
+    input.search-type,
     input[type="search"] {
         width: auto;
         color: $gray;
@@ -251,6 +253,11 @@ legend {
     border-radius: 4px;
     box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
 
+    // So drop shadow aligns for views-exposed search filter
+    .views-exposed-widgets {
+     margin-bottom: 0px;
+    }
+    input.search-type,
     input[type="search"] {
         border-right: none;
         border-radius: 4px 0 0 4px;
@@ -278,9 +285,11 @@ legend {
     .form-item {
         width: 85%;
     }
+    .views-submit-button,
     .form-actions {
         width: 15%;
     }
+    .views-submit-button,
     .form-item,
     .form-actions {
         float: left;
@@ -369,9 +378,10 @@ header {
         position: relative;
         border-radius: 4px;
         border: 1px solid $off-black;
+        margin-right: 25px;
 
         @include mq( $from: tablet ) {
-            min-height: 150px;
+            min-height: 115px;
         }
 
         &:after {
@@ -387,11 +397,18 @@ header {
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
         }
+        &.step-3 {
+            margin-right: 0;
+            &:after {
+                display: none;
+            }   
+        }
     }
 
     &:last-child fieldset:after {
         display: none;
     }
+
 
     .icon--circle {
         padding: 0;
@@ -496,6 +513,7 @@ header {
             padding: .5em 3em;
             background-color: rgba(255, 255, 255, 0.9);
 
+            input.search-type,
             input[type="search"] {
                 border: 1px solid $chateau;
                 border-right: none;
@@ -533,5 +551,41 @@ header {
             position: absolute;
             @include rem( 'font-size', 14px );
         }
+    }
+}
+
+#views-exposed-form-events-page-1 {
+    @extend .form--search;
+    .views-exposed-form {
+        @extend .l-container;
+        .views-exposed-widgets {
+            margin-bottom: 0;
+        }
+        .views-exposed-widget {
+            padding: 0;
+        }
+        .views-submit-button {
+            width: 15%;
+        }
+    }
+    .form-item {
+        width: 100%;
+        overflow: hidden;
+    }
+    .form-text {
+        margin-right: 0;
+        margin-bottom: 1px;
+    }
+    .form-submit {
+        margin-top: 0;
+    }
+}
+
+.views-widget-filter-field_event_date_value {
+    float: left;
+    width: 85%;
+    .description,
+    label {
+        @extend .hidden;
     }
 }

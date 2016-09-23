@@ -22,7 +22,19 @@
 		@include mq( $from: tablet ) {
 			@include rem( 'font-size', 13px );
 		}
+		&.leaf, &.expanded, &.collapsed {
+			margin-left: 15px;
+			margin-bottom: .3rem;
+			ul.menu {
+				margin-top: .3rem;
+				margin-bottom: 0;
+			}
+		}
 	}
+}
+
+.widget > ul.menu {
+	margin-bottom: 2em;
 }
 
 .widget__heading {

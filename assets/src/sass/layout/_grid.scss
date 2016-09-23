@@ -18,6 +18,7 @@
 }
 
 .columns {
+    word-wrap: break-word;
     min-height: 1px;
     @include mq( $from: tablet ) {
         position: relative;

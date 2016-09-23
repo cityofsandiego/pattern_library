@@ -39,7 +39,22 @@
 .l-margin-am { margin: 2em; }
 .l-margin-al { margin: 4em; }
 .l-margin-ax { margin: 6em; }
-
+img.photoLeft{
+	float:left;
+	padding-right:10px;
+	padding-bottom:10px;
+	clear:left;
+	}
+img.photoRight{
+	float:right;
+	padding-left:10px;
+	padding-bottom:10px;
+	clear:right;
+	}
+.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-5px;height:5px;visibility:hidden;}
+@media screen and (min-width: 47.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-240px;height:240px;visibility:hidden;}}
+@media screen and (min-width: 59.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-200px;height:200px;visibility:hidden;}}
+@media screen and (min-width: 74.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-180px;height:180px;visibility:hidden;}}
 /* Vertical */
 
 .l-padding-vn { padding-top: 0; padding-bottom: 0; }
@@ -364,3 +379,4 @@
 .l-margin-desktop-rm { @include mq( $from: tablet ) { margin-right: 2em; } }
 .l-margin-desktop-rl { @include mq( $from: tablet ) { margin-right: 4em; } }
 .l-margin-desktop-rx { @include mq( $from: tablet ) { margin-right: 6em; } }
+

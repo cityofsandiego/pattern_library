@@ -103,13 +103,15 @@ html[xmlns] .flexslider .slides {
         text-decoration: none;
         display: inline-block;
         position: absolute;
-        top: 50%; left: 0;
+        top: 39%; left: 0;
+		border: 1px solid white;
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         @include rem( 'font-size', 0px );
 
         &.flex-next {
+
             left: auto;
             right: 0;
 
@@ -424,6 +426,7 @@ html[xmlns] .flexslider .slides {
 .flexslider--mobile {
   .slides {
     height: 100%;
+    width: 100%;
     overflow: hidden;
   }
 

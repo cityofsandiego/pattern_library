@@ -26,6 +26,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
 
     <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
@@ -34,9 +35,60 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
     <!-- Google Maps -->
-     <script type="text/javascript"
+    <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script> 
-
+	<style type="text/css">
+	@media screen and (min-width: 48em) {
+		header.header--fixed+div {
+			margin-top:96px;
+		}
+		.portal .logo:before {
+			height: 105px;
+			box-shadow:0px 1px 7px 1px rgba(0,0,0,0.3);
+		}
+		.portal .logo img {
+			top: 0;
+		}
+		main, [role="main"] {margin-top: -75px;}
+		.portal header, .main__navigation--portal {background-color:#009581;}
+		.main__navigation--portal li:last-child {float: none;}
+		.main__navigation>ul {
+			min-height:0;
+			-webkit-justify-content: flex-start;
+			justify-content: flex-start;
+		}
+		.main__navigation>ul>li {width:auto;}
+		.hero__slides>.row {padding:2em 0 10em;}
+	}
+	@media screen and (max-width: 74.99em) {
+		.main__navigation>ul>li>a {min-height: 0;}
+	}
+	@media screen and (max-width: 59.99em) {
+		.hero__slides--secondary {padding-bottom: 0;}
+		.hero__slides--img li:after {background-color:rgba(0,0,0,0);}
+	}
+	@media screen and (max-width: 47.99em) {
+		[role="main"] {margin-top: 0;}
+		.portal .menu-toggle {top:.5em;}
+		.hero__slides--secondary {padding-bottom:1.5em;}
+		.hero__slides--img li:after {background-color:rgba(0,0,0,0);}
+		.hero__slides>.row {padding:1em 0;}
+		.main__message .main__heading {font-size: 1.5rem;}
+	}
+	.event__date {font-size:1.5em; padding:.5em; line-height:1.2em;}
+	.portal header, .main__navigation {box-shadow:0 4px 3px -3px rgba(0,0,0,0.3);}
+	.navigation__wrap {background:transparent;}
+	.sub-navigation, .sub-navigation li {background:white;}
+	.sub-navigation {border-bottom: 1px solid #37424a;}
+	.sub-navigation a {
+		color:#37424a;
+		text-transform: uppercase;
+	}
+	.sub-navigation a:hover {
+		color:#37424a;
+	}
+	.main__message {padding:2em 0 0 0;}
+	</style>
 </head>
 <body<?php echo $body_class; ?>>
 <script>(function(d, s, id) {
@@ -54,8 +106,8 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hd">
-            <div class="top-nav-strip">
+        <header class="l-padding-mobile-hd header--fixed">
+            <div class="top-nav-strip hidden">
                 <div class="l-constrained">
                     <div class="row">
                         <div class="six columns no-gutters">
@@ -78,7 +130,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
             <div class="l-constrained row l-padding-td l-padding-bd">
                 <div class="three columns no-gutters">
                     <a href="/templates/" class="logo">
-                        <img src="/assets/dist/img/logo-portal.png" alt="The City of San Diego" width="245" height="64">
+                        <img src="/assets/dist/img/cityhub-logo.png" alt="The City of San Diego" width="245" height="64">
                     </a>
                 </div>
 
@@ -87,7 +139,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
-                    <nav id="nav" class="main__navigation--portal nav-primary l-margin-td" role="navigation">
+                    <nav id="nav" class="main__navigation--portal nav-primary l-margin-desktop-td" role="navigation">
                         <ul>
                             <li><a href="">Nav Item 1</a></li>
                             <li><a href="">Nav Item 2</a></li>

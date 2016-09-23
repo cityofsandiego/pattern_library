@@ -63,14 +63,33 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				            </div>
 				        </div>
 			        </div>
+					
+					<div class="row l-margin-vd">
+					
+					
+						<div id="s-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#s-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#s-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#s-tab-item-3">Code</a></li>
+							</ul>
 
-			        <div class="row l-margin-vd">
-			        	<div class="six columns">
-			        		<p>The default usage of the hero slideshow has a full-width background image and half-width, semi-transparent content block. Use <strong>#hero__slides--primary</strong> as the wrap for <strong>.slides</strong>.</p>
-			        	</div>
-			        	<div class="six columns">
-			        		<div class="code__examples">
-                                <form><textarea class="pattern" id="char-code-2" name="code">
+							<div class="tabs-container">
+
+								<div id="s-tab-item-1" class="tabs__bucket">
+									<p>The default usage of the hero slideshow has a full-width background image and half-width, semi-transparent content block. Use <strong>#hero__slides--primary</strong> as the wrap for <strong>.slides</strong>.</p>
+
+								</div>
+
+								<!--<div id="s-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="s-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form>
+											<textarea class="pattern" id="char-code-2" name="code">
 <div class="hero__slides">
     <div class="l-constrained row">
         <div class="six columns hero__content">
@@ -108,9 +127,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </li>
         </ul>
     </div>
-</div> </textarea> </form> </div>
-			        	</div>
-			        </div>
+</div> 
+											</textarea>
+										</form>
+									</div>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+
 			    </div>
 
 			    <!-- Secondary Slideshow -->
@@ -157,12 +185,29 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 			        </div>
 
 			        <div class="row l-margin-vd">
-			        	<div class="six columns">
-			        		<p>The alternative version of the hero slideshow is the same as the default with a couple differences. Add <strong>#hero__slides--secondary</strong> to the wrap. The content is full-width, and instead of direction navigation, it's using a control navgation based on the number of slides.</p>
-			        	</div>
-			        	<div class="six columns">
-			        		<div class="code__examples">
-                                <form><textarea class="pattern" id="char-code-slides-sec" name="code">
+					
+					
+						<div id="ss-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#ss-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#ss-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#ss-tab-item-3">Code</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="ss-tab-item-1" class="tabs__bucket">
+									<p>The alternative version of the hero slideshow is the same as the default with a couple differences. Add <strong>#hero__slides--secondary</strong> to the wrap. The content is full-width, and instead of direction navigation, it's using a control navgation based on the number of slides.</p>
+								</div>
+
+								<!--<div id="ss-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="ss-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form><textarea class="pattern" id="char-code-slides-sec" name="code">
 <div class="hero__slides hero__slides--secondary fine-print">
     <div class="l-constrained--site row">
         <div class="twelve columns hero__content">
@@ -200,9 +245,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </li>
         </ul>
     </div>
-</div></textarea> </form> </div>
-			        	</div>
-			        </div>
+</div>
+										</textarea> </form>
+									</div>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+					
 			    </div>
 
 			    <div id="hero" class="l-container l-margin-vm">
@@ -220,13 +273,29 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 			            </div>
 			        </div>
 
-			        <div class="row l-margin-vm">
-				    	<div class="six columns">
-				    		<p>The default hero area is a full-width background image behind a white block of content. This block should include breadcrumbs, sub-navigation, page title, social sharing, and related content. The background image lines up with the height of the content block.</p>
-				    	</div>
-				    	<div class="six columns">
-				    		<div class="code__examples">
-	                            <form><textarea class="pattern" id="char-code-slides-hero" name="code">
+			        <div class="row l-margin-vd">				
+					
+						<div id="hbi-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#hbi-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#ss-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#hbi-tab-item-3">Code</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="hbi-tab-item-1" class="tabs__bucket">
+									<p>The default hero area is a full-width background image behind a white block of content. This block should include breadcrumbs, sub-navigation, page title, social sharing, and related content. The background image lines up with the height of the content block.</p>
+								</div>
+
+								<!--<div id="hbi-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="hbi-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form><textarea class="pattern" id="char-code-slides-hero" name="code">
 <div class="hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
     <div class="l-constrained">
         <div class="row l-margin-tl l-margin-hd">
@@ -238,9 +307,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </div>
         </div>
     </div>
-</div> </textarea> </form> </div>
-				    	</div>
-				    </div>
+</div>
+										</textarea> </form>
+									</div>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+					
 			    </div>
 
 			    <div class="l-container l-margin-vm">
@@ -285,15 +362,31 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	                    </div>
 			    	</div>
 
-			    	<div class="l-container">
-			    		<div class="row">
-			    			<div class="six columns">
-			    				<p>The alternative to the main hero block contains a <strong>.hero__bg--secondary</strong>, which contains no content. A <strong>.main__message</strong> block is beneath this, containing the page title. Beyond that, a sub-navigation (if necessary), and page content flows down the rest of the page.</p>
-			    				<p>The main difference here is there is no height contrained for the background image. If a darker image is provided, add <strong>.main__message--transparent</strong> for readable title text.</p>
-			    			</div>
-			    			<div class="six columns">
-			    				<div class="code__examples">
-	                            	<form><textarea class="pattern" id="char-code-slides-hero-secondary" name="code">
+			    	<div class="row l-margin-vd">				
+					
+						<div id="hs-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#hs-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#hs-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#hs-tab-item-3">Code</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#hs-tab-item-4">Modifiers</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="hs-tab-item-1" class="tabs__bucket">
+									<p>The alternative to the main hero block contains a <strong>.hero__bg--secondary</strong>, which contains no content. A <strong>.main__message</strong> block is beneath this, containing the page title. Beyond that, a sub-navigation (if necessary), and page content flows down the rest of the page.</p>
+									<p>The main difference here is there is no height contrained for the background image. If a darker image is provided, add <strong>.main__message--transparent</strong> for readable title text.</p>
+								</div>
+
+								<!--<div id="hs-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="hs-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form><textarea class="pattern" id="char-code-slides-hero-secondary" name="code">
 <div class="hero__wrap">
 	<div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/department-hero.jpg');"></div>
 	<div class="l-constrained">
@@ -309,24 +402,26 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	        </div>
 	    </div>
 	</div>
-</div></textarea> </form> </div>
-			    			</div>
-			    		</div>
-			    	</div>
+</div>
+										</textarea></form>
+									</div>
+            					</div>
 
-			    	<div class="l-container">
-			    		<div class="row">
-			    			<div class="twelve columns">
-			    				<p><strong>Additional hero modifiers:</strong></p>
-			    				<ul>
-			    					<li>
-			    						Add <strong>.hero__wrap--empty</strong> to .hero__wrap if no content is provided. This will give the hero area a min-height so the image will display, and main content will push down.
-			    					</li>
-			    					<li>Add <strong>.hero__bg--solid</strong> to .hero__bg if no image is provided. This will give the hero area a solid light blue background color.</li>
-			    				</ul>
-			    			</div>
-			    		</div>
-			    	</div>
+								<div id="hs-tab-item-4" class="tabs__bucket">
+									<ul>
+										<li>
+											Add <strong>.hero__wrap--empty</strong> to .hero__wrap if no content is provided. This will give the hero area a min-height so the image will display, and main content will push down.
+										</li>
+										<li>Add <strong>.hero__bg--solid</strong> to .hero__bg if no image is provided. This will give the hero area a solid light blue background color.</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					
+					</div>
+					
 			    </div>
 
             </div>
@@ -335,3 +430,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+<script type="text/javascript">
+$( document ).ready(function() {
+$(".tabs__bucket").removeClass("is-active");
+$(".tabs-container div:first-child").addClass("is-active");
+});
+</script>

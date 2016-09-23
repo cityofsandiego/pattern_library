@@ -22,27 +22,65 @@ h1, h2, h3, h4,
 
 h1, .h1 {
     @include rem( 'font-size', 36px ); // 2.441em
+	@media print {
+		font-size: 1.5em;
+		margin: 0;
+		font-weight: bold;
+	}
+}
+
+.single-line {
+	@include mq( $from: tablet ) {padding-top: 38px;}
+}
+
+.multi-line {
+	@include mq( $from: tablet ) {padding-top: 10px;}
 }
 
 h2, .h2 {
     @include rem( 'font-size', 27px ); // 1.953em
+	@media print {
+		font-size: 1.25em;
+		margin: 0;
+		font-weight: bold;
+	}
 }
 
 h3, .h3 {
     @include rem( 'font-size', 24px ); // 1.563em
+	@media print {
+		font-size: 1.1em;
+		margin: 0;
+		font-weight: bold;
+	}
 }
 
 h4, .h4 {
     font-weight: 600;
     @include rem( 'font-size', 16px ); // 1.25em
+	@media print {
+		font-size: 1em;
+		margin: 0;
+		font-weight: bold;
+	}
 }
 
 h5, .h5 {
     @include rem( 'font-size', 16px ); // 1.125em
+	@media print {
+		font-size: 1em;
+		margin: 0;
+		font-weight: bold;
+	}
 }
 
 h6, .h6 {
     @include rem( 'font-size', 16px ); // 1em
+	@media print {
+		font-size: 1em;
+		margin: 0;
+		font-weight: bold;
+	}
 }
 
 p {
@@ -149,4 +187,3 @@ dd {
     @include rem( 'font-size', 20px );
     font-family: $font-family-secondary;
 }
-
