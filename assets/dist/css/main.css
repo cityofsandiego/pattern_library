@@ -10149,6 +10149,13 @@ body.role-administrator .field-name-field-reg-http-referer {
     }
 }
 
+.backToTop {
+    position: fixed;
+    z-index: 999;
+    right: 30px;
+    bottom: 30px;
+}
+
 /* Caption
    ========================================================================== */
 .wp-caption {
