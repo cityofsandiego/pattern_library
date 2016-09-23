@@ -32,11 +32,11 @@ iframe,
 object {
     max-width: 100%;
 }
-iframe {
+/*iframe {
     @include mq( $until: tablet ) {
         padding: 0 2em;
     }
-}
+}*/
 img {
     height: auto; /* Make sure images are scaled correctly. */
     max-width: 100%; /* Adhere to container width. */

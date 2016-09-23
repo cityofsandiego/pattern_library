@@ -972,6 +972,11 @@ object {
     max-width: 100%;
 }
 
+/*iframe {
+    @include mq( $until: tablet ) {
+        padding: 0 2em;
+    }
+}*/
 img {
     /* Make sure images are scaled correctly. */
     max-width: 100%;
@@ -4677,13 +4682,6 @@ header.header--app .row {
 
 /* Pattern Library
    ========================================================================== */
-.backToTop {
-    position: fixed;
-    z-index: 999;
-    right: 20px;
-    bottom: 20px;
-}
-
 .patterns aside ul {
     display: block;
     margin: 0;
@@ -4969,6 +4967,10 @@ header.header--app .row {
     margin: 0;
     letter-spacing: .1em;
     text-transform: uppercase;
+}
+
+.node-type-events .content main {
+    position: relative;
 }
 
 .event__wrap .six:first-child {
@@ -5584,7 +5586,6 @@ main > .six {
 
 [role="main"] {
     position: relative;
-    margin-top: -100px;
 }
 
 main[role="main"],
@@ -6307,15 +6308,6 @@ body #colorbox,
     font-weight: bold;
 }
 
-/* Parallax
-   ========================================================================== */
-.parallax-window {
-    z-index: 10;
-    min-height: 300px;
-    background: transparent;
-    background-attachment: fixed;
-}
-
 /* Stellar
    ========================================================================== */
 .stellar-window {
@@ -6832,6 +6824,11 @@ button[type="submit"] {
     -webkit-appearance: none;
 }
 
+input[type="submit"][value="None"],
+button[type="submit"][value="None"] {
+    display: none;
+}
+
 select {
     display: block;
     width: 100%;
@@ -7229,6 +7226,30 @@ header .form--search-wrap {
     font-size: .875rem;
     position: absolute;
     right: 1em;
+}
+
+.field-type-registration .form-item.form-type-textfield label {
+    font-size: inherit;
+}
+
+.field-type-registration .form-item.form-type-textfield label .form-required {
+    position: inherit;
+}
+
+.field-type-registration .form-item.form-item-count input {
+    margin-bottom: 0;
+}
+
+.field-type-registration .form-item .description {
+    margin-bottom: 1em;
+}
+
+.field-name-field-reg-http-referer {
+    display: none;
+}
+
+body.role-administrator .field-name-field-reg-http-referer {
+    display: block;
 }
 
 #views-exposed-form-events-page-1 .views-exposed-form .views-exposed-widgets {
@@ -7769,131 +7790,6 @@ header .form--search-wrap {
 /**
  * More tag => the_content, the_exerpt, <!-- more-->
  */
-.progress {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.progress__item {
-    display: inline-block;
-    min-width: 25%;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.progress__lining {
-    margin: 1.5px 3px 1.5px 0;
-    margin: .09375rem .1875rem .09375rem 0;
-}
-
-.progress__link {
-    font-size: 14px;
-    font-size: .875rem;
-    position: relative;
-    display: block;
-    padding: 12px 8px 12px 48px;
-    padding: .75rem .5rem .75rem 3rem;
-    text-decoration: none;
-    color: #37424a;
-    background-color: #e4e9eb;
-}
-
-.progress__link:hover {
-    color: #37424a;
-}
-
-.progress__link:before,
-.progress__link:after {
-    position: absolute;
-    top: 50%;
-    width: 0;
-    height: 0;
-    margin-top: -21.5px;
-    content: "";
-    border-width: 21.5px 0 21.5px 12px;
-    border-style: solid;
-}
-
-.progress__link:before {
-    left: 0;
-    border-color: transparent transparent transparent white;
-}
-
-.progress__link:after {
-    z-index: 2;
-    right: -12px;
-    border-color: transparent transparent transparent #e4e9eb;
-}
-
-.progress__item:first-child .progress__link {
-    padding-left: 40px;
-    padding-left: 2.5rem;
-}
-
-.progress__item:first-child .progress__link {
-    border-radius: 4px 0 0 4px;
-}
-
-.progress__item:first-child .progress__link:before {
-    content: normal;
-}
-
-.progress__item:last-child .progress__link {
-    border-radius: 0 4px 4px 0;
-}
-
-.progress__item:last-child .progress__link:after {
-    content: normal;
-}
-
-.is-active .progress__link {
-    background-color: #0098db;
-}
-
-.is-active .progress__link:after {
-    border-color: transparent transparent transparent #0098db;
-}
-
-.progress__num {
-    line-height: 24px;
-    position: absolute;
-    top: 50%;
-    left: 16px;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-top: -12px;
-    -webkit-transition: all .15s;
-       -moz-transition: all .15s;
-            transition: all .15s;
-    text-align: center;
-    color: #0098db;
-    border-radius: 500px;
-    background-color: white;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
-}
-
-.progress__link:hover .progress__num {
-    color: white;
-    background-color: #0098db;
-    box-shadow: none;
-}
-
-.is-active .progress__link:hover .progress__num {
-    color: #0098db;
-    background-color: white;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
-}
-
-.progress__item:first-child .progress__num {
-    left: 8px;
-}
-
-.is-active .progress__label {
-    color: white;
-}
-
 .is-actionable {
     cursor: pointer;
 }

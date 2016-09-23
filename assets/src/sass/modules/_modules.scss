@@ -347,6 +347,9 @@ header {
         .hero-image-by {
           @include rem( 'font-size', 10px );
         }
+        @include mq( $from: site ) {
+          padding: .5em 3.5em .5em 1em;
+        }
     }
 
     @include mq( $from: site ) {
@@ -1261,12 +1264,6 @@ header {
 /* Pattern Library
    ========================================================================== */
 
-.backToTop {
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 999;
-}
 .patterns {
     aside {
         ul {
@@ -1311,11 +1308,6 @@ header {
                     display: none;
                 }
             }
-			@include mq( $until: tablet ) {
-				a {
-					color: white;
-				}
-			}
         }
     }
 
@@ -1579,6 +1571,10 @@ header {
         @include rem( 'font-size', 12px );
         font-family: $font-family-secondary;
     }
+}
+
+.node-type-events .content main {
+	position:relative;
 }
 
 .event__wrap {
@@ -2237,7 +2233,7 @@ main {
 
 [role="main"] {
     position: relative;
-	@include mq( $from: tablet ) { margin-top: -100px; }
+	@include mq( $from: site ) { margin-top: -100px; }
 }
 
 main[role="main"],
@@ -3112,20 +3108,6 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
    ========================================================================== */
 .current-gallery-term {
   font-weight: bold;
-}
-
-/* Parallax
-   ========================================================================== */
-.parallax-window {
-	@include mq( $from: tablet ) {
-		min-height: 300px;
-	}
-	@include mq( $until: tablet ) {
-		min-height: 150px;
-	}
-	background-attachment: fixed;
-	background: transparent;
-	z-index: 10;
 }
 
 /* Stellar

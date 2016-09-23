@@ -79,6 +79,9 @@ button[type="submit"] {
     border: none;
     outline: none;
     -webkit-appearance: none;
+    &[value="None"] {
+      display: none;
+    }
 }
 
 select {
@@ -552,6 +555,31 @@ header {
             @include rem( 'font-size', 14px );
         }
     }
+}
+.field-type-registration .form-item {
+  &.form-type-textfield {
+    label {
+      font-size: inherit;
+      .form-required {
+        position: inherit;
+      }
+    }
+  }
+  &.form-item-count input {
+    margin-bottom:0px;
+  }
+  .description {
+    margin-bottom:1em;
+  }
+}
+
+// Field on registration forms that is used internally and should not be displayed
+// to users.
+.field-name-field-reg-http-referer {
+  display: none;
+  body.role-administrator & {
+    display: block;
+  }
 }
 
 #views-exposed-form-events-page-1 {
