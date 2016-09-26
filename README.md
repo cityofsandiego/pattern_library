@@ -6,9 +6,10 @@
 
 * Node.js (https://nodejs.org/)
 * npm (https://www.npmjs.com/)
-* php (https://secure.php.net/)
+* git (https://git-scm.com/downloads)
+* LAMP stack
 
-## Setup
+## Mac Setup
 
 The following steps are required to setup a local development environment::
 
@@ -17,8 +18,17 @@ The following steps are required to setup a local development environment::
     $ npm install
     $ grunt build
 
-## Running locally
-
 Use the following command to run the project locally::
 
     $ php -S localhost:8000
+
+## Windows Setup
+
+	$ npm install npm@latest
+	$ npm install
+	$ npm install -g grunt-cli
+	$ npm install -g bower
+	$ bower update
+	$ npm cache clean
+	$ npm install -g grunt-contrib-imagemin@latest
+	$ grunt build
