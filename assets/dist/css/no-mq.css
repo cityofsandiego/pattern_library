@@ -7968,7 +7968,7 @@ body.role-administrator .field-name-field-reg-http-referer {
 /* Magnific Popup CSS */
 .mfp-bg {
     position: fixed;
-    z-index: 1042;
+    z-index: 90000;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -7982,7 +7982,7 @@ body.role-administrator .field-name-field-reg-http-referer {
 
 .mfp-wrap {
     position: fixed;
-    z-index: 1043;
+    z-index: 90001;
     top: 0;
     left: 0;
     width: 100%;
@@ -8018,7 +8018,7 @@ body.role-administrator .field-name-field-reg-http-referer {
 
 .mfp-content {
     position: relative;
-    z-index: 1045;
+    z-index: 90002;
     display: inline-block;
     margin: 0 auto;
     text-align: left;
