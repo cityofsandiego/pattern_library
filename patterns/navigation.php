@@ -331,7 +331,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="#appheader">Application Header</a></li>
                         <li><a href="#quicknav">Quick Nav</a></li>
                         <li><a href="#quicklinks">Quicklinks</a></li>
-                        <li><a href="#social">Social</a></li>
+                        <li><a href="#social">Social Media Icons</a></li>
                         <li><a href="#tags">Tags</a></li>
                     </ul>
                 </div>
@@ -963,16 +963,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                     <!-- Social Media Icons -->
                     <div id="social" class="l-container l-margin-vm">
-                        <h2>Social Properties</h2>
+                        <h2>Social Media Icons</h2>
                         <div class="l-container l-margin-vm">
                             <div class="row">
                                 <div class="four columns">
                                     <ul class="socials">
-                                        <li><a href=""><i class="icon-googleplus"></i></a></li>
                                         <li><a href=""><i class="icon-facebook"></i></a></li>
-                                        <li><a href=""><i class="icon-youtube"></i></a></li>
                                         <li><a href=""><i class="icon-twitter"></i></a></li>
-                                        <li><a href=""><i class="icon-dribbble"></i></a></li>
+                                        <li><a href=""><i class="icon-youtube"></i></a></li>
+                                        <li><a href=""><i class="icon-googleplus"></i></a></li>
+                                        <li><a href=""><i class="icon-share"></i></a></li>
+                                        <li><a href=""><i class="icon-email"></i></a></li>
                                         <li><a href=""><i class="icon-rss"></i></a></li>
                                     </ul>
                                 </div>
@@ -980,17 +981,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <div class="code__examples">
                                 <form><textarea class="pattern" id="nav-code-socials" name="code">
 <ul class="socials">
-    <li><a href=""><i class="icon-googleplus"></i></a></li>
-    <li><a href=""><i class="icon-facebook"></i></a></li>
-    <li><a href=""><i class="icon-youtube"></i></a></li>
-    <li><a href=""><i class="icon-twitter"></i></a></li>
-    <li><a href=""><i class="icon-dribbble"></i></a></li>
-    <li><a href=""><i class="icon-rss"></i></a></li>
+	<li><a href=""><i class="icon-facebook"></i></a></li>
+	<li><a href=""><i class="icon-twitter"></i></a></li>
+	<li><a href=""><i class="icon-youtube"></i></a></li>
+	<li><a href=""><i class="icon-googleplus"></i></a></li>
+	<li><a href=""><i class="icon-share"></i></a></li>
+	<li><a href=""><i class="icon-email"></i></a></li>
+	<li><a href=""><i class="icon-rss"></i></a></li>
 </ul></textarea> </form> </div>
                                 </div>
 
                                 <div class="twelve columns l-margin-tm">
                                     <p>A list of social icons simply needs to be given the <strong>.socials</strong> class.</p>
+									<p>Refer to the <a href="icons.php#socials">Icon Library</a> for additional social icons.</p>
                                 </div>
                             </div>
                         </div>
