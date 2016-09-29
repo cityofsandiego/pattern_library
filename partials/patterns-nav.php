@@ -22,6 +22,5 @@
         <li><a class="<?php if ($current_page == "charts-graphs.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/charts-graphs.php'; ?>">Charts/Graphs</a></li>
         <li><a class="<?php if ($current_page == "calendar.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/calendar.php'; ?>">Calendar</a></li>
         <li><a class="<?php if ($current_page == "helpers.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/helpers.php'; ?>">Helpers</a></li>
-        <li><a class="<?php if ($current_page == "progress.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/progress.php'; ?>">Progress Bar</a></li>
     </ul>
 </nav>
