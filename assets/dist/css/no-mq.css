@@ -4709,7 +4709,6 @@ header.header--app .row {
     transition: background .15s ease;
     text-decoration: none;
     text-transform: none;
-    color: #333332;
     border-radius: 4px;
     background: transparent;
 }
@@ -4727,6 +4726,10 @@ header.header--app .row {
 .patterns aside ul a:before,
 .patterns aside ul a:after {
     display: none;
+}
+
+.patterns aside ul a {
+    color: #333332;
 }
 
 .patterns .menu-toggle {

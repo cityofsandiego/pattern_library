@@ -6170,7 +6170,6 @@ header.header--app .row {
     transition: background .15s ease;
     text-decoration: none;
     text-transform: none;
-    color: #333332;
     border-radius: 4px;
     background: transparent;
 }
@@ -6188,6 +6187,18 @@ header.header--app .row {
 .patterns aside ul a:before,
 .patterns aside ul a:after {
     display: none;
+}
+
+@media screen and (min-width: 48em) {
+    .patterns aside ul a {
+        color: #333332;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .patterns aside ul a {
+        color: white;
+    }
 }
 
 @media screen and (min-width: 48em) {

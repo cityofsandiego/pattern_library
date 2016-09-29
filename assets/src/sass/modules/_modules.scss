@@ -1282,32 +1282,44 @@ header {
                     display: none;
                 }
             }
+			
+			a {
+				min-height: 0;
+				padding: .75em;
+				display: block;
+				border-radius: 4px;
+				text-transform: none;
+				text-decoration: none;
+				background: transparent;
+				transition: background .15s ease;
+				@include rem( 'font-size', 16px );
 
-            a {
-                min-height: 0;
-                padding: .75em;
-                display: block;
-                color: $charcoal;
-                border-radius: 4px;
-                text-transform: none;
-                text-decoration: none;
-                background: transparent;
-                transition: background .15s ease;
-                @include rem( 'font-size', 16px );
+				&:hover {
+					color: $charcoal;
+					background: lighten( $sunshade, 30% );
+				}
+				&.active {
+					color: white;
+					background: $sunshade;
+				}
+				&:before,
+				&:after {
+					display: none;
+				}
+			}
+			
 
-                &:hover {
-                    color: $charcoal;
-                    background: lighten( $sunshade, 30% );
-                }
-                &.active {
-                    color: white;
-                    background: $sunshade;
-                }
-                &:before,
-                &:after {
-                    display: none;
-                }
-            }
+            @include mq( $from: tablet ) {
+				a {
+					color: $charcoal;
+				}
+			}
+			
+			@include mq( $until: tablet ) {
+				a {
+					color: white;
+				}
+			}
         }
     }
 
