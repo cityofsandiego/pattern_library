@@ -3,10 +3,10 @@ require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__bg" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');">
-            <div class="l-constrained l-padding-mobile-hd">
+            <div class="l-constrained">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Secondary</a>
@@ -39,13 +39,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained">
 
-            <div class="row">
+            <div class="row l-margin-ts background-white">
                 <aside class="">
-                    <div class="three columns">
+                    <div class="three columns l-padding-td">
 
-                        <div class="widget l-padding-hs l-margin-bd">
+                        <div class="widget l-padding-hs l-padding-mobile-hm l-padding-mobile-bm l-margin-bd">
                             <h4>Additional Content</h4>
                             <ul>
                                 <li><a href="">This Awesome Link</a></li>
@@ -60,7 +60,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 </aside>
 
                 <main>
-                    <div class="six columns no-gutters background-off-white">
+                    <div class="six columns no-gutters background-white">
                         <div class="entry__image">
                             <img src="../assets/dist/img/entry-image.jpg" width="882" height="245" alt="">
                         </div>
@@ -139,8 +139,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                 </main>
 
-                <aside class="l-margin-mobile-vd l-margin-bm">
-                    <div class="three columns">
+                <aside class="l-margin-mobile-vd l-margin-bm l-padding-mobile-hm l-padding-mobile-bm">
+                    <div class="three columns l-padding-td">
                         <div class="widget l-padding-hs l-margin-bd">
                             <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                                 <div><div class="l-container">

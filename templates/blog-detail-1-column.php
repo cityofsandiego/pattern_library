@@ -4,10 +4,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__wrap">
             <div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/cysd-hero-bg.jpg');"></div>
-            <div class="l-constrained l-constrained--main l-padding-mobile-hd">
+            <div class="l-constrained l-constrained--main">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Secondary</a>
@@ -17,7 +17,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <span class="breadcrumbs__current">Current Page</span>
                         </div>
 
-                        <div class="row">
+                        <div class="row l-padding-td">
                             <div class="six columns">
                                 <div class="main__message main__message--white">
                                     <h1 class="main__heading">Article Headline</h1>
@@ -39,7 +39,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 </div>
                             </div>
                             <div class="six columns text-center no-gutters">
-                                <div class="main__image l-padding-hd l-padding-desktop-bd">
+                                <div class="main__image l-padding-hd l-padding-bd">
                                     <img src="../assets/dist/img/entry-image-sm.jpg" width="565" height="280" alt="">
                                 </div>
                             </div>
@@ -49,13 +49,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained">
 
             <div class="row">
                 <main>
-                    <div class="twelve columns no-gutters background-off-white">
+                    <div class="twelve columns no-gutters background-white l-margin-ts">
 
-                        <div class="entry__content l-padding-ad l-padding-desktop-hx l-margin-vd">
+                        <div class="entry__content l-padding-mobile-am l-padding-desktop-hx l-margin-vd">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend ac ante a lacinia. Mauris pellentesque lacus vitae felis ultricies, commodo egestas quam cursus. Vivamus faucibus lectus et sapien auctor maximus. Cras eu sem eleifend, pharetra libero vitae, dignissim augue. Ut ante sapien, vestibulum vel odio nec, blandit commodo nisi. Donec tempus efficitur lectus ac congue. Suspendisse sed aliquam.</p>
                             <p>Aenean iaculis eget elit sed mollis. Nam ultricies enim at venenatis pellentesque. Cras dapibus ut est a tincidunt. Nullam sem mauris, scelerisque vitae elementum sit amet, fermentum ut velit. Etiam ac condimentum lectus. Nulla a lorem at tellus pellentesque cursus. Curabitur condimentum ex ac erat lacinia, vitae rutrum purus vestibulum. Nullam sit amet scelerisque dolor.</p>
 

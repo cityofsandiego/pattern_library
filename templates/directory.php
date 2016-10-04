@@ -6,7 +6,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Next Page</a>
@@ -27,11 +27,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained l-padding-mobile-hd l-margin-ts">
 
             <div class="row">
                 <main>
-                    <div class="twelve columns no-gutters background-off-white">
+                    <div class="twelve columns no-gutters background-white">
 
                         <div class="entry__content l-padding-desktop-ad">
                             <div class="row">

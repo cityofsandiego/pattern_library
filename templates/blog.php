@@ -26,11 +26,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained l-padding-mobile-hd">
 
             <div class="row">
                 <main>
-                    <div class="nine columns no-gutters border border--right">
+                    <div class="nine columns no-gutters border border--right l-margin-ts background-white">
                         <article class="row article__teaser">
                             <div class="twelve columns">
                                 <h4>Post Title</h4>
@@ -178,7 +178,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 </main>
 
                 <aside class="l-margin-mobile-vd">
-                <div class="three columns">
+                <div class="three columns l-padding-tm">
                     <div class="widget l-padding-hs l-margin-bd">
                         <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                             <div><div class="l-container">

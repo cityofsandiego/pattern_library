@@ -6,7 +6,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Next Page</a>
@@ -27,13 +27,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained l-padding-mobile-hd">
 
             <div class="row">
                 <main>
                     <div class="twelve columns no-gutters">
 
-                        <div class="entry__content l-padding-ad l-margin-vd background-off-white">
+                        <div class="entry__content l-padding-ad l-padding-bm background-white l-margin-ts">
                             <div class="row">
                                 <div class="eight columns">
                                 <h2>Overview</h2>
@@ -42,7 +42,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <a href="" class="btn btn--secondary">View Image Gallery</a>
                                 </div>
                                 <div class="four columns">
-                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td">
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white">
                                         <div class="row">
                                             <div class="three columns">
                                                 <img src="../assets/dist/img/marker.png" alt="" width="83" height="83">
@@ -69,47 +69,44 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             </div>
                         </div>
 
-                        <div class="entry__content l-padding-ad l-padding-vm background-off-white">
+                        <div class="entry__content l-padding-ad l-padding-vm background-white">
                             <div class="row">
                                 <div class="twelve columns">
                                     <h2>Amenities</h2>
                                     <p>These are the amenities you will find at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Lifeguard</strong></p>
-                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--cerulean"></i> Swimming</strong></p>
+                                    <p><strong><i class="icon-swim l-margin-rs icon--circle background--cerulean"></i> Lifeguard</strong></p>
+                                    <p><strong><i class="icon-swim l-margin-rs icon--circle background--cerulean"></i> Swimming</strong></p>
                                     <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Wheelchair Accessible</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Pier</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Fire Pits</strong></p>
-                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--cerulean"></i> Showers</strong></p>
-                                    <p><strong><i class="icon-bus l-margin-rs icon--circle background--cerulean"></i> Public Transportation</strong></p>
+                                    <p><strong><i class="icon-fire l-margin-rs icon--circle background--cerulean"></i> Fire Pits</strong></p>
+                                    <p><strong><i class="icon-bathtub l-margin-rs icon--circle background--cerulean"></i> Showers</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Surfing</strong></p>
                                     <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Disabled Access</strong></p>
-                                    <p><strong><i class="icon-car l-margin-rs icon--circle background--cerulean"></i> Parking</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Volleyball</strong></p>
-                                    <p><strong><i class="icon-users l-margin-rs icon--circle background--cerulean"></i> Restrooms</strong></p>
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--cerulean"></i> Fishing</strong></p>
+                                    <p><strong><i class="icon-car2 l-margin-rs icon--circle background--cerulean"></i> Parking</strong></p>
+                                    <p><strong><i class="icon-man-woman l-margin-rs icon--circle background--cerulean"></i> Restrooms</strong></p>
+                                    <p><strong><i class="icon-fish l-margin-rs icon--circle background--cerulean"></i> Fishing</strong></p>
+                                    <p><strong><i class="icon-bus2 l-margin-rs icon--circle background--cerulean"></i> Public Transportation</strong></p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="entry__content l-padding-ad l-margin-vd">
+                        <div class="entry__content l-padding-ad background-off-white">
                             <div class="row">
                                 <div class="twelve columns">
                                     <h2>Restrictions</h2>
                                     <p>These items are restricted at this location.</p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--sunshade"></i> Glass Bottles</strong></p>
-                                    <p><strong><i class="icon-drop l-margin-rs icon--circle background--sunshade"></i> Alcohol</strong></p>
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--sunshade"></i> Smoking</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Glass Bottles</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Alcohol</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Smoking</strong></p>
                                 </div>
                                 <div class="six columns">
-                                    <p><strong><i class="icon-pencil l-margin-rs icon--circle background--sunshade"></i> Littering</strong></p>
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--sunshade"></i> Excessive Noise</strong></p>
-                                    <p><strong><i class="icon-car l-margin-rs icon--circle background--sunshade"></i> Camping</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Littering</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Excessive Noise</strong></p>
+                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Camping</strong></p>
                                 </div>
                             </div>
                         </div>

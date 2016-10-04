@@ -6,7 +6,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Secondary</a>
@@ -25,11 +25,11 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd background-white">
+        <div class="l-constrained l-padding-mobile-hd l-margin-ts">
 
             <div class="row">
                 <main>
-                    <div class="nine columns no-gutters background-off-white">
+                    <div class="nine columns no-gutters background-white">
 
                         <div class="l-container l-padding-ad">
                             <h2>Category 1</h2>
@@ -113,7 +113,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                 </main>
 
-                <aside class="l-margin-mobile-vd l-margin-bm">
+                <aside class="l-margin-mobile-vd l-margin-bm l-padding-td">
                     <div class="three columns">
                         <div class="widget l-padding-hs l-margin-bd">
                             <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
