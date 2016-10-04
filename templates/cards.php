@@ -33,14 +33,14 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 <main>
                     <div class="twelve columns no-gutters">
 
-                        <div class="entry__content l-padding-ad l-padding-bd background-white">
+                        <div class="entry__content l-padding-ad l-padding-bn background-white">
                             <div class="row">
                                 <div class="twelve columns">
                                     <h2>Category</h2>
                                 </div>
                             </div>
 
-                            <div class="card__container l-margin-vd">
+                            <div class="card__container l-margin-td">
                                 <div class="card__wrap">
                                     <div class="card background-off-white">
                                         <div class="card__image">
@@ -208,7 +208,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="entry__content l-padding-ad background-white">
                             <div class="item-list">
-                                <ul class="pager">
+                                <ul class="pager l-margin-tn l-margin-bm">
                                     <li class="pager-first first"><a title="Go to first page" href="">« first</a></li>
                                     <li class="pager-previous"><a title="Go to previous page" href="">‹ previous</a></li>
                                     <li class="pager-item"><a title="Go to page 1" href="">1</a></li>
