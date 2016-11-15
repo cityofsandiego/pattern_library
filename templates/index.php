@@ -31,7 +31,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <!--<li><a href="landing.php">Landing</a></li>-->
                         <li><a href="outreach.php">Outreach</a></li>
                         <li><a href="intranet.php">Intranet - Main Home and Bucket</a></li>
-                        <li><a href="intranet-dept.php">Intranet - Department Home and Internal</a></li>
+                        <li><a href="intranet-dept-home.php">Intranet - Department Home Page</a></li>
+                        <li><a href="intranet-dept-int.php">Intranet - Department Internal Page</a></li>
                         <li><a href="web-application.php">Web Application</a></li>
                     </ul>
                 </div>

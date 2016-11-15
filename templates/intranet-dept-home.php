@@ -41,20 +41,20 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 		</ul>
 	</div>
 </div>
-<div>
-	<main role="main">
-		<div class="l-container navigation__wrap">
-			<div class="l-constrained">
+<div class="l-constrained l-constrained--main l-padding-mobile-hd background-white" role="main">
+<div class="row">
+		<div class="twelve columns no-gutters">
+			<div class="l-container navigation__wrap">
 				<!--<div class="menu-btn menu-btn--open">
 					<a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav" style="top: 1em;"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
 				</div>-->
-				<nav id="nav" class="main__navigation main-navigation nav-primary hide-on-mobile">
+				<nav id="nav" class="main__navigation main-navigation nav-primary hide-on-mobile role-main" style="z-index:6">
 					<ul>
 						<li>
-							<a href="/leisure" class="dropdown-parent">Department Home</a>
+							<a href="intranet-dept-home.php" class="dropdown-parent">Department Home</a>
 						</li>
 						<li class="has__dropdown">
-							<a href="" class="dropdown-parent">
+							<a href="intranet-dept-int.php" class="dropdown-parent">
 								<i class="icon-chevron-right hide-on-desktop"></i>Category 1 <i class="icon-chevron-down hide-on-mobile"></i>
 							</a>
 							<div class="dropdown">
@@ -120,7 +120,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 							</div>
 						</li>
 						<li class="has__dropdown">
-							<a href="" class="dropdown-parent">
+							<a href="intranet-dept-int.php" class="dropdown-parent">
 								<i class="icon-chevron-right hide-on-desktop"></i>Category 2 <i class="icon-chevron-down hide-on-mobile"></i>
 							</a>
 							<div class="dropdown">
@@ -190,16 +190,16 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 		
 				<nav class="sub-navigation hide-on-desktop">
 					<ul>
-						<li><a href="">Department Home</a></li>
-						<li><a href="">Category 1</a></li>
-						<li><a href="">Category 2</a></li>
+						<li><a href="intranet-dept-home.php">Department Home</a></li>
+						<li><a href="intranet-dept-int.php">Category 1</a></li>
+						<li><a href="intranet-dept-int.php">Category 2</a></li>
 					</ul>
 				</nav>
 			</div>
 		</div>
-	
-	
-	
+	</div>
+	<main role="main" style="margin-top:0;">
+			
 		<div class="l-constrained l-padding-mobile-hd background-white">
 			<div class="l-container l-padding-ad">
 				<div class="row">
