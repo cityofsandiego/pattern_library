@@ -202,8 +202,8 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 		<main role="main" style="margin-top:0;">
 		
 			<div class="nine columns no-gutters">
-				<div class="l-constrained l-padding-mobile-hd background-white">
-					<div class="l-container l-padding-ad">
+				<div class="l-constrained l-padding-mobile-hs background-white">
+					<div class="l-container l-padding-desktop-ad">
 						<div class="row">
 							<div class="twelve columns">
 								<h2>Section Title</h2>
@@ -214,7 +214,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 						
 					</div>
 
-					<div class="l-container background-white l-padding-hd">
+					<div class="l-container background-white l-padding-desktop-hd">
 						<div class="row">
 							<div class="twelve columns">
 								<h2>Heading</h2>
