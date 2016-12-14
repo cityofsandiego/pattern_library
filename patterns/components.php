@@ -65,14 +65,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="accordions js-toggle-accordion">
                                 <div class="accordion">
                                     <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
-                                    <div class="accordion__drawer" style="display: none;">
+                                    <div class="accordion__drawer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
 
                                 <div class="accordion">
                                     <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
-                                    <div class="accordion__drawer" style="display: none;">
+                                    <div class="accordion__drawer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
@@ -88,14 +88,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="accordions js-toggle-accordion">
     <div class="accordion">
         <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
-        <div class="accordion__drawer" style="display: none;">
+        <div class="accordion__drawer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
 
     <div class="accordion">
         <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
-        <div class="accordion__drawer" style="display: none;">
+        <div class="accordion__drawer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
