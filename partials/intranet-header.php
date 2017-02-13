@@ -40,7 +40,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 	<style type="text/css">
 	@media screen and (min-width: 48em) {
 		header.header--fixed+div {
-			margin-top:96px;
+			margin-top:85px;
 		}
 		.portal .logo:before {
 			height: 105px;
@@ -49,7 +49,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 		.portal .logo img {
 			top: 0;
 		}
-		main, [role="main"] {margin-top: -75px;}
+		main, [role="main"] {margin-top: -50px;}
 		.portal header, .main__navigation--portal {background-color:#009581;}
 		.main__navigation--portal li:last-child {float: none;}
 		.main__navigation>ul {
@@ -58,7 +58,9 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 			justify-content: flex-start;
 		}
 		.main__navigation>ul>li {width:auto;}
-		.hero__slides>.row {padding:2em 0 10em;}
+		.hero__slides>.row {padding:2em 0 8em;}
+		#citynet-title a {color:white;}
+		.card__container .card__wrap {width: 25%;}
 	}
 	@media screen and (max-width: 74.99em) {
 		.main__navigation>ul>li>a {min-height: 0;}
@@ -66,6 +68,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 	@media screen and (max-width: 59.99em) {
 		.hero__slides--secondary {padding-bottom: 0;}
 		.hero__slides--img li:after {background-color:rgba(0,0,0,0);}
+		#citynet-title {font-size:1.7rem; margin-top:1.3rem;}
 	}
 	@media screen and (max-width: 47.99em) {
 		[role="main"] {margin-top: 0;}
@@ -74,7 +77,10 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 		.hero__slides--img li:after {background-color:rgba(0,0,0,0);}
 		.hero__slides>.row {padding:1em 0;}
 		.main__message .main__heading {font-size: 1.5rem;}
+		header .form--search {top:80px;}
+		#citynet-title a {color: #37424a;}
 	}
+	#citynet-title a {font-style:Merriweather; text-decoration: none;}
 	.event__date {font-size:1.5em; padding:.5em; line-height:1.2em;}
 	.portal header, .main__navigation {box-shadow:0 4px 3px -3px rgba(0,0,0,0.3);}
 	.navigation__wrap {background:transparent;}
@@ -107,50 +113,31 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <div id="outer-wrap">
     <div id="inner-wrap">
         <header class="l-padding-mobile-hd header--fixed">
-            <div class="top-nav-strip hidden">
-                <div class="l-constrained">
-                    <div class="row">
-                        <div class="six columns no-gutters">
-                            <p>Visit <a href="">sandiego.gov</a></p>
-                        </div>
-                        <div class="six columns no-gutters hide-on-mobile">
-                            <ul class="socials">
-                                <li><a href=""><i class="icon-googleplus"></i></a></li>
-                                <li><a href=""><i class="icon-facebook"></i></a></li>
-                                <li><a href=""><i class="icon-youtube"></i></a></li>
-                                <li><a href=""><i class="icon-twitter"></i></a></li>
-                                <li><a href=""><i class="icon-dribbble"></i></a></li>
-                                <li><a href=""><i class="icon-rss"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="l-constrained row l-padding-td l-padding-bd">
+            <div class="l-constrained row l-padding-ts l-padding-mobile-bs">
                 <div class="three columns no-gutters">
-                    <a href="/templates/" class="logo">
-                        <img src="/assets/dist/img/cityhub-logo.png" alt="The City of San Diego" width="245" height="64">
-                    </a>
+				<p id="citynet-title" class="h1 l-margin-bn"><a href="/templates"><img class="hide-on-mobile" src="/assets/dist/img/logo--white--lg.png" alt="SD Logo" style="margin-top:-22px;" width="75"><img class="hide-on-desktop" src="/assets/dist/img/logo-mark.png" alt="SD Logo" style="margin-top:-22px;" width="55"> CityNet</a></p>
+				
+				<p class="hidden fine-print l-margin-an l-padding-an l-padding-lx l-margin-ld" style="color:white;"><em>Connecting City Employees</em></p>
                 </div>
 
-                <div class="six columns">
+                <div class="six columns l-margin-ts">
                     <div class="menu-btn menu-btn--open">
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
                     <nav id="nav" class="main__navigation--portal nav-primary l-margin-desktop-td" role="navigation">
                         <ul>
-                            <li><a href="">Nav Item 1</a></li>
-                            <li><a href="">Nav Item 2</a></li>
-                            <li><a href="">Nav Item 3</a></li>
-                            <li><a href="">Nav Item 4</a></li>
-                            <li><a href="">Nav Item 5</a></li>
+                            <li><a href="">Boring (but important)</a></li>
+                            <li><a href="">Internal Services</a></li>
+                            <li><a href="">Connect</a></li>
+                            <li><a href="">Develop</a></li>
+                            <li><a href="">My SD</a></li>
                         </ul>
                     </nav>
                 </div>
 
-                <div class="three columns hide-on-mobile l-margin-td">
+                <!--<div class="three columns hide-on-mobile l-margin-td l-padding-ts">
+					<a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                         <div><div class="l-container">
                             <h2 class="visuallyhidden">Search form</h2>
@@ -165,7 +152,29 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                             <input type="hidden" name="form_id" value="search_block_form">
                         </div></div>
                     </form>
-                </div>
+                </div>-->
+				
+				<div class="three columns no-gutters form--search-wrap l-margin-desktop-td l-padding-desktop-ts l-margin-mobile-rl">
+					<a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
+					<form method="get" action="https://google.sannet.gov/search" target="_self" name="googleSearch" id="search-block-form" class="form--search" accept-charset="UTF-8">
+						<div>
+							<div class="l-container">
+								<h2 class="visuallyhidden">Search form</h2>
+								<div class="form-item form-type-textfield form-item-search-block-form">
+									<label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
+									<input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="q" value="" placeholder="Search CityNet" size="15" maxlength="128" class="form-text">
+								</div>
+								<div class="form-actions form-wrapper" id="edit-actions">
+									<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
+								</div>
+								<input type="hidden" name="site" value="sandiego_gov">
+								<input type="hidden" name="client" value="sandiego_gov">
+								<input type="hidden" name="proxystylesheet" value="sandiego_gov">
+								<input type="hidden" name="output" value="xml_no_dtd">
+							</div>
+						</div>
+					</form>
+				</div>
             </div>
 
             <!-- <div class="l-container navigation__wrap">

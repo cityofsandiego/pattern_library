@@ -2,18 +2,13 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 
-        <div class="hero__slides hero__slides--secondary fine-print">
-            <div class="l-constrained--site row">
+        <div class="hero__slides hero__slides--secondary fine-print l-padding-bx">
+            <div class="l-constrained--site row l-padding-desktop-vx">
                 <div class="twelve columns hero__content hidden">
                     <div id="hero__slides--secondary" class="hero__slides--content">
                         <ul class="slides">
                             <li>
                                 <p class="main__content">Get your event permit today.</p>
-                                <h1 class="main__heading">Nam et nulla in nulla fermentum. </h1>
-                            </li>
-
-                            <li>
-                                <p class="main__content">Lorem ipsum dolor sit amet.</p>
                                 <h1 class="main__heading">Nam et nulla in nulla fermentum. </h1>
                             </li>
                         </ul>
@@ -24,15 +19,16 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
                         <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
                     </div>
                 </div>
-
             </div>
 
             <div class="hero__slides--img">
                 <ul class="slides">
                     <li>
-                        <div class="hero__bg" style="background-image:url('../assets/dist/img/bigstock-Sunset-Cliffs-Panorama-cityhub.jpg');"></div>
-                        <div class="hero--credit hidden">
-                            <p>Image by Cindy Devin</p>
+                        <div class="hero__bg" style="background-image:url('../assets/dist/img/bigstock-Sunset-Cliffs-Panorama-cityhub.jpg');">
+						<p class="hidden h3 l-margin-an text-center text-accent l-padding-tm" style="color: white;text-shadow:0 0 #555, 0 2px 0.3em black, 2px 0 0.3em black, 0 0 black;"><em>Connecting City Employees</em></p>
+						</div>
+                        <div class="hero--credit">
+                            <p>La Jolla Cove</p>
                         </div>
                     </li>
                 </ul>
@@ -43,7 +39,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
             <div class="l-constrained l-padding-mobile-hd background-white">
 			
 			<!-- I Want to... -->
-				<div id="i-want-to" class="l-container l-margin-tm l-padding-hd">
+				<div id="i-want-to" class="l-container l-margin-tm l-padding-hd hidden">
 					<h2 class="l-padding-desktop-ls">Get It Done</h2>
 					<div class="row form__steps l-margin-td">
 						<div class="three columns form__step" id="form__step-1">
@@ -104,12 +100,23 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 			
 			<div class="l-container l-padding-hd l-padding-tm">
                     <div class="row">
-                        <div class="six columns">
-                            <div class="l-container">
+                        <div class="nine columns">
+                            <div class="l-container card__container">
                                 <h2>Announcements</h2>
-                                <div class="mobile-flexslider">
+								<div class="row card l-padding-hs l-padding-vd" style="background-color:#e0e1dd;">
+									<div class="six columns">
+										<a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Image Title" width="400" height="250"></a>
+									</div>
+									<div class="six columns card__content l-padding-as">
+										<p class="card__headline heading--snug"><a href="" style="font-size:1.3rem;">Employee Education Program</a></p>
+										<p class="fine-print"><em>January 24, 2017</em></p>
+                                        <p>Mayor Faulconer has announced that National University is now the City of San Diego's Preferred Employee Education Program Partner.</p>
+                                        <p><a href="#" title="Learn more about Employee Education Program">Learn more</a></p>
+									</div>
+								</div>
+                                <div class="mobile-flexslider l-padding-hs l-margin-td">
                                     <ul class="slides">
-                                        <li>
+                                        <li class="six columns">
                                             <div class="l-padding-vd row">
                                                 <div class="four columns">
                                                     <div class="card card--video">
@@ -118,15 +125,14 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
                                                         </a>
                                                     </div>
                                                 </div>
-                                                <div class="eight columns">
-                                                    <h6 class="l-margin-tn"><strong>Announcement</strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-                                                    <a href="">Learn More</a>
+                                                <div class="eight columns card__content l-padding-vn l-padding-hs">
+                                                    <p class="card__headline heading--snug"><a href="">Life Insurance and Employee Savings Plan Beneficiary Update</a></p>
+										<p class="fine-print"><em>January 23, 2017</em></p>
                                                 </div>
                                             </div>
                                         </li>
 
-                                        <li>
+                                        <li class="six columns">
                                             <div class="l-padding-vd row">
                                                 <div class="four columns">
                                                     <div class="card card--video">
@@ -138,193 +144,156 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
                                                     </div>
                                                 </div>
                                                 <div class="eight columns">
-                                                    <h6 class="l-margin-tn"><strong>Announcement</strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-                                                    <a href="">Watch Video</a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="l-padding-vd row">
-                                                <div class="four columns">
-                                                    <div class="card card--video">
-                                                        <a href="">
-                                                            <img src="../assets/dist/img/card-img-2.jpg" alt="Image Title" width="400" height="250">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="eight columns">
-                                                    <h6 class="l-margin-tn"><strong>Announcement</strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-                                                    <a href="">Learn More</a>
+                                                    <p class="card__headline heading--snug"><a href="">A Message from Scott Chadwick</a></p>
+										<p class="fine-print"><em>January 21, 2017</em></p>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
+									<p class="fine-print twelve columns l-padding-ln"><a href="#">View All Announcements</a></p>
                                 </div>
-
                             </div>
+							
+							
+							
                         </div>
 
-                        <div class="six columns">
-                            <div class="l-container">
-                                <h2>Events</h2>
-                                <div class="mobile-flexslider">
-                                    <ul class="slides">
-                                        <li>
-                                            <div class="l-padding-vd row">
-                                                <div class="event__date">
-<span class="event--month"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">Jul</span></span>
-<span class="event--day"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">19</span></span>
-</div>
-<div class="event__info">
-                                                    <h3 class="l-margin-tn h6"><strong><a href="">Event</a></strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-</div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="l-padding-vd row">
-                                                <div class="event__date">
-<span class="event--month"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">Jul</span></span>
-<span class="event--day"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">19</span></span>
-</div>
-<div class="event__info">
-                                                    <h3 class="l-margin-tn h6"><strong><a href="">Event</a></strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-</div>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="l-padding-vd row">
-                                                <div class="event__date">
-<span class="event--month"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">Jul</span></span>
-<span class="event--day"><span class="date-display-single" property="dc:date" datatype="xsd:dateTime" content="2016-07-19T14:00:00-07:00">19</span></span>
-</div>
-<div class="event__info">
-                                                    <h3 class="l-margin-tn h6"><strong><a href="">Event</a></strong></h6>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-</div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="three columns">
+							<div class="card row background-off-white l-padding-ad l-padding-vs">
+								<h2 class="h3">Quick Links</h2>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-reading icon--sm"></i> OneSD Login</a></p>
+								</div>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-bullhorn icon--sm"></i> City Help Desk</a></p>
+								</div>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-papers icon--sm"></i> Employee Benefits</a></p>
+								</div>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Leave Slip</a></p>
+								</div>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Forms</a></p>
+								</div>
+								<div class="twelve columns l-margin-bn">								
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Inside San Diego</a></p>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>
-				
-                <div class="content">
-<div class="l-container text-center l-padding-vm l-margin-hd background-off-white">
-<div class="row">
-<div class="twelve columns">
-<h2> </h2>
-</div>
-</div>
-<div class="row">
- 
-<div class="field-collection-container clearfix">
-<div class="two columns">
-</div>
-<div class="sm-six two columns">
-<a href="/empopp">
-<img src="//www.sandiego.gov/sites/default/files/icon_employment.png">
-<h6>Icon Button</h6>
-</a>
-</div>
-<div class="sm-six two columns">
-<a href="/economic-development/business/starting">
-<img src="//www.sandiego.gov/sites/default/files/icon_startbusiness.png">
-<h6>Icon Button</h6>
-</a>
-</div>
-<div class="sm-six two columns">
-<a href="/opengov">
-<img src="//www.sandiego.gov/sites/default/files/icon_opengov.png">
-<h6>Icon Button</h6>
-</a>
-</div>
-<div class="sm-six two columns">
-<a href="/investorinformation">
-<img src="//www.sandiego.gov/sites/default/files/icon_investorinfo.png">
-<h6>Icon Button</h6>
-</a>
-</div>
-<div class="two columns">
-</div>
-</div>  
-</div>
-</div> </div>
+			
+<div id="headline-only" class="l-container l-padding-hd l-padding-bs">
+	<div class="row">
+		<div class="twelve columns">
+			<h2 class="l-margin-bn">Show and Tell</h2>
+		</div>
+	</div>
+	<div class="card__container l-margin-td">
+		<div class="card__wrap">
+			<div class="card background-off-white">
+				<div class="card__image">
+					<a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+				</div>
+				<div class="card__content">
+					<p class="card__headline"><a href="">Card</a></p>
+				</div>
+			</div>
+		</div>
 
-<div id="headline-only" class="l-container l-padding-hd l-padding-tm">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <h2 class="l-margin-bn">Services</h2>
-                        </div>
-                    </div>
-                    <div class="card__container l-margin-vd">
-                        <div class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Card</a></p>
-                                </div>
-                            </div>
-                        </div>
+		<div class="card__wrap">
+			<div class="card background-off-white">
+				<div class="card__image">
+					<a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+				</div>
+				<div class="card__content">
+					<p class="card__headline"><a href="">Card</a></p>
+				</div>
+			</div>
+		</div>
 
-                        <div class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Card</a></p>
-                                </div>
-                            </div>
-                        </div>
+		<div class="card__wrap">
+			<div class="card background-off-white">
+				<div class="card__image">
+					<a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+				</div>
+				<div class="card__content">
+					<p class="card__headline"><a href="">Card</a></p>
+				</div>
+			</div>
+		</div>
 
-                        <div class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Card</a></p>
-                                </div>
-                            </div>
+		<div class="card__wrap">
+			<div class="card background-off-white">
+				<div class="card__image">
+					<a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+				</div>
+				<div class="card__content">
+					<p class="card__headline"><a href="">Card</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns">
+			<p class="l-margin-tn l-margin-ls fine-print"><a href="#">View All Highlights</a></p>
+		</div>
+	</div>
+</div>
+<div class="l-container l-padding-hd l-margin-tm l-margin-bm">
+	<div class="row">
+		<div class="nine columns">
+			<div class="card background-off-white">
+				<div class="row l-padding-ts">
+				<h2 class="l-padding-hs">Follow the City</h2>
+				<img src="/assets/dist/img/social-media-section.jpg">
+				</div>
+			</div>
+		</div>
+	<div class="three columns">
+							<div class="card row background-off-white l-padding-hd l-padding-vs l-margin-bd">							
+								<form>
+								<h2>Poll</h2>
+								<p>What is your favorite color?</p>
+								<div class="twelve columns">
+												<div class="field">
+													<div class="checkbox">
+													  <label for="option-1">
+													  <input type="checkbox" id="option-1" tabindex="0" class="">
+													  Blue</label>
+													</div>
+												</div>
+												<div class="field">
+													<div class="checkbox">
+													  <label for="option-2">
+													  <input type="checkbox" id="option-2" tabindex="0" class="">
+													  Red</label>
+													</div>
+												</div>
+												<div class="field">
+													<div class="checkbox">
+													  <label for="option-3">
+													  <input type="checkbox" id="option-3" tabindex="0" class="">
+													  Green</label>
+													</div>
+												</div>
+												<div class="field">
+													<div class="checkbox">
+													  <label for="option-4">
+													  <input type="checkbox" id="option-4" tabindex="0" class="">
+													  Orange</label>
+													</div>
+												</div>
+								</div>
+								<p><a class="fine-print" href="#">See Results</a></p>
+								</form>
+							</div>
                         </div>
-                    </div>
-                </div>
-<div class="entry__content l-padding-ad background-off-white">
-<div class="row">
-<div class="twelve columns">
-<h2>Resources</h2>
+	</div>
 </div>
-</div>
-<div class="row l-margin-bm">
-<div class="field-collection-container clearfix">
-<div class="four columns">
-<a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd" href="/airports/index">
-Button <i class="icon-chevron-right"></i></a>
-</div>
-<div class="four columns">
-<a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd ext extlink" href="http://www.sdmts.com/" target="_blank">
-Button <i class="icon-chevron-right"></i></a>
-</div>
-<div class="four columns">
-<a class="btn btn--wide btn--secondary btn--icon l-margin-mobile-vd ext extlink" href="http://www.sandiego.org/" target="_blank">
-Button <i class="icon-chevron-right"></i></a>
-</div>
-</div> </div>
-</div>
-
         </main>
 		</div>
 
 <?php
-require_once( ABSPATH . PARTIALS . '/template-footer.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/intranet-footer.php' ); ?>
