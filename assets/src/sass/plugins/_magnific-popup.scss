@@ -397,6 +397,29 @@ img.mfp-img {
   }
 }
 
+.video-popup {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  max-width: 853px;
+  height: auto;
+  margin: 20px auto;
+  &.slide-pop {
+    max-width: 85%;
+    @include mq( $from: site ) {
+      max-width: 920px;
+    }
+  }
+  .mfp-close {
+	color: #fff;
+	top: -40px;
+	right: -6px;
+	text-align: right;
+	padding-right: 6px;
+	width: 853px;
+  }
+}
+
 /**
  * Simple fade transition,
  */
