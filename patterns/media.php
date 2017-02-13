@@ -211,7 +211,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<div class="tabs-container">
 
 								<div id="pev-tab-item-1" class="tabs__bucket">
-									<p>Videos can utilize Magnific Popup to play the video in a modal box. To do this, add the class of <em>popup-modal</em> to the &lt;a&gt; tag. The href value is the ID of the popup &lt;div&gt;. Paste the YouTube embed code in the popup &lt;div&gt;.</p>
+									<p>Videos can utilize Magnific Popup to play the video in a modal box. To do this, add the class of <em>popup-modal</em> to the &lt;a&gt; tag. The href value is the ID of the popup &lt;div&gt;. Paste the YouTube embed code (see Notes for additional info) in the popup &lt;div&gt;.</p>
 
 								</div>
 
@@ -269,7 +269,7 @@ $( document ).ready(function() {
             					</div>
 
 								<div id="pev-tab-item-4" class="tabs__bucket">
-									<p>When creating the embed code from YouTube, select video size 853 x 480 and uncheck "Show suggested videos when the video finishes".</p>
+									<p>When generating the embed code from YouTube, select video size 853 x 480 and uncheck "Show suggested videos when the video finishes". The src URL must end with <em>?rel=0&amp;autoplay=0</em>.</p>
 
 								</div>
 
