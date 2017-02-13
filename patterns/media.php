@@ -36,10 +36,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container l-margin-bm">
                         <div class="flexslider flexslider--default">
                             <ul class="slides">
-                                <li><img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li><img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
                             </ul>
                         </div>
                     </div>
@@ -55,10 +55,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container l-margin-bm">
     <div class="flexslider flexslider--default">
         <ul class="slides">
-            <li><img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="/assets/dist/img/balboaparkgolf.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
         </ul>
     </div>
 </div></textarea> </form> </div>
@@ -70,35 +70,27 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container l-margin-bm">
                         <div class="flexslider flexslider--thumbnails">
                             <ul class="slides">
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                    <li>
-                                    <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                                <li>
-                                    <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
                             </ul>
                         </div>
 
                         <div class="flexslider flexslider--thumbnails-nav">
                             <ul class="slides">
-                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/city/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/food/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nightlife/" alt=""></li>
-                                <li><img src="http://lorempixel.com/640/480/nature/" alt=""></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -114,35 +106,27 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container l-margin-bm">
     <div class="flexslider flexslider--thumbnails">
         <ul class="slides">
-            <li>
-                <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-                <li>
-                <img src="http://lorempixel.com/640/480/city/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/food/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/nightlife/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li>
-                <img src="http://lorempixel.com/640/480/nature/" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
         </ul>
     </div>
 
     <div class="flexslider flexslider--thumbnails-nav">
         <ul class="slides">
-            <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/city/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/food/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/nightlife/" alt=""></li>
-            <li><img src="http://lorempixel.com/150/110/nature/" alt=""></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""></li>
         </ul>
     </div>
 </div> </textarea> </form> </div>
@@ -158,10 +142,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container">
                         <div class="flexslider flexslider--mobile">
                             <ul class="slides">
-                                <li><img src="http://lorempixel.com/350/200/city/" alt=""  class="l-margin-vd"></li>
-                                <li><img src="http://lorempixel.com/350/200/food/" alt=""  class="l-margin-vd"></li>
-                                <li><img src="http://lorempixel.com/350/200/nightlife/" alt=""  class="l-margin-vd"></li>
-                                <li><img src="http://lorempixel.com/350/200/nature/" alt=""  class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboapark1.jpg" alt=""  class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboapark2.jpg" alt=""  class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""  class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""  class="l-margin-vd"></li>
                             </ul>
                         </div>
                     </div>
@@ -178,10 +162,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container">
     <div class="flexslider flexslider--mobile">
         <ul class="slides">
-            <li><img src="http://lorempixel.com/350/200/city/" alt=""  class="l-margin-vd"></li>
-            <li><img src="http://lorempixel.com/350/200/food/" alt=""  class="l-margin-vd"></li>
-            <li><img src="http://lorempixel.com/350/200/nightlife/" alt=""  class="l-margin-vd"></li>
-            <li><img src="http://lorempixel.com/350/200/nature/" alt=""  class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""  class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""  class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""  class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""  class="l-margin-vd"></li>
         </ul>
     </div>
 </div></textarea> </form> </div>
@@ -192,11 +176,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <!-- Video -->
                 <div id="video" class="l-container l-margin-vm">
                     <h2>Video Player</h2>
-					<h3>Popup Video</h3>
+					<h3>Popup Embedded Video</h3>
                     <div class="row l-margin-bm">
                         <div class="four columns no-gutters">
                             <div class="card card--video">
-                                <a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
+                                <a href="#sd-popup-video" class="popup-modal"><!-- href value targets the modal ID; class initiates the popup instance -->
                                     <i class="icon-play"></i>
                                     <div class="overlay"></div>
                                     <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
@@ -209,28 +193,95 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <a href="">Watch Video</a>
                         </div>
                     </div>
+					
+					<div id="sd-popup-video" class="video-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
+						<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+					</div>
 
                     <div class="row">
-                        <div class="six columns">
-                            <div class="code__examples">
-                                <form><textarea class="pattern" id="comp-code-1" name="code">
-<a href="https://www.youtube.com/watch?v=SWBHUyrg6R4" class="js-modal-video">
-    <i class="icon-play"></i>
-    <div class="overlay"></div> <!-- Dark opacity -->
-    <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250"> <!-- Video screenshot -->
-</a>
-</textarea> </form> </div>
-                        </div>
-                        <div class="six columns">
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
-                            <p>Videos can utilize <a href="http://dimsemenov.com/plugins/magnific-popup/" target="_blank">Magnific Popup</a> to play the video in a modal box. To do this, add the class of <strong>.js-modal-video </strong>to the &lt;a&gt; tag. The href value should be the URL of the video page.</p>
-                        </div>
+                        <div id="pev-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#pev-tab-item-1">Description</a></li>
+								<!--<li class="tabs-list__item"><a class="tabs-list__link" href="#s-tab-item-2">Guidelines</a></li>-->
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#pev-tab-item-3">Code</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#pev-tab-item-4">Notes</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="pev-tab-item-1" class="tabs__bucket">
+									<p>Videos can utilize Magnific Popup to play the video in a modal box. To do this, add the class of <em>popup-modal</em> to the &lt;a&gt; tag. The href value is the ID of the popup &lt;div&gt;. Paste the YouTube embed code in the popup &lt;div&gt;.</p>
+
+								</div>
+
+								<!--<div id="s-tab-item-2" class="tabs__bucket">
+									<p>Coming soon.</p>
+								</div>-->
+
+								<div id="pev-tab-item-3" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form>
+											<textarea class="pattern" id="pev-code" name="code">
+<div class="row l-margin-bm">
+	<div class="four columns no-gutters">
+		<div class="card card--video">
+			<a href="#sd-popup-video" class="popup-modal"><!-- href value targets the modal ID; class initiates the popup instance -->
+				<i class="icon-play"></i>
+				<div class="overlay"></div>
+				<img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
+			</a>
+		</div>
+	</div>
+	<div class="eight columns">
+		<h6 class="l-margin-tn"><strong>Name of this Video</strong></h6>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
+		<a href="">Watch Video</a>
+	</div>
+</div>
+
+<div id="sd-popup-video" class="video-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+</div>		
+
+<!-- required javascript -->
+<script type="text/javascript">
+$( document ).ready(function() {
+
+	$(".popup-modal").click(function() {
+		var href = $(this).attr('href');
+		$(href+" iframe").attr("src", $(href+" iframe").attr("src").replace("autoplay=0", "autoplay=1")); //make the video autoplay after popup
+	});
+	
+	$.magnificPopup.instance.close = function () {
+	  $(".video-popup iframe").attr("src", $(".video-popup iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
+       // "proto" variable holds MagnificPopup class prototype
+       // The above change that we did to instance is not applied to the prototype, 
+       // which allows us to call parent method:
+       $.magnificPopup.proto.close.call(this);
+	};	
+});
+</script>
+					
+											</textarea>
+										</form>
+									</div>
+            					</div>
+
+								<div id="pev-tab-item-4" class="tabs__bucket">
+									<p>When creating the embed code from YouTube, select video size 853 x 480 and uncheck "Show suggested videos when the video finishes".</p>
+
+								</div>
+
+							</div>
+
+						</div>
                     </div>
 					<h3>Embedded Video</h3>
 					<div class="row">
 						<div class="twelve columns">
 		<div class="video-wrapper">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
 		</div>
 						</div>
 					</div>
@@ -251,9 +302,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<div id="vid-emb-tab-item-1" class="tabs__bucket is-active">
 									<div class="code__examples">
 										<form>
-											<textarea class="pattern" id="char-code-2" name="code">
+											<textarea class="pattern" id="vid-emb-code" name="code">
 <div class="video-wrapper">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
 </div>
 											</textarea>
 										</form>
@@ -264,9 +315,13 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<p>Coming soon.</p>
 								</div>-->
 
-								<div id="vid-emb-tab-item-3" class="tabs__bucket">
+								<div id="vid-emb-tab-item-3" class="tabs__bucket is-active">
 									<p>The video-wrapper class maintains a responsive 16:9 aspect ratio.</p>
-									<p>With YouTube videos, add ?wmode=transparent to the embed code to allow z-indexed elements to appear above the video.</p>
+									<p>With YouTube videos, add <em>?rel=0&amp;wmode=transparent</em> after the video ID.</p>
+									<ul>
+										<li><em>rel=0</em> prevents Suggested Videos from appearing after the video is over</li>
+										<li><em>wmode=transparent</em> allows z-indexed elements to appear above the video</li>
+									</ul>
 
 								</div>
 
@@ -284,3 +339,22 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+<script type="text/javascript">
+$( document ).ready(function() {
+	$(".tabs__bucket").removeClass("is-active");
+	$(".tabs-container div:first-child").addClass("is-active");
+
+	$(".popup-modal").click(function() {
+		var href = $(this).attr('href');
+		$(href+" iframe").attr("src", $(href+" iframe").attr("src").replace("autoplay=0", "autoplay=1")); //make the video autoplay after popup
+	});
+	
+	$.magnificPopup.instance.close = function () {
+	  $(".video-popup iframe").attr("src", $(".video-popup iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
+       // "proto" variable holds MagnificPopup class prototype
+       // The above change that we did to instance is not applied to the prototype, 
+       // which allows us to call parent method:
+       $.magnificPopup.proto.close.call(this);
+	};	
+});
+</script>
