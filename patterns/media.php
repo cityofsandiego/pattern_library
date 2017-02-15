@@ -254,7 +254,7 @@ $( document ).ready(function() {
 	});
 	
 	$.magnificPopup.instance.close = function () {
-	  $(".video-popup iframe").attr("src", $(".video-popup iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
+	  $(".mfp-container iframe").attr("src", $(".mfp-container iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
        // "proto" variable holds MagnificPopup class prototype
        // The above change that we did to instance is not applied to the prototype, 
        // which allows us to call parent method:
@@ -350,7 +350,7 @@ $( document ).ready(function() {
 	});
 	
 	$.magnificPopup.instance.close = function () {
-	  $(".video-popup iframe").attr("src", $(".video-popup iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
+	  $(".mfp-container iframe").attr("src", $(".mfp-container iframe").attr("src").replace("autoplay=1", "autoplay=0")); //remove autoplay when popup is closed
        // "proto" variable holds MagnificPopup class prototype
        // The above change that we did to instance is not applied to the prototype, 
        // which allows us to call parent method:
