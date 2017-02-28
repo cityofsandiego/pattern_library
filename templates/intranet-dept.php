@@ -51,10 +51,10 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 				<nav id="nav" class="main__navigation main-navigation nav-primary hide-on-mobile role-main" style="z-index:6">
 					<ul>
 						<li>
-							<a href="intranet-dept-home.php" class="dropdown-parent">Department Home</a>
+							<a href="intranet-dept.php" class="dropdown-parent">Department Home</a>
 						</li>
 						<li class="has__dropdown">
-							<a href="intranet-dept-int.php" class="dropdown-parent">
+							<a href="intranet-dept.php" class="dropdown-parent">
 								<i class="icon-chevron-right hide-on-desktop"></i>Category 1 <i class="icon-chevron-down hide-on-mobile"></i>
 							</a>
 							<div class="dropdown">
@@ -120,7 +120,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 							</div>
 						</li>
 						<li class="has__dropdown">
-							<a href="intranet-dept-int.php" class="dropdown-parent">
+							<a href="intranet-dept.php" class="dropdown-parent">
 								<i class="icon-chevron-right hide-on-desktop"></i>Category 2 <i class="icon-chevron-down hide-on-mobile"></i>
 							</a>
 							<div class="dropdown">
@@ -190,9 +190,9 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 		
 				<nav class="sub-navigation hide-on-desktop">
 					<ul>
-						<li><a href="intranet-dept-home.php">Department Home</a></li>
-						<li><a href="intranet-dept-int.php">Category 1</a></li>
-						<li><a href="intranet-dept-int.php">Category 2</a></li>
+						<li><a href="intranet-dept.php">Department Home</a></li>
+						<li><a href="intranet-dept.php">Category 1</a></li>
+						<li><a href="intranet-dept.php">Category 2</a></li>
 					</ul>
 				</nav>
 			</div>
