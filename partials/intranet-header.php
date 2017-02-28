@@ -120,18 +120,18 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 				<p class="hidden fine-print l-margin-an l-padding-an l-padding-lx l-margin-ld" style="color:white;"><em>Connecting City Employees</em></p>
                 </div>
 
-                <div class="six columns l-margin-ts">
+                <div class="six columns no-gutters l-margin-ts">
                     <div class="menu-btn menu-btn--open">
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
                     <nav id="nav" class="main__navigation--portal nav-primary l-margin-desktop-td" role="navigation">
                         <ul>
-                            <li><a href="">Boring (but important)</a></li>
-                            <li><a href="">Internal Services</a></li>
-                            <li><a href="">Connect</a></li>
-                            <li><a href="">Develop</a></li>
-                            <li><a href="">My SD</a></li>
+                            <li><a href="intranet-bucket.php">Boring (but important)</a></li>
+                            <li><a href="intranet-bucket.php">Internal Services</a></li>
+                            <li><a href="intranet-bucket.php">Connect</a></li>
+                            <li><a href="intranet-bucket.php">Develop</a></li>
+                            <li><a href="intranet-bucket.php">My SD</a></li>
                         </ul>
                     </nav>
                 </div>
