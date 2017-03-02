@@ -94,6 +94,11 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 		color:#37424a;
 	}
 	.main__message {padding:2em 0 0 0;}
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { /* IE10+ only */
+		.card__container .slides {
+			display: block;			
+		}
+	 }
 	</style>
 </head>
 <body<?php echo $body_class; ?>>
