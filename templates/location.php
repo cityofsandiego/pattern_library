@@ -3,7 +3,7 @@ require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__bg" style="background-image:url('../assets/dist/img/location-bg.jpg');">
-            <div class="l-constrained l-padding-mobile-hd">
+            <div class="l-constrained">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
                         <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
@@ -27,7 +27,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             </div>
         </div>
 
-        <div class="l-constrained l-padding-mobile-hd">
+        <div class="l-constrained">
 
             <div class="row">
                 <main>
@@ -35,81 +35,301 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
                         <div class="entry__content l-padding-ad l-padding-bm background-white l-margin-ts">
                             <div class="row">
-                                <div class="eight columns">
-                                <h2>Overview</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus. In eu laoreet quam. Nam et nulla in nulla fermentum euismod vel quis orci. Suspendisse ut lectus aliquam, ultricies nulla eu, facilisis quam. Vestibulum justo leo, posuere at lacinia vestibulum, pellentesque eget tortor.</p>
-                                <p>Phasellus ligula ipsum, blandit et mi eu, pretium aliquet urna. Maecenas ultricies erat eu justo vehicula placerat. Maecenas placerat ex lorem, sed auctor dui pretium sed. Nunc justo orci, gravida in justo id, convallis vestibulum ligula. Cras aliquam sodales sem, vitae elementum arcu tincidunt convallis. Praesent commodo leo turpis, non viverra dui ultricies sit amet.</p>
-                                <a href="" class="btn btn--secondary">View Image Gallery</a>
-                                </div>
-                                <div class="four columns">
+								<!-- mobile view only -->
+								<div class="four columns hide-on-desktop">
                                     <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white">
+										<h2 class="h3 heading--snug">Contact Info</h2>
                                         <div class="row">
-                                            <div class="three columns">
-                                                <img src="../assets/dist/img/marker.png" alt="" width="83" height="83">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-map-marker icon--md icon--circle background--cerulean"></i>
                                             </div>
                                             <div class="nine columns">
                                                 <address>
-                                                    <p class="l-margin-bn l-margin-desktop-td"><strong>123 Main Street <br>
+                                                    <p><strong>123 Main Street <br>
+                                                    San Diego, CA 92121</strong></p>
+                                                </address>
+												
+												<p><a href="" class="btn btn--secondary">Get Directions</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="row l-margin-td">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-telephone icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                <address>
+                                                    <p class="l-padding-desktop-ts"><strong><span itemprop="telephone">(619) 123-4567</span></strong></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="row l-margin-td">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-at-sign icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                    <p class="l-padding-desktop-ts"><strong>email@sandiego.gov</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="row l-margin-td">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-user icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                    <p class="l-padding-desktop-ts"><strong>Jane Doe</strong><br><em>Manager</em></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white l-margin-td" style="float: left;">
+										<h2 class="h3 heading--snug">Hours</h2>
+										<div class="field-item even"><div class="oh-current-open"><p>Currently <strong style="color:#006600">open</strong></p></div><span class="oh-wrapper"><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Sunday: </span><span class="oh-display-times oh-display-closed">closed<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Monday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Tuesday: </span><span class="oh-display-times oh-display-hours">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Wednesday: </span><span class="oh-display-times oh-display-hours oh-display-current">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Thursday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Friday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Saturday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span></span></div>
+                                    </div>
+                                </div>
+								<!-- end mobile view only -->
+                                <div class="eight columns">
+									<h2>Overview</h2>
+									<p><img class="alignright" src="/assets/dist/img/card-img-1.jpg"></p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus. In eu laoreet quam. Nam et nulla in nulla fermentum euismod vel quis orci. Suspendisse ut lectus aliquam, ultricies nulla eu, facilisis quam. Vestibulum justo leo, posuere at lacinia vestibulum, pellentesque eget tortor.</p>
+									<p>Phasellus ligula ipsum, blandit et mi eu, pretium aliquet urna. Maecenas ultricies erat eu justo vehicula placerat. Maecenas placerat ex lorem, sed auctor dui pretium sed. Nunc justo orci, gravida in justo id, convallis vestibulum ligula. Cras aliquam sodales sem, vitae elementum arcu tincidunt convallis. Praesent commodo leo turpis, non viverra dui ultricies sit amet.</p>
+									<p><a href="#test-modal" class="popup-modal btn btn--secondary hide-on-mobile">View Image Gallery</a></p>
+									<div id="test-modal" class="video-popup" style="max-width:650px;"> <!-- unique ID is necessary; class sets default magnific styling -->
+				
+										<div class="flex-container">
+											<div class="flexslider">
+												<ul class="slides">
+													<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+													<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+													<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+													<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+												</ul>
+											</div>
+										</div> 
+									</div>
+									
+									
+									<div class="flex-container hide-on-desktop">
+										<div class="flexslider">
+											<ul class="slides">
+												<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+												<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+												<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+												<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+											</ul>
+										</div>
+									</div> 
+									
+<script type="text/javascript">
+$(document).ready(function() {
+	$('.flexslider').flexslider({
+        animation: "slide",
+		slideshow:!1,
+		start: function(slider){
+			$('#test-modal').addClass('mfp-hide');
+            $('.total-slides').text(slider.count);
+		},
+		after: function(slider) {
+			$('.current-slide').text(slider.currentSlide+1);
+		}
+	});
+
+});
+</script>								
+									
+									<div class="accordions js-toggle-accordion">
+										<div class="accordion">
+											<p class="accordion__heading"><a class="accordion__link" href="#">Amenities <span class="toggle-icon"></span></a></p>
+											<div class="accordion__drawer">
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-swim icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Lifeguard</strong> - Nunc justo orci, gravida in justo id, convallis vestibulum ligula.</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-swim icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Swimming</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-wheelchair icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Wheelchair Accessible</strong> - Phasellus ligula ipsum, blandit et mi eu, pretium aliquet urna. Maecenas ultricies erat eu justo vehicula placerat.</p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-fire icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Fire Pits</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-bathtub icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Showers</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-wheelchair icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Disabled Access</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-car2 icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Parking</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-man-woman icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Restrooms</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-fish icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Fishing</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-bus2 icon--circle icon--sm background--cerulean"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Public Transportation</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="accordion">
+											<p class="accordion__heading"><a class="accordion__link" href="#">Restrictions <span class="toggle-icon"></span></a></p>
+											<div class="accordion__drawer">											
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Glass Bottles</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Alcohol</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Smoking</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Littering</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Excessive Noise</strong></p>
+													</div>
+												</div>
+												<div class="row">
+													<div class="sm-two one columns text-center">
+														<p><i class="icon-prohibited icon--circle icon--sm background--sunshade"></i></p>
+													</div>
+													<div class="sm-ten eleven columns l-padding-ts">
+														<p><strong>Camping</strong></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>		
+                                </div>
+								<!-- desktop view only -->
+								<div class="four columns hide-on-mobile">
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white">
+										<h2 class="h3 heading--snug">Contact Info</h2>
+                                        <div class="row">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-map-marker icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                <address>
+                                                    <p><strong>123 Main Street <br>
                                                     San Diego, CA 92121</strong></p>
                                                 </address>
                                             </div>
                                         </div>
-
-                                        <div class="text-center l-margin-td">
-                                            <a href="" class="btn btn--secondary">Get Directions</a>
+                                        <div class="row">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-telephone icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                <address>
+                                                    <p class="l-padding-desktop-ts"><strong><span itemprop="telephone">(619) 123-4567</span></strong></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="row l-margin-td">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-at-sign icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                    <p class="l-padding-desktop-ts"><strong>email@sandiego.gov</strong></p>
+                                            </div>
+                                        </div>
+                                        <div class="row l-margin-td">
+                                            <div class="three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-user icon--md icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="nine columns">
+                                                    <p><strong>Jane Doe</strong><br><em>Manager</em></p>
+                                            </div>
                                         </div>
                                     </div>
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white l-margin-td" style="float: left;">
+										<h2 class="h3 heading--snug">Hours</h2>
+										<div class="field-item even"><div class="oh-current-open"><p>Currently <strong style="color:#006600">open</strong></p></div><span class="oh-wrapper"><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Sunday: </span><span class="oh-display-times oh-display-closed">closed<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Monday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Tuesday: </span><span class="oh-display-times oh-display-hours">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Wednesday: </span><span class="oh-display-times oh-display-hours oh-display-current">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Thursday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Friday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Saturday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span></span></div>
+                                    </div>
+									
+									<div id="multi-map" class="l-margin-td" style="width:100%; height: 360px; float: left;"></div>
                                 </div>
+								<!-- end desktop view only -->
                             </div>
                         </div>
 
-                        <div class="row">
-                            <div class="twelve columns no-gutters">
-                                <div id="multi-map" style="width:100%; height: 360px;"></div>
-                            </div>
-                        </div>
-
-                        <div class="entry__content l-padding-ad l-padding-vm background-white">
-                            <div class="row">
-                                <div class="twelve columns">
-                                    <h2>Amenities</h2>
-                                    <p>These are the amenities you will find at this location.</p>
-                                </div>
-                                <div class="six columns">
-                                    <p><strong><i class="icon-swim l-margin-rs icon--circle background--cerulean"></i> Lifeguard</strong></p>
-                                    <p><strong><i class="icon-swim l-margin-rs icon--circle background--cerulean"></i> Swimming</strong></p>
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Wheelchair Accessible</strong></p>
-                                    <p><strong><i class="icon-fire l-margin-rs icon--circle background--cerulean"></i> Fire Pits</strong></p>
-                                    <p><strong><i class="icon-bathtub l-margin-rs icon--circle background--cerulean"></i> Showers</strong></p>
-                                </div>
-                                <div class="six columns">
-                                    <p><strong><i class="icon-wheelchair l-margin-rs icon--circle background--cerulean"></i> Disabled Access</strong></p>
-                                    <p><strong><i class="icon-car2 l-margin-rs icon--circle background--cerulean"></i> Parking</strong></p>
-                                    <p><strong><i class="icon-man-woman l-margin-rs icon--circle background--cerulean"></i> Restrooms</strong></p>
-                                    <p><strong><i class="icon-fish l-margin-rs icon--circle background--cerulean"></i> Fishing</strong></p>
-                                    <p><strong><i class="icon-bus2 l-margin-rs icon--circle background--cerulean"></i> Public Transportation</strong></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="entry__content l-padding-ad background-off-white">
-                            <div class="row">
-                                <div class="twelve columns">
-                                    <h2>Restrictions</h2>
-                                    <p>These items are restricted at this location.</p>
-                                </div>
-                                <div class="six columns">
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Glass Bottles</strong></p>
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Alcohol</strong></p>
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Smoking</strong></p>
-                                </div>
-                                <div class="six columns">
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Littering</strong></p>
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Excessive Noise</strong></p>
-                                    <p><strong><i class="icon-prohibited l-margin-rs icon--circle background--sunshade"></i> Camping</strong></p>
-                                </div>
-                            </div>
-                        </div>
+                        
 
                     </div> <!-- Twelve columns -->
 

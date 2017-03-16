@@ -28,8 +28,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
-	<script src="/assets/dist/js/plugins/parallax.min.js"></script>
-	<script src="/assets/dist/js/plugins/jquery.stellar.min.js"></script>
+	<script src="/assets/dist/js/plugins/stellar.min.js"></script>
 
     <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
     <script type="text/javascript">var switchTo5x=true;</script>
@@ -39,6 +38,10 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <!-- Google Maps -->
      <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
+	  
+	  <style type="text/css">
+		.oh-display span.oh-display-label{display:inline;float:left;clear:both}.oh-display span.oh-display-times{display:inline;float:right}	  
+	  </style>
 
 </head>
 <body<?php echo $body_class; ?>>
