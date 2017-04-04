@@ -274,6 +274,7 @@ html[xmlns] .flexslider .slides {
   color: $shuttle;
   font-style: italic;
   background-color: $mercury;
+  display: block;
 
   @include mq( $from: mobile-landscape ) {
     padding-right: .5em;

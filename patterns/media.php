@@ -36,10 +36,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container l-margin-bm">
                         <div class="flexslider flexslider--default">
                             <ul class="slides">
-								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
                             </ul>
                         </div>
                     </div>
@@ -55,10 +55,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container l-margin-bm">
     <div class="flexslider flexslider--default">
         <ul class="slides">
-            <li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="/assets/dist/img/balboaparkgolf.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-            <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+            <li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+            <li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+            <li><img src="/assets/dist/img/balboaparkgolf.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+            <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
         </ul>
     </div>
 </div></textarea> </form> </div>
@@ -70,14 +70,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container l-margin-bm">
                         <div class="flexslider flexslider--thumbnails">
                             <ul class="slides">
-								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+								<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
                             </ul>
                         </div>
 
@@ -106,14 +106,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container l-margin-bm">
     <div class="flexslider flexslider--thumbnails">
         <ul class="slides">
-			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
-			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><p class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""><span class="flex-caption">Lorem ipsum dolor sit amet, consectetur adipiscing semper.</span></li>
         </ul>
     </div>
 
@@ -142,10 +142,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="flex-container">
                         <div class="flexslider flexslider--mobile">
                             <ul class="slides">
-                                <li><img src="/assets/dist/img/balboapark1.jpg" alt=""  class="l-margin-vd"></li>
-                                <li><img src="/assets/dist/img/balboapark2.jpg" alt=""  class="l-margin-vd"></li>
-                                <li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""  class="l-margin-vd"></li>
-                                <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""  class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboapark1.jpg" alt="" class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboapark2.jpg" alt="" class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt="" class="l-margin-vd"></li>
+                                <li><img src="/assets/dist/img/sandiegoskyline.jpg" alt="" class="l-margin-vd"></li>
                             </ul>
                         </div>
                     </div>
@@ -162,10 +162,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flex-container">
     <div class="flexslider flexslider--mobile">
         <ul class="slides">
-			<li><img src="/assets/dist/img/balboapark1.jpg" alt=""  class="l-margin-vd"></li>
-			<li><img src="/assets/dist/img/balboapark2.jpg" alt=""  class="l-margin-vd"></li>
-			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt=""  class="l-margin-vd"></li>
-			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt=""  class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboapark1.jpg" alt="" class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboapark2.jpg" alt="" class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/balboaparkgolfcourse.jpg" alt="" class="l-margin-vd"></li>
+			<li><img src="/assets/dist/img/sandiegoskyline.jpg" alt="" class="l-margin-vd"></li>
         </ul>
     </div>
 </div></textarea> </form> </div>

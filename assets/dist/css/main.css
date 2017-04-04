@@ -11805,6 +11805,7 @@ html[xmlns] .flexslider .slides {
 
 .flex-caption {
     font-style: italic;
+    display: block;
     margin: 0;
     padding: .5em;
     padding-right: 2em;
