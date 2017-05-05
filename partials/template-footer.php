@@ -72,7 +72,6 @@
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>-->
         <script src="/assets/dist/js/plugins.min.js"></script>
-        <script src="/assets/dist/js/main.min.js"></script>
 
         <script>
             window.twttr = (function(d, s, id) {
@@ -122,6 +121,32 @@
             //     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             //     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+		<script data-main="/assets/dist/js/main-built.js" src="/assets/dist/js/lib/require.js"></script>
+		<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+
+			if(jQuery('.search-icon').is(':visible')) {
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+				}
+			} else {
+				function googleTranslateElementInit() {
+				  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+				  changeLanguageText();
+				}
+			}
+			function changeLanguageText() {
+			  var el = jQuery('.goog-te-menu-value span:first-child');
+			  if (el.text() == 'Select Language') {
+				jQuery(el).html('English');
+				jQuery('#google_translate_element').fadeIn('slow');
+			  } else {
+				setTimeout(changeLanguageText, 10);
+			  }
+			}
+		//--><!]]>
+		</script>
+		<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     </body>
 </html>

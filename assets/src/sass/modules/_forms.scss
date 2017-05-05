@@ -3,6 +3,16 @@
 // Forms
 // ==========================================================================
 
+
+/* Webforms
+   ========================================================================== */
+
+// Hide the file Upload button on all webforms.
+.webform-component-file .form-managed-file input[value="Upload"] {
+      display: none;
+}
+
+
 /* General
    ========================================================================== */
 
@@ -351,6 +361,10 @@ header {
                 border-top-color: white;
                 border-left-color: white;
             }
+            &.apachesolr-autocomplete {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
         }
         input[type="submit"] {
             border-left: none;
@@ -465,13 +479,13 @@ header {
 
 header {
     .search-icon {
-        color: white;
+        color: $cerulean;
         border-radius: 4px;
         text-decoration: none;
-        background: $cerulean;
+        //background: $cerulean;
         display: inline-block;
 
-        i {
+        i.bold {
             font-weight: 600;
         }
 
@@ -494,7 +508,7 @@ header {
         }
 
         .search-icon {
-            padding: 0;
+            padding: 5px 0 0 0;
             width: 64px;
             height: 64px;
             line-height: 64px;
@@ -502,7 +516,7 @@ header {
             @include rem( 'font-size', 28px );
 
             &.search-open {
-                background: darken( $cerulean, 5% );
+                //background: darken( $cerulean, 5% );
             }
         }
 
@@ -514,7 +528,8 @@ header {
             width: 100%;
             border-radius: 0;
             padding: .5em 3em;
-            background-color: rgba(255, 255, 255, 0.9);
+            //background-color: rgba(255, 255, 255, 0.9);
+			background-color: $off-white;
 
             input.search-type,
             input[type="search"] {

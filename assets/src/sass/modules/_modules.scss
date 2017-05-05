@@ -93,7 +93,7 @@ header {
     @include mq( $until: site ) {
 
         .quicklinks {
-            text-align: right;
+			float: left;
         }
 
         .card--weather {
@@ -156,7 +156,7 @@ header {
         -moz-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
 
-        @include mq( $from: tablet ) {
+        @include mq( $from: tablet-landscape ) {
             width: 100%;
             position: fixed;
             top: 0;
@@ -172,16 +172,19 @@ header {
             // offset header height of sibling container
             + div {
                 margin-top: 227px;
+                .theme-citynet & {
+                    margin-top: 93px;
+                }
             }
         }
 
-        @include mq( $from: site ) {
+        @include mq( $from: tablet-landscape ) {
             // offset header height of sibling container
             + div {
-                margin-top: 169px;
-				.node-type-application & {
-					margin-top: 0px;
-				}
+                margin-top: 165px;
+                .node-type-application & {
+                    margin-top: 0px;
+                }
             }
         }
     }
@@ -263,7 +266,9 @@ header {
     width: 100%;
     height: 100%;
     position: relative;
-
+    .theme-citynet & {
+        height: 198px;
+    }
     @include mq( $from: site ) {
         > .row {
             padding: 5em 0 12em;
@@ -405,6 +410,9 @@ header {
         margin: 0;
         padding: 2.75em 3.5em;
         background: rgba(0, 0, 0, 0.35);
+        &.no-sides {
+          background: transparent;
+        }
     }
 
     @include mq( $until: site ) {
@@ -911,6 +919,9 @@ header {
             float: left;
             margin: 0 .4em;
             max-width: 20%;
+            .theme-citynet & {
+              max-width: none; 
+            }
 
             &:first-child {
                 margin-left: 0;
@@ -935,7 +946,7 @@ header {
 }
 
 // Microsite/Portal nav
-.portal {
+.portal, .theme-citynet {
     header {
         @include mq( $from: tablet ) {
             background: $cerulean;
@@ -984,7 +995,6 @@ header {
                 top: .5em;
             }
         }
-
     }
 
     .menu-toggle {
@@ -1038,7 +1048,7 @@ header {
 // Top Navigation Strip (On portal pages)
 .top-nav-strip {
     color: white;
-    padding:.5em;
+    padding: .5em 1em;
     background: $science;
 
     p {
@@ -1069,7 +1079,26 @@ header {
         }
     }
 
+	@include mq( $until: tablet ) {
+		.search-icon {
+			color: white;
+			text-decoration: none;
+			display: inline-block;
+			background-color: transparent;
+			width: auto;
+			height: auto;
+			line-height: normal;
+		}
 
+        .sm-six:last-child {
+            text-align: right;
+        }
+		
+		& .quicklinks {
+			top: 138px;
+		}
+	}
+	
     @include mq( $from: tablet ) {
         padding: 1em;
         @include rem( 'font-size', 13px );
@@ -1095,6 +1124,8 @@ header {
 }
 
 .quicklinks {
+	text-align: right;
+	
     ul {
         padding: .25em 0 0;
         list-style: none;
@@ -1133,10 +1164,26 @@ header {
         font-weight: 600;
         text-decoration: none;
     }
+	
+	@include mq( $until: tablet ) {
+		display: none;
+		z-index: 110;
+		position: absolute;
+		left: 0; top: 96px;
+		width: 100%;
+		border-radius: 0;
+		padding: .5em 3em;
+		//background-color: rgba(255, 255, 255, 0.9);
+			background-color: $off-white;
+		text-align: center;
+		box-shadow: 0 3px 0px -1px rgba(0,0,0,0.15);
+	}
+	
+	
     // google translate
     .google-translate {
-        display:none;
-
+        display:block;
+		
         @include mq( $from: tablet ) {
             display: inline-block;
             position: relative;
@@ -1163,6 +1210,10 @@ header {
                         background-color:$cerulean;
                     }
                 }
+				
+				& > span:first-child {
+					display: none;
+				}
             }
 
             .goog-logo-link {
@@ -1171,7 +1222,8 @@ header {
         }
 
         .goog-te-gadget-simple {
-            background-color:$cerulean;
+            //background-color:$cerulean;
+            background-color:transparent;
             // line-height:47px;
             border:none;
 
@@ -1186,6 +1238,15 @@ header {
                 margin: 0;
                 font-family: $font-family;
                 font-size:rem(12);
+				
+				@include mq( $until: tablet ) {
+					color:$cerulean;
+					font-size: 1rem;
+				}
+				
+				& > span:first-child {
+					margin-right: 0.5em;
+				}
 
                 & > span + img + span {
                     border:none!important;
@@ -1194,20 +1255,24 @@ header {
                 & > span + img + span + img + span { //dropdown arrow
                     height:0;
                     width:0;
-                    right:8px;
                     margin-left:0;
-                    margin-top:0;
+                    margin-top:3px;
                     background: none !important;
                     border-bottom: 2px solid $off-white!important;
                     border-right: 2px solid $off-white!important;
                     height: 10px;
-                    height: 0.625rem;
+                    height: 0.5rem;
                     transform: rotate(45deg);
                     width: 10px;
-                    width: 0.625rem;
+                    width: 0.5rem;
                     position: absolute;
-                    top: 9px;
                     color:transparent!important;
+				
+					@include mq( $until: tablet ) {
+						border-bottom: 2px solid $cerulean!important;
+						border-right: 2px solid $cerulean!important;
+						margin-top: 5px;
+					}
                 }
             }
         }
@@ -1282,44 +1347,45 @@ header {
                     display: none;
                 }
             }
-			
-			a {
-				min-height: 0;
-				padding: .75em;
-				display: block;
-				border-radius: 4px;
-				text-transform: none;
-				text-decoration: none;
-				background: transparent;
-				transition: background .15s ease;
-				@include rem( 'font-size', 16px );
 
-				&:hover {
-					color: $charcoal;
-					background: lighten( $sunshade, 30% );
-				}
-				&.active {
-					color: white;
-					background: $sunshade;
-				}
-				&:before,
-				&:after {
-					display: none;
-				}
-			}
-			
+            a {
+                min-height: 0;
+                padding: .75em;
+                display: block;
+                color: $charcoal;
+                border-radius: 4px;
+                text-transform: none;
+                text-decoration: none;
+                background: transparent;
+                transition: background .15s ease;
+                @include rem( 'font-size', 16px );
+
+                &:hover {
+                    color: $charcoal;
+                    background: lighten( $sunshade, 30% );
+                }
+                &.active {
+                    color: white;
+                    background: $sunshade;
+                }
+                &:before,
+                &:after {
+                    display: none;
+                }
+            }
+
 
             @include mq( $from: tablet ) {
-				a {
-					color: $charcoal;
-				}
-			}
-			
-			@include mq( $until: tablet ) {
-				a {
-					color: white;
-				}
-			}
+                a {
+                    color: $charcoal;
+                }
+            }
+
+            @include mq( $until: tablet ) {
+                a {
+                    color: white;
+                }
+            }
         }
     }
 
@@ -1455,6 +1521,30 @@ header {
         }
 
     }
+    .card__wrap_s, .card--wrap-s {
+        height: auto;
+        margin: 0 .5em;
+		width: 100%;
+
+        @include mq( $from: mobile-landscape ) {
+            margin: 0;
+            padding: .75em;
+            display: -webkit-flex; /* Safari */
+            display: flex;
+
+            .card {
+                flex: 0 1 auto;
+            }
+        }
+
+        @include mq( mobile-landscape, tablet ) {
+            @include span( 4 );
+        }
+        @include mq( $from: tablet ) {
+            @include span( 3 );
+        }
+
+    }
     .card__content {
         padding: 1.5em;
 
@@ -1466,6 +1556,7 @@ header {
             @include rem( 'font-size', 16px );
         }
     }
+    .card__headline.title,
     .card__headline a {
         color: $spruce;
         text-decoration: none;
@@ -2245,7 +2336,7 @@ main {
 
 [role="main"] {
     position: relative;
-	@include mq( $from: site ) { margin-top: -100px; }
+	@include mq( $from: tablet-landscape ) { margin-top: -100px; }
 }
 
 main[role="main"],
@@ -2643,6 +2734,13 @@ figure {
     }
 }
 
+.widget-scene {
+	margin-top: 0 !important; // GMap-specific
+}
+
+.gm-iv-address {
+	height: auto !important; // GMap-specific
+}
 
 .calendar {
 
@@ -3121,6 +3219,23 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 .current-gallery-term {
   font-weight: bold;
 }
+.widget .gallery-menu ul.events {
+  padding-left: 2em;
+  list-style-type: circle;
+  display: none;
+  &.open {
+      display: block;
+  }
+}
+
+.gallery-menu li i {
+   //@extend .text-off-white-like-background;
+   color: #eaeeef;
+   &.toggle {
+     @extend .text-gray;
+     cursor: pointer;
+  }
+}
 
 /* Stellar
    ========================================================================== */
@@ -3145,3 +3260,21 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 .stellar-window p.noshadow {
 	text-shadow: none;
 }
+
+/* Office Hours
+   ========================================================================== */
+.oh-display span.oh-display-label {
+  display: inline;
+  float: left;
+  clear: both;
+}
+
+.oh-display span.oh-display-times {
+  display: inline;
+  float: right;
+}
+
+.menu-node-unpublished {
+  color: red;
+}
+

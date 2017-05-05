@@ -48,7 +48,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="row">
                             <div class="twelve columns">
                                 <p class="l-margin-bn"><strong>Notes</strong></p>
-                                <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>. For default usage, wrap a <strong>ul.slides</strong> within a containing <strong>.flexslider</strong>. Each &lt;li&gt; contains a single slide. Add a &lt;p&gt; with <strong>.flex-caption</strong> for descriptions. Additional configuration can be found through Flexslider documentation.</p>
+                                <p>Image galleries utilize <a href="http://www.woothemes.com/flexslider/" target="_blank">Flexslider</a>. For default usage, wrap a <strong>ul.slides</strong> within a containing <strong>.flexslider</strong>. Each &lt;li&gt; contains a single slide. Add a &lt;span&gt; with <strong>.flex-caption</strong> for descriptions. Additional configuration can be found through Flexslider documentation.</p>
 
                                 <div class="code__examples">
                                     <form><textarea class="pattern" id="img-code-1" name="code">

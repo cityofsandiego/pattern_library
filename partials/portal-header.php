@@ -23,6 +23,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
@@ -54,15 +55,15 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hd">
+        <header>
             <div class="top-nav-strip">
                 <div class="l-constrained">
                     <div class="row">
-                        <div class="six columns no-gutters">
+                        <div class="sm-six six columns no-gutters">
                             <p>Visit <a href="">sandiego.gov</a></p>
                         </div>
-                        <div class="six columns no-gutters hide-on-mobile">
-                            <ul class="socials">
+                        <div class="sm-six six columns no-gutters">
+                            <ul class="socials hidden">
                                 <li><a href=""><i class="icon-googleplus"></i></a></li>
                                 <li><a href=""><i class="icon-facebook"></i></a></li>
                                 <li><a href=""><i class="icon-youtube"></i></a></li>
@@ -70,6 +71,12 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                 <li><a href=""><i class="icon-dribbble"></i></a></li>
                                 <li><a href=""><i class="icon-rss"></i></a></li>
                             </ul>
+							<a href="" class="search-icon translate-icon--open l-margin-rs"><i class="icon-translate"></i> </a>
+							<div class="quicklinks l-padding-desktop-bs text-right l-margin-mobile-rm l-padding-mobile-ts">
+								<div class="google-translate">
+									<div id="google_translate_element"></div>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>

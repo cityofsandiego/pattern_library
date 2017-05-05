@@ -63,7 +63,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <div id="inner-wrap">
         <header class="l-padding-mobile-hs header--fixed">
             <div class="l-constrained row l-padding-td l-padding-desktop-tn">
-                <div class="twelve columns hide-on-mobile text-right">
+                <div class="hidden twelve columns hide-on-mobile text-right">
                     <div class="quicklinks background--cerulean">
                         <ul class="l-margin-bs l-margin-tn">
                             <li><a href="">Login</a></li>
@@ -73,21 +73,27 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                         </ul>
                     </div>
                 </div>
-                <div class="three columns no-gutters logo--wrap">
+                <div class="three columns no-gutters logo--wrap l-padding-desktop-tm">
                     <a href="/templates/" class="logo">
                         <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
                         <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
                     </a>
                 </div>
-                <div class="six columns text-center hide-on-mobile">
+                <div class="six columns text-center hide-on-mobile l-padding-desktop-tm l-margin-desktop-ts">
                     <div class="card--weather">
                         <i class="icon-sun"></i>
                         <p class="temperature"><span class="degrees">73</span>&deg;</p>
                         <p><strong>San Diego <br> Weather</strong></p>
                     </div>
                 </div>
-                <div class="three columns no-gutters form--search-wrap">
-                    <a href="" class="search-icon search-icon--open"><i class="icon-magnifier"></i> </a>
+                <div class="three columns no-gutters form--search-wrap l-padding-desktop-ts">
+                    <a href="" class="search-icon search-icon--open l-margin-mobile-rs"><i class="icon-magnifier bold"></i> </a>
+                    <a href="" class="search-icon translate-icon--open"><i class="icon-translate"></i> </a>
+					<div class="quicklinks l-padding-desktop-bs text-right l-margin-mobile-rm l-padding-mobile-ts">
+						<div class="google-translate">
+							<div id="google_translate_element"></div>
+						</div>
+					</div>
                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                         <div><div class="l-container">
                             <h2 class="visuallyhidden">Search form</h2>

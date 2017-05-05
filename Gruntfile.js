@@ -16,7 +16,7 @@ module.exports = function ( grunt ) {
         config: {
             src: 'assets/src',
             dist: 'assets/dist',
-            devUrl: 'cysd10213.dev'
+            devUrl: 'sandiego.ifdev'
         },
 
         // Libsass
@@ -28,7 +28,9 @@ module.exports = function ( grunt ) {
                 },
                 files: {
                     '<%= config.dist %>/css/main.min.css': '<%= config.src %>/sass/main.scss',
-                    '<%= config.dist %>/css/no-mq.min.css': '<%= config.src %>/sass/no-mq.scss'
+                    '<%= config.dist %>/css/no-mq.min.css': '<%= config.src %>/sass/no-mq.scss',
+                    '<%= config.dist %>/css/main-admin.min.css': '<%= config.src %>/sass/main-admin.scss',
+                    '<%= config.dist %>/css/no-mq-admin.min.css': '<%= config.src %>/sass/no-mq-admin.scss'
                 }
             },
             expanded: {
@@ -37,7 +39,9 @@ module.exports = function ( grunt ) {
                 },
                 files: {
                     '<%= config.dist %>/css/main.css': '<%= config.src %>/sass/main.scss',
-                    '<%= config.dist %>/css/no-mq.css': '<%= config.src %>/sass/no-mq.scss'
+                    '<%= config.dist %>/css/no-mq.css': '<%= config.src %>/sass/no-mq.scss',
+                    '<%= config.dist %>/css/main-admin.css': '<%= config.src %>/sass/main-admin.scss',
+                    '<%= config.dist %>/css/no-mq-admin.css': '<%= config.src %>/sass/no-mq-admin.scss'
                 }
             }
         },
@@ -50,39 +54,34 @@ module.exports = function ( grunt ) {
                 },
                 files: {
                     '<%= config.dist %>/css/main.css': ['<%= config.dist %>/css/main.css'],
-                    '<%= config.dist %>/css/no-mq.css': ['<%= config.dist %>/css/no-mq.css']
+                    '<%= config.dist %>/css/no-mq.css': ['<%= config.dist %>/css/no-mq.css'],
+                    '<%= config.dist %>/css/main-admin.css': ['<%= config.dist %>/css/main-admin.css'],
+                    '<%= config.dist %>/css/no-mq-admin.css': ['<%= config.dist %>/css/no-mq-admin.css']
                 }
             }
         },
 
         // Concatenate JS Files
         concat: {
-            main: {
-                files: {
-                    '<%= config.dist %>/js/main.js': '<%= config.src %>/js/main.js'
-                }
-            },
             plugins: {
                 files: {
                     '<%= config.dist %>/js/plugins.js': [
-                        '<%= config.src %>/js/plugins/boilerplate.js',
-                        '<%= config.src %>/js/plugins/jquery.magnific-popup.js',
-                        '<%= config.src %>/js/plugins/jquery.cycle2.js',
-                        '<%= config.src %>/js/plugins/jquery.flexslider.js',
-                        '<%= config.src %>/js/plugins/jquery.cycle2.swipe.js',
-                        '<%= config.src %>/js/plugins/jquery.hoverIntent.js',
-                        '<%= config.src %>/js/plugins/offcanvas.js',
-                        '<%= config.src %>/js/plugins/codemirror.js',
-                        '<%= config.src %>/js/plugins/javascript.js',
-                        '<%= config.src %>/js/plugins/htmlembedded.js',
-                        '<%= config.src %>/js/plugins/css.js',
-                        '<%= config.src %>/js/plugins/htmlmixed.js',
-                        '<%= config.src %>/js/plugins/multiplex.js',
-                        '<%= config.src %>/js/plugins/xml.js',
-                        '<%= config.src %>/js/plugins/Chart.js'
+                        '<%= config.src %>/js/plugins/*.js'
                     ]
                 }
             }
+        },
+
+        // Compile RequireJS Optimize
+        requirejs: {
+          compile: {
+            options: {
+              baseUrl: "<%= config.src %>/js/",
+              mainConfigFile: "<%= config.src %>/js/build.js",
+              name: "main",
+              out: "<%= config.src %>/js/main-built.js"
+            }
+          }
         },
 
         // Minify JS
@@ -90,11 +89,6 @@ module.exports = function ( grunt ) {
             options: {
                 sourceMap: true,
                 preserveComments: 'some'
-            },
-            main: {
-                files: {
-                    '<%= config.dist %>/js/main.min.js': [ '<%= config.src %>/js/main.js' ]
-                }
             },
             plugins: {
                 files: {
@@ -123,10 +117,22 @@ module.exports = function ( grunt ) {
         copy: {
             js: {
                 expand: true,
-                cwd: '<%= config.src %>/js/plugins/',
-                src: 'modernizr-2.8.3.min.js',
-                dest: '<%= config.dist %>/js/plugins/',
-            }
+                cwd: '<%= config.src %>/js/helpers/',
+                src: '*.js',
+                dest: '<%= config.dist %>/js/helpers/',
+            },
+            mainBuilt: {
+                expand: true,
+                cwd: '<%= config.src %>/js/',
+                src: 'main-built.js',
+                dest: '<%= config.dist %>/js/',
+            },
+            require: {
+                expand: true,
+                cwd: '<%= config.src %>/js/lib/',
+                src: 'require.js',
+                dest: '<%= config.dist %>/js/lib/',
+            },
         },
 
         // Growl Notifications
@@ -149,7 +155,7 @@ module.exports = function ( grunt ) {
                 ],
             },
             options: {
-                // notify: false,
+                notify: true,
                 // open: false,
                 watchTask: true,
                 proxy: '<%= config.devUrl %>'
@@ -160,21 +166,14 @@ module.exports = function ( grunt ) {
         watch: {
             css: {
                 files: '<%= config.src %>/sass/**/*.{scss,sass}',
-                tasks: [ 'sass:minified' ],
-                // tasks: [ 'sass', 'csscomb' ] // slower, but will process all CSS files
+                tasks: [ 'sass:minified', 'sass', 'csscomb' ]
             },
             jsMain: {
                 files: [
-                    '<%= config.src %>/js/main.js'
+                    '<%= config.src %>/js/**/*.js',
+                    // '<%= config.src %>/js/main-built.js'
                 ],
-                tasks: [ 'uglify:main' ]
-            },
-            jsPlugins: {
-                files: [
-                    '<%= config.src %>/js/plugins.js',
-                    '<%= config.src %>/js/plugins/**/*.js'
-                ],
-                tasks: [ 'concat', 'uglify:plugins', 'newer:copy:js' ]
+                tasks: [ 'requirejs' , 'concat', 'uglify:plugins', 'newer:copy:js', 'newer:copy:require','newer:copy:mainBuilt' ]
             },
             images: {
                 files: [
@@ -204,12 +203,14 @@ module.exports = function ( grunt ) {
     grunt.registerTask( 'default', [
         'sass',
         'csscomb',
+		'requirejs',
         'concat',
         'uglify',
         'newer:copy:js',
+        'newer:copy:mainBuilt',
+        'newer:copy:require',
         'newer:imagemin',
-        'browserSync',
-        'watch', // add after 'browserSync'. Not needed for Livereload
+        'watch', // add after 'browserSync'. Not needed for Livereload - previous line 'browserSync',
     ]);
 
     // Build
@@ -217,9 +218,12 @@ module.exports = function ( grunt ) {
     grunt.registerTask( 'build', [
         'sass',
         'csscomb',
+		'requirejs',
         'concat',
         'uglify',
         'newer:copy:js',
+        'newer:copy:mainBuilt',
+        'newer:copy:require',
         'newer:imagemin',
     ]);
 
