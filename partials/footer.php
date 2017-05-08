@@ -3,6 +3,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
         <script src="/assets/dist/js/plugins.min.js"></script>
         <script src="/assets/dist/js/main.min.js"></script>
+		<script data-main="/assets/dist/js/main-built.js" src="/assets/dist/js/lib/require.js"></script>
 
 
         <?php if ($current_page == "charts-graphs.php"){ ?>
