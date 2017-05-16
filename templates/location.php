@@ -37,51 +37,58 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                             <div class="row">
 								<!-- mobile view only -->
 								<div class="four columns hide-on-desktop">
-                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white">
-										<h2 class="h3 heading--snug">Contact Info</h2>
+									<!-- Location -->
+                                    <div class="card l-padding-ad text-center--mobile background-off-white">
+										<h2 class="h3 heading--snug">Location</h2>
                                         <div class="row">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-map-marker icon--md icon--circle background--cerulean"></i>
+                                            <div class="sm-three columns text-center l-padding-mobile-ts">
+                                                <i class="icon-map-marker icon--sm icon--circle background--cerulean"></i>
                                             </div>
-                                            <div class="nine columns">
+                                            <div class="sm-nine columns text-left">
                                                 <address>
                                                     <p><strong>123 Main Street <br>
                                                     San Diego, CA 92121</strong></p>
-                                                </address>
-												
+                                                </address>												
+                                            </div>
+                                        </div>
 												<p><a href="" class="btn btn--secondary">Get Directions</a></p>
-                                            </div>
-                                        </div>
-                                        <div class="row l-margin-td">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-telephone icon--md icon--circle background--cerulean"></i>
-                                            </div>
-                                            <div class="nine columns">
-                                                <address>
-                                                    <p class="l-padding-desktop-ts"><strong><span itemprop="telephone">(619) 123-4567</span></strong></p>
-                                                </address>
-                                            </div>
-                                        </div>
-                                        <div class="row l-margin-td">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-at-sign icon--md icon--circle background--cerulean"></i>
-                                            </div>
-                                            <div class="nine columns">
-                                                    <p class="l-padding-desktop-ts"><strong>email@sandiego.gov</strong></p>
-                                            </div>
-                                        </div>
-                                        <div class="row l-margin-td">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-user icon--md icon--circle background--cerulean"></i>
-                                            </div>
-                                            <div class="nine columns">
-                                                    <p class="l-padding-desktop-ts"><strong>Jane Doe</strong><br><em>Manager</em></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white l-margin-td" style="float: left;">
+									</div>
+									<!-- // End Location -->
+				
+									<!-- Hours -->
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-ts background-off-white" style="float: left;">
 										<h2 class="h3 heading--snug">Hours</h2>
 										<div class="field-item even"><div class="oh-current-open"><p>Currently <strong style="color:#006600">open</strong></p></div><span class="oh-wrapper"><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Sunday: </span><span class="oh-display-times oh-display-closed">closed<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Monday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Tuesday: </span><span class="oh-display-times oh-display-hours">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Wednesday: </span><span class="oh-display-times oh-display-hours oh-display-current">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Thursday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Friday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Saturday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span></span></div>
+                                    </div>
+									<!-- // End Hours -->
+                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-ts background-off-white" style="float: left;">
+										<h2 class="h3 heading--snug">Contact Info</h2>
+                                        <div class="row">
+                                            <div class="sm-three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-user icon--sm icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="sm-nine columns text-left">
+                                                    <p><strong>Jane Doe</strong><br><em>Manager</em></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="sm-three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-telephone icon--sm icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="sm-nine columns text-left">
+                                                <address>
+                                                    <p class="l-padding-mobile-ts"><strong><span itemprop="telephone">(619) 123-4567</span></strong></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="sm-three columns text-center l-padding-mobile-bs">
+                                                <i class="icon-at-sign icon--sm icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="sm-nine columns text-left">
+                                                    <p class="l-padding-mobile-ts"><strong><a href="">Send an Email</a></strong></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 								<!-- end mobile view only -->
@@ -279,51 +286,55 @@ $(document).ready(function() {
 								<!-- desktop view only -->
 								<div class="four columns hide-on-mobile">
                                     <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white">
-										<h2 class="h3 heading--snug">Contact Info</h2>
+										<h2 class="h3 heading--snug">Location</h2>
+									
+										<div id="multi-map" class="l-margin-bd" style="width:100%; height: 200px;"></div>
                                         <div class="row">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-map-marker icon--md icon--circle background--cerulean"></i>
+                                            <div class="two columns">
+                                                <i class="icon-map-marker icon--sm icon--circle background--cerulean"></i>
                                             </div>
-                                            <div class="nine columns">
+                                            <div class="ten columns">
                                                 <address>
                                                     <p><strong>123 Main Street <br>
                                                     San Diego, CA 92121</strong></p>
                                                 </address>
                                             </div>
                                         </div>
+									</div>
+                                    <div class="card l-padding-ad text-center--mobile background-off-white l-margin-td" style="float: left;">
+										<h2 class="h3 heading--snug">Hours</h2>
+										<div class="field-item even"><div class="oh-current-open"><p>Currently <strong style="color:#006600">open</strong></p></div><span class="oh-wrapper"><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Sunday: </span><span class="oh-display-times oh-display-closed">closed<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Monday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Tuesday: </span><span class="oh-display-times oh-display-hours">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Wednesday: </span><span class="oh-display-times oh-display-hours oh-display-current">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Thursday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Friday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Saturday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span></span></div>
+                                    </div>
+									
+                                    <div class="card l-padding-ad text-center--mobile l-margin-td background-off-white" style="float: left;">
+										<h2 class="h3 heading--snug">Contact Info</h2>
                                         <div class="row">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-telephone icon--md icon--circle background--cerulean"></i>
+                                            <div class="two columns">
+                                                <i class="icon-user icon--sm icon--circle background--cerulean"></i>
                                             </div>
-                                            <div class="nine columns">
+                                            <div class="ten columns">
+                                                <p><strong>Jane Doe</strong><br><em>Manager</em></p>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="two columns">
+                                                <i class="icon-telephone icon--sm icon--circle background--cerulean"></i>
+                                            </div>
+                                            <div class="ten columns">
                                                 <address>
                                                     <p class="l-padding-desktop-ts"><strong><span itemprop="telephone">(619) 123-4567</span></strong></p>
                                                 </address>
                                             </div>
                                         </div>
-                                        <div class="row l-margin-td">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-at-sign icon--md icon--circle background--cerulean"></i>
+                                        <div class="row">
+                                            <div class="two columns">
+                                                <i class="icon-at-sign icon--sm icon--circle background--cerulean"></i>
                                             </div>
-                                            <div class="nine columns">
-                                                    <p class="l-padding-desktop-ts"><strong>email@sandiego.gov</strong></p>
-                                            </div>
-                                        </div>
-                                        <div class="row l-margin-td">
-                                            <div class="three columns text-center l-padding-mobile-bs">
-                                                <i class="icon-user icon--md icon--circle background--cerulean"></i>
-                                            </div>
-                                            <div class="nine columns">
-                                                    <p><strong>Jane Doe</strong><br><em>Manager</em></p>
+                                            <div class="ten columns">
+                                                <p class="l-padding-desktop-ts"><strong><a href="">email@sandiego.gov</a></strong></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="card l-padding-ad text-center--mobile l-margin-mobile-td background-off-white l-margin-td" style="float: left;">
-										<h2 class="h3 heading--snug">Hours</h2>
-										<div class="field-item even"><div class="oh-current-open"><p>Currently <strong style="color:#006600">open</strong></p></div><span class="oh-wrapper"><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Sunday: </span><span class="oh-display-times oh-display-closed">closed<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Monday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Tuesday: </span><span class="oh-display-times oh-display-hours">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Wednesday: </span><span class="oh-display-times oh-display-hours oh-display-current">11:30 a.m.&nbsp;-&nbsp;8:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Thursday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Friday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span><span class="oh-display"><span class="oh-display-label" style="width: 6.6em; ">Saturday: </span><span class="oh-display-times oh-display-hours">9:30 a.m.&nbsp;-&nbsp;6:00 p.m.<br></span></span></span></div>
-                                    </div>
-									
-									<div id="multi-map" class="l-margin-td" style="width:100%; height: 360px; float: left;"></div>
                                 </div>
 								<!-- end desktop view only -->
                             </div>
