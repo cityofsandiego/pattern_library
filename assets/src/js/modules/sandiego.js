@@ -22,11 +22,22 @@ define(function() {
           var dropdown = $(this).children(".dropdown");
  
           $(this).hoverIntent({
-              over: function(){ dropdown.addClass("visible"); },
+              over: function(){
+				  $('.dropdown').removeClass("visible");
+				  if ($('.search-icon--open').is(':visible')) {
+				    $('#search-block-form').hide();
+				    $('.quicklinks').hide();
+				  }
+				  dropdown.addClass("visible"); 
+			  },
               timeout: 0,
               interval: 200,
               out: function(){ dropdown.removeClass("visible"); }
           });
+		  $(this).children(".dropdown-parent").on('focus', function() {
+			  $('.dropdown').removeClass("visible");
+			  dropdown.addClass("visible"); 
+		  });
       })
     }
     function initHomepage() {

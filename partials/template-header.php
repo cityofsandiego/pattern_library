@@ -24,7 +24,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <!-- Place favicon.ico in the root directory -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+  
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
@@ -61,8 +61,8 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hs header--fixed">
-            <div class="l-constrained row l-padding-td l-padding-desktop-tn">
+        <header class="l-padding-mobile-hs">
+            <div id="top-header" class="l-constrained row l-padding-td l-padding-desktop-tn">
                 <div class="hidden twelve columns hide-on-mobile text-right">
                     <div class="quicklinks background--cerulean">
                         <ul class="l-margin-bs l-margin-tn">
@@ -86,10 +86,9 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                         <p><strong>San Diego <br> Weather</strong></p>
                     </div>
                 </div>
-                <div class="three columns no-gutters form--search-wrap l-padding-desktop-ts">
-                    <a href="" class="search-icon search-icon--open l-margin-mobile-rs"><i class="icon-magnifier bold"></i> </a>
-                    <a href="" class="search-icon translate-icon--open"><i class="icon-translate"></i> </a>
-					<div class="quicklinks l-padding-desktop-bs text-right l-margin-mobile-rm l-padding-mobile-ts">
+                <div class="three columns no-gutters l-padding-desktop-ts">
+						
+					<div class="quicklinks text-right l-margin-mobile-rm l-padding-mobile-ts">
 						<div class="google-translate">
 							<div id="google_translate_element"></div>
 						</div>
@@ -111,14 +110,19 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                 </div>
             </div>
 
-            <div class="l-container navigation__wrap">
+            <div id="nav-header" class="l-container navigation__wrap">
                 <div class="l-constrained">
                     <div class="menu-btn menu-btn--open">
                         <a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
                     </div>
 
                     <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
+					
+						<div class="nav-logo alignleft l-margin-bn l-margin-rd l-padding-ls">
+							<a href="/" style="padding-top:5px;"><img src="/assets/dist/img/logo-mark.png" alt="City of San Diego Logo" title="Go to City of San Diego Home Page" width="50" height="auto"></a>
+						</div>
                         <ul>
+							<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="color:black;font-size:24px;"></i></a></li>
                             <li class="has__dropdown"><a href="" class="dropdown-parent"><i class="icon-chevron-right hide-on-desktop"></i>Leisure <i class="icon-chevron-down hide-on-mobile"></i><span>Explore, Play + Events</span></a>
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">
@@ -182,6 +186,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
                                                 <p>Book Your Tee Time <a href="">Learn More</a></p>
                                             </div>
+											<a class="close-mm visuallyhidden" href="#">Close menu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -229,6 +234,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
                                                 <p>Get a Permit <a href="">Learn More</a></p>
                                             </div>
+											<a class="close-mm visuallyhidden" href="#">Close menu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -276,6 +282,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
                                                 <p>See Business Events <a href="">Learn More</a></p>
                                             </div>
+											<a class="close-mm visuallyhidden" href="#">Close menu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -346,6 +353,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
                                                 <p>File a Complaint or Report <a href="">Learn More</a></p>
                                             </div>
+											<a class="close-mm visuallyhidden" href="#">Close menu</a>
                                         </div>
                                     </div>
                                 </div>
@@ -408,13 +416,21 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
                                                 <img src="/assets/dist/img/nav-event-3.jpg" width="74" height="74" alt="Event 3">
                                                 <p>Search City Hall News <a href="">Learn More</a></p>
                                             </div>
+											<a class="close-mm visuallyhidden" href="#">Close menu</a>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
+						<div class="form--search-wrap l-padding-mobile-td l-margin-desktop-rs hide-on-mobile">						
+							<a href="#" class="search-icon search-icon--open"><i class="icon-magnifier bold"></i> </a>
+							<a href="#" class="search-icon translate-icon--open"><i class="icon-translate"></i> </a>
+						</div>
                     </nav>
+					<div class="form--search-wrap l-padding-mobile-td hide-on-desktop">						
+						<a href="#" class="search-icon search-icon--open"><i class="icon-magnifier bold"></i> </a>
+						<a href="#" class="search-icon translate-icon--open"><i class="icon-translate"></i> </a>
+					</div>
                 </div>
-                
             </div>
         </header>

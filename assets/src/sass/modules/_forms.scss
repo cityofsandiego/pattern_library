@@ -524,7 +524,7 @@ header {
             display: none;
             z-index: 110;
             position: absolute;
-            left: 0; top: 96px;
+            left: 0; top: 89px;
             width: 100%;
             border-radius: 0;
             padding: .5em 3em;
@@ -547,7 +547,10 @@ header {
 
     @include mq( $until: site ) {
         .form--search-wrap {
-            position: static;
+            //position: static;
+			position: absolute;
+			top: 0;
+			right: 0;
         }
     }
 }

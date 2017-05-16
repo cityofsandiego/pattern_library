@@ -119,6 +119,7 @@ header {
         .quicklinks {
             // float: left;
             // display: inline-block;
+			height: 35px;
         }
 
         .form--search-wrap {
@@ -142,28 +143,76 @@ header {
             padding-right: .5em;
         }
     }
+	
+	.nav-logo {
+		display: none;
+	}
 
 
     // fixed header
     &.header--fixed {
 
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		padding-top:0;
 
-        -webkit-transition-duration: 500ms;
-        -moz-transition-duration: 500ms;
-        transition-duration: 500ms;
+        -webkit-transition-property: padding-top;
+		-moz-transition-property: padding-top;
+		transition-property: padding-top;
+		-webkit-transition-duration: 300ms;
+        -moz-transition-duration: 300ms;
+        transition-duration: 300ms;
         -webkit-transition-timing-function: ease-in-out;
         -moz-transition-timing-function: ease-in-out;
         transition-timing-function: ease-in-out;
 
-        @include mq( $from: tablet-landscape ) {
+        @include mq( $until: site ) {
+			.form--search-wrap a {
+				display: none;
+			}		
+			.main__navigation {			
+				& > ul {
+					width: 100%;	
+				}
+			}
+		}
+		
+		@include mq( $until: tablet ) {
+			.form--search-wrap {
+				display: none;
+			}
+		}
+		
+		@include mq( $from: site, $until: tablet-landscape ) {			
+			.main__navigation {			
+				& > ul {
+					width: 83%;	
+				}
+			}
+			.search-icon--open {
+				right: 40px;
+			}
+		}
+		
+		@include mq( $from: tablet-landscape ) {			
+			.main__navigation {			
+				& > ul {
+					width: 85%;	
+				}
+			}		
+			.search-icon--open {
+				right: 50px;
+			}
+		}
+		
+		@include mq( $from: site ) {
             width: 100%;
             position: fixed;
-            top: 0;
+            top: -164px; // height of top-header
+			padding-top: 66px;
             left: 0;
             z-index: 88888;
             backface-visibility: hidden;
-            transition-duration: none;
+            //transition-duration: none;
             box-shadow: none;
             body.logged-in.admin-menu & {
                 top: 30px;
@@ -176,6 +225,51 @@ header {
                     margin-top: 93px;
                 }
             }
+			
+			.nav-logo {
+				display: block;
+			}
+			
+			.main__navigation {			
+				& > ul {
+					min-height: auto;			
+					& > li {
+						width: auto;
+					}
+				}
+			}
+			
+			.nav-search {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+
+			.quicklinks, .form--search {
+				display: none;
+				z-index: 110;
+				position: absolute;
+				//top: 66px;
+				right: 0;
+				border-radius: 0 0 5px 5px;
+				padding: 1em;
+				background-color: #0098db;
+				box-shadow: 0 3px 0px -1px rgba(0,0,0,0.15);
+				input.search-type, input[type="search"] {
+					border: 1px solid $chateau;
+					border-right: none;
+				}
+				input[type="submit"] {
+					border: 1px solid $chateau;
+					border-left: none;
+				}
+			}
+			.quicklinks {
+				width: auto;
+			}
+			.form--search {
+				width: 100%;
+			}
         }
 
         @include mq( $from: tablet-landscape ) {
@@ -187,6 +281,40 @@ header {
                 }
             }
         }
+		
+		.search-icon {
+			padding: .25em 0;
+		}
+		
+		.search-icon--open, .translate-icon--open {
+			display: block;
+			position: absolute;
+			top: 0;
+			z-index: 100;
+			padding-top: 1em;
+			i {
+				font-size: 24px;
+				color: #37424a;
+				
+			}
+			&:hover, i:hover {
+				color:$cerulean;
+			}
+		}
+		
+		.translate-icon--open {
+			right: 0px;
+		}
+		
+		.form--search-wrap {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		
+		.quicklinks {
+			height: auto;
+		}
     }
 
 	&.header--app {
@@ -1169,7 +1297,7 @@ header {
 		display: none;
 		z-index: 110;
 		position: absolute;
-		left: 0; top: 96px;
+		left: 0; top: 89px;
 		width: 100%;
 		border-radius: 0;
 		padding: .5em 3em;
@@ -1187,7 +1315,7 @@ header {
         @include mq( $from: tablet ) {
             display: inline-block;
             position: relative;
-            padding-top: 5px; 
+            padding: 5px 0 .5em 0;
 
             .goog-te-gadget {
                 // height:50px;
@@ -1238,6 +1366,7 @@ header {
                 margin: 0;
                 font-family: $font-family;
                 font-size:rem(12);
+				z-index: 200;
 				
 				@include mq( $until: tablet ) {
 					color:$cerulean;
@@ -1277,6 +1406,16 @@ header {
             }
         }
     }
+}
+
+html.translated-ltr, html.translated-rtl {
+	//padding-top: 39px !important;
+	
+	header {	
+		&.header--fixed {
+			padding-top: 105px;
+		}
+	}
 }
 
 /* Pagination

@@ -275,26 +275,35 @@ define(function () {
         });
       },
       search : function() {
-        $(".search-icon--open").click(function(){
+        $(".search-icon--open").click(function(event){
           event.preventDefault();
+		  // if quicklinks is visible (display: block), hide it
 		  if($(".quicklinks").is(":visible")) {
             $(this).toggleClass("translate-open");
             $(".quicklinks").slideToggle();
 		  }
+		  // open the search box
           $(this).toggleClass("search-open");
           $("#search-block-form").slideToggle();
-        });
+		  // place cursor in the search box
+		  $("#search-block-form--2").focus();
+        }).focus(function(){
+			$('.dropdown').removeClass("visible");
+		});
       },
       translate : function() {
-        $(".translate-icon--open").click(function(){
+        $(".translate-icon--open").click(function(event){
           event.preventDefault();
-		  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
+		  // if search box is visible (display: block), hide it
 		  if($("#search-block-form").is(":visible")) {
             $(this).toggleClass("search-open");
             $("#search-block-form").slideToggle();
 		  }
+		  // open quicklinks
           $(this).toggleClass("translate-open");
           $(".quicklinks").slideToggle();
+		  // place focus on google translate
+		  $(".goog-te-menu-value").focus();
         });
       },
       close : function() {

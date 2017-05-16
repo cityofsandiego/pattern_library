@@ -3766,14 +3766,70 @@ header > .row {
     padding-left: .5em;
 }
 
+header .nav-logo {
+    display: none;
+}
+
 header.header--fixed {
+    padding-top: 0;
     -webkit-transition-timing-function: ease-in-out;
        -moz-transition-timing-function: ease-in-out;
             transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 500ms;
-       -moz-transition-duration: 500ms;
-            transition-duration: 500ms;
+    -webkit-transition-duration: 300ms;
+       -moz-transition-duration: 300ms;
+            transition-duration: 300ms;
+    -webkit-transition-property: padding-top;
+       -moz-transition-property: padding-top;
+            transition-property: padding-top;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+}
+
+header.header--fixed .form--search-wrap a {
+    display: none;
+}
+
+header.header--fixed .main__navigation > ul {
+    width: 100%;
+}
+
+header.header--fixed .search-icon {
+    padding: .25em 0;
+}
+
+header.header--fixed .search-icon--open,
+header.header--fixed .translate-icon--open {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: block;
+    padding-top: 1em;
+}
+
+header.header--fixed .search-icon--open i,
+header.header--fixed .translate-icon--open i {
+    font-size: 24px;
+    color: #37424a;
+}
+
+header.header--fixed .search-icon--open:hover,
+header.header--fixed .search-icon--open i:hover,
+header.header--fixed .translate-icon--open:hover,
+header.header--fixed .translate-icon--open i:hover {
+    color: #0098db;
+}
+
+header.header--fixed .translate-icon--open {
+    right: 0;
+}
+
+header.header--fixed .form--search-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header.header--fixed .quicklinks {
+    height: auto;
 }
 
 header.header--app {
@@ -4592,7 +4648,7 @@ header.header--app .row {
     position: relative;
     display: block;
     display: inline-block;
-    padding-top: 5px;
+    padding: 5px 0 .5em 0;
 }
 
 .quicklinks .google-translate .goog-te-gadget {
@@ -4638,6 +4694,7 @@ header.header--app .row {
 .quicklinks .google-translate .goog-te-gadget-simple .goog-te-menu-value {
     font-family: "Open Sans", sans-serif;
     font-size: .75rem;
+    z-index: 200;
     margin: 0;
     padding: 0 4px;
     color: #f6f6f6;
@@ -4666,6 +4723,11 @@ header.header--app .row {
     border-right: 2px solid #f6f6f6 !important;
     border-bottom: 2px solid #f6f6f6 !important;
     background: none !important;
+}
+
+html.translated-ltr header.header--fixed,
+html.translated-rtl header.header--fixed {
+    padding-top: 105px;
 }
 
 /* Pagination
@@ -7297,7 +7359,9 @@ header .search-icon i.bold {
 }
 
 header .form--search-wrap {
-    position: static;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .form-required {
