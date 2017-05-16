@@ -454,6 +454,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <a class="btn btn--success" href="#">Success</a>
 <a class="btn btn--warning" href="#">Warning</a>
 <a class="btn btn--error" href="#">Error</a></textarea> </form> </div>
+<p class="l-margin-bn l-margin-td"><em>Colors</em></p>
+<ul>
+<li>Success - default: #659f13, hover: #48710e</li>
+<li>Warning - default: #e28327, hover: #bd6a19</li>
+<li>Error - default: #c51313, hover: #960f0f</li>
+</ul>
 							</div>
 							
 						</div>
