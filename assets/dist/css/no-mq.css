@@ -3043,6 +3043,14 @@ img.photoRight {
     content: "\e84f";
 }
 
+.icon-car-siren:before {
+    content: "\e853";
+}
+
+.icon-parking:before {
+    content: "\e850";
+}
+
 .icon-train:before {
     content: "\e85a";
 }
@@ -3261,6 +3269,10 @@ img.photoRight {
 
 .icon-exit-down:before {
     content: "\e8fc";
+}
+
+.icon-launch:before {
+    content: "\e7b0";
 }
 
 .icon-bug:before {

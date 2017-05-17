@@ -998,6 +998,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-car2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-car-siren"></i></p>
+<p>icon-car-siren</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-parking"></i></p>
+<p>icon-parking</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><I class="icon--xl icon-train"></i></p>
 <p>icon-train</p>
 </div>
@@ -1216,6 +1224,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><I class="icon--xl icon-exit-down"></i></p>
 <p>icon-exit-down</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-launch"></i></p>
+<p>icon-launch</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><I class="icon--xl icon-bug"></i></p>
@@ -1516,6 +1528,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><I class="icon--xl icon-googleplus"></i></p>
 <p>icon-googleplus</p>
+</div>
+
+<div class="three columns text-center l-margin-bx">
+<p><I class="icon--xl icon-linkedin"></i></p>
+<p>icon-linkedin</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
