@@ -131,7 +131,14 @@
 			});
 			jQuery(window).scroll(function(){
 				//console.log(jQuery(document).scrollTop() + ' ' +jQuery('header').outerHeight());
-			  if(jQuery(document).scrollTop() > 165) {
+			  var scroll_down_target = 165;
+			  var scroll_up_target = jQuery('#top-header').outerHeight();
+			  if (jQuery('header').hasClass('has-alert')) { // account for header alert
+				scroll_down_target = scroll_down_target + jQuery('#header-alert').outerHeight();
+			    scroll_up_target = jQuery('#top-header').outerHeight() + 58; // 58 is height of header alert
+			  }
+			  console.log(scroll_up_target + ' ' + jQuery(document).scrollTop());
+			  if(jQuery(document).scrollTop() > scroll_down_target) {
 				if(jQuery('header').data('size') == 'big')
 				{
 				  jQuery('header').data('size','small');
@@ -142,7 +149,7 @@
 				  jQuery('#search-block-form').hide();
 				  jQuery('.quicklinks').hide();
 				}
-			  } else if(jQuery(document).scrollTop() < jQuery('#top-header').outerHeight()) {
+			  } else if(jQuery(document).scrollTop() < scroll_up_target) {
 				if(jQuery('header').data('size') == 'small') {
 				  jQuery('header').data('size','big');
 				  jQuery('header').removeClass('header--fixed');

@@ -61,8 +61,21 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hs">
+        <header class="l-padding-mobile-hs has-alert">
 			<div id="header-alert">
+			
+<div id="block-views-header-alert-header-alert-block" class="block block-views">
+	<div class="message message--success">
+	<div class="l-constrained text-center">
+	<p>
+		<i class="icon-flag"></i>
+		<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+	</p>
+	</div>
+	</div>
+</div>	
+			
+			
 			</div>
             <div id="top-header" class="l-constrained row l-padding-td l-padding-desktop-tn">
                 <div class="hidden twelve columns hide-on-mobile text-right">

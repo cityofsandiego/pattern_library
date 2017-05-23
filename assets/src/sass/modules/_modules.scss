@@ -209,6 +209,9 @@ header {
             position: fixed;
             top: -164px; // height of top-header
 			padding-top: 66px;
+			&.has-alert {
+				top: -222px;
+			}
             left: 0;
             z-index: 88888;
             backface-visibility: hidden;
@@ -280,6 +283,14 @@ header {
                     margin-top: 0px;
                 }
             }
+			&.has-alert {
+				+ div {
+					margin-top: 223px;
+					.node-type-application & {
+						margin-top: 0px;
+					}
+				}			
+			}
         }
 		
 		.search-icon {

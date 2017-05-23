@@ -5047,6 +5047,9 @@ header.header--fixed {
 
         backface-visibility: hidden;
     }
+    header.header--fixed.has-alert {
+        top: -222px;
+    }
     body.logged-in.admin-menu header.header--fixed {
         top: 30px;
     }
@@ -5111,6 +5114,12 @@ header.header--fixed {
         margin-top: 165px;
     }
     .node-type-application header.header--fixed + div {
+        margin-top: 0;
+    }
+    header.header--fixed.has-alert + div {
+        margin-top: 223px;
+    }
+    .node-type-application header.header--fixed.has-alert + div {
         margin-top: 0;
     }
 }

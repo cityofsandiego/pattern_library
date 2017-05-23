@@ -1,6 +1,6 @@
 <?php
 require_once( '../config.php' );
-require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/template-header-alert.php' ); ?>
 
         <div class="hero__wrap">
             <div class="hero__bg hero__bg--secondary" style="background-image:url('../assets/dist/img/department-hero.jpg');"></div>
