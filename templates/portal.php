@@ -197,4 +197,4 @@ require_once( ABSPATH . PARTIALS . '/portal-header.php' ); ?>
         </main>
 
 <?php
-require_once( ABSPATH . PARTIALS . '/template-footer.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/portal-footer.php' ); ?>
