@@ -3830,6 +3830,11 @@ header.header--fixed .translate-icon--open i:hover {
     color: #0098db;
 }
 
+.theme-citynet header.header--fixed .search-icon--open,
+.theme-citynet header.header--fixed .translate-icon--open {
+    display: none;
+}
+
 header.header--fixed .translate-icon--open {
     right: 0;
 }

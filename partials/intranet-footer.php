@@ -64,6 +64,8 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>-->
         <script src="/assets/dist/js/plugins.min.js"></script>
         <script src="/assets/dist/js/main.min.js"></script>
+		<script data-main="/assets/dist/js/main-built.js" src="/assets/dist/js/lib/require.js"></script>
+
 
         <script>
             window.twttr = (function(d, s, id) {
@@ -112,6 +114,8 @@
             //     e.src='https://www.google-analytics.com/analytics.js';
             //     r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             //     ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+			
+			
         </script>
 
     </body>

@@ -117,7 +117,23 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <!-- Add your site or application content here -->
 <div id="outer-wrap">
     <div id="inner-wrap">
-        <header class="l-padding-mobile-hd header--fixed">
+        <header class="l-padding-mobile-hd header--fixed has-alert">
+					<div id="header-alert">
+			
+<div id="block-views-header-alert-header-alert-block" class="block block-views">
+	<div class="message message--warning">
+	<div class="l-constrained text-center">
+	<p>
+		<i class="icon-flag"></i>
+		<strong>Error!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.
+	<a href="" class="close-icon pull-right"><i class="icon-cross-circle"></i></a>
+	</p>
+	</div>
+	</div>
+</div>	
+			
+			
+			</div>
             <div id="nav-header" class="l-constrained row l-padding-ts l-padding-mobile-bs">
                 <div class="three columns no-gutters">
 				<p id="citynet-title" class="h1 l-margin-bn"><a href="/templates"><img class="hide-on-mobile" src="/assets/dist/img/logo--white--lg.png" alt="SD Logo" style="margin-top:-22px;" width="75"><img class="hide-on-desktop" src="/assets/dist/img/logo-mark.png" alt="SD Logo" style="margin-top:-22px;" width="55"> CityNet</a></p>

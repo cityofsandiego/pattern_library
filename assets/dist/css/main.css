@@ -5047,8 +5047,15 @@ header.header--fixed {
 
         backface-visibility: hidden;
     }
+    .theme-citynet header.header--fixed {
+        top: 0;
+        padding-top: 0;
+    }
     header.header--fixed.has-alert {
-        top: -222px;
+        top: -221px;
+    }
+    .theme-citynet header.header--fixed.has-alert {
+        top: 0;
     }
     body.logged-in.admin-menu header.header--fixed {
         top: 30px;
@@ -5057,7 +5064,7 @@ header.header--fixed {
         margin-top: 227px;
     }
     .theme-citynet header.header--fixed + div {
-        margin-top: 93px;
+        margin-top: 85px;
     }
     header.header--fixed .nav-logo {
         display: block;
@@ -5100,6 +5107,13 @@ header.header--fixed {
         border: 1px solid #a7abad;
         border-left: none;
     }
+    .theme-citynet header.header--fixed .quicklinks,
+    .theme-citynet header.header--fixed .form--search,
+    .theme-citynet header.header--fixed #views-exposed-form-events-page-1 {
+        display: block;
+        padding: 0;
+        background-color: #009581;
+    }
     header.header--fixed .quicklinks {
         width: auto;
     }
@@ -5121,6 +5135,9 @@ header.header--fixed {
     }
     .node-type-application header.header--fixed.has-alert + div {
         margin-top: 0;
+    }
+    .theme-citynet header.header--fixed.has-alert + div {
+        margin-top: 146px;
     }
 }
 
@@ -5148,6 +5165,11 @@ header.header--fixed .search-icon--open i:hover,
 header.header--fixed .translate-icon--open:hover,
 header.header--fixed .translate-icon--open i:hover {
     color: #0098db;
+}
+
+.theme-citynet header.header--fixed .search-icon--open,
+.theme-citynet header.header--fixed .translate-icon--open {
+    display: none;
 }
 
 header.header--fixed .translate-icon--open {

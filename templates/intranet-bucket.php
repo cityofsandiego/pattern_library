@@ -1,6 +1,6 @@
 <?php
 require_once( '../config.php' );
-require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/intranet-header-alert.php' ); ?>
 
 <div class="hero__slides hero__slides--secondary fine-print">
 	<div class="l-constrained--site row">
@@ -214,4 +214,4 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 </div>
 
 <?php
-require_once( ABSPATH . PARTIALS . '/template-footer.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/intranet-footer.php' ); ?>

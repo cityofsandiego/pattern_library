@@ -310,7 +310,8 @@ define(function () {
         $(".close-icon").each(function() {
           $(this).click(function( event ){
             event.preventDefault();
-            $(this).parents(".message").slideUp();
+            $(this).parents(".message").hide();
+            $('header').removeClass("has-alert");
           });
         });
       },

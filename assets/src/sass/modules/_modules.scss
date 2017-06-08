@@ -209,8 +209,15 @@ header {
             position: fixed;
             top: -164px; // height of top-header
 			padding-top: 66px;
+			.theme-citynet & {
+				top: 0;
+				padding-top: 0;
+			}
 			&.has-alert {
-				top: -222px;
+				top: -221px;
+                .theme-citynet & {
+                    top: 0;
+                }
 			}
             left: 0;
             z-index: 88888;
@@ -225,7 +232,7 @@ header {
             + div {
                 margin-top: 227px;
                 .theme-citynet & {
-                    margin-top: 93px;
+                    margin-top: 85px;
                 }
             }
 			
@@ -266,6 +273,11 @@ header {
 					border: 1px solid $chateau;
 					border-left: none;
 				}
+				.theme-citynet & {
+					display: block;
+					background-color: #009581;
+					padding: 0;
+				}
 			}
 			.quicklinks {
 				width: auto;
@@ -289,6 +301,9 @@ header {
 					.node-type-application & {
 						margin-top: 0px;
 					}
+					.theme-citynet & {
+						margin-top: 146px;
+					}
 				}			
 			}
         }
@@ -310,6 +325,9 @@ header {
 			}
 			&:hover, i:hover {
 				color:$cerulean;
+			}
+			.theme-citynet & {
+				display: none;
 			}
 		}
 		
