@@ -7061,6 +7061,11 @@ html.translated-rtl header.header--fixed {
     }
 }
 
+.step__single h4,
+.step__single .h4 {
+    line-height: 1.5;
+}
+
 .step__header {
     font-size: 16px;
     font-size: 1rem;

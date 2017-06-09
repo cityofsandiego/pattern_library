@@ -2080,6 +2080,10 @@ html.translated-ltr, html.translated-rtl {
             display: block;
         }
     }
+	
+	h4, .h4 {
+		line-height: 1.5;
+	}
 }
 
 .step__header {
