@@ -2055,7 +2055,18 @@ html.translated-ltr, html.translated-rtl {
 
     @include mq( $from: mobile-wide ) {
         margin: .75em 0;
-        text-align: left;
+		text-align: center;
+
+        &:before {
+            right: 1em;
+            top: -.85em;
+            transform: none;
+        }
+    }
+
+    @include mq( $from: tablet ) {
+        margin: .75em 0;
+		text-align: left;
 
         &:before {
             right: 1em;
@@ -2066,7 +2077,7 @@ html.translated-ltr, html.translated-rtl {
 
     @include mq( mobile-wide, tablet ) {
         .columns {
-            display: inline-block;
+            display: block;
         }
     }
 }
@@ -2081,8 +2092,9 @@ html.translated-ltr, html.translated-rtl {
     }
 
     @include mq( $from: mobile-wide ) {
-        margin: 0;
-        line-height: 40px;
+        //margin: 0;
+        //line-height: 40px;
+		padding-top:.3em;
     }
 }
 

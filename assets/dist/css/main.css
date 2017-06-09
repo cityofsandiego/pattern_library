@@ -7034,6 +7034,18 @@ html.translated-rtl header.header--fixed {
 @media screen and (min-width: 37.5em) {
     .step__single {
         margin: .75em 0;
+        text-align: center;
+    }
+    .step__single:before {
+        top: -.85em;
+        right: 1em;
+        transform: none;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .step__single {
+        margin: .75em 0;
         text-align: left;
     }
     .step__single:before {
@@ -7045,7 +7057,7 @@ html.translated-rtl header.header--fixed {
 
 @media screen and (min-width: 37.5em) and (max-width: 47.99em) {
     .step__single .columns {
-        display: inline-block;
+        display: block;
     }
 }
 
@@ -7062,8 +7074,7 @@ html.translated-rtl header.header--fixed {
 
 @media screen and (min-width: 37.5em) {
     .step__header {
-        line-height: 40px;
-        margin: 0;
+        padding-top: .3em;
     }
 }
 

@@ -5258,7 +5258,9 @@ html.translated-rtl header.header--fixed {
     position: relative;
     margin: 2em 0;
     margin: .75em 0;
+    margin: .75em 0;
     padding: .5em .75em;
+    text-align: center;
     text-align: center;
     text-align: left;
     border: 1px solid #a7abad;
@@ -5284,11 +5286,16 @@ html.translated-rtl header.header--fixed {
     transform: none;
 }
 
+.step__single:before {
+    top: -.85em;
+    right: 1em;
+    transform: none;
+}
+
 .step__header {
     font-size: 16px;
     font-size: 1rem;
-    line-height: 40px;
-    margin: 0;
+    padding-top: .3em;
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
 }

@@ -129,20 +129,38 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <h2>Steps (1-10)</h2>
                     <div class="steps__wrap">
                         <div class="step__single row">
-                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">1</p>
-                            <h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
+                            <div class="one columns text-center l-padding-hn">
+								<p class="icon--circle background--cerulean">1</p>
+							</div>
+                            <div class="eleven columns">
+								<h4 class="step__header"><span>Occupancy</span>: <span class="step__desc">Is your project complete?</span></h4>
+							</div>
                         </div>
                         <div class="step__single row">
-                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">1</p>
-                            <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+                            <div class="one columns text-center l-padding-hn">
+								<p class="icon--circle background--cerulean">2</p>
+							</div>
+                            <div class="eleven columns">
+								<h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span></h4>
+								<p>Additional information about this step.</p>
+							</div>
                         </div>
                         <div class="step__single row">
-                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">3</p>
-                            <h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
+                            <div class="one columns text-center l-padding-hn">
+								<p class="icon--circle background--cerulean">3</p>
+							</div>
+                            <div class="eleven columns">
+								<h4 class="step__header"><span>Discretionary Review</span>: <span class="step__desc">Does your project require special approvals?</span></h4>
+							</div>
                         </div>
                         <div class="step__single row">
-                            <p class="icon--circle background--cerulean alignleft l-margin-desktop-rd">4</p>
-                            <h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes?</h4>
+                            <div class="one columns text-center l-padding-hn">
+								<p class="icon--circle background--cerulean">4</p>
+							</div>
+                            <div class="eleven columns">
+								<h4 class="step__header"><span>Plan Review</span>: <span class="step__desc">Does your project comply with building and land development codes and municipal codes?</h4>
+								<p>Additional information about this step.</p>
+							</div>
                         </div>
                     </div>
 
@@ -151,22 +169,31 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="code__examples">
                                 <form><textarea class="pattern" id="comp-code-steps" name="code">
 <div class="steps__wrap">
-    <div class="step__single row">
-        <div class="one columns no-gutters">
-            <i class="icon-pencil"></i>
-        </div>
-        <div class="eleven columns no-gutters">
-            <h4 class="step__header"><span>Define Project</span>: <span class="step__desc">Does your project need a permit?</span> <span class="step__num">1</span></h4>
-        </div>
-    </div>
-    <div class="step__single row">
-        <div class="one columns no-gutters">
-            <i class="icon-cloud-download"></i>
-        </div>
-        <div class="eleven columns no-gutters">
-            <h4 class="step__header"><span>Site Information</span>: <span class="step__desc">Are there site constraints on your project?</span> <span class="step__num">2</span></h4>
-        </div>
-    </div>
+	<div class="step__single row">
+		<div class="one columns text-center l-padding-hn">
+			<p class="icon--circle background--cerulean">1</p>
+		</div>
+		<div class="eleven columns">
+			<h4 class="step__header"><span>Step 1</span>: <span class="step__desc">Step 1 description</span></h4>
+		</div>
+	</div>
+	<div class="step__single row">
+		<div class="one columns text-center l-padding-hn">
+			<p class="icon--circle background--cerulean">2</p>
+		</div>
+		<div class="eleven columns">
+			<h4 class="step__header"><span>Step 2</span>: <span class="step__desc">Step 2 description</span></h4>
+			<p>Additional information about this step.</p>
+		</div>
+	</div>
+	<div class="step__single row">
+		<div class="one columns text-center l-padding-hn">
+			<p class="icon--circle background--cerulean">3</p>
+		</div>
+		<div class="eleven columns">
+			<h4 class="step__header"><span>Step 3</span>: <span class="step__desc">Step 3 description</span></h4>
+		</div>
+	</div>
 </div></textarea> </form> </div>
                         </div>
                         <div class="six columns">
