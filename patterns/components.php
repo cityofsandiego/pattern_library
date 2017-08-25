@@ -280,8 +280,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                                     <div class="row">
                                         <div class="event__date">
-                                            <span class="event--day">4</span>
                                             <span class="event--month">Jul</span>
+                                            <span class="event--day">4</span>
                                         </div>
                                         <div class="event__info">
                                             <h6 class="l-margin-bn"><strong>Big Bay Boom</strong></h6>
@@ -292,8 +292,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                                     <div class="row">
                                         <div class="event__date">
-                                            <span class="event--day">8</span>
                                             <span class="event--month">Jul</span>
+                                            <span class="event--day">8</span>
                                         </div>
                                         <div class="event__info">
                                             <h6 class="l-margin-bn"><strong>Comic Con</strong></h6>
@@ -304,8 +304,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                                     <div class="row">
                                         <div class="event__date">
-                                            <span class="event--day">10</span>
                                             <span class="event--month">Jul</span>
+                                            <span class="event--day">10</span>
                                         </div>
                                         <div class="event__info">
                                             <h6 class="l-margin-bn"><strong>Concert in the Park</strong></h6>

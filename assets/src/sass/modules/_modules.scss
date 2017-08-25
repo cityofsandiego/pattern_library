@@ -1857,14 +1857,16 @@ html.translated-ltr, html.translated-rtl {
 }
 
 .event__date {
-    color: white;
+    color: #37424a;
     line-height: 1;
     padding: .75em 0;
-    font-weight: 800;
+    font-weight: 600;
     text-align: center;
-    background: $sunshade;
+    background: white;
     @include rem( 'font-size', 13px );
     @include span( 1 of 5 no-gutters );
+	border: 1px solid #adafaf;
+	border-top: 5px solid $sunshade;
 
     span {
         display: block;
@@ -2998,10 +3000,12 @@ figure {
         padding: .25em;
         margin-bottom: .25em;
         line-height: 1.4;
-        background: $science;
+        background: white;
+		border: 1px solid #adafaf;
+		border-left: 5px solid $cerulean;
 
         a {
-            color: white;
+            color: #37424a;
             text-decoration: none;
         }
     }

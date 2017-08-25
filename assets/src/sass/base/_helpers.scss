@@ -247,13 +247,13 @@
 }
 
 .text-white {
-    color: white;
+    color: white !important;
 }
 .text-gray {
-    color: $gray;
+    color: $gray !important;
 }
 .text-pom {
-    color: $pomegranate;
+    color: $pomegranate !important;
 }
 
 // pattern library use only
@@ -363,27 +363,27 @@ p.nav-ex {
     }
 }
 .background-off-white {
-    background-color: lighten( $mercury, 2% );
+    background-color: lighten( $mercury, 2% ) !important;
 }
 
 .background-white {
-    background-color: white;
+    background-color: white !important;
 }
 
 .background--cerulean {
-    background-color: $cerulean;
+    background-color: $cerulean !important;
 }
 
 .background--science {
-    background-color: $science;
+    background-color: $science !important;
 }
 
 .background--sunshade {
-    background: $sunshade;
+    background: $sunshade !important;
 }
 
 .background--robin {
-    background: $robin;
+    background: $robin !important;
 }
 
 // Overlays

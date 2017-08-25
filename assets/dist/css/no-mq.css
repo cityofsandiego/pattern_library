@@ -784,16 +784,16 @@ address {
 }
 
 .text-white {
-    color: white;
+    color: white !important;
 }
 
 .text-gray,
 .gallery-menu li i.toggle {
-    color: #656667;
+    color: #656667 !important;
 }
 
 .text-pom {
-    color: #ee3228;
+    color: #ee3228 !important;
 }
 
 p.nav-ex {
@@ -896,27 +896,27 @@ p.nav-ex {
 }
 
 .background-off-white {
-    background-color: #eaeeef;
+    background-color: #eaeeef !important;
 }
 
 .background-white {
-    background-color: white;
+    background-color: white !important;
 }
 
 .background--cerulean {
-    background-color: #0098db;
+    background-color: #0098db !important;
 }
 
 .background--science {
-    background-color: #005bbb;
+    background-color: #005bbb !important;
 }
 
 .background--sunshade {
-    background: #ffa02f;
+    background: #ffa02f !important;
 }
 
 .background--robin {
-    background: #00c7b2;
+    background: #00c7b2 !important;
 }
 
 .overlay {
@@ -5099,14 +5099,16 @@ html.translated-rtl header.header--fixed {
 .event__date {
     font-size: 13px;
     font-size: .8125rem;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1;
     float: left;
     width: 20%;
     padding: .75em 0;
     text-align: center;
-    color: white;
-    background: #ffa02f;
+    color: #37424a;
+    border: 1px solid #adafaf;
+    border-top: 5px solid #ffa02f;
+    background: white;
 }
 
 .event__date span {
@@ -6149,12 +6151,14 @@ figure figcaption {
     line-height: 1.4;
     margin-bottom: .25em;
     padding: .25em;
-    background: #005bbb;
+    border: 1px solid #adafaf;
+    border-left: 5px solid #0098db;
+    background: white;
 }
 
 .calendar .view-item-event_calendar a {
     text-decoration: none;
-    color: white;
+    color: #37424a;
 }
 
 /* Tabs
