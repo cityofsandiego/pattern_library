@@ -876,6 +876,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             </div>
                             <div class="twelve columns l-margin-td">
                                 <p>This navigation uses the modifier class <strong>.main__navigation--portal</strong></p>
+								<p>For external applications, the City Logo must link to the City's public site (www.sandiego.gov). For internal apps, the City Logo must link to the employee intranet site (CityNet).</p>
                             </div>
                         </div>
                     </div>
