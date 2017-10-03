@@ -127,7 +127,7 @@
 /* Corners
    ========================================================================== */
 
-.corner {
+.rounded-corner {
     border-radius: 4px;
 }
 
@@ -249,11 +249,22 @@
 .text-white {
     color: white !important;
 }
+.text-off-white {
+    color: $off-white;
+}
+.text-off-white-like-background {
+    color: lighten( $mercury, 2% );
+}
 .text-gray {
     color: $gray !important;
 }
 .text-pom {
     color: $pomegranate !important;
+}
+
+.inactive-link {
+	pointer-events: none !important;
+	cursor: default !important;							
 }
 
 // pattern library use only
@@ -281,6 +292,15 @@ p.nav-ex {
 }
 
 
+/* Indent
+   ========================================================================== */
+.indent-s {
+  text-indent: 1em;
+}
+
+.indent-d {
+  text-indent: 2em;
+}
 
 /* Alignment
    ========================================================================== */
@@ -345,7 +365,7 @@ p.nav-ex {
     }
 }
 
-/* Horiziontal Rules
+/* Horizontal Rules
    ========================================================================== */
 
 .hr--dashed {
@@ -355,7 +375,7 @@ p.nav-ex {
 /* Backgrounds
    ========================================================================== */
 .background--dark {
-    background-color: $spruce;
+    background-color: $spruce !important;
     &.text-white {
         > * {
             color: white; 
@@ -364,6 +384,10 @@ p.nav-ex {
 }
 .background-off-white {
     background-color: lighten( $mercury, 2% ) !important;
+}
+
+.background-off-white-darker {
+    background-color: darken( $mercury, 4% );					 
 }
 
 .background-white {
@@ -384,6 +408,10 @@ p.nav-ex {
 
 .background--robin {
     background: $robin !important;
+}
+
+.background--westar {
+    background: $westar !important;
 }
 
 // Overlays

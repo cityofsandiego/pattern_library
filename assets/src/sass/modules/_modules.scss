@@ -60,6 +60,12 @@ header {
             width: auto;
             display: inline-block;
         }
+		
+		.menu-btn {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
     }
 
     @include mq( $from: tablet ) {
@@ -143,13 +149,13 @@ header {
             padding-right: .5em;
         }
     }
-	
+
 	.nav-logo {
 		display: none;
 	}
 
 
-    // fixed header
+	// fixed header
     &.header--fixed {
 
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
@@ -193,7 +199,7 @@ header {
 			}
 		}
 		
-		@include mq( $from: tablet-landscape ) {			
+		@include mq( $from: tablet-landscape ) {
 			.main__navigation {			
 				& > ul {
 					width: 85%;	
@@ -219,13 +225,17 @@ header {
                     top: 0;
                 }
 			}
-            left: 0;
+			left: 0;
             z-index: 88888;
             backface-visibility: hidden;
             //transition-duration: none;
             box-shadow: none;
             body.logged-in.admin-menu & {
-                top: 30px;
+                //top: 30px;
+				top: -136px;
+				&.has-alert {
+					top: -193px;
+				}
             }
 
             // offset header height of sibling container
@@ -285,7 +295,7 @@ header {
 			.form--search {
 				width: 100%;
 			}
-        }
+		}
 
         @include mq( $from: tablet-landscape ) {
             // offset header height of sibling container
@@ -295,6 +305,9 @@ header {
                     margin-top: 0px;
                 }
             }
+			~ ul {
+				margin-top: 185px !important;
+			}
 			&.has-alert {
 				+ div {
 					margin-top: 223px;
@@ -304,7 +317,10 @@ header {
 					.theme-citynet & {
 						margin-top: 146px;
 					}
-				}			
+				}
+				~ ul {
+					margin-top: 243px !important;
+				}
 			}
         }
 		
@@ -348,49 +364,49 @@ header {
 
 	&.header--app {
 	    @media print {
-		display:block;
+			display:block;
 	    	.logo {
-		    display:none;
-		}
+				display:none;
+			}
 	    }
 	    padding: .75em 0;
 	    text-align: center;
 	    background-color: $cerulean;
 
 	    .row {
-		padding: 0;
+			padding: 0;
 	    }
 
 	    @include mq( $from: mobile-wide ) {
-		text-align: left;
+			text-align: left;
 
-		.row {
-		    padding: 0 .5em;
-		    -webkit-align-items: center; /* Safari */
-		    align-items:         center;
-		    display: block; /* Fallback IE9 */
-		    display: -webkit-flex; /* Safari */
-		    display: flex;
-		    -webkit-justify-content: space-between; /* Safari */
-		    justify-content:         space-between;
-		    -webkit-flex-wrap: nowrap; /* Safari */
-		    flex-wrap:         nowrap;
-		}
+			.row {
+				padding: 0 .5em;
+				-webkit-align-items: center; /* Safari */
+				align-items:         center;
+				display: block; /* Fallback IE9 */
+				display: -webkit-flex; /* Safari */
+				display: flex;
+				-webkit-justify-content: space-between; /* Safari */
+				justify-content:         space-between;
+				-webkit-flex-wrap: nowrap; /* Safari */
+				flex-wrap:         nowrap;
+			}
 	    }
 
 	    @include mq( $until: tablet ) {
-		.logo {
-		    img {
-		        max-width: 155px;
-		        margin-bottom: .75em;
-		    }
-		}
+			.logo {
+				img {
+					max-width: 155px;
+					margin-bottom: .75em;
+				}
+			}
 	    }
 
 	    @include mq( $until: mobile-landscape ) {
-		h1 {
-		    @include rem( 'font-size', 28px );
-		}
+			h1 {
+				@include rem( 'font-size', 28px );
+			}
 	    }
 	}
 }
@@ -541,7 +557,7 @@ header {
 
     .btn {
         display: block;
-        margin-top: 6em;
+        margin-top: 2em;
         font-weight: 600;
         padding: 1.25em 2.5em;
     }
@@ -759,7 +775,7 @@ header {
             > a {
 
                 color: white;
-                padding: 1em 1.1em;
+                padding: 1em;
                 text-transform: uppercase;
                 transition: color .15s ease;
                 @include rem( 'font-size', 13px );
@@ -1256,7 +1272,7 @@ header {
 		}
 	}
 	
-    @include mq( $from: tablet ) {
+	@include mq( $from: tablet ) {
         padding: 1em;
         @include rem( 'font-size', 13px );
 
@@ -1865,13 +1881,30 @@ html.translated-ltr, html.translated-rtl {
     background: white;
     @include rem( 'font-size', 13px );
     @include span( 1 of 5 no-gutters );
-	border: 1px solid #adafaf;
-	border-top: 5px solid $sunshade;
+	border: 1px solid #d1d4d3;
+	border-top: 5px solid #ffa02f;
 
     span {
         display: block;
         text-transform: uppercase;
     }
+	
+	span.nocase {
+        display: block;
+        text-transform: none !important;
+    }
+}
+	
+.event--cerulean {
+	border-top: 5px solid #0098db !important;
+}
+
+.event--robin {
+	border-top: 5px solid #00c7b2 !important;
+}
+
+.event--schoolbus {
+	border-top: 5px solid #fcd900 !important;
 }
 
 .event__info {
@@ -2440,14 +2473,14 @@ span[class^="text-"] {
 }
 
 .tag-list__link {
-    color: white;
+    color: #747678;
     line-height: 1;
     display: block;
     font-weight: 700;
     position: relative;
     padding: .5em .325em;
     text-decoration: none;
-    background-color: #cbcbcb;
+    background-color: #f6f6f6; /*#cbcbcb;*/
     @include rem( 'font-size', 13px );
 
     &:before,
@@ -2476,7 +2509,7 @@ span[class^="text-"] {
         left: 100%;
         border-style: solid;
         border-color: transparent;
-        border-left-color: #cbcbcb;
+        border-left-color: #f6f6f6;
         border-width: 13px;
         -webkit-transition: border .15s;
         -moz-transition: border .15s;
@@ -3000,12 +3033,10 @@ figure {
         padding: .25em;
         margin-bottom: .25em;
         line-height: 1.4;
-        background: white;
-		border: 1px solid #adafaf;
-		border-left: 5px solid $cerulean;
+        background: $science;
 
         a {
-            color: #37424a;
+            color: white;
             text-decoration: none;
         }
     }
@@ -3130,7 +3161,8 @@ figure {
 			display: none;
 		}
         .admin-menu & {
-            margin-top:169px;
+            //margin-top:169px;
+			margin-top:20px;
         }
         @extend .l-constrained;
         margin-left: auto !important;
@@ -3423,6 +3455,10 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
      @extend .text-gray;
      cursor: pointer;
   }
+}
+
+.gallery-view .card__container .card__image img {
+  border-radius: 4px;
 }
 
 /* Stellar

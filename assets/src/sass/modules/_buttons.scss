@@ -59,6 +59,7 @@
 
 }
 
+
 .btn--outline {
     color: $cerulean;
     background-color: white;
@@ -69,12 +70,18 @@
 
         i {
             color: white;
+			background-color: $cerulean;
         }
     }
 
     i {
+        padding: 0;
+    }
+
+    i.icon--heavy {
         color: white;
         background: $cerulean;
+		padding: .4em;
     }
 
     i.icon-chevron-left,

@@ -696,7 +696,7 @@ address {
 
 /* Corners
    ========================================================================== */
-.corner {
+.rounded-corner {
     border-radius: 4px;
 }
 
@@ -787,6 +787,14 @@ address {
     color: white !important;
 }
 
+.text-off-white {
+    color: #f6f6f6;
+}
+
+.text-off-white-like-background {
+    color: #eaeeef;
+}
+
 .text-gray,
 .gallery-menu li i.toggle {
     color: #656667 !important;
@@ -794,6 +802,11 @@ address {
 
 .text-pom {
     color: #ee3228 !important;
+}
+
+.inactive-link {
+    cursor: default !important;
+    pointer-events: none !important;
 }
 
 p.nav-ex {
@@ -820,6 +833,16 @@ p.nav-ex {
     font-size: 8px;
     font-size: .5rem;
     font-weight: 600;
+}
+
+/* Indent
+   ========================================================================== */
+.indent-s {
+    text-indent: 1em;
+}
+
+.indent-d {
+    text-indent: 2em;
 }
 
 /* Alignment
@@ -879,7 +902,7 @@ p.nav-ex {
     text-indent: -1em;
 }
 
-/* Horiziontal Rules
+/* Horizontal Rules
    ========================================================================== */
 .hr--dashed {
     border-top: 1px dashed #dde2e5;
@@ -888,7 +911,7 @@ p.nav-ex {
 /* Backgrounds
    ========================================================================== */
 .background--dark {
-    background-color: #37424a;
+    background-color: #37424a !important;
 }
 
 .background--dark.text-white > * {
@@ -897,6 +920,10 @@ p.nav-ex {
 
 .background-off-white {
     background-color: #eaeeef !important;
+}
+
+.background-off-white-darker {
+    background-color: #d8dfe2;
 }
 
 .background-white {
@@ -917,6 +944,10 @@ p.nav-ex {
 
 .background--robin {
     background: #00c7b2 !important;
+}
+
+.background--westar {
+    background: #dad7cb !important;
 }
 
 .overlay {
@@ -4022,7 +4053,7 @@ header.header--app .row {
 .hero__content .btn {
     font-weight: 600;
     display: block;
-    margin-top: 6em;
+    margin-top: 2em;
     padding: 1.25em 2.5em;
 }
 
@@ -4246,7 +4277,7 @@ header.header--app .row {
     font-size: .8125rem;
     min-height: 83px;
     min-height: 100px;
-    padding: 1em 1.1em;
+    padding: 1em;
     padding: 1em .75em;
     padding: 1em;
     transition: color .15s ease;
@@ -5106,7 +5137,7 @@ html.translated-rtl header.header--fixed {
     padding: .75em 0;
     text-align: center;
     color: #37424a;
-    border: 1px solid #adafaf;
+    border: 1px solid #d1d4d3;
     border-top: 5px solid #ffa02f;
     background: white;
 }
@@ -5114,6 +5145,23 @@ html.translated-rtl header.header--fixed {
 .event__date span {
     display: block;
     text-transform: uppercase;
+}
+
+.event__date span.nocase {
+    display: block;
+    text-transform: none !important;
+}
+
+.event--cerulean {
+    border-top: 5px solid #0098db !important;
+}
+
+.event--robin {
+    border-top: 5px solid #00c7b2 !important;
+}
+
+.event--schoolbus {
+    border-top: 5px solid #fcd900 !important;
 }
 
 .event__info {
@@ -5641,6 +5689,7 @@ span[class^="text-"].text-lg {
 }
 
 .tag-list__link {
+    /*#cbcbcb;*/
     font-size: 13px;
     font-size: .8125rem;
     font-weight: 700;
@@ -5649,8 +5698,8 @@ span[class^="text-"].text-lg {
     display: block;
     padding: .5em .325em;
     text-decoration: none;
-    color: white;
-    background-color: #cbcbcb;
+    color: #747678;
+    background-color: #f6f6f6;
 }
 
 .tag-list__link:before,
@@ -5683,7 +5732,7 @@ span[class^="text-"].text-lg {
     border-width: 13px;
     border-style: solid;
     border-color: transparent;
-    border-left-color: #cbcbcb;
+    border-left-color: #f6f6f6;
 }
 
 .tag-list__link:hover {
@@ -6151,14 +6200,12 @@ figure figcaption {
     line-height: 1.4;
     margin-bottom: .25em;
     padding: .25em;
-    border: 1px solid #adafaf;
-    border-left: 5px solid #0098db;
-    background: white;
+    background: #005bbb;
 }
 
 .calendar .view-item-event_calendar a {
     text-decoration: none;
-    color: #37424a;
+    color: white;
 }
 
 /* Tabs
@@ -6238,7 +6285,7 @@ figure figcaption {
 }
 
 .admin-menu .tabs.primary {
-    margin-top: 169px;
+    margin-top: 20px;
 }
 
 .tabs.primary li {
@@ -6467,6 +6514,10 @@ body #colorbox,
 
 .gallery-menu li i.toggle {
     cursor: pointer;
+}
+
+.gallery-view .card__container .card__image img {
+    border-radius: 4px;
 }
 
 /* Stellar
@@ -6700,9 +6751,15 @@ body #colorbox,
 
 .btn--outline:hover i {
     color: white;
+    background-color: #0098db;
 }
 
 .btn--outline i {
+    padding: 0;
+}
+
+.btn--outline i.icon--heavy {
+    padding: .4em;
     color: white;
     background: #0098db;
 }
@@ -6945,10 +7002,10 @@ body #colorbox,
     display: block;
     width: 100%;
     height: 40px;
+    /*outline: none;*/
     padding: .5em;
     border: none;
     border-radius: 0;
-    outline: none;
     background: #e4e9eb;
 
     -webkit-appearance: none;
@@ -6975,7 +7032,8 @@ textarea {
     -webkit-transition: border .15s, box-shadow .15s, background .15s;
        -moz-transition: border .15s, box-shadow .15s, background .15s;
             transition: border .15s, box-shadow .15s, background .15s;
-    color: #5d676f;
+    /*color: $shuttle;*/
+    color: #37424a;
     border: 1px solid #a7abad;
     border-radius: 4px;
 }
@@ -6987,9 +7045,10 @@ textarea {
 }
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
     border-color: #0098db;
-    outline: none;
+    /*outline: none;*/
 }
 
 input[type="checkbox"],
@@ -7003,7 +7062,7 @@ button[type="submit"] {
     height: auto;
     margin: 0;
     border: none;
-    outline: none;
+    /*outline: none;*/
 
     -webkit-appearance: none;
 }
@@ -7014,12 +7073,15 @@ button[type="submit"][value="None"] {
 }
 
 select {
+    font-size: .8125rem;
+    font-weight: 600;
     display: block;
     width: 100%;
-    padding: .62em 1em;
+    padding: .67em 1em;
     -webkit-transition: color .1s ease,border-color .1s ease;
             transition: color .1s ease,border-color .1s ease;
-    color: rgba(0, 0, 0, .87);
+    /*color: rgba(0,0,0,.87);*/
+    color: #37424a;
     border: 1px solid #a7abad;
     border-radius: 2px;
     background: white;
@@ -7259,6 +7321,11 @@ legend {
     width: 100%;
 }
 
+.views-submit-button input[type="submit"] {
+    color: white;
+    background-color: #0098db;
+}
+
 header .form--search input,
 header #views-exposed-form-events-page-1 input {
     border-color: white;
@@ -7472,6 +7539,10 @@ body.role-administrator .field-name-field-reg-http-referer {
 .views-widget-filter-field_event_date_value {
     float: left;
     width: 85%;
+}
+
+div.description {
+    font-size: .75rem;
 }
 
 .notification {

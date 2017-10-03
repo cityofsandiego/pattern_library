@@ -274,37 +274,38 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								</div>
 							</div>
 							<div class="six columns">
-	                            <p class="l-margin-bn"><strong>Notes</strong></p>
-	                            <p>Numerous <strong>.btn</strong> modifiers provide access to many button choices for (hopefully) any scenario that should arise. Here are primary modifiers:</p>
+								<p><strong>Main buttons</strong></p>
+							
+							
+						<div id="buttons-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#buttons-tab-item-1">Notes</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#buttons-tab-item-2">Code</a></li>
+							</ul>
 
-	                            <div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn" name="code">
+							<div class="tabs-container">
+
+								<div id="buttons-tab-item-1" class="tabs__bucket is-active">
+									<p>Numerous <strong>.btn</strong> modifiers allow styling of buttons. Use helper classes to apply variations to the main button styles. Blue button is default (<strong>btn--primary</strong>).</p>
+            					</div>
+
+								<div id="buttons-tab-item-2" class="tabs__bucket is-active">
+									<div class="code__examples">
+                                	<form><textarea class="pattern" id="buttons-code" name="code">
 <a class="btn btn--primary" href="#">Primary</a>
 <a class="btn btn--secondary" href="#">Secondary</a>
 <a class="btn btn--tertiary" href="#">Tertiary</a>
 <a class="btn btn--outline" href="#">Outline</a></textarea> </form> </div>
+            					</div>
+
+							</div>
+
+						</div>							
+
 							</div>
 						</div>
-
-						<div class="row l-padding-vm">
-							<div class="six columns">
-								<a class="btn--icon btn--half btn btn--primary btn--icon-right l-margin-vs" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
-								<a class="btn--icon btn--half btn btn--secondary l-margin-vs" href="#"><i class="icon-flickr"></i> Icon Button</a><br>
-								<a class="btn--icon btn--half btn btn--tertiary btn--icon-right l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
-								<a class="btn--icon btn--half btn btn--outline btn--icon-left l-margin-vs" href="#"><i class="icon-chevron-left"></i> Icon Button <i class="icon-twitter"></i></a>
-							</div>
-							<div class="six columns">
-	                            <p>Default modifiers with icons</p>
-
-	                            <div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-2" name="code">
-<a class="btn btn--primary" href="#"><i class="icon-dribbble"></i> Icon Button <i class="icon-chevron-right"></i></a>
-<a class="btn btn--secondary" href="#"><i class="icon-flickr"></i> Icon Button</a>
-<a class="btn btn--tertiary" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a></textarea> </form> </div>
-							</div>
-
-						</div>
-
+						
 						<div class="row l-padding-vm">
 							<div class="six columns">
 								<a class="btn btn--xs l-margin-vs" href="#">Extra Small</a>
@@ -314,24 +315,28 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<a class="btn btn--xl l-margin-vs" href="#">Extra Large</a>
 							</div>
 							<div class="six columns">
-								<p>Font size variations</p>
+								<p><strong>Size variations</strong></p>
 
 								
 					<div class="row l-margin-vd">
 					
 					
-						<div id="font-vars-tabs" class="tabs">
+						<div id="button-size-tabs" class="tabs">
 						
 							<ul class="tabs-list js-tabs-list">
-								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#font-vars-tab-item-1">Code</a></li>
-								<li class="tabs-list__item"><a class="tabs-list__link" href="#font-vars-tab-item-2">Notes</a></li>
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#button-size-tab-item-1">Notes</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#button-size-tab-item-2">Code</a></li>
 							</ul>
 
 							<div class="tabs-container">
 
-								<div id="font-vars-tab-item-1" class="tabs__bucket is-active">
+								<div id="button-size-tab-item-1" class="tabs__bucket is-active">
+									<p>Default size for home page buttons is Large (<strong>btn--lg</strong>).</p>
+            					</div>
+
+								<div id="button-size-tab-item-2" class="tabs__bucket is-active">
 									<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-3" name="code">
+                                	<form><textarea class="pattern" id="size-code" name="code">
 <a class="btn btn--xs" href="#">Extra Small</a>
 <a class="btn btn--sm" href="#">Small</a>
 <a class="btn btn--md" href="#">Medium</a>
@@ -339,20 +344,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <a class="btn btn--xl" href="#">Extra Large</a></textarea> </form> </div>
             					</div>
 
-								<div id="font-vars-tab-item-2" class="tabs__bucket is-active">
-									<p>Default size for home page buttons is Large (btn--lg).</p>
-            					</div>
-
 							</div>
 
 						</div>
 					
 					</div>
-								
-								
-								
-								
-								
 								
 							</div>
 						</div>
@@ -365,17 +361,17 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<a class="btn btn--pill-left l-margin-vs" href="#">Pill Left</a>
 							</div>
 							<div class="six columns">
-								<p>Border variations</p>
+								<p><strong>Border variations</strong></p>
 
 								<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-4" name="code">
+                                	<form><textarea class="pattern" id="border-code" name="code">
 <a class="btn btn--round" href="#">Rounded Corners</a>
 <a class="btn btn--oval" href="#">Pill Button</a>
 <a class="btn btn--pill-right" href="#">Pill Right</a>
 <a class="btn btn--pill-left" href="#">Pill Left</a> </textarea> </form> </div>
 							</div>
 						</div>
-
+						
 						<div class="row l-padding-vd">
 							<div class="six columns">
 								<p><a class="btn btn--wide" href="#">Wide</a></p>
@@ -383,7 +379,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<p><a class="btn btn--third" href="#">Third</a></p>
 							</div>
 							<div class="six columns">
-								<p>Width variations</p>
+								<p><strong>Width variations</strong></p>
 
 					<div class="row l-margin-vd">
 					
@@ -391,27 +387,27 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div id="btn-width-tabs" class="tabs">
 						
 							<ul class="tabs-list js-tabs-list">
-								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#btn-width-tab-item-1">Code</a></li>
-								<li class="tabs-list__item"><a class="tabs-list__link" href="#btn-width-tab-item-2">Notes</a></li>
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#btn-width-tab-item-1">Notes</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#btn-width-tab-item-2">Code</a></li>
 							</ul>
 
 							<div class="tabs-container">
 
 								<div id="btn-width-tab-item-1" class="tabs__bucket is-active">
-									<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-5" name="code">
-<a class="btn btn--wide" href="#">Wide</a>
-<a class="btn btn--half" href="#">Half</a>
-<a class="btn btn--third" href="#">Third</a></textarea> </form> </div>
-            					</div>
-
-								<div id="btn-width-tab-item-2" class="tabs__bucket is-active">
 									<p>Button width is dependent on parent div's width.</p>
 									<ul>
 										<li>Wide takes up 100% of the parent div's width.</li>
 										<li>Half takes up 50% of the parent div's width.</li>
 										<li>Third takes up 33.3% of the parent div's width.</li>
 									</ul>
+            					</div>
+
+								<div id="btn-width-tab-item-2" class="tabs__bucket is-active">
+									<div class="code__examples">
+                                	<form><textarea class="pattern" id="width-code" name="code">
+<a class="btn btn--wide" href="#">Wide</a>
+<a class="btn btn--half" href="#">Half</a>
+<a class="btn btn--third" href="#">Third</a></textarea> </form> </div>
             					</div>
 
 							</div>
@@ -431,29 +427,85 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<a class="btn btn--icon-right l-margin-vs" href="#">Next<i class="icon-chevron-right"></i></a>
 							</div>
 							<div class="six columns">
-								<p>Directional</p>
+								<p><strong>Directional variations</strong></p>
 
 								<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-6" name="code">
+                                	<form><textarea class="pattern" id="directional-code" name="code">
 <a class="btn btn--icon-left" href="#"><i class="icon-arrow-left"></i>Previous</a>
 <a class="btn btn--icon-right" href="#">Next<i class="icon-arrow-right"></i></a></textarea> </form> </div>
 							</div>
 						</div>
 
-						<div class="row l-padding-vd">
+						<div class="row l-padding-vm">
 							<div class="six columns">
-								<a class="btn btn--success l-margin-vs" href="#">Success</a>
-								<a class="btn btn--warning l-margin-vs" href="#">Warning</a>
-								<a class="btn btn--error l-margin-vs" href="#">Error</a>
+								<a class="btn--icon btn--half btn btn--primary btn--icon-right l-margin-vs" href="#"><i class="icon-user"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+								<a class="btn--icon btn--half btn btn--secondary l-margin-vs" href="#"><i class="icon-sun"></i> Icon Button</a><br>
+								<a class="btn--icon btn--half btn btn--tertiary btn--icon-right l-margin-vs" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+								<a class="btn--icon btn--half btn btn--outline btn--icon-left l-margin-vs" href="#"><i class="icon-chevron-left"></i> Icon Button <i class="icon-twitter icon--heavy"></i></a>
+								<a class="btn--half btn btn--outline l-margin-vs" href="#"><i class="icon-play"></i> Icon Button</a>
+								<a class="btn--half btn btn--outline l-margin-vs" href="#"><i class="icon-play icon--heavy"></i> Icon Button</a>
 							</div>
 							<div class="six columns">
-								<p>Messaging variations</p>
+	                            <p><strong>Button with Icon variations</strong></p>
+								
+					<div class="row l-margin-vd">
+					
+					
+						<div id="buttons-icons-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#button-icons-tab-item-1">Notes</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#button-icons-tab-item-2">Code</a></li>
+							</ul>
+
+							<div class="tabs-container">
+
+								<div id="button-icons-tab-item-1" class="tabs__bucket is-active">
+									<p>Icons are placed on the left side of button. Exception: An icon can be placed on the right side if the button has a left chevron arrow on the left side.<p>
+									<p>Class explanations</p>
+									<p><strong>.btn--icon</strong>: aligns text to left</p>
+									<p><strong>.btn--icon-left, .btn--icon-right</strong>: required if adding chevron arrows</p>
+									<p><strong>.icon--heavy</strong>: puts the icon in a blue circle in outline buttons only</p>
+	                            
+            					</div>
+
+								<div id="button-icons-tab-item-2" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form><textarea class="pattern" id="icon-code" name="code">
+<a class="btn btn--icon btn--primary btn--icon-right" href="#"><i class="icon-user"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+<a class="btn btn--icon btn--secondary" href="#"><i class="icon-sun"></i> Icon Button</a><br>
+<a class="btn btn--icon btn--tertiary btn--icon-right" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+<a class="btn btn--icon btn--outline btn--icon-left" href="#"><i class="icon-chevron-left"></i> Icon Button <i class="icon-twitter icon--heavy"></i></a>
+<a class="btn btn--outline" href="#"><i class="icon-play"></i> Icon Button</a>
+<a class="btn btn--outline" href="#"><i class="icon-play icon--heavy"></i> Icon Button</a></textarea> </form> </div>
+            					</div>
+
+							</div>
+
+						</div>
+					
+					</div>								
+								
+							</div>
+
+						</div>
+
+						<div class="row l-padding-vd">
+							<div class="six columns">
+								<a class="btn btn--success l-margin-vs" href="#">Success</a><br>
+								<a class="btn btn--warning l-margin-vs" href="#">Warning</a><br>
+								<a class="btn btn--error l-margin-vs" href="#">Error</a><br>
+								<a class="btn btn--disabled l-margin-vs" href="#">Disabled</a>
+							</div>
+							<div class="six columns">
+								<p><strong>Messaging variations</strong></p>
 
 								<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-7" name="code">
+                                	<form><textarea class="pattern" id="messaging-code" name="code">
 <a class="btn btn--success" href="#">Success</a>
 <a class="btn btn--warning" href="#">Warning</a>
-<a class="btn btn--error" href="#">Error</a></textarea> </form> </div>
+<a class="btn btn--error" href="#">Error</a>
+<a class="btn btn--disabled" href="#">Disabled</a></textarea> </form> </div>
 <p class="l-margin-bn l-margin-td"><em>Colors</em></p>
 <ul>
 <li>Success - default: #659f13, hover: #48710e</li>
@@ -464,19 +516,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							
 						</div>
 
-						<div class="row l-padding-vd">
-							<div class="six columns">
-								<a class="btn btn--disabled" href="#">Disabled</a>
-							</div>
-							<div class="six columns">
-								<p>Disabled</p>
-
-								<div class="code__examples">
-                                	<form><textarea class="pattern" id="type-code-btn-8" name="code">
-<a class="btn btn--disabled" href="#">Disabled</a></textarea> </form> </div>
-							</div>
-							
-						</div>
 				    </div>
 
 				</div>
