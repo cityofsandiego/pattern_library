@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -506,7 +507,7 @@ textarea {
         color: #000 !important;
         background: transparent !important;
         /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -557,6 +558,17 @@ textarea {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+    /*
+    * ID of contracts for cip reports forecast of projects to be awarded shows all table columns while printing.
+    */
+    .node-type-application table#contracts {
+        font-size: .95vw;
+        border-collapse: collapse;
+        border: 1px solid #666;
+    }
+    .node-type-application table#contracts td {
+        border: 1px solid #666;
     }
 }
 
@@ -826,11 +838,11 @@ address {
 }
 
 .text-off-white {
-    color: #f6f6f6;
+    color: #f6f6f6 !important;
 }
 
 .text-off-white-like-background {
-    color: #eaeeef;
+    color: #eaeeef !important;
 }
 
 .text-gray,
@@ -858,7 +870,8 @@ p.nav-ex {
     font-size: 1rem;
 }
 
-.view-more {
+.view-more,
+.theme-citynet.front .more-link {
     font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-size: .8125rem;
@@ -867,7 +880,8 @@ p.nav-ex {
     text-decoration: none;
 }
 
-.view-more i {
+.view-more i,
+.theme-citynet.front .more-link i {
     font-size: 8px;
     font-size: .5rem;
     font-weight: 600;
@@ -1006,7 +1020,8 @@ p.nav-ex {
 /* Gradient
    ========================================================================== */
 .main__navigation .dropdown,
-.form--signup button[type="submit"] {
+.form--signup button[type="submit"],
+.theme-citynet .tb-megamenu .dropdown-menu {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0.9+0,1+100 */
     background:    -moz-linear-gradient(top, rgba(255, 255, 255, .9) 0%, white 100%);
     /* FF3.6+ */
@@ -5798,6 +5813,10 @@ header.header--app .row {
     color: #ffa02f;
 }
 
+.main__navigation a i.icon-home {
+    color: #37424a;
+}
+
 .main__navigation a span {
     font-size: 11px;
     font-size: .6875rem;
@@ -5807,6 +5826,10 @@ header.header--app .row {
 }
 
 .main__navigation a:hover {
+    color: #f6f6f6;
+}
+
+.main__navigation a:hover i {
     color: #f6f6f6;
 }
 
@@ -5853,6 +5876,7 @@ header.header--app .row {
         opacity: 1;
     }
     .main__navigation .dropdown h4 a {
+        line-height: 1.3em;
         color: #37424a;
     }
     .main__navigation .dropdown h4 a:hover {
@@ -5861,7 +5885,11 @@ header.header--app .row {
 }
 
 .main__navigation .dropdown li {
-    margin: .25em 0;
+    margin: .5em 0;
+}
+
+.main__navigation .dropdown li a {
+    line-height: 1.3em;
 }
 
 .main__navigation .dropdown h4 {
@@ -8743,7 +8771,7 @@ body #colorbox,
     padding-top: .25em;
     text-align: center;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .menu-toggle:hover,
@@ -9633,7 +9661,7 @@ header #views-exposed-form-events-page-1 input[type="submit"]:hover {
         text-align: left;
     }
     .form__step fieldset:after {
-        top: 50%;
+        top: 55%;
         right: -10px;
         bottom: auto;
         left: auto;
@@ -10646,6 +10674,42 @@ div.description {
     bottom: 30px;
 }
 
+/* Caption
+   ========================================================================== */
+.wp-caption {
+    max-width: 100%;
+}
+
+/**
+ * Work around WP inline style of width
+ * https://core.trac.wordpress.org/ticket/14380
+ * Noted: 3.9
+ */
+.wp-caption {
+    max-width: 100%;
+    margin-bottom: 1em;
+    padding: .5em;
+    text-align: center;
+    border: 1px solid #f6f6f6;
+}
+
+.wp-caption > img {
+    padding: 0;
+    border: none;
+}
+
+.wp-caption-text {
+    font-size: 11px;
+    font-size: .6875rem;
+    margin: .75em 0 0 0;
+    color: #8b9ca9;
+}
+
+/* More Link
+   ========================================================================== */
+/**
+ * More tag => the_content, the_exerpt, <!-- more-->
+ */
 /* BASICS */
 .CodeMirror {
     /* Set height, width, borders, and global font properties here */
@@ -11152,42 +11216,599 @@ span.CodeMirror-selectedtext {
     background: none;
 }
 
-/* Caption
-   ========================================================================== */
-.wp-caption {
-    max-width: 100%;
+.theme-citynet main[role="main"],
+.theme-citynet .role-main {
+    position: relative;
+    z-index: 5;
+    margin-top: -50px;
 }
 
-/**
- * Work around WP inline style of width
- * https://core.trac.wordpress.org/ticket/14380
- * Noted: 3.9
- */
-.wp-caption {
-    max-width: 100%;
-    margin-bottom: 1em;
+@media screen and (min-width: 60em) {
+    .theme-citynet main[role="main"] .sub-navigation,
+    .theme-citynet .role-main .sub-navigation {
+        margin-top: 0;
+    }
+}
+
+.theme-citynet main[role="main"] .breadcrumbs + .l-container,
+.theme-citynet main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-exposed-form,
+#views-exposed-form-events-page-1 .theme-citynet main[role="main"] .breadcrumbs + .views-exposed-form,
+.theme-citynet .role-main .breadcrumbs + .l-container,
+.theme-citynet .role-main #views-exposed-form-events-page-1 .breadcrumbs + .views-exposed-form,
+#views-exposed-form-events-page-1
+.theme-citynet .role-main .breadcrumbs + .views-exposed-form {
+    background: white;
+}
+
+.theme-citynet.front .view-id-announcements.view-display-id-block .card__headline.heading--snug a {
+    font-family: "Merriweather",serif;
+    font-size: 1.3em;
+}
+
+.theme-citynet.front .view-id-announcements.view-display-id-block .view-display-id-attachment_1 .card__headline.heading--snug a {
+    font-size: 1em;
+}
+
+.theme-citynet.front .view .card__headline.heading--snug a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.theme-citynet.front .more-link {
+    float: left;
+    clear: both;
+}
+
+.theme-citynet.front .more-link a {
+    text-decoration: none;
+}
+
+.theme-citynet .tabs.primary {
+    margin-top: 100px;
+}
+
+@media screen and (min-width: 48em) {
+    .theme-citynet .logo:before {
+        height: 105px;
+        box-shadow: 0 1px 7px 1px rgba(0, 0, 0, .3);
+    }
+    .theme-citynet .logo img {
+        top: 0;
+    }
+    .theme-citynet .l-constrained--main {
+        z-index: 4;
+        margin-top: -50px;
+    }
+    .theme-citynet header {
+        background-color: #009581;
+    }
+    .theme-citynet .main__navigation--portal {
+        background-color: transparent;
+    }
+    .theme-citynet .main__navigation--portal li:last-child {
+        float: none;
+    }
+    .theme-citynet .main__navigation > ul {
+        min-height: 0;
+
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+    }
+    .theme-citynet .main__navigation > ul > li {
+        width: auto;
+    }
+    .theme-citynet .hero__slides > .row {
+        padding: 40px 0 0 0;
+    }
+    .theme-citynet .hero--credit {
+        bottom: 4em;
+    }
+    .theme-citynet #citynet-title a,
+    .theme-citynet #citynet-title {
+        color: white;
+    }
+    .theme-citynet .card--container .card--wrap,
+    .theme-citynet .card__container .card__wrap {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 74.99em) {
+    .theme-citynet .main__navigation > ul > li > a {
+        min-height: 0;
+    }
+}
+
+@media screen and (max-width: 59.99em) {
+    .theme-citynet .hero__slides--secondary {
+        padding-bottom: 0;
+    }
+    .theme-citynet .hero__slides--img li:after {
+        background-color: transparent;
+    }
+    .theme-citynet #citynet-title {
+        font-size: 1.7rem;
+        margin-top: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .theme-citynet [role="main"] {
+        margin-top: 0;
+    }
+    .theme-citynet .menu-toggle {
+        top: .5em;
+    }
+    .theme-citynet .hero__slides--secondary {
+        padding-bottom: 1.5em;
+    }
+    .theme-citynet .hero__slides--img li:after {
+        background-color: transparent;
+    }
+    .theme-citynet .hero__slides > .row {
+        padding: 1em 0;
+    }
+    .theme-citynet .main__message .main__heading {
+        font-size: 1.5rem;
+        margin-top: 40px;
+    }
+    .theme-citynet header .form--search,
+    .theme-citynet header #views-exposed-form-events-page-1 {
+        top: 80px;
+    }
+    .theme-citynet #citynet-title a {
+        color: #37424a;
+    }
+}
+
+.theme-citynet .event__date {
+    font-size: 1.5em;
+    line-height: 1.2em;
     padding: .5em;
-    text-align: center;
-    border: 1px solid #f6f6f6;
 }
 
-.wp-caption > img {
+.theme-citynet.node-type-department-parent .event__date {
+    font-size: inherit;
+    line-height: inherit;
+    padding: inherit;
+}
+
+.theme-citynet header,
+.theme-citynet .main__navigation {
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .3);
+}
+
+.theme-citynet .navigation__wrap {
+    background: transparent;
+}
+
+.theme-citynet .main__message {
+    padding: 0;
+}
+
+.theme-citynet.node-type-blog main .main__message {
+    padding-top: 2.5em;
+}
+
+.theme-citynet ul.ui-autocomplete {
+    z-index: 90000;
+}
+
+.theme-citynet .tb-megamenu-nav {
+    overflow: visible;
+}
+
+.theme-citynet .tb-megamenu {
+    background-color: white;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li > a.dropdown-toggle,
+.theme-citynet .tb-megamenu ul.nav > li.active > a.dropdown-toggle {
+    font-size: 13px;
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.6;
+    position: relative;
+    display: block;
+    padding: 1em 1.1em;
+    transition: color .15s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #37424a;
+    background-color: white;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li > a.dropdown-toggle:focus,
+.theme-citynet .tb-megamenu ul.nav > li.active > a.dropdown-toggle:focus {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li > a.dropdown-toggle:hover,
+.theme-citynet .tb-megamenu ul.nav > li.active > a.dropdown-toggle:hover {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li.dropdown.open .dropdown-toggle,
+.theme-citynet .tb-megamenu ul.nav > li.active.dropdown.open .dropdown-toggle {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li.dropdown.active > .dropdown-toggle {
+    color: #37242a;
+    border-color: #ccc;
+    background-color: white;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li.dropdown.active > .dropdown-toggle .caret {
+    border-top-color: #666;
+    border-bottom-color: #666;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li.dropdown.active > .dropdown-toggle:focus {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet .tb-megamenu ul.nav > li.dropdown.active > .dropdown-toggle:hover {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet .tb-megamenu .dropdown-menu {
+    z-index: 10;
+    margin: 0;
     padding: 0;
     border: none;
 }
 
-.wp-caption-text {
-    font-size: 11px;
-    font-size: .6875rem;
-    margin: .75em 0 0 0;
-    color: #8b9ca9;
+.theme-citynet .tb-megamenu .mega-align-justify > .dropdown-menu {
+    top: 102%;
 }
 
-/* More Link
-   ========================================================================== */
-/**
- * More tag => the_content, the_exerpt, <!-- more-->
- */
+.theme-citynet .tb-megamenu .field-item a:hover {
+    color: #0098db !important;
+}
+
+.theme-citynet .tb-megamenu .field-item > ul {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.theme-citynet .tb-megamenu .field-item > ul > li {
+    float: left;
+    margin-right: 5em;
+    margin-bottom: 1em;
+}
+
+.theme-citynet .tb-megamenu .tb-block {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 979px) {
+    .theme-citynet .tb-megamenu .nav-collapse {
+        background-color: white;
+        box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .5);
+    }
+    .theme-citynet .tb-megamenu .nav-collapse .nav > li > a {
+        border: none;
+    }
+    .theme-citynet .tb-megamenu .nav-collapse.collapse {
+        margin-top: 20px;
+    }
+    .theme-citynet .tb-megamenu .always-show .mega > .mega-dropdown-menu,
+    .theme-citynet .tb-megamenu .always-show .dropdown-menu {
+        display: none !important;
+    }
+}
+
+.theme-citynet nav.sub-navigation {
+    background-color: white;
+}
+
+.theme-citynet nav.sub-navigation a {
+    font-size: 1rem;
+    color: #37424a;
+}
+
+.theme-citynet nav.sub-navigation ul.contextual-links li {
+    position: relative;
+    top: 0;
+    height: 20px;
+    background-color: white;
+}
+
+.theme-citynet nav.sub-navigation ul.contextual-links li a {
+    font-size: 1rem;
+    background-color: white;
+}
+
+.theme-citynet nav.sub-navigation ul.contextual-links li a:hover {
+    background-color: grey;
+}
+
+.theme-citynet nav.sub-navigation .content {
+    border-bottom: 1px solid #37424a;
+    border-bottom: none;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .5);
+}
+
+.theme-citynet nav.sub-navigation .content li.leaf,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item {
+    position: static;
+    float: left;
+    margin: 0;
+    opacity: 1;
+    border-bottom: none;
+    background-color: white;
+}
+
+.theme-citynet nav.sub-navigation .content li.leaf > a,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item > a {
+    font-size: 13px;
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1.6;
+    position: relative;
+    display: block;
+    padding: 1em 1.1em;
+    transition: color .15s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #37424a;
+    border-right: 1px solid #ccc;
+}
+
+@media screen and (max-width: 979px) {
+    .theme-citynet nav.sub-navigation .content li.leaf > a,
+    .theme-citynet nav.sub-navigation .content li.tb-megamenu-item > a {
+        border-right: none;
+    }
+}
+
+.theme-citynet nav.sub-navigation .content li.leaf > a:focus,
+.theme-citynet nav.sub-navigation .content li.leaf > a:hover,
+.theme-citynet nav.sub-navigation .content li.leaf > a.active,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item > a:focus,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item > a:hover,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item > a.active {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet nav.sub-navigation .content li.leaf .tb-megamenu-submenu,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item .tb-megamenu-submenu {
+    width: 100%;
+}
+
+.theme-citynet nav.sub-navigation .content li.leaf .tb-megamenu-submenu .tb-megamenu-column-inner,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item .tb-megamenu-submenu .tb-megamenu-column-inner {
+    padding: 2em 2em 0 2em;
+}
+
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item.active > a,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item.active > a.dropdown-toggle {
+    color: white;
+    background: #e89e3b;
+}
+
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item.active > a .caret,
+.theme-citynet nav.sub-navigation .content li.tb-megamenu-item.active > a.dropdown-toggle .caret {
+    border-top-color: white;
+    border-bottom-color: white;
+}
+
+.theme-citynet nav.sub-navigation .content .mega-dropdown-inner .content {
+    box-shadow: none;
+}
+
+.theme-citynet .no-slides {
+    background: none;
+}
+
+.theme-citynet aside div.widget > ul.menu {
+    margin-bottom: 1em;
+}
+
+.theme-citynet div.search-result-wrapper h3.title a:visited {
+    color: #551a8b;
+}
+
+@media screen and (min-width: 60em) {
+    .theme-citynet.logged-in.admin-menu header.header--fixed {
+        top: 28px;
+    }
+    .theme-citynet.logged-in.admin-menu header.header--fixed.has-alert {
+        top: 88px;
+    }
+}
+
+.theme-citynet header .form--search input[type="text"],
+.theme-citynet header #views-exposed-form-events-page-1 input[type="text"] {
+    margin: 0;
+}
+
+.theme-citynet header.header--fixed .form--search input[type="submit"],
+.theme-citynet header.header--fixed #views-exposed-form-events-page-1 input[type="submit"] {
+    border-color: #e4e9eb;
+}
+
+/* Admin page settings specific to citynet */
+/* backup and migrate */
+#edit-filters-sources-db-exclude-tables,
+#edit-filters-sources-db-nodata-tables {
+    height: 400px;
+}
+
+#business-resources .main__message .btn--primary {
+    color: #fff;
+}
+
+#business-resources .main__message .btn--outline {
+    color: #0098db;
+}
+
+#business-resources .main__message .btn--outline:hover {
+    color: white;
+}
+
+#business-resources #nav-controls #clear-business-resources-search {
+    cursor: pointer;
+}
+
+#business-resources #nav-controls .main__navigation > ul > .target-business:hover > a,
+#business-resources #nav-controls .main__navigation > ul > .target-business:hover > a > span {
+    background-color: #00c7b2 !important;
+}
+
+#business-resources #nav-controls .main__navigation > ul > li > a {
+    min-height: initial;
+}
+
+#business-resources #nav-controls .main__navigation > ul > .resource-type:hover > a,
+#business-resources #nav-controls .main__navigation > ul > .resource-type:hover > a > span {
+    background-color: #ffa02f !important;
+}
+
+#business-resources #nav-controls .has__dropdown {
+    width: 50%;
+    background-color: #fff;
+}
+
+#business-resources #nav-controls .has__dropdown:before {
+    width: 0;
+}
+
+#business-resources #nav-controls .has__dropdown:first-child {
+    margin-right: 25px;
+}
+
+#business-resources #nav-controls .has__dropdown.target-business a .icon-chevron-down {
+    position: absolute;
+    right: 0;
+    background-color: #00c7b2;
+}
+
+#business-resources #nav-controls .has__dropdown.resource-type a .icon-chevron-down {
+    position: absolute;
+    right: 0;
+    background-color: #ffa02f;
+}
+
+#business-resources #nav-controls .has__dropdown a {
+    padding: 0;
+    border: 1px solid #a7abad;
+    border-radius: 4px;
+}
+
+#business-resources #nav-controls .has__dropdown a .icon-chevron-down {
+    float: right;
+    padding: 13px;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+#business-resources #nav-controls .has__dropdown a:after {
+    width: 0;
+}
+
+#business-resources #nav-controls .has__dropdown .filter-text {
+    font-size: 15px;
+    display: inline-block;
+    padding: 10px;
+}
+
+#business-resources #nav-controls .card {
+    border-top: 1px solid #a7abad;
+    border-radius: 0 0 0 0;
+}
+
+#business-resources #nav-controls .card__content {
+    padding: 1em;
+}
+
+#business-resources #nav-controls .card__content .accordion__heading {
+    padding: .5em;
+    border: 1px solid #a7abad;
+    background-color: #f6f6f6;
+}
+
+#business-resources #nav-controls .accordion {
+    background-color: none;
+}
+
+#business-resources .form-item input {
+    padding: 1em;
+}
+
+#business-resources .form-submit {
+    padding: 1em;
+}
+
+#business-resources .resources hr {
+    border-top: 1px solid #a7abad;
+}
+
+#business-resources .resources .no-result {
+    margin-top: 5px;
+}
+
+#business-resources .resources .responsive-row {
+    margin: 0;
+    padding-top: .75em;
+    transition: background .25s ease;
+    background-color: #fff;
+}
+
+#business-resources .resources .responsive-row:nth-child(even) {
+    background-color: #e4e9eb;
+}
+
+#business-resources .resources .responsive-row:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+
+#business-resources .resources .responsive-row:hover {
+    cursor: pointer;
+    transition: background .25s ease;
+    background-color: #fff;
+}
+
+#business-resources .resources .responsive-row .resource-tag {
+    margin-bottom: 5px;
+}
+
+#business-resources .resources .responsive-row .resource-tag.type-of-assistance a {
+    display: inline-block;
+    padding: 0 4px;
+    text-decoration: none;
+    color: #37424a;
+}
+
+#business-resources .resources .responsive-row .resource-tag.type-of-assistance a:before {
+    content: "• ";
+    color: #ffa02f;
+}
+
+#business-resources .resources .responsive-row .resource-tag.target-business a {
+    display: inline-block;
+    padding: 2px 4px;
+    text-decoration: none;
+    color: #37424a;
+}
+
+#business-resources .resources .responsive-row .resource-tag.target-business a:before {
+    content: "• ";
+    color: #00c7b2;
+}
+
+#business-resources .resources .responsive-row .row-icons {
+    float: right;
+}
+
 .is-actionable {
     cursor: pointer;
 }
@@ -12416,8 +13037,13 @@ html[xmlns] .flexslider .slides {
     }
 }
 
+.flexslider--thumbnails-nav li {
+    max-height: 110px;
+    padding-bottom: 5px;
+}
+
 .flexslider--thumbnails-nav li img {
-    padding: 5px;
+    padding: 5px 5px 0 5px;
     -webkit-transition: opacity .25s ease;
        -moz-transition: opacity .25s ease;
         -ms-transition: opacity .25s ease;

@@ -1,0 +1,171 @@
+#business-resources {
+
+  .main__message {
+    .btn--primary {
+      color: #fff;
+    }
+    .btn--outline {
+      color: $cerulean;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  #nav-controls {
+    #clear-business-resources-search {
+      cursor: pointer;
+    }
+    .main__navigation>ul>.target-business:hover>a, .main__navigation>ul>.target-business:hover>a>span {
+        background-color: $robin !important;
+    }
+
+    .main__navigation>ul>li>a {
+      min-height: initial;
+    }
+    .main__navigation>ul>.resource-type:hover>a, .main__navigation>ul>.resource-type:hover>a>span {
+        background-color: $sunshade !important;
+    }
+
+    .has__dropdown {
+        width: 50%;
+        background-color: #fff;
+        &:before {
+          width: 0px;
+        }
+
+        &:first-child {
+          margin-right: 25px;
+        }
+
+        &.target-business {
+          a {
+            .icon-chevron-down {
+              position: absolute;
+              right: 0px;
+              background-color: $robin;
+            }
+          }
+        }
+
+        &.resource-type {
+          a {
+            .icon-chevron-down {
+              position: absolute;
+              right: 0px;
+              background-color: $sunshade;
+            }
+          }
+        }
+
+        a {
+          border: 1px solid $chateau;
+          border-radius: 4px;
+          padding: 0px;
+
+          .icon-chevron-down {
+            float: right;
+            padding: 13px;
+            border-radius: 0px 4px 4px 0px;
+            color: white;
+          }
+
+          &:after {
+            width: 0px;
+          }
+        }
+        .filter-text {
+          display: inline-block;
+          padding: 10px;
+          font-size: 15px;
+        }
+    }
+
+    .card {
+      border-radius: 0px 0px 0px 0px;
+      border-top: 1px solid $chateau;
+    }
+
+    .card__content {
+      padding: 1em;
+
+      .accordion__heading {
+        border: 1px solid $chateau;
+        background-color: $off-white;
+        padding: 0.5em;
+      }
+    }
+    .accordion {
+      background-color: none;
+    }
+  }
+
+  .form-item input {
+    padding: 1em;
+  }
+
+  .form-submit {
+    padding: 1em;
+  }
+
+  .resources {
+
+    hr {
+      border-top: 1px solid $chateau;
+    }
+
+    .no-result {
+      margin-top: 5px;
+    }
+
+    .responsive-row {
+      margin: 0px;
+      padding-top: 0.75em;
+      background-color: #fff;
+      transition: background 0.25s ease;
+
+      &:nth-child(even){
+        background-color: $mercury;
+      }
+
+      &:nth-child(odd){
+        background-color: $off-white;
+      }
+      &:hover {
+        background-color: #fff;
+        cursor: pointer;
+        transition: background 0.25s ease;
+      }
+
+      .resource-tag {
+        margin-bottom: 5px;
+        &.type-of-assistance a {
+          &:before {
+            content: '• ';
+            color: $sunshade;
+          }
+          color: $spruce;
+          display: inline-block;
+          padding: 0px 4px;
+          text-decoration: none;
+        }
+
+        &.target-business a {
+          &:before {
+            content: '• ';
+            color: $robin;
+          }
+          color: $spruce;
+          display: inline-block;
+          padding: 2px 4px;
+          text-decoration: none;
+        }
+      }
+
+      .row-icons {
+        float: right;
+      }
+    }
+  }
+}

@@ -250,10 +250,10 @@
     color: white !important;
 }
 .text-off-white {
-    color: $off-white;
+    color: $off-white !important;
 }
 .text-off-white-like-background {
-    color: lighten( $mercury, 2% );
+    color: lighten( $mercury, 2% ) !important;
 }
 .text-gray {
     color: $gray !important;
@@ -264,7 +264,7 @@
 
 .inactive-link {
 	pointer-events: none !important;
-	cursor: default !important;							
+	cursor: default !important;
 }
 
 // pattern library use only
@@ -301,6 +301,8 @@ p.nav-ex {
 .indent-d {
   text-indent: 2em;
 }
+
+
 
 /* Alignment
    ========================================================================== */
@@ -387,7 +389,7 @@ p.nav-ex {
 }
 
 .background-off-white-darker {
-    background-color: darken( $mercury, 4% );					 
+    background-color: darken( $mercury, 4% );
 }
 
 .background-white {

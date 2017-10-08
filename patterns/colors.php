@@ -3,7 +3,7 @@
 require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
-<!-- color variables are in _settings.scss -->
+<!-- color names are in _settings.scss -->
 
         <div class="l-constrained row patterns background-white l-padding-mobile-hd">
             <aside>
@@ -16,19 +16,20 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Color Palette</h1>
                 <div class="sub__nav--library">
                     <ul class="sub__nav">
-                        <li><a href="#primary">Primary</a></li>
-                        <li><a href="#secondary">Secondary</a></li>
+                        <li><a href="#primary">Primary Colors</a></li>
+                        <li><a href="#secondary">Secondary Colors</a></li>
+                        <li><a href="#website">Website-only Colors</a></li>
                     </ul>
                 </div>
 				
 				<div class="l-container l-margin-tm">
-					<p>Additional information about the color palette is available in the City of San Diego <a href="https://www.sandiego.gov/sites/default/files/visual-style-guide.pdf#page=26">Style Guide</a>.</p>
+					<p>Primary and secondary colors are from the City of San Diego <a href="https://www.sandiego.gov/sites/default/files/visual-style-guide.pdf#page=26">Style Guide</a>.</p>
 				</div>
 				
                 <div id="primary" class="l-container l-margin-tm">
                     <div class="row l-margin-bm">
                         <div class="twelve columns">
-                            <h2>Primary</h2>
+                            <h2>Primary Colors</h2>
                         </div>
                     </div>
                     
@@ -66,7 +67,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div id="secondary" class="l-container">
                     <div class="row l-margin-bm">
                         <div class="twelve columns">
-                            <h2>Secondary</h2>
+                            <h2>Secondary Colors</h2>
                         </div>
                     </div>
                     
@@ -223,8 +224,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#f6f6f6;"></i></p>
-		<p>#f6f6f6<br>rgb (246, 246, 246)<br><span class="fine-print">off-white </span></p>
+		<p>#f6f6f6<br>rgb (246, 246, 246)<br><span class="fine-print">off-white</span></p>
 	</div>
+	<div class="four columns text-center l-margin-bm">
+		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#e4e9eb;"></i></p>
+		<p>#e4e9eb<br>rgb (228, 233, 235)<br><span class="fine-print">mercury</span></p>
+	</div>
+	<div class="four columns text-center l-margin-bm">
+		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#dde2e5;"></i></p>
+		<p>#dde2e5<br>rgb (221, 226, 229)<br><span class="fine-print">alto</span></p>
+	</div>
+</div> 
+<div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#e89e3b;"></i></p>
 		<p>#e89e3b<br>rgb (232, 158, 59)<br><span class="fine-print">tulip</span></p>
@@ -233,7 +244,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#0065b2;"></i></p>
 		<p>#0065b2<br>rgb (0, 101, 178)<br><span class="fine-print">endeavour</span></p>
 	</div>
-</div>    
+	<div class="four columns text-center l-margin-bm">
+		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#551a8b;"></i></p>
+		<p>#551a8b<br>rgb (85, 26, 139)<br><span class="fine-print">purple</span></p>
+	</div>
+</div>   
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#659f13;"></i></p>

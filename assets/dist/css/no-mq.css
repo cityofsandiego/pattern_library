@@ -506,7 +506,7 @@ textarea {
         color: #000 !important;
         background: transparent !important;
         /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+                                          http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -557,6 +557,17 @@ textarea {
     h2,
     h3 {
         page-break-after: avoid;
+    }
+    /*
+    * ID of contracts for cip reports forecast of projects to be awarded shows all table columns while printing.
+    */
+    .node-type-application table#contracts {
+        font-size: .95vw;
+        border-collapse: collapse;
+        border: 1px solid #666;
+    }
+    .node-type-application table#contracts td {
+        border: 1px solid #666;
     }
 }
 
@@ -788,11 +799,11 @@ address {
 }
 
 .text-off-white {
-    color: #f6f6f6;
+    color: #f6f6f6 !important;
 }
 
 .text-off-white-like-background {
-    color: #eaeeef;
+    color: #eaeeef !important;
 }
 
 .text-gray,
@@ -4304,6 +4315,10 @@ header.header--app .row {
     color: #ffa02f;
 }
 
+.main__navigation a i.icon-home {
+    color: #37424a;
+}
+
 .main__navigation a span {
     font-size: 11px;
     font-size: .6875rem;
@@ -4313,6 +4328,10 @@ header.header--app .row {
 }
 
 .main__navigation a:hover {
+    color: #f6f6f6;
+}
+
+.main__navigation a:hover i {
     color: #f6f6f6;
 }
 
@@ -4339,6 +4358,7 @@ header.header--app .row {
 }
 
 .main__navigation .dropdown h4 a {
+    line-height: 1.3em;
     color: #37424a;
 }
 
@@ -4347,7 +4367,11 @@ header.header--app .row {
 }
 
 .main__navigation .dropdown li {
-    margin: .25em 0;
+    margin: .5em 0;
+}
+
+.main__navigation .dropdown li a {
+    line-height: 1.3em;
 }
 
 .main__navigation .dropdown h4 {
@@ -7421,7 +7445,7 @@ header #views-exposed-form-events-page-1 input[type="submit"]:hover {
 }
 
 .form__step fieldset:after {
-    top: 50%;
+    top: 55%;
     right: -10px;
     bottom: auto;
     left: auto;
@@ -7669,7 +7693,7 @@ div.description {
     padding-top: .25em;
     text-align: center;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .menu-toggle:hover,

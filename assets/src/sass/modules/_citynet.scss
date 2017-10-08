@@ -1,0 +1,420 @@
+.theme-citynet {
+
+  main[role="main"],
+  .role-main {
+      z-index: 5;
+      position: relative;
+      margin-top: -50px;
+
+      @include mq( $from: site ) {
+	  .sub-navigation {
+	      margin-top: 0;
+	  }
+      }
+
+      .breadcrumbs {
+  	+ .l-container {
+	      background: white;
+	  }
+      }
+  }
+
+  // Front page.
+  &.front {
+
+    // Announcement title for first block.
+    .view-id-announcements.view-display-id-block {
+      .card__headline.heading--snug a {
+        font-size: 1.3em;
+        font-family: "Merriweather",serif;
+      }
+      // Titles for block attached to announcements block.
+      .view-display-id-attachment_1 {
+        .card__headline.heading--snug a {
+          font-size: 1em;
+        }
+      }
+    }
+
+      // View title link changes.
+    .view .card__headline.heading--snug a {
+      color: inherit;
+      text-decoration: none;
+    }
+    // Announcements view more-link.
+    .more-link {
+      float: left;
+      clear: both;
+      @extend .view-more;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .tabs {
+    &.primary {
+      margin-top:100px;
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    .logo:before {
+      height: 105px;
+      box-shadow: 0px 1px 7px 1px rgba(0, 0, 0, 0.3);
+    }
+    .logo img {
+      top: 0;
+    }
+    .l-constrained--main {
+      margin-top: -50px;
+      z-index: 4;
+    }
+    header {
+      background-color: #009581;
+    }
+    .main__navigation--portal {
+      background-color: transparent;
+    }
+    .main__navigation--portal li:last-child {
+      float: none;
+    }
+    .main__navigation > ul {
+      min-height: 0;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+    }
+    .main__navigation > ul > li {
+      width: auto;
+    }
+    .hero__slides > .row {
+      padding: 40px 0 0 0;
+    }
+    .hero--credit {
+      bottom: 4em;
+    }
+    // Dept Name top and bottom padding
+    #citynet-title a, #citynet-title {
+      color: white;
+    }
+    .card--container .card--wrap,
+    .card__container .card__wrap {
+      width: 25%;
+    }
+  }
+
+  @media screen and (max-width: 74.99em) {
+    .main__navigation > ul > li > a {
+      min-height: 0;
+    }
+  }
+
+  @media screen and (max-width: 59.99em) {
+    .hero__slides--secondary {
+      padding-bottom: 0;
+    }
+    .hero__slides--img li:after {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    #citynet-title {
+      font-size: 1.7rem;
+      margin-top: 1.3rem;
+    }
+  }
+
+  @media screen and (max-width: 47.99em) {
+    [role="main"] {
+      margin-top: 0;
+    }
+    .menu-toggle {
+      top: .5em;
+    }
+    .hero__slides--secondary {
+      padding-bottom: 1.5em;
+    }
+    .hero__slides--img li:after {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    .hero__slides > .row {
+      padding: 1em 0;
+    }
+    .main__message .main__heading {
+      font-size: 1.5rem;
+	  margin-top: 40px;
+    }
+    header .form--search {
+      top: 80px;
+    }
+    #citynet-title a {
+      color: #37424a;
+    }
+  }
+
+  .event__date {
+    font-size: 1.5em;
+    padding: .5em;
+    line-height: 1.2em;
+  }
+
+  &.node-type-department-parent .event__date {
+    font-size: inherit;
+    padding: inherit;
+    line-height: inherit;
+  }
+
+  header, .main__navigation {
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.3);
+  }
+
+  .navigation__wrap {
+    background: transparent;
+  }
+
+  .main__message {
+    padding: 0;
+  }
+
+  &.node-type-blog main .main__message {
+    padding-top: 2.5em;
+  }
+
+  ul.ui-autocomplete {
+    z-index: 90000;
+  }
+
+  .tb-megamenu-nav {
+    overflow: visible;
+  }
+
+  .tb-megamenu {
+	background-color: white;
+    ul.nav {
+      > li, > li.active {
+        > a.dropdown-toggle {
+          display: block;
+		  background-color: white;
+          line-height: 1.6;
+          position: relative;
+          text-decoration: none;
+          color: #37424a;
+          padding: 1em 1.1em;
+          text-transform: uppercase;
+          transition: color .15s ease;
+          font-size: 13px;
+          font-size: 0.8125rem;
+          font-weight: 600;
+          //border-right: 1px solid #ccc;
+          &:focus {
+            background: $tulip;
+            color: white;
+          }
+          &:hover {
+            background: $tulip;
+            color: white;
+          }
+        }
+        &.dropdown.open {
+          .dropdown-toggle {
+            background: $tulip;
+            color: white;
+          }
+        }		
+      }
+	  > li.dropdown.active > .dropdown-toggle {
+		  background-color: white;
+		  border-color: #ccc;
+		  color: #37242a;
+		  .caret {
+			border-top-color: #666;
+			border-bottom-color: #666;
+		  }
+          &:focus {
+            background: $tulip;
+            color: white;
+          }
+          &:hover {
+            background: $tulip;
+            color: white;
+          }
+	  }
+    }
+    .dropdown-menu {
+      margin: 0;
+      padding: 0;
+      z-index: 10;
+      @extend %white-gradient;
+	  border: none;
+    }
+    .mega-align-justify > .dropdown-menu {
+
+      top: 102%;
+    }
+	.field-item {
+	  a:hover {
+		color: $cerulean !important;
+	  } 
+	  > ul {
+		width: 100%;
+	    display: block;
+	    margin-bottom: 1em;
+	    > li {
+		  float: left;
+		  margin-right: 5em;
+		  margin-bottom: 1em;
+	    }
+	  }
+	}
+	.tb-block {
+		margin-bottom: 0;
+	}
+	@media screen and (max-width: 979px) {
+	  .nav-collapse {
+		background-color: white;		
+        box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.5);
+		.nav > li > a {
+			border: none;
+		}
+		&.collapse {
+			margin-top: 20px;
+		}
+	  }
+	  .always-show .mega > .mega-dropdown-menu, .always-show .dropdown-menu {
+		display: none !important;
+	  }
+	  
+	} 
+  }
+
+  nav.sub-navigation {
+    background-color: white;
+	a {
+		font-size: 1rem;
+		color: #37424a;
+	}
+    ul.contextual-links li {
+      background-color: white;
+      position: relative;
+      top: 0;
+      height: 20px;
+
+      a {
+        background-color: white;
+		font-size: 1rem;
+        &:hover {
+          background-color: grey;
+        }
+      }
+    }
+    .content {
+      border-bottom: 1px solid #37424a;
+      border-bottom: none;
+      box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.5);
+      li.leaf, li.tb-megamenu-item {
+        background-color: white;
+        margin: 0;		
+		float: left;
+		position: static;
+		border-bottom: none;
+		opacity: 1;
+		
+        &>a {
+          display: block;
+          line-height: 1.6;
+          position: relative;
+          text-decoration: none;
+          color: #37424a;
+          padding: 1em 1.1em;
+          text-transform: uppercase;
+          transition: color .15s ease;
+          font-size: 13px;
+          font-size: 0.8125rem;
+          font-weight: 600;
+          border-right: 1px solid #ccc;
+		  @media screen and (max-width: 979px) {
+			border-right: none;
+		  }
+          &:focus, &:hover, &.active {
+            background: $tulip;
+            color: white;
+          }
+        }		
+		
+		.tb-megamenu-submenu {
+			width: 100%;
+			
+			.tb-megamenu-column-inner {
+				padding: 2em 2em 0 2em;
+			}
+		}		
+      }
+	  li.tb-megamenu-item.active {
+	    > a, > a.dropdown-toggle {
+			background: $tulip;
+			color: white;
+			.caret {
+			  border-top-color: white;
+			  border-bottom-color: white;
+			}
+		}
+	  }
+	  .mega-dropdown-inner .content {
+	    box-shadow: none;
+		
+		li {
+		  
+		}
+	  }
+    }
+  }
+
+  .no-slides {
+    background: none;
+  }
+
+  // On the menu blocks in the sidebar have a shorter bottom margin.
+  // aside three.column .widget>ul.menu {
+  aside div.widget>ul.menu {
+    margin-bottom: 1em;
+  }
+
+  // Search results visited
+  div.search-result-wrapper h3.title a:visited {
+    color: $link-color-visited;
+  }
+
+
+  // Adjustments after changing sandiego.gov to shorter header.
+  @include mq($from: site) {
+    &.logged-in.admin-menu header.header--fixed {
+      top: 28px;
+      &.has-alert {
+        top: 88px;
+      }
+    }
+  }
+
+  // Align the dropshadow effect on the search box.
+  header .form--search {
+    input[type="text"] {
+      margin: 0;
+    }
+  }
+
+  // Fix border color around the search button submit to make same as background.
+  header.header--fixed .form--search input[type="submit"] {
+    border-color: $mercury;
+  }
+
+}
+
+// End theme citynet
+
+
+/* Admin page settings specific to citynet */
+
+/* backup and migrate */
+#edit-filters-sources-db-exclude-tables,
+#edit-filters-sources-db-nodata-tables {
+  height:400px;
+}
+

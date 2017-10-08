@@ -858,6 +858,10 @@ header {
             color: $sunshade;
             vertical-align: text-bottom;
             @include rem( 'font-size', 18px );
+			
+			&.icon-home {
+				color: $spruce;
+			}
         }
 
         span {
@@ -870,6 +874,10 @@ header {
 
         &:hover {
             color: $off-white;
+			
+			i {
+				color: $off-white;
+			}
         }
 
         @include mq( $from: tablet ) {
@@ -922,6 +930,7 @@ header {
 
             h4 a {
                 color: $spruce;
+				line-height: 1.3em;
 
                 &:hover {
                     color: black;
@@ -930,7 +939,10 @@ header {
         }
 
         li {
-            margin: .25em 0;
+            margin: .5em 0;
+			a {
+				line-height: 1.3em;
+			}
         }
 
         h4 {
