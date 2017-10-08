@@ -8,159 +8,92 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <?php require_once( ABSPATH . PARTIALS . '/patterns-nav.php' ); ?>
                 </div>
             </aside>
-            <div class="nine columns">
+            <div class="nine columns l-padding-bm">
 
-                <h1>Charts & Graphs</h1>
+                <h1>Tables/Charts &amp; Graphs</h1>
 				<div class="sub__nav--library">
 				    <ul class="sub__nav">
+				        <li><a href="#general-table">General Table</a></li>
+				        <li><a href="#accordion-table">Accordion Table</a></li>
 				        <li><a href="#bar">Bar Graph</a></li>
 				        <li><a href="#line">Line Graph</a></li>
 				        <li><a href="#pie">Pie Chart</a></li>
-				        <li><a href="#tables">Tables</a></li>
 				    </ul>
 				</div>
-
-				<div id="bar" class="l-container l-margin-tm">
-				    <h2>Bar</h2>
-
-				    <div class="text-center">
-				    	<canvas id="myChart" width="600" height="400"></canvas>
-
-					    <script>
-					    	var data = {
-							    labels: ["January", "February", "March", "April", "May", "June", "July"],
-							    datasets: [
-							        {
-							            label: "My First dataset",
-							            fillColor: "rgba(228,233,235,0.8)",
-							            strokeColor: "rgba(220,220,220,0.8)",
-							            highlightFill: "rgba(220,220,220,0.75)",
-							            highlightStroke: "rgba(220,220,220,1)",
-							            data: [65, 59, 80, 81, 56, 55, 40]
-							        },
-							        {
-							            label: "My Second dataset",
-							            fillColor: "rgba(0,152,219,1)",
-							            strokeColor: "rgba(0,0,0,1)",
-							            highlightFill: "rgba(255,255,255,1)",
-							            highlightStroke: "rgba(255,255,255,1)",
-							            data: [28, 48, 40, 19, 86, 27, 90]
-							        }
-							    ]
-							};
-					    </script>
-				    </div>
-
-				</div>
-
-				<div id="line" class="l-container l-margin-tm">
-					<h2>Line</h2>
-
-					<div class="text-center">
-						<canvas id="lineChart" width="600" height="400"></canvas>
-
-						<script>
-							var data = {
-							    labels: ["January", "February", "March", "April", "May", "June", "July"],
-							    datasets: [
-							        {
-							            label: "My First dataset",
-							            fillColor: "rgba(228,233,235,0.8)",
-							            strokeColor: "rgba(220,220,220,0.8)",
-							            highlightFill: "rgba(220,220,220,0.75)",
-							            highlightStroke: "rgba(220,220,220,1)",
-							            data: [65, 59, 80, 81, 56, 55, 40]
-							        },
-							        {
-							            label: "My Second dataset",
-							            fillColor: "rgba(0,152,219,1)",
-							            strokeColor: "rgba(0,0,0,1)",
-							            highlightFill: "rgba(255,255,255,1)",
-							            highlightStroke: "rgba(255,255,255,1)",
-							            data: [28, 48, 40, 19, 86, 27, 90]
-							        }
-							    ]
-							};
-						</script>
-					</div>
-				</div>
-
-				<div id="pie" class="l-container l-margin-tm">
-					<h2>Pie</h2>
-
-					<div class="text-center">
-						<canvas id="pieChart" width="600" height="400"></canvas>
-
-						<script>
-							var pieData = [
-							    {
-							        value: 300,
-							        color:"#0098db",
-							        highlight: "#0098db",
-							        label: "Cerulean"
-							    },
-							    {
-							        value: 50,
-							        color: "#ffa02f",
-							        highlight: "#ffa02f",
-							        label: "Orange"
-							    },
-							    {
-							        value: 100,
-							        color: "#00c7b2",
-							        highlight: "#00c7b2",
-							        label: "Teal"
-							    }
-							]
-						</script>
-					</div>
-				</div>
-
-				<div class="l-container l-margin-vm">
-					<div class="row">
-						<div class="six columns">
-							<div class="code__examples">
-                                <form><textarea class="pattern" id="char-code-1" name="code">
-<canvas id="pieChart" width="600" height="400"></canvas>
-
-<script>
-	var pieData = [
-	    {
-	        value: 300,
-	        color:"#0098db",
-	        highlight: "#0098db",
-	        label: "Cerulean"
-	    },
-	    {
-	        value: 50,
-	        color: "#ffa02f",
-	        highlight: "#ffa02f",
-	        label: "Orange"
-	    },
-	    {
-	        value: 100,
-	        color: "#00c7b2",
-	        highlight: "#00c7b2",
-	        label: "Teal"
-	    }
-	]
-
-	var ctx = document.getElementById("pieChart").getContext("2d");
-    var myPieChart = new Chart(ctx).Pie(pieData);
-</script></textarea> </form> </div>
-						</div>
-						<div class="six columns">
-							<p class="l-margin-bn"><strong>Notes</strong></p>
-							<p>Charts are built using <a href="http://www.chartjs.org/" target="_blank">chart.js</a>, a javascript library that allows easy implementation of various charts. Customization options available include responsive charts, animation, and more.</p>	
+				
+				
+				<div id="tables" class="l-container l-margin-td l-margin-bm">
+				
+				
+					<h2 class="border border--bottom l-padding-bn l-margin-bs">Tables</h2>
+							
+					<div class="row l-margin-tm">
+						<div class="twelve columns">
+							<h3 id="general-table">General Table</h3>
 						</div>
 					</div>
-				</div>
 
-				<div id="tables" class="l-container l-margin-vd">
+					<!-- Table - General -->
+					<div class="row l-padding-as l-margin-bd">
+						<table class="twelve columns">
+
+							<tr class="hide-on-mobile">
+								<th>Balboa Park Golf Course</th>
+								<th>SD City Resident*</th>
+								<th>Non-Resident</th>
+							</tr>
+
+							<tr class="subheading">
+								<td colspan="3" class="l-padding-ld"><strong>Weekend (Saturday, Sunday & Holidays)</strong></td>
+							</tr>
+
+							<tr class="subheading hide-on-desktop">
+								<th></th>
+								<th>SD City Resident *</th>
+								<th>Non-Resident</th>
+							</tr>
+							<tr>
+								<td>18-Hole Course</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>18-Hole Course Senior (62 and over)</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>18-Hole Course Junior (17 and under)</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>18-Hole Course Twilight</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>9-Hole Course</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>9-Hole Course Senior (62 and over)</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+							<tr>
+								<td>9-Hole Course Junior (17 and under)</td>
+								<td>$32</td>
+								<td>$40</td>
+							</tr>
+						</table>
+					</div>
+				
+				
 					<div class="row">
 						<div class="twelve columns">
-							<h2 class="border border--bottom l-padding-bn l-margin-bs">Tables</h2>
-							<p class="subheading l-margin-bn">Accordion Table</p>
+							<h3 id="accordion-table">Accordion Table</h3>
 							<p>View on viewport widths from tablet and below for collapsed table data.</p>
 						</div>
 					</div>
@@ -282,69 +215,140 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						</div>
 					</div>
 
-					<div class="row l-margin-tm">
-						<div class="twelve columns">
-							<p class="subheading">General Table</p>
-						</div>
-					</div>
+					
+				</div>
+				
+				
+				<h2 class="border border--bottom l-padding-bn l-margin-bs">Charts and Graphs</h2>
+				<p>Charts are built using <a href="http://www.chartjs.org/" target="_blank">chart.js</a>, a javascript library that allows easy implementation of various charts. Customization options available include responsive charts, animation, and more.</p>	
 
-					<!-- Table - General -->
-					<div class="row l-padding-as background-off-white">
-						<table class="twelve columns">
+				<div id="bar" class="l-container l-margin-tm l-margin-bd">
+				    <h3>Bar</h3>
 
-							<tr class="hide-on-mobile">
-								<th>Balboa Park Golf Course</th>
-								<th>SD City Resident*</th>
-								<th>Non-Resident</th>
-							</tr>
+				    <div class="text-center">
+				    	<canvas id="bar-chart" width="600" height="400"></canvas>
+				    </div>
 
-							<tr class="subheading">
-								<td colspan="3"><strong>Weekend (Saturday, Sunday & Holidays)</strong></td>
-							</tr>
+				</div>
+				
+				<div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="bar-code" name="code">
+<div class="text-center">
+	<canvas id="bar-chart" width="600" height="400"></canvas>
+</div>
+<script>
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+        {
+          label: " things",
+          backgroundColor: ["#0098db", "#00c7b2","#ffa02f","#37424a","#dad7cb"],
+          data: [68,52,24,37,15]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Things'
+      },
+	  scales: {
+		  xAxes: [
+			{
+			  gridLines: {
+					display:false
+				}
+			}
+		  ]
+	  }
+    }
+});
+</script></textarea> </form> </div>
 
-							<tr class="subheading hide-on-desktop">
-								<th></th>
-								<th>SD City Resident *</th>
-								<th>Non-Resident</th>
-							</tr>
-							<tr>
-								<td>18-Hole Course</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>18-Hole Course Senior (62 and over)</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>18-Hole Course Junior (17 and under)</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>18-Hole Course Twilight</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>9-Hole Course</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>9-Hole Course Senior (62 and over)</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-							<tr>
-								<td>9-Hole Course Junior (17 and under)</td>
-								<td>$32</td>
-								<td>$40</td>
-							</tr>
-						</table>
+				<div id="line" class="l-container l-margin-tm l-margin-bd">
+					<h3>Line</h3>
+
+					<div class="text-center">
+						<canvas id="line-chart" width="600" height="400"></canvas>
 					</div>
 				</div>
+
+				<div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="line-code" name="code">
+<div class="text-center">
+	<canvas id="line-chart" width="600" height="400"></canvas>
+</div>
+<script>
+new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+        {
+          label: " things",
+          data: [68,52,24,37,15],
+          borderColor: "#3e95cd",
+          fill: false
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Things'
+      },
+	  scales: {
+		  xAxes: [
+			{
+			  gridLines: {
+					display:false
+				}
+			}
+		  ]
+	  }
+    }
+});
+</script></textarea> </form> </div>
+
+				<div id="pie" class="l-container l-margin-vm">
+					<h3>Pie</h3>
+
+					<div class="text-center">
+						<canvas id="pie-chart" width="600" height="400"></canvas>
+					</div>
+				</div>	
+
+<div class="code__examples">
+                                <form><textarea class="pattern" id="pie-code" name="code">
+<div class="text-center">
+	<canvas id="pie-chart" width="600" height="400"></canvas>
+</div>
+<script>
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+		{
+          label: " things",
+          backgroundColor: ["#0098db", "#00c7b2","#ffa02f","#37424a","#dad7cb"],
+          data: [68,52,24,37,15]
+        }
+	  ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Number of Things'
+      }
+    }
+});
+</script></textarea> </form> </div>
+
 
             </div>
         </div>

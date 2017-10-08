@@ -8,14 +8,84 @@
 
         <?php if ($current_page == "charts-graphs.php"){ ?>
         <script>
-            var ctx = document.getElementById("myChart").getContext("2d");
-            var myNewChart = new Chart(ctx).Bar(data);
-
-            var ctx = document.getElementById("lineChart").getContext("2d");
-            var lineChart = new Chart(ctx).Line(data);
-
-            var ctx = document.getElementById("pieChart").getContext("2d");
-            var myPieChart = new Chart(ctx).Pie(pieData);
+new Chart(document.getElementById("bar-chart"), {
+    type: 'bar',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+        {
+          label: " things",
+          backgroundColor: ["#0098db", "#00c7b2","#ffa02f","#37424a","#dad7cb"],
+          data: [68,52,24,37,15]
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Things'
+      },
+	  scales: {
+		  xAxes: [
+			{
+			  gridLines: {
+					display:false
+				}
+			}
+		  ]
+	  }
+    }
+});
+new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+        {
+          label: " things",
+          data: [68,52,24,37,15],
+          borderColor: "#3e95cd",
+          fill: false
+        }
+      ]
+    },
+    options: {
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Number of Things'
+      },
+	  scales: {
+		  xAxes: [
+			{
+			  gridLines: {
+					display:false
+				}
+			}
+		  ]
+	  }
+    }
+});
+new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Jan", "Feb", "Mar", "Apr", "May"],
+      datasets: [
+		{
+          label: " things",
+          backgroundColor: ["#0098db", "#00c7b2","#ffa02f","#37424a","#dad7cb"],
+          data: [68,52,24,37,15]
+        }
+	  ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Number of Things'
+      }
+    }
+});
         </script>
         <?php } ?>
 
