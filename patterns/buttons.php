@@ -109,8 +109,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div class="code__examples">
 							<form><textarea class="pattern" id="border-code" name="code">
 <a class="btn btn--oval" href="#">Pill Button</a>
-<a class="btn btn--pill-right" href="#">Pill Right</a>
-<a class="btn btn--pill-left" href="#">Pill Left</a> </textarea> </form> </div>
+<a class="btn btn--pill-left" href="#">Pill Left</a>
+<a class="btn btn--pill-right" href="#">Pill Right</a></textarea> </form> </div>
 					</div>
 				</div>
 				
@@ -172,9 +172,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						
 						<div class="code__examples l-margin-bd">
 							<form><textarea class="pattern" id="icon-code" name="code">
-<a class="btn btn--icon btn--primary btn--icon-right" href="#"><i class="icon-user"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
-<a class="btn btn--icon btn--secondary" href="#"><i class="icon-sun"></i> Icon Button</a><br>
-<a class="btn btn--icon btn--tertiary btn--icon-right" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a><br>
+<a class="btn btn--icon btn--primary btn--icon-right" href="#"><i class="icon-user"></i> Icon Button <i class="icon-chevron-right"></i></a>
+<a class="btn btn--icon btn--secondary" href="#"><i class="icon-sun"></i> Icon Button</a>
+<a class="btn btn--icon btn--tertiary btn--icon-right" href="#"><i class="icon-vimeo"></i> Icon Button <i class="icon-chevron-right"></i></a>
 <a class="btn btn--icon btn--outline btn--icon-left" href="#"><i class="icon-chevron-left"></i> Icon Button <i class="icon-twitter icon--heavy"></i></a>
 <a class="btn btn--outline" href="#"><i class="icon-play"></i> Icon Button</a>
 <a class="btn btn--outline" href="#"><i class="icon-play icon--heavy"></i> Icon Button</a></textarea> </form> </div>
