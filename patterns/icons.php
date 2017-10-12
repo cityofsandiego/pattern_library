@@ -78,1490 +78,1504 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				<div class="row l-margin-tm">
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-left"></i></p>
+<p><i class="icon--xl icon-chevron-left"></i></p>
 <p>icon-chevron-left</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-right"></i></p>
+<p><i class="icon--xl icon-chevron-right"></i></p>
 <p>icon-chevron-right</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-up"></i></p>
+<p><i class="icon--xl icon-chevron-up"></i></p>
 <p>icon-chevron-up</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-down"></i></p>
+<p><i class="icon--xl icon-chevron-down"></i></p>
 <p>icon-chevron-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-close"></i></p>
+<p><i class="icon--xl icon-close"></i></p>
 <p>icon-close</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-play"></i></p>
+<p><i class="icon--xl icon-play"></i></p>
 <p>icon-play</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-home"></i></p>
+<p><i class="icon--xl icon-home"></i></p>
 <p>icon-home</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-home4"></i></p>
+<p><i class="icon--xl icon-home4"></i></p>
 <p>icon-home4</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bathtub"></i></p>
+<p><i class="icon--xl icon-bathtub"></i></p>
 <p>icon-bathtub</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-city"></i></p>
+<p><i class="icon--xl icon-city"></i></p>
 <p>icon-city</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-apartment"></i></p>
+<p><i class="icon--xl icon-apartment"></i></p>
 <p>icon-apartment</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pencil"></i></p>
+<p><i class="icon--xl icon-pencil"></i></p>
 <p>icon-pencil</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pen"></i></p>
+<p><i class="icon--xl icon-pen"></i></p>
 <p>icon-pen</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pencil3"></i></p>
+<p><i class="icon--xl icon-pencil3"></i></p>
 <p>icon-pencil3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pencil5"></i></p>
+<p><i class="icon--xl icon-pencil5"></i></p>
 <p>icon-pencil5</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-brush2"></i></p>
+<p><i class="icon--xl icon-brush2"></i></p>
 <p>icon-brush2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-spray"></i></p>
+<p><i class="icon--xl icon-spray"></i></p>
 <p>icon-spray</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-paint-roller"></i></p>
+<p><i class="icon--xl icon-paint-roller"></i></p>
 <p>icon-paint-roller</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-stamp"></i></p>
+<p><i class="icon--xl icon-stamp"></i></p>
 <p>icon-stamp</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tape"></i></p>
+<p><i class="icon--xl icon-tape"></i></p>
 <p>icon-tape</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-desk-tape"></i></p>
+<p><i class="icon--xl icon-desk-tape"></i></p>
 <p>icon-desk-tape</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-palette"></i></p>
+<p><i class="icon--xl icon-palette"></i></p>
 <p>icon-palette</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bucket"></i></p>
+<p><i class="icon--xl icon-bucket"></i></p>
 <p>icon-bucket</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-magic-wand"></i></p>
+<p><i class="icon--xl icon-magic-wand"></i></p>
 <p>icon-magic-wand</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-magnet"></i></p>
+<p><i class="icon--xl icon-magnet"></i></p>
 <p>icon-magnet</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pencil-ruler"></i></p>
+<p><i class="icon--xl icon-pencil-ruler"></i></p>
 <p>icon-pencil-ruler</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pencil-ruler2"></i></p>
+<p><i class="icon--xl icon-pencil-ruler2"></i></p>
 <p>icon-pencil-ruler2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-compass"></i></p>
+<p><i class="icon--xl icon-compass"></i></p>
 <p>icon-compass</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bottle"></i></p>
+<p><i class="icon--xl icon-bottle"></i></p>
 <p>icon-bottle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-drop-crossed"></i></p>
+<p><i class="icon--xl icon-drop-crossed"></i></p>
 <p>icon-drop-crossed</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-drop2"></i></p>
+<p><i class="icon--xl icon-drop2"></i></p>
 <p>icon-drop2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-snow"></i></p>
+<p><i class="icon--xl icon-snow"></i></p>
 <p>icon-snow</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-snow2"></i></p>
+<p><i class="icon--xl icon-snow2"></i></p>
 <p>icon-snow2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-fire"></i></p>
+<p><i class="icon--xl icon-fire"></i></p>
 <p>icon-fire</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lighter"></i></p>
+<p><i class="icon--xl icon-lighter"></i></p>
 <p>icon-lighter</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-toilet-paper"></i></p>
+<p><i class="icon--xl icon-toilet-paper"></i></p>
 <p>icon-toilet-paper</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-umbrella"></i></p>
+<p><i class="icon--xl icon-umbrella"></i></p>
 <p>icon-umbrella</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-umbrella2"></i></p>
+<p><i class="icon--xl icon-umbrella2"></i></p>
 <p>icon-umbrella2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-rain"></i></p>
+<p><i class="icon--xl icon-rain"></i></p>
 <p>icon-rain</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tornado"></i></p>
+<p><i class="icon--xl icon-tornado"></i></p>
 <p>icon-tornado</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-wind"></i></p>
+<p><i class="icon--xl icon-wind"></i></p>
 <p>icon-wind</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-sun-small"></i></p>
+<p><i class="icon--xl icon-sun-small"></i></p>
 <p>icon-sun-small</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-sun"></i></p>
+<p><i class="icon--xl icon-sun"></i></p>
 <p>icon-sun</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-moon"></i></p>
+<p><i class="icon--xl icon-moon"></i></p>
 <p>icon-moon</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud"></i></p>
+<p><i class="icon--xl icon-cloud"></i></p>
 <p>icon-cloud</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-upload"></i></p>
+<p><i class="icon--xl icon-cloud-upload"></i></p>
 <p>icon-cloud-upload</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-download"></i></p>
+<p><i class="icon--xl icon-cloud-download"></i></p>
 <p>icon-cloud-download</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-rain"></i></p>
+<p><i class="icon--xl icon-cloud-rain"></i></p>
 <p>icon-cloud-rain</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-hailstones"></i></p>
+<p><i class="icon--xl icon-cloud-hailstones"></i></p>
 <p>icon-cloud-hailstones</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-snow"></i></p>
+<p><i class="icon--xl icon-cloud-snow"></i></p>
 <p>icon-cloud-snow</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-windy"></i></p>
+<p><i class="icon--xl icon-cloud-windy"></i></p>
 <p>icon-cloud-windy</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-sun-wind"></i></p>
+<p><i class="icon--xl icon-sun-wind"></i></p>
 <p>icon-sun-wind</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-sun"></i></p>
+<p><i class="icon--xl icon-cloud-sun"></i></p>
 <p>icon-cloud-sun</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-lightning"></i></p>
+<p><i class="icon--xl icon-cloud-lightning"></i></p>
 <p>icon-cloud-lightning</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cloud-database"></i></p>
+<p><i class="icon--xl icon-cloud-database"></i></p>
 <p>icon-cloud-database</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-database"></i></p>
+<p><i class="icon--xl icon-database"></i></p>
 <p>icon-database</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-server"></i></p>
+<p><i class="icon--xl icon-server"></i></p>
 <p>icon-server</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shield"></i></p>
+<p><i class="icon--xl icon-shield"></i></p>
 <p>icon-shield</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shield-check"></i></p>
+<p><i class="icon--xl icon-shield-check"></i></p>
 <p>icon-shield-check</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shield-alert"></i></p>
+<p><i class="icon--xl icon-shield-alert"></i></p>
 <p>icon-shield-alert</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shield-cross"></i></p>
+<p><i class="icon--xl icon-shield-cross"></i></p>
 <p>icon-shield-cross</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lock"></i></p>
+<p><i class="icon--xl icon-lock"></i></p>
 <p>icon-lock</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-unlock"></i></p>
+<p><i class="icon--xl icon-unlock"></i></p>
 <p>icon-unlock</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-key"></i></p>
+<p><i class="icon--xl icon-key"></i></p>
 <p>icon-key</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-key-hole"></i></p>
+<p><i class="icon--xl icon-key-hole"></i></p>
 <p>icon-key-hole</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-toggle-off"></i></p>
+<p><i class="icon--xl icon-toggle-off"></i></p>
 <p>icon-toggle-off</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-toggle-on"></i></p>
+<p><i class="icon--xl icon-toggle-on"></i></p>
 <p>icon-toggle-on</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cog"></i></p>
+<p><i class="icon--xl icon-cog"></i></p>
 <p>icon-cog</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cog2"></i></p>
+<p><i class="icon--xl icon-cog2"></i></p>
 <p>icon-cog2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-wrench"></i></p>
+<p><i class="icon--xl icon-wrench"></i></p>
 <p>icon-wrench</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-hammer-wrench"></i></p>
+<p><i class="icon--xl icon-hammer-wrench"></i></p>
 <p>icon-hammer-wrench</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-hammer"></i></p>
+<p><i class="icon--xl icon-hammer"></i></p>
 <p>icon-hammer</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shovel"></i></p>
+<p><i class="icon--xl icon-shovel"></i></p>
 <p>icon-shovel</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-factory2"></i></p>
+<p><i class="icon--xl icon-factory2"></i></p>
 <p>icon-factory2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-recycle"></i></p>
+<p><i class="icon--xl icon-recycle"></i></p>
 <p>icon-recycle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-trash2"></i></p>
+<p><i class="icon--xl icon-trash2"></i></p>
 <p>icon-trash2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-broom"></i></p>
+<p><i class="icon--xl icon-broom"></i></p>
 <p>icon-broom</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-gamepad"></i></p>
+<p><i class="icon--xl icon-gamepad"></i></p>
 <p>icon-gamepad</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-dice"></i></p>
+<p><i class="icon--xl icon-dice"></i></p>
 <p>icon-dice</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-heart"></i></p>
+<p><i class="icon--xl icon-heart"></i></p>
 <p>icon-heart</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-star"></i></p>
+<p><i class="icon--xl icon-star"></i></p>
 <p>icon-star</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-flag"></i></p>
+<p><i class="icon--xl icon-flag"></i></p>
 <p>icon-flag</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-flag3"></i></p>
+<p><i class="icon--xl icon-flag3"></i></p>
 <p>icon-flag3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-at-sign"></i></p>
+<p><i class="icon--xl icon-at-sign"></i></p>
 <p>icon-at-sign</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-envelope"></i></p>
+<p><i class="icon--xl icon-envelope"></i></p>
 <p>icon-envelope</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-envelope-open"></i></p>
+<p><i class="icon--xl icon-envelope-open"></i></p>
 <p>icon-envelope-open</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-paperclip"></i></p>
+<p><i class="icon--xl icon-paperclip"></i></p>
 <p>icon-paperclip</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-paper-plane"></i></p>
+<p><i class="icon--xl icon-paper-plane"></i></p>
 <p>icon-paper-plane</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-box"></i></p>
+<p><i class="icon--xl icon-box"></i></p>
 <p>icon-box</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-archive2"></i></p>
+<p><i class="icon--xl icon-archive2"></i></p>
 <p>icon-archive2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-drawers3"></i></p>
+<p><i class="icon--xl icon-drawers3"></i></p>
 <p>icon-drawers3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-eye"></i></p>
+<p><i class="icon--xl icon-eye"></i></p>
 <p>icon-eye</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-binoculars"></i></p>
+<p><i class="icon--xl icon-binoculars"></i></p>
 <p>icon-binoculars</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-disc"></i></p>
+<p><i class="icon--xl icon-disc"></i></p>
 <p>icon-disc</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-printer"></i></p>
+<p><i class="icon--xl icon-printer"></i></p>
 <p>icon-printer</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shredder"></i></p>
+<p><i class="icon--xl icon-shredder"></i></p>
 <p>icon-shredder</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-file-empty"></i></p>
+<p><i class="icon--xl icon-file-empty"></i></p>
 <p>icon-file-empty</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-files"></i></p>
+<p><i class="icon--xl icon-files"></i></p>
 <p>icon-files</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-folder"></i></p>
+<p><i class="icon--xl icon-folder"></i></p>
 <p>icon-folder</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-scissors"></i></p>
+<p><i class="icon--xl icon-scissors"></i></p>
 <p>icon-scissors</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-clipboard-empty"></i></p>
+<p><i class="icon--xl icon-clipboard-empty"></i></p>
 <p>icon-clipboard-empty</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-clipboard-text"></i></p>
+<p><i class="icon--xl icon-clipboard-text"></i></p>
 <p>icon-clipboard-text</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-clipboard-check"></i></p>
+<p><i class="icon--xl icon-clipboard-check"></i></p>
 <p>icon-clipboard-check</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-clipboard-user"></i></p>
+<p><i class="icon--xl icon-clipboard-user"></i></p>
 <p>icon-clipboard-user</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-papers"></i></p>
+<p><i class="icon--xl icon-papers"></i></p>
 <p>icon-papers</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-news"></i></p>
+<p><i class="icon--xl icon-news"></i></p>
 <p>icon-news</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-reading"></i></p>
+<p><i class="icon--xl icon-reading"></i></p>
 <p>icon-reading</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-document2"></i></p>
+<p><i class="icon--xl icon-document2"></i></p>
 <p>icon-document2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-graduation-hat"></i></p>
+<p><i class="icon--xl icon-graduation-hat"></i></p>
 <p>icon-graduation-hat</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-medal-empty"></i></p>
+<p><i class="icon--xl icon-medal-empty"></i></p>
 <p>icon-medal-empty</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-trophy2"></i></p>
+<p><i class="icon--xl icon-trophy2"></i></p>
 <p>icon-trophy2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-music-note"></i></p>
+<p><i class="icon--xl icon-music-note"></i></p>
 <p>icon-music-note</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-music-note3"></i></p>
+<p><i class="icon--xl icon-music-note3"></i></p>
 <p>icon-music-note3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-headphones"></i></p>
+<p><i class="icon--xl icon-headphones"></i></p>
 <p>icon-headphones</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-theater"></i></p>
+<p><i class="icon--xl icon-theater"></i></p>
 <p>icon-theater</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ticket"></i></p>
+<p><i class="icon--xl icon-ticket"></i></p>
 <p>icon-ticket</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-film-play"></i></p>
+<p><i class="icon--xl icon-film-play"></i></p>
 <p>icon-film-play</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-film"></i></p>
+<p><i class="icon--xl icon-film"></i></p>
 <p>icon-film</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-surveillance"></i></p>
+<p><i class="icon--xl icon-surveillance"></i></p>
 <p>icon-surveillance</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-camera"></i></p>
+<p><i class="icon--xl icon-camera"></i></p>
 <p>icon-camera</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-camera-crossed"></i></p>
+<p><i class="icon--xl icon-camera-crossed"></i></p>
 <p>icon-camera-crossed</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-camera2"></i></p>
+<p><i class="icon--xl icon-camera2"></i></p>
 <p>icon-camera2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-picture"></i></p>
+<p><i class="icon--xl icon-picture"></i></p>
 <p>icon-picture</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-book"></i></p>
+<p><i class="icon--xl icon-book"></i></p>
 <p>icon-book</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-book2"></i></p>
+<p><i class="icon--xl icon-book2"></i></p>
 <p>icon-book2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bookmark"></i></p>
+<p><i class="icon--xl icon-bookmark"></i></p>
 <p>icon-bookmark</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bookmark2"></i></p>
+<p><i class="icon--xl icon-bookmark2"></i></p>
 <p>icon-bookmark2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-library"></i></p>
+<p><i class="icon--xl icon-library"></i></p>
 <p>icon-library</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-library2"></i></p>
+<p><i class="icon--xl icon-library2"></i></p>
 <p>icon-library2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-profile"></i></p>
+<p><i class="icon--xl icon-profile"></i></p>
 <p>icon-profile</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-user"></i></p>
+<p><i class="icon--xl icon-user"></i></p>
 <p>icon-user</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-users"></i></p>
+<p><i class="icon--xl icon-users"></i></p>
 <p>icon-users</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-users2"></i></p>
+<p><i class="icon--xl icon-users2"></i></p>
 <p>icon-users2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-group-work"></i></p>
+<p><i class="icon--xl icon-group-work"></i></p>
 <p>icon-group-work</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-baby"></i></p>
+<p><i class="icon--xl icon-baby"></i></p>
 <p>icon-baby</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-baby2"></i></p>
+<p><i class="icon--xl icon-baby2"></i></p>
 <p>icon-baby2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-walk"></i></p>
+<p><i class="icon--xl icon-walk"></i></p>
 <p>icon-walk</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-run"></i></p>
+<p><i class="icon--xl icon-run"></i></p>
 <p>icon-run</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-woman2"></i></p>
+<p><i class="icon--xl icon-woman2"></i></p>
 <p>icon-woman2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-man2"></i></p>
+<p><i class="icon--xl icon-man2"></i></p>
 <p>icon-man2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-man-woman"></i></p>
+<p><i class="icon--xl icon-man-woman"></i></p>
 <p>icon-man-woman</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-shirt"></i></p>
+<p><i class="icon--xl icon-shirt"></i></p>
 <p>icon-shirt</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-store"></i></p>
+<p><i class="icon--xl icon-store"></i></p>
 <p>icon-store</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-barcode"></i></p>
+<p><i class="icon--xl icon-barcode"></i></p>
 <p>icon-barcode</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-barcode3"></i></p>
+<p><i class="icon--xl icon-barcode3"></i></p>
 <p>icon-barcode3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bag"></i></p>
+<p><i class="icon--xl icon-bag"></i></p>
 <p>icon-bag</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cart"></i></p>
+<p><i class="icon--xl icon-cart"></i></p>
 <p>icon-cart</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tag"></i></p>
+<p><i class="icon--xl icon-tag"></i></p>
 <p>icon-tag</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-receipt"></i></p>
+<p><i class="icon--xl icon-receipt"></i></p>
 <p>icon-receipt</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-credit-card"></i></p>
+<p><i class="icon--xl icon-credit-card"></i></p>
 <p>icon-credit-card</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cash-dollar"></i></p>
+<p><i class="icon--xl icon-cash-dollar"></i></p>
 <p>icon-cash-dollar</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-calculator2"></i></p>
+<p><i class="icon--xl icon-calculator2"></i></p>
 <p>icon-calculator2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-telephone"></i></p>
+<p><i class="icon--xl icon-telephone"></i></p>
 <p>icon-telephone</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-telephone2"></i></p>
+<p><i class="icon--xl icon-telephone2"></i></p>
 <p>icon-telephone2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pushpin"></i></p>
+<p><i class="icon--xl icon-pushpin"></i></p>
 <p>icon-pushpin</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-map-marker"></i></p>
+<p><i class="icon--xl icon-map-marker"></i></p>
 <p>icon-map-marker</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-map2"></i></p>
+<p><i class="icon--xl icon-map2"></i></p>
 <p>icon-map2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-location"></i></p>
+<p><i class="icon--xl icon-location"></i></p>
 <p>icon-location</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-road-sign"></i></p>
+<p><i class="icon--xl icon-road-sign"></i></p>
 <p>icon-road-sign</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-calendar-empty"></i></p>
+<p><i class="icon--xl icon-calendar-empty"></i></p>
 <p>icon-calendar-empty</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-calendar-31"></i></p>
+<p><i class="icon--xl icon-calendar-31"></i></p>
 <p>icon-calendar-31</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-calendar-full"></i></p>
+<p><i class="icon--xl icon-calendar-full"></i></p>
 <p>icon-calendar-full</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-mouse"></i></p>
+<p><i class="icon--xl icon-mouse"></i></p>
 <p>icon-mouse</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-keyboard"></i></p>
+<p><i class="icon--xl icon-keyboard"></i></p>
 <p>icon-keyboard</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-screen"></i></p>
+<p><i class="icon--xl icon-screen"></i></p>
 <p>icon-screen</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-signal"></i></p>
+<p><i class="icon--xl icon-signal"></i></p>
 <p>icon-signal</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-smartphone"></i></p>
+<p><i class="icon--xl icon-smartphone"></i></p>
 <p>icon-smartphone</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-smartphone-vibration"></i></p>
+<p><i class="icon--xl icon-smartphone-vibration"></i></p>
 <p>icon-smartphone-vibration</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-smartphone-waves"></i></p>
+<p><i class="icon--xl icon-smartphone-waves"></i></p>
 <p>icon-smartphone-waves</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-laptop"></i></p>
+<p><i class="icon--xl icon-laptop"></i></p>
 <p>icon-laptop</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-window"></i></p>
+<p><i class="icon--xl icon-window"></i></p>
 <p>icon-window</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tv"></i></p>
+<p><i class="icon--xl icon-tv"></i></p>
 <p>icon-tv</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-remote-control"></i></p>
+<p><i class="icon--xl icon-remote-control"></i></p>
 <p>icon-remote-control</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-power-switch"></i></p>
+<p><i class="icon--xl icon-power-switch"></i></p>
 <p>icon-power-switch</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-power"></i></p>
+<p><i class="icon--xl icon-power"></i></p>
 <p>icon-power</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lamp"></i></p>
+<p><i class="icon--xl icon-lamp"></i></p>
 <p>icon-lamp</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cord"></i></p>
+<p><i class="icon--xl icon-cord"></i></p>
 <p>icon-cord</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-battery-empty"></i></p>
+<p><i class="icon--xl icon-battery-empty"></i></p>
 <p>icon-battery-empty</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-battery-full"></i></p>
+<p><i class="icon--xl icon-battery-full"></i></p>
 <p>icon-battery-full</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-battery-charging"></i></p>
+<p><i class="icon--xl icon-battery-charging"></i></p>
 <p>icon-battery-charging</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bubble"></i></p>
+<p><i class="icon--xl icon-bubble"></i></p>
 <p>icon-bubble</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bubbles"></i></p>
+<p><i class="icon--xl icon-bubbles"></i></p>
 <p>icon-bubbles</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bubble-alert"></i></p>
+<p><i class="icon--xl icon-bubble-alert"></i></p>
 <p>icon-bubble-alert</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bubble-question"></i></p>
+<p><i class="icon--xl icon-bubble-question"></i></p>
 <p>icon-bubble-question</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bubble-text"></i></p>
+<p><i class="icon--xl icon-bubble-text"></i></p>
 <p>icon-bubble-text</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-phone-bubble"></i></p>
+<p><i class="icon--xl icon-phone-bubble"></i></p>
 <p>icon-phone-bubble</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-dna"></i></p>
+<p><i class="icon--xl icon-dna"></i></p>
 <p>icon-dna</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-heart-pulse"></i></p>
+<p><i class="icon--xl icon-heart-pulse"></i></p>
 <p>icon-heart-pulse</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pulse"></i></p>
+<p><i class="icon--xl icon-pulse"></i></p>
 <p>icon-pulse</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-syringe"></i></p>
+<p><i class="icon--xl icon-syringe"></i></p>
 <p>icon-syringe</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-first-aid"></i></p>
+<p><i class="icon--xl icon-first-aid"></i></p>
 <p>icon-first-aid</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lifebuoy"></i></p>
+<p><i class="icon--xl icon-lifebuoy"></i></p>
 <p>icon-lifebuoy</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-skull"></i></p>
+<p><i class="icon--xl icon-skull"></i></p>
 <p>icon-skull</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bone"></i></p>
+<p><i class="icon--xl icon-bone"></i></p>
 <p>icon-bone</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-construction"></i></p>
+<p><i class="icon--xl icon-construction"></i></p>
 <p>icon-construction</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-construction-cone"></i></p>
+<p><i class="icon--xl icon-construction-cone"></i></p>
 <p>icon-construction-cone</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pie-chart"></i></p>
+<p><i class="icon--xl icon-pie-chart"></i></p>
 <p>icon-pie-chart</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-graph"></i></p>
+<p><i class="icon--xl icon-graph"></i></p>
 <p>icon-graph</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chart-growth"></i></p>
+<p><i class="icon--xl icon-chart-growth"></i></p>
 <p>icon-chart-growth</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cake"></i></p>
+<p><i class="icon--xl icon-cake"></i></p>
 <p>icon-cake</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-gift"></i></p>
+<p><i class="icon--xl icon-gift"></i></p>
 <p>icon-gift</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lotus"></i></p>
+<p><i class="icon--xl icon-lotus"></i></p>
 <p>icon-lotus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-diamond2"></i></p>
+<p><i class="icon--xl icon-diamond2"></i></p>
 <p>icon-diamond2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-teacup"></i></p>
+<p><i class="icon--xl icon-teacup"></i></p>
 <p>icon-teacup</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bottle2"></i></p>
+<p><i class="icon--xl icon-bottle2"></i></p>
 <p>icon-bottle2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-glass2"></i></p>
+<p><i class="icon--xl icon-glass2"></i></p>
 <p>icon-glass2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-dinner"></i></p>
+<p><i class="icon--xl icon-dinner"></i></p>
 <p>icon-dinner</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pizza"></i></p>
+<p><i class="icon--xl icon-pizza"></i></p>
 <p>icon-pizza</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chicken"></i></p>
+<p><i class="icon--xl icon-chicken"></i></p>
 <p>icon-chicken</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-fish"></i></p>
+<p><i class="icon--xl icon-fish"></i></p>
 <p>icon-fish</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ice-cream"></i></p>
+<p><i class="icon--xl icon-ice-cream"></i></p>
 <p>icon-ice-cream</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-coffee-cup"></i></p>
+<p><i class="icon--xl icon-coffee-cup"></i></p>
 <p>icon-coffee-cup</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cherry"></i></p>
+<p><i class="icon--xl icon-cherry"></i></p>
 <p>icon-cherry</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-apple"></i></p>
+<p><i class="icon--xl icon-apple"></i></p>
 <p>icon-apple</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-leaf"></i></p>
+<p><i class="icon--xl icon-leaf"></i></p>
 <p>icon-leaf</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pine-tree"></i></p>
+<p><i class="icon--xl icon-pine-tree"></i></p>
 <p>icon-pine-tree</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tree"></i></p>
+<p><i class="icon--xl icon-tree"></i></p>
 <p>icon-tree</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cactus"></i></p>
+<p><i class="icon--xl icon-cactus"></i></p>
 <p>icon-cactus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-paw"></i></p>
+<p><i class="icon--xl icon-paw"></i></p>
 <p>icon-paw</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-rocket"></i></p>
+<p><i class="icon--xl icon-rocket"></i></p>
 <p>icon-rocket</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-hammer2"></i></p>
+<p><i class="icon--xl icon-hammer2"></i></p>
 <p>icon-hammer2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-balance"></i></p>
+<p><i class="icon--xl icon-balance"></i></p>
 <p>icon-balance</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-briefcase"></i></p>
+<p><i class="icon--xl icon-briefcase"></i></p>
 <p>icon-briefcase</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-plane"></i></p>
+<p><i class="icon--xl icon-plane"></i></p>
 <p>icon-plane</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-helicopter"></i></p>
+<p><i class="icon--xl icon-helicopter"></i></p>
 <p>icon-helicopter</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-traffic-lights"></i></p>
+<p><i class="icon--xl icon-traffic-lights"></i></p>
 <p>icon-traffic-lights</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-road"></i></p>
+<p><i class="icon--xl icon-road"></i></p>
 <p>icon-road</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-gas"></i></p>
+<p><i class="icon--xl icon-gas"></i></p>
 <p>icon-gas</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bus2"></i></p>
+<p><i class="icon--xl icon-bus2"></i></p>
 <p>icon-bus2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-car2"></i></p>
+<p><i class="icon--xl icon-car2"></i></p>
 <p>icon-car2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-car-siren"></i></p>
+<p><i class="icon--xl icon-car-siren"></i></p>
 <p>icon-car-siren</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-parking"></i></p>
+<p><i class="icon--xl icon-parking"></i></p>
 <p>icon-parking</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-train"></i></p>
+<p><i class="icon--xl icon-train"></i></p>
 <p>icon-train</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ship2"></i></p>
+<p><i class="icon--xl icon-ship2"></i></p>
 <p>icon-ship2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-anchor"></i></p>
+<p><i class="icon--xl icon-anchor"></i></p>
 <p>icon-anchor</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-boat"></i></p>
+<p><i class="icon--xl icon-boat"></i></p>
 <p>icon-boat</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bicycle"></i></p>
+<p><i class="icon--xl icon-bicycle"></i></p>
 <p>icon-bicycle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bicycle2"></i></p>
+<p><i class="icon--xl icon-bicycle2"></i></p>
 <p>icon-bicycle2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-dumbbell"></i></p>
+<p><i class="icon--xl icon-dumbbell"></i></p>
 <p>icon-dumbbell</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-swim"></i></p>
+<p><i class="icon--xl icon-swim"></i></p>
 <p>icon-swim</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-football"></i></p>
+<p><i class="icon--xl icon-football"></i></p>
 <p>icon-football</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-baseball-bat"></i></p>
+<p><i class="icon--xl icon-baseball-bat"></i></p>
 <p>icon-baseball-bat</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-baseball"></i></p>
+<p><i class="icon--xl icon-baseball"></i></p>
 <p>icon-baseball</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tennis"></i></p>
+<p><i class="icon--xl icon-tennis"></i></p>
 <p>icon-tennis</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-tennis2"></i></p>
+<p><i class="icon--xl icon-tennis2"></i></p>
 <p>icon-tennis2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ping-pong"></i></p>
+<p><i class="icon--xl icon-ping-pong"></i></p>
 <p>icon-ping-pong</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-hockey"></i></p>
+<p><i class="icon--xl icon-hockey"></i></p>
 <p>icon-hockey</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-8ball"></i></p>
+<p><i class="icon--xl icon-8ball"></i></p>
 <p>icon-8ball</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bowling"></i></p>
+<p><i class="icon--xl icon-bowling"></i></p>
 <p>icon-bowling</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bowling-pins"></i></p>
+<p><i class="icon--xl icon-bowling-pins"></i></p>
 <p>icon-bowling-pins</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-golf"></i></p>
+<p><i class="icon--xl icon-golf"></i></p>
 <p>icon-golf</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-golf2"></i></p>
+<p><i class="icon--xl icon-golf2"></i></p>
 <p>icon-golf2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-archery"></i></p>
+<p><i class="icon--xl icon-archery"></i></p>
 <p>icon-archery</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-soccer"></i></p>
+<p><i class="icon--xl icon-soccer"></i></p>
 <p>icon-soccer</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-basketball"></i></p>
+<p><i class="icon--xl icon-basketball"></i></p>
 <p>icon-basketball</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cube"></i></p>
+<p><i class="icon--xl icon-cube"></i></p>
 <p>icon-cube</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-puzzle"></i></p>
+<p><i class="icon--xl icon-puzzle"></i></p>
 <p>icon-puzzle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-glasses2"></i></p>
+<p><i class="icon--xl icon-glasses2"></i></p>
 <p>icon-glasses2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-wheelchair"></i></p>
+<p><i class="icon--xl icon-wheelchair"></i></p>
 <p>icon-wheelchair</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-fence"></i></p>
+<p><i class="icon--xl icon-fence"></i></p>
 <p>icon-fence</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-select2"></i></p>
+<p><i class="icon--xl icon-select2"></i></p>
 <p>icon-select2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-site-map"></i></p>
+<p><i class="icon--xl icon-site-map"></i></p>
 <p>icon-site-map</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-earth"></i></p>
+<p><i class="icon--xl icon-earth"></i></p>
 <p>icon-earth</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-planet"></i></p>
+<p><i class="icon--xl icon-planet"></i></p>
 <p>icon-planet</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-happy"></i></p>
+<p><i class="icon--xl icon-happy"></i></p>
 <p>icon-happy</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-smile"></i></p>
+<p><i class="icon--xl icon-smile"></i></p>
 <p>icon-smile</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-halloween"></i></p>
+<p><i class="icon--xl icon-halloween"></i></p>
 <p>icon-halloween</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-christmas"></i></p>
+<p><i class="icon--xl icon-christmas"></i></p>
 <p>icon-christmas</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-easter-egg"></i></p>
+<p><i class="icon--xl icon-easter-egg"></i></p>
 <p>icon-easter-egg</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-alarm"></i></p>
+<p><i class="icon--xl icon-alarm"></i></p>
 <p>icon-alarm</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-alarm-ringing"></i></p>
+<p><i class="icon--xl icon-alarm-ringing"></i></p>
 <p>icon-alarm-ringing</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bullhorn"></i></p>
+<p><i class="icon--xl icon-bullhorn"></i></p>
 <p>icon-bullhorn</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-volume-high"></i></p>
+<p><i class="icon--xl icon-volume-high"></i></p>
 <p>icon-volume-high</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-lan"></i></p>
+<p><i class="icon--xl icon-lan"></i></p>
 <p>icon-lan</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-wifi"></i></p>
+<p><i class="icon--xl icon-wifi"></i></p>
 <p>icon-wifi</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-antenna"></i></p>
+<p><i class="icon--xl icon-antenna"></i></p>
 <p>icon-antenna</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-satellite"></i></p>
+<p><i class="icon--xl icon-satellite"></i></p>
 <p>icon-satellite</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-satellite2"></i></p>
+<p><i class="icon--xl icon-satellite2"></i></p>
 <p>icon-satellite2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-mic"></i></p>
+<p><i class="icon--xl icon-mic"></i></p>
 <p>icon-mic</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-mic2"></i></p>
+<p><i class="icon--xl icon-mic2"></i></p>
 <p>icon-mic2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-spotlights"></i></p>
+<p><i class="icon--xl icon-spotlights"></i></p>
 <p>icon-spotlights</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-clock3"></i></p>
+<p><i class="icon--xl icon-clock3"></i></p>
 <p>icon-clock3</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-watch"></i></p>
+<p><i class="icon--xl icon-watch"></i></p>
 <p>icon-watch</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-download2"></i></p>
+<p><i class="icon--xl icon-download2"></i></p>
 <p>icon-download2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-upload2"></i></p>
+<p><i class="icon--xl icon-upload2"></i></p>
 <p>icon-upload2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-exit-up"></i></p>
+<p><i class="icon--xl icon-exit-up"></i></p>
 <p>icon-exit-up</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-exit-down"></i></p>
+<p><i class="icon--xl icon-exit-down"></i></p>
 <p>icon-exit-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-launch"></i></p>
+<p><i class="icon--xl icon-launch"></i></p>
 <p>icon-launch</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-bug"></i></p>
+<p><i class="icon--xl icon-bug"></i></p>
 <p>icon-bug</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-code"></i></p>
+<p><i class="icon--xl icon-code"></i></p>
 <p>icon-code</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-thumbs-up"></i></p>
+<p><i class="icon--xl icon-thumbs-up"></i></p>
 <p>icon-thumbs-up</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-thumbs-down"></i></p>
+<p><i class="icon--xl icon-thumbs-down"></i></p>
 <p>icon-thumbs-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-magnifier"></i></p>
+<p><i class="icon--xl icon-magnifier"></i></p>
 <p>icon-magnifier</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cross"></i></p>
+<p><i class="icon--xl icon-cross"></i></p>
 <p>icon-cross</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-menu"></i></p>
+<p><i class="icon--xl icon-menu"></i></p>
 <p>icon-menu</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-exclamation"></i></p>
+<p><i class="icon--xl icon-exclamation"></i></p>
 <p>icon-exclamation</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-question"></i></p>
+<p><i class="icon--xl icon-question"></i></p>
 <p>icon-question</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-check"></i></p>
+<p><i class="icon--xl icon-check"></i></p>
 <p>icon-check</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cross2"></i></p>
+<p><i class="icon--xl icon-cross2"></i></p>
 <p>icon-cross2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-plus"></i></p>
+<p><i class="icon--xl icon-plus"></i></p>
 <p>icon-plus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-minus"></i></p>
+<p><i class="icon--xl icon-minus"></i></p>
 <p>icon-minus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-up"></i></p>
+<p><i class="icon--xl icon-arrow-up"></i></p>
 <p>icon-arrow-up</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-down"></i></p>
+<p><i class="icon--xl icon-arrow-down"></i></p>
 <p>icon-arrow-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-left"></i></p>
+<p><i class="icon--xl icon-arrow-left"></i></p>
 <p>icon-arrow-left</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-right"></i></p>
+<p><i class="icon--xl icon-arrow-right"></i></p>
 <p>icon-arrow-right</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-up-right"></i></p>
+<p><i class="icon--xl icon-arrow-up-right"></i></p>
 <p>icon-arrow-up-right</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-move"></i></p>
+<p><i class="icon--xl icon-move"></i></p>
 <p>icon-move</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-warning"></i></p>
+<p><i class="icon--xl icon-warning"></i></p>
 <p>icon-warning</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-notification-circle"></i></p>
+<p><i class="icon--xl icon-notification-circle"></i></p>
 <p>icon-notification-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-question-circle"></i></p>
+<p><i class="icon--xl icon-question-circle"></i></p>
 <p>icon-question-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-menu-circle"></i></p>
+<p><i class="icon--xl icon-menu-circle"></i></p>
 <p>icon-menu-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-checkmark-circle"></i></p>
+<p><i class="icon--xl icon-checkmark-circle"></i></p>
 <p>icon-checkmark-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cross-circle"></i></p>
+<p><i class="icon--xl icon-cross-circle"></i></p>
 <p>icon-cross-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-plus-circle"></i></p>
+<p><i class="icon--xl icon-plus-circle"></i></p>
 <p>icon-plus-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-circle-minus"></i></p>
+<p><i class="icon--xl icon-circle-minus"></i></p>
 <p>icon-circle-minus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-up-circle"></i></p>
+<p><i class="icon--xl icon-arrow-up-circle"></i></p>
 <p>icon-arrow-up-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-down-circle"></i></p>
+<p><i class="icon--xl icon-arrow-down-circle"></i></p>
 <p>icon-arrow-down-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-left-circle"></i></p>
+<p><i class="icon--xl icon-arrow-left-circle"></i></p>
 <p>icon-arrow-left-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-right-circle"></i></p>
+<p><i class="icon--xl icon-arrow-right-circle"></i></p>
 <p>icon-arrow-right-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-up-circle"></i></p>
+<p><i class="icon--xl icon-chevron-up-circle"></i></p>
 <p>icon-chevron-up-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-down-circle"></i></p>
+<p><i class="icon--xl icon-chevron-down-circle"></i></p>
 <p>icon-chevron-down-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-left-circle"></i></p>
+<p><i class="icon--xl icon-chevron-left-circle"></i></p>
 <p>icon-chevron-left-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-right-circle"></i></p>
+<p><i class="icon--xl icon-chevron-right-circle"></i></p>
 <p>icon-chevron-right-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-backward-circle"></i></p>
+<p><i class="icon--xl icon-backward-circle"></i></p>
 <p>icon-backward-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-first-circle"></i></p>
+<p><i class="icon--xl icon-first-circle"></i></p>
 <p>icon-first-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-previous-circle"></i></p>
+<p><i class="icon--xl icon-previous-circle"></i></p>
 <p>icon-previous-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-stop-circle"></i></p>
+<p><i class="icon--xl icon-stop-circle"></i></p>
 <p>icon-stop-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-play-circle"></i></p>
+<p><i class="icon--xl icon-play-circle"></i></p>
 <p>icon-play-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pause-circle"></i></p>
+<p><i class="icon--xl icon-pause-circle"></i></p>
 <p>icon-pause-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-next-circle"></i></p>
+<p><i class="icon--xl icon-next-circle"></i></p>
 <p>icon-next-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-last-circle"></i></p>
+<p><i class="icon--xl icon-last-circle"></i></p>
 <p>icon-last-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-forward-circle"></i></p>
+<p><i class="icon--xl icon-forward-circle"></i></p>
 <p>icon-forward-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-layers"></i></p>
+<p><i class="icon--xl icon-layers"></i></p>
 <p>icon-layers</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ruler"></i></p>
+<p><i class="icon--xl icon-ruler"></i></p>
 <p>icon-ruler</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-plus-square"></i></p>
+<p><i class="icon--xl icon-plus-square"></i></p>
 <p>icon-plus-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-minus-square"></i></p>
+<p><i class="icon--xl icon-minus-square"></i></p>
 <p>icon-minus-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-up-square"></i></p>
+<p><i class="icon--xl icon-arrow-up-square"></i></p>
 <p>icon-arrow-up-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-down-square"></i></p>
+<p><i class="icon--xl icon-arrow-down-square"></i></p>
 <p>icon-arrow-down-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-left-square"></i></p>
+<p><i class="icon--xl icon-arrow-left-square"></i></p>
 <p>icon-arrow-left-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-arrow-right-square"></i></p>
+<p><i class="icon--xl icon-arrow-right-square"></i></p>
 <p>icon-arrow-right-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-up-square"></i></p>
+<p><i class="icon--xl icon-chevron-up-square"></i></p>
 <p>icon-chevron-up-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-down-square"></i></p>
+<p><i class="icon--xl icon-chevron-down-square"></i></p>
 <p>icon-chevron-down-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-left-square"></i></p>
+<p><i class="icon--xl icon-chevron-left-square"></i></p>
 <p>icon-chevron-left-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-chevron-right-square"></i></p>
+<p><i class="icon--xl icon-chevron-right-square"></i></p>
 <p>icon-chevron-right-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-check-square"></i></p>
+<p><i class="icon--xl icon-check-square"></i></p>
 <p>icon-check-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-cross-square"></i></p>
+<p><i class="icon--xl icon-cross-square"></i></p>
 <p>icon-cross-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-menu-square"></i></p>
+<p><i class="icon--xl icon-menu-square"></i></p>
 <p>icon-menu-square</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-prohibited"></i></p>
+<p><i class="icon--xl icon-prohibited"></i></p>
 <p>icon-prohibited</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-text-format"></i></p>
+<p><i class="icon--xl icon-text-format"></i></p>
 <p>icon-text-format</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-text-size"></i></p>
+<p><i class="icon--xl icon-text-size"></i></p>
 <p>icon-text-size</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-hand"></i></p>
+<p><i class="icon--xl icon-hand"></i></p>
 <p>icon-hand</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-pointer-up"></i></p>
+<p><i class="icon--xl icon-pointer-up"></i></p>
 <p>icon-pointer-up</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-reminder"></i></p>
+<p><i class="icon--xl icon-reminder"></i></p>
 <p>icon-reminder</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-ellipsis"></i></p>
+<p><i class="icon--xl icon-ellipsis"></i></p>
 <p>icon-ellipsis</p>
 </div>
 				
 				</div>
+
+<div id="do-not"></div>				
+<h2>Icons in "Do Not" Symbol</h2>		
+				<div class="row l-margin-tm l-margin-bm">
+<div class="three columns text-center">
+<p><i class="icon-do-not icon--xl"><i class="icon-run icon--xl"></i></i></p>
+</div>
+<div class="nine columns">
+<div class="code__examples l-margin-bx">
+	<form><textarea class="pattern" id="do-not-code-1" name="code">
+<i class="icon-do-not icon--xl"><i class="icon-run icon--xl"></i></i></textarea> </form> </div>
+</div>
+				</div>
+
 				
 <div id="socials"></div>				
 <h2>Font Name:</span> Socials <small>(Glyphs:&nbsp;12)</small></h2>		
 				<div class="row l-margin-tm">
 				
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-facebook"></i></p>
+<p><i class="icon--xl icon-facebook"></i></p>
 <p>icon-facebook</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-twitter"></i></p>
+<p><i class="icon--xl icon-twitter"></i></p>
 <p>icon-twitter</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-youtube"></i></p>
+<p><i class="icon--xl icon-youtube"></i></p>
 <p>icon-youtube</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-nextdoor"></i></p>
+<p><i class="icon--xl icon-nextdoor"></i></p>
 <p>icon-nextdoor</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-instagram"></i></p>
+<p><i class="icon--xl icon-instagram"></i></p>
 <p>icon-instagram</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-googleplus"></i></p>
+<p><i class="icon--xl icon-googleplus"></i></p>
 <p>icon-googleplus</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-linkedin"></i></p>
+<p><i class="icon--xl icon-linkedin"></i></p>
 <p>icon-linkedin</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-email"></i></p>
+<p><i class="icon--xl icon-email"></i></p>
 <p>icon-email</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-rss"></i></p>
+<p><i class="icon--xl icon-rss"></i></p>
 <p>icon-rss</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-share"></i></p>
+<p><i class="icon--xl icon-share"></i></p>
 <p>icon-share</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-appleinc"></i></p>
+<p><i class="icon--xl icon-appleinc"></i></p>
 <p>icon-appleinc</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-android"></i></p>
+<p><i class="icon--xl icon-android"></i></p>
 <p>icon-android</p>
 </div>
 
 <div class="three columns text-center l-margin-bx">
-<p><I class="icon--xl icon-microsoft"></i></p>
+<p><i class="icon--xl icon-microsoft"></i></p>
 <p>icon-microsoft</p>
 </div>
 

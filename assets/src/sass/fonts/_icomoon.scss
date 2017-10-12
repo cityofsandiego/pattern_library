@@ -1229,3 +1229,43 @@
     border-radius: 50%;
     font-weight: 600;
 }
+
+.icon-do-not {
+	position: relative;
+	color: $error;
+	z-index: 5;	
+	
+	&:before {
+		content: "\e99c";
+	}
+	
+	&.icon--xs {
+		font-size: 1em !important;
+	}
+	
+	&.icon--sm {
+		font-size: 1.8em !important;
+	}
+	
+	&.icon--md {
+		font-size: 2.4em !important;
+	}
+	
+	&.icon--lg {
+		font-size: 3.4em !important;
+	}
+	
+	&.icon--xl {
+		font-size: 4.4em !important;
+	}
+	
+	> [class^="icon-"], [class*=" icon-"] {
+		float: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0.3em;
+		color: #37424a;
+		z-index: -1;
+	}
+}

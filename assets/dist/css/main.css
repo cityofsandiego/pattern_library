@@ -4888,6 +4888,47 @@ img.photoRight {
     border-radius: 50%;
 }
 
+.icon-do-not {
+    position: relative;
+    z-index: 5;
+    color: #c51313;
+}
+
+.icon-do-not:before {
+    content: "\e99c";
+}
+
+.icon-do-not.icon--xs {
+    font-size: 1em !important;
+}
+
+.icon-do-not.icon--sm {
+    font-size: 1.8em !important;
+}
+
+.icon-do-not.icon--md {
+    font-size: 2.4em !important;
+}
+
+.icon-do-not.icon--lg {
+    font-size: 3.4em !important;
+}
+
+.icon-do-not.icon--xl {
+    font-size: 4.4em !important;
+}
+
+.icon-do-not > [class^="icon-"],
+.icon-do-not [class*=" icon-"] {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    float: left;
+    margin: .3em;
+    color: #37424a;
+}
+
 /* Header
    ========================================================================== */
 @media screen and (max-width: 47.99em) {
