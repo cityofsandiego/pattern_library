@@ -15,6 +15,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="sub__nav--library">
                     <ul class="sub__nav">
                         <li><a href="#icomoon">Icomoon</a></li>
+                        <li><a href="#do-not">Icon inside <i class="icon-do-not icon--xs" title="prohibited icon"></i></a></li>
                         <li><a href="#socials">Socials</a></li>
                     </ul>
                 </div>
@@ -1497,7 +1498,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				</div>
 
 <div id="do-not"></div>				
-<h2>Icons in "Do Not" Symbol</h2>		
+<h2>Icon inside <i class="icon-do-not icon--sm" title="prohibited icon"></i></h2>		
 				<div class="row l-margin-tm l-margin-bm">
 <div class="three columns text-center">
 <p><i class="icon-do-not icon--xl"><i class="icon-run icon--xl"></i></i></p>
