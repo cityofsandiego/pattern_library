@@ -4902,20 +4902,50 @@ img.photoRight {
     font-size: 1rem !important;
 }
 
+.icon-do-not.icon--xs > [class^="icon-"],
+.icon-do-not.icon--xs [class*=" icon-"] {
+    font-size: 10px;
+    font-size: .625rem;
+}
+
 .icon-do-not.icon--sm {
     font-size: 1.8rem !important;
+}
+
+.icon-do-not.icon--sm > [class^="icon-"],
+.icon-do-not.icon--sm [class*=" icon-"] {
+    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .icon-do-not.icon--md {
     font-size: 2.4rem !important;
 }
 
+.icon-do-not.icon--md > [class^="icon-"],
+.icon-do-not.icon--md [class*=" icon-"] {
+    font-size: 24px;
+    font-size: 1.5rem;
+}
+
 .icon-do-not.icon--lg {
     font-size: 3.4rem !important;
 }
 
+.icon-do-not.icon--lg > [class^="icon-"],
+.icon-do-not.icon--lg [class*=" icon-"] {
+    font-size: 34px;
+    font-size: 2.125rem;
+}
+
 .icon-do-not.icon--xl {
     font-size: 4.4rem !important;
+}
+
+.icon-do-not.icon--xl > [class^="icon-"],
+.icon-do-not.icon--xl [class*=" icon-"] {
+    font-size: 44px;
+    font-size: 2.75rem;
 }
 
 .icon-do-not > [class^="icon-"],

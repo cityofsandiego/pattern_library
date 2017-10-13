@@ -1241,22 +1241,42 @@
 	
 	&.icon--xs {
 		font-size: 1rem !important;
+	
+		> [class^="icon-"], [class*=" icon-"] {
+			@include rem( 'font-size', 10px );
+		}
 	}
 	
 	&.icon--sm {
 		font-size: 1.8rem !important;
+	
+		> [class^="icon-"], [class*=" icon-"] {
+			@include rem( 'font-size', 18px );
+		}
 	}
 	
 	&.icon--md {
 		font-size: 2.4rem !important;
+	
+		> [class^="icon-"], [class*=" icon-"] {
+			@include rem( 'font-size', 24px );
+		}
 	}
 	
 	&.icon--lg {
 		font-size: 3.4rem !important;
+	
+		> [class^="icon-"], [class*=" icon-"] {
+			@include rem( 'font-size', 34px );
+		}
 	}
 	
 	&.icon--xl {
 		font-size: 4.4rem !important;
+	
+		> [class^="icon-"], [class*=" icon-"] {
+			@include rem( 'font-size', 44px );
+		}
 	}
 	
 	> [class^="icon-"], [class*=" icon-"] {

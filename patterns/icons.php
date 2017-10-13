@@ -1501,12 +1501,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <h2>Icon inside <i class="icon-do-not icon--sm" title="prohibited icon"></i></h2>		
 				<div class="row l-margin-tm l-margin-bm">
 <div class="three columns text-center">
-<p><i class="icon-do-not icon--xl"><i class="icon-run icon--xl"></i></i></p>
+<p><i class="icon-do-not icon--xl"><i class="icon-run"></i></i></p>
 </div>
 <div class="nine columns">
 <div class="code__examples l-margin-bx">
 	<form><textarea class="pattern" id="do-not-code-1" name="code">
-<i class="icon-do-not icon--xl"><i class="icon-run icon--xl"></i></i></textarea> </form> </div>
+<i class="icon-do-not icon--xl"><i class="icon-run"></i></i></textarea> </form> </div>
 </div>
 				</div>
 
