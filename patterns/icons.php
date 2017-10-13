@@ -15,7 +15,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <div class="sub__nav--library">
                     <ul class="sub__nav">
                         <li><a href="#icomoon">Icomoon</a></li>
-                        <li><a href="#do-not">Icon inside <i class="icon-do-not icon--xs" title="prohibited icon"></i></a></li>
                         <li><a href="#socials">Socials</a></li>
                     </ul>
                 </div>
@@ -28,47 +27,56 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <table class="twelve columns">
                                 <tbody>
                                 <tr>
-                                    <th>Class</th>
-                                    <th>Output</th>
+                                    <th>Variation</th>
+                                    <th>Display</th>
                                 </tr>
                                 <tr>
-                                    <td>.icon--xs</td>
+                                    <td>1. Extra Small</td>
                                     <td><i class="icon-magnifier icon--xs"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--sm</td>
+                                    <td>2. Small</td>
                                     <td><i class="icon-magnifier icon--sm"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--md</td>
+                                    <td>3. Medium</td>
                                     <td><i class="icon-magnifier icon--md"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--lg</td>
+                                    <td>4. Large</td>
                                     <td><i class="icon-magnifier icon--lg"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--xl</td>
+                                    <td>5. Extra Large</td>
                                     <td><i class="icon-magnifier icon--xl"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--circle</td>
+                                    <td>6. Filled circle</td>
                                     <td><i class="icon-magnifier icon--circle background--cerulean"></i></td>
                                 </tr>
                                 <tr>
-                                    <td>.icon--outline</td>
+                                    <td>7. Outline circle</td>
                                     <td><i class="icon-magnifier icon--outline"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>8. Do Not circle</td>
+                                    <td><i class="icon-do-not icon--md"><i class="icon-run"></i></i></td>
                                 </tr>
                             </tbody></table>
                         </div>
                         <div class="six columns">
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
-                            <p>Helper classes are located in linearicons.scss for icon variations. These include:</p>
                             <div class="code__examples l-margin-bd">
                                 <form><textarea class="pattern" id="icon-code-1" name="code">
-<i class="icon-home"></i>
+<i class="icon-magnifier icon--xs"></i>
+<i class="icon-magnifier icon--sm"></i>
+<i class="icon-magnifier icon--md"></i>
+<i class="icon-magnifier icon--lg"></i>
+<i class="icon-magnifier icon--xl"></i>
 <i class="icon-magnifier icon--circle background--cerulean"></i>
-<i class="icon-pencil icon--outline icon--xl"></i> </textarea> </form> </div>
+<i class="icon-magnifier icon--outline"></i>
+<i class="icon-do-not icon--md"><i class="icon-run"></i></i></textarea> </form> </div>
+                            <p class="l-margin-bn"><strong>Notes</strong></p>
+                            <p>Helper classes are located in icomoon.scss for icon variations.</p>
 							<p>Since the Icomoon and Socials fonts are hosted on the City of San Diego's website server, the icons can only be used on <a href="https://www.sandiego.gov">www.sandiego.gov</a> web pages.</p>
                         </div>
                     </div>
@@ -1495,19 +1503,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-ellipsis</p>
 </div>
 				
-				</div>
-
-<div id="do-not"></div>				
-<h2>Icon inside <i class="icon-do-not icon--sm" title="prohibited icon"></i></h2>		
-				<div class="row l-margin-tm l-margin-bm">
-<div class="three columns text-center">
-<p><i class="icon-do-not icon--xl"><i class="icon-run"></i></i></p>
-</div>
-<div class="nine columns">
-<div class="code__examples l-margin-bx">
-	<form><textarea class="pattern" id="do-not-code-1" name="code">
-<i class="icon-do-not icon--xl"><i class="icon-run"></i></i></textarea> </form> </div>
-</div>
 				</div>
 
 				

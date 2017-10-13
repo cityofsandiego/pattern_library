@@ -4889,6 +4889,7 @@ img.photoRight {
 }
 
 .icon-do-not {
+    font-size: 1.8rem !important;
     position: relative;
     z-index: 5;
     color: #c51313;
@@ -4896,6 +4897,19 @@ img.photoRight {
 
 .icon-do-not:before {
     content: "\e99c";
+}
+
+.icon-do-not > [class^="icon-"],
+.icon-do-not [class*=" icon-"] {
+    font-size: 18px;
+    font-size: 1.125rem;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    float: left;
+    margin: .3em;
+    color: #37424a;
 }
 
 .icon-do-not.icon--xs {
@@ -4946,17 +4960,6 @@ img.photoRight {
 .icon-do-not.icon--xl [class*=" icon-"] {
     font-size: 44px;
     font-size: 2.75rem;
-}
-
-.icon-do-not > [class^="icon-"],
-.icon-do-not [class*=" icon-"] {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    float: left;
-    margin: .3em;
-    color: #37424a;
 }
 
 /* Header

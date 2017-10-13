@@ -1234,9 +1234,21 @@
 	position: relative;
 	color: $error;
 	z-index: 5;	
+	font-size: 1.8rem !important;
 	
 	&:before {
 		content: "\e99c";
+	}
+	
+	> [class^="icon-"], [class*=" icon-"] {
+		float: left;
+		position: absolute;
+		left: 0;
+		top: 0;
+		margin: 0.3em;
+		color: #37424a;
+		z-index: -1;
+		@include rem( 'font-size', 18px );
 	}
 	
 	&.icon--xs {
@@ -1277,15 +1289,5 @@
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 44px );
 		}
-	}
-	
-	> [class^="icon-"], [class*=" icon-"] {
-		float: left;
-		position: absolute;
-		left: 0;
-		top: 0;
-		margin: 0.3em;
-		color: #37424a;
-		z-index: -1;
 	}
 }
