@@ -20,66 +20,67 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </div>
 
 
-                <div class="l-container l-margin-tm">
+                <div class="l-container l-margin-tm l-margin-bm">
+							<p class="l-margin-bm">Since the Icomoon and Socials fonts are hosted on the City of San Diego's website server, the icons can only be used on <a href="https://www.sandiego.gov">www.sandiego.gov</a> web pages.</p>
 
-                    <div class="row l-margin-bm">
-                        <div class="six columns">
-                            <table class="twelve columns">
-                                <tbody>
-                                <tr>
-                                    <th>Variation</th>
-                                    <th>Display</th>
-                                </tr>
-                                <tr>
-                                    <td>1. Extra Small</td>
-                                    <td><i class="icon-magnifier icon--xs"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>2. Small</td>
-                                    <td><i class="icon-magnifier icon--sm"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>3. Medium</td>
-                                    <td><i class="icon-magnifier icon--md"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>4. Large</td>
-                                    <td><i class="icon-magnifier icon--lg"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>5. Extra Large</td>
-                                    <td><i class="icon-magnifier icon--xl"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>6. Filled circle</td>
-                                    <td><i class="icon-magnifier icon--circle background--cerulean"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>7. Outline circle</td>
-                                    <td><i class="icon-magnifier icon--outline"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>8. Do Not circle</td>
-                                    <td><i class="icon-do-not icon--md"><i class="icon-run"></i></i></td>
-                                </tr>
-                            </tbody></table>
-                        </div>
-                        <div class="six columns">
-                            <div class="code__examples l-margin-bd">
-                                <form><textarea class="pattern" id="icon-code-1" name="code">
-<i class="icon-magnifier icon--xs"></i>
-<i class="icon-magnifier icon--sm"></i>
-<i class="icon-magnifier icon--md"></i>
-<i class="icon-magnifier icon--lg"></i>
-<i class="icon-magnifier icon--xl"></i>
-<i class="icon-magnifier icon--circle background--cerulean"></i>
-<i class="icon-magnifier icon--outline"></i>
-<i class="icon-do-not icon--md"><i class="icon-run"></i></i></textarea> </form> </div>
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
+                    <h2>Variations</h2>
                             <p>Helper classes are located in icomoon.scss for icon variations.</p>
-							<p>Since the Icomoon and Socials fonts are hosted on the City of San Diego's website server, the icons can only be used on <a href="https://www.sandiego.gov">www.sandiego.gov</a> web pages.</p>
-                        </div>
-                    </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Extra Small</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--xs"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="xs-code" name="code">
+<i class="icon-magnifier icon--xs"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Small</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--sm"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="sm-code" name="code">
+<i class="icon-magnifier icon--sm"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Medium</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--md"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="md-code" name="code">
+<i class="icon-magnifier icon--md"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Large</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--lg"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="lg-code" name="code">
+<i class="icon-magnifier icon--lg"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Extra Large</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--xl"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="xl-code" name="code">
+<i class="icon-magnifier icon--xl"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Filled circle</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--circle background--cerulean"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="full-code" name="code">
+<i class="icon-magnifier icon--circle background--cerulean"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Outline circle</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-magnifier icon--outline"></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="outline-code" name="code">
+<i class="icon-magnifier icon--outline"></i></textarea> </form> </div></div>
+                                </div>
+                                <div class="row">
+                                    <div class="sm-twelve two columns l-padding-mobile-bs"><strong>Do Not circle</strong></div>
+                                    <div class="sm-three two columns l-padding-desktop-lm"><i class="icon-do-not icon--md"><i class="icon-run"></i></i></div>
+									<div class="sm-nine eight columns"><div class="code__examples l-margin-bd">
+                                <form><textarea class="pattern" id="do-not-code" name="code">
+<i class="icon-do-not icon--md"><i class="icon-run"></i></i></textarea> </form> </div></div>
+                                </div>
                 </div>
 
 <div id="icomoon"></div>
