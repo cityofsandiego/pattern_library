@@ -43,13 +43,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <main role="main">
             <div class="l-constrained l-padding-mobile-hd background-white">
-                <div class="l-container l-padding-hd">
+                <div class="l-container l-padding-hd l-padding-desktop-td l-padding-desktop-bm">
                     <div class="row">
                         <div class="twelve columns">
                             <h2>Get It Done</h2>
                         </div>
                     </div>
-                    <div class="row form__steps l-margin-tm">
+                    <div class="row form__steps l-margin-tn">
                         <div class="three columns form__step" id="form__step-1">
                             <form action="">
                                 <fieldset>
@@ -151,7 +151,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 <div class="l-container l-padding-hd l-margin-mobile-tm">
                     <div class="row">
                         <div class="nine columns">
-                            <div class="l-container">
+                            <div class="l-container l-padding-td">
                                 <h2>Our San Diego</h2>
 
                                 <div class="flexslider--mobile card__container l-margin-vd">
@@ -270,7 +270,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
 
                         <div class="three columns">
-                            <div class="l-container text-center--mobile">
+                            <div class="l-container text-center--mobile l-padding-td">
                                 <h2>Notifications <a href="" class="view-more">See all <i class="icon-chevron-right"></i></a></h2>
                                 <hr class="hr--dashed">
                                 <div class="card--notification row">
@@ -321,9 +321,9 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
                 </div>
 
-                <div class="l-container l-padding-hd l-margin-mobile-tm">
+                <div class="l-container l-padding-hd l-margin-mobile-td">
                     <div class="row">
-                        <div class="twelve columns">
+                        <div class="twelve columns l-margin-bd">
                             <h2>Explore San Diego</h2>
                         </div>
                     </div>

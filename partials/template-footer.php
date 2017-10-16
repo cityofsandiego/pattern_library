@@ -5,15 +5,15 @@
                 <div class="twelve columns no-gutters">
                     <img src="/assets/dist/img/logo--white--sm.png" alt="The City of San Diego - logo" width="49" height="39">
                     <ul class="socials">
-                        <li><a href=""><i class="icon-googleplus"></i></a></li>
                         <li><a href=""><i class="icon-facebook"></i></a></li>
                         <li><a href=""><i class="icon-youtube"></i></a></li>
                         <li><a href=""><i class="icon-twitter"></i></a></li>
-                        <li><a href=""><i class="icon-dribbble"></i></a></li>
-                        <li><a href=""><i class="icon-rss"></i></a></li>
+                        <li><a href=""><i class="icon-nextdoor"></i></a></li>
+                        <li><a href=""><i class="icon-linkedin"></i></a></li>
+                        <li><a href=""><i class="icon-instagram"></i></a></li>
                     </ul>
                     <p class="copyright">
-                    Copyrighted © 2002-2015<br>
+                    Copyrighted © 2002-<?php echo date("Y"); ?><br>
                     City of San Diego. All rights reserved.</p>
                 </div>
             </div>
