@@ -172,6 +172,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="twelve columns">
                             <p class="l-margin-bn"><strong>Notes</strong></p>
                             <p>Cards are wrapped in a <strong>.card__container</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
+							<p>Minimum dimensions for card images are <strong>500 x 238</strong>.</p>
                         </div>
                     </div>
                 </div>
