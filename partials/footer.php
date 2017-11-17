@@ -90,7 +90,7 @@ new Chart(document.getElementById("pie-chart"), {
         <?php } ?>
 
         <script>
-          var els = document.querySelectorAll("textarea.pattern");
+			var els = document.querySelectorAll("textarea.pattern");
 
             Array.prototype.forEach.call(els, function(el) {
                 var id = el.id;
@@ -102,6 +102,22 @@ new Chart(document.getElementById("pie-chart"), {
                   });
 
             });
+			
+			var amountScrolled = 300;
+
+			jQuery(window).scroll(function() {
+				if ( jQuery(window).scrollTop() > amountScrolled ) {
+					jQuery('div.backToTop a').fadeIn('slow');
+				} else {
+					jQuery('div.backToTop a').fadeOut('slow');
+				}
+			});
+			jQuery('div.backToTop a').click(function() {
+				jQuery('html, body').animate({
+					scrollTop: 0
+				}, 700);
+				return false;
+			});
 
         </script>
 

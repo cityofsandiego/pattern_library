@@ -10,7 +10,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <nav id="nav" class="main__navigation main-navigation nav-primary" role="navigation">
                     <ul>
-						<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="color:black;font-size:24px;"></i></a></li>
+						<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="font-size:24px;"></i></a></li>
                         <li class="has__dropdown"><a href="">Leisure <i class="icon-chevron-down"></i><span>Explore, Play + Events</span></a>
                             <div class="dropdown">
                                 <div class="row hide-on-mobile nav__heading">

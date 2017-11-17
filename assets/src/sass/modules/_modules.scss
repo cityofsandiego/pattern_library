@@ -99,7 +99,7 @@ header {
     @include mq( $until: site ) {
 
         .quicklinks {
-			float: left;
+			//float: left;
         }
 
         .card--weather {
@@ -1235,6 +1235,36 @@ header {
     color: white;
     padding: .5em 1em;
     background: $science;
+	
+	header#outreach & {
+		padding: .5em 1em;
+		background: white;
+		box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
+		position: relative;
+		z-index: 300;
+		
+		p a {
+			color: #37424a;
+		
+			img {
+				height:30px;
+				width: auto;
+				max-width: none;
+			}
+		}
+		
+		.quicklinks .google-translate {
+			padding-top: 8px;
+			
+			.goog-te-gadget-simple .goog-te-menu-value {
+				color: #37424a;
+				>span+img+span+img+span {
+					border-bottom:2px solid #37424a !important;
+					border-right:2px solid #37424a !important;
+				}
+			}
+		}
+	}	
 
     p {
         margin: 0;
@@ -1280,18 +1310,25 @@ header {
         }
 		
 		& .quicklinks {
-			top: 138px;
+			//top: 138px;
+			top: 51px;
 		}
 	}
 	
-	@include mq( $from: tablet ) {
+	/*@include mq( $from: tablet ) {
         padding: 1em;
         @include rem( 'font-size', 13px );
 
         .six:last-child {
             text-align: right;
         }
-    }
+    }*/
+        padding: 1em;
+        @include rem( 'font-size', 13px );
+
+        .six:last-child {
+            text-align: right;
+        }
 }
 
 .breadcrumbs {
@@ -3462,7 +3499,7 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 
 .gallery-menu li i {
    //@extend .text-off-white-like-background;
-   color: #eaeeef;
+   color: #37424a;
    &.toggle {
      @extend .text-gray;
      cursor: pointer;
@@ -3514,3 +3551,46 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
   color: red;
 }
 
+form#user-login {
+	@extend .l-constrained;
+	
+	div.form-item-name {
+		padding-bottom: 0 !important;
+	}
+	
+	.form-item {
+		margin-bottom: 1em;
+		
+		label {
+			float: left;
+			width: 120px;
+			padding-top:0.5em;
+			@include mq( $from: mobile-landscape  ) {
+				padding-left: 10px;
+			}
+		}
+		
+		input {
+			margin-bottom:0.5em;
+			width: 25em !important;
+		}
+	}
+	
+	@include mq( $from: mobile-landscape  ) {
+		> div {
+			padding-left: 0 !important;
+		}
+		
+		.description {
+			padding-left: 120px;
+		}
+	
+		.form-actions {
+			padding-left: 120px;
+		}
+	}
+}
+
+#block-system-main .profile, #block-masquerade-masquerade, #block-bean-sdadmin-display-node-type- {
+	padding: 1em 1em 0 1em;
+}

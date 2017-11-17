@@ -630,6 +630,7 @@ address {
 .l-constrained,
 .tabs.primary,
 .admin-menu .messages,
+form#user-login,
 .l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop,
@@ -659,6 +660,7 @@ address {
 .l-constrained:before,
 .tabs.primary:before,
 .admin-menu .messages:before,
+form#user-login:before,
 .l-constrained--site:before,
 .l-constrained--wide:before,
 .l-constrained--desktop:before,
@@ -670,6 +672,7 @@ address {
 .l-constrained:after,
 .tabs.primary:after,
 .admin-menu .messages:after,
+form#user-login:after,
 .l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
@@ -687,6 +690,7 @@ address {
 .l-constrained:after,
 .tabs.primary:after,
 .admin-menu .messages:after,
+form#user-login:after,
 .l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
@@ -1315,6 +1319,10 @@ dd {
     text-transform: none;
 }
 
+.heading--subcolor {
+    color: #009581;
+}
+
 /* Subheadline
    ========================================================================== */
 .subheading {
@@ -1329,6 +1337,7 @@ dd {
 .l-constrained,
 .tabs.primary,
 .admin-menu .messages,
+form#user-login,
 .l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop {
@@ -5008,18 +5017,21 @@ header nav a {
     }
     header > .l-constrained,
     header > .tabs.primary,
-    .admin-menu header > .messages {
+    .admin-menu header > .messages,
+    header > form#user-login {
         padding-bottom: 1em;
     }
     header > .l-constrained .columns,
     header > .tabs.primary .columns,
-    .admin-menu header > .messages .columns {
+    .admin-menu header > .messages .columns,
+    header > form#user-login .columns {
         display: inline-block;
         width: auto;
     }
     header > .l-constrained .columns.two,
     header > .tabs.primary .columns.two,
-    .admin-menu header > .messages .columns.two {
+    .admin-menu header > .messages .columns.two,
+    header > form#user-login .columns.two {
         float: left;
     }
     header .menu-btn {
@@ -5042,25 +5054,29 @@ header nav a {
 @media screen and (min-width: 48em) and (max-width: 59.99em) {
     header > .l-constrained,
     header > .tabs.primary,
-    .admin-menu header > .messages {
+    .admin-menu header > .messages,
+    header > form#user-login {
         padding-bottom: 2.5em;
     }
     header > .l-constrained .logo--wrap,
     header > .tabs.primary .logo--wrap,
-    .admin-menu header > .messages .logo--wrap {
+    .admin-menu header > .messages .logo--wrap,
+    header > form#user-login .logo--wrap {
         float: left;
         width: 25%;
     }
     header > .l-constrained .three,
     header > .tabs.primary .three,
-    .admin-menu header > .messages .three {
+    .admin-menu header > .messages .three,
+    header > form#user-login .three {
         float: left;
         width: 25%;
         text-align: right;
     }
     header > .l-constrained .seven,
     header > .tabs.primary .seven,
-    .admin-menu header > .messages .seven {
+    .admin-menu header > .messages .seven,
+    header > form#user-login .seven {
         position: static;
         float: left;
         width: 50%;
@@ -5068,9 +5084,6 @@ header nav a {
 }
 
 @media screen and (max-width: 59.99em) {
-    header .quicklinks {
-        float: left;
-    }
     header .card--weather {
         margin-top: .5em;
         text-align: center;
@@ -5089,7 +5102,8 @@ header nav a {
 @media screen and (min-width: 60em) {
     header > .l-constrained,
     header > .tabs.primary,
-    .admin-menu header > .messages {
+    .admin-menu header > .messages,
+    header > form#user-login {
         padding-bottom: 1em;
     }
     header .quicklinks {
@@ -5385,7 +5399,8 @@ header.header--app .row {
 
 .library__header > .l-constrained,
 .library__header > .tabs.primary,
-.admin-menu .library__header > .messages {
+.admin-menu .library__header > .messages,
+.library__header > form#user-login {
     padding: 1em 0;
     background: white;
 }
@@ -6292,9 +6307,50 @@ header.header--app .row {
 }
 
 .top-nav-strip {
+    font-size: 13px;
+    font-size: .8125rem;
     padding: .5em 1em;
+    /*@include mq( $from: tablet ) {
+        padding: 1em;
+        @include rem( 'font-size', 13px );
+        .six:last-child {
+            text-align: right;
+        }
+    }*/
+    padding: 1em;
     color: white;
     background: #005bbb;
+}
+
+header#outreach .top-nav-strip {
+    position: relative;
+    z-index: 300;
+    padding: .5em 1em;
+    background: white;
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, .3);
+}
+
+header#outreach .top-nav-strip p a {
+    color: #37424a;
+}
+
+header#outreach .top-nav-strip p a img {
+    width: auto;
+    max-width: none;
+    height: 30px;
+}
+
+header#outreach .top-nav-strip .quicklinks .google-translate {
+    padding-top: 8px;
+}
+
+header#outreach .top-nav-strip .quicklinks .google-translate .goog-te-gadget-simple .goog-te-menu-value {
+    color: #37424a;
+}
+
+header#outreach .top-nav-strip .quicklinks .google-translate .goog-te-gadget-simple .goog-te-menu-value > span + img + span + img + span {
+    border-right: 2px solid #37424a !important;
+    border-bottom: 2px solid #37424a !important;
 }
 
 .top-nav-strip p {
@@ -6340,19 +6396,12 @@ header.header--app .row {
         text-align: right;
     }
     .top-nav-strip .quicklinks {
-        top: 138px;
+        top: 51px;
     }
 }
 
-@media screen and (min-width: 48em) {
-    .top-nav-strip {
-        font-size: 13px;
-        font-size: .8125rem;
-        padding: 1em;
-    }
-    .top-nav-strip .six:last-child {
-        text-align: right;
-    }
+.top-nav-strip .six:last-child {
+    text-align: right;
 }
 
 .breadcrumbs {
@@ -8601,7 +8650,7 @@ body #colorbox,
 }
 
 .gallery-menu li i {
-    color: #eaeeef;
+    color: #37424a;
 }
 
 .gallery-menu li i.toggle {
@@ -8663,6 +8712,49 @@ body #colorbox,
 
 .menu-node-unpublished {
     color: red;
+}
+
+form#user-login div.form-item-name {
+    padding-bottom: 0 !important;
+}
+
+form#user-login .form-item {
+    margin-bottom: 1em;
+}
+
+form#user-login .form-item label {
+    float: left;
+    width: 120px;
+    padding-top: .5em;
+}
+
+@media screen and (min-width: 30em) {
+    form#user-login .form-item label {
+        padding-left: 10px;
+    }
+}
+
+form#user-login .form-item input {
+    width: 25em !important;
+    margin-bottom: .5em;
+}
+
+@media screen and (min-width: 30em) {
+    form#user-login > div {
+        padding-left: 0 !important;
+    }
+    form#user-login .description {
+        padding-left: 120px;
+    }
+    form#user-login .form-actions {
+        padding-left: 120px;
+    }
+}
+
+#block-system-main .profile,
+#block-masquerade-masquerade,
+#block-bean-sdadmin-display-node-type- {
+    padding: 1em 1em 0 1em;
 }
 
 #outer-wrap {
@@ -9925,6 +10017,26 @@ div.description {
     font-size: .75rem;
 }
 
+.views-exposed-form {
+    margin-bottom: 1.5em;
+}
+
+.views-exposed-form .views-exposed-widgets .views-exposed-widget {
+    padding: 0 1em .5em 0;
+}
+
+.views-exposed-form .views-exposed-widgets .views-exposed-widget input {
+    margin-bottom: 4px;
+}
+
+.views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item input {
+    margin: 0;
+}
+
+.views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item select {
+    margin-bottom: 1px;
+}
+
 .btn {
     line-height: normal;
     position: relative;
@@ -10744,8 +10856,13 @@ div.description {
 .backToTop {
     position: fixed;
     z-index: 999;
-    right: 30px;
-    bottom: 30px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.backToTop > p > a {
+    display: none;
+    opacity: .7;
 }
 
 /* Caption

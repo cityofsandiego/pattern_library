@@ -124,7 +124,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 							<a href="/" style="padding-top:5px;"><img src="/assets/dist/img/logo-mark.png" alt="City of San Diego Logo" title="Go to City of San Diego Home Page" width="50" height="auto"></a>
 						</div>
                         <ul>
-							<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="color:black;font-size:24px;"></i></a></li>
+							<li style="width: auto;"><a href="/" style="padding-top:18px;"><i class="icon-home hide-on-desktop"></i><span class="hide-on-desktop" style="font-size:18px;text-transform:uppercase;font-weight:600;">Home</span><i class="icon-home hide-on-mobile" style="font-size:24px;"></i></a></li>
                             <li class="has__dropdown"><a href="" class="dropdown-parent"><i class="icon-chevron-right hide-on-desktop"></i>Leisure <i class="icon-chevron-down hide-on-mobile"></i><span>Explore, Play + Events</span></a>
                                 <div class="dropdown">
                                     <div class="row hide-on-mobile nav__heading">

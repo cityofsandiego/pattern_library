@@ -654,3 +654,24 @@ header {
 div.description {
 	font-size: .75rem;
 }
+	
+.views-exposed-form {
+	margin-bottom: 1.5em;
+	
+	.views-exposed-widgets .views-exposed-widget {
+		padding: 0 1em .5em 0;
+		
+		input {
+			margin-bottom: 4px;
+		}
+		
+		.views-widget .form-item {
+			input {
+				margin: 0;
+			}
+			select {
+				margin-bottom: 1px;
+			}
+		}
+	}
+}
