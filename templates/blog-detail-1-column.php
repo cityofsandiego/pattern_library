@@ -18,7 +18,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                         </div>
 
                         <div class="row l-padding-td">
-                            <div class="six columns">
+                            <div class="seven columns">
                                 <div class="main__message main__message--white">
                                     <h1 class="main__heading">Article Headline</h1>
                                     <p class="main__content subheading">2 Column Blog Layout</p>
@@ -38,7 +38,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     </div>
                                 </div>
                             </div>
-                            <div class="six columns text-center no-gutters">
+                            <div class="five columns text-center no-gutters">
                                 <div class="main__image l-padding-hd l-padding-bd">
                                     <img src="../assets/dist/img/entry-image-sm.jpg" width="565" height="280" alt="">
                                 </div>
