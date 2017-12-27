@@ -195,11 +195,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 
 				    <div id="blockquotes" class="l-container l-margin-vm">
-				    	<div class="row">
-				    		<div class="twelve columns">
 				    			<h2>Blockquotes</h2>
+				    	<div class="row">
+				    		<div class="six columns">
 				    			<blockquote>With its great weather, miles of sandy beaches, and major attractions, San Diego is known worldwide as one of the best tourist destinations and a great place for residents to relax year round. <span class="author">Mayor Kevin Faulconer</span></blockquote>
 				    		</div>
+							<div class="six columns">
+							<div class="code__examples">
+                                <form><textarea class="pattern" id="type-code-5" name="code">
+<blockquote>With its great weather, miles of sandy beaches, and major attractions, San Diego is known worldwide as one of the best tourist destinations and a great place for residents to relax year round. <span class="author">Mayor Kevin Faulconer</span></blockquote>	</textarea> </form> </div>
+							</div>
 				    	</div>
 				    </div>
 
