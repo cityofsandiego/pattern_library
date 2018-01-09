@@ -290,7 +290,7 @@ define(function () {
         }).focus(function(){
 			$('.dropdown').removeClass("visible");
 		});
-        $(".form--search-wrap.hide-on-desktop .search-icon--open").click(function(event){
+        $(".form--search-wrap.hide-on-desktop .search-icon--open, .form--search-wrap.hide-on-desktop .translate-icon--open").click(function(event){
           event.preventDefault();
 		  $(".form--search, .quicklinks").css("top", $("#header-alert").outerHeight() + $("#top-header").outerHeight() - 1);
         });
