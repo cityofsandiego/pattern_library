@@ -447,6 +447,11 @@ header {
             padding: 5em 0 12em;
         }
     }
+	@include mq( $until: site ) {
+        > .row {
+            padding: 1em 1em 0 1em;
+        }
+	}
 
     .flex-control-nav,
     .flex-direction-nav {
@@ -489,7 +494,7 @@ header {
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            background: rgba(0, 0, 0, 0.35);
+            //background: rgba(0, 0, 0, 0.35);
         }
 
         @include mq( $from: site ) {
@@ -579,18 +584,18 @@ header {
         }
     }
 
-    @include mq( $from: site ) {
+    //@include mq( $from: site ) {
         margin: 0;
         padding: 2.75em 3.5em;
         background: rgba(0, 0, 0, 0.35);
         &.no-sides {
           background: transparent;
         }
-    }
+    //}
 
-    @include mq( $until: site ) {
-        width: auto;
-    }
+    //@include mq( $until: site ) {
+    //    width: auto;
+    //}
 }
 
 .hero__slides--content {
@@ -602,6 +607,7 @@ header {
 .hero__slides--secondary {
     @include mq( $until: site ) {
         padding-bottom: 2em;
+		min-height: 100px;
     }
 
     .hero__content {
@@ -1058,7 +1064,11 @@ header {
         background: transparent;
     }
 
-    ul {
+	@include mq( $until: tablet ) {
+        background: white;
+    }
+	
+	ul {
         margin: 0;
         padding: 0;
         list-style: none;
@@ -1128,6 +1138,36 @@ header {
             @include rem( 'font-size', 13px );
         }
     }
+}
+
+.sub-navigation-mobile {
+	.accordions {
+		margin: 0;
+	}
+	
+	.accordion__heading, .accordion__drawer {
+		background-color: $teal;
+	}
+		
+	.is-open .accordion__heading {
+		background-color: white;
+		
+		a.accordion__link {
+			color: #37424a !important;
+	
+			.toggle-icon:before, .toggle-icon:after {
+				background-color: #37424a;
+			}
+		}
+	}	
+	
+	a {
+		color: white;
+	
+		.toggle-icon:before, .toggle-icon:after {
+			background-color: white;
+		}
+	}
 }
 
 // Microsite/Portal nav

@@ -4,7 +4,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="hero__slides hero__slides--secondary">
             <div class="l-constrained--site row">
-                <div class="twelve columns hero__content">
+                <!--<div class="twelve columns hero__content">
                     <div id="hero__slides--secondary" class="hero__slides--content">
                         <ul class="slides">
                             <li>
@@ -23,7 +23,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                       <a href="#" class="flex-prev"><i class="icon-chevron-left"></i></a>
                       <a href="#" class="flex-next"><i class="icon-chevron-right"></i></a>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 
@@ -42,16 +42,35 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 
         <div class="l-constrained l-padding-mobile-hd background-white role-main">
            <nav class="sub-navigation">
-                <ul>
-                    <li class="active"><a href="">Parks & Recreation</a></li>
-                    <li><a href="">General Information</a></li>
-                    <li><a href="">Recreation Centers & Pools</a></li>
-                    <li><a href="">Parks & Open Spaces</a></li>
-                    <li><a href="">Another Long Titled Department Name Here</a></li>
-                </ul>
+				<div class="hide-on-mobile">
+					<ul class="menu">
+						<li class="first leaf"><a href="" class="active">Parks & Recreation</a></li>
+						<li class="leaf"><a href="">General Information</a></li>
+						<li class="leaf"><a href="">Recreation Centers & Pools</a></li>
+						<li class="leaf"><a href="">Parks & Open Spaces</a></li>
+						<li class="leaf"><a href="">Another Long Titled Department Name Here</a></li>
+					</ul>
+				</div>
+				<div class="hide-on-desktop sub-navigation-mobile l-padding-hd l-padding-td l-padding-bs background-white">
+	  
+					<div class="accordions js-toggle-accordion">
+					  <div class="accordion">
+						<p class="accordion__heading"><a class="accordion__link" href="#"><i class="icon-menu l-margin-rs"></i> Site Menu  <span class="toggle-icon"> </span></a></p>
+						<div class="accordion__drawer">
+							<ul class="menu">
+								<li class="first leaf"><a href="" class="active">Parks & Recreation</a></li>
+								<li class="leaf"><a href="">General Information</a></li>
+								<li class="leaf"><a href="">Recreation Centers & Pools</a></li>
+								<li class="leaf"><a href="">Parks & Open Spaces</a></li>
+								<li class="leaf"><a href="">Another Long Titled Department Name Here</a></li>
+							</ul>
+						</div>
+					  </div>
+					</div>
+					
+				</div>				
             </nav>
-
-
+			
             <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
                 <a href="" class="breadcrumbs__link">Home</a>
                 <span class="breadcrumbs__divider">&#62;</span>

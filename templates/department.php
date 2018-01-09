@@ -13,14 +13,35 @@ require_once( ABSPATH . PARTIALS . '/template-header-alert.php' ); ?>
                                     <h1 class="main__heading">Parks & Recreation</h1>
                                 </div>
 
-                                <nav class="sub-navigation">
-                                    <ul class="l-margin-vn">
-                                        <li><a href="">Parks & Recreation</a></li>
-                                        <li><a href="">General Information</a></li>
-                                        <li><a href="">Recreation Centers & Pools</a></li>
-                                        <li><a href="">Parks & Open Spaces</a></li>
-                                    </ul>
-                                </nav>
+								<nav class="sub-navigation">
+									<div class="hide-on-mobile">
+										<ul class="menu">
+											<li class="first leaf"><a href="" class="active">Parks & Recreation</a></li>
+											<li class="leaf"><a href="">General Information</a></li>
+											<li class="leaf"><a href="">Recreation Centers & Pools</a></li>
+											<li class="leaf"><a href="">Parks & Open Spaces</a></li>
+											<li class="leaf"><a href="">Another Long Titled Department Name Here</a></li>
+										</ul>
+									</div>
+									<div class="hide-on-desktop sub-navigation-mobile l-padding-hd l-padding-td l-padding-bs background-white">
+						  
+										<div class="accordions js-toggle-accordion">
+										  <div class="accordion">
+											<p class="accordion__heading"><a class="accordion__link" href="#"><i class="icon-menu l-margin-rs"></i> Site Menu  <span class="toggle-icon"> </span></a></p>
+											<div class="accordion__drawer">
+												<ul class="menu">
+													<li class="first leaf"><a href="" class="active">Parks & Recreation</a></li>
+													<li class="leaf"><a href="">General Information</a></li>
+													<li class="leaf"><a href="">Recreation Centers & Pools</a></li>
+													<li class="leaf"><a href="">Parks & Open Spaces</a></li>
+													<li class="leaf"><a href="">Another Long Titled Department Name Here</a></li>
+												</ul>
+											</div>
+										  </div>
+										</div>
+										
+									</div>				
+								</nav>
                             </div>
                         </div>
                     </div>

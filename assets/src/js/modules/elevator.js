@@ -290,6 +290,10 @@ define(function () {
         }).focus(function(){
 			$('.dropdown').removeClass("visible");
 		});
+        $(".form--search-wrap.hide-on-desktop .search-icon--open").click(function(event){
+          event.preventDefault();
+		  $(".form--search, .quicklinks").css("top", $("#header-alert").outerHeight() + $("#top-header").outerHeight() - 1);
+        });
       },
       translate : function() {
         $(".translate-icon--open").click(function(event){
@@ -337,29 +341,31 @@ define(function () {
         $(window).on('resize', function(){
           var windowWidth = $(window).width();
           // console.log ( windowWidth );
-          var $parent = $(".main__navigation .dropdown-parent");
-          var $icon   = $parent.find("i");
-          // Check events attached to parent links
-          var $events = jQuery._data($parent[0], "events" );
-          // If viewport is at tablet width or below and no click event is bound to link
-          if ( windowWidth < 768 && $events === undefined ) {
-            // $parent.on("click", function( e ){
-            //   e.preventDefault();
-            // }
-            $icon.on("click", function(){
-              var $dropdown = $(this).siblings(".dropdown");
-              $(this).toggleClass("open-dropdown");
-              $dropdown.slideToggle();
-            });
-          }
-          if ( windowWidth > 768 ) {
-            // Remove click handler event once viewport is larger than tablet
-            $parent.each(function(){
-              $(this).off();
-              $(this).removeClass("open-dropdown");
-            });
-            $(".main__navigation .has__dropdown > .dropdown").css( "display", "");
-          }
+			if ($(".main__navigation .dropdown-parent").length) {													 
+			  var $parent = $(".main__navigation .dropdown-parent");
+			  var $icon   = $parent.find("i");
+			  // Check events attached to parent links
+			  var $events = jQuery._data($parent[0], "events" );
+			  // If viewport is at tablet width or below and no click event is bound to link
+			  if ( windowWidth < 768 && $events === undefined ) {
+				// $parent.on("click", function( e ){
+				//   e.preventDefault();
+				// }
+				$icon.on("click", function(){
+				  var $dropdown = $(this).siblings(".dropdown");
+				  $(this).toggleClass("open-dropdown");
+				  $dropdown.slideToggle();
+				});
+			  }
+			  if ( windowWidth > 768 ) {
+				// Remove click handler event once viewport is larger than tablet
+				$parent.each(function(){
+				  $(this).off();
+				  $(this).removeClass("open-dropdown");
+				});
+				$(".main__navigation .has__dropdown > .dropdown").css( "display", "");
+			  }
+			}
         });
       },
       tabs : function() {

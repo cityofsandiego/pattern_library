@@ -4050,6 +4050,10 @@ header.header--app .row {
     height: 198px;
 }
 
+.hero__slides > .row {
+    padding: 1em 1em 0 1em;
+}
+
 .hero__slides .flex-control-nav,
 .hero__slides .flex-direction-nav {
     display: none;
@@ -4088,7 +4092,6 @@ header.header--app .row {
     width: 100%;
     height: 100%;
     content: "";
-    background: rgba(0, 0, 0, .35);
 }
 
 .hero__slides--img .slides,
@@ -4125,11 +4128,13 @@ header.header--app .row {
 .hero__content {
     position: relative;
     z-index: 4;
-    width: auto;
     margin: 0 0 3em;
+    margin: 0;
     padding: 1.5em;
     padding: 1.75em 2.5em;
+    padding: 2.75em 3.5em;
     color: white;
+    background: rgba(0, 0, 0, .35);
 }
 
 .hero__content h1 {
@@ -4167,11 +4172,16 @@ header.header--app .row {
     margin-top: 2em;
 }
 
+.hero__content.no-sides {
+    background: transparent;
+}
+
 .hero__slides--content .slides {
     overflow: hidden;
 }
 
 .hero__slides--secondary {
+    min-height: 100px;
     padding-bottom: 2em;
 }
 
@@ -4636,6 +4646,37 @@ header.header--app .row {
 
 .sub-navigation a:hover {
     color: white;
+}
+
+.sub-navigation-mobile .accordions {
+    margin: 0;
+}
+
+.sub-navigation-mobile .accordion__heading,
+.sub-navigation-mobile .accordion__drawer {
+    background-color: #009581;
+}
+
+.sub-navigation-mobile .is-open .accordion__heading {
+    background-color: white;
+}
+
+.sub-navigation-mobile .is-open .accordion__heading a.accordion__link {
+    color: #37424a !important;
+}
+
+.sub-navigation-mobile .is-open .accordion__heading a.accordion__link .toggle-icon:before,
+.sub-navigation-mobile .is-open .accordion__heading a.accordion__link .toggle-icon:after {
+    background-color: #37424a;
+}
+
+.sub-navigation-mobile a {
+    color: white;
+}
+
+.sub-navigation-mobile a .toggle-icon:before,
+.sub-navigation-mobile a .toggle-icon:after {
+    background-color: white;
 }
 
 .portal header,
