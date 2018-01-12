@@ -64,14 +64,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <h2>Accordion</h2>
                             <div class="accordions js-toggle-accordion">
                                 <div class="accordion">
-                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>
                                     <div class="accordion__drawer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
 
                                 <div class="accordion">
-                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+                                    <p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>
                                     <div class="accordion__drawer">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
@@ -87,14 +87,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 <form><textarea class="pattern" id="comp-code-1" name="code">
 <div class="accordions js-toggle-accordion">
     <div class="accordion">
-        <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+        <p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>
         <div class="accordion__drawer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
 
     <div class="accordion">
-        <p class="accordion__heading"><a class="accordion__link" href="#">Question <span class="toggle-icon"></span></a></p>
+        <p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>
         <div class="accordion__drawer">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
