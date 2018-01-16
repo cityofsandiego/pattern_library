@@ -653,6 +653,11 @@ header {
         max-height: 20em;
         top: 0; left: 0;
         z-index: 0;
+		
+		@include mq( $until: tablet ) {
+			height: auto;
+			min-height:175px;
+		}
     }
 
     // Solid background color behind hero content
@@ -2322,15 +2327,18 @@ html.translated-ltr, html.translated-rtl {
     position: relative;
     background-color: rgba(0,0,0,0.35);
 
-    @include mq( $from: mobile ) {
+    @include mq( $from: tablet ) {
         padding: 2.5em 1em;
     }
-
+    @include mq( $until: tablet ) {
+        padding: 1.5em 1em;
+    }
+	
     .main__heading {
         margin: 0;
         color: white;
         @include rem( 'font-size', 48px );
-		@include mq( $until: tablet ) { font-size: 2.5rem; }
+		@include mq( $until: tablet ) { font-size: 2rem; }
 		@media print {
 			font-size: 2em;
 		}
@@ -3576,6 +3584,14 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 
 /* Office Hours
    ========================================================================== */
+.oh-wrapper .oh-display:first-child {
+  font-weight: 600;
+}
+.oh-display-closed {
+  color: red;
+  margin-right: 5px;
+  text-align: right;
+}
 .oh-display span.oh-display-label {
   display: inline;
   float: left;

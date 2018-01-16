@@ -6733,6 +6733,16 @@ body #colorbox,
 
 /* Office Hours
    ========================================================================== */
+.oh-wrapper .oh-display:first-child {
+    font-weight: 600;
+}
+
+.oh-display-closed {
+    margin-right: 5px;
+    text-align: right;
+    color: red;
+}
+
 .oh-display span.oh-display-label {
     display: inline;
     float: left;

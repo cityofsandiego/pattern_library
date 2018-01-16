@@ -5643,6 +5643,13 @@ header.header--app .row {
     max-height: 20em;
 }
 
+@media screen and (max-width: 47.99em) {
+    .hero__bg.hero__bg--secondary {
+        height: auto;
+        min-height: 175px;
+    }
+}
+
 .hero__bg.hero__bg--solid {
     position: absolute;
     z-index: 0;
@@ -7415,9 +7422,15 @@ html.translated-rtl header.header--fixed {
     background-color: rgba(0, 0, 0, .35);
 }
 
-@media screen and (min-width: 20em) {
+@media screen and (min-width: 48em) {
     .main__message {
         padding: 2.5em 1em;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .main__message {
+        padding: 1.5em 1em;
     }
 }
 
@@ -7430,7 +7443,7 @@ html.translated-rtl header.header--fixed {
 
 @media screen and (max-width: 47.99em) {
     .main__message .main__heading {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -8732,6 +8745,16 @@ body #colorbox,
 
 /* Office Hours
    ========================================================================== */
+.oh-wrapper .oh-display:first-child {
+    font-weight: 600;
+}
+
+.oh-display-closed {
+    margin-right: 5px;
+    text-align: right;
+    color: red;
+}
+
 .oh-display span.oh-display-label {
     display: inline;
     float: left;
