@@ -838,6 +838,10 @@
     content: "\e807";
 }
 
+.icon-picnic-table:before {
+    content: "\e900";
+}
+
 .icon-teacup:before {
     content: "\e80b";
 }
@@ -900,6 +904,10 @@
 
 .icon-paw:before {
     content: "\e832";
+}
+
+.icon-bleachers:before {
+    content: "\e901";
 }
 
 .icon-rocket:before {

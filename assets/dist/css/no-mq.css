@@ -2986,6 +2986,10 @@ img.photoRight {
     content: "\e807";
 }
 
+.icon-picnic-table:before {
+    content: "\e900";
+}
+
 .icon-teacup:before {
     content: "\e80b";
 }
@@ -3048,6 +3052,10 @@ img.photoRight {
 
 .icon-paw:before {
     content: "\e832";
+}
+
+.icon-bleachers:before {
+    content: "\e901";
 }
 
 .icon-rocket:before {
@@ -6794,6 +6802,55 @@ form#user-login .form-actions {
 #block-masquerade-masquerade,
 #block-bean-sdadmin-display-node-type- {
     padding: 1em 1em 0 1em;
+}
+
+/* Inside San Diego
+   ========================================================================== */
+body.insidesd h1 {
+    font-size: 3rem;
+    text-align: left;
+    text-shadow: 0 0 #555, 0 2px .3em black, 2px 0 .3em black, 0 0 black;
+}
+
+body.insidesd h2 a,
+body.insidesd h3 a,
+body.insidesd h4 a {
+    text-decoration: none;
+    color: #37424a;
+}
+
+body.insidesd .sub-navigation-mobile .accordion__heading,
+body.insidesd .sub-navigation-mobile .accordion__drawer {
+    background-color: #00549f;
+}
+
+body.insidesd .sub-navigation-mobile .is-open .accordion__heading {
+    background-color: white;
+}
+
+body.insidesd .sub-navigation {
+    margin-top: -29px;
+}
+
+body.insidesd .sub-navigation li {
+    max-width: none;
+    margin: 0 0 0 .8em;
+    background-color: #00549f;
+}
+
+body.insidesd .sub-navigation.insidesd-article {
+    margin-top: -77px;
+}
+
+body.insidesd main > div.nine,
+body.insidesd aside > div.three {
+    z-index: 15;
+}
+
+body.insidesd hr.features {
+    height: 2px;
+    border-top: none;
+    background-color: #dde2e5;
 }
 
 .comments-title {

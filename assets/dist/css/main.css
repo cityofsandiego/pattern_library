@@ -758,6 +758,12 @@ form#user-login:after,
     border-left: none;
 }
 
+@media screen and (max-width: 47.99em) {
+    .no-border-on-mobile {
+        border: none !important;
+    }
+}
+
 .border-radius {
     border-radius: 4px;
 }
@@ -1927,6 +1933,13 @@ img.photoRight {
 
 /* Vertical */
 @media screen and (max-width: 47.99em) {
+    .l-padding-mobile-vn {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
     .l-padding-mobile-vs {
         padding-top: .5em !important;
         padding-bottom: .5em !important;
@@ -1958,6 +1971,13 @@ img.photoRight {
     .l-padding-mobile-vx {
         padding-top: 6em !important;
         padding-bottom: 6em !important;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .l-margin-mobile-vn {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
     }
 }
 
@@ -1998,6 +2018,13 @@ img.photoRight {
 
 /* Horizontal */
 @media screen and (max-width: 47.99em) {
+    .l-padding-mobile-hn {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
     .l-padding-mobile-hs {
         padding-right: .5em !important;
         padding-left: .5em !important;
@@ -2029,6 +2056,13 @@ img.photoRight {
     .l-padding-mobile-hx {
         padding-right: 6em !important;
         padding-left: 6em !important;
+    }
+}
+
+@media screen and (max-width: 47.99em) {
+    .l-margin-mobile-hn {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
     }
 }
 
@@ -4147,6 +4181,10 @@ img.photoRight {
     content: "\e807";
 }
 
+.icon-picnic-table:before {
+    content: "\e900";
+}
+
 .icon-teacup:before {
     content: "\e80b";
 }
@@ -4209,6 +4247,10 @@ img.photoRight {
 
 .icon-paw:before {
     content: "\e832";
+}
+
+.icon-bleachers:before {
+    content: "\e901";
 }
 
 .icon-rocket:before {
@@ -8813,6 +8855,76 @@ form#user-login .form-item input {
     padding: 1em 1em 0 1em;
 }
 
+/* Inside San Diego
+   ========================================================================== */
+body.insidesd h1 {
+    text-shadow: 0 0 #555, 0 2px .3em black, 2px 0 .3em black, 0 0 black;
+}
+
+@media screen and (max-width: 47.99em) {
+    body.insidesd h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    body.insidesd h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+}
+
+body.insidesd h2 a,
+body.insidesd h3 a,
+body.insidesd h4 a {
+    text-decoration: none;
+    color: #37424a;
+}
+
+body.insidesd .sub-navigation-mobile .accordion__heading,
+body.insidesd .sub-navigation-mobile .accordion__drawer {
+    background-color: #00549f;
+}
+
+body.insidesd .sub-navigation-mobile .is-open .accordion__heading {
+    background-color: white;
+}
+
+@media screen and (max-width: 47.99em) {
+    body.insidesd .hero__slides--secondary {
+        min-height: auto;
+        padding-bottom: 0;
+    }
+    body.insidesd .sub-navigation li {
+        background-color: #00549f;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    body.insidesd .sub-navigation {
+        margin-top: -29px;
+    }
+    body.insidesd .sub-navigation li {
+        max-width: none;
+        margin: 0 0 0 .8em;
+        background-color: #00549f;
+    }
+    body.insidesd .sub-navigation.insidesd-article {
+        margin-top: -77px;
+    }
+    body.insidesd main > div.nine,
+    body.insidesd aside > div.three {
+        z-index: 15;
+    }
+}
+
+body.insidesd hr.features {
+    height: 2px;
+    border-top: none;
+    background-color: #dde2e5;
+}
+
 #outer-wrap {
     position: relative;
     overflow: hidden;
@@ -11467,7 +11579,6 @@ span.CodeMirror-selectedtext {
 .theme-citynet .role-main {
     position: relative;
     z-index: 5;
-    margin-top: -50px;
 }
 
 @media screen and (min-width: 60em) {
@@ -11612,6 +11723,11 @@ span.CodeMirror-selectedtext {
     font-size: 1.5em;
     line-height: 1.2em;
     padding: .5em;
+}
+
+.theme-citynet .view-events .event__date {
+    font-size: .81em;
+    line-height: 1;
 }
 
 .theme-citynet.node-type-department-parent .event__date {
@@ -11858,6 +11974,18 @@ span.CodeMirror-selectedtext {
 
 .theme-citynet aside div.widget > ul.menu {
     margin-bottom: 1em;
+}
+
+.theme-citynet.page-search .facets h2 {
+    font-size: .9em;
+    margin-left: 20px;
+}
+
+.theme-citynet.page-search .facets h2.block-apachesolr-search-sort,
+.theme-citynet.page-search .facets h2.sand_entity_type,
+.theme-citynet.page-search .facets .bean-bean-html-block h2 {
+    font-size: 1.2em;
+    margin-left: 0;
 }
 
 .theme-citynet div.search-result-wrapper h3.title a:visited {
