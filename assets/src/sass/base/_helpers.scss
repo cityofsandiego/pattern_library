@@ -95,9 +95,6 @@
 }
 
 
-
-
-
 /* Visibility
    ========================================================================== */
 
@@ -108,6 +105,7 @@
 .hidden {
     @extend %hidden;
 }
+
 
 /* Hidden
    ========================================================================== */
@@ -127,12 +125,9 @@
 /* Corners
    ========================================================================== */
 
-.rounded-corner {
+.rounded-corner, .rounded-corners {
     border-radius: 4px;
 }
-
-
-
 
 
 /* Borders
@@ -165,12 +160,19 @@
     border-top: none;
 }
 
+.border--right--desktop {
+    @include mq( $from: tablet ) {
+		border-bottom: none;
+		border-left: none;
+		border-top: none;
+    }
+}
+
 .no-border-on-mobile {
 	@include mq( $until: tablet ) {
 		border: none !important;
 	}
 }
-
 
 .border-radius {
     border-radius: 4px;
@@ -189,6 +191,11 @@
     @include rem( 'font-size', 22px );
 }
 
+.text-accent--desktop {
+    @include mq( $from: tablet ) {
+		@include rem( 'font-size', 22px );
+    }
+}
 
 .text-center {
     text-align: center;
@@ -267,6 +274,9 @@
 .text-pom {
     color: $pomegranate !important;
 }
+.text-spruce {
+    color: $spruce !important;
+}
 
 .inactive-link {
 	pointer-events: none !important;
@@ -307,7 +317,6 @@ p.nav-ex {
 .indent-d {
   text-indent: 2em;
 }
-
 
 
 /* Alignment
@@ -353,7 +362,6 @@ p.nav-ex {
 }
 
 
-
 /* Lists
    ========================================================================== */
 .no-bullets {
@@ -373,12 +381,14 @@ p.nav-ex {
     }
 }
 
+
 /* Horizontal Rules
    ========================================================================== */
 
 .hr--dashed {
     border-top: 1px dashed $alto;
 }
+
 
 /* Backgrounds
    ========================================================================== */
@@ -390,6 +400,7 @@ p.nav-ex {
         }
     }
 }
+
 .background-off-white {
     background-color: lighten( $mercury, 2% ) !important;
 }
@@ -422,6 +433,10 @@ p.nav-ex {
     background: $westar !important;
 }
 
+.background--off-white {
+    background: $off-white !important;
+}
+
 // Overlays
 .overlay {
     position: absolute;
@@ -429,6 +444,7 @@ p.nav-ex {
     width: 100%; height: 100%;
     background: rgba(55, 66, 74, 0.5);
 }
+
 
 /* Gradient
    ========================================================================== */
@@ -464,4 +480,31 @@ p.nav-ex {
     background: -ms-linear-gradient(top,  #ffffff 0%,#d4d4d4 100%); /* IE10+ */
     background: linear-gradient(to bottom,  #ffffff 0%,#d4d4d4 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* Widths by Percentage
+   ========================================================================== */
+.width-25 {
+	width: 25% !important;
+}
+
+.width-33 {
+	width: 33.3333333333% !important;
+}
+
+.width-50 {
+	width: 50% !important;
+}
+
+.width-66 {
+	width: 66.6666666666% !important;
+}
+
+.width-75 {
+	width: 75% !important;
+}
+
+.width-100 {
+	width: 100% !important;
 }

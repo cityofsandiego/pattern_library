@@ -100,7 +100,7 @@ require_once( ABSPATH . PARTIALS . '/insidesd-header.php' ); ?>
 									<h3 class="h5"><a href="insidesd-article.php">Lorem Ipsum Dolor Sit Amet Consectetur Adipiscing Elit</a></h3>
 								</div>
 							</div>
-							<p class="l-padding-desktop-ld text-center l-margin-mobile-bl"><a class="btn btn--outline btn--lg" href="#">More Articles</a></p>
+							<p class="l-padding-desktop-ld text-center l-margin-mobile-bl"><a class="btn btn--outline btn--lg" href="insidesd-articles.php">More Articles</a></p>
 						</div>
 						<div class="three columns text-center--mobile">
 							<h2 class="h5">Contact Inside San Diego</h2>

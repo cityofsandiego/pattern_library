@@ -52,13 +52,13 @@ require_once( ABSPATH . PARTIALS . '/intranet-header-alert.php' ); ?>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris. Nunc vitae mollis orci. In lectus est, sollicitudin sagittis augue ut, elementum feugiat tellus. In eu laoreet quam. Nam et nulla in nulla fermentum euismod vel quis orci. Suspendisse ut lectus aliquam, ultricies nulla eu, facilisis quam. Vestibulum justo leo, posuere at lacinia vestibulum, pellentesque eget tortor.</p>
 						<div class="row l-padding-desktop-tm">
 							<div class="four columns l-margin-mobile-bd">
-								<a class="btn btn--outline btn--wide" href="intranet-dept.php"><i class="icon-telephone2"></i> Department</a>
+								<a class="btn btn--outline btn--wide" href="citynet-dept.php"><i class="icon-telephone2"></i> Department</a>
 							</div>
 							<div class="four columns l-margin-mobile-bd">
-								<a class="btn btn--outline btn--wide" href="intranet-dept.php"><i class="icon-telephone2"></i> Department</a>
+								<a class="btn btn--outline btn--wide" href="citynet-dept.php"><i class="icon-telephone2"></i> Department</a>
 							</div>
 							<div class="four columns l-margin-mobile-bd">
-								<a class="btn btn--outline btn--wide" href="intranet-dept.php"><i class="icon-telephone2"></i> Department</a>
+								<a class="btn btn--outline btn--wide" href="citynet-dept.php"><i class="icon-telephone2"></i> Department</a>
 							</div>
 						</div>
 					</div>

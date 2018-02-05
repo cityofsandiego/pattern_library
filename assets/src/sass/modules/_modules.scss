@@ -1445,7 +1445,10 @@ header {
 		text-align: center;
 		box-shadow: 0 3px 0px -1px rgba(0,0,0,0.15);
 	}
-	
+	.quicklinks .accessibility {
+			font-size:12px;
+			padding-top: 8px;
+		}
 	
     // google translate
     .google-translate {
@@ -2334,7 +2337,7 @@ html.translated-ltr, html.translated-rtl {
         padding: 1.5em 1em;
     }
 	
-    .main__heading {
+	.main__heading {
         margin: 0;
         color: white;
         @include rem( 'font-size', 48px );
@@ -3601,6 +3604,12 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 .oh-display span.oh-display-times {
   display: inline;
   float: right;
+  text-align: right;
+  margin-bottom: .5em;
+}
+
+.oh-display:last-child span.oh-display-times {
+  margin-bottom: 0;
 }
 
 .menu-node-unpublished {
@@ -3715,5 +3724,42 @@ body.insidesd {
 		background-color: #dde2e5;
 		height: 2px;
 	}
+}
+
+
+
+/* Accessibility Dialog Popup
+   ========================================================================== */
+
+/* accessibility text in header */
+.accessibility {
+  display: inline-block;
+  position: relative;
+  padding: 5px 0 .5em 0;
+  margin-top:4px;
+  margin-right:15px;
+  padding-top: 4px;
+  font-size: 10pt;
+}
+#accessibility {
+  vertical-align: middle;
+  font-size: 0.75rem;
+}
+
+/* Width of popup */
+.white-popup.accessibility-popup-position {
+  width: 700px;
+  max-width: 700px;
+}
+
+/* class for disabled link */
+.disable_link {
+  @extend .text-gray;
+  text-decoration: none;
+  cursor: default;		  
+}
+
+div#__ba_panel._ba_manual {
+  display: none;
 }
 

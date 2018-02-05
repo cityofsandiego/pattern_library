@@ -724,7 +724,8 @@ form#user-login:after,
 
 /* Corners
    ========================================================================== */
-.rounded-corner {
+.rounded-corner,
+.rounded-corners {
     border-radius: 4px;
 }
 
@@ -758,6 +759,14 @@ form#user-login:after,
     border-left: none;
 }
 
+@media screen and (min-width: 48em) {
+    .border--right--desktop {
+        border-top: none;
+        border-bottom: none;
+        border-left: none;
+    }
+}
+
 @media screen and (max-width: 47.99em) {
     .no-border-on-mobile {
         border: none !important;
@@ -778,6 +787,13 @@ form#user-login:after,
 .text-accent {
     font-size: 22px;
     font-size: 1.375rem;
+}
+
+@media screen and (min-width: 48em) {
+    .text-accent--desktop {
+        font-size: 22px;
+        font-size: 1.375rem;
+    }
 }
 
 .text-center {
@@ -856,12 +872,17 @@ form#user-login:after,
 }
 
 .text-gray,
-.gallery-menu li i.toggle {
+.gallery-menu li i.toggle,
+.disable_link {
     color: #656667 !important;
 }
 
 .text-pom {
     color: #ee3228 !important;
+}
+
+.text-spruce {
+    color: #37424a !important;
 }
 
 .inactive-link {
@@ -1018,6 +1039,10 @@ p.nav-ex {
     background: #dad7cb !important;
 }
 
+.background--off-white {
+    background: #f6f6f6 !important;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -1048,6 +1073,32 @@ p.nav-ex {
 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#ffffff',GradientType=0 );
     /* IE6-9 */
+}
+
+/* Widths by Percentage
+   ========================================================================== */
+.width-25 {
+    width: 25% !important;
+}
+
+.width-33 {
+    width: 33.3333333333% !important;
+}
+
+.width-50 {
+    width: 50% !important;
+}
+
+.width-66 {
+    width: 66.6666666666% !important;
+}
+
+.width-75 {
+    width: 75% !important;
+}
+
+.width-100 {
+    width: 100% !important;
 }
 
 html {
@@ -6560,6 +6611,11 @@ header#outreach .top-nav-strip .quicklinks .google-translate .goog-te-gadget-sim
     }
 }
 
+.quicklinks .quicklinks .accessibility {
+    font-size: 12px;
+    padding-top: 8px;
+}
+
 .quicklinks .google-translate {
     display: block;
 }
@@ -8806,6 +8862,12 @@ body #colorbox,
 .oh-display span.oh-display-times {
     display: inline;
     float: right;
+    margin-bottom: .5em;
+    text-align: right;
+}
+
+.oh-display:last-child span.oh-display-times {
+    margin-bottom: 0;
 }
 
 .menu-node-unpublished {
@@ -8923,6 +8985,40 @@ body.insidesd hr.features {
     height: 2px;
     border-top: none;
     background-color: #dde2e5;
+}
+
+/* Accessibility Dialog Popup
+   ========================================================================== */
+/* accessibility text in header */
+.accessibility {
+    font-size: 10pt;
+    position: relative;
+    display: inline-block;
+    margin-top: 4px;
+    margin-right: 15px;
+    padding: 5px 0 .5em 0;
+    padding-top: 4px;
+}
+
+#accessibility {
+    font-size: .75rem;
+    vertical-align: middle;
+}
+
+/* Width of popup */
+.white-popup.accessibility-popup-position {
+    width: 700px;
+    max-width: 700px;
+}
+
+/* class for disabled link */
+.disable_link {
+    cursor: default;
+    text-decoration: none;
+}
+
+div#__ba_panel._ba_manual {
+    display: none;
 }
 
 #outer-wrap {
