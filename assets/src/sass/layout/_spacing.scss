@@ -176,12 +176,14 @@ img.photoRight{
 
 /* Vertical */
 
+.l-padding-mobile-vn { @include mq( $until: tablet ) { padding-top: 0 !important; padding-bottom: 0 !important; } }
 .l-padding-mobile-vs { @include mq( $until: tablet ) { padding-top: 0.5em !important; padding-bottom: 0.5em !important; } }
 .l-padding-mobile-vm { @include mq( $until: tablet ) { padding-top: 2em !important; padding-bottom: 2em !important; } }
 .l-padding-mobile-vd { @include mq( $until: tablet ) { padding-top: 1em !important; padding-bottom: 1em !important; } }
 .l-padding-mobile-vl { @include mq( $until: tablet ) { padding-top: 4em !important; padding-bottom: 4em !important; } }
 .l-padding-mobile-vx { @include mq( $until: tablet ) { padding-top: 6em !important; padding-bottom: 6em !important; } }
 
+.l-margin-mobile-vn { @include mq( $until: tablet ) { margin-top: 0 !important; margin-bottom: 0 !important; } }
 .l-margin-mobile-vs { @include mq( $until: tablet ) { margin-top: 0.5em !important; margin-bottom: 0.5em !important; } }
 .l-margin-mobile-vd { @include mq( $until: tablet ) { margin-top: 1em !important; margin-bottom: 1em !important; } }
 .l-margin-mobile-vm { @include mq( $until: tablet ) { margin-top: 2em !important; margin-bottom: 2em !important; } }
@@ -190,12 +192,14 @@ img.photoRight{
 
 /* Horizontal */
 
+.l-padding-mobile-hn { @include mq( $until: tablet ) { padding-left: 0 !important; padding-right: 0 !important; } }
 .l-padding-mobile-hs { @include mq( $until: tablet ) { padding-left: 0.5em !important; padding-right: 0.5em !important; } }
 .l-padding-mobile-hd { @include mq( $until: tablet ) { padding-left: 1em !important; padding-right: 1em !important; } }
 .l-padding-mobile-hm { @include mq( $until: tablet ) { padding-left: 2em !important; padding-right: 2em !important; } }
 .l-padding-mobile-hl { @include mq( $until: tablet ) { padding-left: 4em !important; padding-right: 4em !important; } }
 .l-padding-mobile-hx { @include mq( $until: tablet ) { padding-left: 6em !important; padding-right: 6em !important; } }
 
+.l-margin-mobile-hn { @include mq( $until: tablet ) { margin-left: 0 !important; margin-right: 0 !important; } }
 .l-margin-mobile-hs { @include mq( $until: tablet ) { margin-left: 0.5em !important; margin-right: 0.5em !important; } }
 .l-margin-mobile-hd { @include mq( $until: tablet ) { margin-left: 1em !important; margin-right: 1em !important; } }
 .l-margin-mobile-hm { @include mq( $until: tablet ) { margin-left: 2em !important; margin-right: 2em !important; } }

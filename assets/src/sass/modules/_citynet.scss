@@ -4,7 +4,7 @@
   .role-main {
       z-index: 5;
       position: relative;
-      margin-top: -50px;
+      //margin-top: -50px;
 
       @include mq( $from: site ) {
 	  .sub-navigation {
@@ -154,6 +154,11 @@
     font-size: 1.5em;
     padding: .5em;
     line-height: 1.2em;
+  }
+
+  .view-events .event__date {
+    font-size: .81em;
+    line-height: 1;
   }
 
   &.node-type-department-parent .event__date {
@@ -375,6 +380,20 @@
   // aside three.column .widget>ul.menu {
   aside div.widget>ul.menu {
     margin-bottom: 1em;
+  }
+
+  // Style facet sidebar on search page.
+  &.page-search .facets {
+    h2 {
+      font-size: 0.9em;
+      margin-left: 20px;
+    }
+    h2.block-apachesolr-search-sort,
+    h2.sand_entity_type,
+    .bean-bean-html-block h2 {
+      font-size: 1.2em;
+      margin-left: 0px;
+    }
   }
 
   // Search results visited

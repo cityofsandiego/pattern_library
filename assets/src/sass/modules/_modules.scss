@@ -3650,3 +3650,70 @@ form#user-login {
 #block-system-main .profile, #block-masquerade-masquerade, #block-bean-sdadmin-display-node-type- {
 	padding: 1em 1em 0 1em;
 }
+
+/* Inside San Diego
+   ========================================================================== */
+   
+body.insidesd {
+	h1 {
+		text-shadow: 0 0 #555, 0 2px 0.3em black, 2px 0 0.3em black, 0 0 black;
+		
+		@include mq( $until: tablet ) {
+			font-size: 2rem;
+			text-align: center;
+		}
+		@include mq( $from: tablet ) {
+			font-size: 3rem;
+			text-align: left;
+		}
+	}
+	
+	h2 a, h3 a, h4 a {
+		color: #37424a;
+		text-decoration: none;
+	}
+		
+	.sub-navigation-mobile .accordion__heading, .sub-navigation-mobile .accordion__drawer {
+		background-color: #00549f;
+	}
+		
+	.sub-navigation-mobile .is-open .accordion__heading{
+		background-color: white;
+	}
+	
+	@include mq( $until: tablet ) {
+		.hero__slides--secondary {
+			padding-bottom: 0;
+			min-height: auto;
+		}
+		.sub-navigation li {
+			background-color: #00549f;
+		}
+	}
+	
+	@include mq( $from: tablet ) {
+		.sub-navigation {
+		
+			margin-top: -29px;
+			li {
+				max-width: none;
+				margin: 0 0 0 .8em;
+				background-color: #00549f;
+			}
+			&.insidesd-article {
+				margin-top: -77px;
+			}
+		}
+		
+		main > div.nine, aside > div.three {
+			z-index: 15;
+		}
+	}
+	
+	hr.features {
+		border-top: none;
+		background-color: #dde2e5;
+		height: 2px;
+	}
+}
+

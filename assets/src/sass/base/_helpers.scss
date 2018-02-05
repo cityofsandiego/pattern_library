@@ -165,6 +165,12 @@
     border-top: none;
 }
 
+.no-border-on-mobile {
+	@include mq( $until: tablet ) {
+		border: none !important;
+	}
+}
+
 
 .border-radius {
     border-radius: 4px;
