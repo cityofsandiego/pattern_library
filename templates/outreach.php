@@ -1,13 +1,13 @@
 <?php
 require_once( '../config.php' );
-require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/outreach-header.php' ); ?>
         <div class="hero__wrap">
             <div class="hero__bg hero__bg--secondary" style="background-image:url('/assets/dist/img/cysd-hero-bg.jpg');"></div>
         </div>
 
         <div class="l-padding-mobile-hd background-white">
             <main>
-				<div class="stellar-window" style="background-image:url(/assets/dist/img/bigstock-Sunset-Cliffs-Panorama-cityhub.jpg);" data-stellar-background-ratio="0.4">
+				<div class="stellar-window" style="background-image:url(/assets/dist/img/balboapark1.jpg);" data-stellar-background-ratio="0.0">
 					<div class="l-constrained l-padding-vx text-center">
 						<p style="font-size: 3em;" class="text-upper">Donec tempus efficitur</p>
 						<a class="btn btn--outline btn--xl btn--oval" href="">Button</a>
@@ -18,7 +18,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eleifend ac ante a lacinia. Mauris pellentesque lacus vitae felis ultricies, commodo egestas quam cursus. Vivamus faucibus lectus et sapien auctor maximus. Cras eu sem eleifend, pharetra libero vitae, dignissim augue. Ut ante sapien, vestibulum vel odio nec, blandit commodo nisi. Donec tempus efficitur lectus ac congue. Suspendisse sed aliquam.</p>
 					<p class="l-margin-tm"><a class="btn btn--success btn--xl" href="">Button</a></p>
 				</div>
-				<div class="stellar-window" style="background-image:url(/assets/dist/img/bigstock-point-loma-lighthouse-2000px.jpg);" data-stellar-background-ratio="0.4">
+				<div class="stellar-window" style="background-image:url(/assets/dist/img/balboapark2.jpg);" data-stellar-background-ratio="0.4">
 					<div class="l-constrained l-padding-vx text-center">
 						<p style="font-size: 2em;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
 						<p style="font-size: 1.5em;" class="text-upper"><em>Jane Doe</em><p>
@@ -39,7 +39,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 						</div>
 					</div>
 				</div>
-				<div class="stellar-window" style="min-height: 500px; background-image:url(/assets/dist/img/balboadanilowicz.jpg);" data-stellar-background-ratio="0.4"></div>
+				<div class="stellar-window" style="min-height: 500px; background-image:url(/assets/dist/img/bigstock-point-loma-lighthouse-2000px.jpg);" data-stellar-background-ratio="1.0"></div>
 				<div class="l-constrained l-padding-vl">
 					<div class="row">
 						<div class="three columns">
@@ -108,7 +108,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 						</div>
 					</div>
 				</div>
-				<div class="stellar-window" style="background-image:url(/assets/dist/img/overunderperaza_0.jpg);" data-stellar-background-ratio="0.4"></div>
+				<div class="stellar-window" style="background-image:url(/assets/dist/img/bigstock-San-Diego-California-5921079.jpg);" data-stellar-background-ratio="0.2"></div>
 				<div class="l-constrained l-padding-desktop-hx l-padding-vl">
 					<div class="row">
 						<div class="three columns"></div>
@@ -128,7 +128,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
         
 
 <?php
-require_once( ABSPATH . PARTIALS . '/template-footer.php' ); ?>
+require_once( ABSPATH . PARTIALS . '/outreach-footer.php' ); ?>
 <script type="text/javascript">
 $(function(){
 	if (!Modernizr.touch) {

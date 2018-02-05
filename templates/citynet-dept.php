@@ -48,7 +48,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 				<!--<div class="menu-btn menu-btn--open">
 					<a id="nav-open-btn" class="menu-toggle js-menu-toggle" href="#nav" style="top: 1em;"><span class="">Menu</span><span class="menu-toggle__line"></span></a>
 				</div>-->
-				<nav id="nav" class="main__navigation main-navigation nav-primary hide-on-mobile role-main" style="z-index:6">
+				<nav id="nav" class="main__navigation main-navigation nav-primary hide-on-mobile role-main" style="z-index:6;margin-top:0;">
 					<ul>
 						<li>
 							<a href="intranet-dept.php" class="dropdown-parent">Department Home</a>

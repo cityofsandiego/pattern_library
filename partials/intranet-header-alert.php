@@ -148,11 +148,11 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
                     <nav id="nav" class="main__navigation--portal nav-primary l-margin-desktop-td" role="navigation">
                         <ul>
-                            <li><a href="intranet-bucket.php">Boring (but important)</a></li>
-                            <li><a href="intranet-bucket.php">Internal Services</a></li>
-                            <li><a href="intranet-bucket.php">Connect</a></li>
-                            <li><a href="intranet-bucket.php">Develop</a></li>
-                            <li><a href="intranet-bucket.php">My SD</a></li>
+                            <li><a href="citynet-bucket.php">Boring (but important)</a></li>
+                            <li><a href="citynet-bucket.php">Internal Services</a></li>
+                            <li><a href="citynet-bucket.php">Connect</a></li>
+                            <li><a href="citynet-bucket.php">Develop</a></li>
+                            <li><a href="citynet-bucket.php">My SD</a></li>
                         </ul>
                     </nav>
                 </div>
