@@ -3110,6 +3110,8 @@ figure {
 
     td {
         border: 1px solid $gray;
+		padding: 0 0 .5em 0;
+		line-height: 1.5em;
         @include mq( $from: tablet ) {
             min-height: 10em;
             border-bottom: none;
@@ -3119,6 +3121,20 @@ figure {
                 border-right: 1px solid $gray;
             }
         }
+		
+		$color-names: cerulean, robin, sunshade, schoolbus, spruce, westar, teal, tulip, gold, science, endeavour, purple, success, red;
+		$color-values: $cerulean, $robin, $sunshade, $schoolbus, $spruce, $westar, $teal, $tulip, $gold, $science, $endeavour, $purple, $success, $error;
+		
+		@for $c from 1 through 14 {
+
+			$color-name: nth( $color-names, $c );
+			$color-value: nth( $color-values, $c );
+
+			.event-#{$color-name} {
+				border-left: 5px solid $color-value;
+				margin-left: .5em;
+			}
+		}
     }
 
     tr:last-child {

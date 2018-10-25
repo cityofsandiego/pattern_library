@@ -1,0 +1,12 @@
+span.ext {
+    display: inline-block;
+    padding-right: 0;
+    text-indent: -99999px;
+    width: 13px;
+	background: url('/assets/dist/img/extlink_s.png') 2px center no-repeat;
+	height: 10px;
+	text-decoration: none;
+}
+span.ext > span.visuallyhidden {
+	position: absolute !important;
+}

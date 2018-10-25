@@ -767,7 +767,7 @@
 }
 
 .icon-translate:before {
-    content: "\e900";
+    content: "\e903";
 }
 
 .icon-dna:before {
@@ -839,7 +839,7 @@
 }
 
 .icon-picnic-table:before {
-    content: "\e900";
+    content: "\e901";
 }
 
 .icon-teacup:before {
@@ -868,6 +868,10 @@
 
 .icon-fish:before {
     content: "\e81f";
+}
+
+.icon-duck:before {
+    content: "\e900";
 }
 
 .icon-ice-cream:before {
@@ -907,7 +911,7 @@
 }
 
 .icon-bleachers:before {
-    content: "\e901";
+    content: "\e902";
 }
 
 .icon-rocket:before {

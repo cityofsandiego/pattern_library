@@ -36,29 +36,29 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#0098db;"></i></p>
-		<p>#0098db<br>rgb (0, 152, 219)<br><span class="fine-print">cerulean</span></p>
+		<p>#0098db<br>rgb (0, 152, 219)<br><strong class="fine-print">cerulean</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#00c7b2;"></i></p>
-		<p>#00c7b2<br>rgb (0, 199, 178)<br><span class="fine-print">robin</span></p>
+		<p>#00c7b2<br>rgb (0, 199, 178)<br><strong class="fine-print">robin</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#ffa02f;"></i></p>
-		<p>#ffa02f<br>rgb (255, 158, 23)<br><span class="fine-print">sunshade</span></p>
+		<p>#ffa02f<br>rgb (255, 158, 23)<br><strong class="fine-print">sunshade</strong></p>
 	</div>
 </div>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#fcd900;"></i></p>
-		<p>#fcd900<br>rgb (252, 217, 0)<br><span class="fine-print">schoolbus</span></p>
+		<p>#fcd900<br>rgb (252, 217, 0)<br><strong class="fine-print">schoolbus</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#37424a;"></i></p>
-		<p>#37424a<br>rgb (55, 66, 74)<br><span class="fine-print">spruce</span></p>
+		<p>#37424a<br>rgb (55, 66, 74)<br><strong class="fine-print">spruce</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#dad7cb;"></i></p>
-		<p>#dad7cb<br>rgb (218, 215, 203)<br><span class="fine-print">westar</span></p>
+		<p>#dad7cb<br>rgb (218, 215, 203)<br><strong class="fine-print">westar</strong></p>
 	</div>
 </div>                 
 
@@ -74,11 +74,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#5eb6e4;"></i></p>
-		<p>#5eb6e4<br>rgb (94, 182, 228)</p>
+		<p>#5eb6e4<br>rgb (94, 182, 228)<br><strong class="fine-print">picton</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#005bbb;"></i></p>
-		<p>#005bbb<br>rgb (0, 91, 187)<br><span class="fine-print">science</span></p>
+		<p>#005bbb<br>rgb (0, 91, 187)<br><strong class="fine-print">science</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#00549f;"></i></p>
@@ -92,7 +92,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#009581;"></i></p>
-		<p>#009581<br>rgb (0, 149, 129)</p>
+		<p>#009581<br>rgb (0, 149, 129)<br><strong class="fine-print">teal</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#007b69;"></i></p>
@@ -120,7 +120,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#fed100;"></i></p>
-		<p>#fed100<br>rgb (254, 209, 0)<br><span class="fine-print">gold</span></p>
+		<p>#fed100<br>rgb (254, 209, 0)<br><strong class="fine-print">gold</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#d7a900;"></i></p>
@@ -162,7 +162,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#5d676f;"></i></p>
-		<p>#5d676f<br>rgb (94, 106, 113)<br><span class="fine-print">shuttle</span></p>
+		<p>#5d676f<br>rgb (94, 106, 113)<br><strong class="fine-print">shuttle</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#1b242a;"></i></p>
@@ -224,43 +224,43 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#f6f6f6;"></i></p>
-		<p>#f6f6f6<br>rgb (246, 246, 246)<br><span class="fine-print">off-white</span></p>
+		<p>#f6f6f6<br>rgb (246, 246, 246)<br><strong class="fine-print">off-white</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#e4e9eb;"></i></p>
-		<p>#e4e9eb<br>rgb (228, 233, 235)<br><span class="fine-print">mercury</span></p>
+		<p>#e4e9eb<br>rgb (228, 233, 235)<br><strong class="fine-print">mercury</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#dde2e5;"></i></p>
-		<p>#dde2e5<br>rgb (221, 226, 229)<br><span class="fine-print">alto</span></p>
+		<p>#dde2e5<br>rgb (221, 226, 229)<br><strong class="fine-print">alto</strong></p>
 	</div>
 </div> 
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#e89e3b;"></i></p>
-		<p>#e89e3b<br>rgb (232, 158, 59)<br><span class="fine-print">tulip</span></p>
+		<p>#e89e3b<br>rgb (232, 158, 59)<br><strong class="fine-print">tulip</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#0065b2;"></i></p>
-		<p>#0065b2<br>rgb (0, 101, 178)<br><span class="fine-print">endeavour</span></p>
+		<p>#0065b2<br>rgb (0, 101, 178)<br><strong class="fine-print">endeavour</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#551a8b;"></i></p>
-		<p>#551a8b<br>rgb (85, 26, 139)<br><span class="fine-print">purple</span></p>
+		<p>#551a8b<br>rgb (85, 26, 139)<br><strong class="fine-print">purple</strong></p>
 	</div>
 </div>   
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#659f13;"></i></p>
-		<p>#659f13<br>rgb (101, 159, 19)<br><span class="fine-print">success</span></p>
+		<p>#659f13<br>rgb (101, 159, 19)<br><strong class="fine-print">success</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#e28327;"></i></p>
-		<p>#e28327<br>rgb (226, 131, 39)<br><span class="fine-print">warning</span></p>
+		<p>#e28327<br>rgb (226, 131, 39)<br><strong class="fine-print">warning</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#c51313;"></i></p>
-		<p>#c51313<br>rgb (197, 19, 19)<br><span class="fine-print">error</span></p>
+		<p>#c51313<br>rgb (197, 19, 19)<br><strong class="fine-print">error</strong></p>
 	</div>
 </div>     
 

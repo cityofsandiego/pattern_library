@@ -27,6 +27,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
+	<link rel="stylesheet" href="/assets/dist/css/pattern-library-only.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
 
@@ -73,6 +74,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
                         <ul>
                             <li><a href="/">Patterns</a></li>
                             <li><a href="/templates/">Templates</a></li>
+                            <li><a href="/guidelines/">Guidelines</a></li>
                         </ul>
                     </nav>
                 </div>

@@ -932,6 +932,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-fish</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-duck"></i></p>
+<p>icon-duck</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-ice-cream"></i></p>
 <p>icon-ice-cream</p>
 </div>
@@ -1246,6 +1250,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-launch"></i></p>
 <p>icon-launch</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-translate"></i></p>
+<p>icon-translate</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-bug"></i></p>

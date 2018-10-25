@@ -102,6 +102,8 @@ template {
  */
 a {
     background-color: transparent;
+
+    text-decoration-skip-ink: none;
 }
 
 /**
@@ -4161,7 +4163,7 @@ img.photoRight {
 }
 
 .icon-translate:before {
-    content: "\e900";
+    content: "\e903";
 }
 
 .icon-dna:before {
@@ -4233,7 +4235,7 @@ img.photoRight {
 }
 
 .icon-picnic-table:before {
-    content: "\e900";
+    content: "\e901";
 }
 
 .icon-teacup:before {
@@ -4262,6 +4264,10 @@ img.photoRight {
 
 .icon-fish:before {
     content: "\e81f";
+}
+
+.icon-duck:before {
+    content: "\e900";
 }
 
 .icon-ice-cream:before {
@@ -4301,7 +4307,7 @@ img.photoRight {
 }
 
 .icon-bleachers:before {
-    content: "\e901";
+    content: "\e902";
 }
 
 .icon-rocket:before {
@@ -8361,6 +8367,8 @@ figure figcaption {
 }
 
 .calendar td {
+    line-height: 1.5em;
+    padding: 0 0 .5em 0;
     border: 1px solid #656667;
 }
 
@@ -8373,6 +8381,76 @@ figure figcaption {
     .calendar td:last-child {
         border-right: 1px solid #656667;
     }
+}
+
+.calendar td .event-cerulean {
+    margin-left: .5em;
+    border-left: 5px solid #0098db;
+}
+
+.calendar td .event-robin {
+    margin-left: .5em;
+    border-left: 5px solid #00c7b2;
+}
+
+.calendar td .event-sunshade {
+    margin-left: .5em;
+    border-left: 5px solid #ffa02f;
+}
+
+.calendar td .event-schoolbus {
+    margin-left: .5em;
+    border-left: 5px solid #fcd900;
+}
+
+.calendar td .event-spruce {
+    margin-left: .5em;
+    border-left: 5px solid #37424a;
+}
+
+.calendar td .event-westar {
+    margin-left: .5em;
+    border-left: 5px solid #dad7cb;
+}
+
+.calendar td .event-teal {
+    margin-left: .5em;
+    border-left: 5px solid #009581;
+}
+
+.calendar td .event-tulip {
+    margin-left: .5em;
+    border-left: 5px solid #e89e3b;
+}
+
+.calendar td .event-gold {
+    margin-left: .5em;
+    border-left: 5px solid #fed100;
+}
+
+.calendar td .event-science {
+    margin-left: .5em;
+    border-left: 5px solid #005bbb;
+}
+
+.calendar td .event-endeavour {
+    margin-left: .5em;
+    border-left: 5px solid #0065b2;
+}
+
+.calendar td .event-purple {
+    margin-left: .5em;
+    border-left: 5px solid #551a8b;
+}
+
+.calendar td .event-success {
+    margin-left: .5em;
+    border-left: 5px solid #659f13;
+}
+
+.calendar td .event-red {
+    margin-left: .5em;
+    border-left: 5px solid #c51313;
 }
 
 @media screen and (min-width: 48em) {
