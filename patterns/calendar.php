@@ -82,14 +82,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                                                 <div class="month day"> 1 </div>
                                                                 <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="l-padding-hs event-cerulean">
-                                                                            <a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Council Meeting</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-																<div class="cutoff">&nbsp;</div>
-                                                                <div class="view-item view-item-events_calendar">
-                                                                    <div class="calendar.1142.field_date.0.0 calendar monthview">
                                                                         <div class="l-padding-hs event-red">
                                                                             <a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Committee Meeting</a>
                                                                         </div>
@@ -106,7 +98,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                                                 <div class="month day"> 3 </div>
                                                                 <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="l-padding-hs event-teal">
+                                                                        <div class="l-padding-hs">
                                                                             Independence Day (Observed)
                                                                         </div>
                                                                     </div>
@@ -115,11 +107,29 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                                         </td>
 
                                                         <td id="event_calendar-2015-07-04" class="sat past has-no-events">
-                                                            <div class="inner"><div class="month day"> 4 </div><div class="calendar-empty">&nbsp;</div></div></td>
+                                                            <div class="inner"><div class="month day"> 4 </div>
+															
+                                                                <div class="view-item view-item-events_calendar">
+                                                                    <div class="calendar.1142.field_date.0.0 calendar monthview">
+                                                                        <div class="l-padding-hs">
+                                                                            Independence Day
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+															</div></td>
                                                     </tr>
                                                     <tr>
                                                         <td id="event_calendar-2015-07-05" class="sun past has-no-events"><div class="inner"><div class="month day"> 5 </div><div class="calendar-empty">&nbsp;</div></div></td>
-                                                        <td id="event_calendar-2015-07-06" class="mon past has-no-events"><div class="inner"><div class="month day"> 6 </div><div class="calendar-empty">&nbsp;</div></div></td>
+                                                        <td id="event_calendar-2015-07-06" class="mon past has-no-events"><div class="inner"><div class="month day"> 6 </div>
+                                                                <div class="view-item view-item-events_calendar">
+                                                                    <div class="calendar.1142.field_date.0.0 calendar monthview">
+                                                                        <div class="l-padding-hs event-cerulean">
+                                                                            <a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Council Meeting</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+														
+														</div></td>
                                                         <td id="event_calendar-2015-07-07" class="tue past has-no-events"><div class="inner"><div class="month day"> 7 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-08" class="wed past has-no-events"><div class="inner"><div class="month day"> 8 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-09" class="thu past has-no-events"><div class="inner"><div class="month day"> 9 </div><div class="calendar-empty">&nbsp;</div></div></td>
@@ -132,24 +142,35 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                                         <td id="event_calendar-2015-07-14" class="tue past has-events">
                                                             <div class="inner">
                                                                 <div class="month day"> 14 </div>
+                                                            </div>
+                                                        </td>
+                                                        <td id="event_calendar-2015-07-15" class="wed past has-no-events"><div class="inner"><div class="month day"> 15 </div><div class="calendar-empty">&nbsp;</div></div></td>
+                                                        <td id="event_calendar-2015-07-16" class="thu past has-no-events"><div class="inner"><div class="month day"> 16 </div>
+														
                                                                 <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="l-padding-hs">
+                                                                        <div class="l-padding-hs event-sunshade">
                                                                             A City-Sponsored Event
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                        </td>
-                                                        <td id="event_calendar-2015-07-15" class="wed past has-no-events"><div class="inner"><div class="month day"> 15 </div><div class="calendar-empty">&nbsp;</div></div></td>
-                                                        <td id="event_calendar-2015-07-16" class="thu past has-no-events"><div class="inner"><div class="month day"> 16 </div><div class="calendar-empty">&nbsp;</div></div></td>
+														</div></td>
                                                         <td id="event_calendar-2015-07-17" class="fri past has-no-events"><div class="inner"><div class="month day"> 17 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-18" class="sat past has-no-events"><div class="inner"><div class="month day"> 18 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                     </tr>
                                                     <tr>
                                                         <td id="event_calendar-2015-07-19" class="sun past has-no-events"><div class="inner"><div class="month day"> 19 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-20" class="mon past has-no-events"><div class="inner"><div class="month day"> 20 </div><div class="calendar-empty">&nbsp;</div></div></td>
-                                                        <td id="event_calendar-2015-07-21" class="tue past has-no-events"><div class="inner"><div class="month day"> 21 </div><div class="calendar-empty">&nbsp;</div></div></td>
+                                                        <td id="event_calendar-2015-07-21" class="tue past has-no-events"><div class="inner"><div class="month day"> 21 </div>
+														
+									<div class="view-item view-item-events_calendar">
+										<div class="calendar.1142.field_date.0.0 calendar monthview">
+											<div class="l-padding-hs event-cerulean">
+												<a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Council Meeting</a>
+											</div>
+										</div>
+									</div>
+														</div></td>
                                                         <td id="event_calendar-2015-07-22" class="wed past has-no-events"><div class="inner"><div class="month day"> 22 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-23" class="thu past has-no-events"><div class="inner"><div class="month day"> 23 </div><div class="calendar-empty">&nbsp;</div></div></td>
                                                         <td id="event_calendar-2015-07-24" class="fri past has-no-events"><div class="inner"><div class="month day"> 24 </div><div class="calendar-empty">&nbsp;</div></div></td>
@@ -243,14 +264,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<div class="month day"> 1 </div>
 									<div class="view-item view-item-events_calendar">
 										<div class="calendar.1142.field_date.0.0 calendar monthview">
-											<div class="l-padding-hs event-cerulean">
-												<a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Council Meeting</a>
-											</div>
-										</div>
-									</div>
-									<div class="cutoff">&nbsp;</div>
-									<div class="view-item view-item-events_calendar">
-										<div class="calendar.1142.field_date.0.0 calendar monthview">
 											<div class="l-padding-hs event-red">
 												<a href="https://www.sandiego.gov/city-clerk/officialdocs/legisdocs/brown-act" target="_blank">Committee Meeting</a>
 											</div>
@@ -267,7 +280,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<div class="month day"> 3 </div>
 									<div class="view-item view-item-events_calendar">
 										<div class="calendar.1142.field_date.0.0 calendar monthview">
-											<div class="l-padding-hs event-teal">
+											<div class="l-padding-hs">
 												Independence Day (Observed)
 											</div>
 										</div>
@@ -276,7 +289,16 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							</td>
 
 							<td id="event_calendar-2015-07-04" class="sat past has-no-events">
-								<div class="inner"><div class="month day"> 4 </div><div class="calendar-empty">&nbsp;</div></div></td>
+								<div class="inner"><div class="month day"> 4 </div>
+								
+									<div class="view-item view-item-events_calendar">
+										<div class="calendar.1142.field_date.0.0 calendar monthview">
+											<div class="l-padding-hs">
+												Independence Day
+											</div>
+										</div>
+									</div>
+								</div></td>
 						</tr>
 						<tr>
 							<td id="event_calendar-2015-07-05" class="sun past has-no-events"><div class="inner"><div class="month day"> 5 </div><div class="calendar-empty">&nbsp;</div></div></td>
@@ -293,13 +315,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<td id="event_calendar-2015-07-14" class="tue past has-events">
 								<div class="inner">
 									<div class="month day"> 14 </div>
-									<div class="view-item view-item-events_calendar">
-										<div class="calendar.1142.field_date.0.0 calendar monthview">
-											<div class="l-padding-hs">
-												A City-Sponsored Event
-											</div>
-										</div>
-									</div>
 								</div>
 							</td>
 							<td id="event_calendar-2015-07-15" class="wed past has-no-events"><div class="inner"><div class="month day"> 15 </div><div class="calendar-empty">&nbsp;</div></div></td>
@@ -351,9 +366,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 									<p style="border-left: 5px solid #ffa02f" class="l-padding-ls">event-sunshade</p>
 									<p style="border-left: 5px solid #fcd900" class="l-padding-ls">event-schoolbus</p>
 									<p style="border-left: 5px solid #37424a" class="l-padding-ls">event-spruce</p>
-									<p style="border-left: 5px solid #dad7cb" class="l-padding-ls">event-westar</p>
 									<p style="border-left: 5px solid #009581" class="l-padding-ls">event-teal</p>
-									<p style="border-left: 5px solid #e89e3b" class="l-padding-ls">event-tulip</p>
 									<p style="border-left: 5px solid #0065b2" class="l-padding-ls">event-endeavour</p>
 									<p style="border-left: 5px solid #551a8b" class="l-padding-ls">event-purple</p>
 									<p style="border-left: 5px solid #659f13" class="l-padding-ls">event-success</p>
