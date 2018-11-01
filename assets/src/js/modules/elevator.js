@@ -260,7 +260,7 @@ define(function () {
           if ( $parent.hasClass('current') ) {
             $parent
               .removeClass('current is-open')
-              .find('.accordion__drawer')
+              .children('.accordion__drawer')
               .stop( true, true )
               .slideUp();
               // new drawer
@@ -268,7 +268,7 @@ define(function () {
             // show new drawer
             $parent
               .addClass('current is-open')
-              .find('.accordion__drawer')
+              .children('.accordion__drawer')
               .stop( true, true )
               .slideDown();
           }
@@ -341,7 +341,7 @@ define(function () {
         $(window).on('resize', function(){
           var windowWidth = $(window).width();
           // console.log ( windowWidth );
-			if ($(".main__navigation .dropdown-parent").length) {													 
+			if ($(".main__navigation .dropdown-parent").length) {
 			  var $parent = $(".main__navigation .dropdown-parent");
 			  var $icon   = $parent.find("i");
 			  // Check events attached to parent links

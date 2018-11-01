@@ -633,6 +633,8 @@ address {
 .tabs.primary,
 .admin-menu .messages,
 form#user-login,
+form#protected-pages-enter-password,
+div.error,
 .l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop,
@@ -663,6 +665,8 @@ form#user-login,
 .tabs.primary:before,
 .admin-menu .messages:before,
 form#user-login:before,
+form#protected-pages-enter-password:before,
+div.error:before,
 .l-constrained--site:before,
 .l-constrained--wide:before,
 .l-constrained--desktop:before,
@@ -675,6 +679,8 @@ form#user-login:before,
 .tabs.primary:after,
 .admin-menu .messages:after,
 form#user-login:after,
+form#protected-pages-enter-password:after,
+div.error:after,
 .l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
@@ -693,6 +699,8 @@ form#user-login:after,
 .tabs.primary:after,
 .admin-menu .messages:after,
 form#user-login:after,
+form#protected-pages-enter-password:after,
+div.error:after,
 .l-constrained--site:after,
 .l-constrained--wide:after,
 .l-constrained--desktop:after,
@@ -1155,6 +1163,8 @@ h6,
 .h1,
 .h2,
 .h3,
+.sire .view-grouping-header,
+.view-custom-css .view-grouping-header,
 .h4,
 .h5,
 .h6 {
@@ -1171,6 +1181,8 @@ h4,
 .h1,
 .h2,
 .h3,
+.sire .view-grouping-header,
+.view-custom-css .view-grouping-header,
 .h4 {
     line-height: 1.3;
 }
@@ -1218,14 +1230,18 @@ h2,
 }
 
 h3,
-.h3 {
+.h3,
+.sire .view-grouping-header,
+.view-custom-css .view-grouping-header {
     font-size: 24px;
     font-size: 1.5rem;
 }
 
 @media print {
     h3,
-    .h3 {
+    .h3,
+    .sire .view-grouping-header,
+    .view-custom-css .view-grouping-header {
         font-size: 1.1em;
         font-weight: bold;
         margin: 0;
@@ -1384,7 +1400,8 @@ dd {
 
 /* Subheadline
    ========================================================================== */
-.subheading {
+.subheading,
+.view-custom-css .view-grouping-header {
     font-family: "Merriweather", serif;
     font-size: 20px;
     font-size: 1.25rem;
@@ -1397,6 +1414,8 @@ dd {
 .tabs.primary,
 .admin-menu .messages,
 form#user-login,
+form#protected-pages-enter-password,
+div.error,
 .l-constrained--site,
 .l-constrained--wide,
 .l-constrained--desktop {
@@ -1795,7 +1814,8 @@ img.photoRight {
     margin-bottom: .5em !important;
 }
 
-.l-margin-bd {
+.l-margin-bd,
+.sire .view-grouping-header {
     margin-bottom: 1em !important;
 }
 
@@ -5117,20 +5137,26 @@ header nav a {
     header > .l-constrained,
     header > .tabs.primary,
     .admin-menu header > .messages,
-    header > form#user-login {
+    header > form#user-login,
+    header > form#protected-pages-enter-password,
+    header > div.error {
         padding-bottom: 1em;
     }
     header > .l-constrained .columns,
     header > .tabs.primary .columns,
     .admin-menu header > .messages .columns,
-    header > form#user-login .columns {
+    header > form#user-login .columns,
+    header > form#protected-pages-enter-password .columns,
+    header > div.error .columns {
         display: inline-block;
         width: auto;
     }
     header > .l-constrained .columns.two,
     header > .tabs.primary .columns.two,
     .admin-menu header > .messages .columns.two,
-    header > form#user-login .columns.two {
+    header > form#user-login .columns.two,
+    header > form#protected-pages-enter-password .columns.two,
+    header > div.error .columns.two {
         float: left;
     }
     header .menu-btn {
@@ -5154,20 +5180,26 @@ header nav a {
     header > .l-constrained,
     header > .tabs.primary,
     .admin-menu header > .messages,
-    header > form#user-login {
+    header > form#user-login,
+    header > form#protected-pages-enter-password,
+    header > div.error {
         padding-bottom: 2.5em;
     }
     header > .l-constrained .logo--wrap,
     header > .tabs.primary .logo--wrap,
     .admin-menu header > .messages .logo--wrap,
-    header > form#user-login .logo--wrap {
+    header > form#user-login .logo--wrap,
+    header > form#protected-pages-enter-password .logo--wrap,
+    header > div.error .logo--wrap {
         float: left;
         width: 25%;
     }
     header > .l-constrained .three,
     header > .tabs.primary .three,
     .admin-menu header > .messages .three,
-    header > form#user-login .three {
+    header > form#user-login .three,
+    header > form#protected-pages-enter-password .three,
+    header > div.error .three {
         float: left;
         width: 25%;
         text-align: right;
@@ -5175,7 +5207,9 @@ header nav a {
     header > .l-constrained .seven,
     header > .tabs.primary .seven,
     .admin-menu header > .messages .seven,
-    header > form#user-login .seven {
+    header > form#user-login .seven,
+    header > form#protected-pages-enter-password .seven,
+    header > div.error .seven {
         position: static;
         float: left;
         width: 50%;
@@ -5202,7 +5236,9 @@ header nav a {
     header > .l-constrained,
     header > .tabs.primary,
     .admin-menu header > .messages,
-    header > form#user-login {
+    header > form#user-login,
+    header > form#protected-pages-enter-password,
+    header > div.error {
         padding-bottom: 1em;
     }
     header .quicklinks {
@@ -5499,7 +5535,9 @@ header.header--app .row {
 .library__header > .l-constrained,
 .library__header > .tabs.primary,
 .admin-menu .library__header > .messages,
-.library__header > form#user-login {
+.library__header > form#user-login,
+.library__header > form#protected-pages-enter-password,
+.library__header > div.error {
     padding: 1em 0;
     background: white;
 }
@@ -5750,6 +5788,7 @@ header.header--app .row {
 }
 
 .hero__bg.hero__bg--solid {
+    /* IE6-9 */
     position: absolute;
     z-index: 0;
     top: 0;
@@ -5757,6 +5796,15 @@ header.header--app .row {
     width: 100%;
     height: 15em;
     background: #0098db;
+    /* Old browsers */
+    background:    -moz-linear-gradient(left, #0098db 0%, #00c7b2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0098db 0%, #00c7b2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear, to right, #0098db 0, #00c7b2 100%;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0098db', endColorstr='#00c7b2',GradientType=1 );
 }
 
 .custom-navigation a {
@@ -7010,6 +7058,48 @@ html.translated-rtl header.header--fixed {
     }
 }
 
+.card__container .card__wrap_m,
+.card__container .card--wrap-m {
+    width: 100%;
+    height: auto;
+    margin: 0 .5em;
+}
+
+@media screen and (min-width: 30em) {
+    .card__container .card__wrap_m,
+    .card__container .card--wrap-m {
+        display: -webkit-flex;
+        /* Safari */
+        display:         flex;
+        margin: 0;
+        padding: .75em;
+    }
+    .card__container .card__wrap_m .card,
+    .card__container .card--wrap-m .card {
+        flex: 0 1 auto;
+    }
+}
+
+@media screen and (min-width: 30em) and (max-width: 47.99em) {
+    .card__container .card__wrap_m,
+    .card__container .card--wrap-m {
+        float: left;
+        width: 50%;
+        padding-right: 1.0416588541%;
+        padding-left: 1.0416588541%;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .card__container .card__wrap_m,
+    .card__container .card--wrap-m {
+        float: left;
+        width: 33.3333333333%;
+        padding-right: 1.0416588541%;
+        padding-left: 1.0416588541%;
+    }
+}
+
 .card__container .card__content {
     padding: 1.5em;
 }
@@ -7475,14 +7565,17 @@ html.translated-rtl header.header--fixed {
     text-decoration: none;
 }
 
+.article--teaser,
 .article__teaser {
     padding: 1em;
 }
 
+.article--teaser:nth-child(2n+1),
 .article__teaser:nth-child(2n+1) {
     background-color: #f6f6f6;
 }
 
+.article--teaser .event--day,
 .article__teaser .event--day {
     font-size: 3em;
 }
@@ -7530,6 +7623,9 @@ html.translated-rtl header.header--fixed {
     .main__message {
         padding: 2.5em 1em;
     }
+    .node-type-article .main__message {
+        padding: 3em 0;
+    }
 }
 
 @media screen and (max-width: 47.99em) {
@@ -7553,6 +7649,33 @@ html.translated-rtl header.header--fixed {
 
 @media print {
     .main__message .main__heading {
+        font-size: 2em;
+    }
+}
+
+.main__message .main__tagline {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1rem;
+    margin: 0;
+    margin-top: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+    text-shadow: 0 0 #555, 0 2px .5em black, 2px 0 .5em black, 0 0 black;
+}
+
+@media screen and (max-width: 47.99em) {
+    .main__message .main__tagline {
+        font-weight: normal;
+        text-align: center;
+    }
+}
+
+@media print {
+    .main__message .main__tagline {
         font-size: 2em;
     }
 }
@@ -7917,6 +8040,10 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
     margin: 1em 0;
 }
 
+#list-container .accordions {
+    margin: 0;
+}
+
 .accordion {
     margin: 0 0 1em 0;
     -webkit-transition: border .25s;
@@ -7924,10 +8051,14 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
             transition: border .25s;
 }
 
+#list-container .accordion {
+    margin: 0;
+}
+
 .accordion__heading {
     position: relative;
     margin: 0;
-    padding: 1em;
+    padding: 1em 3.5em 1em 1em;
     -webkit-transition: all .5s;
        -moz-transition: all .5s;
             transition: all .5s;
@@ -7936,10 +8067,18 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
     background: #e4e9eb;
 }
 
+#list-container .accordion__heading {
+    padding: .2em 1em;
+}
+
 .accordion__link {
     display: block;
     text-decoration: none;
     color: #37424a;
+}
+
+#list-container .accordion__link i {
+    font-size: .75em;
 }
 
 .accordion__drawer {
@@ -8014,14 +8153,14 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
     margin-left: auto;
 }
 
-.is-open .accordion__heading {
+.is-open > .accordion__heading {
     font-weight: 700;
     border: 1px solid #a7abad;
     border-bottom: none;
     background: white;
 }
 
-.csstransforms3d .is-open .toggle-icon {
+.csstransforms3d .is-open > p > a > .toggle-icon {
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -8029,8 +8168,8 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
             transform: rotate(45deg);
 }
 
-.csstransforms3d .is-open .toggle-icon:before,
-.csstransforms3d .is-open .toggle-icon:after {
+.csstransforms3d .is-open > p > a > .toggle-icon:before,
+.csstransforms3d .is-open > p > a > .toggle-icon:after {
     background: #0098db;
 }
 
@@ -8144,7 +8283,7 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
 }
 
 /* Tables
-   ========================================================================== */
+========================================================================== */
 table {
     margin-bottom: 1em;
     background: #f6f6f6;
@@ -8174,25 +8313,41 @@ table tr:nth-child(even) {
 }
 
 table tr.subheading,
+table .view-custom-css tr.view-grouping-header,
+.view-custom-css table tr.view-grouping-header,
 table tr:first-child {
     background: transparent;
 }
 
-table tr.subheading {
+table tr.subheading,
+table .view-custom-css tr.view-grouping-header,
+.view-custom-css table tr.view-grouping-header {
     font-family: "Open Sans", sans-serif;
     color: #37424a;
 }
 
-table tr.subheading td {
+table tr.subheading td,
+table .view-custom-css tr.view-grouping-header td,
+.view-custom-css table tr.view-grouping-header td {
     padding-left: 0;
 }
 
 @media screen and (min-width: 48em) {
-    table tr.subheading td {
+    table tr.subheading td,
+    table .view-custom-css tr.view-grouping-header td,
+    .view-custom-css table tr.view-grouping-header td {
         font-size: 16px;
         font-size: 1rem;
         line-height: 2.5;
     }
+}
+
+table tr.valign-m td {
+    vertical-align: middle !important;
+}
+
+table tr.valign-b td {
+    vertical-align: bottom !important;
 }
 
 table td {
@@ -8562,7 +8717,6 @@ figure figcaption {
     display: block;
     padding: .5em;
     text-decoration: none;
-    color: #a7abad;
     border-top: 3px solid transparent;
 }
 
@@ -8831,6 +8985,10 @@ footer a:hover {
     text-decoration: none;
 }
 
+body.node-type-outreach .field-collection-container {
+    margin-bottom: 0;
+}
+
 body.logged-in #admin-menu {
     z-index: 999999;
 }
@@ -8948,6 +9106,13 @@ body #colorbox,
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 47.99em) {
+    .oh-current-open,
+    .oh-current-closed {
+        text-align: center;
+    }
+}
+
 .menu-node-unpublished {
     color: red;
 }
@@ -8989,6 +9154,24 @@ form#user-login .form-item input {
     }
 }
 
+form#protected-pages-enter-password {
+    background-color: white;
+}
+
+form#protected-pages-enter-password fieldset {
+    padding: 2em;
+    border: none;
+}
+
+form#protected-pages-enter-password fieldset input#edit-submit {
+    color: white;
+    background-color: #0098db;
+}
+
+div.error {
+    margin: 1em auto;
+}
+
 #block-system-main .profile,
 #block-masquerade-masquerade,
 #block-bean-sdadmin-display-node-type- {
@@ -8997,72 +9180,103 @@ form#user-login .form-item input {
 
 /* Inside San Diego
    ========================================================================== */
-body.insidesd h1 {
+body.node-type-article h1 {
     text-shadow: 0 0 #555, 0 2px .3em black, 2px 0 .3em black, 0 0 black;
 }
 
 @media screen and (max-width: 47.99em) {
-    body.insidesd h1 {
+    body.node-type-article h1 {
         font-size: 2rem;
         text-align: center;
     }
 }
 
 @media screen and (min-width: 48em) {
-    body.insidesd h1 {
+    body.node-type-article h1 {
         font-size: 3rem;
         text-align: left;
     }
 }
 
-body.insidesd h2 a,
-body.insidesd h3 a,
-body.insidesd h4 a {
+body.node-type-article h2 a,
+body.node-type-article h3 a,
+body.node-type-article h4 a {
     text-decoration: none;
     color: #37424a;
 }
 
-body.insidesd .sub-navigation-mobile .accordion__heading,
-body.insidesd .sub-navigation-mobile .accordion__drawer {
+body.node-type-article .sub-navigation-mobile .accordion__heading,
+body.node-type-article .sub-navigation-mobile .accordion__drawer {
     background-color: #00549f;
 }
 
-body.insidesd .sub-navigation-mobile .is-open .accordion__heading {
+body.node-type-article .sub-navigation-mobile .is-open .accordion__heading {
     background-color: white;
 }
 
 @media screen and (max-width: 47.99em) {
-    body.insidesd .hero__slides--secondary {
+    body.node-type-article .hero__slides--secondary {
         min-height: auto;
         padding-bottom: 0;
     }
-    body.insidesd .sub-navigation li {
+    body.node-type-article .sub-navigation li {
         background-color: #00549f;
     }
 }
 
 @media screen and (min-width: 48em) {
-    body.insidesd .sub-navigation {
+    body.node-type-article .sub-navigation {
         margin-top: -29px;
     }
-    body.insidesd .sub-navigation li {
+    body.node-type-article .sub-navigation li {
         max-width: none;
         margin: 0 0 0 .8em;
         background-color: #00549f;
     }
-    body.insidesd .sub-navigation.insidesd-article {
+    body.node-type-article .sub-navigation.insidesd-article {
         margin-top: -77px;
     }
-    body.insidesd main > div.nine,
-    body.insidesd aside > div.three {
+    body.node-type-article .hero__bg {
+        background-position: top center;
+    }
+    body.node-type-article .hero__bg.hero__bg--secondary {
+        height: 130.5%;
+    }
+    body.node-type-article main > div.nine,
+    body.node-type-article aside > div.three {
         z-index: 15;
     }
 }
 
-body.insidesd hr.features {
+body.node-type-article hr.features {
     height: 2px;
     border-top: none;
     background-color: #dde2e5;
+}
+
+body.node-type-article main {
+    position: relative;
+    background-color: white;
+}
+
+body.node-type-article .block-menu li a.active {
+    color: #fff;
+}
+
+/* use flexbox on article features for long titles, did not use card because
+   we want two up on mobile
+*/
+.view-id-article_features.view-display-id-embed_1 .flex-wrap {
+    display: block;
+    /* Fallback IE9 */
+    display: -webkit-flex;
+    /* Safari */
+    display:         flex;
+    padding: 0;
+
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+            flex-wrap: wrap;
 }
 
 /* Accessibility Dialog Popup
@@ -9099,6 +9313,14 @@ div#__ba_panel._ba_manual {
     display: none;
 }
 
+/* Sire views
+   ========================================================================== */
+.sire .row {
+    margin-left: 30px;
+}
+
+/* Custom CSS for Views having groupings like External Data (OCD)
+   ========================================================================== */
 #outer-wrap {
     position: relative;
     overflow: hidden;
