@@ -71,7 +71,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
 				</div>				
             </nav>
 			
-            <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+            <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                 <a href="" class="breadcrumbs__link">Home</a>
                 <span class="breadcrumbs__divider">&#62;</span>
                 <a href="" class="breadcrumbs__link">Secondary</a>

@@ -6,7 +6,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
             <div class="l-constrained l-padding-mobile-hd">
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
-                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
+                        <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white hidden">
                             <a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
                             <a href="" class="breadcrumbs__link">Next Page</a>
@@ -100,10 +100,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                         <td id="event_calendar-2015-07-01" class="wed past has-events">
                                                             <div class="inner">
                                                                 <div class="month day"> 1 </div>
-                                                                <div class="view-item view-item-event_calendar">
+                                                                <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="view-field view-data-node-title node-title">
-                                                                            <a href="https://www.stemcell.ucla.edu/bscrc-seminar-featuring-fernando-carmargo-phd-0" target="_blank">BSCRC Seminar featuring Fernando Carmargo, PhD</a>
+                                                                        <div class="l-padding-hs event-robin">
+                                                                            <a href="#" target="_blank">Farmers' Market</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -116,18 +116,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                         <td id="event_calendar-2015-07-03" class="fri past has-events">
                                                             <div class="inner">
                                                                 <div class="month day"> 3 </div>
-                                                                <div class="view-item view-item-event_calendar">
+                                                                <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="view-field view-data-node-title node-title">
-                                                                            <a href="https://www.stemcell.ucla.edu/bscrc-seminar-featuring-fernando-carmargo-phd-0" target="_blank">BSCRC Seminar featuring Fernando Carmargo, PhD</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                                <div class="view-item view-item-event_calendar">
-                                                                    <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="view-field view-data-node-title node-title">
-                                                                            <a href="https://www.stemcell.ucla.edu/bscrc-seminar-featuring-fernando-carmargo-phd-0" target="_blank">BSCRC Seminar featuring Fernando Carmargo, PhD</a>
+                                                                        <div class="l-padding-hs event-sunshade">
+                                                                            <a href="#">San Diego Marathon</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -148,14 +140,25 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                     </tr>
                                                     <tr>
                                                         <td id="event_calendar-2015-07-12" class="sun past has-no-events"><div class="inner"><div class="month day"> 12 </div><div class="calendar-empty">&nbsp;</div></div></td>
-                                                        <td id="event_calendar-2015-07-13" class="mon past has-no-events"><div class="inner"><div class="month day"> 13 </div><div class="calendar-empty">&nbsp;</div></div></td>
+                                                        <td id="event_calendar-2015-07-13" class="mon past has-events">
+															<div class="inner">
+																<div class="month day"> 13 </div>
+                                                                <div class="view-item view-item-events_calendar">
+                                                                    <div class="calendar.1142.field_date.0.0 calendar monthview">
+                                                                        <div class="l-padding-hs event-cerulean">
+                                                                            <a href="#" target="_blank">Council Meeting</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+															</div>
+														</td>
                                                         <td id="event_calendar-2015-07-14" class="tue past has-events">
                                                             <div class="inner">
                                                                 <div class="month day"> 14 </div>
-                                                                <div class="view-item view-item-event_calendar">
+                                                                <div class="view-item view-item-events_calendar">
                                                                     <div class="calendar.1142.field_date.0.0 calendar monthview">
-                                                                        <div class="view-field view-data-node-title node-title">
-                                                                            <a href="https://www.stemcell.ucla.edu/bscrc-seminar-featuring-fernando-carmargo-phd-0" target="_blank">BSCRC Seminar featuring Fernando Carmargo, PhD</a>
+                                                                        <div class="l-padding-hs event-cerulean">
+                                                                            <a href="#" target="_blank">Council Meeting</a>
                                                                         </div>
                                                                     </div>
                                                                 </div>

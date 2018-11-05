@@ -9,9 +9,9 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                 <div class="row l-margin-tl">
                     <div class="twelve columns no-gutters background-white">
                         <div class="l-container breadcrumbs l-padding-ad l-padding-bn background-white">
-                            <a href="" class="breadcrumbs__link">Home</a>
+                            <p class="hidden"><a href="" class="breadcrumbs__link">Home</a>
                             <span class="breadcrumbs__divider">&#62;</span>
-                            <span class="breadcrumbs__current">Leisure</span>
+                            <span class="breadcrumbs__current">Leisure</span></p>
                         </div>
 
                         <div class="row">
