@@ -18,6 +18,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noarchive, nofollow, noimageindex, noindex, noodp, nosnippet, noydir" />
     <link rel="icon" type="image/png" href="/assets/dist/img/favicon.png">
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
@@ -62,55 +63,94 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 <div id="outer-wrap">
     <div id="inner-wrap">
         <header class="l-padding-mobile-hs">
-			<div id="header-alert">
+			<div id="header-alert"></div>
+
+			<div id="top-header" class="l-constrained row l-padding-td l-padding-desktop-tn">
+
+			<div class="hidden twelve columns hide-on-mobile text-right">
+				<div class="quicklinks background--cerulean">
+					<ul class="l-margin-bs l-margin-tn">
+						<li class="hidden"><a href="/user">Login</a></li>
+						<li class="hidden"><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
+						 <li class="google-translate"></li>
+						<li class="hidden"><a href="">High Contrast</a></li>
+					</ul>
+				</div>
 			</div>
-            <div id="top-header" class="l-constrained row l-padding-td l-padding-desktop-tn">
-                <div class="hidden twelve columns hide-on-mobile text-right">
-                    <div class="quicklinks background--cerulean">
-                        <ul class="l-margin-bs l-margin-tn">
-                            <li><a href="">Login</a></li>
-                            <li><a href="">Text Size <span class="text-sm">A</span> <span class="text-nm current">A</span> <span class="text-lg">A</span></a></li>
-                            <li><a href="">Translate</a></li>
-                            <li><a href="">High Contrast</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="three columns no-gutters logo--wrap l-padding-desktop-tm">
-                    <a href="/templates/" class="logo">
-                        <img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
-                        <img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
-                    </a>
-                </div>
-                <div class="six columns text-center hide-on-mobile l-padding-desktop-tm l-margin-desktop-ts">
-                    <div class="card--weather">
-                        <i class="icon-sun"></i>
-                        <p class="temperature"><span class="degrees">73</span>&deg;</p>
-                        <p><strong>San Diego <br> Weather</strong></p>
-                    </div>
-                </div>
-                <div class="three columns no-gutters l-padding-desktop-ts">
-						
-					<div class="quicklinks text-right l-margin-mobile-rm l-padding-mobile-ts">
+
+			<div class="three columns no-gutters logo--wrap l-padding-desktop-tm">
+				<a href="/" class="logo">
+				<img src="/assets/dist/img/logo.png" alt="The City of San Diego" width="205" height="50" class="hide-on-mobile">
+				<img src="/assets/dist/img/logo-mark.png" alt="The City of San Diego" width="163" height="132" class="hide-on-desktop">
+				</a>
+			</div> 
+
+			<div class="six columns text-center hide-on-mobile l-padding-desktop-tm l-margin-desktop-ts">
+				<div class="card--weather">
+					<i class="icon-sun"></i>
+					<p class="temperature"><span class="degrees">68</span>&deg;</p>
+					<p><strong>San Diego <br> Weather</strong></p>
+				</div>
+			</div> 
+
+			<div class="three columns no-gutters l-padding-desktop-ts">
+				<div class="quicklinks text-right l-margin-mobile-rm l-padding-mobile-ts">
+					<div id="quicklink-divs">
+						<div class="accessibility hide-on-mobile">
+							<a id="accessibility" class="popup-modal" href="#accessibility_popup">Accessibility Tools</a>
+						</div>
 						<div class="google-translate">
-							<div id="google_translate_element"></div>
+						<div id="google_translate_element"></div>
+					</div>
+					</div>
+				</div>
+
+				<div id="accessibility_popup" class="white-popup accessibility-popup-position mfp-hide" title="Basic dialog">
+					<h3>Accessibility Tools</h3>
+					<div class="row">
+						<div class="five columns">
+							<span style="color:lightgrey;font-size: 24px;">&nbsp;</span>
+							<a title="Turn audio/vision assist on/off" href="javascript:;" onclick="BrowseAloud.panel.toggleBar(true,event);return false;">Turn audio/vision assist on/off</a>
+						</div>
+						<div class="four columns">
+							<span style="color:lightgrey;font-size: 24px;">|</span>
+							<strong class="high_contrast_switcher_label">Contrast:</strong>
+							<span class="high_contrast_switcher_normal">
+							<a id="high_contrast_switcher_normal_id" title="Set contrast to normal" href="javascript:drupalHighContrast.disableStyles(); var x = isContrastHigh(); var y = x;">Default</a>
+							</span>
+							<span class="high_contrast_switcher_separator">/</span>
+							<span class="high_contrast_switcher_high">
+							<a id="high_contrast_switcher_high_id" title="Set contrast to high" href="javascript:drupalHighContrast.enableStyles();var x = isContrastHigh(); var y = x;">High</a>
+							</span>
+						</div>
+						<div class="three columns">
+							<span style="color:lightgrey;font-size: 24px;">|</span>
+							<span>&nbsp;&nbsp;<a title="More information on accessibility" href="/accessibility">More Info</a></span>
 						</div>
 					</div>
-                    <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
-                        <div><div class="l-container">
-                            <h2 class="visuallyhidden">Search form</h2>
-                            <div class="form-item form-type-textfield form-item-search-block-form">
-                                <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
-                                <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search sandiego.gov" size="15" maxlength="128" class="form-text">
-                            </div>
-                            <div class="form-actions form-wrapper" id="edit-actions">
-                                <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
-                            </div>
-                            <input type="hidden" name="form_build_id" value="">
-                            <input type="hidden" name="form_id" value="search_block_form">
-                        </div></div>
-                    </form>
-                </div>
-            </div>
+				</div>
+				<div id="block-system-main" class="block block-system">
+					<div class="content">
+						<form class="form--search" action="#" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+						<h2 class="hidden">Search form</h2>
+						<div class="form-item form-type-textfield form-item-search-block-form">
+						<label class="element-invisible" for="edit-search-block-form--2">Search </label>
+						<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" placeholder="Search sandiego.gov"/>
+						</div>
+						<div class="form-actions form-wrapper" id="edit-actions--2"><input class="btn form-submit" type="submit" id="edit-submit--4" name="op" value="Search" /></div><input type="hidden" name="form_build_id" value="form-oPo1eDPEdFjG-B92m8zch_LSFTOkQPlb9ciuwG4s-os" />
+						<input type="hidden" name="form_token" value="-zZ4am9r3fJnkF35Kne9o2slnBSbQK4FkgO8UN-WQcE" />
+						<input type="hidden" name="form_id" value="search_block_form" />
+						</div>
+						</div></form> 
+						<ul class="visuallyhidden">
+							<li>Check if your spelling is correct, or try removing filters.</li>
+							<li>Remove quotes around phrases to match each word individually: <em>"blue drop"</em> will match less than <em>blue drop</em>.</li>
+							<li>You can require or exclude terms using + and -: <em>big +blue drop</em> will require a match on <em>blue</em> while <em>big blue -drop</em> will exclude results that contain <em>drop</em>.</li>
+						</ul>
+					</div>
+				</div>
+			</div> 
+		</div>
 
             <div id="nav-header" class="l-container navigation__wrap">
                 <div class="l-constrained">

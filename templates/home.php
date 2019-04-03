@@ -103,7 +103,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                         <legend class="form__step--header"><span class="icon--circle">3</span> Pay Your Ticket:</legend>
                                         <div class="row l-margin-desktop-td">
                                             <div class="eight columns">
-                                                <p>Advance Reservations may be booked from 8 to 90 days in advance of the date of play. (based on availability)</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. </p>
                                             </div>
                                             <div class="four columns">
                                                 <a href="" class="btn btn--wide">Pay Ticket Now</a>
@@ -279,7 +279,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>
-                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+                                        <p>City Council Meeting <a href="" class="text-small">Learn More</a></p>
                                     </div>
                                 </div>
                                 <hr class="hr--dashed">
@@ -296,7 +296,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                 <div class="card--notification row">
                                     <div class="twelve columns">
                                         <p class="date">11:32am | June 24, 2015</p>
-                                        <p>Mayor Faulconer Hires New Chief to Lead Infrastructure and Public Works <a href="" class="text-small">Learn More</a></p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. <a href="" class="text-small">Learn More</a></p>
                                     </div>
                                 </div>
                                 <hr class="hr--dashed">
@@ -306,14 +306,13 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                     </div>
                                     <div class="ten columns">
                                         <p class="date">11:32am | June 24, 2015</p>
-                                        <p>Fire Warning For North County Residents <a href="" class="text-small">Learn More</a></p>
+                                        <p>Committee Meeting <a href="" class="text-small">Learn More</a></p>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="l-container l-margin-tm">
                                 <h2>A Message From the Mayor</h2>
-                                <img src="../assets/dist/img/avatar-mayor.png" width="51" height="51" alt="" class="pull-left l-margin-rs">
                                 <p class="text-small">I am committed to creating a City with great opportunities for every resident in every neighborhood. Together, we will fix our streets, bolster our innovative economy and make every neighborhood safe in One San Diego. </p>
                                 <a href="" class="btn btn--secondary btn--wide l-margin-ts">Visit the Mayor's page</a>
                             </div>
@@ -329,10 +328,10 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                     </div>
 
                     <div class="row l-margin-bm">
-                        <div class="six columns l-margin-mobile-bd">
+                        <!--<div class="six columns l-margin-mobile-bd">
                             <div id="multi-map" style="width:100%; height: 360px;"></div>
-                        </div>
-                        <div class="six columns">
+                        </div>-->
+                        <div class="twelve columns">
                             <div class="row">
                                 <div class="twelve columns">
                                     <h6 class="l-margin-tn l-padding-hd">I am looking for...</h6>
@@ -385,8 +384,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <span class="event--month">Jul</span>
                                             </div>
                                             <div class="event__info">
-                                                <h6 class="l-margin-bn"><strong>Big Bay Boom</strong></h6>
-                                                <p class="l-margin-bn text-small">Fourth of July fireworks</p>
+                                                <h6 class="l-margin-bn"><strong>Event 1</strong></h6>
+                                                <p class="l-margin-bn text-small">Description</p>
                                                 <p><a href="">Learn More</a></p>
                                             </div>
                                         </div>
@@ -397,8 +396,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <span class="event--month">Jul</span>
                                             </div>
                                             <div class="event__info">
-                                                <h6 class="l-margin-bn"><strong>Comic Con</strong></h6>
-                                                <p class="l-margin-bn text-small">San Diego Comic Con 2015</p>
+                                                <h6 class="l-margin-bn"><strong>Event 2</strong></h6>
+                                                <p class="l-margin-bn text-small">Description</p>
                                                 <p><a href="">Learn More</a></p>
                                             </div>
                                         </div>
@@ -409,8 +408,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                                 <span class="event--month">Jul</span>
                                             </div>
                                             <div class="event__info">
-                                                <h6 class="l-margin-bn"><strong>Concert in the Park</strong></h6>
-                                                <p class="l-margin-bn text-small">Free summer concerts in the park</p>
+                                                <h6 class="l-margin-bn"><strong>Event 3</strong></h6>
+                                                <p class="l-margin-bn text-small">Description</p>
                                                 <p><a href="">Learn More</a></p>
                                             </div>
                                         </div>
@@ -422,8 +421,8 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
                                         <h6><img src="../assets/dist/img/attraction-marker.png" width="14" height="16" alt=""> Nearby Attractions</h6>
 
                                         <div class="">
-                                            <h6 class="l-margin-bn"><strong>Gaslamp Museum</strong></h6>
-                                            <p class="l-margin-bn text-small">Programs and tours offered through the William Heath Davis House</p>
+                                            <h6 class="l-margin-bn"><strong>Museums</strong></h6>
+                                            <p class="l-margin-bn text-small">Programs and tours</p>
                                             <p><a href="">Learn More</a></p>
                                         </div>
 

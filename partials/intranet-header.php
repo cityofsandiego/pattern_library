@@ -18,6 +18,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="noarchive, nofollow, noimageindex, noindex, noodp, nosnippet, noydir" />
     <link rel="icon" type="image/png" href="/assets/dist/img/favicon.png">
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
@@ -132,11 +133,11 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
                     <nav id="nav" class="main__navigation--portal nav-primary l-margin-desktop-td" role="navigation">
                         <ul>
-                            <li><a href="citynet-bucket.php">Boring (but important)</a></li>
-                            <li><a href="citynet-bucket.php">Internal Services</a></li>
-                            <li><a href="citynet-bucket.php">Connect</a></li>
-                            <li><a href="citynet-bucket.php">Develop</a></li>
-                            <li><a href="citynet-bucket.php">My SD</a></li>
+                            <li><a href="citynet-bucket.php">Category 1</a></li>
+                            <li><a href="citynet-bucket.php">Category 2</a></li>
+                            <li><a href="citynet-bucket.php">Category 3</a></li>
+                            <li><a href="citynet-bucket.php">Category 4</a></li>
+                            <li><a href="citynet-bucket.php">Category 5</a></li>
                         </ul>
                     </nav>
                 </div>

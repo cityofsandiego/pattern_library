@@ -11,7 +11,7 @@
                         <li><a href=""><i class="icon-nextdoor"></i></a></li>
                     </ul>
                     <p class="copyright">
-                    Copyrighted © 2002-2015<br>
+                    Copyrighted © 2002-<?php echo date("Y"); ?><br>
                     City of San Diego. All rights reserved.</p>
                 </div>
             </div>
@@ -22,25 +22,25 @@
                 <div class="four columns">
                     <p class=""><strong>City Sites</strong></p>
                     <ul>
-                        <li><a href="">sandiego.gov</a></li>
-                        <li><a href="">CityHub</a></li>
-                        <li><a href="">ServiceNow</a></li>
+                        <li><a href="">Site 1</a></li>
+                        <li><a href="">Site 2</a></li>
+                        <li><a href="">Site 3</a></li>
                     </ul>
                 </div>
                 <div class="four columns">
                     <p class=""><strong>Employee Sites</strong></p>
                     <ul>
-                        <li><a href="">MEA</a></li>
-                        <li><a href="">SDCERS</a></li>
-                        <li><a href="">Recreation Connection</a></li>
+                        <li><a href="">Site 1</a></li>
+                        <li><a href="">Site 2</a></li>
+                        <li><a href="">Site 3</a></li>
                     </ul>
                 </div>
                 <div class="four columns">
                     <p class=""><strong>Government Agencies</strong></p>
                     <ul>
-                        <li><a href="">County of San Diego</a></li>
-                        <li><a href="">State of California</a></li>
-                        <li><a href="">Federal Government</a></li>
+                        <li><a href="">Site 1</a></li>
+                        <li><a href="">Site 2</a></li>
+                        <li><a href="">Site 3</a></li>
                     </ul>
                 </div>
             </div>

@@ -25,31 +25,31 @@
                     <p class=""><strong>Council Districts</strong></p>
                     <ul class="two-columns">
                         <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
-                        <li><a href="">Council District 1</a></li>
+                        <li><a href="">Council District 2</a></li>
+                        <li><a href="">Council District 3</a></li>
+                        <li><a href="">Council District 4</a></li>
+                        <li><a href="">Council District 5</a></li>
+                        <li><a href="">Council District 6</a></li>
+                        <li><a href="">Council District 7</a></li>
+                        <li><a href="">Council District 8</a></li>
+                        <li><a href="">Council District 9</a></li>
                     </ul>
                 </div>
                 <div class="four columns">
                     <p class=""><strong>City Officials</strong></p>
                     <ul>
-                        <li><a href="">Office of the City Attorney</a></li>
-                        <li><a href="">Office of the City Clerk</a></li>
-                        <li><a href="">Office of the City Auditor</a></li>
-                        <li><a href="">Office of the Independent Budget Analyst</a></li>
+                        <li><a href="">City Official 1</a></li>
+                        <li><a href="">City Official 2</a></li>
+                        <li><a href="">City Official 3</a></li>
+                        <li><a href="">City Official 4</a></li>
                     </ul>
                 </div>
                 <div class="four columns">
                     <p class=""><strong>Government Agencies</strong></p>
                     <ul>
-                        <li><a href="">County of San Diego</a></li>
-                        <li><a href="">State of California</a></li>
-                        <li><a href="">Federal Government</a></li>
+                        <li><a href="">Site 1</a></li>
+                        <li><a href="">Site 2</a></li>
+                        <li><a href="">Site 3</a></li>
                     </ul>
                 </div>
             </div>

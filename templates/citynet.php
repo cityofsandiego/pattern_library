@@ -108,10 +108,10 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 										<a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Image Title" width="400" height="250"></a>
 									</div>
 									<div class="six columns card__content l-padding-as">
-										<p class="card__headline heading--snug"><a href="" style="font-size:1.3rem;">Employee Education Program</a></p>
+										<p class="card__headline heading--snug"><a href="" style="font-size:1.3rem;">First Announcement</a></p>
 										<p class="fine-print"><em>January 24, 2017</em></p>
-                                        <p>Mayor Faulconer has announced that National University is now the City of San Diego's Preferred Employee Education Program Partner.</p>
-                                        <p><a href="#" title="Learn more about Employee Education Program">Learn more</a></p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                        <p><a href="#" title="Learn more about First Announcement">Learn more</a></p>
 									</div>
 								</div>
                                 <div class="mobile-flexslider l-padding-hs l-margin-td">
@@ -126,7 +126,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
                                                     </div>
                                                 </div>
                                                 <div class="eight columns card__content l-padding-vn l-padding-hs">
-                                                    <p class="card__headline heading--snug"><a href="">Life Insurance and Employee Savings Plan Beneficiary Update</a></p>
+                                                    <p class="card__headline heading--snug"><a href="">Second Announcement</a></p>
 										<p class="fine-print"><em>January 23, 2017</em></p>
                                                 </div>
                                             </div>
@@ -144,7 +144,7 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
                                                     </div>
                                                 </div>
                                                 <div class="eight columns">
-                                                    <p class="card__headline heading--snug"><a href="">A Message from Scott Chadwick</a></p>
+                                                    <p class="card__headline heading--snug"><a href="">Third Announcement</a></p>
 										<p class="fine-print"><em>January 21, 2017</em></p>
                                                 </div>
                                             </div>
@@ -162,22 +162,22 @@ require_once( ABSPATH . PARTIALS . '/intranet-header.php' ); ?>
 							<div class="card row background-off-white l-padding-ad l-padding-vs">
 								<h2 class="h3">Quick Links</h2>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-reading icon--sm"></i> OneSD Login</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-reading icon--sm"></i> Button 1</a></p>
 								</div>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-bullhorn icon--sm"></i> City Help Desk</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-bullhorn icon--sm"></i> Button 2</a></p>
 								</div>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-papers icon--sm"></i> Employee Benefits</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-papers icon--sm"></i> Button 3</a></p>
 								</div>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Leave Slip</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Button 4</a></p>
 								</div>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Forms</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Button 5</a></p>
 								</div>
 								<div class="twelve columns l-margin-bn">								
-									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Inside San Diego</a></p>
+									<p><a class="btn btn--icon btn--wide btn--outline btn--md" href="#"><i class="icon-laptop icon--sm"></i> Button 6</a></p>
 								</div>
 							</div>
                         </div>
