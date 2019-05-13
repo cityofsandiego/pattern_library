@@ -8160,7 +8160,12 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
     background: white;
 }
 
-.csstransforms3d .is-open > p > a > .toggle-icon {
+.csstransforms3d .is-open > p > a > .toggle-icon,
+.csstransforms3d .is-open > h2 > a > .toggle-icon,
+.csstransforms3d .is-open > h3 > a > .toggle-icon,
+.csstransforms3d .is-open > h4 > a > .toggle-icon,
+.csstransforms3d .is-open > h5 > a > .toggle-icon,
+.csstransforms3d .is-open > h6 > a > .toggle-icon {
     -webkit-transform: rotate(45deg);
        -moz-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
@@ -8169,7 +8174,17 @@ main[role="main"] #views-exposed-form-events-page-1 .breadcrumbs + .views-expose
 }
 
 .csstransforms3d .is-open > p > a > .toggle-icon:before,
-.csstransforms3d .is-open > p > a > .toggle-icon:after {
+.csstransforms3d .is-open > p > a > .toggle-icon:after,
+.csstransforms3d .is-open > h2 > a > .toggle-icon:before,
+.csstransforms3d .is-open > h2 > a > .toggle-icon:after,
+.csstransforms3d .is-open > h3 > a > .toggle-icon:before,
+.csstransforms3d .is-open > h3 > a > .toggle-icon:after,
+.csstransforms3d .is-open > h4 > a > .toggle-icon:before,
+.csstransforms3d .is-open > h4 > a > .toggle-icon:after,
+.csstransforms3d .is-open > h5 > a > .toggle-icon:before,
+.csstransforms3d .is-open > h5 > a > .toggle-icon:after,
+.csstransforms3d .is-open > h6 > a > .toggle-icon:before,
+.csstransforms3d .is-open > h6 > a > .toggle-icon:after {
     background: #0098db;
 }
 
@@ -8364,6 +8379,14 @@ table td.table--break {
     padding-left: 0;
 }
 
+table.ui-datepicker-calendar tr:nth-child(even) {
+    background: #f6f6f6;
+}
+
+table.ui-datepicker-calendar td:first-child {
+    padding-left: 0;
+}
+
 .table--thirds th:first-child,
 .table--thirds td:first-child {
     float: left;
@@ -8467,6 +8490,39 @@ figure figcaption {
 
 .gm-iv-address {
     height: auto !important;
+}
+
+@media print {
+    .view-display-id-block_month {
+        break-before: page;
+        break-inside: avoid;
+    }
+    .view-display-id-block_month * {
+        margin: 0;
+        padding: 0;
+    }
+    .view-display-id-block_month .view-filters,
+    .view-display-id-block_month .date-prev,
+    .view-display-id-block_month .date-next,
+    .view-display-id-block_month .date-nav {
+        display: none;
+    }
+    .view-display-id-block_month .date-nav:nth-child(2) {
+        display: block;
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    .view-display-id-block_month .calendar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .view-display-id-block_month .calendar tbody td {
+        font-size: .75em;
+    }
+    .view-display-id-block_month a[href]:after {
+        content: none !important;
+    }
 }
 
 .calendar {
@@ -9113,10 +9169,6 @@ body #colorbox,
     }
 }
 
-.menu-node-unpublished {
-    color: red;
-}
-
 form#user-login div.form-item-name {
     padding-bottom: 0 !important;
 }
@@ -9321,6 +9373,215 @@ div#__ba_panel._ba_manual {
 
 /* Custom CSS for Views having groupings like External Data (OCD)
    ========================================================================== */
+.view-custom-css .view-grouping-header {
+    color: #009581;
+}
+
+/* CSS for Views exposed filters
+   ========================================================================== */
+.views-exposed-form .date-date.form-text {
+    width: 8em;
+}
+
+/* CSS for elevateZoom
+   ========================================================================== */
+.zoomContainer {
+    cursor: none;
+}
+
+/* CSS for Solr Search results
+   ========================================================================== */
+ol.search-results.apachesolr_search-results {
+    padding-left: 0;
+}
+
+#block-apachesolr-search-sort {
+    margin-top: 0;
+}
+
+#block-apachesolr-search-sort,
+h2.block-facetapi {
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+@media print {
+    #block-apachesolr-search-sort,
+    h2.block-facetapi {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+body.page-search #search-block-form #edit-keys {
+    margin-bottom: 1em !important;
+}
+
+body.page-search #search-block-form #search-results {
+    position: relative;
+    top: -.7em;
+}
+
+@media screen and (min-width: 64em) {
+    body.page-search div.container {
+        margin-top: 0;
+    }
+    body.page-search header.header--fixed + div.container {
+        margin-top: 165px;
+    }
+}
+
+/* Table from sorted view
+   ========================================================================== */
+.view-grouping .views-table {
+    width: 100%;
+}
+
+.view-grouping .views-table caption {
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: none;
+    padding-bottom: .75em;
+    padding-left: 1em;
+    text-align: left;
+}
+
+@media print {
+    .view-grouping .views-table caption {
+        font-size: 1em;
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+.view-grouping .views-table tr.ocd-group td {
+    background-color: #f6f6f6;
+}
+
+.view-grouping .views-table tr.ocd-group td:first-child {
+    visibility: collapse;
+    width: 20%;
+}
+
+.view-grouping .views-table tr.ocd-group:first-child td:first-child {
+    visibility: visible;
+}
+
+/* Solr
+   ========================================================================== */
+#search-form #edit-submit {
+    float: left;
+}
+
+#search-form #edit-submit:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #0fb6ff;
+}
+
+#search-form #edit-submit i {
+    font-weight: 600;
+    display: inline-block;
+    margin-right: .5em;
+    padding: .4em;
+    -webkit-transition-duration: .15s;
+       -moz-transition-duration: .15s;
+            transition-duration: .15s;
+    -webkit-transition-property: color, background;
+       -moz-transition-property: color, background;
+            transition-property: color, background;
+    text-align: center;
+    vertical-align: middle;
+    color: #0098db;
+    border-radius: 50%;
+    background: white;
+}
+
+#search-form #edit-submit .icon-chevron-right,
+#search-form #edit-submit .icon-chevron-left {
+    font-size: 150%;
+    line-height: .4;
+    padding: 0;
+    vertical-align: sub;
+    color: white;
+    border-radius: 0;
+    background: transparent;
+}
+
+#search-form div.form-item-retain-filters {
+    position: relative;
+    top: .5em;
+    margin-left: 1em;
+}
+
+#search-form #edit-basic {
+    margin-bottom: 1em !important;
+    padding: 1em 1em 2em 1em !important;
+    border-radius: 4px;
+    background-color: #eaeeef !important;
+}
+
+#search-form #edit-keys {
+    margin-bottom: .7em;
+}
+
+#search-form #search-results {
+    float: right;
+}
+
+@media screen and (max-width: 37.49em) {
+    #search-form #edit-basic {
+        padding: 1em 1em 5em 1em !important;
+    }
+    #search-form #edit-submit {
+        float: left;
+    }
+    #search-form #edit-submit i {
+        margin-bottom: .3em;
+    }
+    #search-form div.form-item-retain-filters {
+        float: left;
+        clear: left;
+        margin-top: 0;
+        margin-left: 0;
+    }
+}
+
+.facets ul {
+    padding: 0 0 0 22px;
+}
+
+.facets ul.facetapi-processed {
+    padding: 0 0 0 20px;
+    list-style-type: none;
+}
+
+.facets ul.facetapi-processed li.leaf {
+    position: relative;
+    margin: .5em 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.facets ul.facetapi-processed li.leaf input {
+    position: absolute;
+    top: 10px;
+    left: -21px;
+
+    size: 1.25em;
+}
+
+.facets ul.facetapi-processed li.leaf a {
+    font-size: .9em;
+    color: #027fb6;
+}
+
+pre.explain {
+    font-size: .8em;
+}
+
 #outer-wrap {
     position: relative;
     overflow: hidden;
@@ -10601,6 +10862,7 @@ div.description {
     margin-bottom: 1px;
 }
 
+#search-form #edit-submit,
 .btn {
     line-height: normal;
     position: relative;

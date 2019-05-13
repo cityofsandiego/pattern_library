@@ -2841,18 +2841,20 @@ main[role="main"],
 
   .csstransforms3d & {
 
-    > p > a > .toggle-icon {
-      &:before,
-      &:after {
-        background: $cerulean;
-      }
-      @include transform(rotate( 45deg ));
-      &:before {
-        // @include transform(translate3d( 100%, -50%, 0 ));
-        // @include opacity( 0 );
-        // opacity: 0;
-      }
-    }
+    > p, > h2, > h3, > h4, > h5, > h6 {
+			& > a > .toggle-icon {
+				&:before,
+				&:after {
+					background: $cerulean;
+				}
+				@include transform(rotate( 45deg ));
+				&:before {
+					// @include transform(translate3d( 100%, -50%, 0 ));
+					// @include opacity( 0 );
+					// opacity: 0;
+				}
+			}
+		}
   }
 
 }
@@ -3006,17 +3008,17 @@ table {
       }
     }
 	
-	&.valign-m {
-		td {
-			vertical-align: middle !important;
+		&.valign-m {
+			td {
+				vertical-align: middle !important;
+			}
 		}
-	}
 	
-	&.valign-b {
-		td {
-			vertical-align: bottom !important;
+		&.valign-b {
+			td {
+				vertical-align: bottom !important;
+			}
 		}
-	}
   }
 
   td {
@@ -3032,6 +3034,16 @@ table {
       padding-left: 0;
     }
   }
+	
+	&.ui-datepicker-calendar {
+		tr:nth-child(even) {
+      background: #f6f6f6;
+    }
+		
+		td:first-child {
+			padding-left: 0;
+		}
+	}
 }
 
 .table--thirds {
@@ -3134,6 +3146,35 @@ figure {
   height: auto !important; // GMap-specific
 }
 
+.view-display-id-block_month {
+  @media print {
+    break-before: page;
+    break-inside: avoid;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .view-filters, .date-prev, .date-next, .date-nav {
+      display: none;
+    }
+    .date-nav:nth-child(2) {
+      display: block;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+    }
+    .calendar {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      tbody td {
+        font-size: 0.75em;
+      }
+    }
+    a[href]:after {
+      content: none !important;
+    }
+  }
+}
 .calendar {
 
   width: 100%;
@@ -3710,10 +3751,6 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
   }
 }
 
-.menu-node-unpublished {
-  color: red;
-}
-
 form#user-login {
   @extend .l-constrained;
 
@@ -3928,5 +3965,202 @@ div#__ba_panel._ba_manual {
   .view-grouping-header {
     @extend .subheading;
     @extend .h3;
+    color: $teal;
   }
+}
+
+
+/* CSS for Views exposed filters
+   ========================================================================== */
+.views-exposed-form {
+  .date-date.form-text {
+    width: 8em;
+  }
+}
+
+/* CSS for elevateZoom
+   ========================================================================== */
+.zoomContainer {
+	cursor: none;
+}
+
+/* CSS for Solr Search results
+   ========================================================================== */
+ol.search-results.apachesolr_search-results {
+    padding-left: 0;
+}
+#block-apachesolr-search-sort {margin-top: 0;}
+#block-apachesolr-search-sort,
+h2.block-facetapi {
+  @include rem( 'font-size', 16px ); // 1.125em
+  @media print {
+    font-size: 1em;
+    margin: 0;
+    font-weight: bold;
+  }
+}
+	
+body.page-search {
+  #search-block-form {
+    #edit-keys {
+      margin-bottom: 1em !important;
+    }
+    #search-results {
+      position: relative;
+      top: -0.7em;
+    }
+  }
+	@include mq( $from: tablet-landscape ) {
+		div.container {
+			margin-top: 0;
+		}
+			
+		header.header--fixed+div.container {
+			margin-top: 165px;
+		}
+	}
+}
+
+/* Table from sorted view
+   ========================================================================== */
+
+.view-grouping .views-table {
+  width: 100%;
+  caption {
+    text-align: left;
+    font-weight: 600;
+    padding-left: 1em;
+    padding-bottom: 0.75em;
+    @include rem('font-size', 16px); // 1.25em
+    @media print {
+      font-size: 1em;
+      margin: 0;
+      font-weight: bold;
+    }
+    display: none;
+  }
+  tr.ocd-group {
+    td {
+      background-color: #f6f6f6;
+    }
+    td:first-child {
+width:20%;
+      visibility: collapse;
+    }
+    &:first-child {
+      td:first-child {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+/* Solr
+   ========================================================================== */
+
+#search-form {
+  #edit-submit {
+    @extend %btn;
+
+    &:hover {
+      color: white;
+      text-decoration: none;
+      background-color: lighten( $cerulean, 10% );
+    }
+
+    i {
+      padding: .4em;
+      font-weight: 600;
+      color: $cerulean;
+      background: white;
+      border-radius: 50%;
+      text-align: center;
+      margin-right: .5em;
+      display: inline-block;
+      vertical-align: middle;
+      @include transition-property( color, background );
+      @include transition-duration( .15s );
+    }
+
+    .icon-chevron-right,
+    .icon-chevron-left {
+      padding: 0;
+      color: white;
+      font-size: 150%;
+      border-radius: 0;
+      background: transparent;
+      vertical-align: sub;
+      line-height: .4;
+    }
+    float: left;
+
+  }
+  div.form-item-retain-filters {
+    margin-left: 1em;
+    position: relative;
+    top:0.5em;
+
+  }
+  #edit-basic {
+    margin-bottom: 1em !important;
+    padding: 1em 1em 2em 1em !important;
+    background-color: #eaeeef !important;
+    border-radius: 4px;
+  }
+  #edit-keys {
+    margin-bottom: 0.7em;
+  }
+  #search-results {
+    float: right;
+  }
+  @include mq( $until:mobile-wide ) {
+    #edit-basic {
+      padding: 1em 1em 5em 1em !important;
+    }
+    #edit-submit {
+      float: left;
+      i {
+        margin-bottom: 0.3em;
+      }
+    }
+    div.form-item-retain-filters {
+      float: left;
+      margin-top: 0;
+      clear: left;
+      margin-left: 0;
+    }
+  }
+}
+
+.facets {
+  ul {
+    padding: 0 0 0 22px;
+
+    &.facetapi-processed {
+      list-style-type: none;
+      padding: 0 0 0 20px;
+      li.leaf {
+        list-style-image: none;
+        list-style-type: none;
+        margin: 0.5em 0;
+        position: relative;
+        input {
+          position: absolute;
+          left: -21px;
+          top: 10px;
+          size: 1.25em;
+        }
+        a {
+          color: #027fb6;
+          font-size: 0.9em;
+        }
+      }
+    }
+  }
+}
+
+// Explaining search results.
+pre.explain {
+  font-size: .8em;
 }
