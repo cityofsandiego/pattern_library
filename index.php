@@ -11,7 +11,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
                 <h1>Grid System</h1>
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#grid-sizes">Grid Sizes</a></li>
                         <li><a href="#resp-cols">Responsive Columns</a></li>
                     </ul>

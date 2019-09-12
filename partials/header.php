@@ -29,16 +29,15 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
 	<link rel="stylesheet" href="/assets/dist/css/pattern-library-only.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
+    <script src="/assets/dist/js/pattern-library-only.js"></script>
 
     <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
     <script type="text/javascript">var switchTo5x=true;</script>
     <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
     <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 
-    <!-- Google Maps -->
-     <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
 
 </head>
 <body id="top"<?php echo $body_class; ?>>

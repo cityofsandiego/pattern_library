@@ -10,11 +10,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
 
-
+					<h1>Calendar</h1>
                     <div class="l-container l-padding-hd l-margin-vm background-off-white">
 
                         <div class="row">
-                            <div class="three columns push-nine no-gutters">
+                            <div class="four columns push-eight no-gutters">
                                 <div class="l-margin-vd">
                                     <form action="" method="post" id="search-block-form" class="form--search" accept-charset="UTF-8">
                                         <div><div class="l-container">
@@ -23,7 +23,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                                 <label class="visuallyhidden" for="edit-search-block-form--2">Search</label>
                                                 <input title="Enter the terms you wish to search for." type="search" id="search-block-form--2" name="search_block_form" value="" placeholder="Search All Events" size="15" maxlength="128" class="form-text">
                                             </div>
-                                            <div class="form-actions form-wrapper" id="edit-actions">
+                                            <div class="form-actions form-wrapper visuallyhidden" id="edit-actions">
                                                 <input type="submit" id="edit-submit" name="op" value="Search" class="form-submit">
                                             </div>
                                             <input type="hidden" name="form_build_id" value="">

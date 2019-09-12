@@ -281,6 +281,14 @@ html[xmlns] .flexslider .slides {
   }
 }
 
+.field-name-media-description {
+	@extend .flex-caption;
+	
+	p {
+		margin-bottom: 0 !important;
+	}
+}
+
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;

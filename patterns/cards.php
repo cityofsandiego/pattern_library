@@ -13,7 +13,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Card Teaser</h1>
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#general">General</a></li>
                         <li><a href="#headline-only">Headline Only</a></li>
                     </ul>

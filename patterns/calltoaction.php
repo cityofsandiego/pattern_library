@@ -10,7 +10,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
                 <h1>Call to Action</h1>
-				<div class="sub__nav--library">
+				<div class="sub__nav--library hidden">
 				    <ul class="sub__nav">
 				        <li><a href="#graphic">Graphic</a></li>
 				        <li><a href="#text">Text</a></li>

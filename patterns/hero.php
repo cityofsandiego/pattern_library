@@ -10,17 +10,20 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
                 <h1>Hero</h1>
+                <div class="sub__nav--library l-margin-bm">
+                    <ul class="sub__nav jump-scroll">
+                        <li><a href="#slides">Slideshow</a></li>
+                        <li><a href="#slides-secondary">Secondary Slideshow</a></li>
+                        <li><a href="#hero">Hero - Background Image</a></li>
+                        <li><a href="#hero-secondary">Hero - Secondary</a></li>
+                    </ul>
+                </div>
 
-			    <div class="l-container">
-			    	<div class="row">
-			    		<div class="twelve columns">
-			    			<p>There are two types of hero blocks, each with a secondary variations.</p>
-			    		</div>
-			    	</div>
-			    </div>
+			    
+			    <p>There are two types of hero blocks, each with a secondary variations.</p>
 
 			    <!-- Slideshow -->
-			    <div id="slides" class="l-container l-margin-vm">
+			    <div id="slides" class="l-container l-margin-bm">
 			    	<h2>Slideshow</h2>
 				    
 				    <div class="l-margin-as">
@@ -320,7 +323,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					
 			    </div>
 
-			    <div class="l-container l-margin-vm">
+			    <div id="hero-secondary" class="l-container l-margin-vm">
 			    	<h2>Hero - Secondary</h2>
 
 			    	<div class="l-container">

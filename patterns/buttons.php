@@ -12,7 +12,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Buttons</h1>
 				<div class="sub__nav--library">
-				    <ul class="sub__nav">
+				    <ul class="sub__nav jump-scroll">
 				        <li><a href="#primary">Primary Button</a></li>
 				        <li><a href="#modifiers">Button Modifiers</a></li>
 				        <li><a href="#buttons">Button Variations</a></li>

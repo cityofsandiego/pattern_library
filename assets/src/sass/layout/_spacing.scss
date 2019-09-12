@@ -52,9 +52,9 @@ img.photoRight{
 	clear:right;
 	}
 .main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-5px;height:5px;visibility:hidden;}
-@media screen and (min-width: 47.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-240px;height:240px;visibility:hidden;}}
-@media screen and (min-width: 59.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-200px;height:200px;visibility:hidden;}}
-@media screen and (min-width: 74.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-180px;height:180px;visibility:hidden;}}
+@media screen and (min-width: 47.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-15px;height:15px;visibility:hidden;outline:none;}}
+@media screen and (min-width: 59.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-125px;height:125px;visibility:hidden;outline:none;}}
+@media screen and (min-width: 74.99em){.main a[name]:not([name=""]):before, .anchor:before{display:block;content:" ";margin-top:-80px;height:80px;visibility:hidden;outline:none;}}
 /* Vertical */
 
 .l-padding-vn { padding-top: 0 !important; padding-bottom: 0 !important; }
@@ -294,12 +294,14 @@ img.photoRight{
 
 /* Vertical */
 
+.l-padding-desktop-vn { @include mq( $from: tablet ) { padding-top: 0 !important; padding-bottom: 0 !important; } }
 .l-padding-desktop-vs { @include mq( $from: tablet ) { padding-top: 0.5em !important; padding-bottom: 0.5em !important; } }
 .l-padding-desktop-vm { @include mq( $from: tablet ) { padding-top: 2em !important; padding-bottom: 2em !important; } }
 .l-padding-desktop-vd { @include mq( $from: tablet ) { padding-top: 1em !important; padding-bottom: 1em !important; } }
 .l-padding-desktop-vl { @include mq( $from: tablet ) { padding-top: 4em !important; padding-bottom: 4em !important; } }
 .l-padding-desktop-vx { @include mq( $from: tablet ) { padding-top: 6em !important; padding-bottom: 6em !important; } }
 
+.l-margin-desktop-vn { @include mq( $from: tablet ) { margin-top: 0 !important; margin-bottom: 0 !important; } }
 .l-margin-desktop-vs { @include mq( $from: tablet ) { margin-top: 0.5em !important; margin-bottom: 0.5em !important; } }
 .l-margin-desktop-vd { @include mq( $from: tablet ) { margin-top: 1em !important; margin-bottom: 1em !important; } }
 .l-margin-desktop-vm { @include mq( $from: tablet ) { margin-top: 2em !important; margin-bottom: 2em !important; } }
@@ -308,12 +310,15 @@ img.photoRight{
 
 /* Horizontal */
 
+.l-padding-desktop-hn { @include mq( $from: tablet ) { padding-left: 0 !important; padding-right: 0 !important; } }
 .l-padding-desktop-hs { @include mq( $from: tablet ) { padding-left: 0.5em !important; padding-right: 0.5em !important; } }
 .l-padding-desktop-hd { @include mq( $from: tablet ) { padding-left: 1em !important; padding-right: 1em !important; } }
 .l-padding-desktop-hm { @include mq( $from: tablet ) { padding-left: 2em !important; padding-right: 2em !important; } }
 .l-padding-desktop-hl { @include mq( $from: tablet ) { padding-left: 4em !important; padding-right: 4em !important; } }
-.l-padding-desktop-hx { @include mq( $from: tablet ) { padding-left: 6em !important; padding-right: 6em !important; } }
+.l-padding-desktop-hx {  @include mq( $until: site ) { padding-left: 2em !important; padding-right: 2em !important; };
+	@include mq( $from: site ) { padding-left: 6em !important; padding-right: 6em !important; } }
 
+.l-margin-desktop-hn { @include mq( $from: tablet ) { margin-left: 0 !important; margin-right: 0 !important; } }
 .l-margin-desktop-hs { @include mq( $from: tablet ) { margin-left: 0.5em !important; margin-right: 0.5em !important; } }
 .l-margin-desktop-hd { @include mq( $from: tablet ) { margin-left: 1em !important; margin-right: 1em !important; } }
 .l-margin-desktop-hm { @include mq( $from: tablet ) { margin-left: 2em !important; margin-right: 2em !important; } }

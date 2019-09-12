@@ -218,13 +218,11 @@ header {
       .theme-citynet & {
         top: 0;
         padding-top: 0;
-        position: relative;
       }
       &.has-alert {
         top: -221px;
         .theme-citynet & {
           top: 0;
-          position: relative;
         }
       }
       left: 0;
@@ -244,8 +242,7 @@ header {
       + div {
         margin-top: 227px;
         .theme-citynet & {
-          margin-top: 0;
-          position: relative;
+          margin-top: 85px;
         }
       }
 
@@ -318,8 +315,7 @@ header {
             margin-top: 0px;
           }
           .theme-citynet & {
-            margin-top: 0;
-            position: relative;
+            margin-top: 146px;
           }
         }
         ~ ul {
@@ -2610,79 +2606,8 @@ span[class^="text-"] {
 }
 
 
-/* Add to Calendar
-   Some of the css here was copied from the module addtocal, other is from
-   our pattern library.
+/* Tags
    ========================================================================== */
-body.page-node {
-  .field-name-field-event-date {
-    // So the date and the addtocal button are on same line.
-    display: inline-block !important;
-  }
-}
-.addtocal.addtocal-processed {
-  @extend .btn;
-  @extend .btn--quaternary;
-  @extend .btn--sm;
-  min-width: 120px;
-  font-family: $font-family;
-  font-weight: normal;
-  float: none;
-  padding: 5px !important;
-  margin-left: 1em !important;
-  // So the date and the addtocal button are on same line.
-  display: inline-block !important;
-}
-
-div.item-list ul.addtocal_menu {
-  min-width: 120px;
-  background-color: $alto;
-  color: $font-color;
-  font-family: $font-family;
-  font-weight: normal;
-  @extend .btn--sm;
-  margin-left: 1em !important;
-
-  display: none;
-  z-index: 50;
-  //background: #efefef;
-  background: $alto;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  //border: 1px solid #cdcdcd;
-  padding: 5px;
-  list-style-type: none;
-  margin-top: 5px;
-  margin-bottom: 0px;
-  position: absolute;
-}
-
-ul.addtocal_menu li {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul.addtocal_menu li a {
-  //color: inherit;
-  color: $font-color;
-  text-decoration: none;
-  display: block;
-  padding: 5px;
-}
-
-ul.addtocal_menu li a:hover {
-  text-decoration: none;
-  //background: darken( $alto, 5% );
-  background: lighten( $alto, 4% );
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-}
-
-
-  /* Tags
-     ========================================================================== */
 
 .tag-list {
   margin: 0;
@@ -2825,7 +2750,7 @@ main[role="main"],
 }
 .accordion__heading {
   margin: 0;
-  padding: 1rem 3.5rem 1rem 1rem;
+  padding: 1em 3.5em 1em 1em;
   color: $spruce;
   background: $mercury;
   position: relative;
@@ -3083,17 +3008,17 @@ table {
       }
     }
 	
-		&.valign-m {
-			td {
-				vertical-align: middle !important;
-			}
+	&.valign-m {
+		td {
+			vertical-align: middle !important;
 		}
+	}
 	
-		&.valign-b {
-			td {
-				vertical-align: bottom !important;
-			}
+	&.valign-b {
+		td {
+			vertical-align: bottom !important;
 		}
+	}
   }
 
   td {
@@ -3109,16 +3034,6 @@ table {
       padding-left: 0;
     }
   }
-	
-	&.ui-datepicker-calendar {
-		tr:nth-child(even) {
-      background: #f6f6f6;
-    }
-		
-		td:first-child {
-			padding-left: 0;
-		}
-	}
 }
 
 .table--thirds {
@@ -3151,22 +3066,13 @@ table {
 figure {
 
   img {
-    margin-bottom: 0;
+    margin-bottom: .25em;
   }
 
   figcaption {
-    background-color: #e4e9eb;
-	padding: .5em;
+    color: $gray;
     font-style: italic;
     @include rem( 'font-size', 13px );
-	
-	p {
-	  margin-bottom: 0;
-	}
-	
-	.photo-credit {
-	  padding: 0 0 .5em 0;
-	}
   }
 
 }
@@ -3230,35 +3136,6 @@ figure {
   height: auto !important; // GMap-specific
 }
 
-.view-display-id-block_month {
-  @media print {
-    break-before: page;
-    break-inside: avoid;
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    .view-filters, .date-prev, .date-next, .date-nav {
-      display: none;
-    }
-    .date-nav:nth-child(2) {
-      display: block;
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-    }
-    .calendar {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      tbody td {
-        font-size: 0.75em;
-      }
-    }
-    a[href]:after {
-      content: none !important;
-    }
-  }
-}
 .calendar {
 
   width: 100%;
@@ -3462,12 +3339,9 @@ figure {
   display: none;
   &.is-active {
     display: block;
-  }
-  .cke_editable & {
-    display: block;
-    border-style:double;
-    margin:20px 0;
-    padding:10px;
+    page-node-edit & {
+      display: block;
+    }
   }
   .no-js & {
     display: block;
@@ -3841,6 +3715,10 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
   }
 }
 
+.menu-node-unpublished {
+  color: red;
+}
+
 form#user-login {
   @extend .l-constrained;
 
@@ -4079,6 +3957,7 @@ div#__ba_panel._ba_manual {
 ol.search-results.apachesolr_search-results {
     padding-left: 0;
 }
+#edit-keys { margin-bottom: 1em !important; }
 #block-apachesolr-search-sort {margin-top: 0;}
 #block-apachesolr-search-sort,
 h2.block-facetapi {
@@ -4091,15 +3970,6 @@ h2.block-facetapi {
 }
 	
 body.page-search {
-  #search-block-form {
-    #edit-keys {
-      margin-bottom: 1em !important;
-    }
-    #search-results {
-      position: relative;
-      top: -0.7em;
-    }
-  }
 	@include mq( $from: tablet-landscape ) {
 		div.container {
 			margin-top: 0;
@@ -4109,148 +3979,4 @@ body.page-search {
 			margin-top: 165px;
 		}
 	}
-}
-
-/* Table from sorted view
-   ========================================================================== */
-
-.view-grouping .views-table {
-  width: 100%;
-  caption {
-    text-align: left;
-    font-weight: 600;
-    padding-left: 1em;
-    padding-bottom: 0.75em;
-    @include rem('font-size', 16px); // 1.25em
-    @media print {
-      font-size: 1em;
-      margin: 0;
-      font-weight: bold;
-    }
-    display: none;
-  }
-  tr.ocd-group {
-    td {
-      background-color: #f6f6f6;
-    }
-    td:first-child {
-width:20%;
-      visibility: collapse;
-    }
-    &:first-child {
-      td:first-child {
-        visibility: visible;
-      }
-    }
-  }
-}
-
-
-/* Solr
-   ========================================================================== */
-
-#search-form {
-  #edit-submit {
-    @extend %btn;
-
-    &:hover {
-      color: white;
-      text-decoration: none;
-      background-color: lighten( $cerulean, 10% );
-    }
-
-    i {
-      padding: .4em;
-      font-weight: 600;
-      color: $cerulean;
-      background: white;
-      border-radius: 50%;
-      text-align: center;
-      margin-right: .5em;
-      display: inline-block;
-      vertical-align: middle;
-      @include transition-property( color, background );
-      @include transition-duration( .15s );
-    }
-
-    .icon-chevron-right,
-    .icon-chevron-left {
-      padding: 0;
-      color: white;
-      font-size: 150%;
-      border-radius: 0;
-      background: transparent;
-      vertical-align: sub;
-      line-height: .4;
-    }
-    float: left;
-
-  }
-  div.form-item-retain-filters {
-    margin-left: 1em;
-    position: relative;
-    top:0.5em;
-
-  }
-  #edit-basic {
-    margin-bottom: 1em !important;
-    padding: 1em 1em 2em 1em !important;
-    background-color: #eaeeef !important;
-    border-radius: 4px;
-  }
-  #edit-keys {
-    margin-bottom: 0.7em;
-  }
-  #search-results {
-    float: right;
-  }
-  @include mq( $until:mobile-wide ) {
-    #edit-basic {
-      padding: 1em 1em 5em 1em !important;
-    }
-    #edit-submit {
-      float: left;
-      i {
-        margin-bottom: 0.3em;
-      }
-    }
-    div.form-item-retain-filters {
-      float: left;
-      margin-top: 0;
-      clear: left;
-      margin-left: 0;
-    }
-  }
-}
-
-.facets {
-  ul {
-    padding: 0 0 0 22px;
-
-    &.facetapi-processed {
-      list-style-type: none;
-      padding: 0 0 0 20px;
-      li.leaf {
-        list-style-image: none;
-        list-style-type: none;
-        margin: 0.5em 0;
-        position: relative;
-        input {
-          position: absolute;
-          left: -21px;
-          top: 10px;
-          size: 1.25em;
-        }
-        a {
-          color: #027fb6;
-          font-size: 0.9em;
-        }
-      }
-    }
-  }
-}
-
-// Explaining search results.
-pre.explain {
-  font-size: .8em;
 }

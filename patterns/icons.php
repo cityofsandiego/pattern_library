@@ -13,7 +13,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 <h1>Icon Library</h1>				
 				
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#icomoon">Icomoon</a></li>
                         <li><a href="#socials">Socials</a></li>
                     </ul>

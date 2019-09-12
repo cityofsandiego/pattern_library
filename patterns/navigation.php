@@ -319,7 +319,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Navigation</h1>
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#primary">Primary</a></li>
                         <li><a href="#footer">Footer</a></li>
                         <li><a href="#breadcrumbs">Breadcrumbs</a></li>

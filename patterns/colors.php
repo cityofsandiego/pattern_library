@@ -15,7 +15,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Color Palette</h1>
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#primary">Primary Colors</a></li>
                         <li><a href="#secondary">Secondary Colors</a></li>
                         <li><a href="#website">Website-only Colors</a></li>

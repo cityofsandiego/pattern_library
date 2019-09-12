@@ -12,21 +12,90 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Media</h1>
 				<div class="sub__nav--library">
-				    <ul class="sub__nav">
-				        <li><a href="#figure">Figure</a></li>
+				    <ul class="sub__nav jump-scroll">
+				        <li><a href="#figure">Image</a></li>
                         <li><a href="#gallery">Image Gallery</a></li>
                         <li><a href="#mobile-gallery">Mobile Gallery</a></li>
                         <li><a href="#video">Video</a></li>
 				    </ul>
 				</div>
+				<h2 id="figure">Image</h2>
 
-				<div id="figure" class="l-container l-margin-tm">
-				    <h2>Figure with caption</h2>
-                    <figure>
-                        <img src="../assets/dist/img/fig-img.jpg" alt="Fig. Alt. Title" width="563" height="283">
-                        <figcaption>Image Title: This is the figcaption element.</figcaption>
-                    </figure>
+				<h3 class="subheading">With caption</h3>
+				<div class="row">
+					<div class="six columns l-margin-mobile-bd">
+						<figure class="l-margin-hn"><img src="../assets/dist/img/fig-img.jpg" alt="photo description">
+							<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+						</figure>
+					</div>
+					<div class="six columns">
+						<div class="code__examples">
+								<form><textarea class="pattern" id="img-caption" name="code">
+<figure class="l-margin-hn"><img src="[path to image]" alt="[alt text]">
+	<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+</figure></textarea> </form> </div>	
+					</div>
 				</div>
+
+				<h3 class="subheading">With photo credit</h3>
+				<div class="row">
+					<div class="six columns l-margin-mobile-bd">
+						<figure class="l-margin-hn"><img src="../assets/dist/img/fig-img.jpg" alt="photo description">
+							<p class="photo-credit">Photo by John Doe</p>
+						</figure>
+					</div>
+					<div class="six columns">
+						<div class="code__examples">
+								 <form><textarea class="pattern" id="img-photo-credit" name="code">
+<figure class="l-margin-hn"><img src="[path to image]" alt="[alt text]">
+	<p class="photo-credit">Photo by John Doe</p>
+</figure></textarea> </form></div>						
+					</div>
+				</div>
+						
+				<h3 class="subheading">With caption and photo credit</h3>
+				<div class="row">
+					<div class="six columns l-margin-mobile-bd">
+						<figure class="l-margin-hn"><img src="../assets/dist/img/fig-img.jpg" alt="photo description">
+							<figcaption>
+								<p class="photo-credit">Photo by John Doe</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div class="six columns">
+						<div class="code__examples">
+								 <form><textarea class="pattern" id="img-caption-credit" name="code">
+<figure class="l-margin-hn"><img src="[path to image]" alt="[alt text]">
+	<figcaption>
+		<p class="photo-credit">Photo by John Doe</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</p>
+	</figcaption>
+</figure></textarea> </form></div>						
+					</div>
+				</div>
+						
+				<h3 class="subheading">Wrapped by text</h3>
+						<figure class="img-right width-33"><img src="../assets/dist/img/fig-img.jpg" alt="photo description">
+							<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+						</figure>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet dictum sit amet justo donec enim diam. Sem et tortor consequat id porta nibh venenatis cras sed. </p>				
+						<figure class="img-left width-33"><img src="../assets/dist/img/fig-img.jpg" alt="photo description">
+							<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+						</figure>
+						<p>Massa eget egestas purus viverra accumsan. Sit amet justo donec enim diam vulputate ut pharetra. Accumsan lacus vel facilisis volutpat. Convallis posuere morbi leo urna molestie at.</p>
+						<p>At elementum eu facilisis sed odio morbi quis. Enim nec dui nunc mattis. Diam quam nulla porttitor massa id neque. Hac habitasse platea dictumst vestibulum. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Elit ullamcorper dignissim cras tincidunt lobortis. Amet dictum sit amet justo donec enim diam. Feugiat pretium nibh ipsum consequat nisl vel. Massa eget egestas purus viverra. Nunc aliquet bibendum enim facilisis gravida. Morbi tristique senectus et netus et malesuada fames.</p>
+						<div class="code__examples l-margin-tm">
+								 <form><textarea class="pattern" id="img-wrap" name="code">
+<figure class="img-right width-33"><img src="[path to image]" alt="[alt text]">
+	<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+</figure>
+<p>[text]</p>
+<figure class="img-left width-33"><img src="[path to image]" alt="[alt text]">
+	<figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing semper.</figcaption>
+</figure>
+<p>[text]</p>
+<p>[text]</p></textarea> </form></div>	
 
                 <!-- Image gallery -->
                 <div id="gallery" class="l-container l-margin-vm">

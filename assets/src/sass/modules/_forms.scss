@@ -9,7 +9,7 @@
 
 // Hide the file Upload button on all webforms.
 .webform-component-file .form-managed-file input[value="Upload"] {
-      display: none;
+    display: none;
 }
 
 
@@ -17,19 +17,19 @@
    ========================================================================== */
 
 ::-webkit-input-placeholder {
-   color: $shuttle;
+    color: $shuttle;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: $shuttle;
+    color: $shuttle;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-   color: $shuttle;
+    color: $shuttle;
 }
 
 :-ms-input-placeholder {
-   color: $shuttle;
+    color: $shuttle;
 }
 
 %select {
@@ -53,7 +53,7 @@
 input,
 textarea {
     /*color: $shuttle;*/
-	color: #37424a;
+    color: #37424a;
     margin: 0 0 1em 0;
     padding: .75em;
     width: 100%;
@@ -80,7 +80,7 @@ select:focus {
 
 input[type="checkbox"],
 input[type="radio"] {
-  width: auto;
+    width: auto;
 }
 
 input[type="submit"],
@@ -92,7 +92,7 @@ button[type="submit"] {
     /*outline: none;*/
     -webkit-appearance: none;
     &[value="None"] {
-      display: none;
+        display: none;
     }
 }
 
@@ -103,13 +103,13 @@ select {
     padding: .67em 1em;
     border-radius: 2px;
     /*color: rgba(0,0,0,.87);*/
-	color: #37424a;
+    color: #37424a;
     border: 1px solid $chateau;
     box-shadow: 0 0 0 0 transparent inset;
     -webkit-transition: color .1s ease,border-color .1s ease;
     transition: color .1s ease,border-color .1s ease;
-	font-size: .8125rem;
-	font-weight: 600;
+    font-size: .8125rem;
+    font-weight: 600;
 }
 
 button {
@@ -122,7 +122,7 @@ button {
 input.search-type,
 input[type="search"] {
     margin: 0;
-  @include box-sizing( border-box ); /* 1 */
+    @include box-sizing( border-box ); /* 1 */
 }
 
 input[type="radio"] {
@@ -134,23 +134,23 @@ textarea {
 }
 
 legend {
-   font-weight: 600;
-   padding: 0 .5em;
-   @include rem( 'font-size', 13px );
-   font-family: $font-family-secondary;
+    font-weight: 600;
+    padding: 0 .5em;
+    @include rem( 'font-size', 13px );
+    font-family: $font-family-secondary;
 
-   @include mq( tablet, site ) {
-       @include rem( 'font-size', 14px );
-   }
+    @include mq( tablet, site ) {
+        @include rem( 'font-size', 14px );
+    }
 
-   @include mq( $from: site ) {
-       @include rem( 'font-size', 16px );
-   }
+    @include mq( $from: site ) {
+        @include rem( 'font-size', 16px );
+    }
 }
 
 .form-error {
-   color: $error;
-   @include rem( 'font-size', 11px );
+    color: $error;
+    @include rem( 'font-size', 11px );
 }
 
 .form--general {
@@ -267,61 +267,6 @@ legend {
     }
 }
 
-.form--search {
-    border-radius: 4px;
-    box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
-
-    // So drop shadow aligns for views-exposed search filter
-    .views-exposed-widgets {
-     margin-bottom: 0px;
-    }
-    input.search-type,
-    input[type="search"] {
-        border-right: none;
-        border-radius: 4px 0 0 4px;
-    }
-
-    input[type="submit"] {
-        width: 100%;
-        color: white;
-        display: block;
-        padding: .75em;
-        text-indent: -9999px;
-        border-radius: 0 4px 4px 0;
-        border: 1px solid $cerulean;
-        background-image: url(../img/search-icon.png);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: $cerulean;
-        @include rem( 'font-size', 13px );
-        &:hover {
-            background-color: lighten( $cerulean, 10% );
-            border-color: lighten( $cerulean, 10% );
-        }
-    }
-
-    .form-item {
-        width: 85%;
-    }
-    .views-submit-button,
-    .form-actions {
-        width: 15%;
-    }
-    .views-submit-button,
-    .form-item,
-    .form-actions {
-        float: left;
-    }
-
-    &.form--directory {
-        margin-bottom: 1em;
-    }
-}
-
-.form-item {
-
-}
-
 .form--comments {
     .form-actions {
         @include mq( $from: tablet ) {
@@ -356,23 +301,72 @@ legend {
 }
 
 .views-submit-button {
-	input[type="submit"] {
-		background-color:$cerulean;
-		color: white;
-	}
-	@include mq( $until: tablet ) {
-		clear: left;
-	}
+    input[type="submit"] {
+        background-color:$cerulean;
+        color: white;
+    }
+    @include mq( $until: tablet ) {
+        clear: left;
+    }
 }
 
-
-// Header search
-header {
+@mixin form--search {
     .form--search {
+        border-radius: 4px;
+        box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
+        margin-bottom: 0px;
+
+        // So drop shadow aligns for views-exposed search filter
+        .views-exposed-widgets {
+            margin-bottom: 0px;
+        }
+
+        input.search-type,
+        input[type="text"] {
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            margin-bottom: 0;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            color: $cerulean;
+            display: block;
+            padding: .75em;
+            text-indent: -9999px;
+            border-radius: 0 4px 4px 0;
+            border: 1px solid $mercury;
+            background-image: url(../img/search-icon.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-color: $mercury;
+            @include rem( 'font-size', 13px );
+            &:hover {
+                background-color: lighten( $cerulean, 10% );
+                border-color: lighten( $cerulean, 10% );
+            }
+        }
+
+        .form-item {
+            width: 85%;
+        }
+        .views-submit-button,
+        .form-actions {
+            width: 15%;
+        }
+        .views-submit-button,
+        .form-item,
+        .form-actions {
+            float: left;
+        }
+
+        &.form--directory {
+            margin-bottom: 1em;
+        }
 
         input {
             border-color: white;
-            &:focus { 
+            &:focus {
                 border-top-color: white;
                 border-left-color: white;
             }
@@ -391,6 +385,32 @@ header {
                 border-bottom-color: $chateau;
                 background-color: darken( $mercury, 5% );
             }
+        }
+    }
+}
+
+// Header search
+header {
+    @include form--search;
+}
+
+body.page-not-found {
+    @include form--search;
+    .form--search {
+        input[type="submit"] {
+            color: $cerulean;
+            border-radius: 0 4px 4px 0;
+            border: 1px solid $cerulean;
+            background-image: url(../img/search-icon.png);
+            background-color: $cerulean;
+            &:hover {
+                background-color: lighten($cerulean, 10%);
+                border-color: lighten($cerulean, 10%);
+            }
+        }
+        #edit-keys {
+            border-color: $cerulean;
+            border-radius: 4px 0 0 4px;
         }
     }
 }
@@ -433,7 +453,7 @@ header {
             margin-right: 0;
             &:after {
                 display: none;
-            }   
+            }
         }
     }
 
@@ -542,14 +562,16 @@ header {
             left: 0; top: 89px;
             width: 100%;
             border-radius: 0;
-            padding: .5em 3em;
+            padding: .8em 3em;
             //background-color: rgba(255, 255, 255, 0.9);
-			background-color: $off-white;
+            background-color: $off-white;
 
             input.search-type,
-            input[type="search"] {
+            input[type="search"],
+            input[type="text"] {
                 border: 1px solid $chateau;
                 border-right: none;
+                margin: 0;
             }
 
             input[type="submit"] {
@@ -562,11 +584,11 @@ header {
 
     @include mq( $until: site ) {
         .form--search-wrap {
-			//position: static;
-			position: absolute;
-			top: 0;
-			right: 0;
-		}
+            //position: static;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 }
 
@@ -590,31 +612,36 @@ header {
     }
 }
 .field-type-registration .form-item {
-  &.form-type-textfield {
-    label {
-      font-size: inherit;
-      .form-required {
-        position: inherit;
-      }
+    &.form-type-textfield {
+        label {
+            font-size: inherit;
+            .form-required {
+                position: inherit;
+            }
+        }
     }
-  }
-  &.form-item-count input {
-    margin-bottom:0px;
-  }
-  .description {
-    margin-bottom:1em;
-  }
+    &.form-item-count input {
+        margin-bottom:0px;
+    }
+    .description {
+        margin-bottom:1em;
+    }
 }
 
 // Field on registration forms that is used internally and should not be displayed
 // to users.
 .field-name-field-reg-http-referer {
-  display: none;
-  body.role-administrator & {
-    display: block;
-  }
+    display: none;
+    body.role-administrator & {
+        display: block;
+    }
 }
 
+// Added Articles view. For some reason the id^= is not working.
+#views-exposed-form-articles-block-1,
+#views-exposed-form-articles-block-2,
+#views-exposed-form-articles-block-3,
+form [id^="views-exposed-form-articles-block"],
 #views-exposed-form-events-page-1 {
     @extend .form--search;
     .views-exposed-form {
@@ -642,6 +669,38 @@ header {
     }
 }
 
+// For the Articles search bar in the sidebar. For some reason the id^= is not working.
+#views-exposed-form-articles-block-1,
+#views-exposed-form-articles-block-2,
+#views-exposed-form-articles-block-3,
+form[id^="views-exposed-form-articles-block-"] {
+    box-shadow: none;
+    .views-widget-filter-combine input[name="combine"] {
+        margin-bottom: 0;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+    }
+    .views-submit-button {
+        @include mq( $until: tablet ) {
+            clear: none;
+        }
+    }
+    .views-reset-button input {
+        background-color: transparent;
+        color: #37424a;
+        background-image: none;
+        text-indent: 0px;
+        border: none;
+        text-decoration: underline;
+        &:hover {
+            background-color: transparent;
+            border-color: transparent;
+        }
+    }
+}
+
+//#views-exposed-form-articles-block-1 .form-item,
+form[id^="views-exposed-form-articles-block-"] .views-exposed-form .views-exposed-widgets .views-widget-filter-combine,
 .views-widget-filter-field_event_date_value {
     float: left;
     width: 85%;
@@ -652,26 +711,74 @@ header {
 }
 
 div.description {
-	font-size: .75rem;
+    font-size: .75rem;
 }
-	
+
 .views-exposed-form {
-	margin-bottom: 1.5em;
-	
-	.views-exposed-widgets .views-exposed-widget {
-		padding: 0 1em .5em 0;
-		
-		input {
-			margin-bottom: 4px;
-		}
-		
-		.views-widget .form-item {
-			input {
-				margin: 0;
-			}
-			select {
-				margin-bottom: 1px;
-			}
-		}
-	}
+    margin-bottom: 1.5em;
+
+    .views-exposed-widgets .views-exposed-widget {
+        padding: 0 1em .5em 0;
+        height: 4.4em;
+
+        input {
+            margin-bottom: 4px;
+        }
+
+        .views-widget .form-item {
+            input {
+                margin: 0;
+            }
+            select {
+                margin-bottom: 1px;
+            }
+        }
+    }
 }
+
+.views-widget-filter-title {
+    @extend .form--search;
+    width: 100%;
+    height:30px;
+    padding-right: 0;
+    @include mq( $from: tablet ) {
+        width: 25%;
+        padding-right: 1em;
+        float: left;
+    }
+    @include mq( $until: tablet ) {
+        margin-bottom:1em;
+        height: 2.5em;
+    }
+}
+#edit-title-selective {
+    @include form--search;
+    width: 100%;
+    padding-right: 0;
+    @include mq( $from: tablet ) {
+        width: 40%;
+        margin-right: 1em;
+        float: left;
+        height:39px;
+    }
+    @include mq( $until: tablet ) {
+        margin-bottom:1em;
+        height: 3em;
+    }
+}
+#edit-submit-main-events-calendar, #edit-submit-events-calendar {
+    @extend .btn;
+    @extend .btn--primary;
+    padding: .75em 1em !important;
+    float: left;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+#edit-reset {
+    @extend .btn;
+    @extend .btn--success;
+    padding: .75em 1em !important;
+    float:left;
+}
+
+div.ajax-progress-throbber{ float:right; }

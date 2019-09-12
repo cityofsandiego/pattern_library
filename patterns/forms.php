@@ -12,7 +12,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Forms</h1>
 				<div class="sub__nav--library">
-				    <ul class="sub__nav">
+				    <ul class="sub__nav jump-scroll">
 				    	<li><a href="#general">General Sign Up</a></li>
 				        <li><a href="#search">Search</a></li>
 				        <li><a href="#i-want-to">I Want To...</a></li>

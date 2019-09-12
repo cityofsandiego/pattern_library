@@ -12,7 +12,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Tables/Charts &amp; Graphs</h1>
 				<div class="sub__nav--library">
-				    <ul class="sub__nav">
+				    <ul class="sub__nav jump-scroll">
 				        <li><a href="#general-table">General Table</a></li>
 				        <li><a href="#accordion-table">Accordion Table</a></li>
 				        <li><a href="#bar">Bar Graph</a></li>

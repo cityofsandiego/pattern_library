@@ -12,7 +12,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <h1>Components</h1>
                 <div class="sub__nav--library">
-                    <ul class="sub__nav">
+                    <ul class="sub__nav jump-scroll">
                         <li><a href="#socials">Social Share</a></li>
                         <li><a href="#accordion">Accordion</a></li>
                         <li><a href="#post-meta">Post Meta</a></li>

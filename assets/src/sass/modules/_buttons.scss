@@ -126,6 +126,15 @@
     }
 }
 
+.btn--quaternary {
+    background-color: $alto;
+    color: $font-color;
+    &:hover {
+        color: $font-color;
+        background-color: lighten( $alto, 4% );
+    }
+}
+
 .btn--icon {
     padding: 1em;
     text-align: left;

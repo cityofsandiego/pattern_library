@@ -4,7 +4,7 @@
   .role-main {
       z-index: 5;
       position: relative;
-      //margin-top: -50px;
+      margin-top: -50px;
 
       @include mq( $from: site ) {
 	  .sub-navigation {
@@ -49,12 +49,6 @@
       a {
         text-decoration: none;
       }
-    }
-  }
-
-  .tabs {
-    &.primary {
-      margin-top:100px;
     }
   }
 
@@ -382,20 +376,29 @@
     margin-bottom: 1em;
   }
 
-  // Style facet sidebar on search page.
-  &.page-search .facets {
-    h2 {
-      font-size: 0.9em;
-      margin-left: 20px;
+  // Style search page.
+  &.page-search {
+    @include mq( $from: tablet-landscape ) {
+      header.header--fixed+div.container {
+        position:relative;
+        margin-top:0;
+      }
     }
-    h2.block-apachesolr-search-sort,
-    h2.sand_entity_type,
-    .bean-bean-html-block h2 {
-      font-size: 1.2em;
-      margin-left: 0px;
+    .facets {
+      h2 {
+        font-size: 0.9em;
+        margin-left: 20px;
+      }
+
+      h2.block-apachesolr-search-sort,
+      h2.sand_entity_type,
+      .bean-bean-html-block h2 {
+        font-size: 1.2em;
+        margin-left: 0px;
+      }
     }
   }
-
+  
   // Search results visited
   div.search-result-wrapper h3.title a:visited {
     color: $link-color-visited;
@@ -405,9 +408,10 @@
   // Adjustments after changing sandiego.gov to shorter header.
   @include mq($from: site) {
     &.logged-in.admin-menu header.header--fixed {
-      top: 28px;
+      top: 0;
+      position: relative;
       &.has-alert {
-        top: 88px;
+        top: 0;
       }
     }
   }

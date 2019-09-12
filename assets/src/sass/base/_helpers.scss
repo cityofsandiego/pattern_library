@@ -325,14 +325,46 @@ p.nav-ex {
 .pull-center {
     margin: 0 auto;
     display: block;
+	&--desktop {
+		@include mq( $from: tablet ) {
+			margin: 0 auto;
+			display: block;
+		}
+    }
+	&--mobile {
+		@include mq( $until: tablet ) {
+			margin: 0 auto;
+			display: block;
+		}
+    }
 }
 
 .pull-left {
     float: left;
+	&--desktop {
+		@include mq( $from: tablet ) {
+			float: left;
+		}
+    }
+	&--mobile {
+		@include mq( $until: tablet ) {
+			float: left;
+		}
+    }
 }
 
 .pull-right {
     float: right;
+	&--desktop {
+		@include mq( $from: tablet ) {
+			float: right;
+		}
+    }
+	&--mobile {
+		@include mq( $until: tablet ) {
+			float: right;
+		}
+    }
 }
 
 .alignleft {
@@ -361,6 +393,18 @@ p.nav-ex {
     }
 }
 
+.valign-t {
+	vertical-align: top !important;
+}
+
+.valign-m {
+	vertical-align: middle !important;
+}
+
+.valign-b {
+	vertical-align: bottom !important;
+}
+
 
 /* Lists
    ========================================================================== */
@@ -373,12 +417,95 @@ p.nav-ex {
     -moz-column-count: 2;
     -ms-column-count: 2;
     column-count: 2;
-    list-style: inside disc;
-    padding-left: 0;
-    li {
+    //list-style: inside disc;
+		li:first-child {
+			margin-top: 0;
+		}
+    /*li {
         padding-left: 1em;
         text-indent: -1em;
-    }
+    }*/
+		
+	&--desktop {
+		@include mq( $from: tablet ) {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			-ms-column-count: 2;
+			column-count: 2;
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+		
+	&--mobile {
+		@include mq( $until: tablet ) {
+			-webkit-column-count: 2;
+			-moz-column-count: 2;
+			-ms-column-count: 2;
+			column-count: 2;
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.three-columns {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -ms-column-count: 3;
+    column-count: 3;
+
+	li:first-child {
+		margin-top: 0;
+	}
+		
+	&--desktop {
+		@include mq( $from: tablet ) {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			-ms-column-count: 3;
+			column-count: 3;
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+	&--mobile {
+		@include mq( $until: tablet ) {
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			-ms-column-count: 3;
+			column-count: 3;
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+.four-columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    -ms-column-count: 4;
+    column-count: 4;
+
+	li:first-child {
+		margin-top: 0;
+	}
+		
+	&--desktop {
+		@include mq( $from: tablet ) {
+			-webkit-column-count: 4;
+			-moz-column-count: 4;
+			-ms-column-count: 4;
+			column-count: 4;
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
 }
 
 
@@ -495,6 +622,11 @@ p.nav-ex {
 
 .width-50 {
 	width: 50% !important;
+	&--mobile {
+		@include mq( $until: tablet ) {
+			width: 50% !important;
+		}
+  }
 }
 
 .width-66 {
@@ -507,4 +639,44 @@ p.nav-ex {
 
 .width-100 {
 	width: 100% !important;
+	&--mobile {
+		@include mq( $until: tablet ) {
+			width: 100% !important;
+		}
+  }
+}
+
+/* Images
+   ========================================================================== */
+   
+.img-left { /* apply to element containing img, typically a <div> or <p> */
+	@include mq( $until: tablet ) {
+		width: 100% !important;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	@include mq( $from: tablet ) {
+		float: left;
+		margin: 0 1em 0 0;
+	}
+}
+
+.img-right { /* apply to element containing img, typically a <div> or <p> */
+	@include mq( $until: tablet ) {
+		width: 100% !important;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	@include mq( $from: tablet ) {
+		float: right;
+		margin: 0 0 0 1em;
+	}
+}
+
+.photo-credit {
+	text-align: right;
+	line-height: 1.5;
+	font-size: .6rem;
+	padding: .5em;
+	margin: 0;
 }
