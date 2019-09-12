@@ -3,46 +3,52 @@ require_once( '../config.php' );
 require_once( ABSPATH . PARTIALS . '/insidesd-header.php' ); ?>
 
 
-		<div class="hero__slides hero__slides--secondary">
-			<div class="hero__bg" style="background-image:url('../assets/dist/img/inside-sd-skyline.jpg');background-position:top center;">
-				<div class="l-constrained">
-					<h1 class="l-margin-mobile-vn l-margin-desktop-tn l-margin-desktop-bd l-padding-vd text-white">Inside San Diego</h1>
-				</div>
-				
-			</div>
-			<nav class="sub-navigation l-constrained insidesd-article">
-				<div class="hide-on-mobile">
-					<div class="pull-right">
-						<ul class="menu">
-							<li class="first leaf"><a href="insidesd-home.php" class="active">Inside San Diego Home</a></li>
-							<li class="leaf"><a href="insidesd-articles.php">Articles</a></li>
-							<li class="leaf"><a href="insidesd-article.php">About</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="hide-on-desktop sub-navigation-mobile l-padding-hm l-padding-td l-padding-bs background-white">
-	  
-					<div class="accordions js-toggle-accordion">
-					  <div class="accordion">
-						<p class="accordion__heading"><a class="accordion__link" href="#"><i class="icon-menu l-margin-rs"></i> Site Menu  <span class="toggle-icon"> </span></a></p>
-						<div class="accordion__drawer">
-							<ul class="menu">
-								<li class="first leaf"><a href="insidesd-home.php" class="active">Inside San Diego Home</a></li>
-								<li class="leaf"><a href="insidesd-articles.php">Articles</a></li>
-								<li class="leaf"><a href="insidesd-article.php">About</a></li>
-							</ul>
+		<div class="hero__wrap">
+			<div class="hero__bg hero__bg--secondary" style="background-image:url('https://www.sandiego.gov/sites/default/files/inside-sd-skyline.jpg');"></div>
+			<script>hero_put_bg_credit();</script>
+			<div class="l-constrained">
+				<div class="row">
+					<div class="twelve columns no-gutters">
+						<div class="row">
+							<div class="twelve columns no-gutters">
+								<div class="main__message main__message--transparent l-padding-mobile-hm">
+									<h1 class="main__heading l-margin-mobile-vn l-padding-vn text-white">Inside San Diego</h1>
+									<p class="main__tagline">Stories about City Services, Employees, Residents and Communities</p>
+								</div>
+								<nav class="sub-navigation l-constrained l-padding-mobile-hd">
+									<div id="block-menu-menu-inside-san-diego" class="block block-menu">
+										<div class="hide-on-mobile">
+											<div class="pull-right">
+											<ul class="menu"><li class="first leaf"><a href="/templates/insidesd-home.php" title="">Inside San Diego Home</a></li>
+											<li class="leaf active-trail"><a href="/templates/insidesd-articles.php" title="" class="menu-node-unpublished active-trail active">Stories</a></li>
+											<li class="last leaf"><a href="/templates/insidesd-article.php" title="">About</a></li>
+											</ul> </div>
+										</div>
+										<div class="hide-on-desktop sub-navigation-mobile l-padding-hd l-padding-td l-padding-bs background-white">
+											<div class="accordions js-toggle-accordion">
+												<div class="accordion">
+													<p class="accordion__heading"><a class="accordion__link" href="#"><i class="icon-menu l-margin-rs"></i> Site Menu <span class="toggle-icon"> </span></a></p>
+													<div class="accordion__drawer">
+													<ul class="menu"><li class="first leaf"><a href="/templates/insidesd-home.php" title="">Inside San Diego Home</a></li>
+													<li class="leaf active-trail"><a href="/templates/insidesd-articles.php" title="" class="menu-node-unpublished active-trail active">Stories</a></li>
+													<li class="last leaf"><a href="/templates/insidesd-article.php" title="">About</a></li>
+													</ul> </div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</nav>
+							</div>
 						</div>
-					  </div>
 					</div>
-					
-				</div>	
-			</nav>
-        </div>
+				</div>
+			</div>
+		</div>
 
         <div class="l-padding-mobile-hd background-white l-constrained">
             <main>
 					<div class="nine columns no-gutters border border--right no-border-on-mobile background-white l-margin-bn">
-						<h2 class="l-margin-desktop-vd l-margin-desktop-ld l-margin-mobile-bd heading--trim text-center--mobile">Browse All Articles</h2>
+						<h2 class="l-margin-desktop-vd l-margin-desktop-ld l-margin-mobile-bd heading--trim text-center--mobile">Browse All Stories</h2>
 						<div></div>
                         <article class="row article__teaser">
                             <div class="twelve columns">

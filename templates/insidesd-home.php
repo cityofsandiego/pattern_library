@@ -6,16 +6,18 @@ require_once( ABSPATH . PARTIALS . '/insidesd-header.php' ); ?>
 		<div class="hero__slides hero__slides--secondary">
 			<div class="hero__bg" style="background-image:url('../assets/dist/img/inside-sd-skyline.jpg');background-position:top center;">
 				<div class="l-constrained">
-					<h1 class="l-margin-vn l-padding-vd text-white">Inside San Diego</h1>
+					<div class="main__message main__message--transparent l-padding-mobile-hm">
+						<h1 class="main__heading l-margin-mobile-vn l-padding-vn text-white">Inside San Diego</h1>
+						<p class="main__tagline">Stories about City Services, Employees, Residents and Communities</p>
+					</div>
 				</div>
-				
 			</div>
 			<nav class="sub-navigation l-constrained">
 				<div class="hide-on-mobile">
 					<div class="pull-right">
 						<ul class="menu">
 							<li class="first leaf"><a href="insidesd-home.php" class="active">Inside San Diego Home</a></li>
-							<li class="leaf"><a href="insidesd-articles.php">Articles</a></li>
+							<li class="leaf"><a href="insidesd-articles.php">Stories</a></li>
 							<li class="leaf"><a href="insidesd-article.php">About</a></li>
 						</ul>
 					</div>
@@ -28,7 +30,7 @@ require_once( ABSPATH . PARTIALS . '/insidesd-header.php' ); ?>
 						<div class="accordion__drawer">
 							<ul class="menu">
 								<li class="first leaf"><a href="insidesd-home.php" class="active">Inside San Diego Home</a></li>
-								<li class="leaf"><a href="insidesd-articles.php">Articles</a></li>
+								<li class="leaf"><a href="insidesd-articles.php">Stories</a></li>
 								<li class="leaf"><a href="insidesd-article.php">About</a></li>
 							</ul>
 						</div>
