@@ -264,7 +264,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     </div>
 					
 					<div id="sd-popup-video" class="video-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
-						<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+						<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
 					</div>
 
                     <div class="row">
@@ -310,7 +310,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 </div>
 
 <div id="sd-popup-video" class="video-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
-	<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allowfullscreen></iframe>
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
 </div>		
 
 <!-- required javascript -->
