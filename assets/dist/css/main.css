@@ -951,6 +951,13 @@ p.nav-ex {
     font-weight: 600;
 }
 
+.attention {
+    font-size: 12px;
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: #c51313;
+}
+
 /* Indent
    ========================================================================== */
 .indent-s {

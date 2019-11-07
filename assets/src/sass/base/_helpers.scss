@@ -307,6 +307,12 @@ p.nav-ex {
     }
 }
 
+.attention {
+	@include rem( 'font-size', 12px );
+	color: #c51313;
+	text-transform: uppercase;
+}
+
 
 /* Indent
    ========================================================================== */
