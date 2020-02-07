@@ -88,7 +88,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#80e0d3;"></i></p>
-		<p>#80e0d3<br>rgb (128, 224, 211)</p>
+		<p>#80e0d3<br>rgb (128, 224, 211)<br><strong class="fine-print">riptide</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#009581;"></i></p>
@@ -102,7 +102,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#ffb652;"></i></p>
-		<p>#ffb652<br>rgb (255, 182, 82)</p>
+		<p>#ffb652<br>rgb (255, 182, 82)<br><strong class="fine-print">texasrose</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#d47600;"></i></p>
@@ -116,7 +116,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="row">
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#f3ec7a;"></i></p>
-		<p>#f3ec7a<br>rgb (243, 236, 122)</p>
+		<p>#f3ec7a<br>rgb (243, 236, 122)<br><strong class="fine-print">manz</strong></p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#fed100;"></i></p>
