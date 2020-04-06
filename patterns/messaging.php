@@ -42,6 +42,15 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 				</div>
 
+				<div class="l-container l-margin-vm">
+					<h2>Emergency</h2>
+					<div class="message message--emergency">
+				    	<p>
+				    	<i class="icon-flag l-margin-rs"></i>
+				    	<strong>Alert!</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Proin in nunc mauris</a>.</p>
+					</div>
+				</div>
+
 				<div class="l-container">
 					<div class="row">
 						<div class="six columns">

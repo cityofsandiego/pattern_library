@@ -1,6 +1,8 @@
 module.exports = function ( grunt ) {
     'use strict';
 
+    const sass = require('node-sass');
+
     // Load all grunt tasks matching the 'grunt-*' pattern
     require( 'load-grunt-tasks' )( grunt );
 
@@ -23,6 +25,7 @@ module.exports = function ( grunt ) {
         sass: {
             minified: {
                 options: {
+                    implementation: sass,
                     sourceMap: true,
                     outputStyle: 'compressed', // expanded, nested, compressed
                 },
@@ -35,6 +38,7 @@ module.exports = function ( grunt ) {
             },
             expanded: {
                 options: {
+                    implementation: sass,
                     outputStyle: 'expanded'
                 },
                 files: {
@@ -145,23 +149,6 @@ module.exports = function ( grunt ) {
             }
         },
 
-        browserSync: {
-            bsFiles: {
-                src: [
-                    '<%= config.dist %>/css/*.css',
-                    '<%= config.dist %>/js/**/*.js',
-                    '<%= config.dist %>/img/',
-                    '**/*.php'
-                ],
-            },
-            options: {
-                notify: true,
-                // open: false,
-                watchTask: true,
-                proxy: '<%= config.devUrl %>'
-            }
-        },
-
         // Run Tasks When Files Are Modified
         watch: {
             css: {
@@ -181,20 +168,6 @@ module.exports = function ( grunt ) {
                 ],
                 tasks: [ 'newer:imagemin' ]
             },
-            // This can be used in place of BrowserSync
-            // livereload: {
-            //     options: {
-            //         livereload: true,
-            //         spawn: false
-            //     },
-            //     files: [
-            //         '<%= config.dist %>/css/*.css',
-            //         '<%= config.dist %>/js/**/*.js',
-            //         '<%= config.dist %>/img/',
-            //         // '**/*.php'
-            //     ],
-            //     tasks: [ 'notify:livereload' ]
-            // }
         },
 
     });
@@ -203,7 +176,7 @@ module.exports = function ( grunt ) {
     grunt.registerTask( 'default', [
         'sass',
         'csscomb',
-		'requirejs',
+        'requirejs',
         'concat',
         'uglify',
         'newer:copy:js',
@@ -218,13 +191,14 @@ module.exports = function ( grunt ) {
     grunt.registerTask( 'build', [
         'sass',
         'csscomb',
-		'requirejs',
+        'requirejs',
         'concat',
         'uglify',
         'newer:copy:js',
         'newer:copy:mainBuilt',
         'newer:copy:require',
         'newer:imagemin',
+        'sass:minified',
     ]);
 
     // Images
