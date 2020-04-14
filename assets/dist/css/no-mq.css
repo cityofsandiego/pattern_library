@@ -7463,6 +7463,18 @@ pre.explain {
   font-size: .8em;
 }
 
+.status-available, .status-open {
+  background-color: #659f13 !important;
+}
+
+.status-unavailable, .status-closed {
+  background-color: #c51313 !important;
+}
+
+.status-impacted {
+  background-color: #ffa02f !important;
+}
+
 .comments-title {
   color: #37424a;
   font-size: 24px;

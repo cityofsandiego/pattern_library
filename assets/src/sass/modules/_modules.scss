@@ -4271,3 +4271,17 @@ width:20%;
 pre.explain {
   font-size: .8em;
 }
+
+// Status indicators
+
+.status-available, .status-open {
+  background-color: $success !important;
+}
+
+.status-unavailable, .status-closed {
+  background-color: $error !important;
+}
+
+.status-impacted {
+  background-color: $sunshade !important;
+}
