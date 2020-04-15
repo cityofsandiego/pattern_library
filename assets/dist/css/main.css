@@ -7794,7 +7794,7 @@ html.translated-ltr header.header--fixed, html.translated-rtl header.header--fix
 }
 
 .message.message--error {
-  background-color: #fff1f0;
+  background-color: #ffdad7;
 }
 
 .message.message--error i {
@@ -11726,7 +11726,7 @@ div.ajax-progress-throbber {
 }
 
 .notification--error {
-  background-color: #fff1f0;
+  background-color: #ffdad7;
   color: #c51313;
 }
 
@@ -13388,7 +13388,7 @@ form [id^="views-exposed-form-articles-block"] .theme-citynet .role-main .breadc
 
 .gform_wrapper div.validation_error {
   padding: 1em;
-  background: #fff1f0;
+  background: #ffdad7;
   border-top: 1px solid #f06767;
   border-bottom: 1px solid #f06767;
   color: #c51313;
@@ -13402,7 +13402,7 @@ form [id^="views-exposed-form-articles-block"] .theme-citynet .role-main .breadc
 
 .gform_wrapper li.gfield.gfield_error,
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-  background: #fff1f0;
+  background: #ffdad7;
 }
 
 .gform_wrapper li.gfield_error input[type=text],
