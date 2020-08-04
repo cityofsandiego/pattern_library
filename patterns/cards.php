@@ -11,20 +11,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </aside>
             <div class="nine columns">
 
-                <h1>Card Teaser</h1>
-                <div class="sub__nav--library">
-                    <ul class="sub__nav jump-scroll">
-                        <li><a href="#general">General</a></li>
-                        <li><a href="#headline-only">Headline Only</a></li>
-                    </ul>
-                </div>
+                <h1>Card Teasers</h1>
+
 
                 <div id="general" class="l-container l-margin-vm">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <h2 class="l-margin-bn">General</h2>
-                        </div>
-                    </div>
                     <div class="flexslider--mobile card__container l-margin-vd">
 <ul class="slides">
                         <li class="card__wrap">
@@ -33,7 +23,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                    <p class="card__headline"><a href="">One-Line Headline</a></p>
                                     <div class="card__meta">
                                         <span class="card__date">23 July 2015</span>
                                         |
@@ -51,7 +41,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                                    <p class="card__headline"><a href="">Longer Headline That Needs Two Lines</a></p>
                                     <div class="card__meta">
                                         <span class="card__date">23 July 2015</span>
                                         |
@@ -69,38 +59,42 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
                                 </div>
                                 <div class="card__content">
-                                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                                    <div class="card__meta">
-                                        <span class="card__date">23 July 2015</span>
-                                        |
-                                        <span class="card__author"><a href="">by Name Lastname</a></span>
-                                    </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                    <a href="" class="btn card__btn">Read More</a>
+                                    <p class="card__headline"><a href="">Headline Only</a></p>
                                 </div>
                             </div>
                         </li>
                         </ul>
                     </div>
 
-                    <div class="row">
-                        <div class="four columns">
-                            <p>Cards can be used universally throughout the site for multiple content purposes.</p>
-                        </div>
+                    <div class="row l-margin-vd">					
+					
+						<div id="cards-tabs" class="tabs">
+						
+							<ul class="tabs-list js-tabs-list">
+								<li class="tabs-list__item is-active"><a class="tabs-list__link" href="#cards-tab-item-1">Notes</a></li>
+								<li class="tabs-list__item"><a class="tabs-list__link" href="#cards-tab-item-2">Code</a></li>
+							</ul>
 
-                        <div class="eight columns">
-                            <ul class="l-margin-tn">
-                                <li>Images should be wrapped in a <strong>.card__image</strong> element.</li>
-                                <li>All content (title, post info, description, and link) should be wrapped in a <strong>.card__content</strong> element.</li>
-                                <li>Title should be given <strong>.card__headline</strong>.</li>
-                                <li>Post information should be wrapped in <strong>.card__meta</strong>, with <strong>.card__date</strong> and <strong>.card__author</strong> inside, if applicable.</li>
-                                <li>If a button link is used, it should have class <strong>.card__btn</strong>.</li>
-                            </ul>
-                        </div>
+							<div class="tabs-container">
 
-                        <div class="twelve columns">
-                    <div class="code__examples">
-                                <form><textarea class="pattern" id="type-code-1" name="code">
+								<div id="cards-tab-item-1" class="tabs__bucket">
+
+                                    <p>Cards can be used universally throughout the site for multiple content purposes. Cards are wrapped in a <strong>.card__container</strong> and <strong>flexslider--mobile</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
+
+                                    <ul class="l-margin-tn">
+                                        <li>Images should be wrapped in a <strong>.card__image</strong> element.</li>
+                                        <li>Minimum dimensions for card images are <strong>500 x 238</strong>.</li>
+                                        <li>All content (title, post info, description, and link) should be wrapped in a <strong>.card__content</strong> element.</li>
+                                        <li>Title should be given <strong>.card__headline</strong>.</li>
+                                        <li>Post information should be wrapped in <strong>.card__meta</strong>, with <strong>.card__date</strong> and <strong>.card__author</strong> inside, if applicable.</li>
+                                        <li>If a button link is used, it should have class <strong>.card__btn</strong>.</li>
+                                    </ul>
+								</div>
+
+								<div id="cards-tab-item-2" class="tabs__bucket is-active">
+									<div class="code__examples">
+										<form>
+											<textarea class="pattern" id="cards-code" name="code">
 <div class="flexslider--mobile card__container">
     <ul class="slides">
         <li class="card__wrap">
@@ -131,71 +125,23 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             </div>
         </li>
     </ul>
-</div></textarea> </form> </div>
-
+</div></textarea>
+										</form>
+									</div>
+            					</div>
+							</div>
+						</div>
+					</div>
                 </div>
-                    </div>
-
-                </div>
-
-                <div id="headline-only" class="l-container">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <h2 class="l-margin-bn">Headline Only</h2>
-                            <p class="subheading">Off-white background color</p>
-                        </div>
-                    </div>
-                    <div class="flexslider--mobile card__container l-margin-vd">
-                    <ul class="slides">
-                        <li class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Surf Cam [video feed]</a></p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Summer Programs</a></p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Junior Life Guard Programs</a></p>
-                                </div>
-                            </div>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="l-container">
-                    <div class="row">
-                        <div class="twelve columns">
-                            <p class="l-margin-bn"><strong>Notes</strong></p>
-                            <p>Cards are wrapped in a <strong>.card__container</strong> and <strong>flexslider--mobile</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
-							<p>Minimum dimensions for card images are <strong>500 x 238</strong>.</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
         
 
 <?php
 require_once( ABSPATH . PARTIALS . '/footer.php' ); ?>
+<script type="text/javascript">
+$( document ).ready(function() {
+	$(".tabs__bucket").removeClass("is-active");
+	$(".tabs-container div:first-child").addClass("is-active");
+});
+</script>

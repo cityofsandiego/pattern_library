@@ -10,7 +10,7 @@
         <li><a class="<?php if ($current_page == "icons.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/icons.php'; ?>">Icon Library</a></li>
         <li><a class="<?php if ($current_page == "navigation.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/navigation.php'; ?>">Navigation</a></li>
         <li><a class="<?php if ($current_page == "hero.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/hero.php'; ?>">Hero</a></li>
-        <li><a class="<?php if ($current_page == "cards.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/cards.php'; ?>">Card Teaser</a></li>
+        <li><a class="<?php if ($current_page == "cards.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/cards.php'; ?>">Card Teasers</a></li>
         <li><a class="<?php if ($current_page == "buttons.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/buttons.php'; ?>">Buttons</a></li>
         <li><a class="<?php if ($current_page == "components.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/components.php'; ?>">Components</a></li>
         <li><a class="<?php if ($current_page == "messaging.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/messaging.php'; ?>">Messaging</a></li>
