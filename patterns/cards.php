@@ -25,8 +25,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <h2 class="l-margin-bn">General</h2>
                         </div>
                     </div>
-                    <div class="card__container l-margin-vd">
-                        <div class="card__wrap">
+                    <div class="flexslider--mobile card__container l-margin-vd">
+<ul class="slides">
+                        <li class="card__wrap">
                             <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -42,9 +43,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href="" class="">Read More</a>
                                 </div>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="card__wrap">
+                        <li class="card__wrap">
                             <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -60,9 +61,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href="" class="btn btn--outline card__btn">Read More</a>
                                 </div>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="card__wrap">
+                        <li class="card__wrap">
                             <div class="card border l-padding-bn background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -78,7 +79,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <a href="" class="btn card__btn">Read More</a>
                                 </div>
                             </div>
-                        </div>
+                        </li>
+                        </ul>
                     </div>
 
                     <div class="row">
@@ -99,24 +101,36 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="twelve columns">
                     <div class="code__examples">
                                 <form><textarea class="pattern" id="type-code-1" name="code">
-<div class="card__container">
-    <div class="card__wrap">
-        <div class="card">
-            <div class="card__image">
-                <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-            </div>
-            <div class="card__content">
-                <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
-                <div class="card__meta">
-                    <span class="card__date">23 July 2015</span>
-                    |
-                    <span class="card__author"><a href="">by Name Lastname</a></span>
+<div class="flexslider--mobile card__container">
+    <ul class="slides">
+        <li class="card__wrap">
+            <div class="card">
+                <div class="card__image">
+                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                <a href="" class="btn card__btn">Read More</a>
+                <div class="card__content">
+                    <p class="card__headline"><a href="">Blog Post Headline Goes Here</a></p>
+                    <div class="card__meta">
+                        <span class="card__date">23 July 2015</span>
+                        |
+                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
+                    <a href="" class="btn card__btn">Read More</a>
+                </div>
             </div>
-        </div>
-    </div>
+        </li>
+        <li class="card__wrap">
+            <div class="card">
+                <div class="card__image">
+                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                </div>
+                <div class="card__content">
+                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                </div>
+            </div>
+        </li>
+    </ul>
 </div></textarea> </form> </div>
 
                 </div>
@@ -131,8 +145,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <p class="subheading">Off-white background color</p>
                         </div>
                     </div>
-                    <div class="card__container l-margin-vd">
-                        <div class="card__wrap">
+                    <div class="flexslider--mobile card__container l-margin-vd">
+                    <ul class="slides">
+                        <li class="card__wrap">
                             <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -141,9 +156,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <p class="card__headline"><a href="">Surf Cam [video feed]</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="card__wrap">
+                        <li class="card__wrap">
                             <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -152,9 +167,9 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <p class="card__headline"><a href="">Summer Programs</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </li>
 
-                        <div class="card__wrap">
+                        <li class="card__wrap">
                             <div class="card background-off-white">
                                 <div class="card__image">
                                     <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
@@ -163,7 +178,8 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                     <p class="card__headline"><a href="">Junior Life Guard Programs</a></p>
                                 </div>
                             </div>
-                        </div>
+                        </li>
+                        </ul>
                     </div>
                 </div>
 
@@ -171,7 +187,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="twelve columns">
                             <p class="l-margin-bn"><strong>Notes</strong></p>
-                            <p>Cards are wrapped in a <strong>.card__container</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
+                            <p>Cards are wrapped in a <strong>.card__container</strong> and <strong>flexslider--mobile</strong> container set to flexbox. For a default output, wrap each <strong>.card</strong> within a <strong>.card__wrap</strong>. This defaults to 3 cards/row on desktop, 2/row on mobile-tablet viewports, and 1/row on mobile viewports. For alternative output, utilize row column classes.</p>
 							<p>Minimum dimensions for card images are <strong>500 x 238</strong>.</p>
                         </div>
                     </div>

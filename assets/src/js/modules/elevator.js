@@ -270,7 +270,9 @@ define(function () {
               .addClass('current is-open')
               .children('.accordion__drawer')
               .stop( true, true )
-              .slideDown();
+              .slideDown(function () {
+                $('.flexslider').resize();
+              });
           }
         });
       },
