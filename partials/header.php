@@ -31,7 +31,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/assets/dist/js/plugins/modernizr-2.8.3.min.js"></script>
-    <script src="/assets/dist/js/pattern-library-only.js"></script>
+    <!-- <script src="/assets/dist/js/pattern-library-only.js"></script>-->
 
     <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
     <script type="text/javascript">var switchTo5x=true;</script>

@@ -8,7 +8,7 @@ define(function () {
         $(document).ready(function() {
           Elevator.utils.init();
           Elevator.modal();
-          Elevator.maps();
+          //Elevator.maps();
           Elevator.slides();
           Elevator.buttons();
           Elevator.close();
@@ -63,7 +63,7 @@ define(function () {
           }, 50);
         }
       },
-      maps : function() {
+      /*maps : function() {
         var $multi  = $('#multi-map'),
             $single = $('#single-map');
 
@@ -151,7 +151,7 @@ define(function () {
           }
           google.maps.event.addDomListener(window, 'load', initialize);
         }
-      },
+      },*/
       slides : function() {
         $('#hero__slides--primary').flexslider({
           controlNav: false,

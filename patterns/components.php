@@ -19,7 +19,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <li><a href="#steps">Steps</a></li>
                         <li><a href="#weather">Weather</a></li>
                         <li><a href="#tool-tips">Tool Tips</a></li>
-                        <li><a href="#maps">Maps</a></li>
+                        <!--<li><a href="#maps">Maps</a></li>-->
                         <li><a href="#lightbox">Lightbox</a></li>
                         <li><a href="#stats">Stats Blocks</a></li>
                     </ul>
@@ -303,7 +303,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </div>
 
                 <!-- Maps -->
-                <div id="maps" class="l-container l-margin-vm">
+                <div id="maps" class="l-container l-margin-vm hidden">
                     <h2>Maps</h2>
 
                     <div class="row l-margin-bm">
