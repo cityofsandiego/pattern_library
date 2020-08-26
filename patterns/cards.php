@@ -16,53 +16,47 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                 <div id="general" class="l-container l-margin-vm">
                     <div class="flexslider--mobile card__container l-margin-vd">
-<ul class="slides">
-                        <li class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">One-Line Headline</a></p>
-                                    <div class="card__meta">
-                                        <span class="card__date">23 July 2015</span>
-                                        |
-                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                        <ul class="slides">
+                            <li class="card__wrap">
+                                <div class="card background-off-white">
+                                    <div class="card__image">
+                                        <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                                    <a href="" class="">Read More</a>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="card__wrap">
-                            <div class="card background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
-                                </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Longer Headline That Needs Two Lines</a></p>
-                                    <div class="card__meta">
-                                        <span class="card__date">23 July 2015</span>
-                                        |
-                                        <span class="card__author"><a href="">by Name Lastname</a></span>
+                                    <div class="card__content">
+                                        <p class="card__headline"><a href="">One-Line Headline</a></p>
+                                        <div class="card__meta">
+                                            <span class="card__date">23 July 2015</span>
+                                            |
+                                            <span class="card__author"><a href="">by Name Lastname</a></span>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue.</p>
+                                        <p><a href="" class="btn btn--outline card__btn">Read More</a></p>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet. Maecenas nulla lectus, viverra a augue...</p>
-                                    <a href="" class="btn btn--outline card__btn">Read More</a>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
 
-                        <li class="card__wrap">
-                            <div class="card border l-padding-bn background-off-white">
-                                <div class="card__image">
-                                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                            <li class="card__wrap">
+                                <div class="card background-off-white">
+                                    <div class="card__image">
+                                        <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="card__headline"><a href="">Longer Headline That Needs Two Lines</a></p>
+                                        <p>Lorem ipsum dolor sit amet. Maecenas nulla lectus, viverra a augue.</p>
+                                    </div>
                                 </div>
-                                <div class="card__content">
-                                    <p class="card__headline"><a href="">Headline Only</a></p>
+                            </li>
+
+                            <li class="card__wrap">
+                                <div class="card border l-padding-bn background-off-white">
+                                    <div class="card__image">
+                                        <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                                    </div>
+                                    <div class="card__content">
+                                        <p class="card__headline"><a href="">Headline Only</a></p>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
+                            </li>
                         </ul>
                     </div>
 
@@ -98,29 +92,42 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="flexslider--mobile card__container">
     <ul class="slides">
         <li class="card__wrap">
-            <div class="card">
+            <div class="card background-off-white">
                 <div class="card__image">
                     <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
                 </div>
                 <div class="card__content">
-                    <p class="card__headline"><a href="">Blog Post Headline Goes Here</a></p>
+                    <p class="card__headline"><a href="">One-Line Headline</a></p>
                     <div class="card__meta">
                         <span class="card__date">23 July 2015</span>
                         |
                         <span class="card__author"><a href="">by Name Lastname</a></span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue...</p>
-                    <a href="" class="btn card__btn">Read More</a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing semper. Maecenas nulla lectus, viverra a augue.</p>
+                    <p><a href="" class="btn btn--outline card__btn">Read More</a></p>
                 </div>
             </div>
         </li>
+
         <li class="card__wrap">
-            <div class="card">
+            <div class="card background-off-white">
                 <div class="card__image">
-                    <a href=""><img src="../assets/dist/img/card-img-1.jpg" alt="Card Image Title" width="368" height="207"></a>
+                    <a href=""><img src="../assets/dist/img/card-img-2.jpg" alt="Card Image Title" width="368" height="207"></a>
                 </div>
                 <div class="card__content">
-                    <p class="card__headline"><a href="">Blog Post Headline Goes Here and Is Two Lines Long</a></p>
+                    <p class="card__headline"><a href="">Longer Headline That Needs Two Lines</a></p>
+                    <p>Lorem ipsum dolor sit amet. Maecenas nulla lectus, viverra a augue.</p>
+                </div>
+            </div>
+        </li>
+
+        <li class="card__wrap">
+            <div class="card border l-padding-bn background-off-white">
+                <div class="card__image">
+                    <a href=""><img src="../assets/dist/img/card-img-3.jpg" alt="Card Image Title" width="368" height="207"></a>
+                </div>
+                <div class="card__content">
+                    <p class="card__headline"><a href="">Headline Only</a></p>
                 </div>
             </div>
         </li>
