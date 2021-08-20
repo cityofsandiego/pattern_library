@@ -520,6 +520,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-document2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-document-sign"></i></p>
+<p>icon-document-sign</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-graduation-hat"></i></p>
 <p>icon-graduation-hat</p>
 </div>

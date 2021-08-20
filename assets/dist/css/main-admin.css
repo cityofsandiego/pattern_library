@@ -454,6 +454,10 @@
     content: "\e6d9";
 }
 
+.icon-document-sign:before {
+    content: "\e6d1";
+}
+
 .icon-graduation-hat:before {
     content: "\e6da";
 }

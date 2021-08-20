@@ -340,7 +340,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                         <div class="eight columns">
                             <h6 class="l-margin-tn"><strong>Name of this Video</strong></h6>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-                            <a href="">Watch Video</a>
+                            <a href="#sd-popup-video" class="popup-modal">Watch Video</a>
                         </div>
                     </div>
 					
@@ -386,12 +386,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	<div class="eight columns">
 		<h6 class="l-margin-tn"><strong>Name of this Video</strong></h6>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in nunc mauris.</p>
-		<a href="">Watch Video</a>
+		<a href="#sd-popup-video" class="popup-modal">Watch Video</a>
 	</div>
 </div>
 
 <div id="sd-popup-video" class="video-popup mfp-hide"> <!-- unique ID is necessary; class sets default magnific styling -->
-	<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allow="autoplay; fullscreen"></iframe>
+	<iframe width="853" height="480" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>		
 
 <!-- required javascript -->
@@ -431,7 +431,7 @@ $( document ).ready(function() {
 					<div class="row">
 						<div class="twelve columns">
 		<div class="video-wrapper">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 						</div>
 					</div>
@@ -462,7 +462,7 @@ $( document ).ready(function() {
 										<form>
 											<textarea class="pattern" id="vid-emb-code" name="code">
 <div class="video-wrapper">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent" frameborder="0" allowfullscreen="" scrolling="no"></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/SWBHUyrg6R4?rel=0&wmode=transparent" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div></textarea>
 										</form>
 									</div>
