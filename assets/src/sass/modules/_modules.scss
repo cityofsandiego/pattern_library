@@ -1,4 +1,3 @@
-
 // ==========================================================================
 // Modules
 // ==========================================================================
@@ -6,7 +5,7 @@
 /* Header
    ========================================================================== */
 
-@include mq( $until: tablet ) {
+@include mq($until: tablet) {
   #nav {
     visibility: hidden;
     height: auto;
@@ -22,11 +21,13 @@ header {
 
   nav {
     line-height: 2;
+
     ul {
       margin: 0;
       padding: 0;
       list-style-type: none;
     }
+
     a {
       font-weight: 800;
       text-decoration: none;
@@ -40,7 +41,7 @@ header {
     }
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
 
     .logo {
       img {
@@ -68,7 +69,7 @@ header {
     }
   }
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     position: relative;
     background: $cerulean;
 
@@ -77,26 +78,28 @@ header {
     }
   }
 
-  @include mq( tablet, site ) {
+  @include mq(tablet, site) {
 
     > .l-constrained {
       padding-bottom: 2.5em;
 
       .logo--wrap {
-        @include span( 3 of 12 no-gutters );
+        @include span(3 of 12 no-gutters);
       }
+
       .three {
         text-align: right;
-        @include span( 3 of 12 no-gutters );
+        @include span(3 of 12 no-gutters);
       }
+
       .seven {
         position: static;
-        @include span( 6 of 12 no-gutters );
+        @include span(6 of 12 no-gutters);
       }
     }
   }
 
-  @include mq( $until: site ) {
+  @include mq($until: site) {
 
     .quicklinks {
       //float: left;
@@ -107,7 +110,7 @@ header {
       text-align: center;
 
       i, p, p.temperature {
-        @include rem( 'font-size', 16px );
+        @include rem('font-size', 16px);
       }
 
       br {
@@ -116,7 +119,7 @@ header {
     }
   }
 
-  @include mq( $from: site ) {
+  @include mq($from: site) {
 
     > .l-constrained {
       padding-bottom: 1em;
@@ -143,7 +146,7 @@ header {
     }
   }
 
-  @include mq( $until: site-constraint ) {
+  @include mq($until: site-constraint) {
     > .row {
       padding-left: .5em;
       padding-right: .5em;
@@ -159,7 +162,7 @@ header {
   &.header--fixed {
 
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    padding-top:0;
+    padding-top: 0;
 
     -webkit-transition-property: padding-top;
     -moz-transition-property: padding-top;
@@ -171,7 +174,7 @@ header {
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 
-    @include mq( $until: site ) {
+    @include mq($until: site) {
       .form--search-wrap a {
         display: none;
       }
@@ -182,13 +185,13 @@ header {
       }
     }
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       .form--search-wrap {
         display: none;
       }
     }
 
-    @include mq( $from: site, $until: tablet-landscape ) {
+    @include mq($from: site, $until: tablet-landscape) {
       .main__navigation {
         & > ul {
           width: 83%;
@@ -199,7 +202,7 @@ header {
       }
     }
 
-    @include mq( $from: tablet-landscape ) {
+    @include mq($from: tablet-landscape) {
       .main__navigation {
         & > ul {
           width: 85%;
@@ -210,7 +213,7 @@ header {
       }
     }
 
-    @include mq( $from: site ) {
+    @include mq($from: site) {
       width: 100%;
       position: fixed;
       top: -164px; // height of top-header
@@ -222,6 +225,7 @@ header {
       }
       &.has-alert {
         top: -221px;
+
         .theme-citynet & {
           top: 0;
           position: relative;
@@ -235,6 +239,7 @@ header {
       body.logged-in.admin-menu & {
         //top: 30px;
         top: -136px;
+
         &.has-alert {
           top: -193px;
         }
@@ -243,6 +248,7 @@ header {
       // offset header height of sibling container
       + div {
         margin-top: 227px;
+
         .theme-citynet & {
           margin-top: 0;
           position: relative;
@@ -256,6 +262,7 @@ header {
       .main__navigation {
         & > ul {
           min-height: auto;
+
           & > li {
             width: auto;
           }
@@ -277,15 +284,18 @@ header {
         border-radius: 0 0 5px 5px;
         padding: 1em;
         background-color: #0098db;
-        box-shadow: 0 3px 0px -1px rgba(0,0,0,0.15);
+        box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
+
         input.search-type, input[type="search"] {
           border: 1px solid $chateau;
           border-right: none;
         }
+
         input[type="submit"] {
           border: 1px solid $chateau;
           border-left: none;
         }
+
         .theme-citynet & {
           display: block;
           background-color: #009581;
@@ -300,10 +310,11 @@ header {
       }
     }
 
-    @include mq( $from: tablet-landscape ) {
+    @include mq($from: tablet-landscape) {
       // offset header height of sibling container
       + div {
         margin-top: 165px;
+
         .node-type-application & {
           margin-top: 0px;
         }
@@ -314,14 +325,17 @@ header {
       &.has-alert {
         + div {
           margin-top: 223px;
+
           .node-type-application & {
             margin-top: 0px;
           }
+
           .theme-citynet & {
             margin-top: 0;
             position: relative;
           }
         }
+
         ~ ul {
           margin-top: 243px !important;
         }
@@ -338,14 +352,17 @@ header {
       top: 0;
       z-index: 100;
       padding-top: 1em;
+
       i {
         font-size: 24px;
         color: #37424a;
 
       }
+
       &:hover, i:hover {
-        color:$cerulean;
+        color: $cerulean;
       }
+
       .theme-citynet & {
         display: none;
       }
@@ -368,9 +385,9 @@ header {
 
   &.header--app {
     @media print {
-      display:block;
+      display: block;
       .logo {
-        display:none;
+        display: none;
       }
     }
     padding: .75em 0;
@@ -381,24 +398,24 @@ header {
       padding: 0;
     }
 
-    @include mq( $from: mobile-wide ) {
+    @include mq($from: mobile-wide) {
       text-align: left;
 
       .row {
         padding: 0 .5em;
         -webkit-align-items: center; /* Safari */
-        align-items:         center;
+        align-items: center;
         display: block; /* Fallback IE9 */
         display: -webkit-flex; /* Safari */
         display: flex;
         -webkit-justify-content: space-between; /* Safari */
-        justify-content:         space-between;
+        justify-content: space-between;
         -webkit-flex-wrap: nowrap; /* Safari */
-        flex-wrap:         nowrap;
+        flex-wrap: nowrap;
       }
     }
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       .logo {
         img {
           max-width: 155px;
@@ -407,9 +424,9 @@ header {
       }
     }
 
-    @include mq( $until: mobile-landscape ) {
+    @include mq($until: mobile-landscape) {
       h1 {
-        @include rem( 'font-size', 28px );
+        @include rem('font-size', 28px);
       }
     }
   }
@@ -443,15 +460,17 @@ header {
   width: 100%;
   height: 100%;
   position: relative;
+
   .theme-citynet & {
     height: 198px;
   }
-  @include mq( $from: site ) {
+
+  @include mq($from: site) {
     > .row {
       padding: 5em 0 12em;
     }
   }
-  @include mq( $until: site ) {
+  @include mq($until: site) {
     > .row {
       padding: 1em 1em 0 1em;
     }
@@ -470,7 +489,7 @@ header {
       transform: none;
     }
 
-    @include mq( $from: mobile-landscape ) {
+    @include mq($from: mobile-landscape) {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -496,12 +515,14 @@ header {
       z-index: 5;
       display: block;
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       //background: rgba(0, 0, 0, 0.35);
     }
 
-    @include mq( $from: site ) {
+    @include mq($from: site) {
       &:after {
         display: none;
       }
@@ -529,17 +550,19 @@ header {
     font-style: normal;
     display: inline-block;
     background: rgba(0, 0, 0, 0.45);
-    @include rem( 'font-size', 11px );
+    @include rem('font-size', 11px);
+
     .hero-image-by-prefix,
     .hero-image-by {
-      @include rem( 'font-size', 10px );
+      @include rem('font-size', 10px);
     }
-    @include mq( $from: site ) {
+
+    @include mq($from: site) {
       padding: .5em 3.5em .5em 1em;
     }
   }
 
-  @include mq( $from: site ) {
+  @include mq($from: site) {
     right: 0;
     bottom: 8em;
     text-align: right;
@@ -556,12 +579,12 @@ header {
   h1 {
     margin: 0;
     color: white;
-    @include rem( 'font-size', 45px );
+    @include rem('font-size', 45px);
   }
 
   p {
     margin: 0;
-    @include rem( 'font-size', 18px );
+    @include rem('font-size', 18px);
   }
 
   .btn {
@@ -571,15 +594,15 @@ header {
     padding: 1.25em 2.5em;
   }
 
-  @include mq( $from: mobile-landscape ) {
+  @include mq($from: mobile-landscape) {
     padding: 1.75em 2.5em;
 
     h1 {
-      @include rem( 'font-size', 60px );
+      @include rem('font-size', 60px);
     }
 
     p {
-      @include rem( 'font-size', 24px );
+      @include rem('font-size', 24px);
     }
 
     .btn {
@@ -592,9 +615,11 @@ header {
   margin: 0;
   padding: 2.75em 3.5em;
   background: rgba(0, 0, 0, 0.35);
+
   &.no-sides {
     background: transparent;
   }
+
   //}
 
   //@include mq( $until: site ) {
@@ -609,7 +634,7 @@ header {
 }
 
 .hero__slides--secondary {
-  @include mq( $until: site ) {
+  @include mq($until: site) {
     padding-bottom: 2em;
     min-height: 100px;
   }
@@ -619,14 +644,14 @@ header {
     padding: 3.5em 1em;
 
     h1 {
-      @include rem( 'font-size', 48px );
+      @include rem('font-size', 48px);
     }
   }
 
   .flex-control-nav {
     display: block;
 
-    @include mq( $until: site ) {
+    @include mq($until: site) {
       bottom: 0;
     }
   }
@@ -653,28 +678,32 @@ header {
   // Background image element height is not equal to that of the hero content
   &.hero__bg--secondary {
     position: absolute;
-    width: 100%; height: 150%;
+    width: 100%;
+    height: 150%;
     max-height: 20em;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 0;
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       height: auto;
-      min-height:175px;
+      min-height: 175px;
     }
   }
 
   // Solid background color behind hero content
   &.hero__bg--solid {
     //background: $cerulean;
-	background: #0098db; /* Old browsers */
-	background: -moz-linear-gradient(left, #0098db 0%, #00c7b2 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #0098db 0%,#00c7b2 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #0098db 0%,#00c7b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0098db', endColorstr='#00c7b2',GradientType=1 ); /* IE6-9 */
+    background: #0098db; /* Old browsers */
+    background: -moz-linear-gradient(left, #0098db 0%, #00c7b2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0098db 0%, #00c7b2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0098db 0%, #00c7b2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0098db', endColorstr='#00c7b2', GradientType=1); /* IE6-9 */
     position: absolute;
-    width: 100%; height: 15em;
-    top: 0; left: 0;
+    width: 100%;
+    height: 15em;
+    top: 0;
+    left: 0;
     z-index: 0;
   }
 }
@@ -689,11 +718,12 @@ header {
     text-decoration: none;
     display: inline-block;
     position: absolute;
-    top: 50%; left: 0;
+    top: 50%;
+    left: 0;
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    @include rem( 'font-size', 28px );
+    @include rem('font-size', 28px);
 
     &.flex-next {
       left: auto;
@@ -702,7 +732,7 @@ header {
 
     &:hover {
       cursor: pointer;
-      background: darken( $cerulean, 10% );
+      background: darken($cerulean, 10%);
     }
   }
 
@@ -715,7 +745,7 @@ header {
 /* MEGA MENU */
 .navigation__wrap {
   background: white;
-  box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.3);
 }
 
 .main__navigation {
@@ -728,23 +758,23 @@ header {
     padding: 0;
     list-style: none;
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       background: $spruce;
     }
   }
 
   > ul {
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       min-height: 63px;
       overflow: hidden;
       display: block; /* Fallback IE9 */
       display: -webkit-flex; /* Safari */
       display: flex;
       -webkit-justify-content: space-between; /* Safari */
-      justify-content:         space-between;
+      justify-content: space-between;
       -webkit-flex-wrap: nowrap; /* Safari */
-      flex-wrap:         nowrap;
+      flex-wrap: nowrap;
     }
 
     > li {
@@ -752,8 +782,8 @@ header {
       position: relative;
       transition: background .15s ease;
 
-      @include mq( $from: tablet ) {
-        @include span( 2 no-gutters );
+      @include mq($from: tablet) {
+        @include span(2 no-gutters);
         position: static;
         border-bottom: none;
 
@@ -788,7 +818,7 @@ header {
         }
       }
 
-      @include mq( $until: tablet ) {
+      @include mq($until: tablet) {
         border-bottom: 1px dashed $spruce;
       }
 
@@ -798,26 +828,27 @@ header {
         padding: 1em;
         text-transform: uppercase;
         transition: color .15s ease;
-        @include rem( 'font-size', 13px );
+        @include rem('font-size', 13px);
 
-        @include mq( $from: tablet ) {
+        @include mq($from: tablet) {
           color: $spruce;
         }
 
-        @include mq( $until: tablet ) {
+        @include mq($until: tablet) {
 
           background: $off-black;
 
           padding: 1em;
-          @include rem( 'font-size', 18px );
+          @include rem('font-size', 18px);
 
           span {
-            @include rem( 'font-size', 14px );
+            @include rem('font-size', 14px);
           }
 
           i {
             position: absolute;
-            right: 1em; top: 50%;
+            right: 1em;
+            top: 50%;
             font-size: 30px;
             color: $spruce;
             transform: translateY(-50%);
@@ -837,24 +868,25 @@ header {
           }
 
           &.open-dropdown:before {
-            content:'';
+            content: '';
             width: 0;
             height: 0;
             z-index: 21;
             position: absolute;
-            top: 100%; left: 5px;
+            top: 100%;
+            left: 5px;
             border-style: solid;
             border-width: 10px 13px 0 13px;
             border-color: $off-black transparent transparent transparent;
           }
         }
 
-        @include mq( $until: site-constraint ) {
+        @include mq($until: site-constraint) {
           padding: 1em .75em;
           min-height: 83px;
         }
 
-        @include mq( tablet, site ) {
+        @include mq(tablet, site) {
           padding: 1em;
           min-height: 100px;
         }
@@ -872,12 +904,12 @@ header {
     line-height: 1.6;
     position: relative;
     text-decoration: none;
-    @include rem( 'font-size', 14px );
+    @include rem('font-size', 14px);
 
     i {
       color: $sunshade;
       vertical-align: text-bottom;
-      @include rem( 'font-size', 18px );
+      @include rem('font-size', 18px);
 
       &.icon-home {
         color: $spruce;
@@ -889,7 +921,7 @@ header {
       font-weight: 400;
       text-transform: none;
       // transition: color .1s ease-in;
-      @include rem( 'font-size', 11px );
+      @include rem('font-size', 11px);
     }
 
     &:hover {
@@ -900,7 +932,7 @@ header {
       }
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       &:hover {
         color: black;
       }
@@ -915,7 +947,7 @@ header {
     padding: 1em;
     @extend %white-gradient;
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       background: transparent;
       display: none;
 
@@ -925,11 +957,11 @@ header {
 
       a, h4 {
         line-height: 1.5;
-        @include rem( 'font-size', 18px );
+        @include rem('font-size', 18px);
       }
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       position: absolute;
       width: 100%;
       top: 100%;
@@ -960,24 +992,27 @@ header {
 
     li {
       margin: .5em 0;
+
       a {
         line-height: 1.3em;
       }
     }
 
     h4 {
-      @include rem( 'font-size', 18px );
+      @include rem('font-size', 18px);
+
       a {
         text-transform: none;
-        @include rem( 'font-size', 18px );
+        @include rem('font-size', 18px);
         text-decoration: underline;
       }
     }
 
     .nav__heading {
       margin-bottom: .25em;
-      @include rem( 'font-size', 36px );
+      @include rem('font-size', 36px);
       font-family: $font-family-secondary;
+
       p {
         border-bottom: 1px solid $alto;
       }
@@ -991,7 +1026,7 @@ header {
     }
 
     .nav__event {
-      @include rem( 'font-size', 18px );
+      @include rem('font-size', 18px);
       clear: both;
       overflow: hidden;
       margin-bottom: .5em;
@@ -1003,7 +1038,7 @@ header {
         text-decoration: underline;
 
         &:hover {
-          color: lighten( $link-color, 10% );
+          color: lighten($link-color, 10%);
         }
       }
 
@@ -1016,8 +1051,8 @@ header {
         margin-top: 2em;
       }
 
-      @include mq( $from: tablet ) {
-        @include rem( 'font-size', 13px );
+      @include mq($from: tablet) {
+        @include rem('font-size', 13px);
 
         &:first-child {
           margin-top: 0em;
@@ -1054,6 +1089,7 @@ header {
   margin: 0;
   padding: .5em;
   list-style-type: none;
+
   li {
     margin: 0 .5em;
     font-weight: 600;
@@ -1074,11 +1110,11 @@ header {
   position: relative;
   z-index: 10;
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     background: transparent;
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     background: white;
   }
 
@@ -1088,13 +1124,13 @@ header {
     list-style: none;
     overflow: hidden;
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       background: transparent;
       display: block;
       display: -webkit-flex; /* Safari */
       display: flex;
       -webkit-justify-content: left; /* Safari */
-      justify-content:         left;
+      justify-content: left;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
       -webkit-flex-wrap: nowrap;
@@ -1117,17 +1153,17 @@ header {
     background: $teal;
 
     &.active {
-      background: darken( $teal, 5% );
+      background: darken($teal, 5%);
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       padding: 0;
       display: inline-block;
       display: -webkit-flex;
       display: flex;
       float: left;
       margin: 0 .4em;
-      max-width: 20%;
+      max-width: 25%;
       .theme-citynet & {
         max-width: none;
       }
@@ -1137,6 +1173,7 @@ header {
       }
     }
   }
+
   a {
     display: block;
     color: $mercury;
@@ -1147,9 +1184,9 @@ header {
       color: white;
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       padding: .5em .75em;
-      @include rem( 'font-size', 13px );
+      @include rem('font-size', 13px);
     }
   }
 }
@@ -1187,7 +1224,7 @@ header {
 // Microsite/Portal nav
 .portal, .theme-citynet {
   header {
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       background: $cerulean;
     }
   }
@@ -1202,7 +1239,7 @@ header {
       position: relative;
       display: inline-block;
 
-      @include mq( $until: tablet ) {
+      @include mq($until: tablet) {
         max-width: 140px;
         max-height: 55px;
       }
@@ -1211,18 +1248,20 @@ header {
     &:before {
       content: '';
       display: block;
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
       position: absolute;
-      top: 0em; left: 0;
+      top: 0em;
+      left: 0;
       z-index: 2;
       background: white;
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       text-align: center;
     }
 
-    @include mq( $from: site ) {
+    @include mq($from: site) {
       padding: 0;
 
       &:before {
@@ -1237,7 +1276,7 @@ header {
   }
 
   .menu-toggle {
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       top: 3.7em;
     }
   }
@@ -1246,23 +1285,23 @@ header {
 .main__navigation--portal {
   background-color: $cerulean;
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     padding: 1em;
   }
 
   li {
     margin: 0 .25em;
     padding: .5em 0;
-    @include rem( 'font-size', 18px );
+    @include rem('font-size', 18px);
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       float: none;
     }
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       padding: 0;
       display: inline-block;
-      @include rem( 'font-size', 13px );
+      @include rem('font-size', 13px);
 
       &:last-child {
         float: right;
@@ -1270,16 +1309,18 @@ header {
       }
     }
 
-    @include mq( $from: site ) {
+    @include mq($from: site) {
       margin: 0 .75em;
     }
 
   }
+
   a {
     color: white;
     font-weight: normal;
+
     &:hover {
-      color: lighten( $cerulean, 40% );
+      color: lighten($cerulean, 40%);
     }
   }
 }
@@ -1293,7 +1334,7 @@ header {
   header#outreach & {
     padding: .5em 1em;
     background: white;
-    box-shadow: 0 4px 3px -3px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.3);
     position: relative;
     z-index: 300;
 
@@ -1301,7 +1342,7 @@ header {
       color: #37424a;
 
       img {
-        height:30px;
+        height: 30px;
         width: auto;
         max-width: none;
       }
@@ -1312,9 +1353,10 @@ header {
 
       .goog-te-gadget-simple .goog-te-menu-value {
         color: #37424a;
-        >span+img+span+img+span {
-          border-bottom:2px solid #37424a !important;
-          border-right:2px solid #37424a !important;
+
+        > span + img + span + img + span {
+          border-bottom: 2px solid #37424a !important;
+          border-right: 2px solid #37424a !important;
         }
       }
     }
@@ -1323,9 +1365,11 @@ header {
   p {
     margin: 0;
     line-height: 1.9;
+
     a {
       color: white;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
       }
@@ -1342,13 +1386,14 @@ header {
       -webkit-transition-duration: .15s;
       -moz-transition-duration: .15s;
       transition-duration: .15s;
+
       &:hover {
         opacity: 1;
       }
     }
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     .search-icon {
       color: white;
       text-decoration: none;
@@ -1378,7 +1423,7 @@ header {
         }
     }*/
   padding: 1em;
-  @include rem( 'font-size', 13px );
+  @include rem('font-size', 13px);
 
   .six:last-child {
     text-align: right;
@@ -1386,14 +1431,17 @@ header {
 }
 
 .breadcrumbs {
-  @include rem( 'font-size', 11px );
+  @include rem('font-size', 11px);
+
   a {
     color: $spruce;
     text-decoration: none;
+
     &:hover {
-      color: darken( $spruce, 20% );
+      color: darken($spruce, 20%);
     }
   }
+
   .breadcrumbs__current {
     font-weight: bold;
   }
@@ -1410,7 +1458,8 @@ header {
   li {
     margin: 0 .25em;
     display: inline-block;
-    @include rem( 'font-size', 13px );
+    @include rem('font-size', 13px);
+
     &:after {
       clear: both;
       float: none;
@@ -1423,7 +1472,7 @@ header {
     //border-right: 1px solid $off-white;
     height: 28px;
     display: inline;
-    @include rem( 'font-size', 13px );
+    @include rem('font-size', 13px);
     // &:after {
     //     color: white;
     //     content: '|';
@@ -1441,52 +1490,54 @@ header {
     text-decoration: none;
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     display: none;
     z-index: 110;
     position: absolute;
-    left: 0; top: 89px;
+    left: 0;
+    top: 89px;
     width: 100%;
     border-radius: 0;
     padding: .5em 3em;
     //background-color: rgba(255, 255, 255, 0.9);
     background-color: $off-white;
     text-align: center;
-    box-shadow: 0 3px 0px -1px rgba(0,0,0,0.15);
+    box-shadow: 0 3px 0px -1px rgba(0, 0, 0, 0.15);
   }
+
   .quicklinks .accessibility {
-    font-size:12px;
+    font-size: 12px;
     padding-top: 8px;
   }
 
   // google translate
   .google-translate {
-    display:block;
+    display: block;
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       display: inline-block;
       position: relative;
       padding: 5px 0 .5em 0;
 
       .goog-te-gadget {
         // height:50px;
-        padding-right:18px;
+        padding-right: 18px;
 
         .goog-te-combo {
-          background-color:transparent;
+          background-color: transparent;
           color: red;
-          border:0;
+          border: 0;
 
           &:hover {
-            cursor:pointer;
+            cursor: pointer;
           }
 
           &:focus {
-            outline:0;
+            outline: 0;
           }
 
           option {
-            background-color:$cerulean;
+            background-color: $cerulean;
           }
         }
 
@@ -1496,31 +1547,31 @@ header {
       }
 
       .goog-logo-link {
-        display:none;
+        display: none;
       }
     }
 
     .goog-te-gadget-simple {
       //background-color:$cerulean;
-      background-color:transparent;
+      background-color: transparent;
       // line-height:47px;
-      border:none;
+      border: none;
 
       img {
         height: 0px;
-        display:none;
+        display: none;
       }
 
       .goog-te-menu-value {
-        color:$off-white;
-        padding:0 4px;
+        color: $off-white;
+        padding: 0 4px;
         margin: 0;
         font-family: $font-family;
-        font-size:rem(12);
+        font-size: rem(12);
         z-index: 200;
 
-        @include mq( $until: tablet ) {
-          color:$cerulean;
+        @include mq($until: tablet) {
+          color: $cerulean;
           font-size: 1rem;
         }
 
@@ -1529,28 +1580,28 @@ header {
         }
 
         & > span + img + span {
-          border:none!important;
+          border: none !important;
         }
 
         & > span + img + span + img + span { //dropdown arrow
-          height:0;
-          width:0;
-          margin-left:0;
-          margin-top:3px;
+          height: 0;
+          width: 0;
+          margin-left: 0;
+          margin-top: 3px;
           background: none !important;
-          border-bottom: 2px solid $off-white!important;
-          border-right: 2px solid $off-white!important;
+          border-bottom: 2px solid $off-white !important;
+          border-right: 2px solid $off-white !important;
           height: 10px;
           height: 0.5rem;
           transform: rotate(45deg);
           width: 10px;
           width: 0.5rem;
           position: absolute;
-          color:transparent!important;
+          color: transparent !important;
 
-          @include mq( $until: tablet ) {
-            border-bottom: 2px solid $cerulean!important;
-            border-right: 2px solid $cerulean!important;
+          @include mq($until: tablet) {
+            border-bottom: 2px solid $cerulean !important;
+            border-right: 2px solid $cerulean !important;
             margin-top: 5px;
           }
         }
@@ -1575,20 +1626,23 @@ html.translated-ltr, html.translated-rtl {
   padding: 0;
   list-style: none;
   text-align: center;
+
   li {
     margin: 0 .5em;
     font-weight: bold;
     display: inline-block;
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 13px );
+    @include mq($from: tablet) {
+      @include rem('font-size', 13px);
     }
   }
+
   a {
     color: $cerulean;
     text-decoration: none;
     text-transform: lowercase;
+
     &:hover {
-      color: darken( $cerulean, 15% );
+      color: darken($cerulean, 15%);
     }
   }
 
@@ -1648,16 +1702,18 @@ html.translated-ltr, html.translated-rtl {
         text-decoration: none;
         background: transparent;
         transition: background .15s ease;
-        @include rem( 'font-size', 16px );
+        @include rem('font-size', 16px);
 
         &:hover {
           color: $charcoal;
-          background: lighten( $sunshade, 30% );
+          background: lighten($sunshade, 30%);
         }
+
         &.active {
           color: white;
           background: $sunshade;
         }
+
         &:before,
         &:after {
           display: none;
@@ -1665,13 +1721,13 @@ html.translated-ltr, html.translated-rtl {
       }
 
 
-      @include mq( $from: tablet ) {
+      @include mq($from: tablet) {
         a {
           color: $charcoal;
         }
       }
 
-      @include mq( $until: tablet ) {
+      @include mq($until: tablet) {
         a {
           color: white;
         }
@@ -1679,13 +1735,13 @@ html.translated-ltr, html.translated-rtl {
     }
   }
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     .menu-toggle {
       display: none;
     }
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     .js-ready & {
       .nav-primary {
         padding: 0 1em;
@@ -1699,19 +1755,24 @@ html.translated-ltr, html.translated-rtl {
   padding: .5em;
   background: $off-white;
   border: 1px solid $mercury;
-  @include rem( 'font-size', 13px );
+  @include rem('font-size', 13px);
+
   .tag {
     color: blue;
   }
+
   .title {
     color: blue;
   }
+
   .attribute {
     color: green;
   }
+
   .value {
     color: red;
   }
+
   .content {
     color: black;
   }
@@ -1738,7 +1799,7 @@ html.translated-ltr, html.translated-rtl {
     padding-bottom: 0;
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -1759,24 +1820,24 @@ html.translated-ltr, html.translated-rtl {
 .card__container {
   position: relative;
 
-  @include mq( $from: mobile-landscape ) {
+  @include mq($from: mobile-landscape) {
     display: block;
     display: -webkit-flex; /* Safari */
     display: flex;
     -webkit-justify-content: flex-start; /* Safari */
-    justify-content:         flex-start;
+    justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
   }
 
   // If .mobile-flexslider exists, it creates a ul.slides wrapping the .cards
-  @include mq( $from: mobile-landscape ) {
+  @include mq($from: mobile-landscape) {
     .slides {
       display: block;
       display: -webkit-flex; /* Safari */
       display: flex;
       -webkit-justify-content: flex-start; /* Safari */
-      justify-content:         flex-start;
+      justify-content: flex-start;
       -webkit-flex-wrap: wrap;
       flex-wrap: wrap;
 
@@ -1792,7 +1853,7 @@ html.translated-ltr, html.translated-rtl {
     margin: 0 .5em;
     width: 100%;
 
-    @include mq( $from: mobile-landscape ) {
+    @include mq($from: mobile-landscape) {
       margin: 0;
       padding: .75em;
       display: -webkit-flex; /* Safari */
@@ -1803,20 +1864,21 @@ html.translated-ltr, html.translated-rtl {
       }
     }
 
-    @include mq( mobile-landscape, tablet ) {
-      @include span( 6 );
+    @include mq(mobile-landscape, tablet) {
+      @include span(6);
     }
-    @include mq( $from: tablet ) {
-      @include span( 4 );
+    @include mq($from: tablet) {
+      @include span(4);
     }
 
   }
+
   .card__wrap_s, .card--wrap-s {
     height: auto;
     margin: 0 .5em;
     width: 100%;
 
-    @include mq( $from: mobile-landscape ) {
+    @include mq($from: mobile-landscape) {
       margin: 0;
       padding: .75em;
       display: -webkit-flex; /* Safari */
@@ -1827,20 +1889,21 @@ html.translated-ltr, html.translated-rtl {
       }
     }
 
-    @include mq( mobile-landscape, tablet ) {
-      @include span( 4 );
+    @include mq(mobile-landscape, tablet) {
+      @include span(4);
     }
-    @include mq( $from: tablet ) {
-      @include span( 3 );
+    @include mq($from: tablet) {
+      @include span(3);
     }
 
   }
+
   .card__wrap_m, .card--wrap-m {
     height: auto;
     margin: 0 .5em;
     width: 100%;
 
-    @include mq( $from: mobile-landscape ) {
+    @include mq($from: mobile-landscape) {
       margin: 0;
       padding: .75em;
       display: -webkit-flex; /* Safari */
@@ -1851,45 +1914,51 @@ html.translated-ltr, html.translated-rtl {
       }
     }
 
-    @include mq( mobile-landscape, tablet ) {
-      @include span( 6 );
+    @include mq(mobile-landscape, tablet) {
+      @include span(6);
     }
-    @include mq( $from: tablet ) {
-      @include span( 4 );
+    @include mq($from: tablet) {
+      @include span(4);
     }
 
   }
+
   .card__content {
     padding: 1.5em;
 
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 13px );
+    @include mq($from: tablet) {
+      @include rem('font-size', 13px);
     }
 
     > a {
-      @include rem( 'font-size', 16px );
+      @include rem('font-size', 16px);
     }
   }
+
   .card__headline.title,
   .card__headline a {
     color: $spruce;
     text-decoration: none;
     font-family: $font-family-secondary;
-    @include rem( 'font-size', 16px );
+    @include rem('font-size', 16px);
   }
+
   .card__meta {
     margin: 1em 0;
+
     a {
       color: $cerulean;
       text-decoration: underline;
     }
   }
+
   .card__image {
     img {
       width: 100%;
       border-radius: 4px 4px 0 0;
     }
   }
+
   .card__btn {
     display: block;
     font-weight: 600;
@@ -1897,7 +1966,7 @@ html.translated-ltr, html.translated-rtl {
 
   &.flexslider--mobile {
     .card__wrap {
-      @include mq( $until: tablet ) {
+      @include mq($until: tablet) {
         margin: 0;
       }
     }
@@ -1909,36 +1978,44 @@ html.translated-ltr, html.translated-rtl {
 
 .card__cta--graphic {
   text-align: center;
+
   background {
     position: center center;
     repeat: no-repeat;
   }
+
   > a {
     display: block;
     padding: 1.5em;
     position: relative;
+
     &:before {
-      content:'';
+      content: '';
       display: block;
       background: black;
-      width: 100%; height: 100%;
+      width: 100%;
+      height: 100%;
       position: absolute;
-      top: 0; left: 0;
+      top: 0;
+      left: 0;
       opacity: 0;
       transition: opacity .25s ease;
     }
+
     &:hover {
       &:before {
         opacity: .1;
       }
     }
   }
+
   a {
-    @include rem( 'font-size', 16px );
+    @include rem('font-size', 16px);
   }
+
   p {
     color: white;
-    @include rem( 'font-size', 18px );
+    @include rem('font-size', 18px);
     font-family: $font-family-secondary;
   }
 }
@@ -1957,7 +2034,7 @@ html.translated-ltr, html.translated-rtl {
   .card__headline {
     line-height: 1;
     font-weight: 700;
-    @include rem( 'font-size', 50px );
+    @include rem('font-size', 50px);
   }
 }
 
@@ -1973,10 +2050,10 @@ html.translated-ltr, html.translated-rtl {
     display: inline-block;
     vertical-align: middle;
     vertical-align: -webkit-baseline-middle;
-    @include rem( 'font-size', 24px );
+    @include rem('font-size', 24px);
 
-    @include mq( tablet, site ) {
-      @include rem( 'font-size', 18px );
+    @include mq(tablet, site) {
+      @include rem('font-size', 18px);
     }
   }
 
@@ -1985,17 +2062,17 @@ html.translated-ltr, html.translated-rtl {
     font-weight: 600;
     letter-spacing: .1em;
     text-transform: uppercase;
-    @include rem( 'font-size', 12px );
+    @include rem('font-size', 12px);
     font-family: $font-family-secondary;
   }
 }
 
 .node-type-events .content main {
-  position:relative;
+  position: relative;
 }
 
 .event__wrap {
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     .six:first-child {
       border-right: 1px solid $alto;
     }
@@ -2009,8 +2086,8 @@ html.translated-ltr, html.translated-rtl {
   font-weight: 600;
   text-align: center;
   background: white;
-  @include rem( 'font-size', 13px );
-  @include span( 1 of 5 no-gutters );
+  @include rem('font-size', 13px);
+  @include span(1 of 5 no-gutters);
   border: 1px solid #d1d4d3;
   border-top: 5px solid #ffa02f;
 
@@ -2026,19 +2103,22 @@ html.translated-ltr, html.translated-rtl {
 }
 
 .event--cerulean {
-  border-top: 5px solid #0098db !important;
+  border-left: 5px solid #0098db !important;
+  margin-left: .5em;
 }
 
 .event--robin {
-  border-top: 5px solid #00c7b2 !important;
+  border-left: 5px solid #00c7b2 !important;
+  margin-left: .5em;
 }
 
 .event--schoolbus {
-  border-top: 5px solid #fcd900 !important;
+  border-left: 5px solid #fcd900 !important;
+  margin-left: .5em;
 }
 
 .event__info {
-  @include span( 4 of 5 );
+  @include span(4 of 5);
 
   h6 {
     margin-top: 0;
@@ -2054,7 +2134,7 @@ html.translated-ltr, html.translated-rtl {
 }
 
 .flexslider--mobile {
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     .card__wrap,
     .card--wrap {
       margin: 0;
@@ -2071,22 +2151,26 @@ html.translated-ltr, html.translated-rtl {
 .alert {
   color: white;
   background: $science;
+
   p {
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 13px );
+    @include mq($from: tablet) {
+      @include rem('font-size', 13px);
     }
   }
+
   i {
-    @include rem( 'font-size', 32px );
+    @include rem('font-size', 32px);
   }
+
   .alert__heading {
     color: white;
     padding: .2em .5em;
     margin-bottom: .5em;
-    @include rem( 'font-size', 24px );
+    @include rem('font-size', 24px);
     font-family: $font-family-secondary;
-    background: lighten( $science, 5% );
+    background: lighten($science, 5%);
   }
+
   .alert__content {
     padding: 0 .75em;
   }
@@ -2097,7 +2181,7 @@ html.translated-ltr, html.translated-rtl {
   position: relative;
 
   &:hover {
-    cursor: pointer;
+    cursor: auto;
 
     .tooltip {
       display: block;
@@ -2112,10 +2196,11 @@ html.translated-ltr, html.translated-rtl {
   display: none;
   font-weight: 600;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   border-radius: 2px;
   background: $spruce;
-  @include rem( 'font-size', 14px );
+  @include rem('font-size', 14px);
 
 }
 
@@ -2132,7 +2217,8 @@ html.translated-ltr, html.translated-rtl {
     height: 0;
     position: absolute;
     border-style: solid;
-    top: -8px; left: 50%;
+    top: -8px;
+    left: 50%;
     -ms-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     transform: translateX(-50%);
@@ -2154,7 +2240,8 @@ html.translated-ltr, html.translated-rtl {
     height: 0;
     position: absolute;
     border-style: solid;
-    left: -8px; top: 50%;
+    left: -8px;
+    top: 50%;
     border-width: 9px 8px 9px 0;
     -ms-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
@@ -2180,7 +2267,7 @@ html.translated-ltr, html.translated-rtl {
     color: $sunshade;
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     .six,
     .form-actions {
       text-align: center;
@@ -2215,10 +2302,10 @@ html.translated-ltr, html.translated-rtl {
     padding: 0;
     vertical-align: middle;
     font-family: $font-family-secondary;
-    @include rem( 'font-size', 22px );
+    @include rem('font-size', 22px);
   }
 
-  @include mq( $from: mobile-wide ) {
+  @include mq($from: mobile-wide) {
     margin: .75em 0;
     text-align: center;
 
@@ -2229,7 +2316,7 @@ html.translated-ltr, html.translated-rtl {
     }
   }
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     margin: .75em 0;
     text-align: left;
 
@@ -2240,7 +2327,7 @@ html.translated-ltr, html.translated-rtl {
     }
   }
 
-  @include mq( mobile-wide, tablet ) {
+  @include mq(mobile-wide, tablet) {
     .columns {
       display: block;
     }
@@ -2254,16 +2341,16 @@ html.translated-ltr, html.translated-rtl {
 .step__header {
   vertical-align: middle;
   vertical-align: -webkit-baseline-middle;
-  @include rem( 'font-size', 16px );
+  @include rem('font-size', 16px);
 
   .step__desc {
     font-family: $font-family;
   }
 
-  @include mq( $from: mobile-wide ) {
+  @include mq($from: mobile-wide) {
     //margin: 0;
     //line-height: 40px;
-    padding-top:.3em;
+    padding-top: .3em;
   }
 }
 
@@ -2271,7 +2358,7 @@ html.translated-ltr, html.translated-rtl {
   float: right;
   font-family: $font-family-secondary;
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     margin-left: 1em;
   }
 }
@@ -2287,8 +2374,8 @@ html.translated-ltr, html.translated-rtl {
     margin-top: 1.5em;
   }
 
-  @include mq( $from: tablet ) {
-    @include rem( 'font-size', 13px );
+  @include mq($from: tablet) {
+    @include rem('font-size', 13px);
 
     .social-share__wrap {
       margin: 1em 0;
@@ -2307,9 +2394,11 @@ html.translated-ltr, html.translated-rtl {
 .article--teaser,
 .article__teaser {
   padding: 1em;
+
   &:nth-child(2n+1) {
     background-color: $off-white;
   }
+
   .event--day {
     font-size: 3em;
   }
@@ -2334,10 +2423,10 @@ html.translated-ltr, html.translated-rtl {
 }
 
 .entry__pagination {
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     padding-left: 5em;
     padding-right: 5em;
-    @include rem( 'font-size', 13px );
+    @include rem('font-size', 13px);
 
     .entry--prev {
       text-align: right;
@@ -2362,33 +2451,39 @@ html.translated-ltr, html.translated-rtl {
   padding: 1.5em;
   text-align: center;
   position: relative;
-  background-color: rgba(0,0,0,0.35);
+  background-color: rgba(0, 0, 0, 0.35);
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     padding: 2.5em 1em;
     .node-type-article & {
       padding: 3em 0;
     }
   }
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     padding: 1.5em 1em;
   }
 
   .main__heading {
     margin: 0;
     color: white;
-    @include rem( 'font-size', 48px );
-    @include mq( $until: tablet ) { font-size: 2rem; }
+    @include rem('font-size', 48px);
+    @include mq($until: tablet) {
+      font-size: 2rem;
+    }
     @media print {
       font-size: 2em;
     }
   }
+
   .main__tagline {
-    margin:0;
-    margin-top:10px;
-    color:white;
-    @include rem( 'font-size', 16px );
-    @include mq( $until: tablet ) { text-align: center; font-weight: normal; }
+    margin: 0;
+    margin-top: 10px;
+    color: white;
+    @include rem('font-size', 16px);
+    @include mq($until: tablet) {
+      text-align: center;
+      font-weight: normal;
+    }
     @media print {
       font-size: 2em;
     }
@@ -2454,7 +2549,7 @@ html.translated-ltr, html.translated-rtl {
 
   i {
     vertical-align: middle;
-    @include rem( 'font-size', 24px );
+    @include rem('font-size', 24px);
   }
 
   &.message--success {
@@ -2482,20 +2577,64 @@ html.translated-ltr, html.translated-rtl {
   }
 
   &.message--emergency {
-    background-color: #c51313;
-    color: white;
+    background-color: $emergency-lt;
     font-size: 1.375rem;
     padding: .8em 1em;
 
-    a, i {
-      color: white;
+    i, a, p {
+      color: $emergency;
     }
+
     a {
       text-decoration: underline;
     }
+
     i {
       font-size: 2.125rem;
     }
+  }
+}
+
+/* New set of classes. Requested by Ron */
+.message--success {
+  background-color: $success-lt;
+
+  i {
+    color: $success;
+  }
+}
+
+.message--warning {
+  background-color: $warning-lt;
+
+  i {
+    color: $warning;
+  }
+}
+
+.message--error {
+  background-color: $error-lt;
+
+  i {
+    color: $error;
+  }
+}
+
+.message--emergency {
+  background-color: $emergency-lt;
+  font-size: 1.375rem;
+  padding: .8em 1em;
+
+  i, a, p {
+    color: $emergency;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  i {
+    font-size: 2.125rem;
   }
 }
 
@@ -2509,23 +2648,23 @@ html.translated-ltr, html.translated-rtl {
   border-radius: 3px;
   display: inline-block;
   font-family: $font-family-secondary;
-  background-color: darken( $cerulean, 9% );
+  background-color: darken($cerulean, 9%);
 
   p {
     margin: 0 .2em;
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
-    @include rem( 'font-size', 11px );
+    @include rem('font-size', 11px);
 
     &.temperature {
-      @include rem( 'font-size', 24px );
+      @include rem('font-size', 24px);
     }
   }
 
   i {
     vertical-align: middle;
-    @include rem( 'font-size', 24px );
+    @include rem('font-size', 24px);
   }
 }
 
@@ -2541,15 +2680,15 @@ span[class^="text-"] {
   }
 
   &.text-sm {
-    @include rem( 'font-size', 13px );
+    @include rem('font-size', 13px);
   }
 
   &.text-nm {
-    @include rem( 'font-size', 16px );
+    @include rem('font-size', 16px);
   }
 
   &.text-lg {
-    @include rem( 'font-size', 20px );
+    @include rem('font-size', 20px);
   }
 }
 
@@ -2559,17 +2698,21 @@ span[class^="text-"] {
   margin: 0;
   padding: 0;
   list-style: none;
+
   li {
     margin: 0 .1em;
     display: inline-block;
     vertical-align: bottom;
+
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
   }
+
   a {
     color: $spruce;
     display: block;
@@ -2580,7 +2723,8 @@ span[class^="text-"] {
     border-radius: 2px;
     text-decoration: none;
     background: $off-white;
-    @include rem( 'font-size', 16px );
+    @include rem('font-size', 16px);
+
     i {
       height: 1.5em;
       line-height: 1.5em;
@@ -2595,6 +2739,7 @@ span[class^="text-"] {
   @media print {
     display: none;
   }
+
   .department-socials {
     list-style-type: none;
 
@@ -2605,7 +2750,7 @@ span[class^="text-"] {
 
     .socials-link {
       font-size: 1.2rem;
-      background: rgba(246,246,246,0.8);
+      background: rgba(246, 246, 246, 0.8);
     }
   }
 
@@ -2615,9 +2760,11 @@ span[class^="text-"] {
 
   .stButton {
     margin: 0;
+
     .stLarge {
       width: 27px;
       height: 27px;
+
       &:hover {
         background-position: top left;
       }
@@ -2637,6 +2784,7 @@ body.page-node {
     display: inline-block !important;
   }
 }
+
 .addtocal.addtocal-processed {
   @extend .btn;
   @extend .btn--quaternary;
@@ -2691,15 +2839,15 @@ ul.addtocal_menu li a {
 ul.addtocal_menu li a:hover {
   text-decoration: none;
   //background: darken( $alto, 5% );
-  background: lighten( $alto, 4% );
+  background: lighten($alto, 4%);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
 
 
-  /* Tags
-     ========================================================================== */
+/* Tags
+   ========================================================================== */
 
 .tag-list {
   margin: 0;
@@ -2722,7 +2870,7 @@ ul.addtocal_menu li a:hover {
   padding: .5em .325em;
   text-decoration: none;
   background-color: #f6f6f6; /*#cbcbcb;*/
-  @include rem( 'font-size', 13px );
+  @include rem('font-size', 13px);
 
   &:before,
   &:after {
@@ -2768,22 +2916,23 @@ ul.addtocal_menu li a:hover {
 }
 
 
-
 /* Page containers
    ========================================================================== */
 
 main {
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     > .nine:first-child {
-      border-right: 1px solid darken( $alto, 4% );
+      border-right: 1px solid darken($alto, 4%);
       border-left: 1px solid $alto;
 
       &:after {
         content: '';
-        background: lighten( $mercury, 2% );
+        background: lighten($mercury, 2%);
         position: absolute;
-        top: 0; right: -33.6%;
-        height: 100%; width: 33.5%;
+        top: 0;
+        right: -33.6%;
+        height: 100%;
+        width: 33.5%;
       }
     }
 
@@ -2796,7 +2945,9 @@ main {
 
 [role="main"] {
   position: relative;
-  @include mq( $from: tablet-landscape ) { margin-top: -100px; }
+  @include mq($from: tablet-landscape) {
+    margin-top: -100px;
+  }
 }
 
 main[role="main"],
@@ -2804,7 +2955,7 @@ main[role="main"],
   z-index: 5;
   position: relative;
 
-  @include mq( $from: site ) {
+  @include mq($from: site) {
     .sub-navigation {
       margin-top: -6em;
     }
@@ -2818,7 +2969,7 @@ main[role="main"],
 }
 
 .dept-parent-intro {
-  @include mq( $from: site ) {
+  @include mq($from: site) {
     h1 {
       min-height: 92px;
     }
@@ -2829,17 +2980,21 @@ main[role="main"],
    ========================================================================== */
 .accordions {
   margin: 1em 0;
+
   #list-container & {
     margin: 0;
   }
 }
+
 .accordion {
   margin: 0 0 1em 0;
-  @include transition( border .25s );
+  @include transition(border .25s);
+
   #list-container & {
     margin: 0;
   }
 }
+
 .accordion__heading {
   margin: 0;
   padding: 1rem 3.5rem 1rem 1rem;
@@ -2847,24 +3002,29 @@ main[role="main"],
   background: $mercury;
   position: relative;
   border: 1px solid white;
-  @include transition( all .5s );
+  @include transition(all .5s);
+
   #list-container & {
     padding: .2em 1em;
   }
 }
+
 .accordion__link {
   display: block;
   color: $spruce;
   text-decoration: none;
+
   #list-container & i {
     font-size: .75em;
   }
 }
+
 .accordion__drawer {
   padding: 1em;
   display: none;
   border: 1px solid $chateau;
   border-top: none;
+
   .no-js & {
     display: block;
   }
@@ -2880,38 +3040,45 @@ main[role="main"],
   right: 1em;
   top: 50%;
   overflow: hidden;
+
   .csstransforms3d & {
     // @include transform(rotate( 0deg ));
-    @include transition( transform .25s );
+    @include transition(transform .25s);
   }
+
   &:before,
   &:after {
     content: "";
     position: absolute;
     display: block;
     background: $chateau;
+
     .csstransforms3d & {
       top: 50%;
       // left: 50%;
-      @include transform(translate3d( 0, -50%, 0 ));
-      @include transition( transform .25s, opacity .25s );
+      @include transform(translate3d(0, -50%, 0));
+      @include transition(transform .25s, opacity .25s);
     }
   }
+
   &:before {
     margin-top: -1px;
     width: 100%;
     height: 2px;
     top: 50%;
+
     .csstransforms3d & {
       margin-top: auto;
       // width: 50%;
     }
   }
+
   &:after {
     margin-left: -1px;
     height: 100%;
     width: 2px;
     left: 50%;
+
     .csstransforms3d & {
       margin-left: auto;
     }
@@ -2934,19 +3101,21 @@ main[role="main"],
   .csstransforms3d & {
 
     > p, > h2, > h3, > h4, > h5, > h6 {
-			& > a > .toggle-icon {
-				&:before,
-				&:after {
-					background: $cerulean;
-				}
-				@include transform(rotate( 45deg ));
-				&:before {
-					// @include transform(translate3d( 100%, -50%, 0 ));
-					// @include opacity( 0 );
-					// opacity: 0;
-				}
-			}
-		}
+      & > a > .toggle-icon {
+        &:before,
+        &:after {
+          background: $cerulean;
+        }
+
+        @include transform(rotate(45deg));
+
+        &:before {
+          // @include transform(translate3d( 100%, -50%, 0 ));
+          // @include opacity( 0 );
+          // opacity: 0;
+        }
+      }
+    }
   }
 
 }
@@ -2971,14 +3140,14 @@ main[role="main"],
 
   .accordion__link {
     display: block;
-    @include rem( 'font-size', 14px );
+    @include rem('font-size', 14px);
 
     i {
       line-height: 1.5;
     }
 
-    @include mq( $from: mobile-landscape ) {
-      @include rem( 'font-size', 18px );
+    @include mq($from: mobile-landscape) {
+      @include rem('font-size', 18px);
     }
   }
 
@@ -2996,7 +3165,7 @@ main[role="main"],
     width: auto;
     height: 1em;
     vertical-align: middle;
-    @include rem( 'font-size', 32px );
+    @include rem('font-size', 32px);
 
     &:after,
     &:before {
@@ -3014,11 +3183,11 @@ main[role="main"],
     }
 
     .toggle-icon {
-      @include transform(rotate( 180deg ));
+      @include transform(rotate(180deg));
     }
   }
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     td,
     th {
       &:first-child {
@@ -3027,11 +3196,12 @@ main[role="main"],
     }
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     td,
     th {
       border: none;
-      @include span( 4 );
+      @include span(4);
+
       &:nth-child(2),
       &:nth-child(3) {
         text-align: right;
@@ -3044,18 +3214,16 @@ main[role="main"],
 
     .accordion__heading {
       padding: .75em .5em;
-      @include rem( 'font-size', 18px );
+      @include rem('font-size', 18px);
     }
   }
 
-  @include mq( $until: mobile-landscape ) {
+  @include mq($until: mobile-landscape) {
     table {
       width: 100%;
     }
   }
 }
-
-
 
 
 /* Tables
@@ -3071,7 +3239,7 @@ table {
     background: $mercury;
     font-family: $font-family-secondary;
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       /*border-bottom: 1px solid $alto;*/
       border-bottom: 1px solid grey;
     }
@@ -3079,9 +3247,11 @@ table {
 
   tr {
     line-height: 1.6;
+
     &:nth-child(even) {
       background: $mercury;
     }
+
     &.subheading,
     &:first-child {
       background: transparent;
@@ -3093,24 +3263,24 @@ table {
 
       td {
         padding-left: 0;
-        @include mq( $from: tablet ) {
+        @include mq($from: tablet) {
           line-height: 2.5;
-          @include rem( 'font-size', 16px );
+          @include rem('font-size', 16px);
         }
       }
     }
-	
-		&.valign-m {
-			td {
-				vertical-align: middle !important;
-			}
-		}
-	
-		&.valign-b {
-			td {
-				vertical-align: bottom !important;
-			}
-		}
+
+    &.valign-m {
+      td {
+        vertical-align: middle !important;
+      }
+    }
+
+    &.valign-b {
+      td {
+        vertical-align: bottom !important;
+      }
+    }
   }
 
   td {
@@ -3126,32 +3296,32 @@ table {
       padding-left: 0;
     }
   }
-	
-	&.ui-datepicker-calendar {
-		tr:nth-child(even) {
+
+  &.ui-datepicker-calendar {
+    tr:nth-child(even) {
       background: #f6f6f6;
     }
-		
-		td:first-child {
-			padding-left: 0;
-		}
-	}
+
+    td:first-child {
+      padding-left: 0;
+    }
+  }
 }
 
 .table--thirds {
   th:first-child,
   td:first-child {
-    @include span( 5 of 12 );
+    @include span(5 of 12);
   }
 
   th:nth-child(2),
   td:nth-child(2) {
-    @include span ( 4 of 12 );
+    @include span(4 of 12);
   }
 
   th:last-child,
   td:last-child {
-    @include span ( 3 of 12 );
+    @include span(3 of 12);
   }
 
   p {
@@ -3173,17 +3343,17 @@ figure {
 
   figcaption {
     background-color: #e4e9eb;
-	padding: .5em;
+    padding: .5em;
     font-style: italic;
-    @include rem( 'font-size', 13px );
-	
-	p {
-	  margin-bottom: 0;
-	}
-	
-	.photo-credit {
-	  padding: 0 0 .5em 0;
-	}
+    @include rem('font-size', 13px);
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .photo-credit {
+      padding: 0 0 .5em 0;
+    }
   }
 
 }
@@ -3195,14 +3365,15 @@ figure {
   i {
     z-index: 4;
     position: absolute;
-    top: 50%; left: 50%;
+    top: 50%;
+    left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: rgba(255, 255, 255, 0.75);
-    @include rem( 'font-size', 48px );
+    @include rem('font-size', 48px);
   }
 
   img {
@@ -3218,11 +3389,11 @@ figure {
   overflow: hidden;
 
   iframe, object, embed {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -3234,7 +3405,7 @@ figure {
 .google-map {
   margin-bottom: 2em;
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     margin-bottom: 0;
   }
 }
@@ -3267,6 +3438,7 @@ figure {
       margin: 0;
       padding: 0;
       width: 100%;
+
       tbody td {
         font-size: 0.75em;
       }
@@ -3276,7 +3448,40 @@ figure {
     }
   }
 }
+
 .calendar {
+
+  td.multi-day {
+    background-color: aliceblue;
+    padding-bottom: 0;
+    div.month.day {
+      // do not display the dates: e.g. 5-6-7-8
+      display: none;
+
+    }
+
+    .calendar.monthview .contents {
+      height: 1.7em;
+      // Not really sure what this cutoff stuff is. Can't find any reference.
+      // It comes from the default calendar template.
+      .cutoff {
+        display: none;
+      }
+    }
+
+    .fine-print.content-type-events {
+      // do not display the time
+      display: none;
+    }
+  }
+
+  // For our holiday type of content type "date" do not display the time, it is considered all day.
+  .holiday {
+    background-color: honeydew;
+    .content-type-date {
+      display: none;
+    }
+  }
 
   width: 100%;
 
@@ -3286,13 +3491,13 @@ figure {
 
   .day {
     padding: 0 .25em;
-    color: $sunshade;
+    color: $warning;
     width: 100%;
     text-align: right;
     font-family: $font-family-secondary;
-    @include rem( 'font-size', 18px );
+    @include rem('font-size', 18px);
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       text-align: right;
     }
   }
@@ -3317,17 +3522,17 @@ figure {
   }
 
   th, td {
-    @include mq( $from: tablet ) {
-      @include span( 1 of 7 no-gutters );
+    @include mq($from: tablet) {
+      @include span(1 of 7 no-gutters);
       float: none;
     }
   }
 
   td {
     border: 1px solid $gray;
-	padding: 0 0 .5em 0;
-	line-height: 1.5em;
-    @include mq( $from: tablet ) {
+    padding: 0 0 .5em 0;
+    line-height: 1.5em;
+    @include mq($from: tablet) {
       min-height: 10em;
       border-bottom: none;
       border-right: none;
@@ -3336,23 +3541,24 @@ figure {
         border-right: 1px solid $gray;
       }
     }
-	$color-names: cerulean, robin, sunshade, schoolbus, spruce, westar, teal, tulip, gold, science, endeavour, purple, success, red;
-	$color-values: $cerulean, $robin, $sunshade, $schoolbus, $spruce, $westar, $teal, $tulip, $gold, $science, $endeavour, $purple, $success, $error;
-	
-	@for $c from 1 through 14 {
+    $color-names: cerulean, robin, sunshade, schoolbus, spruce, westar, teal, tulip, gold, science, endeavour, purple, success, red;
+    $color-values: $cerulean, $robin, $sunshade, $schoolbus, $spruce, $westar, $teal, $tulip, $gold, $science, $endeavour, $purple, $success, $error;
 
-		$color-name: nth( $color-names, $c );
-		$color-value: nth( $color-values, $c );
+    @for $c from 1 through 14 {
 
-		.event-#{$color-name} {
-			border-left: 5px solid $color-value;
-			margin-left: .5em;
-		}
-	}
+      $color-name: nth($color-names, $c);
+      $color-value: nth($color-values, $c);
+
+      .event-#{$color-name} {
+        border-left: 5px solid $color-value;
+        margin-left: .5em;
+      }
+
+    }
   }
 
   tr:last-child {
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       td {
         border-bottom: 1px solid $gray;
       }
@@ -3372,7 +3578,7 @@ figure {
   }
 
   // Mobile
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
 
     // By default show the column.
     td {
@@ -3407,7 +3613,7 @@ figure {
   background: $off-white;
   border: 1px solid $alto;
 
-  @include mq( $from: site ) {
+  @include mq($from: site) {
     border-bottom: none;
   }
 }
@@ -3419,34 +3625,34 @@ figure {
   border-top: none;
   background: white;
   display: inline-block;
-  @include rem( 'font-size', 14px );
+  @include rem('font-size', 14px);
 
 
-  @include mq( mobile, mobile-landscape ) {
-    @include span( 6 no-gutters );
+  @include mq(mobile, mobile-landscape) {
+    @include span(6 no-gutters);
     &:last-child {
       border-right: none;
     }
   }
 
-  @include mq( mobile-landscape, site ) {
+  @include mq(mobile-landscape, site) {
     border: 1px solid $alto;
     border-top: none;
     border-right: none;
-    @include span( 4 no-gutters );
+    @include span(4 no-gutters);
     &:last-child {
       border-bottom: none;
       border-right: 1px solid $alto;
     }
   }
 
-  @include mq( $from: site ) {
+  @include mq($from: site) {
     border-left: 1px solid $alto;
     border-bottom: 1px solid $alto;
     &:last-child {
       border-right: 1px solid $alto;
     }
-    @include span( 1 of 5 no-gutters );
+    @include span(1 of 5 no-gutters);
     &:first-child {
       border-left: none;
     }
@@ -3462,6 +3668,7 @@ figure {
   //color: $chateau;
   text-decoration: none;
   border-top: 3px solid transparent;
+
   &:hover,
   .is-active & {
     border-color: $cerulean;
@@ -3477,15 +3684,18 @@ figure {
 
 .tabs__bucket {
   display: none;
+
   &.is-active {
     display: block;
   }
+
   .cke_editable & {
     display: block;
-    border-style:double;
-    margin:20px 0;
-    padding:10px;
+    border-style: double;
+    margin: 20px 0;
+    padding: 10px;
   }
+
   .no-js & {
     display: block;
   }
@@ -3496,10 +3706,12 @@ figure {
     @media print {
       display: none;
     }
+
     .admin-menu & {
       //margin-top:169px;
-      margin-top:20px;
+      margin-top: 20px;
     }
+
     @extend .l-constrained;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -3517,6 +3729,7 @@ figure {
         padding-top: .5rem;
       }
     }
+
     .node-type-application & {
       margin-top: 0px;
     }
@@ -3551,7 +3764,7 @@ footer {
     }
   }
 
-  @include mq( $from: mobile-landscape ) {
+  @include mq($from: mobile-landscape) {
     text-align: left;
   }
 
@@ -3571,7 +3784,7 @@ footer {
 
   > .row {
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       display: block;
       display: -webkit-flex;
       display: flex;
@@ -3583,10 +3796,9 @@ footer {
   }
 
 
-
   .socials {
 
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       margin: 0 .5em;
       display: inline-block;
       vertical-align: bottom;
@@ -3601,23 +3813,23 @@ footer {
 
       &:hover {
         background: $off-white;
-        color: darken( $spruce, 25% );
+        color: darken($spruce, 25%);
       }
     }
   }
 
   p {
     margin: 0 0 .5em;
-    color: lighten( $spruce, 25% );
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 13px );
+    color: lighten($spruce, 25%);
+    @include mq($from: tablet) {
+      @include rem('font-size', 13px);
     }
   }
 
   .copyright {
     margin: 2.5em 0 0;
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 11px );
+    @include mq($from: tablet) {
+      @include rem('font-size', 11px);
     }
   }
 
@@ -3625,8 +3837,8 @@ footer {
     list-style: none;
     margin: 0;
     padding: 0;
-    @include mq( $from: tablet ) {
-      @include rem( 'font-size', 11px );
+    @include mq($from: tablet) {
+      @include rem('font-size', 11px);
     }
 
     li {
@@ -3640,7 +3852,7 @@ footer {
       -ms-column-count: 1;
       column-count: 1;
 
-      @include mq( $from: mobile-landscape ) {
+      @include mq($from: mobile-landscape) {
         li {
           width: 48%;
           float: left;
@@ -3652,21 +3864,21 @@ footer {
   }
 
   .footer--left {
-    background: darken( $spruce, 10% );
+    background: darken($spruce, 10%);
   }
 
   .footer--right {
 
     background: $spruce;
 
-    @include mq( $from: tablet-landscape ) {
+    @include mq($from: tablet-landscape) {
       .four {
         /*  below makes divider lines in footer between council districts and City officials */
         &:after {
           content: '';
           display: block;
           width: 2px;
-          height: 125px ;
+          height: 125px;
           position: absolute;
           right: 5%;
           top: 0;
@@ -3684,8 +3896,9 @@ footer {
   a {
     color: white;
     text-decoration: none;
+
     &:hover {
-      color: lighten( $spruce, 25% );
+      color: lighten($spruce, 25%);
     }
   }
 }
@@ -3706,7 +3919,7 @@ footer {
   li {
     margin: 0 .25em;
     display: inline-block;
-    color: lighten( $spruce, 25% );
+    color: lighten($spruce, 25%);
 
     &:after {
       content: '|';
@@ -3720,8 +3933,8 @@ footer {
 
   a {
     text-decoration: underline;
-    color: lighten( $spruce, 25% );
-    @include rem( 'font-size', 13px );
+    color: lighten($spruce, 25%);
+    @include rem('font-size', 13px);
 
     &:hover {
       color: $spruce;
@@ -3732,13 +3945,33 @@ footer {
 // San Diego specific
 .field-collection-container {
   width: 100%;
+
   a {
     text-decoration: none;
   }
+
   border-bottom: none;
-  
+
   body.node-type-outreach & {
-	margin-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  body.node-type-outreach2 & {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    // Types of dividers for sections. Right now just none or 1
+    hr.field-collection-section-1 {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      height: 0;
+    }
+
+    hr.field-collection-section-2 {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      border-top-width: 5px;
+      height: 0;
+    }
   }
 }
 
@@ -3758,6 +3991,7 @@ body.logged-in {
   .tabledrag-toggle-weight-wrapper {
     display: none;
   }
+
   // Make the drag icon appear properly.
   a.tabledrag-handle .handle {
     height: 28px;
@@ -3770,7 +4004,7 @@ body.logged-in {
 
 /* our sandiego theme header has a z-index of 88888 so colorbox goes under it, put color box above */
 body #colorbox, #cboxOverlay, #cboxWrapper {
-  z-index:90000;
+  z-index: 90000;
 }
 
 
@@ -3779,10 +4013,12 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 .current-gallery-term {
   font-weight: bold;
 }
+
 .widget .gallery-menu ul.events {
   padding-left: 2em;
   list-style-type: circle;
   display: none;
+
   &.open {
     display: block;
   }
@@ -3791,6 +4027,7 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 .gallery-menu li i {
   //@extend .text-off-white-like-background;
   color: #37424a;
+
   &.toggle {
     @extend .text-gray;
     cursor: pointer;
@@ -3804,56 +4041,99 @@ body #colorbox, #cboxOverlay, #cboxWrapper {
 /* Stellar
    ========================================================================== */
 .stellar-window {
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     min-height: 300px;
     background-size: 100% auto;
   }
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     min-height: 150px;
     background-size: auto 100%;
   }
+  background-size: 100% auto;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
   position: relative;
 }
+
+.stellar-window.repeat-x {
+  @include mq($from: tablet) {
+    background-size: auto auto;
+    background-repeat: repeat-x;
+  }
+}
+
+.outreach2-article-image h1, .outreach2-article-image p,
 .stellar-window p, .stellar-window h1, .stellar-window h2, .stellar-window h3, .stellar-window h4 {
   color: white;
   text-shadow: 0 0 #555, 0 2px 0.3em black, 2px 0 0.3em black, 0 0 black;
 }
+
+.node-type-outreach2-article h1 {
+  @include mq($from: tablet) {
+    font-size: 2.5rem;
+  }
+  //@include mq($until: tablet) {
+  //  font-size: 2.0rem;
+  //}
+
+}
+
+.outreach2-article-image p.noshadow,
 .stellar-window p.noshadow {
   text-shadow: none;
 }
+
+.outreach2-article-image {
+  background-size: cover;
+  @include mq($from: tablet) {
+    min-height: 300px;
+  }
+  @include mq($until: tablet) {
+    min-height: 200px;
+  }
+}
+
+@media not all and (min-resolution: .001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .selector {
+      property: value;
+    }
+  }
+}
+
 
 /* Office Hours
    ========================================================================== */
 .oh-wrapper .oh-display:first-child {
   font-weight: 600;
 }
+
 .oh-display-closed {
   color: red;
   margin-right: 5px;
   text-align: right;
 }
+
 .oh-display span.oh-display-label {
   display: inline;
   float: left;
   clear: both;
 }
 
-.oh-display span.oh-display-times {
+.oh-display .oh-display-times {
   display: inline;
   float: right;
   text-align: right;
   margin-bottom: .5em;
 }
 
-.oh-display:last-child span.oh-display-times {
+.oh-display:last-child .oh-display-times {
   margin-bottom: 0;
 }
 
-.oh-current-open, .oh-current-closed {	
-  @include mq( $until: tablet ) {
+.oh-current-open, .oh-current-closed {
+  @include mq($until: tablet) {
     text-align: center;
   }
 }
@@ -3871,19 +4151,19 @@ form#user-login {
     label {
       float: left;
       width: 120px;
-      padding-top:0.5em;
-      @include mq( $from: mobile-landscape  ) {
+      padding-top: 0.5em;
+      @include mq($from: mobile-landscape) {
         padding-left: 10px;
       }
     }
 
     input {
-      margin-bottom:0.5em;
+      margin-bottom: 0.5em;
       width: 25em !important;
     }
   }
 
-  @include mq( $from: mobile-landscape  ) {
+  @include mq($from: mobile-landscape) {
     > div {
       padding-left: 0 !important;
     }
@@ -3899,23 +4179,23 @@ form#user-login {
 }
 
 form#protected-pages-enter-password {
-	@extend .l-constrained;
-	background-color: white;
-	
-	fieldset {
-		border: none;
-		padding: 2em;
-		
-		input#edit-submit {
-			color:white;
-			background-color: #0098db;
-		}
-	}
+  @extend .l-constrained;
+  background-color: white;
+
+  fieldset {
+    border: none;
+    padding: 2em;
+
+    input#edit-submit {
+      color: white;
+      background-color: #0098db;
+    }
+  }
 }
 
 div.error {
-	@extend .l-constrained;
-	margin: 1em auto;
+  @extend .l-constrained;
+  margin: 1em auto;
 }
 
 #block-system-main .profile, #block-masquerade-masquerade, #block-bean-sdadmin-display-node-type- {
@@ -3929,11 +4209,11 @@ body.node-type-article {
   h1 {
     text-shadow: 0 0 #555, 0 2px 0.3em black, 2px 0 0.3em black, 0 0 black;
 
-    @include mq( $until: tablet ) {
+    @include mq($until: tablet) {
       font-size: 2rem;
       text-align: center;
     }
-    @include mq( $from: tablet ) {
+    @include mq($from: tablet) {
       font-size: 3rem;
       text-align: left;
     }
@@ -3948,11 +4228,11 @@ body.node-type-article {
     background-color: #00549f;
   }
 
-  .sub-navigation-mobile .is-open .accordion__heading{
+  .sub-navigation-mobile .is-open .accordion__heading {
     background-color: white;
   }
 
-  @include mq( $until: tablet ) {
+  @include mq($until: tablet) {
     .hero__slides--secondary {
       padding-bottom: 0;
       min-height: auto;
@@ -3962,21 +4242,24 @@ body.node-type-article {
     }
   }
 
-  @include mq( $from: tablet ) {
+  @include mq($from: tablet) {
     .sub-navigation {
 
       margin-top: -29px;
+
       li {
         max-width: none;
         margin: 0 0 0 .8em;
         background-color: #00549f;
       }
+
       &.insidesd-article {
         margin-top: -77px;
       }
     }
     .hero__bg {
       background-position: top center;
+
       &.hero__bg--secondary {
         height: 130.5%;
       }
@@ -3992,10 +4275,12 @@ body.node-type-article {
     background-color: #dde2e5;
     height: 2px;
   }
+
   main {
     position: relative;
     background-color: white;
   }
+
   .block-menu {
     li a.active {
       color: #fff;
@@ -4007,14 +4292,14 @@ body.node-type-article {
    we want two up on mobile
 */
 .view-id-article_features.view-display-id-embed_1 {
-    .flex-wrap {
-      padding: 0;
-      display: block; /* Fallback IE9 */
-      display: -webkit-flex; /* Safari */
-      display: flex;
-      -webkit-flex-wrap: wrap; /* Safari */
-      flex-wrap: wrap;
-    }
+  .flex-wrap {
+    padding: 0;
+    display: block; /* Fallback IE9 */
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-wrap: wrap; /* Safari */
+    flex-wrap: wrap;
+  }
 }
 
 /* Accessibility Dialog Popup
@@ -4025,11 +4310,12 @@ body.node-type-article {
   display: inline-block;
   position: relative;
   padding: 5px 0 .5em 0;
-  margin-top:4px;
-  margin-right:15px;
+  margin-top: 4px;
+  margin-right: 15px;
   padding-top: 4px;
   font-size: 10pt;
 }
+
 #accessibility {
   vertical-align: middle;
   font-size: 0.75rem;
@@ -4048,7 +4334,7 @@ body.node-type-article {
   cursor: default;
 }
 
-div#__ba_panel._ba_manual {
+div#__ba_panel {
   display: none;
 }
 
@@ -4060,6 +4346,7 @@ div#__ba_panel._ba_manual {
     @extend .h3;
     @extend .l-margin-bd;
   }
+
   .row {
     margin-left: 30px;
   }
@@ -4088,44 +4375,50 @@ div#__ba_panel._ba_manual {
 /* CSS for elevateZoom
    ========================================================================== */
 .zoomContainer {
-	cursor: none;
+  cursor: none;
 }
 
 /* CSS for Solr Search results
    ========================================================================== */
 ol.search-results.apachesolr_search-results {
-    padding-left: 0;
+  padding-left: 0;
 }
-#block-apachesolr-search-sort {margin-top: 0;}
+
+#block-apachesolr-search-sort {
+  margin-top: 0;
+}
+
 #block-apachesolr-search-sort,
 h2.block-facetapi {
-  @include rem( 'font-size', 16px ); // 1.125em
+  @include rem('font-size', 16px); // 1.125em
   @media print {
     font-size: 1em;
     margin: 0;
     font-weight: bold;
   }
 }
-	
+
 body.page-search {
   #search-block-form {
     #edit-keys {
       margin-bottom: 1em !important;
     }
+
     #search-results {
       position: relative;
       top: -0.7em;
     }
   }
-	@include mq( $from: tablet-landscape ) {
-		div.container {
-			margin-top: 0;
-		}
-			
-		header.header--fixed+div.container {
-			margin-top: 165px;
-		}
-	}
+
+  @include mq($from: tablet-landscape) {
+    div.container {
+      margin-top: 0;
+    }
+
+    header.header--fixed + div.container {
+      margin-top: 165px;
+    }
+  }
 }
 
 /* Table from sorted view
@@ -4133,6 +4426,7 @@ body.page-search {
 
 .view-grouping .views-table {
   width: 100%;
+
   caption {
     text-align: left;
     font-weight: 600;
@@ -4146,14 +4440,17 @@ body.page-search {
     }
     display: none;
   }
+
   tr.ocd-group {
     td {
       background-color: #f6f6f6;
     }
+
     td:first-child {
-width:20%;
+      width: 20%;
       visibility: collapse;
     }
+
     &:first-child {
       td:first-child {
         visibility: visible;
@@ -4173,7 +4470,7 @@ width:20%;
     &:hover {
       color: white;
       text-decoration: none;
-      background-color: lighten( $cerulean, 10% );
+      background-color: lighten($cerulean, 10%);
     }
 
     i {
@@ -4186,8 +4483,8 @@ width:20%;
       margin-right: .5em;
       display: inline-block;
       vertical-align: middle;
-      @include transition-property( color, background );
-      @include transition-duration( .15s );
+      @include transition-property(color, background);
+      @include transition-duration(.15s);
     }
 
     .icon-chevron-right,
@@ -4200,33 +4497,40 @@ width:20%;
       vertical-align: sub;
       line-height: .4;
     }
+
     float: left;
 
   }
+
   div.form-item-retain-filters {
     margin-left: 1em;
     position: relative;
-    top:0.5em;
+    top: 0.5em;
 
   }
+
   #edit-basic {
     margin-bottom: 1em !important;
     padding: 1em 1em 2em 1em !important;
     background-color: #eaeeef !important;
     border-radius: 4px;
   }
+
   #edit-keys {
     margin-bottom: 0.7em;
   }
+
   #search-results {
     float: right;
   }
-  @include mq( $until:mobile-wide ) {
+
+  @include mq($until: mobile-wide) {
     #edit-basic {
       padding: 1em 1em 5em 1em !important;
     }
     #edit-submit {
       float: left;
+
       i {
         margin-bottom: 0.3em;
       }
@@ -4247,17 +4551,20 @@ width:20%;
     &.facetapi-processed {
       list-style-type: none;
       padding: 0 0 0 20px;
+
       li.leaf {
         list-style-image: none;
         list-style-type: none;
         margin: 0.5em 0;
         position: relative;
+
         input {
           position: absolute;
           left: -21px;
           top: 10px;
           size: 1.25em;
         }
+
         a {
           color: #027fb6;
           font-size: 0.9em;
@@ -4272,6 +4579,51 @@ pre.explain {
   font-size: .8em;
 }
 
+// This is for flagging OCD documents, like in legal opinions in views and Solr search results.
+.document-flag {
+  @extend .l-padding-as;
+  //@extend .rounded-corners;
+  @extend .fine-print;
+  white-space: nowrap;
+  padding-top: .2em !important;
+  padding-bottom: .2em !important;
+  color: $spruce !important;
+  font-weight: bold;
+
+  &.search-result {
+    // Used to have the top/bottom padding here, moved outside to be consistent.
+  }
+
+  &.background--cerulean {
+    background-color: $cerulean !important;
+  }
+
+  &.background--sunshade {
+    background: $sunshade !important;
+  }
+
+  &.background--robin {
+    background: $robin !important;
+  }
+
+  &.background--riptide {
+    background: $riptide !important;
+  }
+
+  &.background--texasrose {
+    background: $texasrose !important;
+  }
+
+  &.background--manz {
+    background: $manz !important;
+  }
+
+  &.background--error {
+    background: $error !important;
+    color: white !important;
+  }
+}
+
 // Status indicators
 
 .status-available, .status-open {
@@ -4284,4 +4636,78 @@ pre.explain {
 
 .status-impacted {
   background-color: $sunshade !important;
+}
+
+#block-bean-homepage-featured-items {
+  @include mq($until: mobile-landscape) {
+    h6 {
+      height: 2.5em;
+    }
+  }
+}
+
+
+/* Captcha
+   ========================================================================== */
+
+fieldset.captcha.form-wrapper {
+  @extend .l-margin-bd;
+  // Don't displace the Captcha text embedded in the border of the fieldset.
+  legend {
+    display: none;
+  }
+}
+
+.hide-form-actions-input div.form-actions input {
+  display: none;
+}
+
+/* Think Blue specific colors
+   ========================================================================== */
+
+.think-blue-event {
+  border: 2px solid #00549f;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #00549f;
+}
+
+div#think-blue-contact input[type=submit] {
+  border: 1px solid white;
+}
+
+/* Think Blue specific colors
+   ========================================================================== */
+
+$color-names: cerulean, robin, sunshade, schoolbus, spruce, westar, teal, tulip, gold, science, endeavour, purple, success, red;
+$color-values: $cerulean, $robin, $sunshade, $schoolbus, $spruce, $westar, $teal, $tulip, $gold, $science, $endeavour, $purple, $success, $error;
+
+@for $c from 1 through 14 {
+
+  $color-name: nth($color-names, $c);
+  $color-value: nth($color-values, $c);
+
+  .background--#{$color-name} {
+    background: $color-value !important;
+  }
+}
+
+/* Remove External Link icon with class
+   ========================================================================== */
+
+.no-ext-link span.ext {
+  display: none;
+}
+
+/* CSS for our
+   ========================================================================== */
+ul.flex-direction-nav li {
+  margin: 0 !important
+}
+
+/* request by Ron */
+div.l-section {
+  margin-left: -2em;
+  margin-right: -2em;
+  padding: 2em;
 }

@@ -348,11 +348,11 @@
 .icon-reading:before {
   content: "\e6d6";
 }
-.icon-document2:before {
-  content: "\e6d9";
-}
 .icon-document-sign:before {
   content: "\e6d1";
+}
+.icon-document2:before {
+  content: "\e6d9";
 }
 .icon-graduation-hat:before {
   content: "\e6da";
@@ -1245,13 +1245,13 @@
 .icon-do-not {
 	position: relative;
 	color: $error;
-	z-index: 5;	
+	z-index: 5;
 	font-size: 1.8rem !important;
-	
+
 	&:before {
 		content: "\e99c";
 	}
-	
+
 	> [class^="icon-"], [class*=" icon-"] {
 		float: left;
 		position: absolute;
@@ -1262,42 +1262,42 @@
 		z-index: -1;
 		@include rem( 'font-size', 18px );
 	}
-	
+
 	&.icon--xs {
 		font-size: 1rem !important;
-	
+
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 10px );
 		}
 	}
-	
+
 	&.icon--sm {
 		font-size: 1.8rem !important;
-	
+
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 18px );
 		}
 	}
-	
+
 	&.icon--md {
 		font-size: 2.4rem !important;
-	
+
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 24px );
 		}
 	}
-	
+
 	&.icon--lg {
 		font-size: 3.4rem !important;
-	
+
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 34px );
 		}
 	}
-	
+
 	&.icon--xl {
 		font-size: 4.4rem !important;
-	
+
 		> [class^="icon-"], [class*=" icon-"] {
 			@include rem( 'font-size', 44px );
 		}

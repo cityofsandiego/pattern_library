@@ -130,6 +130,28 @@ input[type="radio"] {
     margin-right: .5em;
 }
 
+.form-type-radio, .form-type-checkbox {
+	display: table-row;
+	
+	input.form-radio, input.form-checkbox {
+		display: table-cell;
+		margin-right: 1em;
+	}
+	
+	label.option {
+		display: table-cell;
+		padding-bottom: .5em;
+	}
+}
+
+.form-radios, .form-checkboxes {
+	margin-top: .5em;
+}
+
+label.element-invisible + div.form-radios, label.element-invisible + div.form-checkboxes {
+	margin-top: 0;
+}
+
 textarea {
 }
 

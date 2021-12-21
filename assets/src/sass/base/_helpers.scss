@@ -129,6 +129,9 @@
     border-radius: 4px;
 }
 
+.rounded-corners-large {
+  border-radius:30px !important;
+}
 
 /* Borders
    ========================================================================== */
@@ -431,7 +434,7 @@ p.nav-ex {
         padding-left: 1em;
         text-indent: -1em;
     }*/
-		
+
 	&--desktop {
 		@include mq( $from: tablet ) {
 			-webkit-column-count: 2;
@@ -443,7 +446,7 @@ p.nav-ex {
 			margin-top: 0;
 		}
 	}
-		
+
 	&--mobile {
 		@include mq( $until: tablet ) {
 			-webkit-column-count: 2;
@@ -466,7 +469,7 @@ p.nav-ex {
 	li:first-child {
 		margin-top: 0;
 	}
-		
+
 	&--desktop {
 		@include mq( $from: tablet ) {
 			-webkit-column-count: 3;
@@ -500,7 +503,7 @@ p.nav-ex {
 	li:first-child {
 		margin-top: 0;
 	}
-		
+
 	&--desktop {
 		@include mq( $from: tablet ) {
 			-webkit-column-count: 4;
@@ -525,49 +528,85 @@ p.nav-ex {
 
 /* Backgrounds
    ========================================================================== */
+
+// For zebra striping
+.background--odd {
+  //background-color: lighten( $mercury, 2% ) !important;
+  background-color: #f6f6f6;
+}
+.background--even {
+  //background-color: darken( $mercury, 4% );
+  background-color: #e4e9eb;
+}
+
+.message--dark,
 .background--dark {
     background-color: $spruce !important;
     &.text-white {
         > * {
-            color: white; 
+            color: white;
         }
     }
 }
 
+.message-off-white,
 .background-off-white {
     background-color: lighten( $mercury, 2% ) !important;
 }
 
-.background-off-white-darker {
+.message-off-white-darker,
+.background-off-white-darer {
     background-color: darken( $mercury, 4% );
 }
 
+.message-white,
 .background-white {
     background-color: white !important;
 }
 
+.message--cerulean,
 .background--cerulean {
     background-color: $cerulean !important;
 }
 
+.message--science,
 .background--science {
     background-color: $science !important;
 }
 
+.message--sunshade,
 .background--sunshade {
     background: $sunshade !important;
 }
 
+.message--robin,
 .background--robin {
     background: $robin !important;
 }
 
+.message--westar,
 .background--westar {
     background: $westar !important;
 }
 
+.message--off-white,
 .background--off-white {
     background: $off-white !important;
+}
+
+.message--riptide,
+.background--riptide {
+  background: $riptide !important;
+}
+
+.message--texasrose,
+.background--texasrose {
+  background: $texasrose !important;
+}
+
+.message--manz,
+.background--manz {
+  background: $manz !important;
 }
 
 // Overlays
@@ -654,7 +693,7 @@ p.nav-ex {
 
 /* Images
    ========================================================================== */
-   
+
 .img-left { /* apply to element containing img, typically a <div> or <p> */
 	@include mq( $until: tablet ) {
 		width: 100% !important;
@@ -663,7 +702,7 @@ p.nav-ex {
 	}
 	@include mq( $from: tablet ) {
 		float: left;
-		margin: 0 1em 0 0;
+		margin: 0 1em 1em 0;
 	}
 }
 
@@ -675,7 +714,7 @@ p.nav-ex {
 	}
 	@include mq( $from: tablet ) {
 		float: right;
-		margin: 0 0 0 1em;
+		margin: 0 0 1em 1em;
 	}
 }
 

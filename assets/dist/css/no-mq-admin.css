@@ -450,12 +450,12 @@
     content: "\e6d6";
 }
 
-.icon-document2:before {
-    content: "\e6d9";
-}
-
 .icon-document-sign:before {
     content: "\e6d1";
+}
+
+.icon-document2:before {
+    content: "\e6d9";
 }
 
 .icon-graduation-hat:before {

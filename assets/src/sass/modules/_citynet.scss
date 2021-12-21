@@ -217,7 +217,7 @@
             background: $tulip;
             color: white;
           }
-        }		
+        }
       }
 	  > li.dropdown.active > .dropdown-toggle {
 		  background-color: white;
@@ -251,7 +251,7 @@
 	.field-item {
 	  a:hover {
 		color: $cerulean !important;
-	  } 
+	  }
 	  > ul {
 		width: 100%;
 	    display: block;
@@ -268,7 +268,7 @@
 	}
 	@media screen and (max-width: 979px) {
 	  .nav-collapse {
-		background-color: white;		
+		background-color: white;
         box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.5);
 		.nav > li > a {
 			border: none;
@@ -280,8 +280,8 @@
 	  .always-show .mega > .mega-dropdown-menu, .always-show .dropdown-menu {
 		display: none !important;
 	  }
-	  
-	} 
+
+	}
   }
 
   nav.sub-navigation {
@@ -310,12 +310,12 @@
       box-shadow: 0 4px 3px -3px rgba(0, 0, 0, 0.5);
       li.leaf, li.tb-megamenu-item {
         background-color: white;
-        margin: 0;		
+        margin: 0;
 		float: left;
 		position: static;
 		border-bottom: none;
 		opacity: 1;
-		
+
         &>a {
           display: block;
           line-height: 1.6;
@@ -336,15 +336,15 @@
             background: $tulip;
             color: white;
           }
-        }		
-		
+        }
+
 		.tb-megamenu-submenu {
 			width: 100%;
-			
+
 			.tb-megamenu-column-inner {
 				padding: 2em 2em 0 2em;
 			}
-		}		
+		}
       }
 	  li.tb-megamenu-item.active {
 	    > a, > a.dropdown-toggle {
@@ -358,9 +358,9 @@
 	  }
 	  .mega-dropdown-inner .content {
 	    box-shadow: none;
-		
+
 		li {
-		  
+
 		}
 	  }
     }
@@ -398,7 +398,7 @@
       }
     }
   }
-  
+
   // Search results visited
   div.search-result-wrapper h3.title a:visited {
     color: $link-color-visited;
@@ -428,6 +428,11 @@
     border-color: $mercury;
   }
 
+  // Fix workbench block on view draft so users can access the apply button
+  // to update the state
+  &.page-node-draft .workbench-info-block {
+    margin-bottom: 60px;
+  }
 }
 
 // End theme citynet
