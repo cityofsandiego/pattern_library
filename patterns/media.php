@@ -276,7 +276,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div class="tabs-container">
 
 							<div id="staff-photo-tab-item-1" class="tabs__bucket is-active">
-								<p>Staff photos must be circular. Maximum resolution is 200 x 200. Can be scaled down.</p>
+								<p>Apply class img-circle to make photo in circle frame. Maximum resolution is 200 x 200. Can be scaled down.</p>
 								<p>Name of staffmember must be stated as alternative text.</p>
 								<p>In biography pages, the staff photo should be placed on the top right of the text. Use the img-right class to ensure proper placement on mobile devices.</p>
 							</div>
@@ -285,7 +285,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<div class="code__examples">
 									<form>
 										<textarea class="pattern" id="staff-photo-code" name="code">
-<img src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe"></textarea>
+<img class="img-circle" src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe"></textarea>
 									</form>
 								</div>
 							</div>
@@ -297,13 +297,13 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                     <div class="row">
                         <div class="four columns border border--right no-border-on-mobile">
 						<h3 class="subheading heading--center">Info on bottom</h3>
-                            <p class="text-center"><img src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe"><br><strong>Jane Doe</strong><br>Council Representative<br>janedoe@sandiego.gov</p>
+                            <p class="text-center"><img class="img-circle l-margin-bs" src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe" style="width:200px;height:200px;"><br><strong>Jane Doe</strong><br>Council Representative<br>janedoe@sandiego.gov</p>
                         </div>
                         <div class="eight columns hide-on-mobile">
 						<h3 class="subheading heading--center">Info on right</h3>
 							<div class="row">
 								<div class="six columns text-center">
-									<p><img src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe"></p>
+									<p><img class="img-circle" src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe" style="width:200px;height:200px;"></p>
 								</div>
 								<div class="six columns l-padding-desktop-tl text-center--mobile">
 									<p><strong>Jane Doe</strong><br>Council Representative<br>janedoe@sandiego.gov</p>
@@ -314,7 +314,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<hr>
 					<h3 class="subheading text-center--mobile">Biography page</h3>
 					<p class="h2">Jane Doe</p>
-					<p class="img-right"><img src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe"></p>
+					<figure class="img-right"><img class="img-circle" src="/assets/dist/img/circle-staff-photo.jpg" alt="Jane Doe" style="width:200px;height:200px;"></figure>
 					<p>Massa eget egestas purus viverra accumsan. Sit amet justo donec enim diam vulputate ut pharetra. Accumsan lacus vel facilisis volutpat. Convallis posuere morbi leo urna molestie at.</p>
 
 <p>At elementum eu facilisis sed odio morbi quis. Enim nec dui nunc mattis. Diam quam nulla porttitor massa id neque. Hac habitasse platea dictumst vestibulum. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Elit ullamcorper dignissim cras tincidunt lobortis. Amet dictum sit amet justo donec enim diam. Feugiat pretium nibh ipsum consequat nisl vel. Massa eget egestas purus viverra. Nunc aliquet bibendum enim facilisis gravida. Morbi tristique senectus et netus et malesuada fames.</p>
