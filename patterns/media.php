@@ -276,7 +276,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 						<div class="tabs-container">
 
 							<div id="staff-photo-tab-item-1" class="tabs__bucket is-active">
-								<p>Apply class img-circle to make photo in circle frame. Maximum resolution is 200 x 200. Can be scaled down.</p>
+								<p>Apply class "img-circle" to make square photo circular. Maximum resolution of photo is 200 x 200. Can be scaled down.</p>
 								<p>Name of staffmember must be stated as alternative text.</p>
 								<p>In biography pages, the staff photo should be placed on the top right of the text. Use the img-right class to ensure proper placement on mobile devices.</p>
 							</div>
