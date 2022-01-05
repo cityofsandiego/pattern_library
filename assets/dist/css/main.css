@@ -5074,7 +5074,8 @@ img.photoRight {
 .icon-microsoft:before,
 .icon-linkedin:before,
 .icon-pinterest:before,
-.icon-reddit:before {
+.icon-reddit:before,
+.icon-tiktok:before {
   font-family: 'socials';
   speak: none;
   font-style: normal;
@@ -5157,6 +5158,10 @@ img.photoRight {
 
 .icon-reddit:before {
   content: "\eac6";
+}
+
+.icon-tiktok:before {
+  content: "\e902";
 }
 
 .icon--xs {
