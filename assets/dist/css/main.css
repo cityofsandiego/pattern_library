@@ -5073,7 +5073,8 @@ img.photoRight {
 .icon-android:before,
 .icon-microsoft:before,
 .icon-linkedin:before,
-.icon-pinterest:before {
+.icon-pinterest:before,
+.icon-reddit:before {
   font-family: 'socials';
   speak: none;
   font-style: normal;
@@ -5152,6 +5153,10 @@ img.photoRight {
 
 .icon-pinterest:before {
   content: "\ead1";
+}
+
+.icon-reddit:before {
+  content: "\eac6";
 }
 
 .icon--xs {

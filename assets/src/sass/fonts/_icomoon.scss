@@ -1137,7 +1137,8 @@
 .icon-android:before,
 .icon-microsoft:before,
 .icon-linkedin:before,
-.icon-pinterest:before {
+.icon-pinterest:before,
+.icon-reddit:before {
   font-family: 'socials';
   speak: none;
   font-style: normal;
@@ -1201,6 +1202,9 @@
 }
 .icon-pinterest:before {
   content: "\ead1";
+}
+.icon-reddit:before {
+  content: "\eac6";
 }
 
 

@@ -1596,6 +1596,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-microsoft</p>
 </div>
 
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-reddit"></i></p>
+<p>icon-reddit</p>
+</div>
+
 				
 				</div>				
                 <!--<table>
