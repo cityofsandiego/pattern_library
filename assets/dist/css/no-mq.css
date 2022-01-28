@@ -6408,7 +6408,7 @@ form [id^="views-exposed-form-articles-block"] .role-main .breadcrumbs + .views-
   border-bottom: none;
 }
 
-.csstransforms3d .is-open > p > a > .toggle-icon, .csstransforms3d .is-open > h2 > a > .toggle-icon, .csstransforms3d .is-open > h3 > a > .toggle-icon, .csstransforms3d .is-open > h4 > a > .toggle-icon, .csstransforms3d .is-open > h5 > a > .toggle-icon, .csstransforms3d .is-open > h6 > a > .toggle-icon {
+.csstransforms3d .is-open > div > h2 > a > .toggle-icon, .csstransforms3d .is-open > div > h3 > a > .toggle-icon, .csstransforms3d .is-open > div > h4 > a > .toggle-icon, .csstransforms3d .is-open > div > h5 > a > .toggle-icon, .csstransforms3d .is-open > div > h6 > a > .toggle-icon, .csstransforms3d .is-open > p > a > .toggle-icon, .csstransforms3d .is-open > h2 > a > .toggle-icon, .csstransforms3d .is-open > h3 > a > .toggle-icon, .csstransforms3d .is-open > h4 > a > .toggle-icon, .csstransforms3d .is-open > h5 > a > .toggle-icon, .csstransforms3d .is-open > h6 > a > .toggle-icon {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -6416,7 +6416,7 @@ form [id^="views-exposed-form-articles-block"] .role-main .breadcrumbs + .views-
   transform: rotate(45deg);
 }
 
-.csstransforms3d .is-open > p > a > .toggle-icon:before, .csstransforms3d .is-open > p > a > .toggle-icon:after, .csstransforms3d .is-open > h2 > a > .toggle-icon:before, .csstransforms3d .is-open > h2 > a > .toggle-icon:after, .csstransforms3d .is-open > h3 > a > .toggle-icon:before, .csstransforms3d .is-open > h3 > a > .toggle-icon:after, .csstransforms3d .is-open > h4 > a > .toggle-icon:before, .csstransforms3d .is-open > h4 > a > .toggle-icon:after, .csstransforms3d .is-open > h5 > a > .toggle-icon:before, .csstransforms3d .is-open > h5 > a > .toggle-icon:after, .csstransforms3d .is-open > h6 > a > .toggle-icon:before, .csstransforms3d .is-open > h6 > a > .toggle-icon:after {
+.csstransforms3d .is-open > div > h2 > a > .toggle-icon:before, .csstransforms3d .is-open > div > h2 > a > .toggle-icon:after, .csstransforms3d .is-open > div > h3 > a > .toggle-icon:before, .csstransforms3d .is-open > div > h3 > a > .toggle-icon:after, .csstransforms3d .is-open > div > h4 > a > .toggle-icon:before, .csstransforms3d .is-open > div > h4 > a > .toggle-icon:after, .csstransforms3d .is-open > div > h5 > a > .toggle-icon:before, .csstransforms3d .is-open > div > h5 > a > .toggle-icon:after, .csstransforms3d .is-open > div > h6 > a > .toggle-icon:before, .csstransforms3d .is-open > div > h6 > a > .toggle-icon:after, .csstransforms3d .is-open > p > a > .toggle-icon:before, .csstransforms3d .is-open > p > a > .toggle-icon:after, .csstransforms3d .is-open > h2 > a > .toggle-icon:before, .csstransforms3d .is-open > h2 > a > .toggle-icon:after, .csstransforms3d .is-open > h3 > a > .toggle-icon:before, .csstransforms3d .is-open > h3 > a > .toggle-icon:after, .csstransforms3d .is-open > h4 > a > .toggle-icon:before, .csstransforms3d .is-open > h4 > a > .toggle-icon:after, .csstransforms3d .is-open > h5 > a > .toggle-icon:before, .csstransforms3d .is-open > h5 > a > .toggle-icon:after, .csstransforms3d .is-open > h6 > a > .toggle-icon:before, .csstransforms3d .is-open > h6 > a > .toggle-icon:after {
   background: #0098db;
 }
 

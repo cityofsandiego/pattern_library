@@ -78,7 +78,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                 </div>
 
                                 <div class="accordion">
-                                    <h4 class="accordion__heading"><a class="accordion__link" href="#">Example 3 (with sub-accordions) <i class="toggle-icon"></i></a></h4>
+                                    <div class="accordion__heading">
+                                        <h3 class="heading--snug"><a class="accordion__link" href="#">Example 3 <i class="toggle-icon"></i></a></h3>
+                                        <div class="message message--warning l-margin-rd">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="accordion__drawer">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                </div>
+
+                                <div class="accordion">
+                                    <h4 class="accordion__heading"><a class="accordion__link" href="#">Example 4 (with sub-accordions) <i class="toggle-icon"></i></a></h4>
                                     <div class="accordion__drawer">
                                         <div class="accordion">
 											<p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>
@@ -118,9 +130,19 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 		</div>
 	</div>
-
+    <div class="accordion">
+        <div class="accordion__heading">
+            <h3 class="heading--snug"><a class="accordion__link" href="#">Example 3 <i class="toggle-icon"></i></a></h3>
+            <div class="message message--warning l-margin-rd">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div class="accordion__drawer">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
 	<div class="accordion">
-		<h4 class="accordion__heading"><a class="accordion__link" href="#">Example 3 (with sub-accordions) <i class="toggle-icon"></i></a></h4>
+		<h4 class="accordion__heading"><a class="accordion__link" href="#">Example 4 (with sub-accordions) <i class="toggle-icon"></i></a></h4>
 		<div class="accordion__drawer">
 			<div class="accordion">
 				<p class="accordion__heading"><a class="accordion__link" href="#">Question <i class="toggle-icon"></i></a></p>

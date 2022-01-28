@@ -3100,7 +3100,7 @@ main[role="main"],
 
   .csstransforms3d & {
 
-    > p, > h2, > h3, > h4, > h5, > h6 {
+    > div > h2, > div > h3, > div > h4, > div > h5, > div > h6, > p, > h2, > h3, > h4, > h5, > h6 {
       & > a > .toggle-icon {
         &:before,
         &:after {
