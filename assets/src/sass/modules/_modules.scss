@@ -3098,9 +3098,15 @@ main[role="main"],
     border-bottom: none;
   }
 
+  > div.accordion__heading {
+    > p , > h2 , > h3 , > h4 , > h5 , > h6 {
+      font-weight: 700;
+    }
+  }
+
   .csstransforms3d & {
 
-    > div > h2, > div > h3, > div > h4, > div > h5, > div > h6, > p, > h2, > h3, > h4, > h5, > h6 {
+    > div > p, > div > h2, > div > h3, > div > h4, > div > h5, > div > h6, > p, > h2, > h3, > h4, > h5, > h6 {
       & > a > .toggle-icon {
         &:before,
         &:after {
