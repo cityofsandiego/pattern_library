@@ -4736,26 +4736,32 @@ div.l-section {
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
-  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.2s;
-  transform-style: preserve-3d;
+  @include mq($from: tablet) {
+    position: relative;
+    transition: transform 0.2s;
+    transform-style: preserve-3d;
+  }
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+  @include mq($from: tablet) {
+    transform: rotateY(180deg);
+  }
 }
 
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
-  position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+  @include mq($from: tablet) {
+    position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -4765,6 +4771,11 @@ div.l-section {
 
 /* Style the back side */
 .flip-box-back {
-  background-color: transparent;
-  transform: rotateY(180deg);
+  @include mq($from: tablet) {
+    background-color: transparent;
+    transform: rotateY(180deg);
+  }
+  @include mq($until: tablet) {
+    display: none;
+  }
 }
