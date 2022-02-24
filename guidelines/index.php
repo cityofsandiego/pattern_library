@@ -88,10 +88,15 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							</div>
 						</div>
 					</div>
+					<p class="subheading">Internal Links</p>
+
+					<p>Internal links, or links that point to another www.sandiego.gov page, must open in the same tab to maintain a favorable user experience since opening links in a new tab prevents users from using the Back button to return to the previous page.</p>
 					
 					<p class="subheading">External Links</p>
 
-					<p>Links that go to external sites must be denoted with this icon: <span class="ext"></span>. The icon is placed immediately after the link. The text "(link is external)" must be appended to the link text but hidden by the "visuallyhidden" helper class. The external site must open in a new browser tab or window.</p>
+					<p>Links to external sites must be denoted with this icon: <span class="ext"></span>. The icon is placed immediately after the link. The text "(link is external)" must be appended to the link text but hidden by the "visuallyhidden" helper class. The external site must open in a new browser tab or window.</p>
+
+					<p>Note: this link behavior is automatically handled by Drupal.</p>
 					
 					<div class="border rounded-corners l-padding-ad">
 						<p><a href="" class="ext extlink" target="_blank">USA.gov <span class="ext"><span class="visuallyhidden"> (link is external)</span></span></a></p>
