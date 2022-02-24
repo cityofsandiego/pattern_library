@@ -725,3 +725,34 @@ p.nav-ex {
 	padding: .5em;
 	margin: 0;
 }
+
+/* Vertical centering inside flexbox
+   ========================================================================== */
+
+.l-flex-center-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1em !important;
+
+	&--desktop {
+		@include mq( $from: tablet ) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 1em !important;
+		}
+	}
+}
+
+.l-flex-center {
+    display: flex;
+    align-items: center;
+
+	&--desktop {
+		@include mq( $from: tablet ) {
+            display: flex;
+            align-items: center;
+		}
+	}
+}
