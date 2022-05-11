@@ -3667,6 +3667,10 @@ img.photoRight {
   content: "\e608";
 }
 
+.icon-play2:before {
+  content: "\ea1c";
+}
+
 .icon-home:before {
   content: "\e600";
 }
@@ -4392,7 +4396,7 @@ img.photoRight {
 }
 
 .icon-translate:before {
-  content: "\e903";
+  content: "\e908";
 }
 
 .icon-dna:before {
@@ -4464,7 +4468,7 @@ img.photoRight {
 }
 
 .icon-picnic-table:before {
-  content: "\e901";
+  content: "\e906";
 }
 
 .icon-teacup:before {
@@ -4496,7 +4500,7 @@ img.photoRight {
 }
 
 .icon-duck:before {
-  content: "\e900";
+  content: "\e905";
 }
 
 .icon-ice-cream:before {
@@ -4536,7 +4540,7 @@ img.photoRight {
 }
 
 .icon-bleachers:before {
-  content: "\e902";
+  content: "\e906";
 }
 
 .icon-rocket:before {
@@ -5077,6 +5081,50 @@ img.photoRight {
 
 .icon-ellipsis:before {
   content: "\e9e9";
+}
+
+.icon-bubble-user:before {
+  content: "\e7df";
+}
+
+.icon-thermometer:before {
+  content: "\e7f0";
+}
+
+.icon-car:before {
+  content: "\e84a";
+}
+
+.icon-bus:before {
+  content: "\e84d";
+}
+
+.icon-network:before {
+  content: "\e886";
+}
+
+.icon-bed:before {
+  content: "\e609";
+}
+
+.icon-connection:before {
+  content: "\e900";
+}
+
+.icon-job-training:before {
+  content: "\e901";
+}
+
+.icon-fax:before {
+  content: "\e902";
+}
+
+.icon-outreach:before {
+  content: "\e903";
+}
+
+.icon-mental-health:before {
+  content: "\e904";
 }
 
 @font-face {
