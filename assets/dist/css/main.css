@@ -5127,6 +5127,30 @@ img.photoRight {
   content: "\e904";
 }
 
+.icon-enter:before {
+  content: "\e6d2";
+}
+
+.icon-exit:before {
+  content: "\e6d3";
+}
+
+.icon-laundry:before {
+  content: "\e743";
+}
+
+.icon-lan2:before {
+  content: "\e8b6";
+}
+
+.icon-share2:before {
+  content: "\e920";
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
+
 @font-face {
   font-family: 'socials';
   src: url("../../../fonts/socials/socials.eot?4wi16y");

@@ -104,6 +104,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-chevron-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-checkmark"></i></p>
+<p>icon-checkmark</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-close"></i></p>
 <p>icon-close</p>
 </div>
@@ -122,6 +126,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-home4"></i></p>
 <p>icon-home4</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-enter"></i></p>
+<p>icon-enter</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-exit"></i></p>
+<p>icon-exit</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-bathtub"></i></p>
@@ -644,6 +656,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-group-work</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-share2"></i></p>
+<p>icon-share2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-connection"></i></p>
 <p>icon-connection</p>
 </div>
@@ -682,6 +698,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-shirt"></i></p>
 <p>icon-shirt</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-laundry"></i></p>
+<p>icon-laundry</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-store"></i></p>
@@ -774,6 +794,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-screen"></i></p>
 <p>icon-screen</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-lan2"></i></p>
+<p>icon-lan2</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-signal"></i></p>
