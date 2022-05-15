@@ -112,6 +112,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-close</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-minus2"></i></p>
+<p>icon-minus2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-play"></i></p>
 <p>icon-play</p>
 </div>

@@ -3853,6 +3853,10 @@ img.photoRight {
   content: "\ea10";
 }
 
+.icon-minus2:before {
+  content: "\ea0b";
+}
+
 @font-face {
   font-family: 'socials';
   src: url("../../../fonts/socials/socials.eot?4wi16y");

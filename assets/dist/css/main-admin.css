@@ -1530,6 +1530,10 @@
     content: "\ea10";
 }
 
+.icon-minus2:before {
+    content: "\ea0b";
+}
+
 @font-face {
     font-family: "socials";
     font-weight: normal;
