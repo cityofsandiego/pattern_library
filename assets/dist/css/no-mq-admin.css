@@ -1534,6 +1534,10 @@
     content: "\ea0b";
 }
 
+.icon-plus2:before {
+    content: "\ea0a";
+}
+
 @font-face {
     font-family: "socials";
     font-weight: normal;

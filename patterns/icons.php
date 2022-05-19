@@ -88,42 +88,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				<div class="row l-margin-tm">
 <div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-chevron-left"></i></p>
-<p>icon-chevron-left</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-chevron-right"></i></p>
-<p>icon-chevron-right</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-chevron-up"></i></p>
-<p>icon-chevron-up</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-chevron-down"></i></p>
-<p>icon-chevron-down</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-checkmark"></i></p>
-<p>icon-checkmark</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-close"></i></p>
-<p>icon-close</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-minus2"></i></p>
-<p>icon-minus2</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-play"></i></p>
-<p>icon-play</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-play2"></i></p>
-<p>icon-play2</p>
-</div>
-<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-home"></i></p>
 <p>icon-home</p>
 </div>
@@ -1388,6 +1352,30 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-minus</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-checkmark"></i></p>
+<p>icon-checkmark</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-close"></i></p>
+<p>icon-close</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-plus2"></i></p>
+<p>icon-plus2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-minus2"></i></p>
+<p>icon-minus2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-play"></i></p>
+<p>icon-play</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-play2"></i></p>
+<p>icon-play2</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-arrow-up"></i></p>
 <p>icon-arrow-up</p>
 </div>
@@ -1458,6 +1446,22 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-arrow-right-circle"></i></p>
 <p>icon-arrow-right-circle</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-chevron-left"></i></p>
+<p>icon-chevron-left</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-chevron-right"></i></p>
+<p>icon-chevron-right</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-chevron-up"></i></p>
+<p>icon-chevron-up</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-chevron-down"></i></p>
+<p>icon-chevron-down</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-chevron-up-circle"></i></p>

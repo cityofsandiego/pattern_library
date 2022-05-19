@@ -5155,6 +5155,10 @@ img.photoRight {
   content: "\ea0b";
 }
 
+.icon-plus2:before {
+  content: "\ea0a";
+}
+
 @font-face {
   font-family: 'socials';
   src: url("../../../fonts/socials/socials.eot?4wi16y");
