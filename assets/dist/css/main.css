@@ -6528,6 +6528,7 @@ header.header--app .row {
   display: block;
   line-height: 1em;
   background: #009581;
+  border-radius: 4px 4px 0 0;
 }
 
 .sub-navigation li.active {
@@ -6549,6 +6550,13 @@ header.header--app .row {
   }
   .sub-navigation li:first-child {
     margin-left: 0;
+  }
+  .sub-navigation li.active-trail {
+    background-color: white;
+  }
+  .sub-navigation li.active-trail a.active,
+  .sub-navigation li.active-trail a.active:hover {
+    color: #37424a;
   }
 }
 
