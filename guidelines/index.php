@@ -24,11 +24,11 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					<p>Websites and web applications need to be compatible with the following web browsers (current and previous versions unless noted otherwise):</p>
 					<ul>
 						<li>Microsoft Edge</li>
-						<li>Microsoft Internet Explorer (Version 11 ONLY)
 						<li>Google Chrome (desktop and Android)</li>
 						<li>Mozilla Firefox</li>
 						<li>Apple Safari (macOS and iOS)</li>
 					</ul>
+					<p><strong>NOTE:</strong> Microsoft Internet Explorer is NOT supported (as of June 15, 2022).</p>
 				</div>
 				
 				

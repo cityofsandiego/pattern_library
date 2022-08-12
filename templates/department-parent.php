@@ -44,7 +44,7 @@ require_once( ABSPATH . PARTIALS . '/template-header.php' ); ?>
            <nav class="sub-navigation">
 				<div class="hide-on-mobile">
 					<ul class="menu">
-						<li class="first leaf"><a href="" class="active">Parks & Recreation</a></li>
+						<li class="first leaf active-trail"><a href="" class="active-trail active">Parks & Recreation Home</a></li>
 						<li class="leaf"><a href="">General Information</a></li>
 						<li class="leaf"><a href="">Recreation Centers & Pools</a></li>
 						<li class="leaf"><a href="">Parks & Open Spaces</a></li>

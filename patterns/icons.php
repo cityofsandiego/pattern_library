@@ -84,7 +84,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                 </div>
 
 <div id="icomoon"></div>
-<h2>Font Name:</span> Icomoon <small>(Glyphs:&nbsp;351)</small></h2>
+<h2>Font Name:</span> Icomoon <small>(Glyphs:&nbsp;379)</small></h2>
 
 				<div class="row l-margin-tm">
 <div class="three columns text-center l-margin-bx">
@@ -430,6 +430,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-paper-plane"></i></p>
 <p>icon-paper-plane</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-layers"></i></p>
+<p>icon-layers</p>
+</div>
+<div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-ruler"></i></p>
+<p>icon-ruler</p>
 </div>
 <div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-box"></i></p>
@@ -1516,14 +1524,6 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-forward-circle</p>
 </div>
 <div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-layers"></i></p>
-<p>icon-layers</p>
-</div>
-<div class="three columns text-center l-margin-bx">
-<p><i class="icon--xl icon-ruler"></i></p>
-<p>icon-ruler</p>
-</div>
-<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-plus-square"></i></p>
 <p>icon-plus-square</p>
 </div>
@@ -1608,7 +1608,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				
 <div id="socials"></div>				
-<h2>Font Name:</span> Socials <small>(Glyphs:&nbsp;12)</small></h2>		
+<h2>Font Name:</span> Socials <small>(Glyphs:&nbsp;15)</small></h2>		
 				<div class="row l-margin-tm">
 				
 <div class="three columns text-center l-margin-bx">
