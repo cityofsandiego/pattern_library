@@ -23,8 +23,8 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
     <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
     <!-- Place favicon.ico in the root directory -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,800,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   
     <link rel="stylesheet" href="/assets/dist/css/main.min.css">
     <!--[if lte IE 8]><link rel="stylesheet" href="assets/dist/css/no-mq.min.css"><![endif]-->
@@ -33,12 +33,12 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
     <!-- SOCIAL SHARING: Update sharethis script id, or whichever social share tool will be used -->
     <script type="text/javascript">var switchTo5x=true;</script>
-    <!-- <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script> -->
+    <!-- <script type="text/javascript" src="//w.sharethis.com/button/buttons.js"></script> -->
     <!-- <script type="text/javascript">stLight.options({publisher: "ab0860c1-8d46-4c47-917e-49c39b19dc7f", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script> -->
 
     <!-- Google Maps -->
      <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
+      src="//maps.googleapis.com/maps/api/js?key=AIzaSyB_TazuQYgS2jGSwZvR2RSR5CxXHxjMf_U"></script>
 	  
 	  <style type="text/css">
 		.oh-display span.oh-display-label{display:inline;float:left;clear:both}.oh-display span.oh-display-times{display:inline;float:right}	  
@@ -56,7 +56,7 @@ $body_class = ( isset( $body_class ) ) ? ' class="' . $body_class . '"' : '';
 
 
         <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
 <!-- Add your site or application content here -->
