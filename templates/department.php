@@ -329,7 +329,7 @@ require_once( ABSPATH . PARTIALS . '/template-header-alert.php' ); ?>
                             <h4 class="h2">Golf Courses</h4>
                             <ul>
                                 <li><a href="">Torrey Pines Golf Course</a></li>
-                                <li><a href="" class="active">Torrey Pines Golf Course</a></li>
+                                <li><a href="" class="active">Balboa Park Golf Course</a></li>
                                 <li><a href="">Mission Bay Golf Course and Practice Center</a></li>
                                 <li><a href="">Privately Operated Golf Courses</a></li>
                                 <li><a href="">Municipal Golf Committee</a></li>
