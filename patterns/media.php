@@ -332,7 +332,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                             <div class="card card--video">
                                 <a href="#sd-popup-video" class="popup-modal"><!-- href value targets the modal ID; class initiates the popup instance -->
                                     <i class="icon-play"></i>
-                                    <div class="overlay"></div>
+                                    <span class="overlay"></span>
                                     <img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
                                 </a>
                             </div>
@@ -378,7 +378,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 		<div class="card card--video">
 			<a href="#sd-popup-video" class="popup-modal"><!-- href value targets the modal ID; class initiates the popup instance -->
 				<i class="icon-play"></i>
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 				<img src="../assets/dist/img/video-1.jpg" alt="Video Title" width="400" height="250">
 			</a>
 		</div>
