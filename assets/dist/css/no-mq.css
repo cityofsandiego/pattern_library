@@ -1281,8 +1281,8 @@ h2, .h2 {
 }
 
 h3, .h3, .sire .view-grouping-header, .view-custom-css .view-grouping-header {
-  font-size: 24px;
-  font-size:  1.5rem;
+  font-size: 21px;
+  font-size:  1.3125rem;
 }
 
 @media print {
@@ -1396,6 +1396,10 @@ ol {
 
 li {
   margin: .5em 0;
+}
+
+ol > li {
+  padding-left: 0.3em;
 }
 
 dt {

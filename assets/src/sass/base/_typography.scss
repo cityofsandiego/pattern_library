@@ -48,7 +48,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    @include rem( 'font-size', 24px ); // 1.563em
+    @include rem( 'font-size', 21px ); // 1.563em
 	@media print {
 		font-size: 1.1em;
 		margin: 0;
@@ -139,6 +139,9 @@ ol {
 }
 li {
     margin: .5em 0;
+}
+ol > li {
+    padding-left: 0.3em;
 }
 dt {
     margin-bottom: .3em;
