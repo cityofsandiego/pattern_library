@@ -106,7 +106,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<table class="twelve columns l-margin-bm"><tbody>
 
 								<tr>
-									<td>.l-padding-mobile-tn</td>
+									<td class="width-25">.l-padding-mobile-tn</td>
 									<td>No top padding on mobile screens only (tablet viewport and below)</td>
 								</tr>
 								<tr>

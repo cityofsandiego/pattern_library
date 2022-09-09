@@ -12,9 +12,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
                 <h1>Card Teasers</h1>
-
-
-                <div id="general" class="l-container l-margin-vm">
+                <div class="sub__nav--library">
+                    <ul class="sub__nav jump-scroll">
+                        <li><a href="#images">With Images</a></li>
+                        <li><a href="#noimages">Without Images</a></li>
+                    </ul>
+                </div>
+                <div id="images" class="l-container l-margin-tm">
+                    <h2>With Images</h2>
                     <div class="flexslider--mobile card__container l-margin-vd">
                         <ul class="slides">
                             <li class="card__wrap">
@@ -139,6 +144,102 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							</div>
 						</div>
 					</div>
+                </div>
+                <div id="noimages" class="l-container l-margin-bl">
+                    <h2>Without Images</h2>
+                    <p>Cards without images use flex to center the text vertically.</p>
+                    <div class="card__container text-center">
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="card__headline l-margin-bn l-flex-center"><a href="">One-Line Headline</a></p>
+                            </div>
+                        </div>
+
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="card__headline l-margin-bn l-flex-center"><a href="">Longer Headline That Needs Two Lines</a></p>
+                            </div>
+                        </div>
+
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="card__headline l-margin-bn l-flex-center"><a href="">One-Line Headline</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row l-margin-vd">
+                        <div class="code__examples">
+                            <form>
+                                <textarea class="pattern" id="cards-no-image-code" name="code">
+<div class="card__container text-center">
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="card__headline l-margin-bn l-flex-center"><a href="">One-Line Headline</a></p>
+        </div>
+    </div>
+
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="card__headline l-margin-bn l-flex-center"><a href="">Longer Headline That Needs Two Lines</a></p>
+        </div>
+    </div>
+
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="card__headline l-margin-bn l-flex-center"><a href="">One-Line Headline</a></p>
+        </div>
+    </div>
+</div></textarea>
+                            </form>
+                        </div>
+					</div>
+<h3>Alternate Style</h3>
+<div class="card__container text-center">
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="l-margin-bn l-flex-center"><a href="#" style="text-decoration:none"><strong>One-Line Headline</strong></a></p>
+                            </div>
+                        </div>
+
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="l-margin-bn l-flex-center"><a href="#" style="text-decoration:none"><strong>Longer Headline That Needs Two Lines</strong></a></p>
+                            </div>
+                        </div>
+
+                        <div class="card__wrap l-margin-mobile-ln">
+                            <div class="card background--off-white l-padding-ad border l-flex-center-container">
+                                <p class="l-margin-bn l-flex-center"><a href="#" style="text-decoration:none"><strong>One-Line Headline</strong></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row l-margin-vd">
+                        <div class="code__examples">
+                            <form>
+                                <textarea class="pattern" id="cards-no-image-alt--code" name="code">
+<div class="card__container text-center">
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="l-margin-bn l-flex-center"><a href="" style="text-decoration:none"><strong>One-Line Headline</strong></a></p>
+        </div>
+    </div>
+
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="l-margin-bn l-flex-center"><a href="" style="text-decoration:none"><strong>Longer Headline That Needs Two Lines</strong></a></p>
+        </div>
+    </div>
+
+    <div class="card__wrap l-margin-mobile-ln">
+        <div class="card background--off-white l-padding-ad border l-flex-center-container">
+            <p class="l-margin-bn l-flex-center"><a href="" style="text-decoration:none"><strong>One-Line Headline</strong></a></p>
+        </div>
+    </div>
+</div></textarea>
+                            </form>
+                        </div>
+					</div>
+
                 </div>
             </div>
         </div>

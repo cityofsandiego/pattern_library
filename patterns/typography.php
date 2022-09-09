@@ -74,7 +74,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					    		<h3 class="l-margin-an">Section Heading (H3)</h3>
 					    	</div>
 					    	<div class="six columns">
-					    		<p class="text-gray"> 1.5rem / 1.3 / Normal</p>
+					    		<p class="text-gray"> 1.3125rem / 1.3 / Normal</p>
 					    	</div>
 					    </div>
 					    <div class="row border border--bottom l-padding-ts">

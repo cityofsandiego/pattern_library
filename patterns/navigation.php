@@ -576,14 +576,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
                                         <div class="tabs-container">
 
                                             <div id="tab-item-1" class="tabs__bucket is-active">
-                                                <h3 class="tab-header l-margin-vn">Tab Content 1</h3>
+                                                <h3 class="heading--snug">Tab Content 1</h3>
                                                 <div class="l-container">
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 </div>
                                             </div>
 
                                             <div id="tab-item-2" class="tabs__bucket">
-                                                <h3 class="tab-header l-margin-vn">Tab Content 2</h3>
+                                                <h3 class="heading--snug">Tab Content 2</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -591,12 +591,12 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
                                             <div id="tab-item-3" class="tabs__bucket">
                                                 <a id="docs-downloads"></a>
-                                                <h3 class="tab-header l-margin-vn">Tab Content 3</h3>
+                                                <h3 class="heading--snug">Tab Content 3</h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                             </div>
 
                                             <div id="tab-item-4" class="tabs__bucket">
-                                                <h3 class="tab-header l-margin-vn">Tab Content 4</h3>
+                                                <h3 class="heading--snug">Tab Content 4</h3>
                                                 <div class="l-container">
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -625,25 +625,25 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
     <div class="tabs-container">
 
         <div id="tab-item-1" class="tabs__bucket is-active">
-            <h3 class="tab-header l-margin-vn">Tab Content 1</h3>
+            <h3 class="heading--snug">Tab Content 1</h3>
             <div class="l-container">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
         </div>
 
         <div id="tab-item-2" class="tabs__bucket">
-            <h3 class="tab-header l-margin-vn">Tab Content 2</h3>
+            <h3 class="heading--snug">Tab Content 2</h3>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div id="tab-item-3" class="tabs__bucket">
             <a id="docs-downloads"></a>
-            <h3 class="tab-header l-margin-vn">Tab Content 3</h3>
+            <h3 class="heading--snug">Tab Content 3</h3>
             <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
         <div id="tab-item-4" class="tabs__bucket">
-            <h3 class="tab-header l-margin-vn">Tab Content 4</h3>
+            <h3 class="heading--snug">Tab Content 4</h3>
             <div class="l-container">
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
