@@ -22,7 +22,7 @@ h1, h2, h3, h4,
 
 h1, .h1 {
     margin: .5em 0;
-    @include rem( 'font-size', 36px ); // 2.441em
+    @include rem( 'font-size', 36px ); // 2.25rem
 	@media print {
 		font-size: 1.5em;
 		margin: 0;
@@ -39,7 +39,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    @include rem( 'font-size', 27px ); // 1.953em
+    @include rem( 'font-size', 27px ); // 1.6875rem
 	@media print {
 		font-size: 1.25em;
 		margin: 0;
@@ -48,7 +48,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-    @include rem( 'font-size', 21px ); // 1.563em
+    @include rem( 'font-size', 21px ); // 1.3125rem
 	@media print {
 		font-size: 1.1em;
 		margin: 0;
@@ -58,7 +58,7 @@ h3, .h3 {
 
 h4, .h4 {
     font-weight: 600;
-    @include rem( 'font-size', 16px ); // 1.25em
+    @include rem( 'font-size', 16px ); // 1em
 	@media print {
 		font-size: 1em;
 		margin: 0;
@@ -67,7 +67,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-    @include rem( 'font-size', 16px ); // 1.125em
+    @include rem( 'font-size', 16px ); // 1em
 	@media print {
 		font-size: 1em;
 		margin: 0;
