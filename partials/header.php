@@ -42,7 +42,7 @@ $current_page = basename($_SERVER['PHP_SELF']);
 </head>
 <body id="top"<?php echo $body_class; ?>>
 <div class="backToTop">
-<p><a href="#top" title="Back to Top"><i class="icon-exit-up icon--md icon--circle background--dark"></i></a></p>
+<p><a href="#top" title="Back to Top" style="display:none"><i class="icon-exit-up icon--md icon--circle background--dark"></i></a></p>
 </div>
 <div id="fb-root"></div>
 

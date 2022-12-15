@@ -1334,6 +1334,7 @@ p.nav-ex {
 
 html {
   background: white;
+  scroll-behavior: smooth;
 }
 
 /**

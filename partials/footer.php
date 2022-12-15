@@ -111,19 +111,19 @@ new Chart(document.getElementById("pie-chart"), {
 					jQuery('div.backToTop a').fadeOut('slow');
 				}
 			});
-			jQuery('div.backToTop a').click(function() {
+			/*jQuery('div.backToTop a').click(function() {
 				jQuery('html, body').animate({
 					scrollTop: 0
 				}, 700);
 				return false;
-			});
-			jQuery(".jump-scroll li a").on("click", function( e ) {
+			});*/
+			/*jQuery(".jump-scroll li a").on("click", function( e ) {
 				e.preventDefault();
 
 				jQuery("body, html").animate({ 
 					scrollTop: jQuery( jQuery(this).attr('href') ).offset().top 
 				}, 600);				
-			});
+			});*/
 
         </script>
 
