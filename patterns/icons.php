@@ -896,6 +896,10 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 <p>icon-lifebuoy</p>
 </div>
 <div class="three columns text-center l-margin-bx">
+<p><i class="icon--xl icon-virus"></i></p>
+<p>icon-virus</p>
+</div>
+<div class="three columns text-center l-margin-bx">
 <p><i class="icon--xl icon-skull"></i></p>
 <p>icon-skull</p>
 </div>
