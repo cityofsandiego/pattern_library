@@ -82,7 +82,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#00549f;"></i></p>
-		<p>#00549f<br>rgb (0, 84, 159)</p>
+		<p>#00549f<br>rgb (0, 84, 159)<br><strong class="fine-print">endeavour</strong></p>
 	</div>
 </div>
 <div class="row">
@@ -242,7 +242,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#0065b2;"></i></p>
-		<p>#0065b2<br>rgb (0, 101, 178)<br><strong class="fine-print">endeavour</strong></p>
+		<p>#0065b2<br>rgb (0, 101, 178)</p>
 	</div>
 	<div class="four columns text-center l-margin-bm">
 		<p><i class="icon--xl icon--circle" style="padding:1.5em; background-color:#551a8b;"></i></p>
