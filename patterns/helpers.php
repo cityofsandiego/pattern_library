@@ -15,17 +15,18 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				    <ul class="sub__nav jump-scroll">
 				        <li><a href="#spacing">Spacing</a></li>
                         <li><a href="#typography">Typography</a></li>
+                        <li><a href="#lists">Lists</a></li>
                         <li><a href="#display">Display & Visibility</a></li>
                         <li><a href="#alignment">Alignment</a></li>
                         <li><a href="#width">Width</a></li>
-                        <li><a href="#design">Design Elements</a></li>
+                        <li><a href="#bgc">Background Color</a></li>
 				    </ul>
 				</div>
 
 				<div class="l-container l-margin-tm">
 					<div class="row">
 						<div class="twelve columns">
-							<p>Available for use is a large set of helper classes that may be used on elements freely. These aid immensely to a site build for quick development and lessen the need for extensive and overly-specific CSS selectors. The majority of these classes live within <em>helpers.scss</em>.</p>
+							<p>The helper classes listed below aid immensely to site development and lessen the need for custom inline styling.</p>
 						</div>
 					</div>
 				</div>
@@ -128,36 +129,106 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 								<tr>
 									<th>Class</th>
 									<th>Value</th>
+									<th>Desktop-only</th>
+									<th>Mobile-only</th>
 								</tr>
 								<tr>
 									<td>.fine-print</td>
 									<td>font-size: 12px;</td>
+									<td>n/a</td>
+									<td>n/a</td>
 								</tr>
 								<tr>
 									<td>.text-accent</td>
 									<td>font-size: 22px;</td>
+									<td>.text-accent--desktop</td>
+									<td>n/a</td>
 								</tr>
 								<tr>
 									<td>.text-left</td>
 									<td>text-align: left;</td>
+									<td>.text-left--desktop</td>
+									<td>.text-left--mobile</td>
 								</tr>
 								<tr>
 									<td>.text-center</td>
 									<td>text-align: center;</td>
+									<td>.text-center--desktop</td>
+									<td>.text-center--mobile</td>
 								</tr>
 								<tr>
 									<td>.text-right</td>
 									<td>text-align: right;</td>
+									<td>.text-right--desktop</td>
+									<td>.text-right--mobile</td>
 								</tr>
 								<tr>
 									<td>.text-capitalize</td>
 									<td>text-transform: capitalize;</td>
+									<td>n/a</td>
+									<td>n/a</td>
 								</tr>
 								<tr>
 									<td>.text-upper</td>
 									<td>text-transform: uppercase;</td>
+									<td>n/a</td>
+									<td>n/a</td>
 								</tr>
 
+							</tbody></table>
+						</div>
+					</div>
+
+				</div>
+
+				<div id="lists" class="l-container l-margin-tm">
+
+					<div class="row">
+						<div class="twelve columns">
+							<h2>Lists </h2>
+							<p>Classes apply to &lt;ul&gt; and &lt;ol&gt;.</p>
+							<table class="twelve columns"><tbody>
+
+								<tr>
+									<th>Class</th>
+									<th>Value</th>
+									<th>Desktop-only</th>
+									<th>Mobile-only</th>
+								</tr>
+								<tr>
+									<td>.two-columns</td>
+									<td>column-count:2</td>
+									<td>.two-columns--desktop</td>
+									<td>.two-columns--mobile</td>
+								</tr>
+								<tr>
+									<td>.three-columns</td>
+									<td>column-count:3</td>
+									<td>.three-columns--desktop</td>
+									<td>.three-columns--mobile</td>
+								</tr>
+								<tr>
+									<td>.four-columns</td>
+									<td>column-count:4</td>
+									<td>.four-columns--desktop</td>
+									<td>n/a</td>
+								</tr>
+
+							</tbody></table>
+							<p>Class Usage Example</p>
+							<table class="twelve columns"><tbody>
+								<tr>
+									<td>&lt;ul class="two-columns"&gt;</td>
+									<td>Unordered list will automatically split into two columns on all views</td>
+								</tr>
+								<tr>
+									<td>&lt;ol class="two-columns--desktop"&gt;</td>
+									<td>Ordered list will automatically split into two columns on desktop view only</td>
+								</tr>
+								<tr>
+									<td>&lt;ul class="three-columns--desktop two-columns--mobile"&gt;</td>
+									<td>Unordered list will automatically split into three columns on desktop view and two columns on mobile view</td>
+								</tr>
 							</tbody></table>
 						</div>
 					</div>
@@ -292,15 +363,15 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 							<table class="twelve columns"><tbody>
 								<tr>
 									<td>class="width-33"</td>
-									<td>33% width in desktop and mobile</td>
+									<td>33% width on all views</td>
 								</tr>
 								<tr>
 									<td>class="width-50--mobile"</td>
-									<td>default width in desktop, 50% width in mobile</td>
+									<td>default width on desktop view, 50% width on mobile view</td>
 								</tr>
 								<tr>
 									<td>class="width-66 width-100--mobile"</td>
-									<td>66% width in desktop, 100% width in mobile</td>
+									<td>66% width on desktop view, 100% width on mobile view</td>
 								</tr>
 							</tbody></table>
 						</div>
@@ -308,61 +379,72 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 				</div>
 
-				<div id="design" class="l-container l-margin-tm">
+				<div id="bgc" class="l-container l-margin-tm">
 
 					<div class="row">
 						<div class="twelve columns">
-							<h2>Design Elements</h2>
-							<p>These classes refer to color variations that can be applied to elements.</p>
-
-							<table class="twelve columns l-margin-bd"><tbody>
+							<h2>Background Color</h2>
+							<p>Some colors in our <a href="colors.php">Color Palette</a> can be used as a background color for an element by applying the ".background--[color name]" class. Note that not all colors are available for this class.</p>
+							<p>Examples:</p>
+							<ul class="no-bullets l-padding-ld">
+								<li>.background--off-white</li>
+								<li>.background--spruce</li>
+								<li>.background--cerulean</li>
+								<li>.background--sunshade</li>
+							</ul>
+							<table class="twelve columns l-margin-bd hidden"><tbody>
 
 								<tr>
 									<th>Class</th>
-									<th>Value</th>
+									<th colspan="2">Value</th>
 								</tr>
 								<tr>
 									<td>.background--dark</td>
 									<td>background-color: $spruce;</td>
+									<td><i class="icon--md icon--circle" style="padding:1.5em; background-color:#37424a;"></i></td>
 								</tr>
 								<tr>
 									<td>.background--off-white</td>
 									<td>background-color: $off-white;</td>
+									<td><i class="icon--md icon--circle" style="padding:1.5em; background-color:#37424a;"></i></td>
 								</tr>
 								<tr>
 									<td>.background--cerulean</td>
 									<td>background-color: $cerulean;</td>
+									<td><i class="icon--md icon--circle" style="padding:1.5em; background-color:#0098db;"></i></td>
 								</tr>
 								<tr>
 									<td>.background--science</td>
 									<td>background-color: $science;</td>
+									<td><i class="icon--md icon--circle" style="padding:1.5em; background-color:#37424a;"></i></td>
 								</tr>
 
 							</tbody></table>
-							<p class="text-small"><em>Note that color variables are set in settings.scss.</em></p>
+							<p class="text-small"><em>Color variables are set in settings.scss.</em></p>
+							<div class="hidden">
+								<p>There are mixins for gradient backgrounds that can be extended onto an element.</p>
 
-							<p>There are mixins for gradient backgrounds that can be extended onto an element.</p>
+								<table class="twelve columns l-margin-bm"><tbody>
 
-							<table class="twelve columns l-margin-bm"><tbody>
+									<tr>
+										<th>Mixin</th>
+										<th>Value</th>
+									</tr>
+									<tr>
+										<td>%black-gradient</td>
+										<td>Fades vertically from transparent to black (opacity .75).</td>
+									</tr>
+									<tr>
+										<td>%white-gradient</td>
+										<td>Fades vertically from white (opacity .9) to full opacity white.</td>
+									</tr>
+									<tr>
+										<td>%gray-gradient</td>
+										<td>Fades vertically from white to light gray.</td>
+									</tr>
 
-								<tr>
-									<th>Mixin</th>
-									<th>Value</th>
-								</tr>
-								<tr>
-									<td>%black-gradient</td>
-									<td>Fades vertically from transparent to black (opacity .75).</td>
-								</tr>
-								<tr>
-									<td>%white-gradient</td>
-									<td>Fades vertically from white (opacity .9) to full opacity white.</td>
-								</tr>
-								<tr>
-									<td>%gray-gradient</td>
-									<td>Fades vertically from white to light gray.</td>
-								</tr>
-
-							</tbody></table>
+								</tbody></table>
+							</div>
 						</div>
 					</div>
 

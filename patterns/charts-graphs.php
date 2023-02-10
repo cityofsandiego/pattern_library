@@ -14,7 +14,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 				<div class="sub__nav--library">
 				    <ul class="sub__nav jump-scroll">
 				        <li><a href="#general-table">General Table</a></li>
-				        <li><a href="#accordion-table">Accordion Table</a></li>
+				        <li class="hidden"><a href="#accordion-table">Accordion Table</a></li>
 				        <li><a href="#bar">Bar Graph</a></li>
 				        <li><a href="#line">Line Graph</a></li>
 				        <li><a href="#pie">Pie Chart</a></li>
@@ -91,14 +91,14 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 					</div>
 				
 				
-					<div class="row">
+					<div class="row hidden">
 						<div class="twelve columns">
 							<h3 id="accordion-table">Accordion Table</h3>
 							<p>View on viewport widths from tablet and below for collapsed table data.</p>
 						</div>
 					</div>
 
-					<div class="row l-padding-as background-off-white">
+					<div class="row l-padding-as background-off-white hidden">
 
 						<!-- Table - Accordion -->
 						<div class="row">
@@ -155,7 +155,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
 
 					</div>
 
-					<div class="row l-margin-td">
+					<div class="row l-margin-td hidden">
 						<div class="four columns">
 							<p class="l-margin-bn"><strong>Notes</strong></p>
 							<p>Apply <strong>.accordion</strong> classes for accordion ability.</p>

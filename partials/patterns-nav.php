@@ -21,7 +21,7 @@
         <li style="background:white"><a class="<?php if ($current_page == "progress.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/progress.php'; ?>">Progress Bar</a></li>
         <li style="background:white"><a class="<?php if ($current_page == "list-teaser.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/list-teaser.php'; ?>">List Teaser</a></li>
         <li style="background:white"><a class="<?php if ($current_page == "calendar.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/calendar.php'; ?>">Calendar</a></li>
-        <li style="background:white"><a class="<?php if ($current_page == "comments.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/comments.php'; ?>">Comment Thread</a></li>
+        <li class="hidden" style="background:white"><a class="<?php if ($current_page == "comments.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/comments.php'; ?>">Comment Thread</a></li>
         <li style="background:white"><a class="<?php if ($current_page == "helpers.php"){ echo "active "; }?>" href="<?php echo '/' . PATTERNS . '/helpers.php'; ?>">Helpers</a></li>
     </ul>
 </nav>

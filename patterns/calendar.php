@@ -11,7 +11,7 @@ require_once( ABSPATH . PARTIALS . '/header.php' ); ?>
             <div class="nine columns">
 
 					<h1>Calendar</h1>
-                    <div class="l-container l-padding-hd l-margin-vm background-off-white">
+                    <div class="l-container l-padding-hd l-margin-vm">
 
                         <div class="row">
                             <div class="four columns push-eight no-gutters">
